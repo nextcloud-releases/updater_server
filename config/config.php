@@ -7,7 +7,7 @@
  * Welcome to the almighty configuration file. In this file the update definitions for each version are released. Please
  * make sure to read below description of the config format carefully before proceeding.
  *
- * ownCloud updates are delivered by a release channel, at the moment the following channels are available:
+ * Nextcloud updates are delivered by a release channel, at the moment the following channels are available:
  *
  * - production
  * - stable
