@@ -10,13 +10,13 @@ If the tests are not passing the TravisCI test execution will fail.
 ## Example calls
 
 Deployed URL: https://updates.nextcloud.org/server/
-Example call: update-server/?version=8x2x0x12x1448709225.0768x1448709281xstablexx2015-10-19T18:44:30+00:00%208ee2009de36e01a9866404f07722892f84c16e3e
+Example call: update-server/?version=9x0x0x12x1448709225.0768x1448709281xstablexx2015-10-19T18:44:30+00:00%208ee2009de36e01a9866404f07722892f84c16e3e
 ```xml
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <owncloud>
-  <version>8.2.1.4</version>
-  <versionstring>ownCloud 8.2.1</versionstring>
-  <url>https://download.owncloud.org/community/owncloud-8.2.1.zip</url>
-  <web>https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html</web>
+ <version>9.0.51</version>
+ <versionstring>Nextcloud 9.0.51</versionstring>
+ <url>https://download.nextcloud.com/server/releases/nextcloud-9.0.51.zip</url>
+ <web>https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html</web>
 </owncloud>
 ```
