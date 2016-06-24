@@ -73,15 +73,27 @@ return [
 			'latest' => '9.0.51',
 			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html',
 		],
+		'8.2' => [
+			'latest' => '9.0.51',
+			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html',
+		],
 	],
 	'stable' => [
 		'9.0' => [
 			'latest' => '9.0.51',
 			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html',
 		],
+		'8.2' => [
+			'latest' => '9.0.51',
+			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html',
+		],
 	],
 	'beta' => [
 			'9.0' => [
+			'latest' => '9.0.51',
+			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html',
+		],
+		'8.2' => [
 			'latest' => '9.0.51',
 			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html',
 		],

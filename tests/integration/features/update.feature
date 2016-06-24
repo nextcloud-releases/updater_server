@@ -1,5 +1,33 @@
 Feature: Testing the update scenario of releases
+  # ownCloud 8.2 -> Nextcloud 9.0
+  Scenario: Updating an outdated ownCloud 8.2.4 on the production channel
+    Given There is a release with channel "production"
+    And The received version is "8.2.4"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "9.0.51" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.51.zip"
+    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html"
 
+  Scenario: Updating an outdated ownCloud 8.2.4 on the stable channel
+    Given There is a release with channel "stable"
+    And The received version is "8.2.4"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "9.0.51" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.51.zip"
+    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html"
+
+  Scenario: Updating an outdated ownCloud 8.2.4 on the beta channel
+    Given There is a release with channel "beta"
+    And The received version is "8.2.4"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "9.0.51" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.51.zip"
+    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html"
+
+  # Nextcloud 9
   Scenario: Updating an outdated Nextcloud 9.0.50 on the production channel
     Given There is a release with channel "production"
     And The received version is "9.0.50"
