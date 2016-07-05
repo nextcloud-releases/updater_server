@@ -5,8 +5,8 @@ Feature: Testing the update scenario of releases
     And The received version is "8.2.4"
     When The request is sent
     Then The response is non-empty
-    And Update to version "9.0.51" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.51.zip"
+    And Update to version "9.0.52" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.52.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html"
 
   Scenario: Updating an outdated ownCloud 8.2.4 on the stable channel
@@ -14,8 +14,8 @@ Feature: Testing the update scenario of releases
     And The received version is "8.2.4"
     When The request is sent
     Then The response is non-empty
-    And Update to version "9.0.51" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.51.zip"
+    And Update to version "9.0.52" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.52.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html"
 
   Scenario: Updating an outdated ownCloud 8.2.4 on the beta channel
@@ -23,8 +23,8 @@ Feature: Testing the update scenario of releases
     And The received version is "8.2.4"
     When The request is sent
     Then The response is non-empty
-    And Update to version "9.0.51" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.51.zip"
+    And Update to version "9.0.52" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.52.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html"
 
   # Nextcloud 9
@@ -33,8 +33,8 @@ Feature: Testing the update scenario of releases
     And The received version is "9.0.50"
     When The request is sent
     Then The response is non-empty
-    And Update to version "9.0.51" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.51.zip"
+    And Update to version "9.0.52" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.52.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html"
 
   Scenario: Updating an outdated ownCloud 9.0.50 on the stable channel
@@ -42,8 +42,8 @@ Feature: Testing the update scenario of releases
     And The received version is "9.0.50"
     When The request is sent
     Then The response is non-empty
-    And Update to version "9.0.51" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.51.zip"
+    And Update to version "9.0.52" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.52.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html"
 
   Scenario: Updating an outdated ownCloud 9.0.50 on the beta channel
@@ -51,25 +51,25 @@ Feature: Testing the update scenario of releases
     And The received version is "9.0.50"
     When The request is sent
     Then The response is non-empty
-    And Update to version "9.0.51" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.51.zip"
+    And Update to version "9.0.52" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.52.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html"
 
-  Scenario: Updating an up-to-date Nextcloud 9.0.51 on the production channel
+  Scenario: Updating an up-to-date Nextcloud 9.0.52 on the production channel
     Given There is a release with channel "production"
-    And The received version is "9.0.51"
+    And The received version is "9.0.52"
     When The request is sent
     Then The response is empty
 
-  Scenario: Updating an up-to-date Nextcloud 9.0.51 on the stable channel
+  Scenario: Updating an up-to-date Nextcloud 9.0.52 on the stable channel
     Given There is a release with channel "stable"
-    And The received version is "9.0.51"
+    And The received version is "9.0.52"
     When The request is sent
     Then The response is empty
 
-  Scenario: Updating an up-to-date Nextcloud 9.0.51 on the beta channel
+  Scenario: Updating an up-to-date Nextcloud 9.0.52 on the beta channel
     Given There is a release with channel "beta"
-    And The received version is "9.0.51"
+    And The received version is "9.0.52"
     When The request is sent
     Then The response is empty
 
