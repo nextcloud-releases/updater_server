@@ -71,37 +71,37 @@ return [
 	'production' => [
 		'9.0' => [
 			'latest' => '9.0.53',
-			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html',
+			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
 		],
 		'8.2' => [
 			'latest' => '9.0.53',
-			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html',
+			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
 		],
 	],
 	'stable' => [
 		'9.0' => [
 			'latest' => '9.0.53',
-			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html',
+			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
 		],
 		'8.2' => [
 			'latest' => '9.0.53',
-			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html',
+			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
 		],
 	],
 	'beta' => [
 			'9.0' => [
 			'latest' => '9.0.53',
-			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html',
+			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
 		],
 		'8.2' => [
 			'latest' => '9.0.53',
-			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html',
+			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
 		],
 	],
 	'daily' => [
 		'9.0' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest.zip',
-			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html',
+			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
 		],
 	],
 ];

@@ -7,7 +7,7 @@ Feature: Testing the update scenario of releases
     Then The response is non-empty
     And Update to version "9.0.53" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.53.zip"
-    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html"
+    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html"
 
   Scenario: Updating an outdated ownCloud 8.2.4 on the stable channel
     Given There is a release with channel "stable"
@@ -16,7 +16,7 @@ Feature: Testing the update scenario of releases
     Then The response is non-empty
     And Update to version "9.0.53" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.53.zip"
-    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html"
+    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html"
 
   Scenario: Updating an outdated ownCloud 8.2.4 on the beta channel
     Given There is a release with channel "beta"
@@ -25,7 +25,7 @@ Feature: Testing the update scenario of releases
     Then The response is non-empty
     And Update to version "9.0.53" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.53.zip"
-    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html"
+    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html"
 
   # Nextcloud 9
   Scenario: Updating an outdated Nextcloud 9.0.50 on the production channel
@@ -35,7 +35,7 @@ Feature: Testing the update scenario of releases
     Then The response is non-empty
     And Update to version "9.0.53" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.53.zip"
-    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html"
+    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html"
 
   Scenario: Updating an outdated ownCloud 9.0.50 on the stable channel
     Given There is a release with channel "stable"
@@ -44,7 +44,7 @@ Feature: Testing the update scenario of releases
     Then The response is non-empty
     And Update to version "9.0.53" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.53.zip"
-    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html"
+    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html"
 
   Scenario: Updating an outdated ownCloud 9.0.50 on the beta channel
     Given There is a release with channel "beta"
@@ -53,7 +53,7 @@ Feature: Testing the update scenario of releases
     Then The response is non-empty
     And Update to version "9.0.53" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.53.zip"
-    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html"
+    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html"
 
   Scenario: Updating an up-to-date Nextcloud 9.0.53 on the production channel
     Given There is a release with channel "production"
@@ -81,7 +81,7 @@ Feature: Testing the update scenario of releases
     Then The response is non-empty
     And Update to version "100.0.0.0" is available
     And URL to download is "https://download.nextcloud.com/server/daily/latest.zip"
-    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html"
+    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html"
 
   Scenario: Updating an up-to-date Nextcloud 9.0 daily
     Given There is a release with channel "daily"
