@@ -34,67 +34,67 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 			[
 				'6',
 				'<?xml version="1.0" encoding="UTF-8"?>
-<owncloud>
+<nextcloud>
  <version>100.0.0.0</version>
  <versionstring>Nextcloud daily</versionstring>
  <url>https://download.owncloud.org/community/owncloud-7.0.13.zip</url>
  <web>https://doc.owncloud.org/server/7.0/admin_manual/maintenance/upgrade.html</web>
-</owncloud>
+</nextcloud>
 ',
 			],
 			[
 				'7',
 				'<?xml version="1.0" encoding="UTF-8"?>
-<owncloud>
+<nextcloud>
  <version>100.0.0.0</version>
  <versionstring>Nextcloud daily</versionstring>
  <url>https://download.owncloud.org/community/owncloud-8.0.11.zip</url>
  <web>https://doc.owncloud.org/server/7.0/admin_manual/maintenance/upgrade.html</web>
-</owncloud>
+</nextcloud>
 ',
 			],
 			[
 				'8',
 				'<?xml version="1.0" encoding="UTF-8"?>
-<owncloud>
+<nextcloud>
  <version>100.0.0.0</version>
  <versionstring>Nextcloud daily</versionstring>
  <url>https://download.owncloud.org/community/owncloud-8.1.6.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
-</owncloud>
+</nextcloud>
 ',
 			],
 			[
 				'8.0.5',
 				'<?xml version="1.0" encoding="UTF-8"?>
-<owncloud>
+<nextcloud>
  <version>100.0.0.0</version>
  <versionstring>Nextcloud daily</versionstring>
  <url>https://download.owncloud.org/community/owncloud-8.1.6.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
-</owncloud>
+</nextcloud>
 ',
 			],
 			[
 				'9',
 				'<?xml version="1.0" encoding="UTF-8"?>
-<owncloud>
+<nextcloud>
  <version>100.0.0.0</version>
  <versionstring>Nextcloud daily</versionstring>
  <url>https://download.owncloud.org/community/owncloud-daily-master.zip</url>
  <web>https://doc.owncloud.org/server/9.0/admin_manual/maintenance/upgrade.html</web>
-</owncloud>
+</nextcloud>
 ',
 			],
 			[
 				'9.0.3',
 				'<?xml version="1.0" encoding="UTF-8"?>
-<owncloud>
+<nextcloud>
  <version>100.0.0.0</version>
  <versionstring>Nextcloud daily</versionstring>
  <url>https://download.owncloud.org/community/owncloud-daily-master.zip</url>
  <web>https://doc.owncloud.org/server/9.0/admin_manual/maintenance/upgrade.html</web>
-</owncloud>
+</nextcloud>
 ',
 			]
 		];
@@ -238,12 +238,12 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 				'8',
 				'',
 				'<?xml version="1.0" encoding="UTF-8"?>
-<owncloud>
+<nextcloud>
  <version>8.0.9</version>
  <versionstring>Nextcloud 8.0.9</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.9.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
-</owncloud>
+</nextcloud>
 ',
 			],
 			[
@@ -253,12 +253,12 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 				'7',
 				'',
 				'<?xml version="1.0" encoding="UTF-8"?>
-<owncloud>
+<nextcloud>
  <version>8.0.7.1</version>
  <versionstring>Nextcloud 8.0.7.1</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.7.1.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
-</owncloud>
+</nextcloud>
 ',
 			],
 			[
@@ -268,12 +268,12 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 				'7',
 				'1',
 				'<?xml version="1.0" encoding="UTF-8"?>
-<owncloud>
+<nextcloud>
  <version>8.0.8</version>
  <versionstring>Nextcloud 8.0.8</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.8.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
-</owncloud>
+</nextcloud>
 ',
 			],
 			[
@@ -283,12 +283,12 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 				'9',
 				'',
 				'<?xml version="1.0" encoding="UTF-8"?>
-<owncloud>
+<nextcloud>
  <version>8.0.10</version>
  <versionstring>Nextcloud 8.0.10</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.10.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
-</owncloud>
+</nextcloud>
 ',
 			],
 			[
@@ -314,12 +314,12 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 				'11',
 				'',
 				'<?xml version="1.0" encoding="UTF-8"?>
-<owncloud>
+<nextcloud>
  <version>7.0.12</version>
  <versionstring>Nextcloud 7.0.12</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-7.0.12.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
-</owncloud>
+</nextcloud>
 ',
 			],
 			[
@@ -329,12 +329,12 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 				'4',
 				'',
 				'<?xml version="1.0" encoding="UTF-8"?>
-<owncloud>
+<nextcloud>
  <version>8.1.5</version>
  <versionstring>Nextcloud 8.1.5</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.1.5.zip</url>
  <web>https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html</web>
-</owncloud>
+</nextcloud>
 ',
 			],
 			[
@@ -352,12 +352,12 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 				'1',
 				'',
 				'<?xml version="1.0" encoding="UTF-8"?>
-<owncloud>
+<nextcloud>
  <version>8.2.2</version>
  <versionstring>Nextcloud 8.2.2</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
  <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
-</owncloud>
+</nextcloud>
 ',
 			],
 			[
@@ -391,12 +391,12 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 				'9',
 				'',
 				'<?xml version="1.0" encoding="UTF-8"?>
-<owncloud>
+<nextcloud>
  <version>8.0.10</version>
  <versionstring>Nextcloud 8.0.10</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.10.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
-</owncloud>
+</nextcloud>
 ',
 			],
 			[
@@ -422,12 +422,12 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 				'5',
 				'',
 				'<?xml version="1.0" encoding="UTF-8"?>
-<owncloud>
+<nextcloud>
  <version>7.0.12</version>
  <versionstring>Nextcloud 7.0.12</versionstring>
  <url>https://downloads.owncloud.com/foo.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
-</owncloud>
+</nextcloud>
 ',
 			],
 			[
@@ -437,12 +437,12 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 				'11',
 				'',
 				'<?xml version="1.0" encoding="UTF-8"?>
-<owncloud>
+<nextcloud>
  <version>7.0.12</version>
  <versionstring>Nextcloud 7.0.12</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-7.0.12.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
-</owncloud>
+</nextcloud>
 ',
 			],
 			[
@@ -452,12 +452,12 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 				'4',
 				'',
 				'<?xml version="1.0" encoding="UTF-8"?>
-<owncloud>
+<nextcloud>
  <version>8.1.5</version>
  <versionstring>Nextcloud 8.1.5</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.1.5.zip</url>
  <web>https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html</web>
-</owncloud>
+</nextcloud>
 ',
 			],
 			[
@@ -475,12 +475,12 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 				'1',
 				'',
 				'<?xml version="1.0" encoding="UTF-8"?>
-<owncloud>
+<nextcloud>
  <version>8.2.2</version>
  <versionstring>Nextcloud 8.2.2</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
  <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
-</owncloud>
+</nextcloud>
 ',
 			],
 			[
@@ -514,12 +514,12 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 				'9',
 				'',
 				'<?xml version="1.0" encoding="UTF-8"?>
-<owncloud>
+<nextcloud>
  <version>8.0.10</version>
  <versionstring>Nextcloud 8.0.10</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.10.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
-</owncloud>
+</nextcloud>
 ',
 			],
 			[
@@ -545,12 +545,12 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 				'11',
 				'',
 				'<?xml version="1.0" encoding="UTF-8"?>
-<owncloud>
+<nextcloud>
  <version>7.0.12</version>
  <versionstring>Nextcloud 7.0.12</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-7.0.12.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
-</owncloud>
+</nextcloud>
 ',
 			],
 			[
@@ -568,12 +568,12 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 				'4',
 				'',
 				'<?xml version="1.0" encoding="UTF-8"?>
-<owncloud>
+<nextcloud>
  <version>8.1.5</version>
  <versionstring>Nextcloud 8.1.5</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.1.5.zip</url>
  <web>https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html</web>
-</owncloud>
+</nextcloud>
 ',
 			],
 			[
@@ -591,12 +591,12 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 				'1',
 				'',
 				'<?xml version="1.0" encoding="UTF-8"?>
-<owncloud>
+<nextcloud>
  <version>8.2.2</version>
  <versionstring>Nextcloud 8.2.2</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
  <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
-</owncloud>
+</nextcloud>
 ',
 			],
 			[
