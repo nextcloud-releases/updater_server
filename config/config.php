@@ -63,37 +63,49 @@
  * a change to the update logic. That way you can also ensure that your changes will do what you wanted them to do. The
  * tests are automatically executed on Travis or you can do it locally:
  *
- * 	- php -S localhost:8888 update-server/index.php &
+ * 	- php -S localhost:8888 ./index.php &
  * 	- cd tests/integration/ && ../../vendor/bin/behat .
  */
 
 return [
 	'production' => [
-		'9.0' => [
-			'latest' => '9.0.53',
-			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
+		'10.0' => [
+			'latest' => '10.0.0',
+			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
-		'8.2' => [
+		'9.0.53' => [
+			'latest' => '10.0.0',
+			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
+		],
+		'9.0' => [
 			'latest' => '9.0.53',
 			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
 		],
 	],
 	'stable' => [
-		'9.0' => [
-			'latest' => '9.0.53',
-			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
+		'10.0' => [
+			'latest' => '10.0.0',
+			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
-		'8.2' => [
+		'9.0.53' => [
+			'latest' => '10.0.0',
+			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
+		],
+		'9.0' => [
 			'latest' => '9.0.53',
 			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
 		],
 	],
 	'beta' => [
-			'9.0' => [
-			'latest' => '9.0.53',
-			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
+		'10.0' => [
+			'latest' => '10.0.0',
+			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
-		'8.2' => [
+		'9.0.53' => [
+			'latest' => '10.0.0',
+			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
+		],
+		'9.0' => [
 			'latest' => '9.0.53',
 			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
 		],
