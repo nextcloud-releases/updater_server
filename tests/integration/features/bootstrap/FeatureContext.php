@@ -46,6 +46,7 @@ class FeatureContext implements Context, SnippetAcceptingContext {
         $this->majorVersion = $version[0];
         $this->minorVersion = $version[1];
         $this->maintenanceVersion = $version[2];
+        $this->revisionVersion = '';
         if(isset($version[3])) {
             $this->revisionVersion = $version[3];
         }
@@ -90,6 +91,7 @@ class FeatureContext implements Context, SnippetAcceptingContext {
         );
         curl_setopt_array($ch, $optArray);
         $this->result = curl_exec($ch);
+        curl_close($ch);
     }
 
     /**
