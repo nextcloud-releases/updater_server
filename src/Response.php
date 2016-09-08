@@ -72,7 +72,7 @@ class Response {
 		$writer->openMemory();
 		$writer->startDocument('1.0','UTF-8');
 		$writer->setIndent(4);
-		$writer->startElement('owncloud');
+		$writer->startElement('nextcloud');
 		$writer->writeElement('version', $newVersion['latest']);
 		$writer->writeElement('versionstring', 'Nextcloud '.$newVersion['latest']);
 		$writer->writeElement('url', $downloadUrl);
@@ -97,7 +97,7 @@ class Response {
 					$writer->openMemory();
 					$writer->startDocument('1.0','UTF-8');
 					$writer->setIndent(4);
-					$writer->startElement('owncloud');
+					$writer->startElement('nextcloud');
 					$writer->writeElement('version', '100.0.0.0');
 					$writer->writeElement('versionstring', 'Nextcloud daily');
 					$writer->writeElement('url', $newVersion['downloadUrl']);

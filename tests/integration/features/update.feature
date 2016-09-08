@@ -1,31 +1,31 @@
 Feature: Testing the update scenario of releases
-  # ownCloud 8.2 -> Nextcloud 9.0
-  Scenario: Updating an outdated ownCloud 8.2.4 on the production channel
+  # ownCloud 9.0 -> Nextcloud 9
+  Scenario: Updating an outdated ownCloud 9.0.4 on the production channel
     Given There is a release with channel "production"
-    And The received version is "8.2.4"
+    And The received version is "9.0.4"
     When The request is sent
     Then The response is non-empty
-    And Update to version "9.0.52" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.52.zip"
-    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html"
+    And Update to version "9.0.53" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.53.zip"
+    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html"
 
-  Scenario: Updating an outdated ownCloud 8.2.4 on the stable channel
+  Scenario: Updating an outdated ownCloud 9.0.4 on the stable channel
     Given There is a release with channel "stable"
-    And The received version is "8.2.4"
+    And The received version is "9.0.4"
     When The request is sent
     Then The response is non-empty
-    And Update to version "9.0.52" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.52.zip"
-    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html"
+    And Update to version "9.0.53" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.53.zip"
+    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html"
 
-  Scenario: Updating an outdated ownCloud 8.2.4 on the beta channel
+  Scenario: Updating an outdated ownCloud 9.0.4 on the beta channel
     Given There is a release with channel "beta"
-    And The received version is "8.2.4"
+    And The received version is "9.0.4"
     When The request is sent
     Then The response is non-empty
-    And Update to version "9.0.52" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.52.zip"
-    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html"
+    And Update to version "9.0.53" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.53.zip"
+    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html"
 
   # Nextcloud 9
   Scenario: Updating an outdated Nextcloud 9.0.50 on the production channel
@@ -33,43 +33,70 @@ Feature: Testing the update scenario of releases
     And The received version is "9.0.50"
     When The request is sent
     Then The response is non-empty
-    And Update to version "9.0.52" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.52.zip"
-    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html"
+    And Update to version "9.0.53" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.53.zip"
+    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html"
 
   Scenario: Updating an outdated ownCloud 9.0.50 on the stable channel
     Given There is a release with channel "stable"
     And The received version is "9.0.50"
     When The request is sent
     Then The response is non-empty
-    And Update to version "9.0.52" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.52.zip"
-    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html"
+    And Update to version "9.0.53" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.53.zip"
+    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html"
 
   Scenario: Updating an outdated ownCloud 9.0.50 on the beta channel
     Given There is a release with channel "beta"
     And The received version is "9.0.50"
     When The request is sent
     Then The response is non-empty
-    And Update to version "9.0.52" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.52.zip"
-    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html"
+    And Update to version "9.0.53" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.53.zip"
+    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html"
 
-  Scenario: Updating an up-to-date Nextcloud 9.0.52 on the production channel
+  Scenario: Updating an up-to-date Nextcloud 9.0.53 on the production channel
     Given There is a release with channel "production"
-    And The received version is "9.0.52"
+    And The received version is "9.0.53"
     When The request is sent
-    Then The response is empty
+    Then The response is non-empty
+    And Update to version "10.0.0" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-10.0.0.zip"
+    And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
 
-  Scenario: Updating an up-to-date Nextcloud 9.0.52 on the stable channel
+  Scenario: Updating an up-to-date Nextcloud 9.0.53 on the stable channel
     Given There is a release with channel "stable"
-    And The received version is "9.0.52"
+    And The received version is "9.0.53"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "10.0.0" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-10.0.0.zip"
+    And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+
+  Scenario: Updating an up-to-date Nextcloud 9.0.53 on the beta channel
+    Given There is a release with channel "beta"
+    And The received version is "9.0.53"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "10.0.0" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-10.0.0.zip"
+    And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+
+  Scenario: Updating an up-to-date Nextcloud 10.0.0 on the production channel
+    Given There is a release with channel "production"
+    And The received version is "10.0.0"
     When The request is sent
     Then The response is empty
 
-  Scenario: Updating an up-to-date Nextcloud 9.0.52 on the beta channel
+  Scenario: Updating an up-to-date Nextcloud 10.0.0 on the stable channel
+    Given There is a release with channel "stable"
+    And The received version is "10.0.0"
+    When The request is sent
+    Then The response is empty
+
+  Scenario: Updating an up-to-date Nextcloud 10.0.0 on the beta channel
     Given There is a release with channel "beta"
-    And The received version is "9.0.52"
+    And The received version is "10.0.0"
     When The request is sent
     Then The response is empty
 
@@ -81,7 +108,7 @@ Feature: Testing the update scenario of releases
     Then The response is non-empty
     And Update to version "100.0.0.0" is available
     And URL to download is "https://download.nextcloud.com/server/daily/latest.zip"
-    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html"
+    And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html"
 
   Scenario: Updating an up-to-date Nextcloud 9.0 daily
     Given There is a release with channel "daily"

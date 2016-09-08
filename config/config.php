@@ -56,52 +56,64 @@
  * This configuration array would have the following meaning:
  *
  * 1. 8.2.0 instances would be delivered 8.2.1
- * 2. All instances below 8.2.4 EXCEPT 8.2.1 would be delivered 8.2.4
+ * 2. All instances below 8.2.4 EXCEPT 8.2.0 would be delivered 8.2.4
  * 3. 8.2.4 instances get 9.0.0 delivered
  *
  * Oh. And be a nice person and also adjust the integration tests at /tests/integration/features/update.feature after doing
  * a change to the update logic. That way you can also ensure that your changes will do what you wanted them to do. The
  * tests are automatically executed on Travis or you can do it locally:
  *
- * 	- php -S localhost:8888 update-server/index.php &
- * 	- tests/integration/ && ../../vendor/bin/behat .
+ * 	- php -S localhost:8888 ./index.php &
+ * 	- cd tests/integration/ && ../../vendor/bin/behat .
  */
 
 return [
 	'production' => [
-		'9.0' => [
-			'latest' => '9.0.52',
-			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html',
+		'10.0' => [
+			'latest' => '10.0.0',
+			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
-		'8.2' => [
-			'latest' => '9.0.52',
-			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html',
+		'9.0.53' => [
+			'latest' => '10.0.0',
+			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
+		],
+		'9.0' => [
+			'latest' => '9.0.53',
+			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
 		],
 	],
 	'stable' => [
-		'9.0' => [
-			'latest' => '9.0.52',
-			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html',
+		'10.0' => [
+			'latest' => '10.0.0',
+			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
-		'8.2' => [
-			'latest' => '9.0.52',
-			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html',
+		'9.0.53' => [
+			'latest' => '10.0.0',
+			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
+		],
+		'9.0' => [
+			'latest' => '9.0.53',
+			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
 		],
 	],
 	'beta' => [
-			'9.0' => [
-			'latest' => '9.0.52',
-			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html',
+		'10.0' => [
+			'latest' => '10.0.0',
+			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
-		'8.2' => [
-			'latest' => '9.0.52',
-			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html',
+		'9.0.53' => [
+			'latest' => '10.0.0',
+			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
+		],
+		'9.0' => [
+			'latest' => '9.0.53',
+			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
 		],
 	],
 	'daily' => [
 		'9.0' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest.zip',
-			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html',
+			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
 		],
 	],
 ];
