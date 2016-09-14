@@ -18,11 +18,13 @@
  * array looks like the following:
  *
  * 'production' => [
- * 	'8.2' => [
- * 		'latest' => '8.2.3',
- * 		'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/upgrade.html',
+ * 	'9.1' => [
+ * 		'latest' => '10.0.0',
+ * 		'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/upgrade.html',
  * 		// downloadUrl is an optional entry, if not specified the URL is generated using https://download.nextcloud.com/server/releases/nextcloud-'.$newVersion['latest'].'.zip
  * 		'downloadUrl' => 'https://download.nextcloud.com/foo.zip',
+ * 		// internalVersion is an optional entry that defaults to latest if not set
+ * 		'internalVersion' => '9.1.0'
  * 	],
  * ]
  *
@@ -69,12 +71,14 @@
 
 return [
 	'production' => [
-		'10.0' => [
+		'9.1' => [
 			'latest' => '10.0.0',
+			'internalVersion' => '9.1.0',
 			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
 		'9.0.53' => [
 			'latest' => '10.0.0',
+			'internalVersion' => '9.1.0',
 			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
 		'9.0' => [
@@ -83,12 +87,14 @@ return [
 		],
 	],
 	'stable' => [
-		'10.0' => [
+		'9.1' => [
 			'latest' => '10.0.0',
+			'internalVersion' => '9.1.0',
 			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
 		'9.0.53' => [
 			'latest' => '10.0.0',
+			'internalVersion' => '9.1.0',
 			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
 		'9.0' => [
@@ -97,12 +103,14 @@ return [
 		],
 	],
 	'beta' => [
-		'10.0' => [
+		'9.1' => [
 			'latest' => '10.0.0',
+			'internalVersion' => '9.1.0',
 			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
 		'9.0.53' => [
 			'latest' => '10.0.0',
+			'internalVersion' => '9.1.0',
 			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
 		'9.0' => [
@@ -111,8 +119,12 @@ return [
 		],
 	],
 	'daily' => [
+		'9.1' => [
+			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable10.zip',
+			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
+		],
 		'9.0' => [
-			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest.zip',
+			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable9.zip',
 			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
 		],
 	],

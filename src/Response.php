@@ -51,7 +51,10 @@ class Response {
 		foreach($this->getFuzzySearches() as $search) {
 			if(isset($versions[$search])) {
 				$newVersion = $versions[$search];
-				if(version_compare($newVersion['latest'], $completeCurrentVersion, '<=')) {
+				if (!isset($newVersion['internalVersion'])) {
+					$newVersion['internalVersion'] = $newVersion['latest'];
+				}
+				if(version_compare($newVersion['internalVersion'], $completeCurrentVersion, '<=')) {
 					return '';
 				} else {
 					break;
@@ -73,7 +76,7 @@ class Response {
 		$writer->startDocument('1.0','UTF-8');
 		$writer->setIndent(4);
 		$writer->startElement('nextcloud');
-		$writer->writeElement('version', $newVersion['latest']);
+		$writer->writeElement('version', $newVersion['internalVersion']);
 		$writer->writeElement('versionstring', 'Nextcloud '.$newVersion['latest']);
 		$writer->writeElement('url', $downloadUrl);
 		$writer->writeElement('web', $newVersion['web']);
