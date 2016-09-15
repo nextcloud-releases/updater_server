@@ -94,13 +94,16 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is empty
 
-  Scenario: Updating an up-to-date Nextcloud 9.1.0 on the beta channel
+  Scenario: Updating an outdated Nextcloud 9.1.0 on the beta channel
     Given There is a release with channel "beta"
     And The received version is "9.1.0"
     When The request is sent
-    Then The response is empty
+    Then The response is non-empty
+    And Update to version "9.1.1RC1" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-10.0.1RC1.zip"
+    And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
 
-  Scenario: Updating an outdated-dated Nextcloud 9.0 daily
+  Scenario: Updating an outdated Nextcloud 9.0 daily
     Given There is a release with channel "daily"
     And The received version is "9.0.100"
     And the received build is "2012-10-19T18:44:30+00:00%208ee2009de36e01a9866404f07722892f84c16e3e"
