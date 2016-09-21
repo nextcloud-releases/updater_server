@@ -72,50 +72,49 @@
 return [
 	'production' => [
 		'9.1' => [
-			'latest' => '10.0.0',
-			'internalVersion' => '9.1.0',
+			'latest' => '10.0.1',
+			'internalVersion' => '9.1.1',
 			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
-		'9.0.53' => [
-			'latest' => '10.0.0',
-			'internalVersion' => '9.1.0',
+		'9.0.54' => [
+			'latest' => '10.0.1',
+			'internalVersion' => '9.1.1',
 			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
 		'9.0' => [
-			'latest' => '9.0.53',
+			'latest' => '9.0.54',
 			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
 		],
 	],
 	'stable' => [
 		'9.1' => [
-			'latest' => '10.0.0',
-			'internalVersion' => '9.1.0',
+			'latest' => '10.0.1',
+			'internalVersion' => '9.1.1',
 			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
-		'9.0.53' => [
-			'latest' => '10.0.0',
-			'internalVersion' => '9.1.0',
+		'9.0.54' => [
+			'latest' => '10.0.1',
+			'internalVersion' => '9.1.1',
 			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
 		'9.0' => [
-			'latest' => '9.0.53',
+			'latest' => '9.0.54',
 			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
 		],
 	],
 	'beta' => [
 		'9.1' => [
-			'latest' => '10.0.1RC1',
-			'internalVersion' => '9.1.1RC1',
-			'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-10.0.1RC1.zip',
+			'latest' => '10.0.1',
+			'internalVersion' => '9.1.1',
 			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
-		'9.0.53' => [
-			'latest' => '10.0.0',
-			'internalVersion' => '9.1.0',
+		'9.0.54' => [
+			'latest' => '10.0.1',
+			'internalVersion' => '9.1.1',
 			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
 		'9.0' => [
-			'latest' => '9.0.53',
+			'latest' => '9.0.54',
 			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
 		],
 	],
