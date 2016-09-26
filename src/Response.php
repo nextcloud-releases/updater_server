@@ -119,7 +119,9 @@ class Response {
 	 * @return string
 	 */
 	public function buildResponse() {
-		$completeCurrentVersion = $this->request->getMajorVersion().'.'.$this->request->getMinorVersion().'.'.$this->request->getMaintenanceVersion();
+		$completeCurrentVersion = $this->request->getMajorVersion().'.'.$this->request->getMinorVersion().'.'.$this->request->getMaintenanceVersion().'.'.$this->request->getRevisionVersion();
+
+		$completeCurrentVersion = rtrim($completeCurrentVersion, '.');
 
 		switch ($this->request->getChannel()) {
 			case 'production':
