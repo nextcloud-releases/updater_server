@@ -104,9 +104,9 @@ return [
 	],
 	'beta' => [
 		'9.1' => [
-			'latest' => '10.0.1RC1',
-			'internalVersion' => '9.1.1RC1',
-			'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-10.0.1RC1.zip',
+			'latest' => '10.0.1RC2',
+			'internalVersion' => '9.1.1.2',
+			'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-10.0.1RC2.zip',
 			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
 		'9.0.53' => [
