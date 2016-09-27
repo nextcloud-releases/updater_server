@@ -9,8 +9,8 @@ If the tests are not passing the TravisCI test execution will fail.
 
 ## Example calls
 
-Deployed URL: https://updates.nextcloud.org/server/
-Example call: update-server/?version=9x0x0x12x1448709225.0768x1448709281xstablexx2015-10-19T18:44:30+00:00%208ee2009de36e01a9866404f07722892f84c16e3e
+Deployed URL: https://updates.nextcloud.org/updater_server/
+Example call: updater_server/?version=9x0x0x12x1448709225.0768x1448709281xstablexx2015-10-19T18:44:30+00:00%208ee2009de36e01a9866404f07722892f84c16e3e
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <nextcloud>
