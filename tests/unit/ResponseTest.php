@@ -39,6 +39,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud daily</versionstring>
  <url>https://download.owncloud.org/community/owncloud-7.0.13.zip</url>
  <web>https://doc.owncloud.org/server/7.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>1</autoupdater>
 </nextcloud>
 ',
 			],
@@ -50,6 +51,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud daily</versionstring>
  <url>https://download.owncloud.org/community/owncloud-8.0.11.zip</url>
  <web>https://doc.owncloud.org/server/7.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>1</autoupdater>
 </nextcloud>
 ',
 			],
@@ -61,6 +63,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud daily</versionstring>
  <url>https://download.owncloud.org/community/owncloud-8.1.6.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>1</autoupdater>
 </nextcloud>
 ',
 			],
@@ -72,6 +75,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud daily</versionstring>
  <url>https://download.owncloud.org/community/owncloud-8.1.6.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>1</autoupdater>
 </nextcloud>
 ',
 			],
@@ -83,6 +87,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud daily</versionstring>
  <url>https://download.owncloud.org/community/owncloud-daily-master.zip</url>
  <web>https://doc.owncloud.org/server/9.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>1</autoupdater>
 </nextcloud>
 ',
 			],
@@ -94,6 +99,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud daily</versionstring>
  <url>https://download.owncloud.org/community/owncloud-daily-master.zip</url>
  <web>https://doc.owncloud.org/server/9.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>1</autoupdater>
 </nextcloud>
 ',
 			]
@@ -243,6 +249,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.0.9</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.9.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>1</autoupdater>
 </nextcloud>
 ',
 			],
@@ -258,6 +265,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.0.7.1</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.7.1.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>1</autoupdater>
 </nextcloud>
 ',
 			],
@@ -273,6 +281,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.0.8</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.8.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>1</autoupdater>
 </nextcloud>
 ',
 			],
@@ -288,6 +297,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.0.10</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.10.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>1</autoupdater>
 </nextcloud>
 ',
 			],
@@ -319,6 +329,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 7.0.12</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-7.0.12.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>1</autoupdater>
 </nextcloud>
 ',
 			],
@@ -334,6 +345,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.1.5</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.1.5.zip</url>
  <web>https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>1</autoupdater>
 </nextcloud>
 ',
 			],
@@ -357,6 +369,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.2.2</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
  <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>1</autoupdater>
 </nextcloud>
 ',
 			],
@@ -396,6 +409,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.0.10</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.10.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>1</autoupdater>
 </nextcloud>
 ',
 			],
@@ -427,6 +441,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 7.0.12</versionstring>
  <url>https://downloads.owncloud.com/foo.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>1</autoupdater>
 </nextcloud>
 ',
 			],
@@ -442,6 +457,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 7.0.12</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-7.0.12.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>1</autoupdater>
 </nextcloud>
 ',
 			],
@@ -457,6 +473,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.1.5</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.1.5.zip</url>
  <web>https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>1</autoupdater>
 </nextcloud>
 ',
 			],
@@ -480,6 +497,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.2.2</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
  <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>1</autoupdater>
 </nextcloud>
 ',
 			],
@@ -519,6 +537,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.0.10</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.10.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>1</autoupdater>
 </nextcloud>
 ',
 			],
@@ -550,6 +569,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 7.0.12</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-7.0.12.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>1</autoupdater>
 </nextcloud>
 ',
 			],
@@ -573,6 +593,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.1.5</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.1.5.zip</url>
  <web>https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>1</autoupdater>
 </nextcloud>
 ',
 			],
@@ -596,6 +617,439 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.2.2</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
  <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>1</autoupdater>
+</nextcloud>
+',
+			],
+			[
+				'beta',
+				'8',
+				'2',
+				'3',
+				'',
+				'',
+			],
+			[
+				'beta',
+				'8',
+				'3',
+				'3',
+				'',
+				'',
+			],
+			[
+				'beta',
+				'',
+				'',
+				'',
+				'',
+				'',
+			],
+			[
+				'',
+				'8',
+				'2',
+				'1',
+				'',
+				'',
+			],
+			[
+				'',
+				'',
+				'',
+				'',
+				'',
+				'',
+			],
+		];
+	}
+
+	/**
+	 * @return array
+	 */
+	public function responseProviderWithDisabledUpdates() {
+		return [
+			[
+				'production',
+				'8',
+				'0',
+				'8',
+				'',
+				'<?xml version="1.0" encoding="UTF-8"?>
+<nextcloud>
+ <version>8.0.9</version>
+ <versionstring>Nextcloud 8.0.9</versionstring>
+ <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.9.zip</url>
+ <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>0</autoupdater>
+</nextcloud>
+',
+			],
+			[
+				'production',
+				'8',
+				'0',
+				'7',
+				'',
+				'<?xml version="1.0" encoding="UTF-8"?>
+<nextcloud>
+ <version>8.0.7.1</version>
+ <versionstring>Nextcloud 8.0.7.1</versionstring>
+ <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.7.1.zip</url>
+ <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>0</autoupdater>
+</nextcloud>
+',
+			],
+			[
+				'production',
+				'8',
+				'0',
+				'7',
+				'1',
+				'<?xml version="1.0" encoding="UTF-8"?>
+<nextcloud>
+ <version>8.0.8</version>
+ <versionstring>Nextcloud 8.0.8</versionstring>
+ <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.8.zip</url>
+ <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>0</autoupdater>
+</nextcloud>
+',
+			],
+			[
+				'production',
+				'8',
+				'0',
+				'9',
+				'',
+				'<?xml version="1.0" encoding="UTF-8"?>
+<nextcloud>
+ <version>8.0.10</version>
+ <versionstring>Nextcloud 8.0.10</versionstring>
+ <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.10.zip</url>
+ <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>0</autoupdater>
+</nextcloud>
+',
+			],
+			[
+				'production',
+				'8',
+				'0',
+				'10',
+				'',
+				'',
+			],
+			[
+				'production',
+				'8',
+				'0',
+				'11',
+				'',
+				'',
+			],
+			[
+				'production',
+				'7',
+				'0',
+				'11',
+				'',
+				'<?xml version="1.0" encoding="UTF-8"?>
+<nextcloud>
+ <version>7.0.12</version>
+ <versionstring>Nextcloud 7.0.12</versionstring>
+ <url>https://download.nextcloud.com/server/releases/nextcloud-7.0.12.zip</url>
+ <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>0</autoupdater>
+</nextcloud>
+',
+			],
+			[
+				'production',
+				'8',
+				'1',
+				'4',
+				'',
+				'<?xml version="1.0" encoding="UTF-8"?>
+<nextcloud>
+ <version>8.1.5</version>
+ <versionstring>Nextcloud 8.1.5</versionstring>
+ <url>https://download.nextcloud.com/server/releases/nextcloud-8.1.5.zip</url>
+ <web>https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>0</autoupdater>
+</nextcloud>
+',
+			],
+			[
+				'production',
+				'8',
+				'1',
+				'5',
+				'',
+				'',
+			],
+			[
+				'production',
+				'8',
+				'2',
+				'1',
+				'',
+				'<?xml version="1.0" encoding="UTF-8"?>
+<nextcloud>
+ <version>8.2.2</version>
+ <versionstring>Nextcloud 8.2.2</versionstring>
+ <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
+ <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>0</autoupdater>
+</nextcloud>
+',
+			],
+			[
+				'production',
+				'8',
+				'2',
+				'3',
+				'',
+				'',
+			],
+			[
+				'production',
+				'8',
+				'3',
+				'3',
+				'',
+				'',
+			],
+			[
+				'production',
+				'',
+				'',
+				'',
+				'',
+				'',
+			],
+			[
+				'stable',
+				'8',
+				'0',
+				'9',
+				'',
+				'<?xml version="1.0" encoding="UTF-8"?>
+<nextcloud>
+ <version>8.0.10</version>
+ <versionstring>Nextcloud 8.0.10</versionstring>
+ <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.10.zip</url>
+ <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>0</autoupdater>
+</nextcloud>
+',
+			],
+			[
+				'stable',
+				'8',
+				'0',
+				'10',
+				'',
+				'',
+			],
+			[
+				'stable',
+				'8',
+				'0',
+				'11',
+				'',
+				'',
+			],
+			[
+				'stable',
+				'6',
+				'0',
+				'5',
+				'',
+				'<?xml version="1.0" encoding="UTF-8"?>
+<nextcloud>
+ <version>7.0.12</version>
+ <versionstring>Nextcloud 7.0.12</versionstring>
+ <url>https://downloads.owncloud.com/foo.zip</url>
+ <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>0</autoupdater>
+</nextcloud>
+',
+			],
+			[
+				'stable',
+				'7',
+				'0',
+				'11',
+				'',
+				'<?xml version="1.0" encoding="UTF-8"?>
+<nextcloud>
+ <version>7.0.12</version>
+ <versionstring>Nextcloud 7.0.12</versionstring>
+ <url>https://download.nextcloud.com/server/releases/nextcloud-7.0.12.zip</url>
+ <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>0</autoupdater>
+</nextcloud>
+',
+			],
+			[
+				'stable',
+				'8',
+				'1',
+				'4',
+				'',
+				'<?xml version="1.0" encoding="UTF-8"?>
+<nextcloud>
+ <version>8.1.5</version>
+ <versionstring>Nextcloud 8.1.5</versionstring>
+ <url>https://download.nextcloud.com/server/releases/nextcloud-8.1.5.zip</url>
+ <web>https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>0</autoupdater>
+</nextcloud>
+',
+			],
+			[
+				'stable',
+				'8',
+				'1',
+				'5',
+				'',
+				'',
+			],
+			[
+				'stable',
+				'8',
+				'2',
+				'1',
+				'',
+				'<?xml version="1.0" encoding="UTF-8"?>
+<nextcloud>
+ <version>8.2.2</version>
+ <versionstring>Nextcloud 8.2.2</versionstring>
+ <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
+ <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>0</autoupdater>
+</nextcloud>
+',
+			],
+			[
+				'stable',
+				'8',
+				'2',
+				'3',
+				'',
+				'',
+			],
+			[
+				'stable',
+				'8',
+				'3',
+				'3',
+				'',
+				'',
+			],
+			[
+				'stable',
+				'',
+				'',
+				'',
+				'',
+				'',
+			],
+			[
+				'beta',
+				'8',
+				'0',
+				'9',
+				'',
+				'<?xml version="1.0" encoding="UTF-8"?>
+<nextcloud>
+ <version>8.0.10</version>
+ <versionstring>Nextcloud 8.0.10</versionstring>
+ <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.10.zip</url>
+ <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>0</autoupdater>
+</nextcloud>
+',
+			],
+			[
+				'beta',
+				'8',
+				'0',
+				'10',
+				'',
+				'',
+			],
+			[
+				'beta',
+				'8',
+				'0',
+				'11',
+				'',
+				'',
+			],
+			[
+				'beta',
+				'7',
+				'0',
+				'11',
+				'',
+				'<?xml version="1.0" encoding="UTF-8"?>
+<nextcloud>
+ <version>7.0.12</version>
+ <versionstring>Nextcloud 7.0.12</versionstring>
+ <url>https://download.nextcloud.com/server/releases/nextcloud-7.0.12.zip</url>
+ <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>0</autoupdater>
+</nextcloud>
+',
+			],
+			[
+				'beta',
+				'7',
+				'0',
+				'13',
+				'',
+				'',
+			],
+			[
+				'beta',
+				'8',
+				'1',
+				'4',
+				'',
+				'<?xml version="1.0" encoding="UTF-8"?>
+<nextcloud>
+ <version>8.1.5</version>
+ <versionstring>Nextcloud 8.1.5</versionstring>
+ <url>https://download.nextcloud.com/server/releases/nextcloud-8.1.5.zip</url>
+ <web>https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>0</autoupdater>
+</nextcloud>
+',
+			],
+			[
+				'beta',
+				'8',
+				'1',
+				'5',
+				'',
+				'',
+			],
+			[
+				'beta',
+				'8',
+				'2',
+				'1',
+				'',
+				'<?xml version="1.0" encoding="UTF-8"?>
+<nextcloud>
+ <version>8.2.2</version>
+ <versionstring>Nextcloud 8.2.2</versionstring>
+ <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
+ <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>0</autoupdater>
 </nextcloud>
 ',
 			],
@@ -691,6 +1145,94 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 				'latest' => '7.0.12',
 				'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
 				'downloadUrl' => 'https://downloads.owncloud.com/foo.zip',
+			],
+		];
+		$this->request
+			->expects($this->any())
+			->method('getChannel')
+			->willReturn($channel);
+		$this->config
+			->expects($this->any())
+			->method('get')
+			->with($channel)
+			->willReturn($config);
+		$this->request
+			->expects($this->any())
+			->method('getMajorVersion')
+			->willReturn($majorVersion);
+		$this->request
+			->expects($this->any())
+			->method('getMinorVersion')
+			->willReturn($minorVersion);
+		$this->request
+			->expects($this->any())
+			->method('getMaintenanceVersion')
+			->willReturn($maintenanceVersion);
+		$this->request
+			->expects($this->any())
+			->method('getRevisionVersion')
+			->willReturn($revisionVersion);
+
+		$this->assertSame($expected, $this->response->buildResponse());
+	}
+
+	/**
+	 * @param string $channel
+	 * @param string $majorVersion
+	 * @param string $minorVersion
+	 * @param string $revisionVersion
+	 * @param string $maintenanceVersion
+	 * @param string $expected
+	 *
+	 * @dataProvider responseProviderWithDisabledUpdates
+	 */
+	public function testBuildResponseWithDisabledUpdaterChannel($channel,
+												$majorVersion,
+												$minorVersion,
+												$maintenanceVersion,
+												$revisionVersion,
+												$expected) {
+		$config = [
+			'8.2' => [
+				'latest' => '8.2.2',
+				'web' => 'https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html',
+				'autoupdater' => false,
+			],
+			'8.1' => [
+				'latest' => '8.1.5',
+				'web' => 'https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html',
+				'autoupdater' => false,
+			],
+			'8.0' => [
+				'latest' => '8.0.10',
+				'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+				'autoupdater' => false,
+			],
+			'8.0.7' => [
+				'latest' => '8.0.7.1',
+				'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+				'autoupdater' => false,
+			],
+			'8.0.7.1' => [
+				'latest' => '8.0.8',
+				'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+				'autoupdater' => false,
+			],
+			'8.0.8' => [
+				'latest' => '8.0.9',
+				'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+				'autoupdater' => false,
+			],
+			'7' => [
+				'latest' => '7.0.12',
+				'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+				'autoupdater' => false,
+			],
+			'6' => [
+				'latest' => '7.0.12',
+				'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+				'downloadUrl' => 'https://downloads.owncloud.com/foo.zip',
+				'autoupdater' => false,
 			],
 		];
 		$this->request

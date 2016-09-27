@@ -5,6 +5,9 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 
+// Set the default timezone to Europe/Berlin
+date_default_timezone_set('Europe/Berlin');
+
 // Set Content-Type to XML
 header('Content-Type: application/xml');
 // Enforce browser based XSS filters
