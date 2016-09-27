@@ -80,6 +80,7 @@ class Response {
 		$writer->writeElement('versionstring', 'Nextcloud '.$newVersion['latest']);
 		$writer->writeElement('url', $downloadUrl);
 		$writer->writeElement('web', $newVersion['web']);
+		$writer->writeElement('autoupdater', isset($newVersion['autoupdater']) ? (int)$newVersion['autoupdater'] : true);
 		$writer->endElement();
 		$writer->endDocument();
 		return $writer->flush();
@@ -105,6 +106,7 @@ class Response {
 					$writer->writeElement('versionstring', 'Nextcloud daily');
 					$writer->writeElement('url', $newVersion['downloadUrl']);
 					$writer->writeElement('web', $newVersion['web']);
+					$writer->writeElement('autoupdater', isset($newVersion['autoupdater']) ? (int)$newVersion['autoupdater'] : true);
 					$writer->endElement();
 					$writer->endDocument();
 					return $writer->flush();

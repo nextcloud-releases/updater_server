@@ -25,6 +25,9 @@
  * 		'downloadUrl' => 'https://download.nextcloud.com/foo.zip',
  * 		// internalVersion is an optional entry that defaults to latest if not set
  * 		'internalVersion' => '9.1.0'
+ * 		// autoupdater is an optional boolean value to define whether the update should be just announced or also delivered
+ * 		// defaults to true
+ * 		'autoupdater' => true,
  * 	],
  * ]
  *
