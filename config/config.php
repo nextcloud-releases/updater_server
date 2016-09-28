@@ -75,58 +75,50 @@
 return [
 	'production' => [
 		'9.1' => [
-			'latest' => '10.0.0',
-			'internalVersion' => '9.1.0',
-			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
-		],
-		'9.0.53' => [
-			'latest' => '10.0.0',
-			'internalVersion' => '9.1.0',
+			'latest' => '10.0.1',
+			'internalVersion' => '9.1.1.5',
+			'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-10.0.1.zip',
 			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
 		'9.0' => [
-			'latest' => '9.0.53',
-			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
+			'latest' => '10.0.1',
+			'internalVersion' => '9.1.1.5',
+			'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-10.0.1.zip',
+			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
 	],
 	'stable' => [
 		'9.1' => [
-			'latest' => '10.0.0',
-			'internalVersion' => '9.1.0',
-			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
-		],
-		'9.0.53' => [
-			'latest' => '10.0.0',
-			'internalVersion' => '9.1.0',
+			'latest' => '10.0.1',
+			'internalVersion' => '9.1.1.5',
+			'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-10.0.1.zip',
 			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
 		'9.0' => [
-			'latest' => '9.0.53',
-			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
+			'latest' => '10.0.1',
+			'internalVersion' => '9.1.1.5',
+			'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-10.0.1.zip',
+			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
 	],
 	'beta' => [
 		'9.1' => [
-			'latest' => '10.0.1RC3',
-			'internalVersion' => '9.1.1.3',
-			'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-10.0.1RC3.zip',
-			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
-		],
-		'9.0.54' => [
-			'latest' => '10.0.1RC3',
-			'internalVersion' => '9.1.1.3',
-			'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-10.0.1RC3.zip',
+			'latest' => '10.0.1',
+			'internalVersion' => '9.1.1.5',
+			'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-10.0.1.zip',
 			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
 		'9.0' => [
-			'latest' => '9.0.54',
-			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
+			'latest' => '10.0.1',
+			'internalVersion' => '9.1.1.5',
+			'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-10.0.1.zip',
+			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
 	],
 	'daily' => [
 		'9.1' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable10.zip',
-			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
+			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
 		'9.0' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable9.zip',
