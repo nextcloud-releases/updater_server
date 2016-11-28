@@ -103,15 +103,15 @@ return [
 	],
 	'beta' => [
 		'11' => [
-			'latest' => '11.0 beta',
-			'internalVersion' => '11.0.0.4',
-			'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-11.0.0beta.zip',
+			'latest' => '11.0 beta 2',
+			'internalVersion' => '11.0.0.5',
+			'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-11.0.0beta2.zip',
 			'web' => 'https://docs.nextcloud.org/server/11/admin_manual/maintenance/manual_upgrade.html',
 		],
 		'9.1' => [
-			'latest' => '11.0 beta',
-			'internalVersion' => '11.0.0.4',
-			'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-11.0.0beta.zip',
+			'latest' => '11.0 beta 2',
+			'internalVersion' => '11.0.0.5',
+			'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-11.0.0beta2.zip',
 			'web' => 'https://docs.nextcloud.org/server/11/admin_manual/maintenance/manual_upgrade.html',
 		],
 		'9.0' => [
