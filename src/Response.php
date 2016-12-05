@@ -44,15 +44,20 @@ class Response {
 	 *
 	 * @param array $versions
 	 * @param string $completeCurrentVersion
+	 * @param string $phpVersion
 	 * @return string
 	 */
-	private function getStableResponse(array $versions, $completeCurrentVersion) {
+	private function getStableResponse(array $versions, $completeCurrentVersion, $phpVersion) {
 		$newVersion = '';
 		foreach($this->getFuzzySearches() as $search) {
 			if(isset($versions[$search])) {
 				$newVersion = $versions[$search];
 				if (!isset($newVersion['internalVersion'])) {
 					$newVersion['internalVersion'] = $newVersion['latest'];
+				}
+				// skip incompatible releases
+				if(isset($newVersion['minPHPVersion']) && version_compare($newVersion['minPHPVersion'], $phpVersion, '>')) {
+					continue;
 				}
 				if(version_compare($newVersion['internalVersion'], $completeCurrentVersion, '<=')) {
 					return '';
@@ -122,16 +127,17 @@ class Response {
 	 */
 	public function buildResponse() {
 		$completeCurrentVersion = $this->request->getMajorVersion().'.'.$this->request->getMinorVersion().'.'.$this->request->getMaintenanceVersion().'.'.$this->request->getRevisionVersion();
+		$phpVersion = $this->request->getPHPMajorVersion() . '.' . $this->request->getPHPMinorVersion() . '.' . $this->request->getPHPReleaseVersion();
 
 		$completeCurrentVersion = rtrim($completeCurrentVersion, '.');
 
 		switch ($this->request->getChannel()) {
 			case 'production':
-				return $this->getStableResponse($this->config->get('production'), $completeCurrentVersion);
+				return $this->getStableResponse($this->config->get('production'), $completeCurrentVersion, $phpVersion);
 			case 'stable':
-				return $this->getStableResponse($this->config->get('stable'), $completeCurrentVersion);
+				return $this->getStableResponse($this->config->get('stable'), $completeCurrentVersion, $phpVersion);
 			case 'beta':
-				return $this->getStableResponse($this->config->get('beta'), $completeCurrentVersion);
+				return $this->getStableResponse($this->config->get('beta'), $completeCurrentVersion, $phpVersion);
 			case 'daily':
 				return $this->getDailyResponse($this->config->get('daily'));
 			default:
