@@ -28,6 +28,9 @@
  * 		// autoupdater is an optional boolean value to define whether the update should be just announced or also delivered
  * 		// defaults to true
  * 		'autoupdater' => true,
+ * 		// minPHPVersion is used to check the transfered PHP against this one here and allows to skip updates that are not compatible with this version of PHP
+ * 		// if nothing is set the PHP version is not checked
+ *      'minPHPVersion' => '5.4',
  * 	],
  * ]
  *
