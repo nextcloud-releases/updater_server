@@ -28,6 +28,13 @@ class Request {
 	private $build;
 	/** @var null|string */
 	private $remoteAddress;
+	/** PHP version defaults to 5.4.0 because all Nextcloud versions run at least with this PHP version */
+	/** @var int|null */
+	private $phpMajorVersion = '5';
+	/** @var int|null */
+	private $phpMinorVersion = '4';
+	/** @var int|null */
+	private $phpReleaseVersion = '0';
 
 	/**
 	 * @param string $versionString
@@ -110,6 +117,27 @@ class Request {
 	}
 
 	/**
+	 * @return int|null
+	 */
+	public function getPHPMajorVersion() {
+		return $this->phpMajorVersion;
+	}
+
+	/**
+	 * @return int|null
+	 */
+	public function getPHPMinorVersion() {
+		return $this->phpMinorVersion;
+	}
+
+	/**
+	 * @return int|null
+	 */
+	public function getPHPReleaseVersion() {
+		return $this->phpReleaseVersion;
+	}
+
+	/**
 	 * @param string $versionString
 	 * @param array $server
 	 * @throws UnsupportedReleaseException If the release is not supported by this update script.
@@ -117,7 +145,7 @@ class Request {
 	private function readVersion($versionString, array $server) {
 		$version = explode('x', $versionString);
 
-		if (count($version) === 9) {
+		if (count($version) === 9 || count($version) === 12) {
 			$this->majorVersion = (int)$version['0'];
 			$this->minorVersion = (int)$version['1'];
 			$this->maintenanceVersion = (int)$version['2'];
@@ -137,6 +165,18 @@ class Request {
 				$this->channel === ''
 			) {
 				$this->channel = 'stable';
+			}
+
+			if(count($version) === 12) {
+				if($version['9'] !== '') {
+					$this->phpMajorVersion = (int)$version['9'];
+				}
+				if($version['10'] !== '') {
+					$this->phpMinorVersion = (int)$version['10'];
+				}
+				if($version['11'] !== '') {
+					$this->phpReleaseVersion = (int)$version['11'];
+				}
 			}
 		} else {
 			throw new UnsupportedReleaseException;

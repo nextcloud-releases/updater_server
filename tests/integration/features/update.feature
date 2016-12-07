@@ -56,18 +56,43 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is empty
 
-  Scenario: Updating an outdated Nextcloud 10.0.0 on the beta channel
+  Scenario: Updating an outdated Nextcloud 10.0.0 on the beta channel with PHP 5.6
     Given There is a release with channel "beta"
     And The received version is "9.1.0"
+    And The received PHP version is "5.6.0"
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.0.6" is available
     And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-11.0.0RC1.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/11/admin_manual/maintenance/manual_upgrade.html"
 
-  Scenario: Updating an outdated Nextcloud 10.0.1 on the beta channel
+  Scenario: Updating an outdated Nextcloud 10.0.0 on the beta channel with PHP 5.4 will receive the latest compatible release
+    Given There is a release with channel "beta"
+    And The received version is "9.1.0"
+    And The received PHP version is "5.4.0"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "9.1.2.1" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-10.0.2RC2.zip"
+    And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+
+  Scenario: Updating an up-to-date Nextcloud 10.0.2 on the beta channel with PHP 5.4
+    Given There is a release with channel "beta"
+    And The received version is "9.1.2.1"
+    And The received PHP version is "5.4.0"
+    When The request is sent
+    Then The response is empty
+
+  Scenario: Updating an up-to-date Nextcloud 10.0.2 on the beta channel without sending PHP version
+    Given There is a release with channel "beta"
+    And The received version is "9.1.2.1"
+    When The request is sent
+    Then The response is empty
+
+  Scenario: Updating an outdated Nextcloud 10.0.1 on the beta channel with PHP 5.6
     Given There is a release with channel "beta"
     And The received version is "9.1.1.1"
+    And The received PHP version is "5.6.0"
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.0.6" is available
@@ -77,6 +102,7 @@ Feature: Testing the update scenario of releases
   Scenario: Updating an outdated Nextcloud 11.0.0 beta on the beta channel
     Given There is a release with channel "beta"
     And The received version is "11.0.0.2"
+    And The received PHP version is "5.6.0"
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.0.6" is available
@@ -86,6 +112,7 @@ Feature: Testing the update scenario of releases
   Scenario: Updating an up-to-date Nextcloud 11.0.0 on the beta channel
     Given There is a release with channel "beta"
     And The received version is "11.0.0.6"
+    And The received PHP version is "5.6.0"
     When The request is sent
     Then The response is empty
 
