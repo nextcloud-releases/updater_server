@@ -22,8 +22,8 @@ Feature: Testing the update scenario of releases
     And The received version is "9.0.50"
     When The request is sent
     Then The response is non-empty
-    And Update to version "9.1.2.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-10.0.2RC1.zip"
+    And Update to version "9.1.2.1" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-10.0.2RC2.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
 
   Scenario: Updating an up-to-date Nextcloud 9.0.54 on the production channel
