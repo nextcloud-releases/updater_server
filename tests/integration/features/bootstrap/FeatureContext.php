@@ -25,6 +25,12 @@ class FeatureContext implements Context, SnippetAcceptingContext {
     private $edition = '';
     /** @var string */
     private $build = '';
+	/** @var string */
+	private $phpMajorVersion = '';
+	/** @var string */
+	private $phpMinorVersion = '';
+	/** @var string */
+	private $phpReleaseVersion = '';
     /** @var string */
     private $result = '';
     /** @var array */
@@ -37,20 +43,31 @@ class FeatureContext implements Context, SnippetAcceptingContext {
         $this->releaseChannel = $arg1;
     }
 
-    /**
-     * @Given The received version is :version
-     */
-    public function theReceivedVersionIs($version) {
-        $version = explode('.', $version);
+	/**
+	 * @Given The received version is :version
+	 */
+	public function theReceivedVersionIs($version) {
+		$version = explode('.', $version);
 
-        $this->majorVersion = $version[0];
-        $this->minorVersion = $version[1];
-        $this->maintenanceVersion = $version[2];
-        $this->revisionVersion = '';
-        if(isset($version[3])) {
-            $this->revisionVersion = $version[3];
-        }
-    }
+		$this->majorVersion = $version[0];
+		$this->minorVersion = $version[1];
+		$this->maintenanceVersion = $version[2];
+		$this->revisionVersion = '';
+		if(isset($version[3])) {
+			$this->revisionVersion = $version[3];
+		}
+	}
+
+	/**
+	 * @Given The received PHP version is :version
+	 */
+	public function theReceivedPHPVersionIs($version) {
+		$version = explode('.', $version);
+
+		$this->phpMajorVersion = $version[0];
+		$this->phpMinorVersion = $version[1];
+		$this->phpReleaseVersion = $version[2];
+	}
 
     /**
      * @Given The received build is :arg1
@@ -76,6 +93,12 @@ class FeatureContext implements Context, SnippetAcceptingContext {
             $this->edition,
             $this->build,
         ];
+
+        if($this->phpMajorVersion !== '') {
+			$parameters[] = $this->phpMajorVersion;
+			$parameters[] = $this->phpMinorVersion;
+			$parameters[] = $this->phpReleaseVersion;
+		}
 
         return implode('x', $parameters);
     }
@@ -154,7 +177,7 @@ class FeatureContext implements Context, SnippetAcceptingContext {
      */
     public function theResponseIsEmpty() {
         if($this->result !== '') {
-            throw new \Exception('Response is not empty');
+            throw new \Exception('Response is not empty:' . PHP_EOL . PHP_EOL . $this->result);
         }
     }
 }
