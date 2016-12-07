@@ -115,9 +115,9 @@ return [
 			'web' => 'https://docs.nextcloud.org/server/11/admin_manual/maintenance/manual_upgrade.html',
 		],
 		'9.0' => [
-			'latest' => '10.0.2 RC1',
-			'internalVersion' => '9.1.2.0',
-			'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-10.0.2RC1.zip',
+			'latest' => '10.0.2 RC2',
+			'internalVersion' => '9.1.2.1',
+			'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-10.0.2RC2.zip',
 			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 		],
 	],
