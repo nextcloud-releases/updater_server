@@ -30,7 +30,7 @@
  * 		'autoupdater' => true,
  * 		// minPHPVersion is used to check the transfered PHP against this one here and allows to skip updates that are not compatible with this version of PHP
  * 		// if nothing is set the PHP version is not checked
- *      'minPHPVersion' => '5.4',
+ * 		'minPHPVersion' => '5.4',
  * 	],
  * ]
  *
@@ -124,9 +124,9 @@ return [
 			'minPHPVersion' => '5.6',
 		],
 		'9.0' => [
-			'latest' => '10.0.2 RC2',
-			'internalVersion' => '9.1.2.1',
-			'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-10.0.2RC2.zip',
+			'latest' => '10.0.2',
+			'internalVersion' => '9.1.2.2',
+			'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-10.0.2.zip',
 			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 			'minPHPVersion' => '5.4',
 		],
