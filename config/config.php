@@ -77,6 +77,13 @@
 
 return [
 	'production' => [
+		'11' => [
+			'latest' => '11.0 RC2',
+			'internalVersion' => '11.0.0.7',
+			'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-11.0.0RC2.zip',
+			'web' => 'https://docs.nextcloud.org/server/11/admin_manual/maintenance/manual_upgrade.html',
+			'minPHPVersion' => '5.6',
+		],	
 		'9.1' => [
 			'latest' => '10.0.2',
 			'internalVersion' => '9.1.2.2',
@@ -93,6 +100,13 @@ return [
 		],
 	],
 	'stable' => [
+		'11' => [
+			'latest' => '11.0 RC2',
+			'internalVersion' => '11.0.0.7',
+			'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-11.0.0RC2.zip',
+			'web' => 'https://docs.nextcloud.org/server/11/admin_manual/maintenance/manual_upgrade.html',
+			'minPHPVersion' => '5.6',
+		],
 		'9.1' => [
 			'latest' => '10.0.2',
 			'internalVersion' => '9.1.2.2',
