@@ -115,7 +115,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.0.7" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.0.zip"
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-11.0.0RC2.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/11/admin_manual/maintenance/manual_upgrade.html"
 
   Scenario: Updating an up-to-date Nextcloud 11.0.0 on the beta channel
