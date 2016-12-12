@@ -63,7 +63,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.0.9" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-11.0.0.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.0.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
 
   Scenario: Updating an outdated Nextcloud 10.0.0 on the beta channel with PHP 5.4 will receive the latest compatible release
@@ -96,7 +96,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.0.9" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-11.0.0.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.0.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
 
   Scenario: Updating an outdated Nextcloud 11.0.0 beta on the beta channel
@@ -106,7 +106,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.0.9" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-11.0.0.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.0.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
 
   Scenario: Updating an outdated Nextcloud 11.0.0 beta on the empty channel - will use the stable channel then
@@ -115,7 +115,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.0.9" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-11.0.0.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.0.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
 
   Scenario: Updating an up-to-date Nextcloud 11.0.0 on the beta channel
@@ -132,7 +132,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.0.9" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-11.0.0.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.0.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
 
   Scenario: Updating an up-to-date Nextcloud 11.0.0 on the stable channel
@@ -149,7 +149,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.0.9" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-11.0.0.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.0.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
 
   Scenario: Updating an up-to-date Nextcloud 11.0.0 on the production channel
