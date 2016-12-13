@@ -79,7 +79,7 @@ return [
 	'production' => [
 		'11' => [
 			'latest' => '11.0.0',
-			'internalVersion' => '11.0.0.9',
+			'internalVersion' => '11.0.0.10',
 			'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-11.0.0.zip',
 			'web' => 'https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html',
 			'minPHPVersion' => '5.6',
@@ -102,7 +102,7 @@ return [
 	'stable' => [
 		'11' => [
 			'latest' => '11.0.0',
-			'internalVersion' => '11.0.0.9',
+			'internalVersion' => '11.0.0.10',
 			'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-11.0.0.zip',
 			'web' => 'https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html',
 			'minPHPVersion' => '5.6',
@@ -125,14 +125,14 @@ return [
 	'beta' => [
 		'11' => [
 			'latest' => '11.0.0',
-			'internalVersion' => '11.0.0.9',
+			'internalVersion' => '11.0.0.10',
 			'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-11.0.0.zip',
 			'web' => 'https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html',
 			'minPHPVersion' => '5.6',
 		],
 		'9.1' => [
 			'latest' => '11.0.0',
-			'internalVersion' => '11.0.0.9',
+			'internalVersion' => '11.0.0.10',
 			'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-11.0.0.zip',
 			'web' => 'https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html',
 			'minPHPVersion' => '5.6',
