@@ -76,6 +76,13 @@ class FeatureContext implements Context, SnippetAcceptingContext {
         $this->build = $arg1;
     }
 
+	/**
+	 * @Given the installation mtime is :time
+	 */
+	public function theInstallationMtimeIs($time) {
+		$this->installationMtime = $time;
+	}
+
     /**
      * Builds the version to sent
      *

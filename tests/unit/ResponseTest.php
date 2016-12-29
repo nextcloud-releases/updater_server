@@ -18,6 +18,8 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 	private $response;
 
 	public function setUp() {
+		date_default_timezone_set('Europe/Berlin');
+
 		$this->request = $this->getMockBuilder('\UpdateServer\Request')
 			->disableOriginalConstructor()->getMock();
 		$this->config = $this->getMockBuilder('\UpdateServer\Config')
@@ -1114,37 +1116,53 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 												$expected) {
 		$config = [
 			'8.2' => [
-				'latest' => '8.2.2',
-				'web' => 'https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html',
+				'100' => [
+					'latest' => '8.2.2',
+					'web' => 'https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html',
+				],
 			],
 			'8.1' => [
-				'latest' => '8.1.5',
-				'web' => 'https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html',
+				'100' => [
+					'latest' => '8.1.5',
+					'web' => 'https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html',
+				],
 			],
 			'8.0' => [
-				'latest' => '8.0.10',
-				'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+				'100' => [
+					'latest' => '8.0.10',
+					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+				],
 			],
 			'8.0.7' => [
-				'latest' => '8.0.7.1',
-				'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+				'100' => [
+					'latest' => '8.0.7.1',
+					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+				],
 			],
 			'8.0.7.1' => [
-				'latest' => '8.0.8',
-				'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+				'100' => [
+					'latest' => '8.0.8',
+					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+				],
 			],
 			'8.0.8' => [
-				'latest' => '8.0.9',
-				'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+				'100' => [
+					'latest' => '8.0.9',
+					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+				],
 			],
 			'7' => [
-				'latest' => '7.0.12',
-				'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+				'100' => [
+					'latest' => '7.0.12',
+					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+				],
 			],
 			'6' => [
-				'latest' => '7.0.12',
-				'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
-				'downloadUrl' => 'https://downloads.owncloud.com/foo.zip',
+				'100' => [
+					'latest' => '7.0.12',
+					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+					'downloadUrl' => 'https://downloads.owncloud.com/foo.zip',
+				]
 			],
 		];
 		$this->request
@@ -1194,45 +1212,61 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 												$expected) {
 		$config = [
 			'8.2' => [
-				'latest' => '8.2.2',
-				'web' => 'https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html',
-				'autoupdater' => false,
+				'100' => [
+					'latest' => '8.2.2',
+					'web' => 'https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html',
+					'autoupdater' => false,
+				],
 			],
 			'8.1' => [
-				'latest' => '8.1.5',
-				'web' => 'https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html',
-				'autoupdater' => false,
+				'100' => [
+					'latest' => '8.1.5',
+					'web' => 'https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html',
+					'autoupdater' => false,
+				],
 			],
 			'8.0' => [
-				'latest' => '8.0.10',
-				'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
-				'autoupdater' => false,
+				'100' => [
+					'latest' => '8.0.10',
+					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+					'autoupdater' => false,
+				],
 			],
 			'8.0.7' => [
-				'latest' => '8.0.7.1',
-				'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
-				'autoupdater' => false,
+				'100' => [
+					'latest' => '8.0.7.1',
+					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+					'autoupdater' => false,
+				],
 			],
 			'8.0.7.1' => [
-				'latest' => '8.0.8',
-				'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
-				'autoupdater' => false,
+				'100' => [
+					'latest' => '8.0.8',
+					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+					'autoupdater' => false,
+				],
 			],
 			'8.0.8' => [
-				'latest' => '8.0.9',
-				'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
-				'autoupdater' => false,
+				'100' => [
+					'latest' => '8.0.9',
+					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+					'autoupdater' => false,
+				],
 			],
 			'7' => [
-				'latest' => '7.0.12',
-				'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
-				'autoupdater' => false,
+				'100' => [
+					'latest' => '7.0.12',
+					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+					'autoupdater' => false,
+				],
 			],
 			'6' => [
-				'latest' => '7.0.12',
-				'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
-				'downloadUrl' => 'https://downloads.owncloud.com/foo.zip',
-				'autoupdater' => false,
+				'100' => [
+					'latest' => '7.0.12',
+					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+					'downloadUrl' => 'https://downloads.owncloud.com/foo.zip',
+					'autoupdater' => false,
+				],
 			],
 		];
 		$this->request
@@ -1260,6 +1294,101 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 			->expects($this->any())
 			->method('getRevisionVersion')
 			->willReturn($revisionVersion);
+
+		$this->assertSame($expected, $this->response->buildResponse());
+	}
+
+	public function updateChanceDataProvider() {
+		return [
+			[
+				'9901',
+				'<?xml version="1.0" encoding="UTF-8"?>
+<nextcloud>
+ <version>9.0.0</version>
+ <versionstring>Nextcloud 9.0.0</versionstring>
+ <url>https://download.nextcloud.com/server/releases/nextcloud-9.0.0.zip</url>
+ <web>https://doc.owncloud.org/server/9.0/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>0</autoupdater>
+</nextcloud>
+',
+			],
+			[
+				'9994',
+				'<?xml version="1.0" encoding="UTF-8"?>
+<nextcloud>
+ <version>8.2.2</version>
+ <versionstring>Nextcloud 8.2.2</versionstring>
+ <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
+ <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>0</autoupdater>
+</nextcloud>
+',
+			],
+			[
+				'',
+				'<?xml version="1.0" encoding="UTF-8"?>
+<nextcloud>
+ <version>8.2.2</version>
+ <versionstring>Nextcloud 8.2.2</versionstring>
+ <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
+ <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>0</autoupdater>
+</nextcloud>
+',
+			],
+		];
+	}
+
+	/**
+	 * @dataProvider updateChanceDataProvider
+	 * @param string $mtime
+	 * @param string $expected
+	 */
+	public function testBuildResponseStableChannelWithUpdateChance($mtime, $expected) {
+		$config = [
+			'8.2' => [
+				'95' => [
+					'latest' => '8.2.2',
+					'web' => 'https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html',
+					'autoupdater' => false,
+				],
+				'5' => [
+					'latest' => '9.0.0',
+					'web' => 'https://doc.owncloud.org/server/9.0/admin_manual/maintenance/upgrade.html',
+					'autoupdater' => false,
+				]
+			],
+		];
+
+		$this->request
+			->expects($this->any())
+			->method('getChannel')
+			->willReturn('production');
+		$this->config
+			->expects($this->any())
+			->method('get')
+			->with('production')
+			->willReturn($config);
+		$this->request
+			->expects($this->any())
+			->method('getMajorVersion')
+			->willReturn('8');
+		$this->request
+			->expects($this->any())
+			->method('getMinorVersion')
+			->willReturn('2');
+		$this->request
+			->expects($this->any())
+			->method('getMaintenanceVersion')
+			->willReturn('0');
+		$this->request
+			->expects($this->any())
+			->method('getRevisionVersion')
+			->willReturn('0');
+		$this->request
+			->expects($this->any())
+			->method('getInstallationMtime')
+			->willReturn($mtime);
 
 		$this->assertSame($expected, $this->response->buildResponse());
 	}
