@@ -45,16 +45,37 @@ class Response {
 	 * @param array $versions
 	 * @param string $completeCurrentVersion
 	 * @param string $phpVersion
+	 * @param int $installationMtime
 	 * @return string
 	 */
-	private function getStableResponse(array $versions, $completeCurrentVersion, $phpVersion) {
+	private function getStableResponse(array $versions,
+									   $completeCurrentVersion,
+									   $phpVersion,
+									   $installationMtime) {
 		$newVersion = '';
 		foreach($this->getFuzzySearches() as $search) {
 			if(isset($versions[$search])) {
-				$newVersion = $versions[$search];
+				/** @var array $newVersions */
+				$newVersions = $versions[$search];
+
+				$counter = 0;
+				$instanceChance = (int)substr($installationMtime, -2);
+				if($instanceChance !== 0) {
+					ksort($newVersions);
+				}
+
+				foreach($newVersions as $chance => $updateOptions) {
+					$counter += $chance;
+					if($instanceChance <= $counter) {
+						$newVersion = $newVersions[$chance];
+						break;
+					}
+				}
+
 				if (!isset($newVersion['internalVersion'])) {
 					$newVersion['internalVersion'] = $newVersion['latest'];
 				}
+
 				// skip incompatible releases
 				if(isset($newVersion['minPHPVersion']) && version_compare($newVersion['minPHPVersion'], $phpVersion, '>')) {
 					continue;
@@ -133,11 +154,26 @@ class Response {
 
 		switch ($this->request->getChannel()) {
 			case 'production':
-				return $this->getStableResponse($this->config->get('production'), $completeCurrentVersion, $phpVersion);
+				return $this->getStableResponse(
+					$this->config->get('production'),
+					$completeCurrentVersion,
+					$phpVersion,
+					$this->request->getInstallationMtime()
+				);
 			case 'stable':
-				return $this->getStableResponse($this->config->get('stable'), $completeCurrentVersion, $phpVersion);
+				return $this->getStableResponse(
+					$this->config->get('stable'),
+					$completeCurrentVersion,
+					$phpVersion,
+					$this->request->getInstallationMtime()
+				);
 			case 'beta':
-				return $this->getStableResponse($this->config->get('beta'), $completeCurrentVersion, $phpVersion);
+				return $this->getStableResponse(
+					$this->config->get('beta'),
+					$completeCurrentVersion,
+					$phpVersion,
+					$this->request->getInstallationMtime()
+				);
 			case 'daily':
 				return $this->getDailyResponse($this->config->get('daily'));
 			default:
