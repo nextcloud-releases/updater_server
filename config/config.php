@@ -106,14 +106,7 @@
 return [
 	'production' => [
 		'11' => [
-			'5' => [
-				'latest' => '11.0.1',
-				'internalVersion' => '11.0.1.0',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-11.0.1.zip',
-				'web' => 'https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html',
-				'minPHPVersion' => '5.6',
-			],
-			'95' => [
+			'100' => [
 				'latest' => '11.0.0',
 				'internalVersion' => '11.0.0.10',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-11.0.0.zip',
@@ -123,9 +116,9 @@ return [
 		],	
 		'9.1' => [
 			'100' => [
-				'latest' => '10.0.3',
-				'internalVersion' => '9.1.3.0',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-10.0.3.zip',
+				'latest' => '10.0.2',
+				'internalVersion' => '9.1.2.2',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-10.0.2.zip',
 				'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 				'minPHPVersion' => '5.4',
 			],
@@ -142,14 +135,7 @@ return [
 	],
 	'stable' => [
 		'11' => [
-			'5' => [
-				'latest' => '11.0.1',
-				'internalVersion' => '11.0.1.0',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-11.0.1.zip',
-				'web' => 'https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html',
-				'minPHPVersion' => '5.6',
-			],
-			'95' => [
+			'100' => [
 				'latest' => '11.0.0',
 				'internalVersion' => '11.0.0.10',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-11.0.0.zip',
@@ -158,14 +144,7 @@ return [
 			],
 		],
 		'9.1' => [
-			'5' => [
-				'latest' => '10.0.3',
-				'internalVersion' => '9.1.3.0',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-10.0.3.zip',
-				'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
-				'minPHPVersion' => '5.4',
-			],
-			'95' => [
+			'100' => [
 				'latest' => '10.0.2',
 				'internalVersion' => '9.1.2.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-10.0.2.zip',
@@ -174,14 +153,7 @@ return [
 			],
 		],
 		'9.0' => [
-			'5' => [
-				'latest' => '10.0.3',
-				'internalVersion' => '9.1.3.0',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-10.0.3.zip',
-				'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
-				'minPHPVersion' => '5.4',
-			],
-			'95' => [
+			'100' => [
 				'latest' => '10.0.2',
 				'internalVersion' => '9.1.2.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-10.0.2.zip',
@@ -193,27 +165,27 @@ return [
 	'beta' => [
 		'11' => [
 			'100' => [
-				'latest' => '11.0.1',
-				'internalVersion' => '11.0.1.0',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-11.0.1.zip',
+				'latest' => '11.0.1 RC1',
+				'internalVersion' => '11.0.1.1',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-11.0.1RC1.zip',
 				'web' => 'https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html',
 				'minPHPVersion' => '5.6',
 			],
 		],
 		'9.1' => [
 			'100' => [
-				'latest' => '11.0.1',
-				'internalVersion' => '11.0.1.0',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-11.0.1.zip',
+				'latest' => '11.0.1 RC1',
+				'internalVersion' => '11.0.1.1',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-11.0.1RC1.zip',
 				'web' => 'https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html',
 				'minPHPVersion' => '5.6',
 			],
 		],
 		'9.0' => [
 			'100' => [
-				'latest' => '10.0.3',
-				'internalVersion' => '9.1.3.0',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-10.0.3.zip',
+				'latest' => '10.0.3 RC1',
+				'internalVersion' => '9.1.3.1',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-10.0.3RC1.zip',
 				'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 				'minPHPVersion' => '5.4',
 			],
