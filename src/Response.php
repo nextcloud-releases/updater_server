@@ -78,8 +78,10 @@ class Response {
 
 				// skip incompatible releases
 				if(isset($newVersion['minPHPVersion']) && version_compare($newVersion['minPHPVersion'], $phpVersion, '>')) {
+					$newVersion = '';
 					continue;
 				}
+
 				if(version_compare($newVersion['internalVersion'], $completeCurrentVersion, '<=')) {
 					return '';
 				} else {
@@ -148,7 +150,14 @@ class Response {
 	 */
 	public function buildResponse() {
 		$completeCurrentVersion = $this->request->getMajorVersion().'.'.$this->request->getMinorVersion().'.'.$this->request->getMaintenanceVersion().'.'.$this->request->getRevisionVersion();
-		$phpVersion = $this->request->getPHPMajorVersion() . '.' . $this->request->getPHPMinorVersion() . '.' . $this->request->getPHPReleaseVersion();
+		$phpVersion = implode(
+			'.',
+			[
+				$this->request->getPHPMajorVersion(),
+				$this->request->getPHPMinorVersion(),
+				$this->request->getPHPReleaseVersion(),
+			]
+		);
 
 		$completeCurrentVersion = rtrim($completeCurrentVersion, '.');
 
