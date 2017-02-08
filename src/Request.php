@@ -178,6 +178,14 @@ class Request {
 					$this->phpReleaseVersion = (int)$version['11'];
 				}
 			}
+
+			// Nextcloud 11 at least runs on PHP 5.6 (so if there is PHP 5.4 and Nextcloud 11 detected we set it to PHP 5.6)
+			if ($this->majorVersion === 11 &&
+				$this->phpMajorVersion === '5' &&
+				$this->phpMinorVersion === '4') {
+
+				$this->phpMinorVersion = '6';
+			}
 		} else {
 			throw new UnsupportedReleaseException;
 		}

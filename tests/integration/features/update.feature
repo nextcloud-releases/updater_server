@@ -56,6 +56,16 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is empty
 
+  Scenario: Updating an outdated Nextcloud 10.0.2 on the stable channel without PHP version
+    Given There is a release with channel "stable"
+    And The received version is "9.1.2.0"
+    When The request is sent
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "9.1.3.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-10.0.3.zip"
+    And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+
   Scenario: Updating an outdated Nextcloud 10.0.0 on the beta channel with PHP 5.6
     Given There is a release with channel "beta"
     And The received version is "9.1.0"
@@ -103,6 +113,15 @@ Feature: Testing the update scenario of releases
     Given There is a release with channel "beta"
     And The received version is "11.0.0.2"
     And The received PHP version is "5.6.0"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "11.0.1.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.1.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+
+  Scenario: Updating an outdated Nextcloud 11.0.0 stable without PHP version
+    Given There is a release with channel "stable"
+    And The received version is "11.0.0.2"
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.1.2" is available
