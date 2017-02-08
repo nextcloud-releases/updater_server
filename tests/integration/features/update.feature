@@ -112,6 +112,7 @@ Feature: Testing the update scenario of releases
   Scenario: Updating an outdated Nextcloud 11.0.0 beta on the empty channel - will use the stable channel then
     Given There is a release with channel ""
     And The received version is "11.0.0.2"
+    And The received PHP version is "5.6.0"
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.1.2" is available

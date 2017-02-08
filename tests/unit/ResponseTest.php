@@ -1302,6 +1302,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 		return [
 			[
 				'9901',
+				6,
 				'<?xml version="1.0" encoding="UTF-8"?>
 <nextcloud>
  <version>9.0.0</version>
@@ -1314,6 +1315,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 			],
 			[
 				'9994',
+				6,
 				'<?xml version="1.0" encoding="UTF-8"?>
 <nextcloud>
  <version>8.2.2</version>
@@ -1325,7 +1327,13 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 ',
 			],
 			[
+				'9901',
+				4,
 				'',
+			],
+			[
+				'',
+				4,
 				'<?xml version="1.0" encoding="UTF-8"?>
 <nextcloud>
  <version>8.2.2</version>
@@ -1342,20 +1350,23 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 	/**
 	 * @dataProvider updateChanceDataProvider
 	 * @param string $mtime
+	 * @param string $phpMinorVersion
 	 * @param string $expected
 	 */
-	public function testBuildResponseStableChannelWithUpdateChance($mtime, $expected) {
+	public function testBuildResponseStableChannelWithUpdateChance($mtime, $phpMinorVersion, $expected) {
 		$config = [
 			'8.2' => [
 				'95' => [
 					'latest' => '8.2.2',
 					'web' => 'https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html',
 					'autoupdater' => false,
+					'minPHPVersion' => '5.4',
 				],
 				'5' => [
 					'latest' => '9.0.0',
 					'web' => 'https://doc.owncloud.org/server/9.0/admin_manual/maintenance/upgrade.html',
 					'autoupdater' => false,
+					'minPHPVersion' => '5.6',
 				]
 			],
 		];
@@ -1389,6 +1400,18 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 			->expects($this->any())
 			->method('getInstallationMtime')
 			->willReturn($mtime);
+		$this->request
+			->expects($this->any())
+			->method('getPHPMajorVersion')
+			->willReturn('5');
+		$this->request
+			->expects($this->any())
+			->method('getPHPMinorVersion')
+			->willReturn($phpMinorVersion);
+		$this->request
+			->expects($this->any())
+			->method('getPHPReleaseVersion')
+			->willReturn('0');
 
 		$this->assertSame($expected, $this->response->buildResponse());
 	}
