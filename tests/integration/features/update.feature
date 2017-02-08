@@ -44,14 +44,104 @@ Feature: Testing the update scenario of releases
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-10.0.3.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
 
-  Scenario: Updating an up-to-date Nextcloud 10.0.3 on the production channel
+  Scenario: Updating an outdated non-staged Nextcloud 10.0.3 with PHP 5.6 on the production channel
     Given There is a release with channel "production"
+    And The received PHP version is "5.6.0"
+    And the installation mtime is "21"
+    And The received version is "9.1.0.2"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "9.1.3.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-10.0.3.zip"
+    And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+
+  Scenario: Updating an outdated non-staged Nextcloud 10.0.3 with PHP 5.4 on the production channel
+    Given There is a release with channel "production"
+    And The received PHP version is "5.4.0"
+    And the installation mtime is "21"
+    And The received version is "9.1.0.2"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "9.1.3.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-10.0.3.zip"
+    And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+
+  Scenario: Updating an outdated staged Nextcloud 10.0.3 with PHP 5.4 on the production channel
+    Given There is a release with channel "production"
+    And The received PHP version is "5.4.0"
+    And the installation mtime is "20"
+    And The received version is "9.1.0.2"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "9.1.3.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-10.0.3.zip"
+    And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+
+  Scenario: Updating an up-to-date Nextcloud 10.0.3 with PHP 5.6 and no mtime on the production channel
+    Given There is a release with channel "production"
+    And The received PHP version is "5.6.0"
+    And The received version is "9.1.0.2"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "11.0.1.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.1.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+
+  Scenario: Updating an up-to-date non-staged Nextcloud 10.0.3 with PHP 5.6 on the production channel
+    Given There is a release with channel "production"
+    And The received PHP version is "5.6.0"
+    And the installation mtime is "21"
     And The received version is "9.1.3.2"
     When The request is sent
     Then The response is empty
 
-  Scenario: Updating an up-to-date Nextcloud 10.0.3 on the stable channel
+  Scenario: Updating an up-to-date non-staged Nextcloud 10.0.3 with PHP 5.4 on the production channel
+    Given There is a release with channel "production"
+    And The received PHP version is "5.4.0"
+    And the installation mtime is "21"
+    And The received version is "9.1.3.2"
+    When The request is sent
+    Then The response is empty
+
+  Scenario: Updating an up-to-date staged Nextcloud 10.0.3 with PHP 5.4 on the production channel
+    Given There is a release with channel "production"
+    And The received PHP version is "5.4.0"
+    And the installation mtime is "20"
+    And The received version is "9.1.3.2"
+    When The request is sent
+    Then The response is empty
+
+  Scenario: Updating an up-to-date staged Nextcloud 10.0.3 with PHP 5.6 on the production channel
+    Given There is a release with channel "production"
+    And The received PHP version is "5.6.0"
+    And the installation mtime is "20"
+    And The received version is "9.1.3.2"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "11.0.1.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.1.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+
+  Scenario: Updating an up-to-date non-staged Nextcloud 10.0.3 with PHP 5.6 on the stable channel
     Given There is a release with channel "stable"
+    And The received PHP version is "5.6.0"
+    And the installation mtime is "21"
+    And The received version is "9.1.3.2"
+    When The request is sent
+    Then The response is empty
+
+  Scenario: Updating an up-to-date non-staged Nextcloud 10.0.3 with PHP 5.4 on the stable channel
+    Given There is a release with channel "stable"
+    And The received PHP version is "5.4.0"
+    And the installation mtime is "21"
+    And The received version is "9.1.3.2"
+    When The request is sent
+    Then The response is empty
+
+  Scenario: Updating an up-to-date staged Nextcloud 10.0.3 with PHP 5.4 on the stable channel
+    Given There is a release with channel "stable"
+    And The received PHP version is "5.4.0"
+    And the installation mtime is "20"
     And The received version is "9.1.3.2"
     When The request is sent
     Then The response is empty
@@ -65,6 +155,17 @@ Feature: Testing the update scenario of releases
     And Update to version "9.1.3.2" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-10.0.3.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+
+  Scenario: Updating an up-to-date staged Nextcloud 10.0.3 with PHP 5.6 on the stable channel
+    Given There is a release with channel "stable"
+    And The received PHP version is "5.6.0"
+    And the installation mtime is "20"
+    And The received version is "9.1.3.2"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "11.0.1.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.1.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
 
   Scenario: Updating an outdated Nextcloud 10.0.0 on the beta channel with PHP 5.6
     Given There is a release with channel "beta"
@@ -145,38 +246,34 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is empty
 
-  Scenario: Updating an outdated staged Nextcloud 11.0.0 beta on the stable channel
+  Scenario: Updating an outdated Nextcloud 11.0.0 beta on the stable channel
     Given There is a release with channel "stable"
     And The received version is "11.0.0.2"
     And The received PHP version is "5.6.0"
-    And the installation mtime is "999904"
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.1.2" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
 
-  Scenario: Updating an outdated not-staged Nextcloud 11.0.0 beta on the stable channel
+  Scenario: Updating an outdated Nextcloud 11.0.0 beta on the stable channel
     Given There is a release with channel "stable"
     And The received version is "11.0.1.2"
     And The received PHP version is "5.6.0"
-    And the installation mtime is "999906"
     When The request is sent
     Then The response is empty
 
-  Scenario: Updating an out-dated not staged Nextcloud 11.0.0 on the stable channel
+  Scenario: Updating an out-dated Nextcloud 11.0.0 on the stable channel
     Given There is a release with channel "stable"
     And The received version is "11.0.1.2"
     And The received PHP version is "5.6.0"
-    And the installation mtime is "999906"
     When The request is sent
     Then The response is empty
 
-  Scenario: Updating an up-to-date staged Nextcloud 11.0.0 on the stable channel
+  Scenario: Updating an up-to-date Nextcloud 11.0.0 on the stable channel
     Given There is a release with channel "stable"
     And The received version is "11.0.1.2"
     And The received PHP version is "5.6.0"
-    And the installation mtime is "999904"
     When The request is sent
     Then The response is empty
 

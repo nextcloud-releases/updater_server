@@ -58,15 +58,15 @@ class Response {
 				/** @var array $newVersions */
 				$newVersions = $versions[$search];
 
-				$counter = 0;
+				$counter = 100;
 				$instanceChance = (int)substr($installationMtime, -2);
 				if($instanceChance !== 0) {
 					ksort($newVersions);
 				}
 
 				foreach($newVersions as $chance => $updateOptions) {
-					$counter += $chance;
-					if($instanceChance <= $counter) {
+					$counter -= $chance;
+					if($instanceChance <= (100 - $counter)) {
 						$newVersion = $newVersions[$chance];
 						break;
 					}
