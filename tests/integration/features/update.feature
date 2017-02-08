@@ -177,10 +177,16 @@ Feature: Testing the update scenario of releases
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
 
-  Scenario: Updating an up-to-date Nextcloud 11.0.2 on the production channel
+  Scenario: Updating an up-to-date Nextcloud 11.0.2 on the production channel with PHP 5.6
     Given There is a release with channel "production"
     And The received version is "11.0.2.1"
     And The received PHP version is "5.6.0"
+    When The request is sent
+    Then The response is empty
+
+  Scenario: Updating an up-to-date Nextcloud 11.0.2 on the production channel without PHP version
+    Given There is a release with channel "production"
+    And The received version is "11.0.2.1"
     When The request is sent
     Then The response is empty
 
