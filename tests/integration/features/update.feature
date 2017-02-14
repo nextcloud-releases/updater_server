@@ -47,7 +47,7 @@ Feature: Testing the update scenario of releases
   Scenario: Updating an outdated non-staged Nextcloud 10.0.3 with PHP 5.6 on the production channel
     Given There is a release with channel "production"
     And The received PHP version is "5.6.0"
-    And the installation mtime is "61"
+    And the installation mtime is "40"
     And The received version is "9.1.0.2"
     When The request is sent
     Then The response is non-empty
@@ -58,7 +58,7 @@ Feature: Testing the update scenario of releases
   Scenario: Updating an outdated non-staged Nextcloud 10.0.3 with PHP 5.4 on the production channel
     Given There is a release with channel "production"
     And The received PHP version is "5.4.0"
-    And the installation mtime is "61"
+    And the installation mtime is "40"
     And The received version is "9.1.0.2"
     When The request is sent
     Then The response is non-empty
@@ -90,7 +90,7 @@ Feature: Testing the update scenario of releases
   Scenario: Updating an up-to-date non-staged Nextcloud 10.0.3 with PHP 5.6 on the production channel
     Given There is a release with channel "production"
     And The received PHP version is "5.6.0"
-    And the installation mtime is "61"
+    And the installation mtime is "40"
     And The received version is "9.1.3.2"
     When The request is sent
     Then The response is empty
@@ -125,7 +125,7 @@ Feature: Testing the update scenario of releases
   Scenario: Updating an up-to-date non-staged Nextcloud 10.0.3 with PHP 5.6 on the stable channel
     Given There is a release with channel "stable"
     And The received PHP version is "5.6.0"
-    And the installation mtime is "61"
+    And the installation mtime is "40"
     And The received version is "9.1.3.2"
     When The request is sent
     Then The response is empty
