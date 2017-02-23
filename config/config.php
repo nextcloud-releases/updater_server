@@ -206,6 +206,11 @@ return [
 		],
 	],
 	'daily' => [
+		'12' => [
+			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-master.zip',
+			'web' => 'https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html',
+			'minPHPVersion' => '5.6',
+		],
 		'11' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable11.zip',
 			'web' => 'https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html',
