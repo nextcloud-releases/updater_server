@@ -296,14 +296,14 @@ Feature: Testing the update scenario of releases
 
   Scenario: Updating an up-to-date Nextcloud 11.0.2 on the production channel with PHP 5.6
     Given There is a release with channel "production"
-    And The received version is "11.0.2.1"
+    And The received version is "11.0.2.7"
     And The received PHP version is "5.6.0"
     When The request is sent
     Then The response is empty
 
   Scenario: Updating an up-to-date Nextcloud 11.0.2 on the production channel without PHP version
     Given There is a release with channel "production"
-    And The received version is "11.0.2.1"
+    And The received version is "11.0.2.7"
     When The request is sent
     Then The response is empty
 
