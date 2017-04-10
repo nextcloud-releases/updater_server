@@ -115,14 +115,15 @@ return [
 			],
 		],
 		'9.1' => [
-			'80' => [
+			'100' => [
 				'latest' => '11.0.2',
 				'internalVersion' => '11.0.2.7',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-11.0.2.zip',
 				'web' => 'https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html',
 				'minPHPVersion' => '5.6',
 			],
-			'20' => [
+			// For PHP 5.4 users
+			'0' => [
 				'latest' => '10.0.3',
 				'internalVersion' => '9.1.3.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-10.0.3.zip',
@@ -151,14 +152,15 @@ return [
 			],
 		],
 		'9.1' => [
-			'80' => [
+			'100' => [
 				'latest' => '11.0.2',
 				'internalVersion' => '11.0.2.7',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-11.0.2.zip',
 				'web' => 'https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html',
 				'minPHPVersion' => '5.6',
 			],
-			'20' => [
+			// For PHP 5.4 users
+			'0' => [
 				'latest' => '10.0.3',
 				'internalVersion' => '9.1.3.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-10.0.3.zip',
