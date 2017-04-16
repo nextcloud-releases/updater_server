@@ -124,7 +124,32 @@ class FeatureContext implements Context, SnippetAcceptingContext {
         curl_close($ch);
     }
 
-    /**
+	/**
+	 * @Then The signature is
+	 *
+	 * @param \Behat\Gherkin\Node\PyStringNode $string
+	 * @throws Exception
+	 */
+	public function theSignatureIs(\Behat\Gherkin\Node\PyStringNode $string) {
+		if(isset($this->resultArray['signature'])) {
+			if($this->resultArray['signature'] === $string->getRaw()) {
+				return;
+			}
+		}
+
+		throw new \Exception('Invalid signature');
+	}
+
+	/**
+	 * @Then No signature is set
+	 */
+	public function noSignatureIsSet()  {
+		if(isset($this->resultArray['signature'])) {
+			throw new \Exception('Signature is set');
+		}
+	}
+
+	/**
      * @Then The response is non-empty
      */
     public function theResponseIsNonEmpty() {
@@ -135,8 +160,8 @@ class FeatureContext implements Context, SnippetAcceptingContext {
         $xml = simplexml_load_string($this->result);
         $json = json_encode($xml);
         $this->resultArray = json_decode($json, TRUE);
-        if(count($this->resultArray) !== 5) {
-            throw new \Exception('Response contains not 5 array elements.');
+        if(count($this->resultArray) !== 5 && count($this->resultArray) !== 6) {
+            throw new \Exception('Response contains not 5 or 6 array elements.');
         }
     }
 
