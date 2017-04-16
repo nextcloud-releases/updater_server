@@ -109,6 +109,9 @@ class Response {
 		$writer->writeElement('url', $downloadUrl);
 		$writer->writeElement('web', $newVersion['web']);
 		$writer->writeElement('autoupdater', isset($newVersion['autoupdater']) ? (int)$newVersion['autoupdater'] : true);
+		if(isset($newVersion['signature'])) {
+			$writer->writeElement('signature', $newVersion['signature']);
+		}
 		$writer->endElement();
 		$writer->endDocument();
 		return $writer->flush();

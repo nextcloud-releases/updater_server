@@ -7,6 +7,7 @@ Feature: Testing the update scenario of releases
     And Update to version "9.1.3.2" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-10.0.3.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+    And No signature is set
 
   Scenario: Updating an outdated Nextcloud 9.0.50 on the stable channel
     Given There is a release with channel "stable"
@@ -16,6 +17,7 @@ Feature: Testing the update scenario of releases
     And Update to version "9.1.3.2" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-10.0.3.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+    And No signature is set
 
   Scenario: Updating an outdated Nextcloud 9.0.50 on the beta channel
     Given There is a release with channel "beta"
@@ -25,6 +27,7 @@ Feature: Testing the update scenario of releases
     And Update to version "9.1.3.2" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-10.0.3.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+    And No signature is set
 
   Scenario: Updating an up-to-date Nextcloud 9.0.55 on the production channel
     Given There is a release with channel "production"
@@ -34,6 +37,7 @@ Feature: Testing the update scenario of releases
     And Update to version "9.1.3.2" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-10.0.3.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+    And No signature is set
 
   Scenario: Updating an up-to-date Nextcloud 9.0.55 on the stable channel
     Given There is a release with channel "stable"
@@ -43,6 +47,7 @@ Feature: Testing the update scenario of releases
     And Update to version "9.1.3.2" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-10.0.3.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+    And No signature is set
 
   Scenario: Updating an outdated staged Nextcloud 10.0.3 with PHP 5.4 on the production channel
     Given There is a release with channel "production"
@@ -54,6 +59,7 @@ Feature: Testing the update scenario of releases
     And Update to version "9.1.3.2" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-10.0.3.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+    And No signature is set
 
   Scenario: Updating an up-to-date Nextcloud 10.0.3 with PHP 5.6 and no mtime on the production channel
     Given There is a release with channel "production"
@@ -64,6 +70,15 @@ Feature: Testing the update scenario of releases
     And Update to version "11.0.2.7" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+    And The signature is
+    """
+  hvw4zZs6gSeP4TlU0kkfpJ1tgaSrD2M8V/MANX/YqwZBy9mG8z67Mtt07sbYByHh
+  kWVd2uVmVoiEcmNEtiJUE1WEcrC+YSAFUTl8P4MjUa2jEC3k37zIn1WcFI8ZqRiH
+  EBYiSef87rZXjcvuta5fC4O0cOaxU3pVkNVqeP9T0tHEI4Oorj5Uj8qoiuIH2Xbc
+  chLfk+x/EatNAlTE6NJo6rJnquCErooOPgLl6k48oOcgJZZtOQ1xDhb69Yug25bv
+  V12smv+3iUGpQBIJnBhIZY+Ww7SOCCca/ss1f+/uEMr3NFGiDgJ4KYoxF/pYaGo4
+  MgK0pHPeAIesiUnEEq8y6w==
+    """
 
   Scenario: Updating an up-to-date staged Nextcloud 10.0.3 with PHP 5.4 on the production channel
     Given There is a release with channel "production"
@@ -83,6 +98,15 @@ Feature: Testing the update scenario of releases
     And Update to version "11.0.2.7" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+    And The signature is
+    """
+  hvw4zZs6gSeP4TlU0kkfpJ1tgaSrD2M8V/MANX/YqwZBy9mG8z67Mtt07sbYByHh
+  kWVd2uVmVoiEcmNEtiJUE1WEcrC+YSAFUTl8P4MjUa2jEC3k37zIn1WcFI8ZqRiH
+  EBYiSef87rZXjcvuta5fC4O0cOaxU3pVkNVqeP9T0tHEI4Oorj5Uj8qoiuIH2Xbc
+  chLfk+x/EatNAlTE6NJo6rJnquCErooOPgLl6k48oOcgJZZtOQ1xDhb69Yug25bv
+  V12smv+3iUGpQBIJnBhIZY+Ww7SOCCca/ss1f+/uEMr3NFGiDgJ4KYoxF/pYaGo4
+  MgK0pHPeAIesiUnEEq8y6w==
+    """
 
   Scenario: Updating an up-to-date staged Nextcloud 10.0.3 with PHP 5.4 on the stable channel
     Given There is a release with channel "stable"
@@ -101,6 +125,7 @@ Feature: Testing the update scenario of releases
     And Update to version "9.1.3.2" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-10.0.3.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+    And No signature is set
 
   Scenario: Updating an up-to-date staged Nextcloud 10.0.3 with PHP 5.6 on the stable channel
     Given There is a release with channel "stable"
@@ -112,6 +137,15 @@ Feature: Testing the update scenario of releases
     And Update to version "11.0.2.7" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+    And The signature is
+    """
+  hvw4zZs6gSeP4TlU0kkfpJ1tgaSrD2M8V/MANX/YqwZBy9mG8z67Mtt07sbYByHh
+  kWVd2uVmVoiEcmNEtiJUE1WEcrC+YSAFUTl8P4MjUa2jEC3k37zIn1WcFI8ZqRiH
+  EBYiSef87rZXjcvuta5fC4O0cOaxU3pVkNVqeP9T0tHEI4Oorj5Uj8qoiuIH2Xbc
+  chLfk+x/EatNAlTE6NJo6rJnquCErooOPgLl6k48oOcgJZZtOQ1xDhb69Yug25bv
+  V12smv+3iUGpQBIJnBhIZY+Ww7SOCCca/ss1f+/uEMr3NFGiDgJ4KYoxF/pYaGo4
+  MgK0pHPeAIesiUnEEq8y6w==
+    """
 
   Scenario: Updating an outdated Nextcloud 10.0.0 on the beta channel with PHP 5.6
     Given There is a release with channel "beta"
@@ -122,6 +156,15 @@ Feature: Testing the update scenario of releases
     And Update to version "11.0.2.7" is available
     And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-11.0.2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+    And The signature is
+    """
+  hvw4zZs6gSeP4TlU0kkfpJ1tgaSrD2M8V/MANX/YqwZBy9mG8z67Mtt07sbYByHh
+  kWVd2uVmVoiEcmNEtiJUE1WEcrC+YSAFUTl8P4MjUa2jEC3k37zIn1WcFI8ZqRiH
+  EBYiSef87rZXjcvuta5fC4O0cOaxU3pVkNVqeP9T0tHEI4Oorj5Uj8qoiuIH2Xbc
+  chLfk+x/EatNAlTE6NJo6rJnquCErooOPgLl6k48oOcgJZZtOQ1xDhb69Yug25bv
+  V12smv+3iUGpQBIJnBhIZY+Ww7SOCCca/ss1f+/uEMr3NFGiDgJ4KYoxF/pYaGo4
+  MgK0pHPeAIesiUnEEq8y6w==
+    """
 
   Scenario: Updating an outdated Nextcloud 10.0.0 on the beta channel with PHP 5.4 will receive the latest compatible release
     Given There is a release with channel "beta"
@@ -132,6 +175,7 @@ Feature: Testing the update scenario of releases
     And Update to version "9.1.3.2" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-10.0.3.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+    And No signature is set
 
   Scenario: Updating an up-to-date Nextcloud 10.0.3 on the beta channel with PHP 5.4
     Given There is a release with channel "beta"
@@ -155,6 +199,15 @@ Feature: Testing the update scenario of releases
     And Update to version "11.0.2.7" is available
     And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-11.0.2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+    And The signature is
+    """
+  hvw4zZs6gSeP4TlU0kkfpJ1tgaSrD2M8V/MANX/YqwZBy9mG8z67Mtt07sbYByHh
+  kWVd2uVmVoiEcmNEtiJUE1WEcrC+YSAFUTl8P4MjUa2jEC3k37zIn1WcFI8ZqRiH
+  EBYiSef87rZXjcvuta5fC4O0cOaxU3pVkNVqeP9T0tHEI4Oorj5Uj8qoiuIH2Xbc
+  chLfk+x/EatNAlTE6NJo6rJnquCErooOPgLl6k48oOcgJZZtOQ1xDhb69Yug25bv
+  V12smv+3iUGpQBIJnBhIZY+Ww7SOCCca/ss1f+/uEMr3NFGiDgJ4KYoxF/pYaGo4
+  MgK0pHPeAIesiUnEEq8y6w==
+    """
 
   Scenario: Updating an outdated Nextcloud 11.0.0 beta on the beta channel
     Given There is a release with channel "beta"
@@ -165,6 +218,15 @@ Feature: Testing the update scenario of releases
     And Update to version "11.0.2.7" is available
     And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-11.0.2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+    And The signature is
+    """
+  hvw4zZs6gSeP4TlU0kkfpJ1tgaSrD2M8V/MANX/YqwZBy9mG8z67Mtt07sbYByHh
+  kWVd2uVmVoiEcmNEtiJUE1WEcrC+YSAFUTl8P4MjUa2jEC3k37zIn1WcFI8ZqRiH
+  EBYiSef87rZXjcvuta5fC4O0cOaxU3pVkNVqeP9T0tHEI4Oorj5Uj8qoiuIH2Xbc
+  chLfk+x/EatNAlTE6NJo6rJnquCErooOPgLl6k48oOcgJZZtOQ1xDhb69Yug25bv
+  V12smv+3iUGpQBIJnBhIZY+Ww7SOCCca/ss1f+/uEMr3NFGiDgJ4KYoxF/pYaGo4
+  MgK0pHPeAIesiUnEEq8y6w==
+    """
 
   Scenario: Updating an outdated Nextcloud 11.0.0 stable without PHP version
     Given There is a release with channel "stable"
@@ -174,6 +236,15 @@ Feature: Testing the update scenario of releases
     And Update to version "11.0.2.7" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+    And The signature is
+    """
+  hvw4zZs6gSeP4TlU0kkfpJ1tgaSrD2M8V/MANX/YqwZBy9mG8z67Mtt07sbYByHh
+  kWVd2uVmVoiEcmNEtiJUE1WEcrC+YSAFUTl8P4MjUa2jEC3k37zIn1WcFI8ZqRiH
+  EBYiSef87rZXjcvuta5fC4O0cOaxU3pVkNVqeP9T0tHEI4Oorj5Uj8qoiuIH2Xbc
+  chLfk+x/EatNAlTE6NJo6rJnquCErooOPgLl6k48oOcgJZZtOQ1xDhb69Yug25bv
+  V12smv+3iUGpQBIJnBhIZY+Ww7SOCCca/ss1f+/uEMr3NFGiDgJ4KYoxF/pYaGo4
+  MgK0pHPeAIesiUnEEq8y6w==
+    """
 
   Scenario: Updating an outdated Nextcloud 11.0.0 beta on the empty channel - will use the stable channel then
     Given There is a release with channel ""
@@ -184,6 +255,15 @@ Feature: Testing the update scenario of releases
     And Update to version "11.0.2.7" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+    And The signature is
+    """
+  hvw4zZs6gSeP4TlU0kkfpJ1tgaSrD2M8V/MANX/YqwZBy9mG8z67Mtt07sbYByHh
+  kWVd2uVmVoiEcmNEtiJUE1WEcrC+YSAFUTl8P4MjUa2jEC3k37zIn1WcFI8ZqRiH
+  EBYiSef87rZXjcvuta5fC4O0cOaxU3pVkNVqeP9T0tHEI4Oorj5Uj8qoiuIH2Xbc
+  chLfk+x/EatNAlTE6NJo6rJnquCErooOPgLl6k48oOcgJZZtOQ1xDhb69Yug25bv
+  V12smv+3iUGpQBIJnBhIZY+Ww7SOCCca/ss1f+/uEMr3NFGiDgJ4KYoxF/pYaGo4
+  MgK0pHPeAIesiUnEEq8y6w==
+    """
 
   Scenario: Updating an up-to-date Nextcloud 11.0.2 on the beta channel
     Given There is a release with channel "beta"
@@ -201,6 +281,15 @@ Feature: Testing the update scenario of releases
     And Update to version "11.0.2.7" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+    And The signature is
+    """
+  hvw4zZs6gSeP4TlU0kkfpJ1tgaSrD2M8V/MANX/YqwZBy9mG8z67Mtt07sbYByHh
+  kWVd2uVmVoiEcmNEtiJUE1WEcrC+YSAFUTl8P4MjUa2jEC3k37zIn1WcFI8ZqRiH
+  EBYiSef87rZXjcvuta5fC4O0cOaxU3pVkNVqeP9T0tHEI4Oorj5Uj8qoiuIH2Xbc
+  chLfk+x/EatNAlTE6NJo6rJnquCErooOPgLl6k48oOcgJZZtOQ1xDhb69Yug25bv
+  V12smv+3iUGpQBIJnBhIZY+Ww7SOCCca/ss1f+/uEMr3NFGiDgJ4KYoxF/pYaGo4
+  MgK0pHPeAIesiUnEEq8y6w==
+    """
 
   Scenario: Updating an outdated Nextcloud 11.0.0 beta on the stable channel
     Given There is a release with channel "stable"
@@ -239,6 +328,15 @@ Feature: Testing the update scenario of releases
     And Update to version "11.0.2.7" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+    And The signature is
+    """
+  hvw4zZs6gSeP4TlU0kkfpJ1tgaSrD2M8V/MANX/YqwZBy9mG8z67Mtt07sbYByHh
+  kWVd2uVmVoiEcmNEtiJUE1WEcrC+YSAFUTl8P4MjUa2jEC3k37zIn1WcFI8ZqRiH
+  EBYiSef87rZXjcvuta5fC4O0cOaxU3pVkNVqeP9T0tHEI4Oorj5Uj8qoiuIH2Xbc
+  chLfk+x/EatNAlTE6NJo6rJnquCErooOPgLl6k48oOcgJZZtOQ1xDhb69Yug25bv
+  V12smv+3iUGpQBIJnBhIZY+Ww7SOCCca/ss1f+/uEMr3NFGiDgJ4KYoxF/pYaGo4
+  MgK0pHPeAIesiUnEEq8y6w==
+    """
 
   Scenario: Updating an up-to-date Nextcloud 11.0.2 on the production channel with PHP 5.6
     Given There is a release with channel "production"
@@ -262,6 +360,7 @@ Feature: Testing the update scenario of releases
     And Update to version "100.0.0.0" is available
     And URL to download is "https://download.nextcloud.com/server/daily/latest-stable9.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html"
+    And No signature is set
 
   Scenario: Updating an up-to-date Nextcloud 9.0 daily
     Given There is a release with channel "daily"
@@ -279,6 +378,7 @@ Feature: Testing the update scenario of releases
     And Update to version "100.0.0.0" is available
     And URL to download is "https://download.nextcloud.com/server/daily/latest-stable10.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+    And No signature is set
 
   Scenario: Updating an up-to-date Nextcloud 10.0 daily
     Given There is a release with channel "daily"
@@ -296,6 +396,7 @@ Feature: Testing the update scenario of releases
     And Update to version "100.0.0.0" is available
     And URL to download is "https://download.nextcloud.com/server/daily/latest-stable11.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+    And No signature is set
 
   Scenario: Updating an up-to-date Nextcloud 11.0 daily
     Given There is a release with channel "daily"

@@ -241,6 +241,23 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 		return [
 			[
 				'production',
+				'11',
+				'0',
+				'0',
+				'',
+				'<?xml version="1.0" encoding="UTF-8"?>
+<nextcloud>
+ <version>11.0.1</version>
+ <versionstring>Nextcloud 11.0.1</versionstring>
+ <url>https://download.nextcloud.com/server/releases/nextcloud-11.0.1.zip</url>
+ <web>https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html</web>
+ <autoupdater>1</autoupdater>
+ <signature>MySignature</signature>
+</nextcloud>
+',
+			],
+			[
+				'production',
 				'8',
 				'0',
 				'8',
@@ -1115,6 +1132,13 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 												$revisionVersion,
 												$expected) {
 		$config = [
+			'11.0' => [
+				'100' => [
+					'latest' => '11.0.1',
+					'web' => 'https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html',
+					'signature' => 'MySignature',
+				],
+			],
 			'8.2' => [
 				'100' => [
 					'latest' => '8.2.2',
