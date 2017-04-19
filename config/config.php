@@ -201,6 +201,15 @@ MgK0pHPeAIesiUnEEq8y6w==',
 				'minPHPVersion' => '5.4',
 			],
 		],
+		'8.2' => [
+			'100' => [
+				'latest' => '9.0.57',
+				'internalVersion' => '9.0.57',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-9.0.57.zip',
+				'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
+				'minPHPVersion' => '5.4',
+			],
+		],
 	],
 	'beta' => [
 		'11' => [
