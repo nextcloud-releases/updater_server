@@ -152,6 +152,15 @@ MgK0pHPeAIesiUnEEq8y6w==',
 				'minPHPVersion' => '5.4',
 			],
 		],
+		'8.2' => [
+			'100' => [
+				'latest' => '9.0.57',
+				'internalVersion' => '9.0.57',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-9.0.57.zip',
+				'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
+				'minPHPVersion' => '5.4',
+			],
+		],
 	],
 	'stable' => [
 		'11' => [
@@ -251,6 +260,15 @@ cjMggxwvqiUwKjctpneMUDXHf3oU/gXKdzvg1bFT9vgD6+PQtrwEwOtVpUU8EMqu
 				'minPHPVersion' => '5.4',
 			],
 		],
+		'8.2' => [
+			'100' => [
+				'latest' => '9.0.57',
+				'internalVersion' => '9.0.57',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-9.0.57.zip',
+				'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
+				'minPHPVersion' => '5.4',
+			],
+		],
 	],
 	'daily' => [
 		'12' => [
@@ -272,6 +290,15 @@ cjMggxwvqiUwKjctpneMUDXHf3oU/gXKdzvg1bFT9vgD6+PQtrwEwOtVpUU8EMqu
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable9.zip',
 			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
 			'minPHPVersion' => '5.4',
+		],
+		'8.2' => [
+			'100' => [
+				'latest' => '9.0.57',
+				'internalVersion' => '9.0.57',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-9.0.57.zip',
+				'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
+				'minPHPVersion' => '5.4',
+			],
 		],
 	],
 ];
