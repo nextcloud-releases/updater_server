@@ -290,6 +290,24 @@ Feature: Testing the update scenario of releases
   6Jx1KWDwCnir1GssOSy2FQ==
     """
 
+  Scenario: Updating an outdated staged Nextcloud 11.0.0 beta on the beta channel without an mtime
+    Given There is a release with channel "beta"
+    And The received version is "11.0.0.2"
+    And The received PHP version is "5.6.0"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "12.0.0.16" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-12.0.0beta1.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+    And The signature is
+    """
+  ho8LV/2eB0kSI89JJDTn8BtDnUBlAnFOVaDgcBim+N2yUUzsGy8Q+nWeffrL0bPU
+  951fuSIHpjByfJxiSL5GipoT6555992PV6B8BckyTgVvWXxKGH2htQVdYUDTKfaB
+  DCe59CvjNe4YR/qqBitTyJYeWqGD4FCrmAGmbQmhINm70H1TUl2zHBFi7rqFKwcw
+  et3H3uSKf1UNGKx/HE1RSlGCukTc/o+UcwT7wAPlm3YfIMG9vrLX5s27JG6p5MlW
+  N8VZ0VTtBZY0EAqedrHWZ4FxFOwmmxfdVoUbJgq8ZUlWBmAIj9t4vbHzXAVxu437
+  6Jx1KWDwCnir1GssOSy2FQ==
+    """
 
   Scenario: Updating an outdated Nextcloud 11.0.0 stable without PHP version
     Given There is a release with channel "stable"
@@ -328,9 +346,28 @@ Feature: Testing the update scenario of releases
   W0N7qv9mCgCHNclh6gPcTQ==
     """
 
-  Scenario: Updating an up-to-date Nextcloud 11.0.3 on the beta channel
+  Scenario: Updating an outdated Nextcloud 12.0.0 on the beta channel
     Given There is a release with channel "beta"
-    And The received version is "11.0.3.2"
+    And The received version is "12.0.0.15"
+    And The received PHP version is "5.6.0"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "12.0.0.16" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-12.0.0beta1.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+    And The signature is
+    """
+  ho8LV/2eB0kSI89JJDTn8BtDnUBlAnFOVaDgcBim+N2yUUzsGy8Q+nWeffrL0bPU
+  951fuSIHpjByfJxiSL5GipoT6555992PV6B8BckyTgVvWXxKGH2htQVdYUDTKfaB
+  DCe59CvjNe4YR/qqBitTyJYeWqGD4FCrmAGmbQmhINm70H1TUl2zHBFi7rqFKwcw
+  et3H3uSKf1UNGKx/HE1RSlGCukTc/o+UcwT7wAPlm3YfIMG9vrLX5s27JG6p5MlW
+  N8VZ0VTtBZY0EAqedrHWZ4FxFOwmmxfdVoUbJgq8ZUlWBmAIj9t4vbHzXAVxu437
+  6Jx1KWDwCnir1GssOSy2FQ==
+    """
+
+  Scenario: Updating an up-to-date Nextcloud 12.0.0 on the beta channel
+    Given There is a release with channel "beta"
+    And The received version is "12.0.0.16"
     And The received PHP version is "5.6.0"
     When The request is sent
     Then The response is empty
