@@ -137,7 +137,7 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 			}
 		}
 
-		throw new \Exception('Invalid signature');
+		throw new \Exception(sprintf('Invalid signature, got %s', $this->resultArray['signature']));
 	}
 
 	/**
