@@ -268,7 +268,7 @@ W0N7qv9mCgCHNclh6gPcTQ==',
 			'100' => [
 				'latest' => '12.0.1 RC5',
 				'internalVersion' => '12.0.1.4',
-				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-12.0.1RC4.zip',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-12.0.1RC5.zip',
 				'web' => 'https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html',
 				'minPHPVersion' => '5.6',
 				'signature' => 'AeLhXIbPjXJyAY3PwaNev71Ou8GC/iQzvn/QKHPlLdjTWkZCIsuld5Jr6a+mNiP2
@@ -283,7 +283,7 @@ Eb+ldvds2wbIh/BZdTfSNA==',
 			'100' => [
 				'latest' => '12.0.1 RC5',
 				'internalVersion' => '12.0.1.4',
-				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-12.0.1RC4.zip',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-12.0.1RC5.zip',
 				'web' => 'https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html',
 				'minPHPVersion' => '5.6',
 				'signature' => 'AeLhXIbPjXJyAY3PwaNev71Ou8GC/iQzvn/QKHPlLdjTWkZCIsuld5Jr6a+mNiP2

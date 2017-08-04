@@ -258,7 +258,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "12.0.1.4" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-12.0.1RC4.zip"
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-12.0.1RC5.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
     And The signature is
     """
@@ -277,7 +277,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "12.0.1.4" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-12.0.1RC4.zip"
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-12.0.1RC5.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
     And The signature is
     """
@@ -372,7 +372,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "12.0.1.4" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-12.0.1RC4.zip"
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-12.0.1RC5.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
     And The signature is
     """
@@ -481,7 +481,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "12.0.1.4" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-12.0.1RC4.zip"
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-12.0.1RC5.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
     And The signature is
     """
