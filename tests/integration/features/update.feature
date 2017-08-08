@@ -311,7 +311,7 @@ Feature: Testing the update scenario of releases
   Scenario: Updating a staged outdated Nextcloud 11.0.0 stable without PHP version
     Given There is a release with channel "stable"
     And The received version is "11.0.0.2"
-    And The installation mtime is "55"
+    And The installation mtime is "15"
     When The request is sent
     Then The response is non-empty
     And Update to version "12.0.1.5" is available
