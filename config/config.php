@@ -271,12 +271,12 @@ tJejM2uk8UEjo4mJ6q7BIA==',
 				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-12.0.3.zip',
 				'web' => 'https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html',
 				'minPHPVersion' => '5.6',
-				'signature' => 'q3LwNHApoExvzctTqq0fM9oPqtBCe/FQXcBZjACH4gY05ouM1WLk9r67H0A/4lwj
-lcRQ4YlaC6uCPYgO7p7RTfuUEx0jMPPCaaIy1w0vScHWqbB5N1ZmGcpGfEqGneBx
-7dxb/4vaxHozQ2WffS1woRGBICxdxa/OMa2ED5Qsy+cyPXttv7ONlGDrapphceU2
-+mvF9f1mNS8zensz+qdGmTvo1MzfbgxXPlYlX1ghxxt3TI9Qml5M30tgLEHb2FtZ
-jfCZh3cTA3I5VsB0oQGcYCmt+a5mI+5L784m9q3CzQo2PECer7EFQwVzg3ynVIlP
-1kaTP5QAZYHkn/IgKJxI5A==',
+				'signature' => 'YDatIPqOzjHGdV4sCKAqOHPZORN4k7FswMpfTl8S7JlyRW0aLOxA8KUyBmxmfgVY
+lMujKm2gtCRHGEs7QrG+J5NeJ5g9PS1vWsrU1mCpGgLz1ifjF5VfpSuSTWK3WxpS
+b0aRy+YfJNrfZjYHGFiL/KDlr0+Eu+MWSKHNbM5YZBZcYCbgSQZH4ry2AgMPAqRq
+qaZ9jV3c0nObBq4Ha2qDAmBhcSnVMVmoXrrumgVyzSC+F7CLf7X34TjEPw/hFzr2
+N4FMRE9PHpYqRqoRF+OKNYvcs3MVAiv2QTSjJd2wtiutfaDO8zJUsd/CoTbPr750
+0ee22KtYHJFmotmZ9EjwIg==',
 			],
 		],
 		'11' => [
@@ -286,12 +286,12 @@ jfCZh3cTA3I5VsB0oQGcYCmt+a5mI+5L784m9q3CzQo2PECer7EFQwVzg3ynVIlP
 				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-12.0.3.zip',
 				'web' => 'https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html',
 				'minPHPVersion' => '5.6',
-				'signature' => 'q3LwNHApoExvzctTqq0fM9oPqtBCe/FQXcBZjACH4gY05ouM1WLk9r67H0A/4lwj
-lcRQ4YlaC6uCPYgO7p7RTfuUEx0jMPPCaaIy1w0vScHWqbB5N1ZmGcpGfEqGneBx
-7dxb/4vaxHozQ2WffS1woRGBICxdxa/OMa2ED5Qsy+cyPXttv7ONlGDrapphceU2
-+mvF9f1mNS8zensz+qdGmTvo1MzfbgxXPlYlX1ghxxt3TI9Qml5M30tgLEHb2FtZ
-jfCZh3cTA3I5VsB0oQGcYCmt+a5mI+5L784m9q3CzQo2PECer7EFQwVzg3ynVIlP
-1kaTP5QAZYHkn/IgKJxI5A==',
+				'signature' => 'YDatIPqOzjHGdV4sCKAqOHPZORN4k7FswMpfTl8S7JlyRW0aLOxA8KUyBmxmfgVY
+lMujKm2gtCRHGEs7QrG+J5NeJ5g9PS1vWsrU1mCpGgLz1ifjF5VfpSuSTWK3WxpS
+b0aRy+YfJNrfZjYHGFiL/KDlr0+Eu+MWSKHNbM5YZBZcYCbgSQZH4ry2AgMPAqRq
+qaZ9jV3c0nObBq4Ha2qDAmBhcSnVMVmoXrrumgVyzSC+F7CLf7X34TjEPw/hFzr2
+N4FMRE9PHpYqRqoRF+OKNYvcs3MVAiv2QTSjJd2wtiutfaDO8zJUsd/CoTbPr750
+0ee22KtYHJFmotmZ9EjwIg==',
 			],
 		],
 		'9.1' => [

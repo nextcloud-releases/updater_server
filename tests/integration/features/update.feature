@@ -262,12 +262,12 @@ Feature: Testing the update scenario of releases
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And The signature is
     """
-    q3LwNHApoExvzctTqq0fM9oPqtBCe/FQXcBZjACH4gY05ouM1WLk9r67H0A/4lwj
-    lcRQ4YlaC6uCPYgO7p7RTfuUEx0jMPPCaaIy1w0vScHWqbB5N1ZmGcpGfEqGneBx
-    7dxb/4vaxHozQ2WffS1woRGBICxdxa/OMa2ED5Qsy+cyPXttv7ONlGDrapphceU2
-    +mvF9f1mNS8zensz+qdGmTvo1MzfbgxXPlYlX1ghxxt3TI9Qml5M30tgLEHb2FtZ
-    jfCZh3cTA3I5VsB0oQGcYCmt+a5mI+5L784m9q3CzQo2PECer7EFQwVzg3ynVIlP
-    1kaTP5QAZYHkn/IgKJxI5A==
+    YDatIPqOzjHGdV4sCKAqOHPZORN4k7FswMpfTl8S7JlyRW0aLOxA8KUyBmxmfgVY
+    lMujKm2gtCRHGEs7QrG+J5NeJ5g9PS1vWsrU1mCpGgLz1ifjF5VfpSuSTWK3WxpS
+    b0aRy+YfJNrfZjYHGFiL/KDlr0+Eu+MWSKHNbM5YZBZcYCbgSQZH4ry2AgMPAqRq
+    qaZ9jV3c0nObBq4Ha2qDAmBhcSnVMVmoXrrumgVyzSC+F7CLf7X34TjEPw/hFzr2
+    N4FMRE9PHpYqRqoRF+OKNYvcs3MVAiv2QTSjJd2wtiutfaDO8zJUsd/CoTbPr750
+    0ee22KtYHJFmotmZ9EjwIg==
     """
 
   Scenario: Updating an outdated Nextcloud 11.0.0 beta on the beta channel without an mtime
@@ -281,12 +281,12 @@ Feature: Testing the update scenario of releases
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And The signature is
     """
-    q3LwNHApoExvzctTqq0fM9oPqtBCe/FQXcBZjACH4gY05ouM1WLk9r67H0A/4lwj
-    lcRQ4YlaC6uCPYgO7p7RTfuUEx0jMPPCaaIy1w0vScHWqbB5N1ZmGcpGfEqGneBx
-    7dxb/4vaxHozQ2WffS1woRGBICxdxa/OMa2ED5Qsy+cyPXttv7ONlGDrapphceU2
-    +mvF9f1mNS8zensz+qdGmTvo1MzfbgxXPlYlX1ghxxt3TI9Qml5M30tgLEHb2FtZ
-    jfCZh3cTA3I5VsB0oQGcYCmt+a5mI+5L784m9q3CzQo2PECer7EFQwVzg3ynVIlP
-    1kaTP5QAZYHkn/IgKJxI5A==
+    YDatIPqOzjHGdV4sCKAqOHPZORN4k7FswMpfTl8S7JlyRW0aLOxA8KUyBmxmfgVY
+    lMujKm2gtCRHGEs7QrG+J5NeJ5g9PS1vWsrU1mCpGgLz1ifjF5VfpSuSTWK3WxpS
+    b0aRy+YfJNrfZjYHGFiL/KDlr0+Eu+MWSKHNbM5YZBZcYCbgSQZH4ry2AgMPAqRq
+    qaZ9jV3c0nObBq4Ha2qDAmBhcSnVMVmoXrrumgVyzSC+F7CLf7X34TjEPw/hFzr2
+    N4FMRE9PHpYqRqoRF+OKNYvcs3MVAiv2QTSjJd2wtiutfaDO8zJUsd/CoTbPr750
+    0ee22KtYHJFmotmZ9EjwIg==
     """
 
   Scenario: Updating a non-staged outdated Nextcloud 11.0.0 stable without PHP version
@@ -376,12 +376,12 @@ Feature: Testing the update scenario of releases
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And The signature is
     """
-    q3LwNHApoExvzctTqq0fM9oPqtBCe/FQXcBZjACH4gY05ouM1WLk9r67H0A/4lwj
-    lcRQ4YlaC6uCPYgO7p7RTfuUEx0jMPPCaaIy1w0vScHWqbB5N1ZmGcpGfEqGneBx
-    7dxb/4vaxHozQ2WffS1woRGBICxdxa/OMa2ED5Qsy+cyPXttv7ONlGDrapphceU2
-    +mvF9f1mNS8zensz+qdGmTvo1MzfbgxXPlYlX1ghxxt3TI9Qml5M30tgLEHb2FtZ
-    jfCZh3cTA3I5VsB0oQGcYCmt+a5mI+5L784m9q3CzQo2PECer7EFQwVzg3ynVIlP
-    1kaTP5QAZYHkn/IgKJxI5A==
+    YDatIPqOzjHGdV4sCKAqOHPZORN4k7FswMpfTl8S7JlyRW0aLOxA8KUyBmxmfgVY
+    lMujKm2gtCRHGEs7QrG+J5NeJ5g9PS1vWsrU1mCpGgLz1ifjF5VfpSuSTWK3WxpS
+    b0aRy+YfJNrfZjYHGFiL/KDlr0+Eu+MWSKHNbM5YZBZcYCbgSQZH4ry2AgMPAqRq
+    qaZ9jV3c0nObBq4Ha2qDAmBhcSnVMVmoXrrumgVyzSC+F7CLf7X34TjEPw/hFzr2
+    N4FMRE9PHpYqRqoRF+OKNYvcs3MVAiv2QTSjJd2wtiutfaDO8zJUsd/CoTbPr750
+    0ee22KtYHJFmotmZ9EjwIg==
     """
 
   Scenario: Updating an up-to-date Nextcloud 12.0.3 on the beta channel
@@ -473,12 +473,12 @@ Feature: Testing the update scenario of releases
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And The signature is
     """
-    q3LwNHApoExvzctTqq0fM9oPqtBCe/FQXcBZjACH4gY05ouM1WLk9r67H0A/4lwj
-    lcRQ4YlaC6uCPYgO7p7RTfuUEx0jMPPCaaIy1w0vScHWqbB5N1ZmGcpGfEqGneBx
-    7dxb/4vaxHozQ2WffS1woRGBICxdxa/OMa2ED5Qsy+cyPXttv7ONlGDrapphceU2
-    +mvF9f1mNS8zensz+qdGmTvo1MzfbgxXPlYlX1ghxxt3TI9Qml5M30tgLEHb2FtZ
-    jfCZh3cTA3I5VsB0oQGcYCmt+a5mI+5L784m9q3CzQo2PECer7EFQwVzg3ynVIlP
-    1kaTP5QAZYHkn/IgKJxI5A==
+    YDatIPqOzjHGdV4sCKAqOHPZORN4k7FswMpfTl8S7JlyRW0aLOxA8KUyBmxmfgVY
+    lMujKm2gtCRHGEs7QrG+J5NeJ5g9PS1vWsrU1mCpGgLz1ifjF5VfpSuSTWK3WxpS
+    b0aRy+YfJNrfZjYHGFiL/KDlr0+Eu+MWSKHNbM5YZBZcYCbgSQZH4ry2AgMPAqRq
+    qaZ9jV3c0nObBq4Ha2qDAmBhcSnVMVmoXrrumgVyzSC+F7CLf7X34TjEPw/hFzr2
+    N4FMRE9PHpYqRqoRF+OKNYvcs3MVAiv2QTSjJd2wtiutfaDO8zJUsd/CoTbPr750
+    0ee22KtYHJFmotmZ9EjwIg==
     """
 
  Scenario: Updating an up-to-date Nextcloud 12.0.3 on the beta channel
