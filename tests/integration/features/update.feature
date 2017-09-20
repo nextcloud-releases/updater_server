@@ -506,7 +506,7 @@ Feature: Testing the update scenario of releases
     b0aRy+YfJNrfZjYHGFiL/KDlr0+Eu+MWSKHNbM5YZBZcYCbgSQZH4ry2AgMPAqRq
     qaZ9jV3c0nObBq4Ha2qDAmBhcSnVMVmoXrrumgVyzSC+F7CLf7X34TjEPw/hFzr2
     N4FMRE9PHpYqRqoRF+OKNYvcs3MVAiv2QTSjJd2wtiutfaDO8zJUsd/CoTbPr750
-    0ee22KtYHJFmotmZ9EjwIg== 
+    0ee22KtYHJFmotmZ9EjwIg==
     """
 
  Scenario: Updating an up-to-date Nextcloud 12.0.3 beta on the stable channel
@@ -534,7 +534,7 @@ Feature: Testing the update scenario of releases
     b0aRy+YfJNrfZjYHGFiL/KDlr0+Eu+MWSKHNbM5YZBZcYCbgSQZH4ry2AgMPAqRq
     qaZ9jV3c0nObBq4Ha2qDAmBhcSnVMVmoXrrumgVyzSC+F7CLf7X34TjEPw/hFzr2
     N4FMRE9PHpYqRqoRF+OKNYvcs3MVAiv2QTSjJd2wtiutfaDO8zJUsd/CoTbPr750
-    0ee22KtYHJFmotmZ9EjwIg== 
+    0ee22KtYHJFmotmZ9EjwIg==
     """
 
  Scenario: Updating an up-to-date Nextcloud 12.0.3 beta on the production channel
