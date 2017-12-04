@@ -34,8 +34,6 @@ class Response {
 		$searches[] = $this->request->getMajorVersion().'.'.$this->request->getMinorVersion();
 		// 4. Major
 		$searches[] = $this->request->getMajorVersion();
-		// 5. Major . 0
-		$searches[] = $this->request->getMajorVersion().'.0';
 		return $searches;
 	}
 
@@ -67,25 +65,17 @@ class Response {
 				foreach($newVersions as $chance => $updateOptions) {
 					$counter -= $chance;
 					if($instanceChance <= (100 - $counter)) {
+						// skip incompatible releases due to PHP version
+						if(isset($newVersions[$chance]['minPHPVersion']) && version_compare($newVersions[$chance]['minPHPVersion'], $phpVersion, '>')) {
+							continue;
+						}
+						// skip incompatible releases due to lower version number
+						if(version_compare($newVersions[$chance]['internalVersion'], $completeCurrentVersion, '<=')) {
+							continue;
+						}
 						$newVersion = $newVersions[$chance];
-						break;
+						break 2;
 					}
-				}
-
-				if (!isset($newVersion['internalVersion'])) {
-					$newVersion['internalVersion'] = $newVersion['latest'];
-				}
-
-				// skip incompatible releases
-				if(isset($newVersion['minPHPVersion']) && version_compare($newVersion['minPHPVersion'], $phpVersion, '>')) {
-					$newVersion = '';
-					continue;
-				}
-
-				if(version_compare($newVersion['internalVersion'], $completeCurrentVersion, '<=')) {
-					return '';
-				} else {
-					break;
 				}
 			}
 		}

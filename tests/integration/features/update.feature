@@ -127,7 +127,12 @@ Feature: Testing the update scenario of releases
     And the installation mtime is "60"
     And The received version is "9.1.6.1"
     When The request is sent
-    Then The response is empty
+    Then The response is non-empty
+    And Update to version "11.0.6.1" is available
+    And URL to download is "https://nextcloud.com/outdated-php-5-4-5-5/"
+    And URL to documentation is "https://nextcloud.com/outdated-php-5-4-5-5/"
+    And No signature is set
+    And Autoupdater is set to "0"
 
   Scenario: Updating an up-to-date staged Nextcloud 10.0.6 with PHP 5.6 on the production channel
     Given There is a release with channel "production"
@@ -155,7 +160,12 @@ Feature: Testing the update scenario of releases
     And the installation mtime is "60"
     And The received version is "9.1.6.1"
     When The request is sent
-    Then The response is empty
+    Then The response is non-empty
+    And Update to version "11.0.6.1" is available
+    And URL to download is "https://nextcloud.com/outdated-php-5-4-5-5/"
+    And URL to documentation is "https://nextcloud.com/outdated-php-5-4-5-5/"
+    And No signature is set
+    And Autoupdater is set to "0"
 
   Scenario: Updating an outdated Nextcloud 10.0.2 on the stable channel without PHP version
     Given There is a release with channel "stable"
@@ -223,13 +233,23 @@ Feature: Testing the update scenario of releases
     And The received version is "9.1.6.1"
     And The received PHP version is "5.4.0"
     When The request is sent
-    Then The response is empty
+    Then The response is non-empty
+    And Update to version "11.0.6.1" is available
+    And URL to download is "https://nextcloud.com/outdated-php-5-4-5-5/"
+    And URL to documentation is "https://nextcloud.com/outdated-php-5-4-5-5/"
+    And No signature is set
+    And Autoupdater is set to "0"
 
   Scenario: Updating an up-to-date Nextcloud 10.0.6 on the beta channel without sending PHP version
     Given There is a release with channel "beta"
     And The received version is "9.1.6.1"
     When The request is sent
-    Then The response is empty
+    Then The response is non-empty
+    And Update to version "11.0.6.1" is available
+    And URL to download is "https://nextcloud.com/outdated-php-5-4-5-5/"
+    And URL to documentation is "https://nextcloud.com/outdated-php-5-4-5-5/"
+    And No signature is set
+    And Autoupdater is set to "0"
 
   Scenario: Updating an outdated Nextcloud 10.0.1 on the beta channel with PHP 5.6
     Given There is a release with channel "beta"

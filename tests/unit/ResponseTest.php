@@ -46,7 +46,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 ',
 			],
 			[
-				'7',
+				'7.0.2',
 				'<?xml version="1.0" encoding="UTF-8"?>
 <nextcloud>
  <version>100.0.0.0</version>
@@ -58,7 +58,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 ',
 			],
 			[
-				'8',
+				'8.0.3',
 				'<?xml version="1.0" encoding="UTF-8"?>
 <nextcloud>
  <version>100.0.0.0</version>
@@ -82,7 +82,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 ',
 			],
 			[
-				'9',
+				'9.0.1',
 				'<?xml version="1.0" encoding="UTF-8"?>
 <nextcloud>
  <version>100.0.0.0</version>
@@ -160,10 +160,16 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 			->expects($this->any())
 			->method('getMajorVersion')
 			->willReturn($version[0]);
-		if(isset($version[4])) {
+		if(isset($version[2])) {
 			$this->request
 				->expects($this->any())
 				->method('getMinorVersion')
+				->willReturn($version[2]);
+		}
+		if(isset($version[4])) {
+			$this->request
+				->expects($this->any())
+				->method('getMaintenanceVersion')
 				->willReturn($version[4]);
 		}
 
@@ -1135,6 +1141,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 			'11.0' => [
 				'100' => [
 					'latest' => '11.0.1',
+					'internalVersion' => '11.0.1',
 					'web' => 'https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html',
 					'signature' => 'MySignature',
 				],
@@ -1142,48 +1149,56 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 			'8.2' => [
 				'100' => [
 					'latest' => '8.2.2',
+					'internalVersion' => '8.2.2',
 					'web' => 'https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html',
 				],
 			],
 			'8.1' => [
 				'100' => [
 					'latest' => '8.1.5',
+					'internalVersion' => '8.1.5',
 					'web' => 'https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html',
 				],
 			],
 			'8.0' => [
 				'100' => [
 					'latest' => '8.0.10',
+					'internalVersion' => '8.0.10',
 					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
 				],
 			],
 			'8.0.7' => [
 				'100' => [
 					'latest' => '8.0.7.1',
+					'internalVersion' => '8.0.7.1',
 					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
 				],
 			],
 			'8.0.7.1' => [
 				'100' => [
 					'latest' => '8.0.8',
+					'internalVersion' => '8.0.8',
 					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
 				],
 			],
 			'8.0.8' => [
 				'100' => [
 					'latest' => '8.0.9',
+					'internalVersion' => '8.0.9',
 					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
 				],
 			],
 			'7' => [
 				'100' => [
 					'latest' => '7.0.12',
+					'internalVersion' => '7.0.12',
 					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
 				],
 			],
 			'6' => [
 				'100' => [
 					'latest' => '7.0.12',
+					'internalVersion' => '7.0.12',
 					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
 					'downloadUrl' => 'https://downloads.owncloud.com/foo.zip',
 				]
@@ -1238,6 +1253,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 			'8.2' => [
 				'100' => [
 					'latest' => '8.2.2',
+					'internalVersion' => '8.2.2',
 					'web' => 'https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html',
 					'autoupdater' => false,
 				],
@@ -1245,6 +1261,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 			'8.1' => [
 				'100' => [
 					'latest' => '8.1.5',
+					'internalVersion' => '8.1.5',
 					'web' => 'https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html',
 					'autoupdater' => false,
 				],
@@ -1252,6 +1269,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 			'8.0' => [
 				'100' => [
 					'latest' => '8.0.10',
+					'internalVersion' => '8.0.10',
 					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
 					'autoupdater' => false,
 				],
@@ -1259,6 +1277,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 			'8.0.7' => [
 				'100' => [
 					'latest' => '8.0.7.1',
+					'internalVersion' => '8.0.7.1',
 					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
 					'autoupdater' => false,
 				],
@@ -1266,6 +1285,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 			'8.0.7.1' => [
 				'100' => [
 					'latest' => '8.0.8',
+					'internalVersion' => '8.0.8',
 					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
 					'autoupdater' => false,
 				],
@@ -1273,6 +1293,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 			'8.0.8' => [
 				'100' => [
 					'latest' => '8.0.9',
+					'internalVersion' => '8.0.9',
 					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
 					'autoupdater' => false,
 				],
@@ -1280,6 +1301,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 			'7' => [
 				'100' => [
 					'latest' => '7.0.12',
+					'internalVersion' => '7.0.12',
 					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
 					'autoupdater' => false,
 				],
@@ -1287,6 +1309,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 			'6' => [
 				'100' => [
 					'latest' => '7.0.12',
+					'internalVersion' => '7.0.12',
 					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
 					'downloadUrl' => 'https://downloads.owncloud.com/foo.zip',
 					'autoupdater' => false,
@@ -1351,11 +1374,6 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 ',
 			],
 			[
-				'9901',
-				4,
-				'',
-			],
-			[
 				'',
 				4,
 				'<?xml version="1.0" encoding="UTF-8"?>
@@ -1382,12 +1400,14 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 			'8.2' => [
 				'95' => [
 					'latest' => '8.2.2',
+					'internalVersion' => '8.2.2',
 					'web' => 'https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html',
 					'autoupdater' => false,
 					'minPHPVersion' => '5.4',
 				],
 				'5' => [
 					'latest' => '9.0.0',
+					'internalVersion' => '9.0.0',
 					'web' => 'https://doc.owncloud.org/server/9.0/admin_manual/maintenance/upgrade.html',
 					'autoupdater' => false,
 					'minPHPVersion' => '5.6',
