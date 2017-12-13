@@ -371,17 +371,17 @@ Feature: Testing the update scenario of releases
     And The received PHP version is "5.6.0"
     When The request is sent
     Then The response is non-empty
-    And Update to version "13.0.0.6" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-13.0.0beta1.zip"
+    And Update to version "13.0.0.8" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-13.0.0beta3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And The signature is
     """
-    TJVgSXFSR4ZG2eKzcSVbHjfxcJv4ieXI0uEUgtwcoAwma0oLm88OICkNX79c9YlA
-    myF9LD5MxUFpWAi2dxOy4CGvXdWqx6o5DoCDGODNzDgwKpOqFd4xl2JqLcs4mYcz
-    1XkA61Mr7RkfiUPc6Hw+/Q851vhD7G+4KvS4bj6m6UDaYrpDw/9mbYHPSExHzJMc
-    HSfi2iy6YuYgLZFHgt0QVesq6h8aYN4D9EXrfXDO2Ndw5xKNjG2g17odMsU8UIJ+
-    1BuIF9GgZOTNURWDgSAC2MVqcp5U5QYEEOCjO9GppE9dCOj8/qGpyiQqzbE5tStx
-    bh4CJXqppaa4Hs3tsulw3w==
+    dwKkklqlJKAKIVzDiKzN2vz0uaKcnZjKtB0/iluHAhi4jHmfCyrBfj0Wj5gI/wWm
+    q4Kp1+YM4uEYXBjyQVUfIktQf+TW0cUJqvEctl4tcoQ7y3LJi9MNj4BaIrqncgYI
+    uW5GPsL1JxwU4up9VWTPhCYFmQx50soyjIrM13cTmmZKiFtaYYeQ5zvvPdFwGSCA
+    n9HE4SPDBvB/ZjT2FBAJJcRygoGgGtltXa0canni0aYqGtUnuHFM4uBytKGuv4VB
+    DKZlWAFVTXY+Q0ZUqNa/KE3pbEjXI4hHstGyb/p3/OtLqHYWRNC8j1vq3oiFTgBt
+    AMjyxusZNeKNOloBr1PxXw==
     """
 
   Scenario: Updating an up-to-date Nextcloud 12.0.4 on the beta channel
@@ -390,17 +390,17 @@ Feature: Testing the update scenario of releases
     And The received PHP version is "5.6.0"
     When The request is sent
     Then The response is non-empty
-    And Update to version "13.0.0.6" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-13.0.0beta1.zip"
+    And Update to version "13.0.0.8" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-13.0.0beta3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And The signature is
     """
-    TJVgSXFSR4ZG2eKzcSVbHjfxcJv4ieXI0uEUgtwcoAwma0oLm88OICkNX79c9YlA
-    myF9LD5MxUFpWAi2dxOy4CGvXdWqx6o5DoCDGODNzDgwKpOqFd4xl2JqLcs4mYcz
-    1XkA61Mr7RkfiUPc6Hw+/Q851vhD7G+4KvS4bj6m6UDaYrpDw/9mbYHPSExHzJMc
-    HSfi2iy6YuYgLZFHgt0QVesq6h8aYN4D9EXrfXDO2Ndw5xKNjG2g17odMsU8UIJ+
-    1BuIF9GgZOTNURWDgSAC2MVqcp5U5QYEEOCjO9GppE9dCOj8/qGpyiQqzbE5tStx
-    bh4CJXqppaa4Hs3tsulw3w==
+    dwKkklqlJKAKIVzDiKzN2vz0uaKcnZjKtB0/iluHAhi4jHmfCyrBfj0Wj5gI/wWm
+q4Kp1+YM4uEYXBjyQVUfIktQf+TW0cUJqvEctl4tcoQ7y3LJi9MNj4BaIrqncgYI
+uW5GPsL1JxwU4up9VWTPhCYFmQx50soyjIrM13cTmmZKiFtaYYeQ5zvvPdFwGSCA
+n9HE4SPDBvB/ZjT2FBAJJcRygoGgGtltXa0canni0aYqGtUnuHFM4uBytKGuv4VB
+DKZlWAFVTXY+Q0ZUqNa/KE3pbEjXI4hHstGyb/p3/OtLqHYWRNC8j1vq3oiFTgBt
+AMjyxusZNeKNOloBr1PxXw==
     """
 
   Scenario: Updating a non-staged outdated Nextcloud 11.0.0 beta on the stable channel
@@ -504,17 +504,17 @@ Feature: Testing the update scenario of releases
     And the installation mtime is "10"
     When The request is sent
     Then The response is non-empty
-    And Update to version "13.0.0.6" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-13.0.0beta1.zip"
+    And Update to version "13.0.0.8" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-13.0.0beta3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And The signature is
     """
-    TJVgSXFSR4ZG2eKzcSVbHjfxcJv4ieXI0uEUgtwcoAwma0oLm88OICkNX79c9YlA
-    myF9LD5MxUFpWAi2dxOy4CGvXdWqx6o5DoCDGODNzDgwKpOqFd4xl2JqLcs4mYcz
-    1XkA61Mr7RkfiUPc6Hw+/Q851vhD7G+4KvS4bj6m6UDaYrpDw/9mbYHPSExHzJMc
-    HSfi2iy6YuYgLZFHgt0QVesq6h8aYN4D9EXrfXDO2Ndw5xKNjG2g17odMsU8UIJ+
-    1BuIF9GgZOTNURWDgSAC2MVqcp5U5QYEEOCjO9GppE9dCOj8/qGpyiQqzbE5tStx
-    bh4CJXqppaa4Hs3tsulw3w==
+    dwKkklqlJKAKIVzDiKzN2vz0uaKcnZjKtB0/iluHAhi4jHmfCyrBfj0Wj5gI/wWm
+q4Kp1+YM4uEYXBjyQVUfIktQf+TW0cUJqvEctl4tcoQ7y3LJi9MNj4BaIrqncgYI
+uW5GPsL1JxwU4up9VWTPhCYFmQx50soyjIrM13cTmmZKiFtaYYeQ5zvvPdFwGSCA
+n9HE4SPDBvB/ZjT2FBAJJcRygoGgGtltXa0canni0aYqGtUnuHFM4uBytKGuv4VB
+DKZlWAFVTXY+Q0ZUqNa/KE3pbEjXI4hHstGyb/p3/OtLqHYWRNC8j1vq3oiFTgBt
+AMjyxusZNeKNOloBr1PxXw==
     """
 
  Scenario: Updating an up-to-date Nextcloud 12.0.4 on the beta channel
@@ -524,17 +524,17 @@ Feature: Testing the update scenario of releases
     And the installation mtime is "10"
     When The request is sent
     Then The response is non-empty
-    And Update to version "13.0.0.6" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-13.0.0beta1.zip"
+    And Update to version "13.0.0.8" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-13.0.0beta3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And The signature is
     """
-    TJVgSXFSR4ZG2eKzcSVbHjfxcJv4ieXI0uEUgtwcoAwma0oLm88OICkNX79c9YlA
-    myF9LD5MxUFpWAi2dxOy4CGvXdWqx6o5DoCDGODNzDgwKpOqFd4xl2JqLcs4mYcz
-    1XkA61Mr7RkfiUPc6Hw+/Q851vhD7G+4KvS4bj6m6UDaYrpDw/9mbYHPSExHzJMc
-    HSfi2iy6YuYgLZFHgt0QVesq6h8aYN4D9EXrfXDO2Ndw5xKNjG2g17odMsU8UIJ+
-    1BuIF9GgZOTNURWDgSAC2MVqcp5U5QYEEOCjO9GppE9dCOj8/qGpyiQqzbE5tStx
-    bh4CJXqppaa4Hs3tsulw3w==
+    dwKkklqlJKAKIVzDiKzN2vz0uaKcnZjKtB0/iluHAhi4jHmfCyrBfj0Wj5gI/wWm
+q4Kp1+YM4uEYXBjyQVUfIktQf+TW0cUJqvEctl4tcoQ7y3LJi9MNj4BaIrqncgYI
+uW5GPsL1JxwU4up9VWTPhCYFmQx50soyjIrM13cTmmZKiFtaYYeQ5zvvPdFwGSCA
+n9HE4SPDBvB/ZjT2FBAJJcRygoGgGtltXa0canni0aYqGtUnuHFM4uBytKGuv4VB
+DKZlWAFVTXY+Q0ZUqNa/KE3pbEjXI4hHstGyb/p3/OtLqHYWRNC8j1vq3oiFTgBt
+AMjyxusZNeKNOloBr1PxXw==
     """
 
  Scenario: Updating an outdated Nextcloud 12.0.0 beta on the stable channel

@@ -251,19 +251,34 @@ xG0LjsK2vZOV4ZHT3tZPHGUV1Nrpfj5LIuCyPgn0w+XqTBm+AuF1W5MsgtDq0GOo
 		],
 	],
 	'beta' => [
-		'12' => [
+		'13' => [
 			'100' => [
-				'latest' => '13.0.0 beta 1',
-				'internalVersion' => '13.0.0.6',
-				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-13.0.0beta1.zip',
+				'latest' => '13.0.0 beta 3',
+				'internalVersion' => '13.0.0.8',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-13.0.0beta3.zip',
 				'web' => 'https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html',
 				'minPHPVersion' => '5.6',
-				'signature' => 'TJVgSXFSR4ZG2eKzcSVbHjfxcJv4ieXI0uEUgtwcoAwma0oLm88OICkNX79c9YlA
-myF9LD5MxUFpWAi2dxOy4CGvXdWqx6o5DoCDGODNzDgwKpOqFd4xl2JqLcs4mYcz
-1XkA61Mr7RkfiUPc6Hw+/Q851vhD7G+4KvS4bj6m6UDaYrpDw/9mbYHPSExHzJMc
-HSfi2iy6YuYgLZFHgt0QVesq6h8aYN4D9EXrfXDO2Ndw5xKNjG2g17odMsU8UIJ+
-1BuIF9GgZOTNURWDgSAC2MVqcp5U5QYEEOCjO9GppE9dCOj8/qGpyiQqzbE5tStx
-bh4CJXqppaa4Hs3tsulw3w==',
+				'signature' => 'dwKkklqlJKAKIVzDiKzN2vz0uaKcnZjKtB0/iluHAhi4jHmfCyrBfj0Wj5gI/wWm
+q4Kp1+YM4uEYXBjyQVUfIktQf+TW0cUJqvEctl4tcoQ7y3LJi9MNj4BaIrqncgYI
+uW5GPsL1JxwU4up9VWTPhCYFmQx50soyjIrM13cTmmZKiFtaYYeQ5zvvPdFwGSCA
+n9HE4SPDBvB/ZjT2FBAJJcRygoGgGtltXa0canni0aYqGtUnuHFM4uBytKGuv4VB
+DKZlWAFVTXY+Q0ZUqNa/KE3pbEjXI4hHstGyb/p3/OtLqHYWRNC8j1vq3oiFTgBt
+AMjyxusZNeKNOloBr1PxXw==',
+			],
+		],
+		'12' => [
+			'100' => [
+				'latest' => '13.0.0 beta 3',
+				'internalVersion' => '13.0.0.8',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-13.0.0beta3.zip',
+				'web' => 'https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html',
+				'minPHPVersion' => '5.6',
+				'signature' => 'dwKkklqlJKAKIVzDiKzN2vz0uaKcnZjKtB0/iluHAhi4jHmfCyrBfj0Wj5gI/wWm
+q4Kp1+YM4uEYXBjyQVUfIktQf+TW0cUJqvEctl4tcoQ7y3LJi9MNj4BaIrqncgYI
+uW5GPsL1JxwU4up9VWTPhCYFmQx50soyjIrM13cTmmZKiFtaYYeQ5zvvPdFwGSCA
+n9HE4SPDBvB/ZjT2FBAJJcRygoGgGtltXa0canni0aYqGtUnuHFM4uBytKGuv4VB
+DKZlWAFVTXY+Q0ZUqNa/KE3pbEjXI4hHstGyb/p3/OtLqHYWRNC8j1vq3oiFTgBt
+AMjyxusZNeKNOloBr1PxXw==',
 			],
 		],
 		'11' => [
