@@ -25,7 +25,7 @@
  * 			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/upgrade.html',
  * 			// downloadUrl is an optional entry, if not specified the URL is generated using https://download.nextcloud.com/server/releases/nextcloud-'.$newVersion['latest'].'.zip
  * 			'downloadUrl' => 'https://download.nextcloud.com/foo.zip',
- * 			// internalVersion is an optional entry that defaults to latest if not set
+ * 			// internalVersion
  * 			'internalVersion' => '9.1.0'
  * 			// autoupdater is an optional boolean value to define whether the update should be just announced or also delivered
  * 			// defaults to true
@@ -40,7 +40,7 @@
  * 			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/upgrade.html',
  *			// downloadUrl is an optional entry, if not specified the URL is generated using https://download.nextcloud.com/server/releases/nextcloud-'.$newVersion['latest'].'.zip
  * 			'downloadUrl' => 'https://download.nextcloud.com/foo.zip',
- *			// internalVersion is an optional entry that defaults to latest if not set
+ *			// internalVersion
  * 			'internalVersion' => '11.0.0'
  * 			// autoupdater is an optional boolean value to define whether the update should be just announced or also delivered
  * 			// defaults to true
@@ -149,13 +149,20 @@ Fs4ECJ2ntpMtD4+2X0V4TXNZN3LPpDHE5vwTBHcJr52R0+s96731FYRUGesGmsHb
 xG0LjsK2vZOV4ZHT3tZPHGUV1Nrpfj5LIuCyPgn0w+XqTBm+AuF1W5MsgtDq0GOo
 /l4U06AGoCaWHiYAKXbHGg==',
 			],
-			// For PHP 5.4 users
-			'0' => [
+			'101' => [
 				'latest' => '10.0.6',
 				'internalVersion' => '9.1.6.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-10.0.6.zip',
 				'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 				'minPHPVersion' => '5.4',
+			],
+			'102' => [
+				'latest' => '11.0.6',
+				'internalVersion' => '11.0.6.1',
+				'downloadUrl' => 'https://nextcloud.com/outdated-php-5-4-5-5/',
+				'web' => 'https://nextcloud.com/outdated-php-5-4-5-5/',
+				'minPHPVersion' => '5.4',
+				'autoupdater' => '0',
 			],
 		],
 		'9.0' => [
@@ -222,13 +229,20 @@ Fs4ECJ2ntpMtD4+2X0V4TXNZN3LPpDHE5vwTBHcJr52R0+s96731FYRUGesGmsHb
 xG0LjsK2vZOV4ZHT3tZPHGUV1Nrpfj5LIuCyPgn0w+XqTBm+AuF1W5MsgtDq0GOo
 /l4U06AGoCaWHiYAKXbHGg==',
 			],
-			// For PHP 5.4 users
-			'0' => [
+			'101' => [
 				'latest' => '10.0.6',
 				'internalVersion' => '9.1.6.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-10.0.6.zip',
 				'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
 				'minPHPVersion' => '5.4',
+			],
+			'102' => [
+				'latest' => '11.0.6',
+				'internalVersion' => '11.0.6.1',
+				'downloadUrl' => 'https://nextcloud.com/outdated-php-5-4-5-5/',
+				'web' => 'https://nextcloud.com/outdated-php-5-4-5-5/',
+				'minPHPVersion' => '5.4',
+				'autoupdater' => '0',
 			],
 		],
 		'9.0' => [
@@ -309,6 +323,21 @@ alihAAjVXU9kxK/YL40ZIK7MW2RwIXTOnNSzXbi4VqpX11UhshVvRqsR+xubg0jI
 Fs4ECJ2ntpMtD4+2X0V4TXNZN3LPpDHE5vwTBHcJr52R0+s96731FYRUGesGmsHb
 xG0LjsK2vZOV4ZHT3tZPHGUV1Nrpfj5LIuCyPgn0w+XqTBm+AuF1W5MsgtDq0GOo
 /l4U06AGoCaWHiYAKXbHGg==',
+			],
+			'101' => [
+				'latest' => '10.0.6',
+				'internalVersion' => '9.1.6.1',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-10.0.6.zip',
+				'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
+				'minPHPVersion' => '5.4',
+			],
+			'102' => [
+				'latest' => '11.0.6',
+				'internalVersion' => '11.0.6.1',
+				'downloadUrl' => 'https://nextcloud.com/outdated-php-5-4-5-5/',
+				'web' => 'https://nextcloud.com/outdated-php-5-4-5-5/',
+				'minPHPVersion' => '5.4',
+				'autoupdater' => '0',
 			],
 		],
 		'9.0' => [

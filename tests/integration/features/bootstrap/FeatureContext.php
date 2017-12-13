@@ -212,4 +212,14 @@ class FeatureContext implements Context, SnippetAcceptingContext {
             throw new \Exception('Response is not empty:' . PHP_EOL . PHP_EOL . $this->result);
         }
     }
+
+	/**
+	 * @Then Autoupdater is set to :arg1
+	 */
+	public function autoupdaterIsSetTo($autoupdaterValue) {
+		$autoupdater = $this->resultArray['autoupdater'];
+		if($autoupdater !== $autoupdaterValue) {
+			throw new \Exception("Expected autoupdate $autoupdaterValue does not equals $autoupdater");
+		}
+	}
 }
