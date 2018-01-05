@@ -267,7 +267,7 @@ xG0LjsK2vZOV4ZHT3tZPHGUV1Nrpfj5LIuCyPgn0w+XqTBm+AuF1W5MsgtDq0GOo
 	'beta' => [
 		'13' => [
 			'100' => [
-				'latest' => '13.0.0 beta 4',
+				'latest' => '13.0.0 Beta 4',
 				'internalVersion' => '13.0.0.9',
 				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-13.0.0beta4.zip',
 				'web' => 'https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html',
@@ -282,7 +282,7 @@ aPqrdR1bsE6UW/Z5tL+Lsg==',
 		],
 		'12' => [
 			'100' => [
-				'latest' => '13.0.0 beta 4',
+				'latest' => '13.0.0 Beta 4',
 				'internalVersion' => '13.0.0.9',
 				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-13.0.0beta4.zip',
 				'web' => 'https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html',
