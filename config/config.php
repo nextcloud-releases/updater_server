@@ -288,11 +288,11 @@ aPqrdR1bsE6UW/Z5tL+Lsg==',
 				'web' => 'https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html',
 				'minPHPVersion' => '5.6',
 				'signature' => 'noYYOzFveAbmTne7XANMHTRBjZGp4U/dGXdsCDdJ6iG+xWMKhY2Dp8Ud6FBfzl01
-		WMxbczaTUAXz9NJ8q9v/JU+8Cg2U8Bs9VI1xvN3iGbqus8ZsUkyelxi+q7dKqW1c
-		v/Y6PA375Ni6nmUViO3QMABLDdqpC+DKRGXo2Y3HcW63exaL9QmMwr2UHL8P2II2
-		eG+WZDnjM2FElTOfF1vQdVYJkNOOhrAfJqw85iLg/hbOgTNxiArtZk5I2iW5L3lL
-		rJe127m0qaYbnjtuRwreqskDvgRkqKiN2H+CtrtWrBAbFrPUw1mdH2izZowU33e5
-		aPqrdR1bsE6UW/Z5tL+Lsg==',
+WMxbczaTUAXz9NJ8q9v/JU+8Cg2U8Bs9VI1xvN3iGbqus8ZsUkyelxi+q7dKqW1c
+v/Y6PA375Ni6nmUViO3QMABLDdqpC+DKRGXo2Y3HcW63exaL9QmMwr2UHL8P2II2
+eG+WZDnjM2FElTOfF1vQdVYJkNOOhrAfJqw85iLg/hbOgTNxiArtZk5I2iW5L3lL
+rJe127m0qaYbnjtuRwreqskDvgRkqKiN2H+CtrtWrBAbFrPUw1mdH2izZowU33e5
+aPqrdR1bsE6UW/Z5tL+Lsg==',
 			],
 		],
 		'11' => [
