@@ -360,8 +360,13 @@ Ql8peu2DgUjoFYzF5YiIpg==',
 		],
 	],
 	'daily' => [
-		'13' => [
+		'14' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-master.zip',
+			'web' => 'https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html',
+			'minPHPVersion' => '7.0',
+		],
+		'13' => [
+			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable13.zip',
 			'web' => 'https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html',
 			'minPHPVersion' => '5.6',
 		],
