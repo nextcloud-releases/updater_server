@@ -352,17 +352,17 @@ Feature: Testing the update scenario of releases
     And The received version is "11.0.0.2"
     When The request is sent
     Then The response is non-empty
-    And Update to version "11.0.6.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.6.zip"
+    And Update to version "12.0.4.3" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.4.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
     And The signature is
     """
-    OaNjted6Hw/rpiE07lbWTCRgePzWO970h3/I2wRyXwctlYv5BKdFBF7Q2L6BG3ml
-    alihAAjVXU9kxK/YL40ZIK7MW2RwIXTOnNSzXbi4VqpX11UhshVvRqsR+xubg0jI
-    8aa1ahICZaezkfW32AdIOVmVxTfz7JOrxKEq1fg5/4n5z0J5jyBKkx2a2ZVLaMLO
-    Fs4ECJ2ntpMtD4+2X0V4TXNZN3LPpDHE5vwTBHcJr52R0+s96731FYRUGesGmsHb
-    xG0LjsK2vZOV4ZHT3tZPHGUV1Nrpfj5LIuCyPgn0w+XqTBm+AuF1W5MsgtDq0GOo
-    /l4U06AGoCaWHiYAKXbHGg==
+    pdpExf2i5sgwNzkP7fcOKWBcMoZzsSe8PwjZYYi0ZFlUqayQMnlVqmZ0Lc/hBWg/
+    AAuiH+WViv/dHfxECMlcHTVBFABCn8qqHlfllfEoLVGI2V3GoOOYdij72N5pFm3Z
+    8A8ccUEHso3QjdhiwcofSyJ5vxWdJZvruNIdW9M+UfW3Sm98HYoirRUEdvEBKJzZ
+    OOkWI1NexeTzPBErQneNvI1iXl5LSV9Ert4HfIVkMA8Wfpvt8X6tH7G5pGpBrky3
+    nc4UiS2SHl724076KdRNT3amt3XvhkSs6WukH6hAxiWIvygBVRYbAE2tUW+7UPoh
+    1lfbqYRCWrhsrulksMda/A==
     """
 
   Scenario: Updating a non-staged outdated Nextcloud 11.0.0 beta on the empty channel - will use the stable channel then
@@ -528,6 +528,26 @@ Feature: Testing the update scenario of releases
     And The installation mtime is "20"
     When The request is sent
     Then The response is empty
+
+  Scenario: Updating a non-staged up-to-date Nextcloud 11.0.6 on the production channel with PHP 5.6 and lower mtime
+    Given There is a release with channel "production"
+    And The received version is "11.0.6.1"
+    And The received PHP version is "5.6.0"
+    And The installation mtime is "10"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "12.0.4.3" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.4.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+    And The signature is
+    """
+    pdpExf2i5sgwNzkP7fcOKWBcMoZzsSe8PwjZYYi0ZFlUqayQMnlVqmZ0Lc/hBWg/
+    AAuiH+WViv/dHfxECMlcHTVBFABCn8qqHlfllfEoLVGI2V3GoOOYdij72N5pFm3Z
+    8A8ccUEHso3QjdhiwcofSyJ5vxWdJZvruNIdW9M+UfW3Sm98HYoirRUEdvEBKJzZ
+    OOkWI1NexeTzPBErQneNvI1iXl5LSV9Ert4HfIVkMA8Wfpvt8X6tH7G5pGpBrky3
+    nc4UiS2SHl724076KdRNT3amt3XvhkSs6WukH6hAxiWIvygBVRYbAE2tUW+7UPoh
+    1lfbqYRCWrhsrulksMda/A==
+    """
 
   Scenario: Updating a non-staged up-to-date Nextcloud 11.0.6 on the production channel without PHP version
     Given There is a release with channel "production"

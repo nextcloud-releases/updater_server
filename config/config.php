@@ -121,7 +121,20 @@ nc4UiS2SHl724076KdRNT3amt3XvhkSs6WukH6hAxiWIvygBVRYbAE2tUW+7UPoh
 			],
 		],
 		'11' => [
-			'100' => [
+			'15' => [
+				'latest' => '12.0.4',
+				'internalVersion' => '12.0.4.3',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-12.0.4.zip',
+				'web' => 'https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html',
+				'minPHPVersion' => '5.6',
+				'signature' => 'pdpExf2i5sgwNzkP7fcOKWBcMoZzsSe8PwjZYYi0ZFlUqayQMnlVqmZ0Lc/hBWg/
+AAuiH+WViv/dHfxECMlcHTVBFABCn8qqHlfllfEoLVGI2V3GoOOYdij72N5pFm3Z
+8A8ccUEHso3QjdhiwcofSyJ5vxWdJZvruNIdW9M+UfW3Sm98HYoirRUEdvEBKJzZ
+OOkWI1NexeTzPBErQneNvI1iXl5LSV9Ert4HfIVkMA8Wfpvt8X6tH7G5pGpBrky3
+nc4UiS2SHl724076KdRNT3amt3XvhkSs6WukH6hAxiWIvygBVRYbAE2tUW+7UPoh
+1lfbqYRCWrhsrulksMda/A==',
+			],
+			'85' => [
 				'latest' => '11.0.6',
 				'internalVersion' => '11.0.6.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-11.0.6.zip',
