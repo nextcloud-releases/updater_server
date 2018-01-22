@@ -505,7 +505,7 @@ Feature: Testing the update scenario of releases
     Given There is a release with channel "production"
     And The received version is "11.0.0.2"
     And The received PHP version is "5.6.0"
-    And The installation mtime is "20"
+    And The installation mtime is "70"
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.6.1" is available
@@ -525,7 +525,7 @@ Feature: Testing the update scenario of releases
     Given There is a release with channel "production"
     And The received version is "11.0.6.1"
     And The received PHP version is "5.6.0"
-    And The installation mtime is "20"
+    And The installation mtime is "70"
     When The request is sent
     Then The response is empty
 
@@ -552,7 +552,7 @@ Feature: Testing the update scenario of releases
   Scenario: Updating a non-staged up-to-date Nextcloud 11.0.6 on the production channel without PHP version
     Given There is a release with channel "production"
     And The received version is "11.0.6.1"
-    And The installation mtime is "20"
+    And The installation mtime is "70"
     When The request is sent
     Then The response is empty
 
