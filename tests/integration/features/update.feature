@@ -392,7 +392,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "13.0.0.14" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.0.zip"
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-13.0.0.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And The signature is
     """
@@ -411,7 +411,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "13.0.0.14" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.0.zip"
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-13.0.0.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And The signature is
     """
@@ -430,7 +430,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "13.0.0.14" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.0.zip"
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-13.0.0.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And The signature is
     """
@@ -588,7 +588,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "13.0.0.14" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.0.zip"
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-13.0.0.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And The signature is
     """
@@ -608,7 +608,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "13.0.0.14" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.0.zip"
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-13.0.0.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And The signature is
     """
@@ -627,17 +627,17 @@ Feature: Testing the update scenario of releases
     And the installation mtime is "10"
     When The request is sent
     Then The response is non-empty
-    And Update to version "13.0.0.14" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.0.zip"
+    And Update to version "12.0.5.3" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.5.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And The signature is
     """
-    q5bqFR15JaWW6oGM+iNtC7JoDsRHPXAkySJ5TMgcbAfajheMUwgQtytK2S1vpJd7
-    UbhO5CfWStBQKFNR6/tV6R++xLbIBZgXhvjLtpciug+dNBMANZNUiqEbdYLZSWEp
-    Y3HOk087s3o0wazQ/kLDmFmCzW8bngpcI1rRDJTXCS6uf/0BVatOaIoByJRkArnw
-    ir+Hd8swyREt3jrngeePu6/ZrB+5toGcEHaSCmTNwJ7ipKnwi3mPP0XcGWJVswzY
-    WpeJUBR9OkzLQ8Y6sKIEOZrDBsoSjFp0YN6Adgbxgbd4UPwgaJVOFdfuW18RNWWw
-    Tx/vStIU+zA9/Yan/RotKg==
+    N4ncV+GOn/DPTXUdmj/BH94vCxa4DpbsUI3fDM5HmW4kgVLZ6KTWKwsXVjG0Ec9z
+    kkkhnJ+Hu4s21Y0w0Rs56tld3/9W+dsDw2CKsNCwBEuU3hwLj+7kckrNotOI7WDb
+    GhhaUf0PKu5NisMBUBM8t+PZrR3+CvTkLOptrE6SiOtUvfs1qKTc/N93e8NNgSyS
+    IAM/a0bj2SoROGohFjsWVEddHa39X2GD9T6lGULUR6TV5lGE9ODhsbsiITijUJVF
+    O7rE5QeqzfSChkZ0/uP8OtrgRmBLE8PffZrsPPbFrAWaYPF7X3nZ66dzXO4PE7zl
+    q6dAKP/WzDTOIWq0Tk2cFg==
     """
 
  Scenario: Updating an up-to-date Nextcloud 12.0.5 on the stable channel
@@ -645,26 +645,6 @@ Feature: Testing the update scenario of releases
     And The received version is "12.0.5.3"
     And The received PHP version is "5.6.0"
     And the installation mtime is "10"
-    When The request is sent
-    Then The response is non-empty
-    And Update to version "13.0.0.14" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.0.zip"
-    And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
-    And The signature is
-    """
-    q5bqFR15JaWW6oGM+iNtC7JoDsRHPXAkySJ5TMgcbAfajheMUwgQtytK2S1vpJd7
-    UbhO5CfWStBQKFNR6/tV6R++xLbIBZgXhvjLtpciug+dNBMANZNUiqEbdYLZSWEp
-    Y3HOk087s3o0wazQ/kLDmFmCzW8bngpcI1rRDJTXCS6uf/0BVatOaIoByJRkArnw
-    ir+Hd8swyREt3jrngeePu6/ZrB+5toGcEHaSCmTNwJ7ipKnwi3mPP0XcGWJVswzY
-    WpeJUBR9OkzLQ8Y6sKIEOZrDBsoSjFp0YN6Adgbxgbd4UPwgaJVOFdfuW18RNWWw
-    Tx/vStIU+zA9/Yan/RotKg==
-    """
-
- Scenario: Updating an up-to-date Nextcloud 12.0.5 on the stable channel
-    Given There is a release with channel "stable"
-    And The received version is "12.0.5.3"
-    And The received PHP version is "5.6.0"
-    And the installation mtime is "20"
     When The request is sent
     Then The response is empty
 
