@@ -664,7 +664,7 @@ Feature: Testing the update scenario of releases
     Given There is a release with channel "stable"
     And The received version is "12.0.5.3"
     And The received PHP version is "5.6.0"
-    And the installation mtime is "20"
+    And the installation mtime is "65"
     When The request is sent
     Then The response is empty
 
