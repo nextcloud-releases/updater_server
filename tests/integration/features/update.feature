@@ -666,7 +666,19 @@ Feature: Testing the update scenario of releases
     And The received PHP version is "5.6.0"
     And the installation mtime is "65"
     When The request is sent
-    Then The response is empty
+    Then The response is non-empty
+    And Update to version "13.0.0.14" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.0.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
+    And The signature is
+    """
+    q5bqFR15JaWW6oGM+iNtC7JoDsRHPXAkySJ5TMgcbAfajheMUwgQtytK2S1vpJd7
+    UbhO5CfWStBQKFNR6/tV6R++xLbIBZgXhvjLtpciug+dNBMANZNUiqEbdYLZSWEp
+    Y3HOk087s3o0wazQ/kLDmFmCzW8bngpcI1rRDJTXCS6uf/0BVatOaIoByJRkArnw
+    ir+Hd8swyREt3jrngeePu6/ZrB+5toGcEHaSCmTNwJ7ipKnwi3mPP0XcGWJVswzY
+    WpeJUBR9OkzLQ8Y6sKIEOZrDBsoSjFp0YN6Adgbxgbd4UPwgaJVOFdfuW18RNWWw
+    Tx/vStIU+zA9/Yan/RotKg==
+    """
 
  Scenario: Updating an outdated Nextcloud 12.0.0 beta on the production channel
     Given There is a release with channel "production"
