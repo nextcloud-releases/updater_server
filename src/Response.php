@@ -98,7 +98,8 @@ class Response {
 		$writer->writeElement('versionstring', 'Nextcloud '.$newVersion['latest']);
 		$writer->writeElement('url', $downloadUrl);
 		$writer->writeElement('web', $newVersion['web']);
-		$writer->writeElement('autoupdater', isset($newVersion['autoupdater']) ? (int)$newVersion['autoupdater'] : true);
+		$writer->writeElement('autoupdater', isset($newVersion['autoupdater']) ? (int)$newVersion['autoupdater'] : 1);
+		$writer->writeElement('eol', (int) $newVersion['eol']);
 		if(isset($newVersion['signature'])) {
 			$writer->writeElement('signature', $newVersion['signature']);
 		}
@@ -127,7 +128,8 @@ class Response {
 					$writer->writeElement('versionstring', 'Nextcloud daily');
 					$writer->writeElement('url', $newVersion['downloadUrl']);
 					$writer->writeElement('web', $newVersion['web']);
-					$writer->writeElement('autoupdater', isset($newVersion['autoupdater']) ? (int)$newVersion['autoupdater'] : true);
+					$writer->writeElement('autoupdater', isset($newVersion['autoupdater']) ? (int)$newVersion['autoupdater'] : 1);
+					$writer->writeElement('eol', (int) $newVersion['eol']);
 					$writer->endElement();
 					$writer->endDocument();
 					return $writer->flush();
