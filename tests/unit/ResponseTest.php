@@ -42,6 +42,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.owncloud.org/community/owncloud-7.0.13.zip</url>
  <web>https://doc.owncloud.org/server/7.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>1</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -54,6 +55,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.owncloud.org/community/owncloud-8.0.11.zip</url>
  <web>https://doc.owncloud.org/server/7.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>1</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -66,6 +68,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.owncloud.org/community/owncloud-8.1.6.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>1</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -78,6 +81,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.owncloud.org/community/owncloud-8.1.6.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>1</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -90,6 +94,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.owncloud.org/community/owncloud-daily-master.zip</url>
  <web>https://doc.owncloud.org/server/9.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>1</autoupdater>
+ <eol>0</eol>
 </nextcloud>
 ',
 			],
@@ -102,6 +107,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.owncloud.org/community/owncloud-daily-master.zip</url>
  <web>https://doc.owncloud.org/server/9.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>1</autoupdater>
+ <eol>0</eol>
 </nextcloud>
 ',
 			]
@@ -129,30 +135,37 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 					'9.1' => [
 						'downloadUrl' => 'https://download.owncloud.org/community/owncloud-daily-master.zip',
 						'web' => 'https://doc.owncloud.org/server/9.1/admin_manual/maintenance/upgrade.html',
+						'eol' => true,
 					],
 					'9.0' => [
 						'downloadUrl' => 'https://download.owncloud.org/community/owncloud-daily-master.zip',
 						'web' => 'https://doc.owncloud.org/server/9.0/admin_manual/maintenance/upgrade.html',
+						'eol' => false,
 					],
 					'8.2' => [
 						'downloadUrl' => 'https://download.owncloud.org/community/owncloud-daily-stable9.zip',
 						'web' => 'https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html',
+						'eol' => true,
 					],
 					'8.1' => [
 						'downloadUrl' => 'https://download.owncloud.org/community/owncloud-8.2.3.zip',
 						'web' => 'https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html',
+						'eol' => true,
 					],
 					'8.0' => [
 						'downloadUrl' => 'https://download.owncloud.org/community/owncloud-8.1.6.zip',
 						'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+						'eol' => true,
 					],
 					'7' => [
 						'downloadUrl' => 'https://download.owncloud.org/community/owncloud-8.0.11.zip',
 						'web' => 'https://doc.owncloud.org/server/7.0/admin_manual/maintenance/upgrade.html',
+						'eol' => true,
 					],
 					'6' => [
 						'downloadUrl' => 'https://download.owncloud.org/community/owncloud-7.0.13.zip',
 						'web' => 'https://doc.owncloud.org/server/7.0/admin_manual/maintenance/upgrade.html',
+						'eol' => true,
 					],
 				]
 			);
@@ -258,6 +271,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-11.0.1.zip</url>
  <web>https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>1</autoupdater>
+ <eol>0</eol>
  <signature>MySignature</signature>
 </nextcloud>
 ',
@@ -275,6 +289,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.9.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>1</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -291,6 +306,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.7.1.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>1</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -307,6 +323,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.8.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>1</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -323,6 +340,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.10.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>1</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -355,6 +373,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-7.0.12.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>1</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -371,6 +390,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.1.5.zip</url>
  <web>https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>1</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -395,6 +415,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
  <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>1</autoupdater>
+ <eol>0</eol>
 </nextcloud>
 ',
 			],
@@ -435,6 +456,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.10.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>1</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -467,6 +489,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://downloads.owncloud.com/foo.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>1</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -483,6 +506,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-7.0.12.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>1</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -499,6 +523,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.1.5.zip</url>
  <web>https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>1</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -523,6 +548,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
  <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>1</autoupdater>
+ <eol>0</eol>
 </nextcloud>
 ',
 			],
@@ -563,6 +589,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.10.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>1</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -595,6 +622,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-7.0.12.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>1</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -619,6 +647,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.1.5.zip</url>
  <web>https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>1</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -643,6 +672,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
  <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>1</autoupdater>
+ <eol>0</eol>
 </nextcloud>
 ',
 			],
@@ -707,6 +737,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.9.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>0</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -723,6 +754,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.7.1.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>0</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -739,6 +771,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.8.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>0</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -755,6 +788,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.10.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>0</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -787,6 +821,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-7.0.12.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>0</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -803,6 +838,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.1.5.zip</url>
  <web>https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>0</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -827,6 +863,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
  <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>0</autoupdater>
+ <eol>0</eol>
 </nextcloud>
 ',
 			],
@@ -867,6 +904,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.10.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>0</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -899,6 +937,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://downloads.owncloud.com/foo.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>0</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -915,6 +954,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-7.0.12.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>0</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -931,6 +971,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.1.5.zip</url>
  <web>https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>0</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -955,6 +996,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
  <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>0</autoupdater>
+ <eol>0</eol>
 </nextcloud>
 ',
 			],
@@ -995,6 +1037,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.10.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>0</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -1027,6 +1070,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-7.0.12.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>0</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -1051,6 +1095,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.1.5.zip</url>
  <web>https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>0</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -1075,6 +1120,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
  <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>0</autoupdater>
+ <eol>0</eol>
 </nextcloud>
 ',
 			],
@@ -1144,6 +1190,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 					'internalVersion' => '11.0.1',
 					'web' => 'https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html',
 					'signature' => 'MySignature',
+					'eol' => false,
 				],
 			],
 			'8.2' => [
@@ -1151,6 +1198,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 					'latest' => '8.2.2',
 					'internalVersion' => '8.2.2',
 					'web' => 'https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html',
+					'eol' => false,
 				],
 			],
 			'8.1' => [
@@ -1158,6 +1206,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 					'latest' => '8.1.5',
 					'internalVersion' => '8.1.5',
 					'web' => 'https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html',
+					'eol' => true,
 				],
 			],
 			'8.0' => [
@@ -1165,6 +1214,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 					'latest' => '8.0.10',
 					'internalVersion' => '8.0.10',
 					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+					'eol' => true,
 				],
 			],
 			'8.0.7' => [
@@ -1172,6 +1222,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 					'latest' => '8.0.7.1',
 					'internalVersion' => '8.0.7.1',
 					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+					'eol' => true,
 				],
 			],
 			'8.0.7.1' => [
@@ -1179,6 +1230,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 					'latest' => '8.0.8',
 					'internalVersion' => '8.0.8',
 					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+					'eol' => true,
 				],
 			],
 			'8.0.8' => [
@@ -1186,6 +1238,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 					'latest' => '8.0.9',
 					'internalVersion' => '8.0.9',
 					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+					'eol' => true,
 				],
 			],
 			'7' => [
@@ -1193,6 +1246,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 					'latest' => '7.0.12',
 					'internalVersion' => '7.0.12',
 					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
+					'eol' => true,
 				],
 			],
 			'6' => [
@@ -1201,6 +1255,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 					'internalVersion' => '7.0.12',
 					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
 					'downloadUrl' => 'https://downloads.owncloud.com/foo.zip',
+					'eol' => true,
 				]
 			],
 		];
@@ -1256,6 +1311,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 					'internalVersion' => '8.2.2',
 					'web' => 'https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html',
 					'autoupdater' => false,
+					'eol' => false,
 				],
 			],
 			'8.1' => [
@@ -1264,6 +1320,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 					'internalVersion' => '8.1.5',
 					'web' => 'https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html',
 					'autoupdater' => false,
+					'eol' => true,
 				],
 			],
 			'8.0' => [
@@ -1272,6 +1329,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 					'internalVersion' => '8.0.10',
 					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
 					'autoupdater' => false,
+					'eol' => true,
 				],
 			],
 			'8.0.7' => [
@@ -1280,6 +1338,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 					'internalVersion' => '8.0.7.1',
 					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
 					'autoupdater' => false,
+					'eol' => true,
 				],
 			],
 			'8.0.7.1' => [
@@ -1288,6 +1347,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 					'internalVersion' => '8.0.8',
 					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
 					'autoupdater' => false,
+					'eol' => true,
 				],
 			],
 			'8.0.8' => [
@@ -1296,6 +1356,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 					'internalVersion' => '8.0.9',
 					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
 					'autoupdater' => false,
+					'eol' => true,
 				],
 			],
 			'7' => [
@@ -1304,6 +1365,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 					'internalVersion' => '7.0.12',
 					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
 					'autoupdater' => false,
+					'eol' => true,
 				],
 			],
 			'6' => [
@@ -1313,6 +1375,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 					'web' => 'https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html',
 					'downloadUrl' => 'https://downloads.owncloud.com/foo.zip',
 					'autoupdater' => false,
+					'eol' => true,
 				],
 			],
 		];
@@ -1357,6 +1420,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-9.0.0.zip</url>
  <web>https://doc.owncloud.org/server/9.0/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>0</autoupdater>
+ <eol>0</eol>
 </nextcloud>
 ',
 			],
@@ -1370,6 +1434,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
  <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>0</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -1383,6 +1448,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
  <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
  <autoupdater>0</autoupdater>
+ <eol>1</eol>
 </nextcloud>
 ',
 			],
@@ -1404,6 +1470,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 					'web' => 'https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html',
 					'autoupdater' => false,
 					'minPHPVersion' => '5.4',
+					'eol' => true,
 				],
 				'5' => [
 					'latest' => '9.0.0',
@@ -1411,6 +1478,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 					'web' => 'https://doc.owncloud.org/server/9.0/admin_manual/maintenance/upgrade.html',
 					'autoupdater' => false,
 					'minPHPVersion' => '5.6',
+					'eol' => false,
 				]
 			],
 		];
