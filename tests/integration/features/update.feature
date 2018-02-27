@@ -7,6 +7,7 @@ Feature: Testing the update scenario of releases
     And Update to version "9.0.58" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.58.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html"
+    And EOL is set to "1"
     And No signature is set
 
   Scenario: Updating an outdated ownCloud 8.2.5 on the stable channel
@@ -17,8 +18,9 @@ Feature: Testing the update scenario of releases
     And Update to version "9.0.58" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.58.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html"
+    And EOL is set to "1"
     And No signature is set
-    
+
   Scenario: Updating an outdated ownCloud 8.2.5 on the beta channel
     Given There is a release with channel "beta"
     And The received version is "8.2.5"
@@ -27,6 +29,7 @@ Feature: Testing the update scenario of releases
     And Update to version "9.0.58" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-9.0.58.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html"
+    And EOL is set to "1"
     And No signature is set
 
   Scenario: Updating an outdated ownCloud 8.2.5 on the daily channel
@@ -38,6 +41,7 @@ Feature: Testing the update scenario of releases
     And Update to version "100.0.0.0" is available
     And URL to download is "https://download.nextcloud.com/server/daily/latest-stable9.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html"
+    And EOL is set to "1"
     And No signature is set
 
   Scenario: Updating an outdated Nextcloud 9.0.50 on the production channel
@@ -48,6 +52,7 @@ Feature: Testing the update scenario of releases
     And Update to version "9.1.6.1" is available
     And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-10.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+    And EOL is set to "1"
     And No signature is set
 
   Scenario: Updating an outdated Nextcloud 9.0.50 on the stable channel
@@ -58,6 +63,7 @@ Feature: Testing the update scenario of releases
     And Update to version "9.1.6.1" is available
     And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-10.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+    And EOL is set to "1"
     And No signature is set
 
   Scenario: Updating an outdated Nextcloud 9.0.50 on the beta channel
@@ -68,6 +74,7 @@ Feature: Testing the update scenario of releases
     And Update to version "9.1.6.1" is available
     And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-10.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+    And EOL is set to "1"
     And No signature is set
 
   Scenario: Updating an up-to-date Nextcloud 9.0.55 on the production channel
@@ -78,6 +85,7 @@ Feature: Testing the update scenario of releases
     And Update to version "9.1.6.1" is available
     And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-10.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+    And EOL is set to "1"
     And No signature is set
 
   Scenario: Updating an up-to-date Nextcloud 9.0.55 on the stable channel
@@ -88,6 +96,7 @@ Feature: Testing the update scenario of releases
     And Update to version "9.1.6.1" is available
     And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-10.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+    And EOL is set to "1"
     And No signature is set
 
   Scenario: Updating an outdated staged Nextcloud 10.0.3 with PHP 5.4 on the production channel
@@ -100,6 +109,7 @@ Feature: Testing the update scenario of releases
     And Update to version "9.1.6.1" is available
     And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-10.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+    And EOL is set to "1"
     And No signature is set
 
   Scenario: Updating an up-to-date Nextcloud 10.0.3 with PHP 5.6 and no mtime on the production channel
@@ -111,6 +121,7 @@ Feature: Testing the update scenario of releases
     And Update to version "11.0.6.1" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "1"
     And The signature is
     """
     OaNjted6Hw/rpiE07lbWTCRgePzWO970h3/I2wRyXwctlYv5BKdFBF7Q2L6BG3ml
@@ -130,7 +141,9 @@ Feature: Testing the update scenario of releases
     Then The response is non-empty
     And Update to version "11.0.6.1" is available
     And URL to download is "https://nextcloud.com/outdated-php-5-4-5-5/"
+    And EOL is set to "1"
     And URL to documentation is "https://nextcloud.com/outdated-php-5-4-5-5/"
+    And EOL is set to "1"
     And No signature is set
     And Autoupdater is set to "0"
 
@@ -144,6 +157,7 @@ Feature: Testing the update scenario of releases
     And Update to version "11.0.6.1" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "1"
     And The signature is
     """
     OaNjted6Hw/rpiE07lbWTCRgePzWO970h3/I2wRyXwctlYv5BKdFBF7Q2L6BG3ml
@@ -163,7 +177,9 @@ Feature: Testing the update scenario of releases
     Then The response is non-empty
     And Update to version "11.0.6.1" is available
     And URL to download is "https://nextcloud.com/outdated-php-5-4-5-5/"
+    And EOL is set to "1"
     And URL to documentation is "https://nextcloud.com/outdated-php-5-4-5-5/"
+    And EOL is set to "1"
     And No signature is set
     And Autoupdater is set to "0"
 
@@ -176,6 +192,7 @@ Feature: Testing the update scenario of releases
     And Update to version "9.1.6.1" is available
     And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-10.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+    And EOL is set to "1"
     And No signature is set
 
   Scenario: Updating an up-to-date staged Nextcloud 10.0.6 with PHP 5.6 on the stable channel
@@ -188,6 +205,7 @@ Feature: Testing the update scenario of releases
     And Update to version "11.0.7.3" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.7.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "1"
     And The signature is
     """
     seXLXR/sD23IWlku0PyyKg50GKjXJPgit96/C9Tj2oJepqGqxUZB790CcblUYNrB
@@ -207,6 +225,7 @@ Feature: Testing the update scenario of releases
     And Update to version "11.0.7.3" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.7.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "1"
     And The signature is
     """
     seXLXR/sD23IWlku0PyyKg50GKjXJPgit96/C9Tj2oJepqGqxUZB790CcblUYNrB
@@ -226,6 +245,7 @@ Feature: Testing the update scenario of releases
     And Update to version "9.1.6.1" is available
     And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-10.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+    And EOL is set to "1"
     And No signature is set
 
   Scenario: Updating an up-to-date Nextcloud 10.0.6 on the beta channel with PHP 5.4
@@ -237,6 +257,7 @@ Feature: Testing the update scenario of releases
     And Update to version "11.0.6.1" is available
     And URL to download is "https://nextcloud.com/outdated-php-5-4-5-5/"
     And URL to documentation is "https://nextcloud.com/outdated-php-5-4-5-5/"
+    And EOL is set to "1"
     And No signature is set
     And Autoupdater is set to "0"
 
@@ -248,6 +269,7 @@ Feature: Testing the update scenario of releases
     And Update to version "11.0.6.1" is available
     And URL to download is "https://nextcloud.com/outdated-php-5-4-5-5/"
     And URL to documentation is "https://nextcloud.com/outdated-php-5-4-5-5/"
+    And EOL is set to "1"
     And No signature is set
     And Autoupdater is set to "0"
 
@@ -260,6 +282,7 @@ Feature: Testing the update scenario of releases
     And Update to version "11.0.7.3" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.7.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "1"
     And The signature is
     """
     seXLXR/sD23IWlku0PyyKg50GKjXJPgit96/C9Tj2oJepqGqxUZB790CcblUYNrB
@@ -280,6 +303,7 @@ Feature: Testing the update scenario of releases
     And Update to version "11.0.7.3" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.7.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And The signature is
     """
     seXLXR/sD23IWlku0PyyKg50GKjXJPgit96/C9Tj2oJepqGqxUZB790CcblUYNrB
@@ -299,6 +323,7 @@ Feature: Testing the update scenario of releases
     And Update to version "11.0.7.3" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.7.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And The signature is
     """
     seXLXR/sD23IWlku0PyyKg50GKjXJPgit96/C9Tj2oJepqGqxUZB790CcblUYNrB
@@ -318,6 +343,7 @@ Feature: Testing the update scenario of releases
     And Update to version "12.0.5.3" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.5.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And The signature is
     """
     N4ncV+GOn/DPTXUdmj/BH94vCxa4DpbsUI3fDM5HmW4kgVLZ6KTWKwsXVjG0Ec9z
@@ -337,6 +363,7 @@ Feature: Testing the update scenario of releases
     And Update to version "12.0.5.3" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.5.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And The signature is
     """
     N4ncV+GOn/DPTXUdmj/BH94vCxa4DpbsUI3fDM5HmW4kgVLZ6KTWKwsXVjG0Ec9z
@@ -355,6 +382,7 @@ Feature: Testing the update scenario of releases
     And Update to version "12.0.5.3" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.5.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And The signature is
     """
     N4ncV+GOn/DPTXUdmj/BH94vCxa4DpbsUI3fDM5HmW4kgVLZ6KTWKwsXVjG0Ec9z
@@ -375,6 +403,7 @@ Feature: Testing the update scenario of releases
     And Update to version "12.0.5.3" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.5.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And The signature is
     """
     N4ncV+GOn/DPTXUdmj/BH94vCxa4DpbsUI3fDM5HmW4kgVLZ6KTWKwsXVjG0Ec9z
@@ -394,6 +423,7 @@ Feature: Testing the update scenario of releases
     And Update to version "13.0.0.14" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.0.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And The signature is
     """
     q5bqFR15JaWW6oGM+iNtC7JoDsRHPXAkySJ5TMgcbAfajheMUwgQtytK2S1vpJd7
@@ -413,6 +443,7 @@ Feature: Testing the update scenario of releases
     And Update to version "13.0.0.14" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.0.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And The signature is
     """
     q5bqFR15JaWW6oGM+iNtC7JoDsRHPXAkySJ5TMgcbAfajheMUwgQtytK2S1vpJd7
@@ -432,6 +463,7 @@ Feature: Testing the update scenario of releases
     And Update to version "13.0.0.14" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.0.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And The signature is
     """
     q5bqFR15JaWW6oGM+iNtC7JoDsRHPXAkySJ5TMgcbAfajheMUwgQtytK2S1vpJd7
@@ -452,6 +484,7 @@ Feature: Testing the update scenario of releases
     And Update to version "12.0.5.3" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.5.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And The signature is
     """
     N4ncV+GOn/DPTXUdmj/BH94vCxa4DpbsUI3fDM5HmW4kgVLZ6KTWKwsXVjG0Ec9z
@@ -472,6 +505,7 @@ Feature: Testing the update scenario of releases
     And Update to version "12.0.5.3" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.5.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And The signature is
     """
     N4ncV+GOn/DPTXUdmj/BH94vCxa4DpbsUI3fDM5HmW4kgVLZ6KTWKwsXVjG0Ec9z
@@ -491,6 +525,7 @@ Feature: Testing the update scenario of releases
     And Update to version "12.0.5.3" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.5.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And The signature is
     """
     N4ncV+GOn/DPTXUdmj/BH94vCxa4DpbsUI3fDM5HmW4kgVLZ6KTWKwsXVjG0Ec9z
@@ -511,6 +546,7 @@ Feature: Testing the update scenario of releases
     And Update to version "12.0.5.3" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.5.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And The signature is
     """
     N4ncV+GOn/DPTXUdmj/BH94vCxa4DpbsUI3fDM5HmW4kgVLZ6KTWKwsXVjG0Ec9z
@@ -531,6 +567,7 @@ Feature: Testing the update scenario of releases
     And Update to version "12.0.5.3" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.5.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And The signature is
     """
     N4ncV+GOn/DPTXUdmj/BH94vCxa4DpbsUI3fDM5HmW4kgVLZ6KTWKwsXVjG0Ec9z
@@ -551,6 +588,7 @@ Feature: Testing the update scenario of releases
     And Update to version "12.0.5.3" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.5.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And The signature is
     """
     N4ncV+GOn/DPTXUdmj/BH94vCxa4DpbsUI3fDM5HmW4kgVLZ6KTWKwsXVjG0Ec9z
@@ -570,6 +608,7 @@ Feature: Testing the update scenario of releases
     And Update to version "12.0.5.3" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.5.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And The signature is
     """
     N4ncV+GOn/DPTXUdmj/BH94vCxa4DpbsUI3fDM5HmW4kgVLZ6KTWKwsXVjG0Ec9z
@@ -590,6 +629,7 @@ Feature: Testing the update scenario of releases
     And Update to version "13.0.0.14" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.0.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And The signature is
     """
     q5bqFR15JaWW6oGM+iNtC7JoDsRHPXAkySJ5TMgcbAfajheMUwgQtytK2S1vpJd7
@@ -610,6 +650,7 @@ Feature: Testing the update scenario of releases
     And Update to version "13.0.0.14" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.0.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And The signature is
     """
     q5bqFR15JaWW6oGM+iNtC7JoDsRHPXAkySJ5TMgcbAfajheMUwgQtytK2S1vpJd7
@@ -630,6 +671,7 @@ Feature: Testing the update scenario of releases
     And Update to version "13.0.0.14" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.0.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And The signature is
     """
     q5bqFR15JaWW6oGM+iNtC7JoDsRHPXAkySJ5TMgcbAfajheMUwgQtytK2S1vpJd7
@@ -650,6 +692,7 @@ Feature: Testing the update scenario of releases
     And Update to version "13.0.0.14" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.0.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And The signature is
     """
     q5bqFR15JaWW6oGM+iNtC7JoDsRHPXAkySJ5TMgcbAfajheMUwgQtytK2S1vpJd7
@@ -670,6 +713,7 @@ Feature: Testing the update scenario of releases
     And Update to version "13.0.0.14" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.0.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And The signature is
     """
     q5bqFR15JaWW6oGM+iNtC7JoDsRHPXAkySJ5TMgcbAfajheMUwgQtytK2S1vpJd7
@@ -690,6 +734,7 @@ Feature: Testing the update scenario of releases
     And Update to version "12.0.5.3" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.5.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And The signature is
     """
     N4ncV+GOn/DPTXUdmj/BH94vCxa4DpbsUI3fDM5HmW4kgVLZ6KTWKwsXVjG0Ec9z
@@ -717,6 +762,7 @@ Feature: Testing the update scenario of releases
     And Update to version "100.0.0.0" is available
     And URL to download is "https://download.nextcloud.com/server/daily/latest-stable9.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html"
+    And EOL is set to "1"
     And No signature is set
 
   Scenario: Updating an up-to-date Nextcloud 9.0 daily
@@ -735,6 +781,7 @@ Feature: Testing the update scenario of releases
     And Update to version "100.0.0.0" is available
     And URL to download is "https://download.nextcloud.com/server/daily/latest-stable10.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
+    And EOL is set to "1"
     And No signature is set
 
   Scenario: Updating an up-to-date Nextcloud 10.0 daily
@@ -753,6 +800,7 @@ Feature: Testing the update scenario of releases
     And Update to version "100.0.0.0" is available
     And URL to download is "https://download.nextcloud.com/server/daily/latest-stable11.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And No signature is set
 
   Scenario: Updating an up-to-date Nextcloud 11.0 daily
@@ -771,6 +819,7 @@ Feature: Testing the update scenario of releases
     And Update to version "100.0.0.0" is available
     And URL to download is "https://download.nextcloud.com/server/daily/latest-stable12.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And No signature is set
 
   Scenario: Updating an up-to-date Nextcloud 12.0 daily
@@ -789,6 +838,7 @@ Feature: Testing the update scenario of releases
     And Update to version "100.0.0.0" is available
     And URL to download is "https://download.nextcloud.com/server/daily/latest-stable13.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And No signature is set
 
   Scenario: Updating an up-to-date Nextcloud 13.0 daily
@@ -807,6 +857,7 @@ Feature: Testing the update scenario of releases
     And Update to version "100.0.0.0" is available
     And URL to download is "https://download.nextcloud.com/server/daily/latest-master.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
     And No signature is set
 
   Scenario: Updating an up-to-date Nextcloud 14.0 daily

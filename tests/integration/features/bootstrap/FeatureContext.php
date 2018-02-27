@@ -160,8 +160,8 @@ class FeatureContext implements Context, SnippetAcceptingContext {
         $xml = simplexml_load_string($this->result);
         $json = json_encode($xml);
         $this->resultArray = json_decode($json, TRUE);
-        if(count($this->resultArray) !== 5 && count($this->resultArray) !== 6) {
-            throw new \Exception('Response contains not 5 or 6 array elements.');
+        if(count($this->resultArray) !== 6 && count($this->resultArray) !== 7) {
+            throw new \Exception('Response contains not 6 or 7 array elements.');
         }
     }
 
@@ -222,4 +222,14 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 			throw new \Exception("Expected autoupdate $autoupdaterValue does not equals $autoupdater");
 		}
 	}
+
+    /**
+     * @Then EOL is set to :arg1
+     */
+    public function eolIsSetTo($eolValue) {
+        $eol = $this->resultArray['eol'];
+        if($eol !== $eolValue) {
+            throw new \Exception("Expected eol $eolValue does not equals $eol");
+        }
+    }
 }
