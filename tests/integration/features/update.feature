@@ -118,8 +118,8 @@ Feature: Testing the update scenario of releases
     And The received version is "9.1.0.2"
     When The request is sent
     Then The response is non-empty
-    And Update to version "11.0.6.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.6.zip"
+    And Update to version "11.0.8.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.8.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
@@ -139,7 +139,7 @@ Feature: Testing the update scenario of releases
     And The received version is "9.1.6.1"
     When The request is sent
     Then The response is non-empty
-    And Update to version "11.0.6.1" is available
+    And Update to version "11.0.8.1" is available
     And URL to download is "https://nextcloud.com/outdated-php-5-4-5-5/"
     And EOL is set to "1"
     And URL to documentation is "https://nextcloud.com/outdated-php-5-4-5-5/"
@@ -154,8 +154,8 @@ Feature: Testing the update scenario of releases
     And The received version is "9.1.6.1"
     When The request is sent
     Then The response is non-empty
-    And Update to version "11.0.6.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.6.zip"
+    And Update to version "11.0.8.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.8.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
@@ -203,7 +203,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.8.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-11.0.8.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.8.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
@@ -223,7 +223,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.8.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-11.0.8.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.8.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
@@ -280,7 +280,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.8.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-11.0.8.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.8.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
@@ -301,7 +301,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.8.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-11.0.8.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.8.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
@@ -321,7 +321,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.8.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-11.0.8.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.8.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
@@ -341,7 +341,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.8.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-11.0.8.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.8.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
@@ -361,7 +361,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.8.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-11.0.8.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.8.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
@@ -401,7 +401,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.8.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-11.0.8.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.8.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
@@ -421,7 +421,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "12.0.6.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-12.0.6.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
@@ -441,7 +441,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "12.0.6.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-12.0.6.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
@@ -461,7 +461,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "13.0.1.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-13.0.1.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/13/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
@@ -482,7 +482,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.8.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-11.0.8.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.8.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
@@ -503,7 +503,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.8.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-11.0.8.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.8.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
@@ -523,7 +523,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "11.0.8.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-11.0.8.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-11.0.8.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
@@ -627,7 +627,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "12.0.6.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-12.0.6.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
@@ -648,7 +648,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "12.0.6.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-12.0.6.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
@@ -669,7 +669,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "12.0.6.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-12.0.6.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
@@ -690,7 +690,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "12.0.6.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-12.0.6.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
@@ -711,7 +711,7 @@ Feature: Testing the update scenario of releases
     When The request is sent
     Then The response is non-empty
     And Update to version "12.0.6.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-12.0.6.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
