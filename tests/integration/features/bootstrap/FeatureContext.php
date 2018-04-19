@@ -205,6 +205,19 @@ class FeatureContext implements Context, SnippetAcceptingContext {
     }
 
     /**
+     * @Then URL to changelog is :arg1
+     */
+    public function urlToChangelogIs($arg1) {
+        $changelog = $this->resultArray['changelog'];
+        if(empty($changelog)) {
+            throw new \Exception('changelog is empty in result array');
+        }
+        if($changelog !== $arg1) {
+            throw new \Exception("Expected changelog $arg1 does not equals $changelog");
+        }
+    }
+
+    /**
      * @Then The response is empty
      */
     public function theResponseIsEmpty() {

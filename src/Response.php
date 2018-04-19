@@ -5,20 +5,28 @@
 
 namespace UpdateServer;
 
+use UpdateServer\Exceptions\UnavailableWhatsNewException;
+
 class Response {
 	/** @var Config */
 	private $config;
 	/** @var Request */
 	private $request;
+	/** @var WhatsNew */
+	private $whatsNew;
 
 	/**
 	 * @param Request $request
 	 * @param Config $config
+	 * @param WhatsNew $whatsNew
 	 */
 	public function __construct(Request $request,
-								Config $config) {
+								Config $config,
+								WhatsNew $whatsNew
+	) {
 		$this->request = $request;
 		$this->config = $config;
+		$this->whatsNew = $whatsNew;
 	}
 
 	/**
@@ -88,6 +96,12 @@ class Response {
 		if(isset($newVersion['downloadUrl'])) {
 			$downloadUrl = $newVersion['downloadUrl'];
 		}
+		$changelogTag = '#' . implode('-', explode('.', $newVersion['latest']));
+		$preReleasePos = strpos($changelogTag, ' ');
+		if($preReleasePos !== false) {
+			$changelogTag = substr($changelogTag, 0, $preReleasePos);
+		}
+		$changelogUrl = 'https://nextcloud.com/changelog/' . $changelogTag;
 
 		$writer = new \XMLWriter();
 		$writer->openMemory();
@@ -98,10 +112,16 @@ class Response {
 		$writer->writeElement('versionstring', 'Nextcloud '.$newVersion['latest']);
 		$writer->writeElement('url', $downloadUrl);
 		$writer->writeElement('web', $newVersion['web']);
+		$writer->writeElement('changelog', $changelogUrl);
 		$writer->writeElement('autoupdater', isset($newVersion['autoupdater']) ? (int)$newVersion['autoupdater'] : 1);
 		$writer->writeElement('eol', (int) $newVersion['eol']);
 		if(isset($newVersion['signature'])) {
 			$writer->writeElement('signature', $newVersion['signature']);
+		}
+		try {
+			$writer->writeElement('whatsNew', $this->whatsNew->get($newVersion['latest']));
+		}  catch (UnavailableWhatsNewException $e) {
+			// sad :(
 		}
 		$writer->endElement();
 		$writer->endDocument();
