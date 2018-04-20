@@ -23,7 +23,6 @@
 
 namespace Tests;
 
-use UpdateServer\Exceptions\UnavailableWhatsNewException;
 use UpdateServer\WhatsNew;
 
 class WhatsNewTest extends \PHPUnit_Framework_TestCase {
@@ -71,7 +70,7 @@ class WhatsNewTest extends \PHPUnit_Framework_TestCase {
 	}
 
 	/**
-	 * @expectedException UnavailableWhatsNewException
+	 * @expectedException \UpdateServer\Exceptions\UnavailableWhatsNewException
 	 */
 	public function testNotAvailable() {
 		$whatsNew = new WhatsNew(__DIR__ . '/../data/whatsnew.json');

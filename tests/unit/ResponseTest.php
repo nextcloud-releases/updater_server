@@ -6,8 +6,10 @@
 namespace Tests;
 
 use UpdateServer\Config;
+use UpdateServer\Exceptions\UnavailableWhatsNewException;
 use UpdateServer\Request;
 use UpdateServer\Response;
+use UpdateServer\WhatsNew;
 
 class ResponseTest extends \PHPUnit_Framework_TestCase {
 	/** @var Request */
@@ -16,15 +18,19 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 	private $config;
 	/** @var Response */
 	private $response;
+	/** @var WhatsNew */
+	private $whatsNew;
 
 	public function setUp() {
 		date_default_timezone_set('Europe/Berlin');
 
-		$this->request = $this->getMockBuilder('\UpdateServer\Request')
+		$this->request = $this->getMockBuilder(Request::class)
 			->disableOriginalConstructor()->getMock();
-		$this->config = $this->getMockBuilder('\UpdateServer\Config')
+		$this->config = $this->getMockBuilder(Config::class)
 			->disableOriginalConstructor()->getMock();
-		$this->response = new Response($this->request, $this->config);
+		$this->whatsNew = $this->getMockBuilder(WhatsNew::class)
+			->disableOriginalConstructor()->getMock();
+		$this->response = new Response($this->request, $this->config, $this->whatsNew);
 	}
 
 	public function dailyVersionProvider() {
@@ -270,6 +276,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 11.0.1</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-11.0.1.zip</url>
  <web>https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#11-0-1</changelog>
  <autoupdater>1</autoupdater>
  <eol>0</eol>
  <signature>MySignature</signature>
@@ -288,6 +295,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.0.9</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.9.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-0-9</changelog>
  <autoupdater>1</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -305,6 +313,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.0.7.1</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.7.1.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-0-7</changelog>
  <autoupdater>1</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -322,6 +331,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.0.8</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.8.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-0-8</changelog>
  <autoupdater>1</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -339,6 +349,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.0.10</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.10.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-0-10</changelog>
  <autoupdater>1</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -372,6 +383,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 7.0.12</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-7.0.12.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#7-0-12</changelog>
  <autoupdater>1</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -389,6 +401,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.1.5</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.1.5.zip</url>
  <web>https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-1-5</changelog>
  <autoupdater>1</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -414,6 +427,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.2.2</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
  <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-2-2</changelog>
  <autoupdater>1</autoupdater>
  <eol>0</eol>
 </nextcloud>
@@ -455,6 +469,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.0.10</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.10.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-0-10</changelog>
  <autoupdater>1</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -505,6 +520,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 7.0.12</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-7.0.12.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#7-0-12</changelog>
  <autoupdater>1</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -522,6 +538,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.1.5</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.1.5.zip</url>
  <web>https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-1-5</changelog>
  <autoupdater>1</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -547,6 +564,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.2.2</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
  <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-2-2</changelog>
  <autoupdater>1</autoupdater>
  <eol>0</eol>
 </nextcloud>
@@ -588,6 +606,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.0.10</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.10.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-0-10</changelog>
  <autoupdater>1</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -621,6 +640,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 7.0.12</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-7.0.12.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#7-0-12</changelog>
  <autoupdater>1</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -646,6 +666,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.1.5</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.1.5.zip</url>
  <web>https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-1-5</changelog>
  <autoupdater>1</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -671,6 +692,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.2.2</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
  <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-2-2</changelog>
  <autoupdater>1</autoupdater>
  <eol>0</eol>
 </nextcloud>
@@ -736,6 +758,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.0.9</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.9.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-0-9</changelog>
  <autoupdater>0</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -753,6 +776,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.0.7.1</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.7.1.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-0-7</changelog>
  <autoupdater>0</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -770,6 +794,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.0.8</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.8.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-0-8</changelog>
  <autoupdater>0</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -787,6 +812,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.0.10</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.10.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-0-10</changelog>
  <autoupdater>0</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -820,6 +846,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 7.0.12</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-7.0.12.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#7-0-12</changelog>
  <autoupdater>0</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -837,6 +864,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.1.5</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.1.5.zip</url>
  <web>https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-1-5</changelog>
  <autoupdater>0</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -862,6 +890,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.2.2</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
  <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-2-2</changelog>
  <autoupdater>0</autoupdater>
  <eol>0</eol>
 </nextcloud>
@@ -903,6 +932,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.0.10</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.10.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-0-10</changelog>
  <autoupdater>0</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -953,6 +983,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 7.0.12</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-7.0.12.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#7-0-12</changelog>
  <autoupdater>0</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -970,6 +1001,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.1.5</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.1.5.zip</url>
  <web>https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-1-5</changelog>
  <autoupdater>0</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -995,6 +1027,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.2.2</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
  <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-2-2</changelog>
  <autoupdater>0</autoupdater>
  <eol>0</eol>
 </nextcloud>
@@ -1036,6 +1069,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.0.10</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.0.10.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-0-10</changelog>
  <autoupdater>0</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -1069,6 +1103,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 7.0.12</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-7.0.12.zip</url>
  <web>https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#7-0-12</changelog>
  <autoupdater>0</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -1094,6 +1129,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.1.5</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.1.5.zip</url>
  <web>https://doc.owncloud.org/server/8.1/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-1-5</changelog>
  <autoupdater>0</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -1119,6 +1155,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.2.2</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
  <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-2-2</changelog>
  <autoupdater>0</autoupdater>
  <eol>0</eol>
 </nextcloud>
@@ -1284,6 +1321,10 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 			->expects($this->any())
 			->method('getRevisionVersion')
 			->willReturn($revisionVersion);
+		$this->whatsNew
+			->expects($this->any())
+			->method('get')
+			->willThrowException(new UnavailableWhatsNewException());
 
 		$this->assertSame($expected, $this->response->buildResponse());
 	}
@@ -1404,6 +1445,10 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 			->expects($this->any())
 			->method('getRevisionVersion')
 			->willReturn($revisionVersion);
+		$this->whatsNew
+			->expects($this->any())
+			->method('get')
+			->willThrowException(new UnavailableWhatsNewException());
 
 		$this->assertSame($expected, $this->response->buildResponse());
 	}
@@ -1419,6 +1464,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 9.0.0</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-9.0.0.zip</url>
  <web>https://doc.owncloud.org/server/9.0/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#9-0-0</changelog>
  <autoupdater>0</autoupdater>
  <eol>0</eol>
 </nextcloud>
@@ -1433,6 +1479,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.2.2</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
  <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-2-2</changelog>
  <autoupdater>0</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -1447,6 +1494,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 8.2.2</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-8.2.2.zip</url>
  <web>https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html</web>
+ <changelog>https://nextcloud.com/changelog/#8-2-2</changelog>
  <autoupdater>0</autoupdater>
  <eol>1</eol>
 </nextcloud>
@@ -1524,6 +1572,10 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 			->expects($this->any())
 			->method('getPHPReleaseVersion')
 			->willReturn('0');
+		$this->whatsNew
+			->expects($this->any())
+			->method('get')
+			->willThrowException(new UnavailableWhatsNewException());
 
 		$this->assertSame($expected, $this->response->buildResponse());
 	}
