@@ -119,7 +119,12 @@ class Response {
 			$writer->writeElement('signature', $newVersion['signature']);
 		}
 		try {
-			$writer->writeElement('whatsNew', $this->whatsNew->get($newVersion['latest']));
+			$whatsNewItems = $this->whatsNew->get($newVersion['latest']);
+			$writer->startElement('whatsNew');
+			foreach($whatsNewItems as $line) {
+				$writer->writeElement('item', $line);
+			}
+			$writer->endElement();
 		}  catch (UnavailableWhatsNewException $e) {
 			// sad :(
 		}
