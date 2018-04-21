@@ -46,6 +46,25 @@ class Response {
 	}
 
 	/**
+	 * @param \XMLWriter $writer
+	 * @param $version
+	 */
+	private function addChangelogURLIfApplicable(\XMLWriter $writer, $version) {
+		if(version_compare($version, '9.0.54', '<')) {
+			return;
+		}
+
+		$changelogTag = '#' . implode('-', array_slice(explode('.', $version), 0, 3));
+		$preReleasePos = strpos($changelogTag, ' ');
+		if($preReleasePos !== false) {
+			$changelogTag = substr($changelogTag, 0, $preReleasePos);
+		}
+		$changelogUrl = 'https://nextcloud.com/changelog/' . $changelogTag;
+
+		$writer->writeElement('changelog', $changelogUrl);
+	}
+
+	/**
 	 * Code for the stable editions
 	 *
 	 * @param array $versions
@@ -96,12 +115,6 @@ class Response {
 		if(isset($newVersion['downloadUrl'])) {
 			$downloadUrl = $newVersion['downloadUrl'];
 		}
-		$changelogTag = '#' . implode('-', explode('.', $newVersion['latest']));
-		$preReleasePos = strpos($changelogTag, ' ');
-		if($preReleasePos !== false) {
-			$changelogTag = substr($changelogTag, 0, $preReleasePos);
-		}
-		$changelogUrl = 'https://nextcloud.com/changelog/' . $changelogTag;
 
 		$writer = new \XMLWriter();
 		$writer->openMemory();
@@ -112,7 +125,7 @@ class Response {
 		$writer->writeElement('versionstring', 'Nextcloud '.$newVersion['latest']);
 		$writer->writeElement('url', $downloadUrl);
 		$writer->writeElement('web', $newVersion['web']);
-		$writer->writeElement('changelog', $changelogUrl);
+		$this->addChangelogURLIfApplicable($writer, $newVersion['latest']);
 		$writer->writeElement('autoupdater', isset($newVersion['autoupdater']) ? (int)$newVersion['autoupdater'] : 1);
 		$writer->writeElement('eol', (int) $newVersion['eol']);
 		if(isset($newVersion['signature'])) {
