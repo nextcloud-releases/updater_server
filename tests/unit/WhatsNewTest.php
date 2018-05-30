@@ -26,36 +26,58 @@ namespace Tests;
 use UpdateServer\WhatsNew;
 
 class WhatsNewTest extends \PHPUnit_Framework_TestCase {
-
 	public function whatsNewProvider() {
 		return [
 			[
 				'en',
 				[
-					"Pollute the files failing to update l n files for pdf",
-					"Emaillogin server show open graph preview in gallery removed old code",
-					"Server sharee email search server log exceptions that s settings server",
+					'admin' => [
+						"Pollute the files failing to update l n files for pdf",
+						"Emaillogin server show open graph preview in gallery removed old code",
+						"Server sharee email search server log exceptions that s settings server",
+					],
+					'regular' => [
+						"A beautifully revamped web UI",
+						"Sparkling buttons with pew-pew-sound effects when you look at them",
+						"Everything is shared automatically with your mother-in-law"
+					]
 				]
 			],
 			[
 				'de-KX',
 				[
-					"Verschmutzen Sie die Dateien kein update auf l n für pdf-Dateien",
-					"Emaillogin server zeigen open graph-Vorschau in der Galerie entfernt, alten code",
-					"Server sharee E-Mail-such-server-log-Ausnahmen, die s-Einstellungen server"
+					'admin' => [
+						"Verschmutzen Sie die Dateien kein update auf l n für pdf-Dateien",
+						"Emaillogin server zeigen open graph-Vorschau in der Galerie entfernt, alten code",
+						"Server sharee E-Mail-such-server-log-Ausnahmen, die s-Einstellungen server"
+					],
+					'regular' => [
+						"Eine hübsch umgemodeltes webbasiertes Benutzerinterface",
+						"Funkelnde Schaltflächen mit Laserwaffensoundeffekten wenn man auf sie schaut",
+						"Alles wird automatisch mit der Schwiegermutter geteilt"
+					]
+
 				]
 			],
 			[
 				'tlh-KX',
 				[
-					"Pollute the files failing to update l n files for pdf",
-					"Emaillogin server show open graph preview in gallery removed old code",
-					"Server sharee email search server log exceptions that s settings server",
+					'admin' => [
+						"Pollute the files failing to update l n files for pdf",
+						"Emaillogin server show open graph preview in gallery removed old code",
+						"Server sharee email search server log exceptions that s settings server",
+					],
+					'regular' => [
+						"A beautifully revamped web UI",
+						"Sparkling buttons with pew-pew-sound effects when you look at them",
+						"Everything is shared automatically with your mother-in-law"
+					]
 				]
 			],
 
 		];
 	}
+
 
 	/**
 	 * @dataProvider whatsNewProvider

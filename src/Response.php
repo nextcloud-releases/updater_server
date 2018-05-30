@@ -133,13 +133,15 @@ class Response {
 		}
 		try {
 			$whatsNewItems = $this->whatsNew->get($newVersion['latest']);
-			$writer->startElement('whatsNew');
-			foreach($whatsNewItems as $line) {
-				$writer->writeElement('item', $line);
+			foreach ($whatsNewItems as $audience => $lines) {
+				$writer->startElement('whatsNew_' . strtolower($audience));
+				foreach($lines as $line) {
+					$writer->writeElement('item', $line);
+				}
+				$writer->endElement();
 			}
-			$writer->endElement();
 		}  catch (UnavailableWhatsNewException $e) {
-			// sad :(
+			// sad, nothing to report back :(
 		}
 		$writer->endElement();
 		$writer->endDocument();

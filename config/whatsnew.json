@@ -1,9 +1,16 @@
 {
   "14.0.0" : {
-    "en" : [
-      "Pollute the files failing to update l n files for pdf",
-      "Emaillogin server show open graph preview in gallery removed old code",
-      "Server sharee email search server log exceptions that s settings server"
-    ]
+    "en" : {
+      "admin": [
+        "Pollute the files failing to update l n files for pdf",
+        "Emaillogin server show open graph preview in gallery removed old code",
+        "Server sharee email search server log exceptions that s settings server"
+      ],
+      "regular": [
+        "A beautifully revamped web UI",
+        "Sparkling buttons with pew-pew-sound effects when you look at them",
+        "Everything is shared automatically with your mother-in-law"
+      ]
+    }
   }
 }
