@@ -33,11 +33,10 @@ try {
 
 try {
 	$config = new \UpdateServer\Config(__DIR__ . '/config/config.php');
-	$whatsNew = new \UpdateServer\WhatsNew(__DIR__ . '/config/whatsnew.json');
 } catch (\RuntimeException $e) {
 	exit();
 }
 
 // Return a response
-$response = new \UpdateServer\Response($request, $config, $whatsNew);
+$response = new \UpdateServer\Response($request, $config);
 echo $response->buildResponse();

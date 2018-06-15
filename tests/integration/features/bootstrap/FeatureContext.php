@@ -160,8 +160,8 @@ class FeatureContext implements Context, SnippetAcceptingContext {
         $xml = simplexml_load_string($this->result);
         $json = json_encode($xml);
         $this->resultArray = json_decode($json, TRUE);
-        if(count($this->resultArray) < 6 || count($this->resultArray) > 9) {
-            throw new \Exception('Response contains not between 6 or 9 array elements.');
+        if(count($this->resultArray) < 6 || count($this->resultArray) > 8) {
+            throw new \Exception('Response contains not between 6 or 8 array elements.');
         }
     }
 
@@ -208,12 +208,12 @@ class FeatureContext implements Context, SnippetAcceptingContext {
      * @Then URL to changelog is :arg1
      */
     public function urlToChangelogIs($arg1) {
-        $changelog = $this->resultArray['changelog'];
-        if(empty($changelog)) {
-            throw new \Exception('changelog is empty in result array');
+        $changesUrl = $this->resultArray['changes'];
+        if(empty($changesUrl)) {
+            throw new \Exception('changes is empty in result array');
         }
-        if($changelog !== $arg1) {
-            throw new \Exception("Expected changelog $arg1 does not equals $changelog");
+        if($changesUrl !== $arg1) {
+            throw new \Exception("Expected changes $arg1 does not equals $changesUrl");
         }
     }
 

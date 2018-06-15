@@ -5,28 +5,21 @@
 
 namespace UpdateServer;
 
-use UpdateServer\Exceptions\UnavailableWhatsNewException;
-
 class Response {
 	/** @var Config */
 	private $config;
 	/** @var Request */
 	private $request;
-	/** @var WhatsNew */
-	private $whatsNew;
 
 	/**
 	 * @param Request $request
 	 * @param Config $config
-	 * @param WhatsNew $whatsNew
 	 */
 	public function __construct(Request $request,
-								Config $config,
-								WhatsNew $whatsNew
+								Config $config
 	) {
 		$this->request = $request;
 		$this->config = $config;
-		$this->whatsNew = $whatsNew;
 	}
 
 	/**
@@ -50,18 +43,20 @@ class Response {
 	 * @param $version
 	 */
 	private function addChangelogURLIfApplicable(\XMLWriter $writer, $version) {
-		if(version_compare($version, '9.0.54', '<')) {
+		if(version_compare($version, '14.0.0', '<')) {
 			return;
 		}
 
-		$changelogTag = '#' . implode('-', array_slice(explode('.', $version), 0, 3));
-		$preReleasePos = strpos($changelogTag, ' ');
+		$versionString = implode('.', array_slice(explode('.', $version), 0, 3));
+		$preReleasePos = strpos($versionString, ' ');
 		if($preReleasePos !== false) {
-			$changelogTag = substr($changelogTag, 0, $preReleasePos);
+			$versionString = substr($versionString, 0, $preReleasePos);
 		}
-		$changelogUrl = 'https://nextcloud.com/changelog/' . $changelogTag;
 
-		$writer->writeElement('changelog', $changelogUrl);
+		$changesUrl = rtrim($this->config->get('_settings')['changelogServer'], '/')
+			. '/?version=' . urlencode($versionString);
+
+		$writer->writeElement('changes', $changesUrl);
 	}
 
 	/**
@@ -130,18 +125,6 @@ class Response {
 		$writer->writeElement('eol', (int) $newVersion['eol']);
 		if(isset($newVersion['signature'])) {
 			$writer->writeElement('signature', $newVersion['signature']);
-		}
-		try {
-			$whatsNewItems = $this->whatsNew->get($newVersion['latest']);
-			foreach ($whatsNewItems as $audience => $lines) {
-				$writer->startElement('whatsNew_' . strtolower($audience));
-				foreach($lines as $line) {
-					$writer->writeElement('item', $line);
-				}
-				$writer->endElement();
-			}
-		}  catch (UnavailableWhatsNewException $e) {
-			// sad, nothing to report back :(
 		}
 		$writer->endElement();
 		$writer->endDocument();

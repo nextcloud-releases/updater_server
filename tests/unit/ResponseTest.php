@@ -6,20 +6,16 @@
 namespace Tests;
 
 use UpdateServer\Config;
-use UpdateServer\Exceptions\UnavailableWhatsNewException;
 use UpdateServer\Request;
 use UpdateServer\Response;
-use UpdateServer\WhatsNew;
 
 class ResponseTest extends \PHPUnit_Framework_TestCase {
 	/** @var Request */
 	private $request;
-	/** @var Config */
+	/** @var Config|\PHPUnit_Framework_MockObject_MockObject */
 	private $config;
 	/** @var Response */
 	private $response;
-	/** @var WhatsNew */
-	private $whatsNew;
 
 	public function setUp() {
 		date_default_timezone_set('Europe/Berlin');
@@ -28,9 +24,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 			->disableOriginalConstructor()->getMock();
 		$this->config = $this->getMockBuilder(Config::class)
 			->disableOriginalConstructor()->getMock();
-		$this->whatsNew = $this->getMockBuilder(WhatsNew::class)
-			->disableOriginalConstructor()->getMock();
-		$this->response = new Response($this->request, $this->config, $this->whatsNew);
+		$this->response = new Response($this->request, $this->config);
 	}
 
 	public function dailyVersionProvider() {
@@ -266,6 +260,25 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 		return [
 			[
 				'production',
+				'14',
+				'0',
+				'0',
+				'',
+				'<?xml version="1.0" encoding="UTF-8"?>
+<nextcloud>
+ <version>14.0.1</version>
+ <versionstring>Nextcloud 14.0.1</versionstring>
+ <url>https://download.nextcloud.com/server/releases/nextcloud-14.0.1.zip</url>
+ <web>https://docs.nextcloud.com/server/14/admin_manual/maintenance/upgrade.html</web>
+ <changes>https://updates.nextcloud.com/changelog_server/?version=14.0.1</changes>
+ <autoupdater>1</autoupdater>
+ <eol>0</eol>
+ <signature>MySignature</signature>
+</nextcloud>
+',
+			],
+			[
+				'production',
 				'11',
 				'0',
 				'0',
@@ -276,7 +289,6 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
  <versionstring>Nextcloud 11.0.1</versionstring>
  <url>https://download.nextcloud.com/server/releases/nextcloud-11.0.1.zip</url>
  <web>https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html</web>
- <changelog>https://nextcloud.com/changelog/#11-0-1</changelog>
  <autoupdater>1</autoupdater>
  <eol>0</eol>
  <signature>MySignature</signature>
@@ -1191,6 +1203,15 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 												$revisionVersion,
 												$expected) {
 		$config = [
+			'14.0' => [
+				'100' => [
+					'latest' => '14.0.1',
+					'internalVersion' => '14.0.1',
+					'web' => 'https://docs.nextcloud.com/server/14/admin_manual/maintenance/upgrade.html',
+					'signature' => 'MySignature',
+					'eol' => false,
+				],
+			],
 			'11.0' => [
 				'100' => [
 					'latest' => '11.0.1',
@@ -1273,8 +1294,10 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 		$this->config
 			->expects($this->any())
 			->method('get')
-			->with($channel)
-			->willReturn($config);
+			->willReturnMap([
+				[$channel, $config],
+				['_settings', ['changelogServer' => 'https://updates.nextcloud.com/changelog_server/']],
+			]);
 		$this->request
 			->expects($this->any())
 			->method('getMajorVersion')
@@ -1291,10 +1314,6 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 			->expects($this->any())
 			->method('getRevisionVersion')
 			->willReturn($revisionVersion);
-		$this->whatsNew
-			->expects($this->any())
-			->method('get')
-			->willThrowException(new UnavailableWhatsNewException());
 
 		$this->assertSame($expected, $this->response->buildResponse());
 	}
@@ -1415,10 +1434,6 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 			->expects($this->any())
 			->method('getRevisionVersion')
 			->willReturn($revisionVersion);
-		$this->whatsNew
-			->expects($this->any())
-			->method('get')
-			->willThrowException(new UnavailableWhatsNewException());
 
 		$this->assertSame($expected, $this->response->buildResponse());
 	}
@@ -1539,10 +1554,6 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 			->expects($this->any())
 			->method('getPHPReleaseVersion')
 			->willReturn('0');
-		$this->whatsNew
-			->expects($this->any())
-			->method('get')
-			->willThrowException(new UnavailableWhatsNewException());
 
 		$this->assertSame($expected, $this->response->buildResponse());
 	}
