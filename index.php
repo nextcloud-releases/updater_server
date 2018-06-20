@@ -31,7 +31,11 @@ try {
 	exit();
 }
 
-$config = new \UpdateServer\Config(__DIR__ . '/config/config.php');
+try {
+	$config = new \UpdateServer\Config(__DIR__ . '/config/config.php');
+} catch (\RuntimeException $e) {
+	exit();
+}
 
 // Return a response
 $response = new \UpdateServer\Response($request, $config);

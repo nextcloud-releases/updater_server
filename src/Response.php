@@ -16,7 +16,8 @@ class Response {
 	 * @param Config $config
 	 */
 	public function __construct(Request $request,
-								Config $config) {
+								Config $config
+	) {
 		$this->request = $request;
 		$this->config = $config;
 	}
@@ -35,6 +36,27 @@ class Response {
 		// 4. Major
 		$searches[] = $this->request->getMajorVersion();
 		return $searches;
+	}
+
+	/**
+	 * @param \XMLWriter $writer
+	 * @param $version
+	 */
+	private function addChangelogURLIfApplicable(\XMLWriter $writer, $version) {
+		if(version_compare($version, '14.0.0', '<')) {
+			return;
+		}
+
+		$versionString = implode('.', array_slice(explode('.', $version), 0, 3));
+		$preReleasePos = strpos($versionString, ' ');
+		if($preReleasePos !== false) {
+			$versionString = substr($versionString, 0, $preReleasePos);
+		}
+
+		$changesUrl = rtrim($this->config->get('_settings')['changelogServer'], '/')
+			. '/?version=' . urlencode($versionString);
+
+		$writer->writeElement('changes', $changesUrl);
 	}
 
 	/**
@@ -98,6 +120,7 @@ class Response {
 		$writer->writeElement('versionstring', 'Nextcloud '.$newVersion['latest']);
 		$writer->writeElement('url', $downloadUrl);
 		$writer->writeElement('web', $newVersion['web']);
+		$this->addChangelogURLIfApplicable($writer, $newVersion['latest']);
 		$writer->writeElement('autoupdater', isset($newVersion['autoupdater']) ? (int)$newVersion['autoupdater'] : 1);
 		$writer->writeElement('eol', (int) $newVersion['eol']);
 		if(isset($newVersion['signature'])) {

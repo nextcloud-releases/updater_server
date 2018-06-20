@@ -457,4 +457,7 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 			'minPHPVersion' => '5.4',
 		],
 	],
+	'_settings' => [
+		'changelogServer' => 'https://updates.nextcloud.com/changelog_server/',
+	],
 ];
