@@ -4,17 +4,17 @@ return [
 	'stable' => [
 		'10.0' => [
 			'100' => [
-				'latest' => '12.0.9',
-				'internalVersion' => '12.0.9.0',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-12.0.9.zip',
-				'web' => 'https://docs.nextcloud.org/server/12/admin_manual/maintenance/manual_upgrade.html',
+				'latest' => '12.0.10',
+				'internalVersion' => '12.0.10.1',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-12.0.10.zip',
+				'web' => 'https://docs.nextcloud.com/server/12/admin_manual/maintenance/manual_upgrade.html',
 				'minPHPVersion' => '5.6',
-				'signature' => 'VJaOSKDB3j2w3NIt5ZZ7K0s4ZLjcISj/7GGAaRlqamRLOVI+KXonm3ij+x6Liejn
-8a//7H8p5gKb6SA//8xgcYscioSjaen9yprSY9Wcr4VxeG4VZCBnDDnwjy1CMd8o
-1JoRoJ7wFKaIzsp0n9YY7lKz2aOiYYAT43nFwcKbTTCy+bABPc8DQdKd76S62dlZ
-xFAWF0U1b4FrLbprTbFgK1IBvRxPz+/6VLIjv6Vw+HaNR1G0m0/Y5N9r6wkCxycQ
-16ioKnOJFQNKFpM4bOU1MVo9sOeIJ5P4xH8cR/jlOYRNiRNIg51oo0p7glnt8E+Z
-opffCkYONZh0uwZ6FFQtCA==',
+				'signature' => 'wCWCrhlkL8YYL7UdYUeMnCJIgJSuZrjTe1kMd/HW7ZmJQi6v20ReIB8mTz1UZoPw
+HPiTIQmSClg2QN0J3NJCA4ZgZOhNpdqpD+hlKdVs+Tejj2rOEpxCRb8G3qH23pFy
+2zDik1SCHjO2UEmqHa8lZhr/DwsZrU5y2tmc37BM6DNSYMn9EDAlQ9Zf3tfdJyzb
+q+PLEagO07LU2TpELpYWcxKy/DeLnCbxhhKVAVfnUFVjrpn/a/oaRvhmnGkkUpIJ
+1YyE6sebvGVBt2sNA1I6eDGojI1bo5qYLwXsPUeD2DUo/BqR593nIQJU/AldFnaA
+JCqlRb+QYQLpwipZJEukaw==',
 			],
 		],
 		'9.1' => [
@@ -22,7 +22,7 @@ opffCkYONZh0uwZ6FFQtCA==',
 				'latest' => '10.0.6',
 				'internalVersion' => '9.1.6.3',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-10.0.6.zip',
-				'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
+				'web' => 'https://docs.nextcloud.com/server/10/admin_manual/maintenance/manual_upgrade.html',
 				'minPHPVersion' => '5.4',
 				'signature' => 'A74GYke4uKIYg+UiH3TQTahU1OCzgd6mt3+aTIjYt7hc/Syzz5vgYzM9bvwrXRnD
 XqUw4X0Ihrwcx2xc8BQRpA9T/lCzlE6AmokXndEB90m4op416m2X9hs9ErbIEc8x
@@ -37,7 +37,7 @@ di8ERx4sbRH3+GyUZkxwoA==',
 				'latest' => '9.0.58',
 				'internalVersion' => '9.0.58',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-9.0.58.zip',
-				'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
+				'web' => 'https://docs.nextcloud.com/server/10/admin_manual/maintenance/manual_upgrade.html',
 				'minPHPVersion' => '5.4',
 				'signature' => 'hHmGPH6ywBZH3lakEeDEMNrp6v1VcQhbqciNe/KIg5UVSBAYY3FLxOz8DHPN0gFM
 F3lIidNkkhuvNVf0I3445QFL/edty4co/0LRDtPxBQfBMTQRzn/0yGlv0fZZjU60
