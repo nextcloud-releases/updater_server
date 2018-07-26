@@ -311,8 +311,52 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 		],
 	],
 	'beta' => [
-		'13' => [
+		'14' => [
 			'100' => [
+				'latest' => '14.0.0 Beta 1',
+				'internalVersion' => '14.0.0.13',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-14.0.0beta1.zip',
+				'web' => 'https://docs.nextcloud.com/server/13/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '7.0',
+				'signature' => 'ezfUOHESmljyD8eMLHsYJPO9JJtPnQpHyEYrNuKs2gERr61lo/M4WlaH0x+GZCS5
+u7/rQD5YNlL/yecyghL495mua1QjMCwTDTwo5xoRS2x2aVeAY0J655Mg7TrGSO4d
+eRPIFajDmMk3G8A6UxfY/tf4AeAd5c6/FhusuT8m08Vip6e6koTBuDIiyp1nsSvI
+JUWRIDR4OVz0Wh2WDx94zjIoo1FKQxLi6oo15OSFDqK9YFZtVQDmnow/kE+QhJht
+aLDIHD/IeP0IqwTyzCvDrLC8lunTArT+gf/++PcZlr/dP0/vVwXrr0F6OVTTQMxD
+ci5d1Mh0yyC75BjGhDb2zA==',
+			],
+		],
+		'13' => [
+			'20' => [
+				'latest' => '13.0.5',
+				'internalVersion' => '13.0.5.2',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-13.0.5.zip',
+				'web' => 'https://docs.nextcloud.com/server/13/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '5.6',
+				'signature' => 'smxcnfDAiZHDgbJRf4qKOgpTHm2mPprJL4qD5B68uNh/p4QGrxWDt4aY1XDss5+V
+xplKiW/3vdsmKnfND4Cl7bXa/SnlqVgN+OSIrln1o8CCL5BZBJfC3dvU/w7LuMH8
+pCX3pcBFC540fZbsiAudAYB0YkejSxDSNb8D1QIczvArxFV6PXcSHICJpdichPjr
+tjZDyKnAJlTM2Exip5tcECQphEWPTV/EagpcPpsuRhKkn8LKNhIlytf4hdfEjqr8
+KgojhI6GtJy2hSAqN7uMFlK17a8xwpOx688Imt1CtXquUuHOoWLFDPp3BXjh+YB9
+M6c+ZbHYI28XtFGOSCqcbA==',
+			],
+			'80' => [
+				'latest' => '14.0.0 Beta 1',
+				'internalVersion' => '14.0.0.13',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-14.0.0beta1.zip',
+				'web' => 'https://docs.nextcloud.com/server/13/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '7.0',
+				'signature' => 'ezfUOHESmljyD8eMLHsYJPO9JJtPnQpHyEYrNuKs2gERr61lo/M4WlaH0x+GZCS5
+u7/rQD5YNlL/yecyghL495mua1QjMCwTDTwo5xoRS2x2aVeAY0J655Mg7TrGSO4d
+eRPIFajDmMk3G8A6UxfY/tf4AeAd5c6/FhusuT8m08Vip6e6koTBuDIiyp1nsSvI
+JUWRIDR4OVz0Wh2WDx94zjIoo1FKQxLi6oo15OSFDqK9YFZtVQDmnow/kE+QhJht
+aLDIHD/IeP0IqwTyzCvDrLC8lunTArT+gf/++PcZlr/dP0/vVwXrr0F6OVTTQMxD
+ci5d1Mh0yyC75BjGhDb2zA==',
+			],
+			'101' => [
 				'latest' => '13.0.5',
 				'internalVersion' => '13.0.5.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-13.0.5.zip',
