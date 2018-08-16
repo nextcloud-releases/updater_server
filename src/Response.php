@@ -43,7 +43,7 @@ class Response {
 	 * @param $version
 	 */
 	private function addChangelogURLIfApplicable(\XMLWriter $writer, $version) {
-		if(version_compare($version, '14.0.0', '<')) {
+		if(version_compare($version, '13.99.0', '<')) {
 			return;
 		}
 
