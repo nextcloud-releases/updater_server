@@ -107,18 +107,18 @@ Feature: Testing the update scenario of production releases
     And The received version is "11.0.0.2"
     When The request is sent
     Then The response is non-empty
-    And Update to version "12.0.9.0" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.9.zip"
+    And Update to version "12.0.11.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.11.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
     """
-    VJaOSKDB3j2w3NIt5ZZ7K0s4ZLjcISj/7GGAaRlqamRLOVI+KXonm3ij+x6Liejn
-    8a//7H8p5gKb6SA//8xgcYscioSjaen9yprSY9Wcr4VxeG4VZCBnDDnwjy1CMd8o
-    1JoRoJ7wFKaIzsp0n9YY7lKz2aOiYYAT43nFwcKbTTCy+bABPc8DQdKd76S62dlZ
-    xFAWF0U1b4FrLbprTbFgK1IBvRxPz+/6VLIjv6Vw+HaNR1G0m0/Y5N9r6wkCxycQ
-    16ioKnOJFQNKFpM4bOU1MVo9sOeIJ5P4xH8cR/jlOYRNiRNIg51oo0p7glnt8E+Z
-    opffCkYONZh0uwZ6FFQtCA==
+    kTTzeVMSFrUZ2uDdGCkdS+DhpCZCHikO5ZDO39PM25/vZlL4NDs+ye5hABp1ThSy
+    VEJN18tWVO4RXO8bUWnTx555fsupbHZf5er8PWmvqiCLBAv7QOchiGzyMrYFgVZz
+    XAg0YkKkezYJl9O7zS77VkeoUQH6x2PFp9Dt93ZiHVvI81hxJCJBxiLKi7/Dumky
+    7Ml7zxXwAGbAovtvbhigPmVs/cqCCQ5ZQDRrqZThjanASxijZzpH3e8hBruqQS6Y
+    B1NDzU0w3w3fHP4bbtFPj08MQo9vX2YdJyuB7u+QZiDctfYqR1RWRmcyfItupLo5
+    Qjnx4c42jO6FtQUa5vAp1Q==
     """
 
   Scenario: Updating a non-staged outdated Nextcloud 11.0.0 beta on the production channel
@@ -128,18 +128,18 @@ Feature: Testing the update scenario of production releases
     And The installation mtime is "70"
     When The request is sent
     Then The response is non-empty
-    And Update to version "12.0.9.0" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.9.zip"
+    And Update to version "12.0.11.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.11.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
     """
-    VJaOSKDB3j2w3NIt5ZZ7K0s4ZLjcISj/7GGAaRlqamRLOVI+KXonm3ij+x6Liejn
-    8a//7H8p5gKb6SA//8xgcYscioSjaen9yprSY9Wcr4VxeG4VZCBnDDnwjy1CMd8o
-    1JoRoJ7wFKaIzsp0n9YY7lKz2aOiYYAT43nFwcKbTTCy+bABPc8DQdKd76S62dlZ
-    xFAWF0U1b4FrLbprTbFgK1IBvRxPz+/6VLIjv6Vw+HaNR1G0m0/Y5N9r6wkCxycQ
-    16ioKnOJFQNKFpM4bOU1MVo9sOeIJ5P4xH8cR/jlOYRNiRNIg51oo0p7glnt8E+Z
-    opffCkYONZh0uwZ6FFQtCA==
+    kTTzeVMSFrUZ2uDdGCkdS+DhpCZCHikO5ZDO39PM25/vZlL4NDs+ye5hABp1ThSy
+    VEJN18tWVO4RXO8bUWnTx555fsupbHZf5er8PWmvqiCLBAv7QOchiGzyMrYFgVZz
+    XAg0YkKkezYJl9O7zS77VkeoUQH6x2PFp9Dt93ZiHVvI81hxJCJBxiLKi7/Dumky
+    7Ml7zxXwAGbAovtvbhigPmVs/cqCCQ5ZQDRrqZThjanASxijZzpH3e8hBruqQS6Y
+    B1NDzU0w3w3fHP4bbtFPj08MQo9vX2YdJyuB7u+QZiDctfYqR1RWRmcyfItupLo5
+    Qjnx4c42jO6FtQUa5vAp1Q==
     """
 
   Scenario: Updating a non-staged up-to-date Nextcloud 11.0.6 on the production channel with PHP 5.6
@@ -149,18 +149,18 @@ Feature: Testing the update scenario of production releases
     And The installation mtime is "70"
     When The request is sent
     Then The response is non-empty
-    And Update to version "12.0.9.0" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.9.zip"
+    And Update to version "12.0.11.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.11.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
     """
-    VJaOSKDB3j2w3NIt5ZZ7K0s4ZLjcISj/7GGAaRlqamRLOVI+KXonm3ij+x6Liejn
-    8a//7H8p5gKb6SA//8xgcYscioSjaen9yprSY9Wcr4VxeG4VZCBnDDnwjy1CMd8o
-    1JoRoJ7wFKaIzsp0n9YY7lKz2aOiYYAT43nFwcKbTTCy+bABPc8DQdKd76S62dlZ
-    xFAWF0U1b4FrLbprTbFgK1IBvRxPz+/6VLIjv6Vw+HaNR1G0m0/Y5N9r6wkCxycQ
-    16ioKnOJFQNKFpM4bOU1MVo9sOeIJ5P4xH8cR/jlOYRNiRNIg51oo0p7glnt8E+Z
-    opffCkYONZh0uwZ6FFQtCA==
+    kTTzeVMSFrUZ2uDdGCkdS+DhpCZCHikO5ZDO39PM25/vZlL4NDs+ye5hABp1ThSy
+    VEJN18tWVO4RXO8bUWnTx555fsupbHZf5er8PWmvqiCLBAv7QOchiGzyMrYFgVZz
+    XAg0YkKkezYJl9O7zS77VkeoUQH6x2PFp9Dt93ZiHVvI81hxJCJBxiLKi7/Dumky
+    7Ml7zxXwAGbAovtvbhigPmVs/cqCCQ5ZQDRrqZThjanASxijZzpH3e8hBruqQS6Y
+    B1NDzU0w3w3fHP4bbtFPj08MQo9vX2YdJyuB7u+QZiDctfYqR1RWRmcyfItupLo5
+    Qjnx4c42jO6FtQUa5vAp1Q==
     """
 
   Scenario: Updating a non-staged up-to-date Nextcloud 11.0.6 on the production channel with PHP 5.6 and lower mtime
@@ -170,18 +170,18 @@ Feature: Testing the update scenario of production releases
     And The installation mtime is "10"
     When The request is sent
     Then The response is non-empty
-    And Update to version "12.0.9.0" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.9.zip"
+    And Update to version "12.0.11.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.11.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
     """
-    VJaOSKDB3j2w3NIt5ZZ7K0s4ZLjcISj/7GGAaRlqamRLOVI+KXonm3ij+x6Liejn
-    8a//7H8p5gKb6SA//8xgcYscioSjaen9yprSY9Wcr4VxeG4VZCBnDDnwjy1CMd8o
-    1JoRoJ7wFKaIzsp0n9YY7lKz2aOiYYAT43nFwcKbTTCy+bABPc8DQdKd76S62dlZ
-    xFAWF0U1b4FrLbprTbFgK1IBvRxPz+/6VLIjv6Vw+HaNR1G0m0/Y5N9r6wkCxycQ
-    16ioKnOJFQNKFpM4bOU1MVo9sOeIJ5P4xH8cR/jlOYRNiRNIg51oo0p7glnt8E+Z
-    opffCkYONZh0uwZ6FFQtCA==
+    kTTzeVMSFrUZ2uDdGCkdS+DhpCZCHikO5ZDO39PM25/vZlL4NDs+ye5hABp1ThSy
+    VEJN18tWVO4RXO8bUWnTx555fsupbHZf5er8PWmvqiCLBAv7QOchiGzyMrYFgVZz
+    XAg0YkKkezYJl9O7zS77VkeoUQH6x2PFp9Dt93ZiHVvI81hxJCJBxiLKi7/Dumky
+    7Ml7zxXwAGbAovtvbhigPmVs/cqCCQ5ZQDRrqZThjanASxijZzpH3e8hBruqQS6Y
+    B1NDzU0w3w3fHP4bbtFPj08MQo9vX2YdJyuB7u+QZiDctfYqR1RWRmcyfItupLo5
+    Qjnx4c42jO6FtQUa5vAp1Q==
     """
 
   Scenario: Updating a non-staged up-to-date Nextcloud 11.0.6 on the production channel without PHP version
@@ -190,18 +190,18 @@ Feature: Testing the update scenario of production releases
     And The installation mtime is "70"
     When The request is sent
     Then The response is non-empty
-    And Update to version "12.0.9.0" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.9.zip"
+    And Update to version "12.0.11.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.11.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
     """
-    VJaOSKDB3j2w3NIt5ZZ7K0s4ZLjcISj/7GGAaRlqamRLOVI+KXonm3ij+x6Liejn
-    8a//7H8p5gKb6SA//8xgcYscioSjaen9yprSY9Wcr4VxeG4VZCBnDDnwjy1CMd8o
-    1JoRoJ7wFKaIzsp0n9YY7lKz2aOiYYAT43nFwcKbTTCy+bABPc8DQdKd76S62dlZ
-    xFAWF0U1b4FrLbprTbFgK1IBvRxPz+/6VLIjv6Vw+HaNR1G0m0/Y5N9r6wkCxycQ
-    16ioKnOJFQNKFpM4bOU1MVo9sOeIJ5P4xH8cR/jlOYRNiRNIg51oo0p7glnt8E+Z
-    opffCkYONZh0uwZ6FFQtCA==
+    kTTzeVMSFrUZ2uDdGCkdS+DhpCZCHikO5ZDO39PM25/vZlL4NDs+ye5hABp1ThSy
+    VEJN18tWVO4RXO8bUWnTx555fsupbHZf5er8PWmvqiCLBAv7QOchiGzyMrYFgVZz
+    XAg0YkKkezYJl9O7zS77VkeoUQH6x2PFp9Dt93ZiHVvI81hxJCJBxiLKi7/Dumky
+    7Ml7zxXwAGbAovtvbhigPmVs/cqCCQ5ZQDRrqZThjanASxijZzpH3e8hBruqQS6Y
+    B1NDzU0w3w3fHP4bbtFPj08MQo9vX2YdJyuB7u+QZiDctfYqR1RWRmcyfItupLo5
+    Qjnx4c42jO6FtQUa5vAp1Q==
     """
 
  Scenario: Updating an outdated Nextcloud 12.0.0 beta on the production channel
@@ -211,18 +211,18 @@ Feature: Testing the update scenario of production releases
     And the installation mtime is "10"
     When The request is sent
     Then The response is non-empty
-    And Update to version "13.0.4.0" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.4.zip"
+    And Update to version "13.0.6.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/13/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    OogV1NE98yxer6atJPOgXBxnVgAuME94UoZ1TlgTGUw0KYqvKNwKKQ+gqzJ3ZL9t
-    XJuHAYQi2Uk0iblIA3TFuDALU/wA3th2PMoobHtzR4FFzDUvb88FdgKxBAOhh9n0
-    1PwiLBYT1FuDJn+fQLmbXWbPVlfFOOsyPFxysl1nXztxSJ7FsPgIE/MGvqKnk4L3
-    5iG3o/UAbqmmKNQpn7gJw4BYdf3mkJcBOgdRrcy3MXqLh9dIAXkK5HcKOD3A+Uvy
-    amApr7+j7zp0QlnhrObLBWramdSqmS2Udt/TdN1XhMF/9Nzq+qod6aJ8qCz9aqEb
-    PUPFcPmm6YQgra/1OoMTpg==
+    d2uw9nwbyhw2wLndMnirPxXejqMhrQWWUCl/XCYJXa5LElK/QiIVOxMRw5CURxzg
+    tJq442ZEJq0uzJE06MhJAixkcNCdirYEkMWxpahyfUNeZ+NFVaADftJ+V4WFgd+7
+    zpqD/13QUZ7JUwXBqdjQPFPWCgyTqtSH1cE6uX1T/oHmbLGHZK5lyHT7+BvvrJuk
+    UZ+cbpcPZHyeJIfe5MpQiVKLsvjg1Lik0r+J7Vtw38k517ELoP+CO61ZQOl72pDG
+    nrjuv1EvWa+rO2rCbRCrNxNI0+FAZzcK3FSrWV4NcoN7V86UKSuGlUM5iY8WEZUG
+    StmlJJEc960gSoV6NRLK5Q==
     """
 
  Scenario: Updating an outdated Nextcloud 12.0.0 beta on the production channel
@@ -232,18 +232,18 @@ Feature: Testing the update scenario of production releases
     And the installation mtime is "20"
     When The request is sent
     Then The response is non-empty
-    And Update to version "13.0.4.0" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.4.zip"
+    And Update to version "13.0.6.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/13/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    OogV1NE98yxer6atJPOgXBxnVgAuME94UoZ1TlgTGUw0KYqvKNwKKQ+gqzJ3ZL9t
-    XJuHAYQi2Uk0iblIA3TFuDALU/wA3th2PMoobHtzR4FFzDUvb88FdgKxBAOhh9n0
-    1PwiLBYT1FuDJn+fQLmbXWbPVlfFOOsyPFxysl1nXztxSJ7FsPgIE/MGvqKnk4L3
-    5iG3o/UAbqmmKNQpn7gJw4BYdf3mkJcBOgdRrcy3MXqLh9dIAXkK5HcKOD3A+Uvy
-    amApr7+j7zp0QlnhrObLBWramdSqmS2Udt/TdN1XhMF/9Nzq+qod6aJ8qCz9aqEb
-    PUPFcPmm6YQgra/1OoMTpg==
+    d2uw9nwbyhw2wLndMnirPxXejqMhrQWWUCl/XCYJXa5LElK/QiIVOxMRw5CURxzg
+    tJq442ZEJq0uzJE06MhJAixkcNCdirYEkMWxpahyfUNeZ+NFVaADftJ+V4WFgd+7
+    zpqD/13QUZ7JUwXBqdjQPFPWCgyTqtSH1cE6uX1T/oHmbLGHZK5lyHT7+BvvrJuk
+    UZ+cbpcPZHyeJIfe5MpQiVKLsvjg1Lik0r+J7Vtw38k517ELoP+CO61ZQOl72pDG
+    nrjuv1EvWa+rO2rCbRCrNxNI0+FAZzcK3FSrWV4NcoN7V86UKSuGlUM5iY8WEZUG
+    StmlJJEc960gSoV6NRLK5Q==
     """
 
  Scenario: Updating an up-to-date Nextcloud 12.0.7 on the production channel
@@ -253,18 +253,18 @@ Feature: Testing the update scenario of production releases
     And the installation mtime is "10"
     When The request is sent
     Then The response is non-empty
-    And Update to version "13.0.4.0" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.4.zip"
+    And Update to version "13.0.6.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/13/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    OogV1NE98yxer6atJPOgXBxnVgAuME94UoZ1TlgTGUw0KYqvKNwKKQ+gqzJ3ZL9t
-    XJuHAYQi2Uk0iblIA3TFuDALU/wA3th2PMoobHtzR4FFzDUvb88FdgKxBAOhh9n0
-    1PwiLBYT1FuDJn+fQLmbXWbPVlfFOOsyPFxysl1nXztxSJ7FsPgIE/MGvqKnk4L3
-    5iG3o/UAbqmmKNQpn7gJw4BYdf3mkJcBOgdRrcy3MXqLh9dIAXkK5HcKOD3A+Uvy
-    amApr7+j7zp0QlnhrObLBWramdSqmS2Udt/TdN1XhMF/9Nzq+qod6aJ8qCz9aqEb
-    PUPFcPmm6YQgra/1OoMTpg==
+    d2uw9nwbyhw2wLndMnirPxXejqMhrQWWUCl/XCYJXa5LElK/QiIVOxMRw5CURxzg
+    tJq442ZEJq0uzJE06MhJAixkcNCdirYEkMWxpahyfUNeZ+NFVaADftJ+V4WFgd+7
+    zpqD/13QUZ7JUwXBqdjQPFPWCgyTqtSH1cE6uX1T/oHmbLGHZK5lyHT7+BvvrJuk
+    UZ+cbpcPZHyeJIfe5MpQiVKLsvjg1Lik0r+J7Vtw38k517ELoP+CO61ZQOl72pDG
+    nrjuv1EvWa+rO2rCbRCrNxNI0+FAZzcK3FSrWV4NcoN7V86UKSuGlUM5iY8WEZUG
+    StmlJJEc960gSoV6NRLK5Q==
     """
 
  Scenario: Updating an up-to-date Nextcloud 12.0.7 on the production channel
@@ -274,18 +274,18 @@ Feature: Testing the update scenario of production releases
     And the installation mtime is "90"
     When The request is sent
     Then The response is non-empty
-    And Update to version "13.0.4.0" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.4.zip"
+    And Update to version "13.0.6.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/13/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    OogV1NE98yxer6atJPOgXBxnVgAuME94UoZ1TlgTGUw0KYqvKNwKKQ+gqzJ3ZL9t
-    XJuHAYQi2Uk0iblIA3TFuDALU/wA3th2PMoobHtzR4FFzDUvb88FdgKxBAOhh9n0
-    1PwiLBYT1FuDJn+fQLmbXWbPVlfFOOsyPFxysl1nXztxSJ7FsPgIE/MGvqKnk4L3
-    5iG3o/UAbqmmKNQpn7gJw4BYdf3mkJcBOgdRrcy3MXqLh9dIAXkK5HcKOD3A+Uvy
-    amApr7+j7zp0QlnhrObLBWramdSqmS2Udt/TdN1XhMF/9Nzq+qod6aJ8qCz9aqEb
-    PUPFcPmm6YQgra/1OoMTpg==
+    d2uw9nwbyhw2wLndMnirPxXejqMhrQWWUCl/XCYJXa5LElK/QiIVOxMRw5CURxzg
+    tJq442ZEJq0uzJE06MhJAixkcNCdirYEkMWxpahyfUNeZ+NFVaADftJ+V4WFgd+7
+    zpqD/13QUZ7JUwXBqdjQPFPWCgyTqtSH1cE6uX1T/oHmbLGHZK5lyHT7+BvvrJuk
+    UZ+cbpcPZHyeJIfe5MpQiVKLsvjg1Lik0r+J7Vtw38k517ELoP+CO61ZQOl72pDG
+    nrjuv1EvWa+rO2rCbRCrNxNI0+FAZzcK3FSrWV4NcoN7V86UKSuGlUM5iY8WEZUG
+    StmlJJEc960gSoV6NRLK5Q==
     """
 
  Scenario: Updating an outdated Nextcloud 13.0.0 on the production channel
@@ -295,16 +295,16 @@ Feature: Testing the update scenario of production releases
     And the installation mtime is "10"
     When The request is sent
     Then The response is non-empty
-    And Update to version "13.0.4.0" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.4.zip"
+    And Update to version "13.0.6.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/13/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    OogV1NE98yxer6atJPOgXBxnVgAuME94UoZ1TlgTGUw0KYqvKNwKKQ+gqzJ3ZL9t
-    XJuHAYQi2Uk0iblIA3TFuDALU/wA3th2PMoobHtzR4FFzDUvb88FdgKxBAOhh9n0
-    1PwiLBYT1FuDJn+fQLmbXWbPVlfFOOsyPFxysl1nXztxSJ7FsPgIE/MGvqKnk4L3
-    5iG3o/UAbqmmKNQpn7gJw4BYdf3mkJcBOgdRrcy3MXqLh9dIAXkK5HcKOD3A+Uvy
-    amApr7+j7zp0QlnhrObLBWramdSqmS2Udt/TdN1XhMF/9Nzq+qod6aJ8qCz9aqEb
-    PUPFcPmm6YQgra/1OoMTpg==
+    d2uw9nwbyhw2wLndMnirPxXejqMhrQWWUCl/XCYJXa5LElK/QiIVOxMRw5CURxzg
+    tJq442ZEJq0uzJE06MhJAixkcNCdirYEkMWxpahyfUNeZ+NFVaADftJ+V4WFgd+7
+    zpqD/13QUZ7JUwXBqdjQPFPWCgyTqtSH1cE6uX1T/oHmbLGHZK5lyHT7+BvvrJuk
+    UZ+cbpcPZHyeJIfe5MpQiVKLsvjg1Lik0r+J7Vtw38k517ELoP+CO61ZQOl72pDG
+    nrjuv1EvWa+rO2rCbRCrNxNI0+FAZzcK3FSrWV4NcoN7V86UKSuGlUM5iY8WEZUG
+    StmlJJEc960gSoV6NRLK5Q==
     """
