@@ -106,18 +106,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "10"
     When The request is sent
     Then The response is non-empty
-    And Update to version "12.0.12.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-12.0.12RC1.zip"
+    And Update to version "12.0.12.1" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-12.0.12RC2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
     """
-    ZE9hGE8L9oyIO+40mZLpohpyy9YUqsfWP1+B0cplu0uoDo927mPRQUhDznx/bUuo
-    X6NtWgJcR+4M0C9sFcw3v/9FxnW35LB27LhioXR9FV0wtlyNS+xe9NHjy2TC+RFD
-    sVlbHpWaGCFmj0cgghIuYVyQj8ySqRkj3BI5lAn6pm8oFteZt3qtGyUusPHDVEpV
-    mzSi9YSB8yaepkMWuUjU+kIX7Wq2VJquvhVXkHoRh6TzRSY+INmJwhlsCYxuwArF
-    jBvKFBVnJa3rTilYBLvGSVf/ekNSXDs53SvMv0x6tkbYATCcLCd3ATDWQUvVGLyL
-    IvgAbQ/Dni2m51wMvf1r2A==
+    XvS2Rh/RGuS2869St/quJNFIZKki3o2PYfmF74C5UckWTmY3vyft9EzpnQDKq/St
+    zgVjGCpqh9UiQ20BI+dnOrJQkYMvdyJKFohB7+J6FaywZGTXuMhWrGS7rUu/79Rv
+    ZDzrDIkJGZWmwBwGDmVte13iL5kOpy5Ry8lwZvPjc5B7e7ygqGWE8f+8FEZ0vtqp
+    MvbJYcKy92LdstqG7XLUlWdB8r+OQiP0clBkqZqfSNnUoihEPDd0v60Q4K5MQBlw
+    62pIfdJ9hzRAuGVNF6QkvHF7oaZP0L7vKMvUJyVp5E2pwaCbNYlPCMiTIT83a7sS
+    +4t3xFuqgsaD9Nz93b+Eug==
     """
 
   Scenario: Updating an outdated Nextcloud 11.0.0 beta on the beta channel without an mtime
@@ -126,18 +126,18 @@ Feature: Testing the update scenario of beta releases
     And The received PHP version is "5.6.0"
     When The request is sent
     Then The response is non-empty
-    And Update to version "12.0.12.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-12.0.12RC1.zip"
+    And Update to version "12.0.12.1" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-12.0.12RC2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
     """
-    ZE9hGE8L9oyIO+40mZLpohpyy9YUqsfWP1+B0cplu0uoDo927mPRQUhDznx/bUuo
-    X6NtWgJcR+4M0C9sFcw3v/9FxnW35LB27LhioXR9FV0wtlyNS+xe9NHjy2TC+RFD
-    sVlbHpWaGCFmj0cgghIuYVyQj8ySqRkj3BI5lAn6pm8oFteZt3qtGyUusPHDVEpV
-    mzSi9YSB8yaepkMWuUjU+kIX7Wq2VJquvhVXkHoRh6TzRSY+INmJwhlsCYxuwArF
-    jBvKFBVnJa3rTilYBLvGSVf/ekNSXDs53SvMv0x6tkbYATCcLCd3ATDWQUvVGLyL
-    IvgAbQ/Dni2m51wMvf1r2A==
+    XvS2Rh/RGuS2869St/quJNFIZKki3o2PYfmF74C5UckWTmY3vyft9EzpnQDKq/St
+    zgVjGCpqh9UiQ20BI+dnOrJQkYMvdyJKFohB7+J6FaywZGTXuMhWrGS7rUu/79Rv
+    ZDzrDIkJGZWmwBwGDmVte13iL5kOpy5Ry8lwZvPjc5B7e7ygqGWE8f+8FEZ0vtqp
+    MvbJYcKy92LdstqG7XLUlWdB8r+OQiP0clBkqZqfSNnUoihEPDd0v60Q4K5MQBlw
+    62pIfdJ9hzRAuGVNF6QkvHF7oaZP0L7vKMvUJyVp5E2pwaCbNYlPCMiTIT83a7sS
+    +4t3xFuqgsaD9Nz93b+Eug==
     """
 
   Scenario: Updating an outdated Nextcloud 12.0.0 on the beta channel
