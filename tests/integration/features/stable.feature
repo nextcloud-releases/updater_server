@@ -356,7 +356,20 @@ Feature: Testing the update scenario of stable releases
     And The received PHP version is "7.0.0"
     And the installation mtime is "65"
     When The request is sent
-    Then The response is empty
+    Then The response is non-empty
+    And Update to version "14.0.3.0" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-14.0.3.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/14/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    cWbv8qrFK4lKaRAtHLvM3AjLcwd4S1lIWYzE3hbAN30MuW60weRqYZf412jUe/7g
+    EEaas6MNqgd5omqwsnTwn4KwtfUkKSB5JbwGHZY95Wv/mf5EyZfw0x04xo5A6W5l
+    Zv7kK0HOGGOzT1nqyJJHvin9jU3eBzpWe9Es2hwhQYFI9C+V/5Fvbm37dqN821gQ
+    aTT4zv8XwVkAoH6BRrNGjoUqQHVBcONVEcYPEahBI9SjuTVX807e9HETrsziKtHu
+    k5E2t0FCNl/qUvxEDtsvQk5+XD1fW6v5ievqfLoZhv/XqKdCfAqgyC83NijYB0/8
+    ajEplLd/VwvoezLExRngLQ==
+    """
 
  Scenario: Updating an up-to-date Nextcloud 13.0.7 on the stable channel (php 5.6)
     Given There is a release with channel "stable"
