@@ -159,7 +159,7 @@ K4p+w0pOsMnAIqXr8yEtk09DnS/gNlIn2jIHrAA1nja7hhtk23M9p0/YMKCycTPU
 				'internalVersion' => '13.0.8.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-13.0.8.zip',
 				'web' => 'https://docs.nextcloud.com/server/13/admin_manual/maintenance/upgrade.html',
-				'eol' => false,
+				'eol' => true,
 				'minPHPVersion' => '5.6',
 				'signature' => 'd220A5oVb+VhK96NmWdYMazhmcAMRT0kPuz34FnAUuVEOejRbgQ+Q+EvORMREmJg
 IRSSagXEMEVfPE0ldtQi6wmpZgNtTzkxUvB3CXzzjYBZmeOLe4fcJQQLU4oAEmAK
@@ -308,7 +308,7 @@ K4p+w0pOsMnAIqXr8yEtk09DnS/gNlIn2jIHrAA1nja7hhtk23M9p0/YMKCycTPU
 				'internalVersion' => '13.0.8.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-13.0.8.zip',
 				'web' => 'https://docs.nextcloud.com/server/13/admin_manual/maintenance/upgrade.html',
-				'eol' => false,
+				'eol' => true,
 				'minPHPVersion' => '5.6',
 				'signature' => 'd220A5oVb+VhK96NmWdYMazhmcAMRT0kPuz34FnAUuVEOejRbgQ+Q+EvORMREmJg
 IRSSagXEMEVfPE0ldtQi6wmpZgNtTzkxUvB3CXzzjYBZmeOLe4fcJQQLU4oAEmAK
@@ -457,7 +457,7 @@ K4p+w0pOsMnAIqXr8yEtk09DnS/gNlIn2jIHrAA1nja7hhtk23M9p0/YMKCycTPU
 				'internalVersion' => '13.0.8.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-13.0.8.zip',
 				'web' => 'https://docs.nextcloud.com/server/13/admin_manual/maintenance/upgrade.html',
-				'eol' => false,
+				'eol' => true,
 				'minPHPVersion' => '5.6',
 				'signature' => 'd220A5oVb+VhK96NmWdYMazhmcAMRT0kPuz34FnAUuVEOejRbgQ+Q+EvORMREmJg
 IRSSagXEMEVfPE0ldtQi6wmpZgNtTzkxUvB3CXzzjYBZmeOLe4fcJQQLU4oAEmAK
@@ -553,13 +553,13 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 		'12' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable12.zip',
 			'web' => 'https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html',
-			'eol' => false,
+			'eol' => true,
 			'minPHPVersion' => '5.6',
 		],
 		'11' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable11.zip',
 			'web' => 'https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html',
-			'eol' => false,
+			'eol' => true,
 			'minPHPVersion' => '5.6',
 		],
 		'9.1' => [

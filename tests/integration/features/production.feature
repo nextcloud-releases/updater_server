@@ -214,7 +214,7 @@ Feature: Testing the update scenario of production releases
     And Update to version "13.0.8.2" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.8.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/13/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL is set to "1"
     And The signature is
     """
     d220A5oVb+VhK96NmWdYMazhmcAMRT0kPuz34FnAUuVEOejRbgQ+Q+EvORMREmJg
@@ -235,7 +235,7 @@ Feature: Testing the update scenario of production releases
     And Update to version "13.0.8.2" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.8.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/13/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL is set to "1"
     And The signature is
     """
     d220A5oVb+VhK96NmWdYMazhmcAMRT0kPuz34FnAUuVEOejRbgQ+Q+EvORMREmJg
@@ -256,7 +256,7 @@ Feature: Testing the update scenario of production releases
     And Update to version "13.0.8.2" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.8.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/13/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL is set to "1"
     And The signature is
     """
     d220A5oVb+VhK96NmWdYMazhmcAMRT0kPuz34FnAUuVEOejRbgQ+Q+EvORMREmJg
@@ -277,7 +277,7 @@ Feature: Testing the update scenario of production releases
     And Update to version "13.0.8.2" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-13.0.8.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/13/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL is set to "1"
     And The signature is
     """
     d220A5oVb+VhK96NmWdYMazhmcAMRT0kPuz34FnAUuVEOejRbgQ+Q+EvORMREmJg
