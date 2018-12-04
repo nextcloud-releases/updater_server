@@ -139,6 +139,20 @@ cFXWg2ZhXYGHpfMvrMtueg==',
 		],
 		'13' => [
 			'100' => [
+				'latest' => '14.0.4',
+				'internalVersion' => '14.0.4.2',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-14.0.4.zip',
+				'web' => 'https://docs.nextcloud.com/server/14/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '7.0',
+				'signature' => 'g7NKa7ZQLKfBAYOIEA0SHochEpYiCEiqlKdh5qlqjJu+QAA4kGyJ+J26RiB5gm56
+KeqkSp347NaR68U6Qb9eaC3V1rrQdd990KncXqfmbqZVVN/8DXI6mej9Y5lv3Pop
+9J8QuN6ViN3c3hFG/jf9laTdsLI9UCoUOM5LvngJbs2Sjv+vmMMkDguE+XyD5i9d
+6Cq2ia0CEVY5J7RpBmvEaUOFSi+2fxn+QLT467pkQL9yt45Acq0oXrxXdbW9PMYP
+N83+1F/AaXgMeOVJ08yffH1r0KpvN07xHAkepfPLBxe/8KrBLLJ6QIcH0qD9cJOc
+cFXWg2ZhXYGHpfMvrMtueg==',
+			],
+			'101' => [
 				'latest' => '13.0.8',
 				'internalVersion' => '13.0.8.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-13.0.8.zip',
