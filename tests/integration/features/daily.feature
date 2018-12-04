@@ -59,7 +59,7 @@ Feature: Testing the update scenario of daily releases
     And Update to version "100.0.0.0" is available
     And URL to download is "https://download.nextcloud.com/server/daily/latest-stable11.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL is set to "1"
     And No signature is set
 
   Scenario: Updating an up-to-date Nextcloud 11.0 daily
@@ -78,7 +78,7 @@ Feature: Testing the update scenario of daily releases
     And Update to version "100.0.0.0" is available
     And URL to download is "https://download.nextcloud.com/server/daily/latest-stable12.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL is set to "1"
     And No signature is set
 
   Scenario: Updating an up-to-date Nextcloud 12.0 daily
