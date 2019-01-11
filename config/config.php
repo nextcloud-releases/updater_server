@@ -419,7 +419,7 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 	'beta' => [
 		'15' => [
 			'100' => [
-				'latest' => '15.0.1',
+				'latest' => '15.0.2',
 				'internalVersion' => '15.0.1.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-15.0.1.zip',
 				'web' => 'https://docs.nextcloud.com/server/15/admin_manual/maintenance/upgrade.html',
@@ -435,7 +435,7 @@ gFC6Mb5/4XZWdvmW2eLZYw==',
 		],
 		'14' => [
 			'100' => [
-				'latest' => '15.0.1',
+				'latest' => '15.0.2',
 				'internalVersion' => '15.0.1.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-15.0.1.zip',
 				'web' => 'https://docs.nextcloud.com/server/15/admin_manual/maintenance/upgrade.html',
