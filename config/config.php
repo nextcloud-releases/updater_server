@@ -271,21 +271,7 @@ GZyAWsPsboY0Qg7I2XWssA==',
 			],
 		],
 		'14' => [
-			'51' => [
-				'latest' => '14.0.6',
-				'internalVersion' => '14.0.6.0',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-14.0.6.zip',
-				'web' => 'https://docs.nextcloud.com/server/14/admin_manual/maintenance/upgrade.html',
-				'eol' => false,
-				'minPHPVersion' => '7.0',
-				'signature' => 'kr8VAKHaR8aadC6UNomS/Z1g6G6p9lNdu0Jb7ASBv4JrLaUeqU7iqNIZX4NotJAc
-sZ2YbOP+SQ2QPbAVxJNEjaK+Su6EBarEt2Z9uw48+GyNdWUr1QbZLHwjXgxVqv+T
-BXQuRLdjp/s/EureazaCvTzQETvg7TIHI3T8BtuLdr3y8vhxR/6dygQZKz9rikFT
-GcieFznuMhaXbssXmntuV+NUqSZtExqVMN68HMVgBCdbniqmrLkNiOOhGW3EZYas
-AjN5hksLm/b7URzdahKrFwa2IcpAuYnqckCtveIhPK4COrhtm0lPx797WCTHNWmx
-8M2RkM0Foc7oVgFcxOo94A==',
-			],
-			'49' => [
+			'100' => [
 				'latest' => '15.0.2',
 				'internalVersion' => '15.0.2.0',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-15.0.2.zip',
