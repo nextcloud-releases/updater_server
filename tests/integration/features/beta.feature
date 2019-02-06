@@ -271,18 +271,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "9"
     When The request is sent
     Then The response is non-empty
-    And Update to version "15.0.3.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-15.0.3RC1.zip"
+    And Update to version "15.0.3.1" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-15.0.3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/15/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    lghsDIvgACtcNG09W23oGwO97OnwHK9XHdkAzSth+DXT6OxUsGYfrc1NmtYyXt6n
-    HT2pUVruJcCeeGdsrn2fMIazJzFyt1iPtSpxQEyX70w0VQ0K0KfhmLgzqAj9hKb/
-    taHUn3MVtJ97/BfCSO5B+7PIO8Yvgr791nRXtgrF3ZffhIce6YTJSlqFB6Sg+2dN
-    yprpAV2SwQgppAbMrCc0YDeD/i8x4Qp0oukVHCod7zkA8EWTJHCR1UV7o2SWf04R
-    sYAVzO+Vckl2UBeaUZjLvnct69WMZQZ3y2rgHbKYRYgxeCsFGWdIWIcyvvnGByCP
-    lFfUfN/DN7LGHyZTPVPgsw==
+    HiE41TISOWzRi1Nc8K99z7VFus3JMONP3dyyS5lQu7VdFs+Wq60xxkvehIKsClOQ
+    co+t9OVS8XWrI6obxUoT7ntBAumYafkskA9MPpfLZ3XpGZtnh1zAsgncHN8ghNsc
+    ISIwueJQ9UwzbqzKnNorYqcKi/H9AgT7Ak4uWTK640LNNNStmJmqUL0VAlvn4fEf
+    Vl6ZtMazfB3kE5oQUZg0wW7bvxWkC+UevOn6um+KU/JzZ8s+ht0Gf1o4wD2f9Wyq
+    XUQmbJQa3iKlV+wlh4q3YBpHLKtBVyFPI9CIv7RJsYmJZtsiL7mRpLA5udqdDFEh
+    RPcweQn0X8B0VCMYN8+VoQ==
     """
 
   Scenario: Updating an up-to-date Nextcloud 14.0.3 on the beta channel
@@ -292,18 +292,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "9"
     When The request is sent
     Then The response is non-empty
-    And Update to version "15.0.3.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-15.0.3RC1.zip"
+    And Update to version "15.0.3.1" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-15.0.3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/15/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    lghsDIvgACtcNG09W23oGwO97OnwHK9XHdkAzSth+DXT6OxUsGYfrc1NmtYyXt6n
-    HT2pUVruJcCeeGdsrn2fMIazJzFyt1iPtSpxQEyX70w0VQ0K0KfhmLgzqAj9hKb/
-    taHUn3MVtJ97/BfCSO5B+7PIO8Yvgr791nRXtgrF3ZffhIce6YTJSlqFB6Sg+2dN
-    yprpAV2SwQgppAbMrCc0YDeD/i8x4Qp0oukVHCod7zkA8EWTJHCR1UV7o2SWf04R
-    sYAVzO+Vckl2UBeaUZjLvnct69WMZQZ3y2rgHbKYRYgxeCsFGWdIWIcyvvnGByCP
-    lFfUfN/DN7LGHyZTPVPgsw==
+    HiE41TISOWzRi1Nc8K99z7VFus3JMONP3dyyS5lQu7VdFs+Wq60xxkvehIKsClOQ
+    co+t9OVS8XWrI6obxUoT7ntBAumYafkskA9MPpfLZ3XpGZtnh1zAsgncHN8ghNsc
+    ISIwueJQ9UwzbqzKnNorYqcKi/H9AgT7Ak4uWTK640LNNNStmJmqUL0VAlvn4fEf
+    Vl6ZtMazfB3kE5oQUZg0wW7bvxWkC+UevOn6um+KU/JzZ8s+ht0Gf1o4wD2f9Wyq
+    XUQmbJQa3iKlV+wlh4q3YBpHLKtBVyFPI9CIv7RJsYmJZtsiL7mRpLA5udqdDFEh
+    RPcweQn0X8B0VCMYN8+VoQ==
     """
 
   Scenario: Updating an  outdated Nextcloud 15.0.0 on the beta channel
@@ -313,16 +313,16 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "15.0.3.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-15.0.3RC1.zip"
+    And Update to version "15.0.3.1" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-15.0.3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/15/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    lghsDIvgACtcNG09W23oGwO97OnwHK9XHdkAzSth+DXT6OxUsGYfrc1NmtYyXt6n
-    HT2pUVruJcCeeGdsrn2fMIazJzFyt1iPtSpxQEyX70w0VQ0K0KfhmLgzqAj9hKb/
-    taHUn3MVtJ97/BfCSO5B+7PIO8Yvgr791nRXtgrF3ZffhIce6YTJSlqFB6Sg+2dN
-    yprpAV2SwQgppAbMrCc0YDeD/i8x4Qp0oukVHCod7zkA8EWTJHCR1UV7o2SWf04R
-    sYAVzO+Vckl2UBeaUZjLvnct69WMZQZ3y2rgHbKYRYgxeCsFGWdIWIcyvvnGByCP
-    lFfUfN/DN7LGHyZTPVPgsw==
+    HiE41TISOWzRi1Nc8K99z7VFus3JMONP3dyyS5lQu7VdFs+Wq60xxkvehIKsClOQ
+    co+t9OVS8XWrI6obxUoT7ntBAumYafkskA9MPpfLZ3XpGZtnh1zAsgncHN8ghNsc
+    ISIwueJQ9UwzbqzKnNorYqcKi/H9AgT7Ak4uWTK640LNNNStmJmqUL0VAlvn4fEf
+    Vl6ZtMazfB3kE5oQUZg0wW7bvxWkC+UevOn6um+KU/JzZ8s+ht0Gf1o4wD2f9Wyq
+    XUQmbJQa3iKlV+wlh4q3YBpHLKtBVyFPI9CIv7RJsYmJZtsiL7mRpLA5udqdDFEh
+    RPcweQn0X8B0VCMYN8+VoQ==
     """
