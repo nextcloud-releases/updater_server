@@ -294,18 +294,18 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "10"
     When The request is sent
     Then The response is non-empty
-    And Update to version "14.0.6.0" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-14.0.6.zip"
+    And Update to version "14.0.7.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-14.0.7.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/14/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    kr8VAKHaR8aadC6UNomS/Z1g6G6p9lNdu0Jb7ASBv4JrLaUeqU7iqNIZX4NotJAc
-    sZ2YbOP+SQ2QPbAVxJNEjaK+Su6EBarEt2Z9uw48+GyNdWUr1QbZLHwjXgxVqv+T
-    BXQuRLdjp/s/EureazaCvTzQETvg7TIHI3T8BtuLdr3y8vhxR/6dygQZKz9rikFT
-    GcieFznuMhaXbssXmntuV+NUqSZtExqVMN68HMVgBCdbniqmrLkNiOOhGW3EZYas
-    AjN5hksLm/b7URzdahKrFwa2IcpAuYnqckCtveIhPK4COrhtm0lPx797WCTHNWmx
-    8M2RkM0Foc7oVgFcxOo94A==
+    bTbnni75MclqR8BOxs0e/REa6SX3Kqt13NpopbNIdinTMI+sHksysB5uxUn3T/JT
+    LbsLg9aKR95MkGSHPjEojonmH7Bxwt5OjLEDEY7ZJ1s8evmuVBZcx8N2CiHSwUVF
+    keSAxMaoiaYJqCRfkShJB8chfebTECMPBCiR2oIukQve/TH44zOUhfuUki1WTuN8
+    KsZeLzMYnM/YsYhyYIZ4RP+90MwfFPoor3zVlzaioXu75Yum0h19AR2tz1ZLr25G
+    2GnEbokhMZYYDGvat6cIIPpC/9vrxV8HNA83QlBbSJ/RJJXjZEEbG72uM2iG8rSj
+    +cwpw3NSFPI2tuT0er/gvQ==
     """
 
  Scenario: Updating an outdated Nextcloud 13.0.0 beta on the stable channel (php 5.6)
@@ -336,18 +336,18 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "10"
     When The request is sent
     Then The response is non-empty
-    And Update to version "14.0.6.0" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-14.0.6.zip"
+    And Update to version "14.0.7.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-14.0.7.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/14/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    kr8VAKHaR8aadC6UNomS/Z1g6G6p9lNdu0Jb7ASBv4JrLaUeqU7iqNIZX4NotJAc
-    sZ2YbOP+SQ2QPbAVxJNEjaK+Su6EBarEt2Z9uw48+GyNdWUr1QbZLHwjXgxVqv+T
-    BXQuRLdjp/s/EureazaCvTzQETvg7TIHI3T8BtuLdr3y8vhxR/6dygQZKz9rikFT
-    GcieFznuMhaXbssXmntuV+NUqSZtExqVMN68HMVgBCdbniqmrLkNiOOhGW3EZYas
-    AjN5hksLm/b7URzdahKrFwa2IcpAuYnqckCtveIhPK4COrhtm0lPx797WCTHNWmx
-    8M2RkM0Foc7oVgFcxOo94A==
+    bTbnni75MclqR8BOxs0e/REa6SX3Kqt13NpopbNIdinTMI+sHksysB5uxUn3T/JT
+    LbsLg9aKR95MkGSHPjEojonmH7Bxwt5OjLEDEY7ZJ1s8evmuVBZcx8N2CiHSwUVF
+    keSAxMaoiaYJqCRfkShJB8chfebTECMPBCiR2oIukQve/TH44zOUhfuUki1WTuN8
+    KsZeLzMYnM/YsYhyYIZ4RP+90MwfFPoor3zVlzaioXu75Yum0h19AR2tz1ZLr25G
+    2GnEbokhMZYYDGvat6cIIPpC/9vrxV8HNA83QlBbSJ/RJJXjZEEbG72uM2iG8rSj
+    +cwpw3NSFPI2tuT0er/gvQ==
     """
 
  Scenario: Updating an up-to-date Nextcloud 13.0.11 on the stable channel (late update)
@@ -357,18 +357,18 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "65"
     When The request is sent
     Then The response is non-empty
-    And Update to version "14.0.6.0" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-14.0.6.zip"
+    And Update to version "14.0.7.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-14.0.7.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/14/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    kr8VAKHaR8aadC6UNomS/Z1g6G6p9lNdu0Jb7ASBv4JrLaUeqU7iqNIZX4NotJAc
-    sZ2YbOP+SQ2QPbAVxJNEjaK+Su6EBarEt2Z9uw48+GyNdWUr1QbZLHwjXgxVqv+T
-    BXQuRLdjp/s/EureazaCvTzQETvg7TIHI3T8BtuLdr3y8vhxR/6dygQZKz9rikFT
-    GcieFznuMhaXbssXmntuV+NUqSZtExqVMN68HMVgBCdbniqmrLkNiOOhGW3EZYas
-    AjN5hksLm/b7URzdahKrFwa2IcpAuYnqckCtveIhPK4COrhtm0lPx797WCTHNWmx
-    8M2RkM0Foc7oVgFcxOo94A==
+    bTbnni75MclqR8BOxs0e/REa6SX3Kqt13NpopbNIdinTMI+sHksysB5uxUn3T/JT
+    LbsLg9aKR95MkGSHPjEojonmH7Bxwt5OjLEDEY7ZJ1s8evmuVBZcx8N2CiHSwUVF
+    keSAxMaoiaYJqCRfkShJB8chfebTECMPBCiR2oIukQve/TH44zOUhfuUki1WTuN8
+    KsZeLzMYnM/YsYhyYIZ4RP+90MwfFPoor3zVlzaioXu75Yum0h19AR2tz1ZLr25G
+    2GnEbokhMZYYDGvat6cIIPpC/9vrxV8HNA83QlBbSJ/RJJXjZEEbG72uM2iG8rSj
+    +cwpw3NSFPI2tuT0er/gvQ==
     """
 
  Scenario: Updating an up-to-date Nextcloud 13.0.11 on the stable channel (php 5.6)
@@ -401,9 +401,9 @@ Feature: Testing the update scenario of stable releases
     GZyAWsPsboY0Qg7I2XWssA==
     """
 
- Scenario: Updating an up-to-date Nextcloud 14.0.6 on the stable channel
+ Scenario: Updating an up-to-date Nextcloud 14.0.7 on the stable channel
     Given There is a release with channel "stable"
-    And The received version is "14.0.6.0"
+    And The received version is "14.0.7.1"
     And The received PHP version is "7.0.0"
     And the installation mtime is "90"
     When The request is sent
@@ -443,9 +443,9 @@ Feature: Testing the update scenario of stable releases
     GZyAWsPsboY0Qg7I2XWssA==
     """
 
-  Scenario: Updating an up-to-date Nextcloud 14.0.6 on the stable channel
+  Scenario: Updating an up-to-date Nextcloud 14.0.7 on the stable channel
     Given There is a release with channel "stable"
-    And The received version is "14.0.6.0"
+    And The received version is "14.0.7.1"
     And The received PHP version is "7.0.0"
     And the installation mtime is "30"
     When The request is sent
