@@ -316,6 +316,27 @@ Feature: Testing the update scenario of production releases
     And the installation mtime is "10"
     When The request is sent
     Then The response is non-empty
+    And Update to version "14.0.7.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-14.0.7.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/14/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    bTbnni75MclqR8BOxs0e/REa6SX3Kqt13NpopbNIdinTMI+sHksysB5uxUn3T/JT
+    LbsLg9aKR95MkGSHPjEojonmH7Bxwt5OjLEDEY7ZJ1s8evmuVBZcx8N2CiHSwUVF
+    keSAxMaoiaYJqCRfkShJB8chfebTECMPBCiR2oIukQve/TH44zOUhfuUki1WTuN8
+    KsZeLzMYnM/YsYhyYIZ4RP+90MwfFPoor3zVlzaioXu75Yum0h19AR2tz1ZLr25G
+    2GnEbokhMZYYDGvat6cIIPpC/9vrxV8HNA83QlBbSJ/RJJXjZEEbG72uM2iG8rSj
+    +cwpw3NSFPI2tuT0er/gvQ==
+    """
+
+ Scenario: Updating an up-to-date Nextcloud 14.0.7 on the production channel
+    Given There is a release with channel "production"
+    And The received version is "14.0.7.1"
+    And The received PHP version is "7.0.0"
+    And the installation mtime is "10"
+    When The request is sent
+    Then The response is non-empty
     And Update to version "15.0.4.0" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-15.0.4.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/15/admin_manual/maintenance/upgrade.html"
