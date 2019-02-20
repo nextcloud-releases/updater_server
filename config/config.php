@@ -572,7 +572,7 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-master.zip',
 			'web' => 'https://docs.nextcloud.com/server/latest/admin_manual/maintenance/upgrade.html',
 			'eol' => false,
-			'minPHPVersion' => '7.0',
+			'minPHPVersion' => '7.1',
 		],
 		'15' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable15.zip',
