@@ -422,7 +422,7 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 		'15' => [
 			'100' => [
 				'latest' => '15.0.5 RC 1',
-				'internalVersion' => '15.0.5.0',
+				'internalVersion' => '15.0.5.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-15.0.5RC1.zip',
 				'web' => 'https://docs.nextcloud.com/server/15/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
@@ -438,7 +438,7 @@ iHMF5gt+bWuSQGV3t4MwqA==',
 		'14' => [
 			'100' => [
 				'latest' => '15.0.5 RC 1',
-				'internalVersion' => '15.0.5.0',
+				'internalVersion' => '15.0.5.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-15.0.5RC1.zip',
 				'web' => 'https://docs.nextcloud.com/server/15/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
