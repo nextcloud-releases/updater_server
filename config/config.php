@@ -182,6 +182,15 @@ HVECrm+3NmISmI8+5hl4Ju5p8tudxVhGF2aHR0ilG0ff+wjdz5CtsiZXoP+BUNn+
 VFRfhy9vBf+VD6khhFkDXSymw0X6xNN3lMqQIJmJPsPONDXtk2diY6h204uEUofP
 yiBfUT4yVTwIOt+tnqZzzw==',
 			],
+			'102' => [
+				'latest' => '14.0.7',
+				'internalVersion' => '14.0.7.1',
+				'downloadUrl' => 'https://nextcloud.com/outdated-php-5-6/',
+				'web' => 'https://nextcloud.com/outdated-php-5-6/',
+				'eol' => true,
+				'minPHPVersion' => '5.6',
+				'autoupdater' => false,
+			],
 		],
 		'12' => [
 			'100' => [
@@ -331,6 +340,15 @@ HVECrm+3NmISmI8+5hl4Ju5p8tudxVhGF2aHR0ilG0ff+wjdz5CtsiZXoP+BUNn+
 VFRfhy9vBf+VD6khhFkDXSymw0X6xNN3lMqQIJmJPsPONDXtk2diY6h204uEUofP
 yiBfUT4yVTwIOt+tnqZzzw==',
 			],
+			'102' => [
+				'latest' => '14.0.7',
+				'internalVersion' => '14.0.7.1',
+				'downloadUrl' => 'https://nextcloud.com/outdated-php-5-6/',
+				'web' => 'https://nextcloud.com/outdated-php-5-6/',
+				'eol' => true,
+				'minPHPVersion' => '5.6',
+				'autoupdater' => false,
+			],
 		],
 		'12' => [
 			'100' => [
@@ -479,6 +497,15 @@ oyDn+o4Z8c+i2yR6zcoVD5itXiU1w41fMT/dlzCtIDmo953+K9fNlTPlU9h9H3MI
 HVECrm+3NmISmI8+5hl4Ju5p8tudxVhGF2aHR0ilG0ff+wjdz5CtsiZXoP+BUNn+
 VFRfhy9vBf+VD6khhFkDXSymw0X6xNN3lMqQIJmJPsPONDXtk2diY6h204uEUofP
 yiBfUT4yVTwIOt+tnqZzzw==',
+			],
+			'102' => [
+				'latest' => '14.0.7',
+				'internalVersion' => '14.0.7.1',
+				'downloadUrl' => 'https://nextcloud.com/outdated-php-5-6/',
+				'web' => 'https://nextcloud.com/outdated-php-5-6/',
+				'eol' => true,
+				'minPHPVersion' => '5.6',
+				'autoupdater' => false,
 			],
 		],
 		'12' => [

@@ -42,7 +42,6 @@ Feature: Testing the update scenario of stable releases
     Then The response is non-empty
     And Update to version "11.0.8.1" is available
     And URL to download is "https://nextcloud.com/outdated-php-5-4-5-5/"
-    And EOL is set to "1"
     And URL to documentation is "https://nextcloud.com/outdated-php-5-4-5-5/"
     And EOL is set to "1"
     And No signature is set
@@ -377,7 +376,13 @@ Feature: Testing the update scenario of stable releases
     And The received PHP version is "5.6.0"
     And the installation mtime is "10"
     When The request is sent
-    Then The response is empty
+    Then The response is non-empty
+    And Update to version "14.0.7.1" is available
+    And URL to download is "https://nextcloud.com/outdated-php-5-6/"
+    And URL to documentation is "https://nextcloud.com/outdated-php-5-6/"
+    And EOL is set to "1"
+    And No signature is set
+    And Autoupdater is set to "0"
 
 
  Scenario: Updating an outdated Nextcloud 14.0.0 beta on the stable channel
