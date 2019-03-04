@@ -306,7 +306,7 @@ Feature: Testing the update scenario of beta releases
     jKugmbHOVnqP+CSJk4ID7Q==
     """
 
-  Scenario: Updating an  outdated Nextcloud 15.0.0 on the beta channel
+  Scenario: Updating an outdated Nextcloud 15.0.0 on the beta channel
     Given There is a release with channel "beta"
     And The received version is "15.0.0.0"
     And The received PHP version is "7.0.0"
@@ -325,4 +325,25 @@ Feature: Testing the update scenario of beta releases
     eD7LLOJWcP5nZ+HWDmrRrK16rcy86a+bcLY0Al2jdgzVKQJCVvvGloRa7GG5e/3P
     HtmYIIKyDRMQb473PRDApXfVXUNqGrZ2XiDXlz2VmESmOEs3eiecNlVacZVkL7fW
     jKugmbHOVnqP+CSJk4ID7Q==
+    """
+
+  Scenario: Updating an outdated Nextcloud 15.0.0 with PHP 7.1 on the beta channel
+    Given There is a release with channel "beta"
+    And The received version is "15.0.0.0"
+    And The received PHP version is "7.1.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "16.0.0.2" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-16.0.0alpha1.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/15/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    NCAuEspQfuYbkBQjaCY0/smJftySuvHc4opZ3sWKBE3SQK6vZEYZ6GLnaM2aM0Md
+    2xcyMWofNUJckTRiC65M+HxFugN21b29FF487kSPO76meONB+oqXMbwV3CIEc3yA
+    gkczkLNJ6cUZL1OBcf80F6/3qaHWNlMzatrG12xhvJYkGyKW2geI1wrlMAOboVZu
+    pbxit82JVldFyJFTwKvtizxX7vlu3Ko5cinD35+aI9fQLd+/cqPx0+lGbjj7uuEd
+    MSAM8hdj0mkjzmIS/t7pGegTs9ImckV8v9mRIURcG5xVMoiGA91STWu+HkMA5EX1
+    +t17D3EYMfng1kL121heRA==
     """
