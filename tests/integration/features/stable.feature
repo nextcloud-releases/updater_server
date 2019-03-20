@@ -17,7 +17,7 @@ Feature: Testing the update scenario of stable releases
     When The request is sent
     Then The response is non-empty
     And Update to version "9.1.6.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-10.0.6.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-10.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
     And EOL is set to "1"
     And No signature is set
@@ -28,7 +28,7 @@ Feature: Testing the update scenario of stable releases
     When The request is sent
     Then The response is non-empty
     And Update to version "9.1.6.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-10.0.6.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-10.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
     And EOL is set to "1"
     And No signature is set
@@ -54,7 +54,7 @@ Feature: Testing the update scenario of stable releases
     When The request is sent
     Then The response is non-empty
     And Update to version "9.1.6.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-10.0.6.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-10.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html"
     And EOL is set to "1"
     And No signature is set
