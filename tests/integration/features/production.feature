@@ -316,23 +316,23 @@ Feature: Testing the update scenario of production releases
     And the installation mtime is "10"
     When The request is sent
     Then The response is non-empty
-    And Update to version "14.0.9.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-14.0.9.zip"
+    And Update to version "14.0.10.0" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-14.0.10.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/14/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    0BXGZDtRQkMd2s/CqdlA193A/ZwN6FSdZcCpEuIYW3iHjhBA0vVOKOeU4+s51vO8
-    08qATzXQ5XpDeYy82pcWSfvs1IKu/EqsLctOtmRf2cHx8bwIGVH+MW5KxsG0sY+6
-    T96m1yi22l7mNrbY+/G5O8jhPXfEcmXqwXhzhze7VCbnGCGpwp1KwsvVY1Tlzmk6
-    GBMkElFG9n7kqZ0BMhmFLriwztxZjvSYxv5UGwb0vCxkqQMUsRIXgQ7BQp/5mnUL
-    gXtlhQwWSMii9NOeaBRRxoQ+Z+8Ipem6Pr6X1UoRYKzSbX0hMlHWDQWu3wAqEX7d
-    X94CfkJ+JmpcWfMQNURNTg==
+    Y4pYfduB6QBDRHM5xn5w79jTwA2Q1ouNbEIEvdymrek4KGIB9U/YLd/XeFQhIJxI
+    JotTgLG6tegrKVEp5gKcoZBOPyeCulq6xsyL3XhKmxBK+XS/Hcioo9XGHVQU6PRg
+    vmiZpXSBsxpkHEJXsnMa5esX+BPT7oNsVbiXSWSUBXd5px43TA5R1j8yYmBVkkuL
+    ef+Z8MAROkmzDc0zGDQsIwxxKCNW25sa9wQP2JJaDC686DpIM3ouai4wve1Dw3Uc
+    sEMOSGG+pElQQSYcNxG2oex6v+dsst8KHS1AhhiU/Kg8uvYzsBiEEwRf7biMDD4Q
+    293HUGcejWFDofzHgtse7A==
     """
 
- Scenario: Updating an up-to-date Nextcloud 14.0.9 on the production channel
+ Scenario: Updating an up-to-date Nextcloud 14.0.10 on the production channel
     Given There is a release with channel "production"
-    And The received version is "14.0.9.1"
+    And The received version is "14.0.10.0"
     And The received PHP version is "7.0.0"
     And the installation mtime is "10"
     When The request is sent
