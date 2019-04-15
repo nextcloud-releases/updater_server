@@ -310,7 +310,7 @@ Feature: Testing the update scenario of beta releases
     Given There is a release with channel "beta"
     And The received version is "15.0.0.0"
     And The received PHP version is "7.1.0"
-    And the installation mtime is "41"
+    And the installation mtime is "39"
     When The request is sent
     Then The response is non-empty
     And Update to version "15.0.7.0" is available
@@ -331,7 +331,7 @@ Feature: Testing the update scenario of beta releases
     Given There is a release with channel "beta"
     And The received version is "15.0.0.0"
     And The received PHP version is "7.1.0"
-    And the installation mtime is "9"
+    And the installation mtime is "41"
     When The request is sent
     Then The response is non-empty
     And Update to version "16.0.0.6" is available
