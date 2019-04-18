@@ -306,10 +306,10 @@ Feature: Testing the update scenario of beta releases
     v9efL8tHzApK4K1nsbNn4Q==
     """
 
-  Scenario: Updating an outdated Nextcloud 15.0.0 on the beta channel
+  Scenario: Updating an outdated Nextcloud 15.0.0 on the beta channel with incompatible PHP
     Given There is a release with channel "beta"
     And The received version is "15.0.0.0"
-    And The received PHP version is "7.1.0"
+    And The received PHP version is "7.0.0"
     And the installation mtime is "39"
     When The request is sent
     Then The response is non-empty
