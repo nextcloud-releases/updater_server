@@ -337,16 +337,16 @@ Feature: Testing the update scenario of production releases
     And the installation mtime is "10"
     When The request is sent
     Then The response is non-empty
-    And Update to version "15.0.7.0" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-15.0.7.zip"
+    And Update to version "15.0.8.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-15.0.8.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/15/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    QU/m3YUp2rNQeOlnrUP6TL7AXJ4kI6oExRGQLZfoZp2FUTUOXMXmgBDhOfyCeIIm
-    3AsrjFt7HBUIp//Ott1rDQhQNAPqKLFWdpUg1El9pGfChO3sQTtGPH2x+f5SRD6I
-    Zifyxusv06ImLQq1H0KvSSMEzhLD51MGHrxZzcoq7MQRvsL08yZq9zSI/RZSVcln
-    rIfpxgNu1lTRicevA5jCZZzCzrfYpMg/xp0AFZecuSXogjBpb8FQb3nr1+CKQgGT
-    AlTNG4oDO8YTQSbeTeKKCHCzc2R3F/pIaxr3Ip7m/jddsiuE0F4Wq3D0loBInrBH
-    v9efL8tHzApK4K1nsbNn4Q==
+    HfCCCyWWbk0tzwwVW9AYgoIG1WBJjkppYfSH+7avEQ4R16bu99Xe8MCpu3k6aEbG
+    jaNOdmhQjLMPq5Z19s1DnV0SIb6Sg+l6EJkoAUNv5DqvqN+Pf+AR1xdoCNpcD2dE
+    qqEnVOxTbcfl2O6fzJzpfmxJpb9oiwT+MdivrHZIaYKXTSIWdzCAYuWN4MM025Jg
+    f7V+WxSNVoVhrklxpX3uKUA/NGDnQHhhWhhUYkD+NPi2k9RWttx8ZIERA2VJsIJh
+    JsLiABg6rggR4lbSQmj7LXGmDcwia0ATA/NW6cjphEugwvNjZC4caK5QXxEMLG9h
+    VyC3u5CORz5PHlIv2Jefyw==
     """
