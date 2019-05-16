@@ -476,18 +476,18 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "15"
     When The request is sent
     Then The response is non-empty
-    And Update to version "16.0.0.9" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-16.0.0.zip"
+    And Update to version "16.0.1.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-16.0.1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/16/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    ZQgU/ITrJK9qjby4BowlWnlpTdG7izvqiwrjwm7iTTN8eMlCPP0np9e5znnO9pmR
-    MS5Fg8wD3xsbudZk89x2oY36xCF/iB6GRrUh5mB8jDeGLuDt03HkEjd7QhENscVD
-    WKKLCydVsFvAyZKkvoloRW6IcN3JxGKdp4dRYzmjftc6lnisX0LiSaOKpc7OOShI
-    +udimp0LXmz3qudO/ydY+kofuTdax76nY93Mkxv+Hg8ZuWb/fC9Bo203vBziLzNL
-    vMoAbVrciXWFHtyxpa4VrTzxa21mLnkIbnCxUWHbGD8RADoKcgdtiIdRraZrbiAO
-    5RiPj0P99h2+hYL1XcGcAQ==
+    EztP8mnw0b3LMdTF/XvG75zid8SCY65izgJT5r6wzWNmmwLgTWLYAdLuOJUjrLzp
+    /Hz4EREmOqiQfVMYQYvjRgGIC6CuB6fReZjjb/4wEzILheOMkKo1NMgA23FJL+gW
+    lDLuaYxHcZXsgWtSmk8P0+4rjLs5Lda9rKE/ELCCmk+QH+TusGoAq4UGeE0KNxuV
+    +u4yVs5IM/Hw8tHI/utf393zr/9DBx+lA2Lur1xQ2VTXaS6cNhqC1jnwxyn/U5yE
+    hg/E1EkHNjdwU2NQmoW700eVAOqjWV7BTuJSVb/5KgH3aySnVaxedr6xelaymivy
+    Ag4MmolWt+CHLzysVq+imQ==
     """
 
   Scenario: Updating an up-to-date Nextcloud 15.0.7 on the stable channel
