@@ -485,7 +485,7 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 	'beta' => [
 		'16' => [
 			'100' => [
-				'latest' => '16.0.2',
+				'latest' => '16.0.2 RC1',
 				'internalVersion' => '16.0.2.0',
 				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-16.0.2RC1.zip',
 				'web' => 'https://docs.nextcloud.com/server/16/admin_manual/maintenance/upgrade.html',
@@ -501,7 +501,7 @@ ztU2VCe6THNdkiE7Bn8EQQ==',
 		],
 		'15' => [
 			'100' => [
-				'latest' => '16.0.2',
+				'latest' => '16.0.2 RC1',
 				'internalVersion' => '16.0.2.0',
 				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-16.0.2RC1.zip',
 				'web' => 'https://docs.nextcloud.com/server/16/admin_manual/maintenance/upgrade.html',
@@ -515,7 +515,7 @@ yyCliYJwsqSpkfT1klixnVt7bXwLQ0KH+24StLvDcP93r36YaVYP4KM6OLsxcBs/
 ztU2VCe6THNdkiE7Bn8EQQ==',
 			],
 			'101' => [
-				'latest' => '15.0.9',
+				'latest' => '15.0.9 RC1',
 				'internalVersion' => '15.0.9.0',
 				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-15.0.9RC1.zip',
 				'web' => 'https://docs.nextcloud.com/server/15/admin_manual/maintenance/upgrade.html',
@@ -531,7 +531,7 @@ h4M4tFi0iIeJN8N1ELlblg==',
 		],
 		'14' => [
 			'100' => [
-				'latest' => '15.0.9',
+				'latest' => '15.0.9 RC1',
 				'internalVersion' => '15.0.9.0',
 				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-15.0.9RC1.zip',
 				'web' => 'https://docs.nextcloud.com/server/15/admin_manual/maintenance/upgrade.html',
@@ -547,7 +547,7 @@ h4M4tFi0iIeJN8N1ELlblg==',
 		],
 		'13' => [
 			'100' => [
-				'latest' => '14.0.13',
+				'latest' => '14.0.13 RC1',
 				'internalVersion' => '14.0.13.0',
 				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-14.0.13RC1.zip',
 				'web' => 'https://docs.nextcloud.com/server/14/admin_manual/maintenance/upgrade.html',
