@@ -121,6 +121,31 @@ rHSv7h5818aTjmj4sB1jsVrxNf32PgrUED8PUqgMYx1FxEzGyct4yj+GbIBi4D+K
 b813iKq4+cn3CjTunREm6A==',
 			],
 		],
+		'15.0.10' => [
+			'100' => [
+				'latest' => '16.0.3',
+				'internalVersion' => '16.0.3.0',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-16.0.3.zip',
+				'web' => 'https://docs.nextcloud.com/server/16/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '7.1',
+				'signature' => 'TYiUB/+l2uXNpiHGuMhchHzzyMn8eiL2mzBD+fmwqUXU29UYK4FFvTbDEWWXxXF9
+XeOXXBTkWltQ6A5K+nwFx4Phf4VPznaGn3U/1hsLSLBy9p9qqBMQdmDvCxl4dJmP
+R0Ttz6sGcC1AsYwW2Q5Z1lywpmk1Ax5YcJesbjOFTU9HXIOI2s9YyPX4bP3L1rkH
+CaZqjW7yCedKhj64F/SuXnUwaPhqTNNoDdhCN14IKvXCFYKLxm5UoGXrddwIcRrL
+rHSv7h5818aTjmj4sB1jsVrxNf32PgrUED8PUqgMYx1FxEzGyct4yj+GbIBi4D+K
+b813iKq4+cn3CjTunREm6A==',
+			],
+			'101' => [
+				'latest' => '16.0.3',
+				'internalVersion' => '16.0.3.0',
+				'downloadUrl' => 'https://nextcloud.com/outdated-php-7-0/',
+				'web' => 'https://nextcloud.com/outdated-php-7-0/',
+				'eol' => false,
+				'minPHPVersion' => '7.0',
+				'autoupdater' => false,
+			],
+		],
 		'15' => [
 			'100' => [
 				'latest' => '15.0.10',
@@ -340,6 +365,15 @@ p15duG8nbbF1c3CAh/dVsJ2AKKpcnLYJPC8UgGDXMtalSoPUv9QTWPrS7AqQRsVD
 7xJThvWdx3aSV3aKREBzw5ddHUAIEENQ0aBdabgAXbBZEfLrMMG2XaHtdXGLpQs8
 ypwcWVvLfYk9e+YEMdhMNg==',
 			],
+			'102' => [
+				'latest' => '16.0.3',
+				'internalVersion' => '16.0.3.0',
+				'downloadUrl' => 'https://nextcloud.com/outdated-php-7-0/',
+				'web' => 'https://nextcloud.com/outdated-php-7-0/',
+				'eol' => false,
+				'minPHPVersion' => '7.0',
+				'autoupdater' => false,
+			],
 		],
 		'14' => [
 			'100' => [
@@ -527,6 +561,15 @@ lRjhRfuk/MrjUOH1XkGO1xPI8zXp8eI7Y53jHswbUayJGszzgCKcuC6z+QEUkf7v
 p15duG8nbbF1c3CAh/dVsJ2AKKpcnLYJPC8UgGDXMtalSoPUv9QTWPrS7AqQRsVD
 7xJThvWdx3aSV3aKREBzw5ddHUAIEENQ0aBdabgAXbBZEfLrMMG2XaHtdXGLpQs8
 ypwcWVvLfYk9e+YEMdhMNg==',
+			],
+			'102' => [
+				'latest' => '16.0.3',
+				'internalVersion' => '16.0.3.0',
+				'downloadUrl' => 'https://nextcloud.com/outdated-php-7-0/',
+				'web' => 'https://nextcloud.com/outdated-php-7-0/',
+				'eol' => false,
+				'minPHPVersion' => '7.0',
+				'autoupdater' => false,
 			],
 		],
 		'14' => [
