@@ -229,39 +229,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "10"
     When The request is sent
     Then The response is non-empty
-    And Update to version "14.0.13.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-14.0.13RC1.zip"
+    And Update to version "14.0.13.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-14.0.13.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/14/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
     """
-    jAS2mk09qsYqYagFfhTlMWN4e5sG3uejFwyI2FYAnDmzfqRhnlBtHcxsd6JSDrlG
-    xxgdOnvBBbv4HILiGxQYfb7jN4WIjWr0SGntA+lPYElfbWbKSL+SZqkm2KXp29Q6
-    9FhftNoKBDmzS+4k4TXkPt3qFHVCs0r3UQy7u2uu801Aw9p3OZGRuA9QqVRBUeJS
-    mSS0wfUSpLC33z4mcwl22703UCrAEQznwH01Edgb+Q8nI36T8HI7R3KSmzb2qopT
-    iUCT7wjbjvl8X+t4fhkZ21+BV6Fln6q5wevz+FID4eahQW/eyEKvtvNbYnlDRet9
-    8unhIOVZp3/viEDFpLUD2g==
-    """
-
-  Scenario: Updating an outdated Nextcloud 13.0.0 on the beta channel on PHP 7.0
-    Given There is a release with channel "beta"
-    And The received version is "13.0.0.8"
-    And The received PHP version is "7.0.0"
-    And the installation mtime is "90"
-    When The request is sent
-    Then The response is non-empty
-    And Update to version "14.0.13.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-14.0.13RC1.zip"
-    And URL to documentation is "https://docs.nextcloud.com/server/14/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "1"
-    And The signature is
-    """
-    jAS2mk09qsYqYagFfhTlMWN4e5sG3uejFwyI2FYAnDmzfqRhnlBtHcxsd6JSDrlG
-    xxgdOnvBBbv4HILiGxQYfb7jN4WIjWr0SGntA+lPYElfbWbKSL+SZqkm2KXp29Q6
-    9FhftNoKBDmzS+4k4TXkPt3qFHVCs0r3UQy7u2uu801Aw9p3OZGRuA9QqVRBUeJS
-    mSS0wfUSpLC33z4mcwl22703UCrAEQznwH01Edgb+Q8nI36T8HI7R3KSmzb2qopT
-    iUCT7wjbjvl8X+t4fhkZ21+BV6Fln6q5wevz+FID4eahQW/eyEKvtvNbYnlDRet9
-    8unhIOVZp3/viEDFpLUD2g==
+    qL4+2k59ZwURfQs9ZviDrfLngPh+JLfuJ2oMIrwAiCem/aAMuBT0bzX0rs+v/C6F
+    Mumz/0A+wVfbinEV35oEfsTDCoEdf+zGBM1rCT/Gt/RuhkCYfQwXdHiyKdOV9ucE
+    KxOK/f06fjY0Qn4sNCjUNQ3+XxxZu+m/XxQIbaoyA49Z1olH4bYtIHfPAoFFHGkz
+    c/wmORADD2LBntayaEzltk3iD+0dVMwdv8I5anRfLp0aV7XcZcXfTZuv8Qni6xle
+    CFCl5BbeflH+AeRZL3MR8a3aY1ClpnZGsN0DbJhg5Ql+bf0WmflnMHJfk3rFbbd1
+    AbWnmPMJ6CSXGWAGOQ0smg==
     """
 
   Scenario: Updating an up-to-date Nextcloud 14.0.10 on the beta channel
