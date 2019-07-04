@@ -316,23 +316,23 @@ Feature: Testing the update scenario of production releases
     And the installation mtime is "10"
     When The request is sent
     Then The response is non-empty
-    And Update to version "14.0.12.0" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-14.0.12.zip"
+    And Update to version "14.0.13.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-14.0.13.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/14/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    hoSiTWnRyPAJU5qvl5B9+jgLRakC20KtPnz1x/21/alWMOH66KPJPS8ove3Pnbns
-    Qbe2xlT5WNZBIkni5A66K9xu42ZPcu0NJQq/vp3RLgjC5qfWYFp6RgRGki2gkHEX
-    AGZC/FdGATHLzOn4kbb5+PXz9lyp2W6jLcJ9vP+zYnk64KbcplYyKt34xmuZiZcx
-    yEA0fLyBlX+Tu/tEhMRbrazl7xxdlFY6w1gdBRoZvVOxN8bSXMuXUndjmeqYt/Rd
-    1PQJtCednRbfMq1CjTfKsMol9J42Yc30CO97JWTyy4hvjS3xrBavWpqV4/8HDwpv
-    Iw5O7EhsmbJjxFzSOgjz9A==
+    qL4+2k59ZwURfQs9ZviDrfLngPh+JLfuJ2oMIrwAiCem/aAMuBT0bzX0rs+v/C6F
+    Mumz/0A+wVfbinEV35oEfsTDCoEdf+zGBM1rCT/Gt/RuhkCYfQwXdHiyKdOV9ucE
+    KxOK/f06fjY0Qn4sNCjUNQ3+XxxZu+m/XxQIbaoyA49Z1olH4bYtIHfPAoFFHGkz
+    c/wmORADD2LBntayaEzltk3iD+0dVMwdv8I5anRfLp0aV7XcZcXfTZuv8Qni6xle
+    CFCl5BbeflH+AeRZL3MR8a3aY1ClpnZGsN0DbJhg5Ql+bf0WmflnMHJfk3rFbbd1
+    AbWnmPMJ6CSXGWAGOQ0smg==
     """
 
  Scenario: Updating an up-to-date Nextcloud 14.0.12 on the production channel
     Given There is a release with channel "production"
-    And The received version is "14.0.12.0"
+    And The received version is "14.0.13.0"
     And The received PHP version is "7.0.0"
     And the installation mtime is "10"
     When The request is sent
@@ -349,4 +349,46 @@ Feature: Testing the update scenario of production releases
     f7V+WxSNVoVhrklxpX3uKUA/NGDnQHhhWhhUYkD+NPi2k9RWttx8ZIERA2VJsIJh
     JsLiABg6rggR4lbSQmj7LXGmDcwia0ATA/NW6cjphEugwvNjZC4caK5QXxEMLG9h
     VyC3u5CORz5PHlIv2Jefyw==
+    """
+
+  Scenario: Updating an up-to-date Nextcloud 15.0.8 on the production channel
+    Given There is a release with channel "production"
+    And The received version is "15.0.8.1"
+    And The received PHP version is "7.1.0"
+    And the installation mtime is "30"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "15.0.9.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-15.0.9.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/15/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    Dlg/mr5PoxkVIrTVhEFXpWU+2SFAuiw2biSdX8+b9BGSMYtcmiGt0HnczXinO4En
+    AmxuXB5Ub4aQO6K1jYllTgk95nwUebWeLa53TS02S6Xlmd4yP25NHDazHS4LtRsN
+    nVhv4T1gNI8JO2DSy8Q12Xx2hO2yFTytOk9OqaSGfe3psYfETrSwKAVsgq0imrRB
+    NydWc4icGtLnLq+msNDLsV0X9RkNCe0BVduNU8NIoYtY/xVyCWyCcluTwBR5etk0
+    Dn3FoTDPG355DLW+sWh0eDo1VUp6OO3LuzbnZ4c2DA6ABJEr/sv+rmZ2Sb/zf4cc
+    gkD1aKoqPtXm4AE+h6X3ZA==
+    """
+
+  Scenario: Updating an up-to-date Nextcloud 16.0.1 on the production channel
+    Given There is a release with channel "production"
+    And The received version is "16.0.1.1"
+    And The received PHP version is "7.2.0"
+    And the installation mtime is "30"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "16.0.2.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-16.0.2.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/16/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    FxjuhrHYGZHLCl6yftWhqrujCMvsRaNt9b4HapYj1JwTp/EpSSMYp680Y2ixoBLI
+    50cAl807caRIOMwr00vW8RgTT5lQx9TnQPnZJgwRuua2xDF16Pk+HNb376EZzHQs
+    t811qN7hCswcmJD+GFlrdAU3H6R6jSPg+GjkMkCljBoA/mw6SVPLfFG7ZrZlg2l6
+    yYAVgsA3tGBsxc4xlzwteKmKeUU+vyP0vq+blFQY1jA6Sc2dAdHu/LGc/W8BlsPj
+    wrDI3OTz5YbyEF5N+jj3sL9RD+anUZrmAQAyzKkxehmv3b4ycDdYxA3MNqF88Kbm
+    Cm5Z8ypyzB8DkWlI6IRd3A==
     """
