@@ -229,18 +229,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "10"
     When The request is sent
     Then The response is non-empty
-    And Update to version "14.0.14.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-14.0.14RC1.zip"
+    And Update to version "14.0.14.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-14.0.14.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/14/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
     """
-    G6yNLiRtG57MGTjsFsOv2b5byUnqfrfOKOWZdk8BVfB6hEST7DEYNb+3XPPXNWLz
-    LVmrnoGea14TVCs0YJ5XERbVoUQotJA+N8JqhE+C15KTwGey1cw+ZPbJoBfNkX8Y
-    UkT/AZa+uifM5xHt0IwiEIltUwx5pMx2QzntEYXuc3ryYw8k9ZQdLg9dJibpcUEy
-    hjpiWujfFtIMqAgEQUnqalJlITj+ToHxdKp+f1sOrNf++361gNuefasV1oQDFxCm
-    ZuyACRo944++c01f0SKrOwBu1EXqOL6jAQIj0tmy8RSm3AvQ6+SPSeUM5AY03JvO
-    9iePU+PVp7KP2+Mdghk0Zg==
+    Nw1PhE391uasWeU66JtBoJGTRHDdImBNBkpMlh4nTG6UJFouFTDDmqHq6DcanS5e
+    qoC79rxiC7lloaN/05AZ7AY1FSNjG5G9xPM4OWgTCbwXhUfD3DjGVzzbMVnTWgeK
+    ZMgZqqU8F4uWHkcEB0fqImZYnFMdX7E7xZmEIO8BSOOdS6PvvZTAeDXEwWSBMRVa
+    7wEYp/hwJzV3UCy5SThYHqs+8EIdQeql1/3o/P/0bsGnsgpLGK/2bV4lzVV74m3T
+    RrZ6EDdSnGyybYX4QGv/wfng9RijMdMdr1SYzJfkRKj+JX37zgscL/87XgnApkQS
+    FaqAZYszh1hjGEyQaoibXw==
     """
 
   Scenario: Updating an up-to-date Nextcloud 14.0.10 on the beta channel
