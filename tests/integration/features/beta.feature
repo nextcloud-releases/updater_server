@@ -334,16 +334,37 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "17.0.0.2" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-17.0.0beta1.zip"
+    And Update to version "17.0.0.4" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-17.0.0beta2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/16/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    vZTR4wZAW+Wk71alC3KsV84SL+P5+2UXH0tB9VoRgnz+oXRI/ApF/8IlLerfGwo+
-    VH35jOLiQnOU5Cm9K3vlOKHWBUD5EFbIUxlwO1k39k2IsA4aE41+9ZBTFV2RV1NN
-    Fkg7N8xtZKhvC3dgYcHqGB8qtJEyGU2dV5uRcFsh9fdkNWJ4GoXaVM6Udw7lsCWj
-    6Ptcc6sNDC3rXrC8EMR9gxSyqrWLPIBx/VXASPAnf2XDeVTR4OCmdtgtSaSWona2
-    OxM03WtalVlG9ytlD9twOhrEji3rJGyxk/SKTXTnTaLHITDgyHitFHY7MiExMxep
-    h2GQ2ghvpOHWoKW4BIUyhg==
+    uD9YaE/zfkx7/mWK+4Xi6E8Yzol/1y1BVUPdJvdZB3Qp8643t5Jnzt1vrJS4o0lk
+    5j5vfVf0hP+USYx9nooX6CgUf5KiSzZnwG6aN3QEezpEeZ+alXQf0tn9HUVhSYOs
+    eVSwptFVkqtpLQAoy7FhPrY1oACqR3mQae49Ups9nfwmG/kPxNpvv7QXdgYRu9ty
+    OtIW2lW32yH4aKUCAYTFUBDaMB6VZHjJUFLbx3oYWRfXIp/eLahbIU8lloSXPNRK
+    zZEx3qzxKxZEYPpTQqtxQIZFIcFN3EH9MmwD/OnlH/lFYJSqqtaM2wa6ygx8gUfj
+    THz6KMD+jE57NDvTgOhNhw==
+    """
+
+  Scenario: Updating an outdated Nextcloud 17.0.0 on the beta channel
+    Given There is a release with channel "beta"
+    And The received version is "17.0.0.2"
+    And The received PHP version is "7.1.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "17.0.0.4" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-17.0.0beta2.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/16/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    uD9YaE/zfkx7/mWK+4Xi6E8Yzol/1y1BVUPdJvdZB3Qp8643t5Jnzt1vrJS4o0lk
+    5j5vfVf0hP+USYx9nooX6CgUf5KiSzZnwG6aN3QEezpEeZ+alXQf0tn9HUVhSYOs
+    eVSwptFVkqtpLQAoy7FhPrY1oACqR3mQae49Ups9nfwmG/kPxNpvv7QXdgYRu9ty
+    OtIW2lW32yH4aKUCAYTFUBDaMB6VZHjJUFLbx3oYWRfXIp/eLahbIU8lloSXPNRK
+    zZEx3qzxKxZEYPpTQqtxQIZFIcFN3EH9MmwD/OnlH/lFYJSqqtaM2wa6ygx8gUfj
+    THz6KMD+jE57NDvTgOhNhw==
     """
