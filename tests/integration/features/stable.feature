@@ -528,3 +528,30 @@ Feature: Testing the update scenario of stable releases
     ZGWQu68eon7Vfr0iKKPJ3A==
     """
 
+  Scenario: Updating an up-to-date Nextcloud 16.0.5 on the stable channel
+    Given There is a release with channel "stable"
+    And The received version is "16.0.5.1"
+    And The received PHP version is "7.2.0"
+    And the installation mtime is "20"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "17.0.0.9" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-17.0.0.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/17/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    wNiZfG7hq7zSObJ4DcFJ7EZBtgXgLUUcsGeUWuQuD4jNQ5cPWfu2Wv+1H7ztzses
+    tJrejdlNqWjcxsY0t5beMBa8oXxQgc5Fl6XZSaHKfshSyyWRDGzOgPhCU4L+oz1O
+    CcykQ0KB1o01YsdaSJmnEdqErojH504J27v5RJK7Gepk8qs4sRDVXhTUnxMUy1zt
+    mYciGqF9b7OSoELQpERdBMXEpUwm42XnqkJ5bofoImi9LDKk6iKMI0Jdd7yRrA1C
+    GZA04SVl+KwFPXDXOFWG2AeNSsSlN6x/2dF/o1zWN+qIYpgptBN+TkkHaHH6Rta6
+    TjPulaELBctfuK6GhYEWVA==
+    """
+  Scenario: Updating an up-to-date Nextcloud 16.0.5 on the stable channel
+    Given There is a release with channel "stable"
+    And The received version is "16.0.5.1"
+    And The received PHP version is "7.1.0"
+    And the installation mtime is "60"
+    When The request is sent
+    Then The response is empty
