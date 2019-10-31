@@ -410,10 +410,11 @@ Feature: Testing the update scenario of stable releases
     And The received PHP version is "7.0.0"
     And the installation mtime is "90"
     When The request is sent
-    Then The response is non-emptyAnd Update to version "15.0.12.1" is available
+    Then The response is non-empty
+    And Update to version "15.0.12.1" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-15.0.12.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/15/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "1"
+    And EOL is set to "0"
     And The signature is
     """
     ky2vKMSu1tjkpsPaAf6CkqtKJwkeZ8fxT9a9TBNwAAbl3AAIYqQKjT0Np5nvFwzb
@@ -430,7 +431,8 @@ Feature: Testing the update scenario of stable releases
     And The received PHP version is "7.0.0"
     And the installation mtime is "10"
     When The request is sent
-    Then The response is non-emptyAnd Update to version "15.0.12.1" is available
+    Then The response is non-empty
+    And Update to version "15.0.12.1" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-15.0.12.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/15/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
