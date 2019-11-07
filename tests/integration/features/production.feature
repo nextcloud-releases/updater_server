@@ -392,3 +392,24 @@ Feature: Testing the update scenario of production releases
     H3eyYffBGQLKmjQVeiQTotKEIl0/dwSfIffs4GGa03d6l4rfHyI1EsI44mlcwdLa
     Lj2qreseuw1nNqQQ0QA7nw==
     """
+
+  Scenario: Updating an up-to-date Nextcloud 17.0.0 on the production channel
+    Given There is a release with channel "production"
+    And The received version is "17.0.0.7"
+    And The received PHP version is "7.2.0"
+    And the installation mtime is "30"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "17.0.1.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-17.0.1.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/17/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    bzDQhBPYV298QspZpgG3qdBzSx60LwF/ywacgnyL4DMV5GFSkupte8xLm19S3KbH
+    4ISw4NQLdmTKE8tCbV6iSz5V4zIq0nNWC/6IU0vQHO9FPFdCHZmzhkl0EkiO+rSL
+    exqzp1xmYkr5ghHbInxShnbkdtAMgCx4qIY9TJk0pi90B3XhUpwjORv0F1ggHVK9
+    ZhXisKoaWHOVrO4VSweZga4YEgw74ZoI2Rm8uwCSla9nj4xiB+s7PrvrXSvxHjVR
+    nD283r1140UId4cRmrkopa7I5sTiNPd8jJ5Z0jkyen+nAXE69BXPCAyBdW0wJz4Q
+    cSW/rXwf9VO+nDix886JPw==
+    """
