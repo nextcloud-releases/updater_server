@@ -298,12 +298,12 @@ Feature: Testing the update scenario of beta releases
     And EOL is set to "0"
     And The signature is
     """
-    JVg0eTjjqaO8kTWMiaac6W52kw7nyyN95f0+8Zi0VWILQE6Yre/7jNoQVU9YDf9k
-    KfOBV7BCk5ReIO4SGVQNgRAwCwLKezBwAxUyPUxZ+VZvsjdw0GQORKSZyCgSEoux
-    NcBqSJps5IoB8GvrRv73QuV9qIygrIn0Mn50f7bQ6uHSLYK3ck/9ro8ypfBKfzvd
-    7CwN5VtxA/ZKA1QtznPncQCjvDryizslGoTAuN1TcIsNLiK2gdv7VnYrF2wxJzmJ
-    +cDF4i7fCx/P9SEHA4/MalmWOM2FRxfSR8q80F1VQj4ivyfG8tGcZoBOjCB/VUBy
-    iUXaAUfNlpzP/pWlawUK/A==
+    fdy5tfNIlHvO6d/GMIQ9WIYWD9j0KTKz2LZYCPNl2ulQs3OT6oDPk83uaq9I/mHA
+    eGCB3v0CMBeEYB6n0UZS95AnQSW5teFBroPcWDgdfkromMUSjD4TwJXedU94VfOx
+    RFamq6Nd65dqwfQ+PMDMW6E3ySpMLPT3NIOpiVOBnLqOO9AINyCn4lOacNDFINqq
+    BkPE2oK+QzwXjLV09mpffk7BaZwpNWkGiH6uQp/TcSog2RsNyIdQhhrE2XhkInn5
+    CKR41re0nUXQUyZBKTaQmOHezIeMHn9Z22Utt7npcVCNpqqb8RxIs8x/TJn9d+TZ
+    w/2xv2Pr0RV364JfdPO7ow==
     """
 
   Scenario: Updating an outdated Nextcloud 16.0.0 on the beta channel
