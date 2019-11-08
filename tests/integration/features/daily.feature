@@ -27,7 +27,7 @@ Feature: Testing the update scenario of daily releases
   Scenario: Updating an up-to-date Nextcloud 9.0 daily
     Given There is a release with channel "daily"
     And The received version is "9.0.100"
-    And the received build is "2019-10-19T18:44:30+00:00"
+    And the received build is "2099-10-19T18:44:30+00:00"
     When The request is sent
     Then The response is empty
 
@@ -46,7 +46,7 @@ Feature: Testing the update scenario of daily releases
   Scenario: Updating an up-to-date Nextcloud 10.0 daily
     Given There is a release with channel "daily"
     And The received version is "9.1.100"
-    And the received build is "2019-10-19T18:44:30+00:00"
+    And the received build is "2099-10-19T18:44:30+00:00"
     When The request is sent
     Then The response is empty
 
@@ -65,7 +65,7 @@ Feature: Testing the update scenario of daily releases
   Scenario: Updating an up-to-date Nextcloud 11.0 daily
     Given There is a release with channel "daily"
     And The received version is "11.0.100"
-    And the received build is "2019-10-19T18:44:30+00:00"
+    And the received build is "2099-10-19T18:44:30+00:00"
     When The request is sent
     Then The response is empty
 
@@ -84,7 +84,7 @@ Feature: Testing the update scenario of daily releases
   Scenario: Updating an up-to-date Nextcloud 12.0 daily
     Given There is a release with channel "daily"
     And The received version is "12.0.100"
-    And the received build is "2019-10-19T18:44:30+00:00"
+    And the received build is "2099-10-19T18:44:30+00:00"
     When The request is sent
     Then The response is empty
 
@@ -103,7 +103,7 @@ Feature: Testing the update scenario of daily releases
   Scenario: Updating an up-to-date Nextcloud 13.0 daily
     Given There is a release with channel "daily"
     And The received version is "13.0.100"
-    And the received build is "2019-10-19T18:44:30+00:00"
+    And the received build is "2099-10-19T18:44:30+00:00"
     When The request is sent
     Then The response is empty
 
@@ -122,6 +122,6 @@ Feature: Testing the update scenario of daily releases
   Scenario: Updating an up-to-date Nextcloud 14.0 daily
     Given There is a release with channel "daily"
     And The received version is "14.0.100"
-    And the received build is "2019-10-19T18:44:30+00:00"
+    And the received build is "2099-10-19T18:44:30+00:00"
     When The request is sent
     Then The response is empty
