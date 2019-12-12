@@ -563,20 +563,36 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 		],
 	],
 	'beta' => [
-		'17' => [
+		'18' => [
 			'100' => [
 				'latest' => '18.0.0',
-				'internalVersion' => '18.0.0.3',
-				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-18.0.0beta1.zip',
+				'internalVersion' => '18.0.0.4',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-18.0.0beta2.zip',
 				'web' => 'https://docs.nextcloud.com/server/17/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '7.2',
-				'signature' => 'Xb3oR26UMHZtilb6vPCzBVJSKxmaF7vXyLxeEVBLFdgxi9yPnqsZGyifH58KTvc7
-IDkwnNTtf6PsjpTHA9kRmhKcH4Gif2R4I2MLghYyrzL4BBOvUDy6Ph2d7bBlWLV9
-f69vu/LGZOkCiuuaE8U86RMBvRPnpiI31Zb4uLT1tDXykwLu2rKjgaGPPE5l4cic
-HX4TCXqRKaaUx39XL4XgGfysHiwXripedOD7opp57kzjaKA0LKR316lEuG1b0L2b
-nn4Q2HcUeUcoR+NTaXsKb87FhAYzh1ODhddZc1hwiyqa1bWObx6KLRTloh/FFagH
-oAPJr4WZ23C4K3mioeGCyg==',
+				'signature' => 'Db+QH07TJ/82zMmWRN72oYsvqEsk2FeHF3CTALGzZyo4N8uLIT7lrzSXzlZDbyWZ
+Sua5jeT4uDrlKlTgEwTg4BZHspHsgENWmf6/vXlbfc+vIKZ3fUuEolCtJI3VoZlF
+ECLfRWKG6NDQ5NNJpDxlez+O5uMmpdAJgaEk/EtvpZWZdBS2IStVjeuqUoS+1EhX
+lNZnH4Ey/28sAm9afTlzDZZotk1K2dXtN1st5hKzDR5CftBSQOkybWloeWrOXNiT
+sqqtesXj28Mk18q7Zp/BwG58ra9zKGFKKK4M8nPUPSRsW12oF8t8v40k5JdqxwGd
+JyIFAft3yfQrVHmfesUrNg==',
+			],
+		],
+		'17' => [
+			'100' => [
+				'latest' => '18.0.0',
+				'internalVersion' => '18.0.0.4',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-18.0.0beta2.zip',
+				'web' => 'https://docs.nextcloud.com/server/17/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '7.2',
+				'signature' => 'Db+QH07TJ/82zMmWRN72oYsvqEsk2FeHF3CTALGzZyo4N8uLIT7lrzSXzlZDbyWZ
+Sua5jeT4uDrlKlTgEwTg4BZHspHsgENWmf6/vXlbfc+vIKZ3fUuEolCtJI3VoZlF
+ECLfRWKG6NDQ5NNJpDxlez+O5uMmpdAJgaEk/EtvpZWZdBS2IStVjeuqUoS+1EhX
+lNZnH4Ey/28sAm9afTlzDZZotk1K2dXtN1st5hKzDR5CftBSQOkybWloeWrOXNiT
+sqqtesXj28Mk18q7Zp/BwG58ra9zKGFKKK4M8nPUPSRsW12oF8t8v40k5JdqxwGd
+JyIFAft3yfQrVHmfesUrNg==',
 			],
 		],
 		'16' => [
