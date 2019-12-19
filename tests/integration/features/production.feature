@@ -358,18 +358,18 @@ Feature: Testing the update scenario of production releases
     And the installation mtime is "30"
     When The request is sent
     Then The response is non-empty
-    And Update to version "15.0.13.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-15.0.13.zip"
+    And Update to version "15.0.14.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-15.0.14.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/15/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    SyqDxMol8+qze8NE7/7upj/OidfhU71s0r1CPr5xy9+Ymkm4xktmqfTONKSLnAJN
-    5OL9T2+aJG5QfTVxRNQCcbDIVa3Hz7n7ZDv8Lzu9gotBasqol6WLJ/0YcY8v/lg7
-    PeEYh1roxvLh7L4HJivefzrMfeY1XbTdcrFEZ5gXqERzV5fnGv8N62v8Ye2pTo3D
-    fvIL7MpQXdn2FEMAh89IHwjlA6fNFKkeOAeFZe3pvKtE9OIKldkmq59hjwn9cTjy
-    398JGVTTDuN7zxJgxO4N6dEAJI3z1rHvyXxxS1kQkcu2zwR7fswjYUAKK+txHEVj
-    /vbDN5AHF54UtKXM8FSJOg==
+    A5WWizBmhSC+dfJNrA3eNjx4w3w9i+9GKs0TWCEOAi74E1gfQymaSa3UNdm/fjmP
+    Osy1fnmICjDfXoIwkle+dlfAbwg2faRkF1px9a538Y5XXTXZ63P5JXABHYSvIAY3
+    QDk2CwzM4tSiL2rf7tGgG8uxtvXkyG7DfHH7BweKFBPQ0Ly2ESiSHzVagAHo7f/O
+    x3G7qC6o4g8pVPfVyXhOZcwf29et9DY3xtKluMQxrmHVTQ6mJ65IRny+/MNMrjwf
+    05B0WC1WDnIiMAfUcEMovxuqoFexvrpnJ9ByOPPLTYMWfpQcJHjw4FiqgFQ/of/i
+    DvYBQvWAJx0Q7tV9bofZjA==
     """
 
   Scenario: Updating an up-to-date Nextcloud 16.0.1 on the production channel
