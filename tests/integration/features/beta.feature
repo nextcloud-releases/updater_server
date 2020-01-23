@@ -292,18 +292,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "41"
     When The request is sent
     Then The response is non-empty
-    And Update to version "16.0.7.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-16.0.7.zip"
+    And Update to version "16.0.8.0" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-16.0.8RC1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/16/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    nFE6lCqzsoyiRuNrBv5qNODIG7nW/FinO/uuNR296Zzdcu4hqdlCaFSFep15vpB0
-    fLD13HaT3omwb4AS9WVt7UN0tL6a0/XYOp29+byFIjd2JJQRmAbbFgeaV9G48JL2
-    AVZQAV0MNiiW5JUv4DcIVLLV1hQ0c5AS5XSpvQcGf5CmptrGMCrXtrgLm5mmhzfH
-    TiXAb4JZu6UeIZlnzygFgs41uiXQZVCzNg26XnvJFv/yEST9+Y1ExYmI/kaIOUMK
-    7KjJy1UWqBuwlVkbgckG240f7YicMioFIplPpB5IUkxdIu/R0g3y9jBjw7HOwCbo
-    Pixphd+KrSmXSX1p9fXsIA==
+    Y89N3GXbnE3iJssFxX/iXr03l/2bg3ikFLio1Sh19QSc5w9x01lhi532Bu+z93Q0
+    PQpQeSxo6ujjJl3IGa8/lonYsjYng/D/CtlA5SzHpmkJIERBW3q6MO4WwsD6xcL6
+    +mwH3C1ycYtWNCjBuVpKimbJrnMhOtwIv+h/B7dyNBmtkAuXyo/T2XSJO372Aipy
+    55VYi7XlQpLBiLE0HLCtkTTSY3a+bdHsoGGh2BfxLVoIhI6BWN5kLnC0DzQEJKg3
+    XxOwjrqLH0GKhFTWLyrgmcL/F21+fulChoaqQhPXP47+QC0SGLS6OCwoezJNpw7z
+    GWTFWEf9+d/dawaQhV4Y9Q==
     """
 
   Scenario: Updating an outdated Nextcloud 16.0.0 on the beta channel
@@ -313,18 +313,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "17.0.2.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-17.0.2.zip"
+    And Update to version "17.0.3.0" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-17.0.3RC1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/17/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    iJ366fgx+zH3tEbM2kPLvwqm3GgeXdwu8Fg0eOsw642TqB/7FKkL940Tj9e8UdNr
-    pQXXmfTxc/X9UXmmBf2be+g18+EORlE656+AHOGpImqSg6c/iMGFSyj9iPZgjk5F
-    IDdagzpqNjZt8RVF3Ka/EBSSD2Xkrx71IKWxU8Yj0OhdXgPGrBFhxBmzT6Jibu6e
-    LVdwNzom8VhIKeOiteZ0LfioqIqBcpjRBzuZ6qm0izHQUAvxsFDN8gdUGdDmOzyM
-    7lZPg0Hh+7+Hp+AtSbOKmx9qUwM651QZ8tA2R2XPBrfjMDbWhFUuggfLwNrwD6mq
-    7mBUyQAHyb2Na0zF6rT8UA==
+    n32NwteaP45ob6NGxGURb4YlXlNeOkr4DzfB+vxe7eRsR5Vy1Itet0v1Kd1AsYNS
+    XcilZMhBOZjuczegao6RGrvJOgR7bUus512nFGjru/Rc72Fj72g7PtGrLao5xnqC
+    qIwRahpubTVCo9VX1hASY3USyb2gyat0mZoOpGAFkGF+pdPQoFC0MlAGjMq3GHUp
+    CtEcvLv8QnGuFXDU473Uy7VjUaNoN0XwqnkMvtStCxDg5EQjZdwra8rBFBQEHOnM
+    LrfHt8VR2wCxdXoIP618/iQ1Gx7h7KYu9CsAWZ1ed+FbgBeu4Gx5OQj0ws2GRHbt
+    Anz4FM24nyTDE0hA7XZ3IQ==
     """
 
   Scenario: Updating an outdated Nextcloud 17.0.0 on the beta channel
