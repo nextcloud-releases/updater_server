@@ -467,27 +467,6 @@ Feature: Testing the update scenario of stable releases
     nfCSJ75Tc780Fqo0Q4pc8A==
     """
 
-  Scenario: Updating an up-to-date Nextcloud 15.0.7 on the stable channel
-    Given There is a release with channel "stable"
-    And The received version is "15.0.7.0"
-    And The received PHP version is "7.1.0"
-    And the installation mtime is "15"
-    When The request is sent
-    Then The response is non-empty
-    And Update to version "16.0.7.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-16.0.7.zip"
-    And URL to documentation is "https://docs.nextcloud.com/server/16/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
-    And The signature is
-    """
-    nFE6lCqzsoyiRuNrBv5qNODIG7nW/FinO/uuNR296Zzdcu4hqdlCaFSFep15vpB0
-    fLD13HaT3omwb4AS9WVt7UN0tL6a0/XYOp29+byFIjd2JJQRmAbbFgeaV9G48JL2
-    AVZQAV0MNiiW5JUv4DcIVLLV1hQ0c5AS5XSpvQcGf5CmptrGMCrXtrgLm5mmhzfH
-    TiXAb4JZu6UeIZlnzygFgs41uiXQZVCzNg26XnvJFv/yEST9+Y1ExYmI/kaIOUMK
-    7KjJy1UWqBuwlVkbgckG240f7YicMioFIplPpB5IUkxdIu/R0g3y9jBjw7HOwCbo
-    Pixphd+KrSmXSX1p9fXsIA==
-    """
-
   Scenario: Updating an up-to-date Nextcloud 15.0.8 on the stable channel
     Given There is a release with channel "stable"
     And The received version is "15.0.8.1"
@@ -495,60 +474,60 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "30"
     When The request is sent
     Then The response is non-empty
-    And Update to version "16.0.7.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-16.0.7.zip"
+    And Update to version "16.0.8.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-16.0.8.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/16/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    nFE6lCqzsoyiRuNrBv5qNODIG7nW/FinO/uuNR296Zzdcu4hqdlCaFSFep15vpB0
-    fLD13HaT3omwb4AS9WVt7UN0tL6a0/XYOp29+byFIjd2JJQRmAbbFgeaV9G48JL2
-    AVZQAV0MNiiW5JUv4DcIVLLV1hQ0c5AS5XSpvQcGf5CmptrGMCrXtrgLm5mmhzfH
-    TiXAb4JZu6UeIZlnzygFgs41uiXQZVCzNg26XnvJFv/yEST9+Y1ExYmI/kaIOUMK
-    7KjJy1UWqBuwlVkbgckG240f7YicMioFIplPpB5IUkxdIu/R0g3y9jBjw7HOwCbo
-    Pixphd+KrSmXSX1p9fXsIA==
+    fomhn3ZfTXlP1XWiyvpZrHnl+a28lXc4NQftoWnNoblqwGkE6+pG4W0+LAlonogx
+    4efZsB3jcyBXPWF6eLPXJxh8HfimS7QJw/+A1xwXIphkgqj36a7euIgjuwFLx+jF
+    i3SUj7LUaxeF7NNWbj6jqELcfBCHglp2HrGkEdVJm2gRB4rxBEI3fHLz7xC1DbIa
+    5f/RPw9HpCxUV81oj/nGnf3aJQdB/R/ZH3Cavrm7B/G2Jsa17hnSxr+9GfumW+xY
+    xj3v2msG7/vmitT+Y2/hiwoSJoP4c/i3nBA0DrH5SyakGP8nqy4oupGtfhWb3yMF
+    5lGcwxgIRCuLWE2o23DDLw==
     """
 
-  Scenario: Updating an up-to-date Nextcloud 16.0.1 on the stable channel
+  Scenario: Updating an up-to-date Nextcloud 16.0.8 on the stable channel (expect 17)
     Given There is a release with channel "stable"
-    And The received version is "16.0.1.1"
+    And The received version is "16.0.8.1"
     And The received PHP version is "7.2.0"
     And the installation mtime is "70"
     When The request is sent
     Then The response is non-empty
-    And Update to version "17.0.2.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-17.0.2.zip"
+    And Update to version "17.0.3.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-17.0.3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/17/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    iJ366fgx+zH3tEbM2kPLvwqm3GgeXdwu8Fg0eOsw642TqB/7FKkL940Tj9e8UdNr
-    pQXXmfTxc/X9UXmmBf2be+g18+EORlE656+AHOGpImqSg6c/iMGFSyj9iPZgjk5F
-    IDdagzpqNjZt8RVF3Ka/EBSSD2Xkrx71IKWxU8Yj0OhdXgPGrBFhxBmzT6Jibu6e
-    LVdwNzom8VhIKeOiteZ0LfioqIqBcpjRBzuZ6qm0izHQUAvxsFDN8gdUGdDmOzyM
-    7lZPg0Hh+7+Hp+AtSbOKmx9qUwM651QZ8tA2R2XPBrfjMDbWhFUuggfLwNrwD6mq
-    7mBUyQAHyb2Na0zF6rT8UA==
+    bvMtFkhYbMzG4S1S2U75lDkf92GMxtejlcCaVDifjFzlpH2x8FI3Ggu0XHNBMgJv
+    VAqGFWl9U4kgAMT+jcrmRLdE8f9TlOXFwvvXA8pr0cxvefzMwhRyEvSOQIqL1m9S
+    KtdgK7XLu3vDC6OxsumxV6LJCqYvNZlMYzv8eR44yGttcoF77wxlB4HTugoylDFc
+    NdjU7Ie/s9+sUwkx948xHZZEN6jqHTnMBDhJrOEztPnYy0ZNNh3n9QGf9GBTgl/b
+    lNbhw20vUeiGhqZeevGVMbNarezC0w3eONLPQH+lvgi9YfSdbqGXT5QvZVHYux8y
+    Bqk7JVRm7517qvPooSoLIQ==
     """
 
-  Scenario: Updating an up-to-date Nextcloud 16.0.1 on the stable channel
+  Scenario: Updating an up-to-date Nextcloud 16.0.7 on the stable channel (expect 16)
     Given There is a release with channel "stable"
     And The received version is "16.0.1.1"
     And The received PHP version is "7.2.0"
     And the installation mtime is "40"
     When The request is sent
     Then The response is non-empty
-    And Update to version "16.0.7.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-16.0.7.zip"
+    And Update to version "16.0.8.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-16.0.8.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/16/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    nFE6lCqzsoyiRuNrBv5qNODIG7nW/FinO/uuNR296Zzdcu4hqdlCaFSFep15vpB0
-    fLD13HaT3omwb4AS9WVt7UN0tL6a0/XYOp29+byFIjd2JJQRmAbbFgeaV9G48JL2
-    AVZQAV0MNiiW5JUv4DcIVLLV1hQ0c5AS5XSpvQcGf5CmptrGMCrXtrgLm5mmhzfH
-    TiXAb4JZu6UeIZlnzygFgs41uiXQZVCzNg26XnvJFv/yEST9+Y1ExYmI/kaIOUMK
-    7KjJy1UWqBuwlVkbgckG240f7YicMioFIplPpB5IUkxdIu/R0g3y9jBjw7HOwCbo
-    Pixphd+KrSmXSX1p9fXsIA==
+    fomhn3ZfTXlP1XWiyvpZrHnl+a28lXc4NQftoWnNoblqwGkE6+pG4W0+LAlonogx
+    4efZsB3jcyBXPWF6eLPXJxh8HfimS7QJw/+A1xwXIphkgqj36a7euIgjuwFLx+jF
+    i3SUj7LUaxeF7NNWbj6jqELcfBCHglp2HrGkEdVJm2gRB4rxBEI3fHLz7xC1DbIa
+    5f/RPw9HpCxUV81oj/nGnf3aJQdB/R/ZH3Cavrm7B/G2Jsa17hnSxr+9GfumW+xY
+    xj3v2msG7/vmitT+Y2/hiwoSJoP4c/i3nBA0DrH5SyakGP8nqy4oupGtfhWb3yMF
+    5lGcwxgIRCuLWE2o23DDLw==
     """
 
   Scenario: Updating an up-to-date Nextcloud 17.0.0 on the stable channel
@@ -558,16 +537,16 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "30"
     When The request is sent
     Then The response is non-empty
-    And Update to version "17.0.2.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-17.0.2.zip"
+    And Update to version "17.0.3.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-17.0.3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/17/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    iJ366fgx+zH3tEbM2kPLvwqm3GgeXdwu8Fg0eOsw642TqB/7FKkL940Tj9e8UdNr
-    pQXXmfTxc/X9UXmmBf2be+g18+EORlE656+AHOGpImqSg6c/iMGFSyj9iPZgjk5F
-    IDdagzpqNjZt8RVF3Ka/EBSSD2Xkrx71IKWxU8Yj0OhdXgPGrBFhxBmzT6Jibu6e
-    LVdwNzom8VhIKeOiteZ0LfioqIqBcpjRBzuZ6qm0izHQUAvxsFDN8gdUGdDmOzyM
-    7lZPg0Hh+7+Hp+AtSbOKmx9qUwM651QZ8tA2R2XPBrfjMDbWhFUuggfLwNrwD6mq
-    7mBUyQAHyb2Na0zF6rT8UA==
+    bvMtFkhYbMzG4S1S2U75lDkf92GMxtejlcCaVDifjFzlpH2x8FI3Ggu0XHNBMgJv
+    VAqGFWl9U4kgAMT+jcrmRLdE8f9TlOXFwvvXA8pr0cxvefzMwhRyEvSOQIqL1m9S
+    KtdgK7XLu3vDC6OxsumxV6LJCqYvNZlMYzv8eR44yGttcoF77wxlB4HTugoylDFc
+    NdjU7Ie/s9+sUwkx948xHZZEN6jqHTnMBDhJrOEztPnYy0ZNNh3n9QGf9GBTgl/b
+    lNbhw20vUeiGhqZeevGVMbNarezC0w3eONLPQH+lvgi9YfSdbqGXT5QvZVHYux8y
+    Bqk7JVRm7517qvPooSoLIQ==
     """
