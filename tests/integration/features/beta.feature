@@ -355,16 +355,16 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "18.0.0.10" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-18.0.0.zip"
+    And Update to version "18.0.1.0" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-18.0.1RC1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/18/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    nSgfELQFTptVfM14KHVYBSfmzhT9g+h7BBj29Gc/0lSzO010MhPxa6409zApsMzs
-    4olMrqiPq+GbObjSpymDjYhZty85b9CaP7xY/mnKQeTlw/IfzTOSQZE5Sz9LKZSz
-    Nfa+wFaFV0CkwG09ddmAC0c2iNysxMXgUyNczM3h6lImptyrOOkBa50t2K8bSkkV
-    JVHbvNGAk4ygf+hI4OTETLMslideawVY5lK+t+ghhwWqfvVxCUcqd8bQed44fhiF
-    wLaobHfKWQ09Tva3woZcue7ic069qKJ+ClqPHsEHwnnOrHyOkZBr095NjOXmrU35
-    XVZGAWJtyMEICPgb4n6+Mw==
+    1BuHkAa6fx5DGNP+ZMPXHmL+EU1FTYrydc10tymLf+3ww3QjAB5bpsQV2qhZaEHu
+    iwTVXR86n7bgtxXJEgs77JOAfz6Rn9SxByjmRPa4bERkRheIZ7rPMHWHSp7J2roj
+    6h7NEG5MdCie65bsNndojrQvsYP0gSCrx1AMrsElyzqqQJZlFInqPdWTKRQ/ujN3
+    W5OuwAzI1N2L7GaZVEpKqw1X2cPY4KgQU1QwWJy6SMcRnc4v05t2hLJf6cpAXA/G
+    2IhrO7bUa5hFCIbl7Z+vVaoB9tiAtqla1msDEn6sFA8A/XA6lhG7g3bcmx6NYkvI
+    KVck4Qn7IVAgy2rnJPnJ+w==
     """
