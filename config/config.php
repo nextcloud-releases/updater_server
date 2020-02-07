@@ -567,34 +567,34 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 	'beta' => [
 		'18' => [
 			'100' => [
-				'latest' => '18.0.1',
-				'internalVersion' => '18.0.1.0',
-				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-18.0.1RC1.zip',
+				'latest' => '18.0.1 RC2',
+				'internalVersion' => '18.0.1.1',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-18.0.1RC2.zip',
 				'web' => 'https://docs.nextcloud.com/server/18/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '7.2',
-				'signature' => '1BuHkAa6fx5DGNP+ZMPXHmL+EU1FTYrydc10tymLf+3ww3QjAB5bpsQV2qhZaEHu
-iwTVXR86n7bgtxXJEgs77JOAfz6Rn9SxByjmRPa4bERkRheIZ7rPMHWHSp7J2roj
-6h7NEG5MdCie65bsNndojrQvsYP0gSCrx1AMrsElyzqqQJZlFInqPdWTKRQ/ujN3
-W5OuwAzI1N2L7GaZVEpKqw1X2cPY4KgQU1QwWJy6SMcRnc4v05t2hLJf6cpAXA/G
-2IhrO7bUa5hFCIbl7Z+vVaoB9tiAtqla1msDEn6sFA8A/XA6lhG7g3bcmx6NYkvI
-KVck4Qn7IVAgy2rnJPnJ+w==',
+				'signature' => 'Dze1aCu8DLriNbGvD3a0S3MecpaXlEgZW4pmdKkf/Tc7ofPiJd8ruQtCMwOFTPoO
+TW8Oqodof5hw4F1rY5JRSTLuzgS5yVOcN+wdhOQGPmZKn7SIpHZYnOxAyvY1CwzP
+ncsTKZ0MEA7vn3+BxO7rwMi/FRyD+mG/zz4XPtlfEZUqriuhNfh4VczhM2bLLwEl
+NDjb/HsHqu4yc0W8aSQw/N4jT0vl+vLsOjxbDZpMPZ5+9Z7MH4m2GBqxVIB/rHmz
+IAXYJtj1psBiZ430INf+m+bYKC/AU/BqM1yeFHkwYmh83SXNhEmMr0vBQj23lIl7
+rmHbilEGQXMORuBMqSqUhg==',
 			],
 		],
 		'17' => [
 			'100' => [
-				'latest' => '18.0.0',
-				'internalVersion' => '18.0.0.10',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-18.0.0.zip',
+				'latest' => '18.0.1 RC2',
+				'internalVersion' => '18.0.1.1',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-18.0.1RC2.zip',
 				'web' => 'https://docs.nextcloud.com/server/18/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '7.2',
-				'signature' => 'nSgfELQFTptVfM14KHVYBSfmzhT9g+h7BBj29Gc/0lSzO010MhPxa6409zApsMzs
-4olMrqiPq+GbObjSpymDjYhZty85b9CaP7xY/mnKQeTlw/IfzTOSQZE5Sz9LKZSz
-Nfa+wFaFV0CkwG09ddmAC0c2iNysxMXgUyNczM3h6lImptyrOOkBa50t2K8bSkkV
-JVHbvNGAk4ygf+hI4OTETLMslideawVY5lK+t+ghhwWqfvVxCUcqd8bQed44fhiF
-wLaobHfKWQ09Tva3woZcue7ic069qKJ+ClqPHsEHwnnOrHyOkZBr095NjOXmrU35
-XVZGAWJtyMEICPgb4n6+Mw==',
+				'signature' => 'Dze1aCu8DLriNbGvD3a0S3MecpaXlEgZW4pmdKkf/Tc7ofPiJd8ruQtCMwOFTPoO
+TW8Oqodof5hw4F1rY5JRSTLuzgS5yVOcN+wdhOQGPmZKn7SIpHZYnOxAyvY1CwzP
+ncsTKZ0MEA7vn3+BxO7rwMi/FRyD+mG/zz4XPtlfEZUqriuhNfh4VczhM2bLLwEl
+NDjb/HsHqu4yc0W8aSQw/N4jT0vl+vLsOjxbDZpMPZ5+9Z7MH4m2GBqxVIB/rHmz
+IAXYJtj1psBiZ430INf+m+bYKC/AU/BqM1yeFHkwYmh83SXNhEmMr0vBQj23lIl7
+rmHbilEGQXMORuBMqSqUhg==',
 			],
 		],
 		'16' => [
