@@ -334,18 +334,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "18.0.1.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-18.0.1RC2.zip"
+    And Update to version "18.0.1.2" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-18.0.1RC3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/18/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    Dze1aCu8DLriNbGvD3a0S3MecpaXlEgZW4pmdKkf/Tc7ofPiJd8ruQtCMwOFTPoO
-    TW8Oqodof5hw4F1rY5JRSTLuzgS5yVOcN+wdhOQGPmZKn7SIpHZYnOxAyvY1CwzP
-    ncsTKZ0MEA7vn3+BxO7rwMi/FRyD+mG/zz4XPtlfEZUqriuhNfh4VczhM2bLLwEl
-    NDjb/HsHqu4yc0W8aSQw/N4jT0vl+vLsOjxbDZpMPZ5+9Z7MH4m2GBqxVIB/rHmz
-    IAXYJtj1psBiZ430INf+m+bYKC/AU/BqM1yeFHkwYmh83SXNhEmMr0vBQj23lIl7
-    rmHbilEGQXMORuBMqSqUhg==
+    f+pO9NrDeChnRMOZunOZZ0wlW/AE9/ySr19Ote2zCXivbeeeXKrRsO2OPmvRjBSn
+    zmckNu0KJNVXEFZ5WLHSwU43K8WLqCtmycM9YG/pyNM/OflYt7T4+7ApIFx/RLp1
+    s5E5LABC3T1ffFaTyloGV5rd74lU+6GiULXAprSSaieoJfYDiE3RORKbUbIxoioy
+    brYndtjUDMRhatMy8JUW/i9RD1O31rMpkQ9chaLv6KN93G3CIVh2l6t32zxf6798
+    tl7s6p3px/onQcuUfGzNZKpgErNal0n9DN2fGtQCq8cNB9fONoM/jrHesabnshPf
+    Hhtmj8UqmfWuywcMJex36w==
     """
 
   Scenario: Updating an outdated Nextcloud 18.0.0 on the beta channel
@@ -355,16 +355,16 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "18.0.1.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-18.0.1RC2.zip"
+    And Update to version "18.0.1.2" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-18.0.1RC3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/18/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    Dze1aCu8DLriNbGvD3a0S3MecpaXlEgZW4pmdKkf/Tc7ofPiJd8ruQtCMwOFTPoO
-    TW8Oqodof5hw4F1rY5JRSTLuzgS5yVOcN+wdhOQGPmZKn7SIpHZYnOxAyvY1CwzP
-    ncsTKZ0MEA7vn3+BxO7rwMi/FRyD+mG/zz4XPtlfEZUqriuhNfh4VczhM2bLLwEl
-    NDjb/HsHqu4yc0W8aSQw/N4jT0vl+vLsOjxbDZpMPZ5+9Z7MH4m2GBqxVIB/rHmz
-    IAXYJtj1psBiZ430INf+m+bYKC/AU/BqM1yeFHkwYmh83SXNhEmMr0vBQj23lIl7
-    rmHbilEGQXMORuBMqSqUhg==
+    f+pO9NrDeChnRMOZunOZZ0wlW/AE9/ySr19Ote2zCXivbeeeXKrRsO2OPmvRjBSn
+    zmckNu0KJNVXEFZ5WLHSwU43K8WLqCtmycM9YG/pyNM/OflYt7T4+7ApIFx/RLp1
+    s5E5LABC3T1ffFaTyloGV5rd74lU+6GiULXAprSSaieoJfYDiE3RORKbUbIxoioy
+    brYndtjUDMRhatMy8JUW/i9RD1O31rMpkQ9chaLv6KN93G3CIVh2l6t32zxf6798
+    tl7s6p3px/onQcuUfGzNZKpgErNal0n9DN2fGtQCq8cNB9fONoM/jrHesabnshPf
+    Hhtmj8UqmfWuywcMJex36w==
     """
