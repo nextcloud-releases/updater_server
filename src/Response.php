@@ -180,6 +180,7 @@ class Response {
 		$completeCurrentVersion = rtrim($completeCurrentVersion, '.');
 
 		switch ($this->request->getChannel()) {
+			case 'enterprise':
 			case 'production':
 				return $this->getStableResponse(
 					$this->config->get('production'),
