@@ -10,16 +10,22 @@ class Response {
 	private $config;
 	/** @var Request */
 	private $request;
+	/**
+	 * @var Config
+	 */
+	private $settings;
 
 	/**
 	 * @param Request $request
 	 * @param Config $config
 	 */
 	public function __construct(Request $request,
-								Config $config
+								Config $config,
+								Config $settings
 	) {
 		$this->request = $request;
 		$this->config = $config;
+		$this->settings = $settings;
 	}
 
 	/**
@@ -179,32 +185,61 @@ class Response {
 
 		$completeCurrentVersion = rtrim($completeCurrentVersion, '.');
 
-		switch ($this->request->getChannel()) {
-			case 'production':
-				return $this->getStableResponse(
-					$this->config->get('production'),
-					$completeCurrentVersion,
-					$phpVersion,
-					$this->request->getInstallationMtime()
-				);
-			case 'stable':
-				return $this->getStableResponse(
-					$this->config->get('stable'),
-					$completeCurrentVersion,
-					$phpVersion,
-					$this->request->getInstallationMtime()
-				);
-			case 'beta':
-				return $this->getStableResponse(
-					$this->config->get('beta'),
-					$completeCurrentVersion,
-					$phpVersion,
-					$this->request->getInstallationMtime()
-				);
-			case 'daily':
-				return $this->getDailyResponse($this->config->get('daily'));
-			default:
-				return '';
+		/** @var bool $enterpriseUpdater */
+		$enterpriseUpdater = $this->settings->get('enterpriseUpdater');
+
+		if (!$enterpriseUpdater) {
+			switch ($this->request->getChannel()) {
+				case 'enterprise':
+				case 'production':
+				case 'stable':
+					return $this->getStableResponse(
+						$this->config->get('stable'),
+						$completeCurrentVersion,
+						$phpVersion,
+						$this->request->getInstallationMtime()
+					);
+				case 'beta':
+					return $this->getStableResponse(
+						$this->config->get('beta'),
+						$completeCurrentVersion,
+						$phpVersion,
+						$this->request->getInstallationMtime()
+					);
+				case 'daily':
+					return $this->getDailyResponse($this->config->get('daily'));
+				default:
+					return '';
+			}
+		} else {
+			switch ($this->request->getChannel()) {
+				case 'enterprise':
+				case 'production':
+					return $this->getStableResponse(
+						$this->config->get('production'),
+						$completeCurrentVersion,
+						$phpVersion,
+						$this->request->getInstallationMtime()
+					);
+				case 'stable':
+					return $this->getStableResponse(
+						$this->config->get('stable'),
+						$completeCurrentVersion,
+						$phpVersion,
+						$this->request->getInstallationMtime()
+					);
+				case 'beta':
+					return $this->getStableResponse(
+						$this->config->get('beta'),
+						$completeCurrentVersion,
+						$phpVersion,
+						$this->request->getInstallationMtime()
+					);
+				case 'daily':
+					return $this->getDailyResponse($this->config->get('daily'));
+				default:
+					return '';
+			}
 		}
 	}
 }
