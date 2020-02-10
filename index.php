@@ -84,8 +84,13 @@ try {
 try {
 	$settings = new \UpdateServer\Config(__DIR__ . '/config/settings.php');
 } catch (\RuntimeException $e) {
-	exit();
+	try {
+		$settings = new \UpdateServer\Config(__DIR__ . '/config/settings.dist.php');
+	} catch (\RuntimeException $e) {
+		exit();
+	}
 }
+
 
 // Return a response
 $response = new \UpdateServer\Response($request, $config, $settings);

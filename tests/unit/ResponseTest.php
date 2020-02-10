@@ -14,6 +14,8 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 	private $request;
 	/** @var Config|\PHPUnit_Framework_MockObject_MockObject */
 	private $config;
+	/** @var Config|\PHPUnit_Framework_MockObject_MockObject */
+	private $settings;
 	/** @var Response */
 	private $response;
 
@@ -24,7 +26,9 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 			->disableOriginalConstructor()->getMock();
 		$this->config = $this->getMockBuilder(Config::class)
 			->disableOriginalConstructor()->getMock();
-		$this->response = new Response($this->request, $this->config);
+		$this->settings = $this->getMockBuilder(Config::class)
+			->disableOriginalConstructor()->getMock();
+		$this->response = new Response($this->request, $this->config, $this->settings);
 	}
 
 	public function dailyVersionProvider() {
