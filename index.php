@@ -81,6 +81,12 @@ try {
 	exit();
 }
 
+try {
+	$settings = new \UpdateServer\Config(__DIR__ . '/config/settings.php');
+} catch (\RuntimeException $e) {
+	exit();
+}
+
 // Return a response
-$response = new \UpdateServer\Response($request, $config);
+$response = new \UpdateServer\Response($request, $config, $settings);
 echo $response->buildResponse();
