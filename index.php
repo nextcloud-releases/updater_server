@@ -82,13 +82,14 @@ try {
 }
 
 try {
-	$settings = new \UpdateServer\Config(__DIR__ . '/config/settings.php');
-} catch (\RuntimeException $e) {
-	try {
-		$settings = new \UpdateServer\Config(__DIR__ . '/config/settings.dist.php');
-	} catch (\RuntimeException $e) {
-		exit();
+	$location = __DIR__ . '/config/settings.php';
+	if (!file_exists($location)) {
+		$location = __DIR__ . '/config/settings.dist.php';
 	}
+
+	$settings = new \UpdateServer\Config($location);
+} catch (\RuntimeException $e) {
+	exit();
 }
 
 
