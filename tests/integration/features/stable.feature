@@ -550,3 +550,24 @@ Feature: Testing the update scenario of stable releases
     lNbhw20vUeiGhqZeevGVMbNarezC0w3eONLPQH+lvgi9YfSdbqGXT5QvZVHYux8y
     Bqk7JVRm7517qvPooSoLIQ==
     """
+
+  Scenario: Updating an outdated Nextcloud 18.0.0 on the stable channel
+    Given There is a release with channel "stable"
+    And The received version is "18.0.0.3"
+    And The received PHP version is "7.2.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "18.0.1.3" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-18.0.1.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/18/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    rW2CcWd2qpHJmHzu4tKNIenxpcGgYNKj87xja0BG38Cu6WcbPj1kDsx7B+MmcPvV
+    pJcnuTVTpD381L3CxfktNf/yk1ecHEk61XnZWqqQhSqiCBkDOFpcJ3bfnXIfkx20
+    MEt4YiAtzW2PMnS+MsBD+MQ37H8jEiXyzQajYdQaDeuzkUuxrxq88QgKWBx3HJgb
+    X/9uwRASAUAfWRCu8ONFzq0ig5KhXIPoTQFojGQcSkSxwrOl3V/6zdvyEXJ/uh88
+    WX/4+ZolyRljFy7/C38gxg7o3nmZsU6UFJ+rJZv5blDekWQPG3gSijOThhiuh2bZ
+    N4G2ppYlgquUXqcb6PcLPA==
+    """
