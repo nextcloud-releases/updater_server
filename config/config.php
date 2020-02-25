@@ -385,7 +385,7 @@ N4G2ppYlgquUXqcb6PcLPA==',
 			],
 		],
 		'17' => [
-			'10' => [
+			'40' => [
 				'latest' => '18.0.1',
 				'internalVersion' => '18.0.1.3',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-18.0.1.zip',
@@ -399,7 +399,7 @@ X/9uwRASAUAfWRCu8ONFzq0ig5KhXIPoTQFojGQcSkSxwrOl3V/6zdvyEXJ/uh88
 WX/4+ZolyRljFy7/C38gxg7o3nmZsU6UFJ+rJZv5blDekWQPG3gSijOThhiuh2bZ
 N4G2ppYlgquUXqcb6PcLPA==',
 			],
-			'90' => [
+			'60' => [
 				'latest' => '17.0.3',
 				'internalVersion' => '17.0.3.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-17.0.3.zip',
