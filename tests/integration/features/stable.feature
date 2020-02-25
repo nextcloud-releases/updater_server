@@ -534,7 +534,7 @@ Feature: Testing the update scenario of stable releases
     Given There is a release with channel "stable"
     And The received version is "17.0.0.8"
     And The received PHP version is "7.2.0"
-    And the installation mtime is "30"
+    And the installation mtime is "41"
     When The request is sent
     Then The response is non-empty
     And Update to version "17.0.3.1" is available
