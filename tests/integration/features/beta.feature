@@ -292,18 +292,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "41"
     When The request is sent
     Then The response is non-empty
-    And Update to version "16.0.9.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-16.0.9RC1.zip"
+    And Update to version "16.0.9.1" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-16.0.9RC2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/16/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    NEDoS4c7qGmJBgNdSS6lxpqoI1K4U/2LzJwkMJLamACDxeNDQD8V5ZFAYn0x5Bmg
-    0CdmZXvUqMe/iPQBBQCjF4AElkV4BbhxLAiKLNs8pcC/SOavV8DGRahUQ4A+L8xk
-    w36Rp3SKRSgyk22NyyoPAR+m+j66F43gOnpx2obO3CgBbbrbuF2vekAmYeFi2WAL
-    ku15naItApfCPuGn2e9kXjYz9gsucW9cQ7yBaZbaQhWVf63QrXBC2P2LyIwidP22
-    4W15iI218x52JDvFvUVBSe+ju7kKVKA3vf2PnMrnC24JEhh4+1K7tA5ByBCqOiky
-    SMBUBA7QRMV6/k2Rd3WFiQ==
+    HbJYkziC2e+eyJPbiLuNWTOzXCdZ5o6eyAVry5bDgegWhJOW0URy+a02n4Js+aIC
+    zdwyyCrKeWCzwZIyFLvDELxFgh5sg27l96xMye3+cVjh79/NKAQqi5Oo/IZgeD6h
+    4cM15AMBLIHJ0bVQclppoPstfT323qhfIZw1bgRdZhI60cEx6+p6EJhPxcxxlwFN
+    Sw2YksG5iewCV65BECzVgcRRyswBdS1Iz5iFsmD+ev7yYNf5CjB5teJFoHw+uut+
+    ekF+KWZYcXEumDVTOkvT8rGXtFBkFfeWFNvjCSNuy1qOefz9dphqQcSiKDpe8xAz
+    ooQ8bJh09ZQ6tIrXjiNcyA==
     """
 
   Scenario: Updating an outdated Nextcloud 16.0.0 on the beta channel
