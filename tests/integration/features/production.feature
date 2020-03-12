@@ -379,39 +379,39 @@ Feature: Testing the update scenario of production releases
     And the installation mtime is "30"
     When The request is sent
     Then The response is non-empty
-    And Update to version "16.0.8.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-16.0.8.zip"
+    And Update to version "16.0.9.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-16.0.0.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/16/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    fomhn3ZfTXlP1XWiyvpZrHnl+a28lXc4NQftoWnNoblqwGkE6+pG4W0+LAlonogx
-    4efZsB3jcyBXPWF6eLPXJxh8HfimS7QJw/+A1xwXIphkgqj36a7euIgjuwFLx+jF
-    i3SUj7LUaxeF7NNWbj6jqELcfBCHglp2HrGkEdVJm2gRB4rxBEI3fHLz7xC1DbIa
-    5f/RPw9HpCxUV81oj/nGnf3aJQdB/R/ZH3Cavrm7B/G2Jsa17hnSxr+9GfumW+xY
-    xj3v2msG7/vmitT+Y2/hiwoSJoP4c/i3nBA0DrH5SyakGP8nqy4oupGtfhWb3yMF
-    5lGcwxgIRCuLWE2o23DDLw==
+    0JKu7hbIKTM1tewiCIKKljvfq9C3M8dvPAdXeQzUJSOmTSZOgbep1twfG7CZfITA
+    wai/zuOTru6HoT6ULde5dwN3WP9PF/hKUANFahnCYCHwm6qVAIQJL+Qpo4v4gj4v
+    nAYtUiFy8IMeN/+KmyeIUyslpwmU7nu97DN/gwY2jxy8U8s9txMujrxYqRPxU7qk
+    vhdD4yTEXDLsSBmKENeEQ/xoHIGOQT9JYdi1vQSaa8cnLcC2siQKYVcHn924FHEN
+    yvvEJQu8kh274xfQXSaQOO+efPN/kRZL3iGAgeQSI/TwKjzF4TPEapzakLdiCkkf
+    HnCVzOhH4cv0bTahws7x5Q==
     """
 
   Scenario: Updating an up-to-date latest Nextcloud 16.0.8 on the production channel
     Given There is a release with channel "production"
-    And The received version is "16.0.8.1"
+    And The received version is "16.0.9.2"
     And The received PHP version is "7.2.0"
     And the installation mtime is "30"
     When The request is sent
     Then The response is non-empty
-    And Update to version "17.0.3.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-17.0.3.zip"
+    And Update to version "17.0.4.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-17.0.4.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/17/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    bvMtFkhYbMzG4S1S2U75lDkf92GMxtejlcCaVDifjFzlpH2x8FI3Ggu0XHNBMgJv
-    VAqGFWl9U4kgAMT+jcrmRLdE8f9TlOXFwvvXA8pr0cxvefzMwhRyEvSOQIqL1m9S
-    KtdgK7XLu3vDC6OxsumxV6LJCqYvNZlMYzv8eR44yGttcoF77wxlB4HTugoylDFc
-    NdjU7Ie/s9+sUwkx948xHZZEN6jqHTnMBDhJrOEztPnYy0ZNNh3n9QGf9GBTgl/b
-    lNbhw20vUeiGhqZeevGVMbNarezC0w3eONLPQH+lvgi9YfSdbqGXT5QvZVHYux8y
-    Bqk7JVRm7517qvPooSoLIQ==
+    FcmKvl9JlfaT2SGBFfG4obJ1u9UyPbxxQDEbZNOBAamtZomhC2SReiQCd8LNFN4G
+    EZOAmpFE3EBhxY2utLNzgAk+ML85rNkxgaFV9FSb+Pho54bpsaMf6BjqmXurlVwo
+    LqCVdg1fhh97abNTxqw4PWtdyBP7n9VBH2HmXoqBla7w5rPwIItT8FoqqjUiAuAY
+    xSfPHgvANARIKbZquon6CA9l6T4QoNsvQ+1hg0oftgZ4mPQsDXCMbjN2L5EQ/Mkb
+    i6glbPxbRBpczeL1Av1VhXGThEv+d7Eq3iT5Vcm6XSiMBNhes3wKROszrq6yoEne
+    3/HHLl1WcyWo6WBu8gNoEw==
     """
 
   Scenario: Updating an up-to-date Nextcloud 17.0.0 on the production channel
@@ -421,18 +421,18 @@ Feature: Testing the update scenario of production releases
     And the installation mtime is "30"
     When The request is sent
     Then The response is non-empty
-    And Update to version "17.0.3.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-17.0.3.zip"
+    And Update to version "17.0.4.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-17.0.4.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/17/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    bvMtFkhYbMzG4S1S2U75lDkf92GMxtejlcCaVDifjFzlpH2x8FI3Ggu0XHNBMgJv
-    VAqGFWl9U4kgAMT+jcrmRLdE8f9TlOXFwvvXA8pr0cxvefzMwhRyEvSOQIqL1m9S
-    KtdgK7XLu3vDC6OxsumxV6LJCqYvNZlMYzv8eR44yGttcoF77wxlB4HTugoylDFc
-    NdjU7Ie/s9+sUwkx948xHZZEN6jqHTnMBDhJrOEztPnYy0ZNNh3n9QGf9GBTgl/b
-    lNbhw20vUeiGhqZeevGVMbNarezC0w3eONLPQH+lvgi9YfSdbqGXT5QvZVHYux8y
-    Bqk7JVRm7517qvPooSoLIQ==
+    FcmKvl9JlfaT2SGBFfG4obJ1u9UyPbxxQDEbZNOBAamtZomhC2SReiQCd8LNFN4G
+    EZOAmpFE3EBhxY2utLNzgAk+ML85rNkxgaFV9FSb+Pho54bpsaMf6BjqmXurlVwo
+    LqCVdg1fhh97abNTxqw4PWtdyBP7n9VBH2HmXoqBla7w5rPwIItT8FoqqjUiAuAY
+    xSfPHgvANARIKbZquon6CA9l6T4QoNsvQ+1hg0oftgZ4mPQsDXCMbjN2L5EQ/Mkb
+    i6glbPxbRBpczeL1Av1VhXGThEv+d7Eq3iT5Vcm6XSiMBNhes3wKROszrq6yoEne
+    3/HHLl1WcyWo6WBu8gNoEw==
     """
 
   Scenario: Updating an outdated Nextcloud 18.0.0 on the production channel
@@ -442,16 +442,16 @@ Feature: Testing the update scenario of production releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "18.0.1.3" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-18.0.1.zip"
+    And Update to version "18.0.2.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-18.0.2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/18/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    rW2CcWd2qpHJmHzu4tKNIenxpcGgYNKj87xja0BG38Cu6WcbPj1kDsx7B+MmcPvV
-    pJcnuTVTpD381L3CxfktNf/yk1ecHEk61XnZWqqQhSqiCBkDOFpcJ3bfnXIfkx20
-    MEt4YiAtzW2PMnS+MsBD+MQ37H8jEiXyzQajYdQaDeuzkUuxrxq88QgKWBx3HJgb
-    X/9uwRASAUAfWRCu8ONFzq0ig5KhXIPoTQFojGQcSkSxwrOl3V/6zdvyEXJ/uh88
-    WX/4+ZolyRljFy7/C38gxg7o3nmZsU6UFJ+rJZv5blDekWQPG3gSijOThhiuh2bZ
-    N4G2ppYlgquUXqcb6PcLPA==
+    OLktZ8eQnXPgGCmuw7l+uOS/108BstveeKZosibXs6zrDaGI5qiEy8GlMpuGJrBe
+    y45GF7IBL6qe3VvEfx21p5mjo/E9fx//bZB5SIDS5YeeSZUrC7lYnW+JjsSr/ti2
+    V9uWEj3rzo2AMffK9Tx4D01GLSK5fRYkbuGnh44K0yTzVDB+j7xOEOMncuqU5gL8
+    nuod3bEupez31nDqLp5sfNpP/wxMCLLOFlPubVXCSDwcDl0dPdDdppIK1JOz7FTT
+    q7ZBwfYDLVI3Pdoh2mnH6VDK+6yKAmmX6mFQZck6W6zvGdYJBfS9NMaKeOwzc50a
+    SUc55uNl3QnziRwvM+OhRA==
     """
