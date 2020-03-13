@@ -475,7 +475,7 @@ Feature: Testing the update scenario of stable releases
     When The request is sent
     Then The response is non-empty
     And Update to version "16.0.9.2" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-16.0.0.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-16.0.9.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/16/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
@@ -517,7 +517,7 @@ Feature: Testing the update scenario of stable releases
     When The request is sent
     Then The response is non-empty
     And Update to version "16.0.9.2" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-16.0.0.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-16.0.9.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/16/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
