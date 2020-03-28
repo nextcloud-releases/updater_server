@@ -384,7 +384,7 @@ osQuvU+q91xvPbwqE8ig/nGnofAUYqZjDHeFSD6wSiMVw2dwuZnYv+E28pJbOGSD
 02EIKzzu5XxDJVbRUKIirA==',
 			],
 		],
-		'17.0.3' => [
+		'17.0.4' => [
 			'100' => [
 				'latest' => '17.0.5',
 				'internalVersion' => '17.0.5.0',
