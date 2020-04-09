@@ -643,20 +643,36 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 		],
 	],
 	'beta' => [
-		'18' => [
+		'19' => [
 			'100' => [
-				'latest' => '19.0.0 Beta 1',
-				'internalVersion' => '19.0.0.2',
-				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-19.0.0beta1.zip',
+				'latest' => '19.0.0 Beta 2',
+				'internalVersion' => '19.0.0.3',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-19.0.0beta2.zip',
 				'web' => 'https://docs.nextcloud.com/server/18/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '7.2',
-				'signature' => 'ArKl7ZIc5tXeoOdJUYx+aK1y30NAyNuMXYGAFzJDXWPb8Hx3f3tfFf/nFEaCcaQZ
-7zmmYHHehMftqKTeAN5vXi83IgW11EtWuWOaALRTVn3t7r9oN7U0D3UJVO4fJMKe
-uxFF1fEf+Wa9SngH5bcdWXHQ2s3SQY10lcBHHBPLhlma0iGaR7grBY8hDN2rU94F
-QCfGKZHOCdlsUx4fijSqI6QkjqDCyBLnL+8CVuapXIWH8z9Hht97MFjxVThMnLid
-iJMnRJj9fSOusVhp0873l+vqOP6K+k97d5sb+Cm2/xhMb7oTkBE/vdh8ev5uX2eI
-kABi6Z/ddLgJfwDm5EP0LA==',
+				'signature' => 'aw7V9h7R1qLgZ0oTwaOwv6C2/i+s/Pzs6I383mX1S/J5A2+CipiKVKP2APJm3tJ5
+/bMC+4yoPZ+mcl5NG6bnTJVn3uZ4yWTwRBMPWfem5zuuZIaX8npRDZs8SHoZIOWZ
+finN680lGk1B9d/csQFih9pkpwvFlHdpW34xb6w/qojXBqcYaQ0cNyRqI4WJnfAd
+gB+2pOvvUz4UVxk/BMYmZVYWtTiRgyftkiDge8/Elz5cqdrx045l0tGsH8lqPGKM
+NYqCVve7br1Llz43LGAxq5oRczmQrqqOCZcweBEwKTQrETNdg8p3+B4njbg1ZxPU
+2s1krZ/iMynW5eJdTPAIDQ==',
+			],
+		],
+		'18' => [
+			'100' => [
+				'latest' => '19.0.0 Beta 2',
+				'internalVersion' => '19.0.0.3',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-19.0.0beta2.zip',
+				'web' => 'https://docs.nextcloud.com/server/18/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '7.2',
+				'signature' => 'aw7V9h7R1qLgZ0oTwaOwv6C2/i+s/Pzs6I383mX1S/J5A2+CipiKVKP2APJm3tJ5
+/bMC+4yoPZ+mcl5NG6bnTJVn3uZ4yWTwRBMPWfem5zuuZIaX8npRDZs8SHoZIOWZ
+finN680lGk1B9d/csQFih9pkpwvFlHdpW34xb6w/qojXBqcYaQ0cNyRqI4WJnfAd
+gB+2pOvvUz4UVxk/BMYmZVYWtTiRgyftkiDge8/Elz5cqdrx045l0tGsH8lqPGKM
+NYqCVve7br1Llz43LGAxq5oRczmQrqqOCZcweBEwKTQrETNdg8p3+B4njbg1ZxPU
+2s1krZ/iMynW5eJdTPAIDQ==',
 			],
 		],
 		'17' => [
