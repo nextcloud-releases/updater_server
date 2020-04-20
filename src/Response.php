@@ -181,6 +181,12 @@ class Response {
 
 		switch ($this->request->getChannel()) {
 			case 'enterprise':
+				return $this->getStableResponse(
+					$this->config->getWithAlternative('enterprise', 'stable'),
+					$completeCurrentVersion,
+					$phpVersion,
+					$this->request->getInstallationMtime()
+				);
 			case 'production':
 				return $this->getStableResponse(
 					$this->config->get('production'),

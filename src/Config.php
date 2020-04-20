@@ -23,4 +23,13 @@ class Config {
 	public function get($key) {
 		return $this->configArray[$key];
 	}
+
+	/**
+	 * @param string $key
+	 * @param string $alternativeKey
+	 * @return mixed
+	 */
+	public function getWithAlternative($key, $alternativeKey) {
+		return $this->configArray[$key] ?? $this->configArray[$alternativeKey];
+	}
 }
