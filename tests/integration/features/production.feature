@@ -442,16 +442,16 @@ Feature: Testing the update scenario of production releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "18.0.3.0" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-18.0.3.zip"
+    And Update to version "18.0.4.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-18.0.4.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/18/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    rdvwW+bkw1MLNdy/9ojGkrGEwLsd7JU2sZ6rX4ZOFUBserLVR8QqyL0G0nJviiiC
-    kGWkFyMB56YNVyRp41EQfTkfEbdJprng/3xiP8fQP+EsLN9iNzW/bcmQMIMznler
-    dgR3Ye66jjAEuwETb+rmYu32Z6uWJw/I5N4qShhCwrDunY58nQqrO3v3js+yTtQA
-    gJHXyZWdFbLvhoV0PZ5vx7WqKL5y9EAFtgjTMK8gxVJu9Uic6Cg6tUjvyxlC9mQI
-    osQuvU+q91xvPbwqE8ig/nGnofAUYqZjDHeFSD6wSiMVw2dwuZnYv+E28pJbOGSD
-    02EIKzzu5XxDJVbRUKIirA==
+    ORSMrf2SEGyQY7cNSUugbIW3kcCMvj0/DrVqAFaemMCB6ROf/2eM0jiQHUCkr8JX
+    jZc1GT5gBSedVoK9ydGcwKGTbRi8Br7SdLguaddwpr6JZola3vp7Nyv8zFiqyM+G
+    ts6grDInEULqU8kQvMpbZ0uC1BVfVO8tNo7Z+PeoUn+W3qNlIp0SAcHqgB09aOIY
+    xU99JPD0Xu4q7s/X35YRsKQQbKPnz6EeSTcHeoEyR1fbGyh6V3/3l3R4GUWVXMCV
+    fOTMuBBBK5UCkrjDhKxPsLBAi5ZfHMhBTSzUNIWSEgbnA3FHptzxSfyQQ/36q1a1
+    g+WgFEA29UXQt4NDgGTXUw==
     """
