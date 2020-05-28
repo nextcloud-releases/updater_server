@@ -313,18 +313,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "17.0.6.2" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-17.0.6.zip"
+    And Update to version "17.0.7.0" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-17.0.7RC1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/17/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    NzziwiDIM/fLE70kL2PEvND2vY4Wn1D2Wthpqmvx+9P7+z7/TjFHmJzSwtcB8G8s
-    YMFJxN+TxzMNgFX8pyg6/5i/WK7M/hjwrTpggPwdrBFYj4dhBJyDIX0HvqI5CEKU
-    5zfjeGuBlPapo6GZLyB/m9g3h8oRZKlxBtGHJ/ajot1a3DC4P3VhS/6gnV0xu3dl
-    QSmg5lRu8s5tLagvd63hIYT7QWQnVxFFgHAfAgTRTYzTkno8WcL4lWAY1koKs9jw
-    b/+5UwnQTwGoUKCkAiTeP85SQB8fLg/ClZeLoyvFfXsKSHhWHdlPUlETqwZ3DXJi
-    pPz7NXeVc4FMNn0ES5BuMw==
+    bwfxxCzLC9mZKXt4SkuwQj/39DDJzr35ArMQ2npwEpTf4cUiUyW1cBCjoku1Y8Xc
+    Pqs581WPYMAN4M/XZefXHFZMVZ4+uEeoaKFaTR9vS8NLpyMS3/3wxUFvlW/PsLNB
+    LkBXktHZGe6TddkoQcwqwY/jcDt2HEXtvfkNXt136Txwe2iWh2TQCer9XFDCrmd6
+    xjCVIYqomSCTrHR4zw8/lmx86nx6cbnfPH3EvC3F7fg7fAbmotbvB6Zcw6Ckr019
+    2NNGVTAtDjyqImaqweST9vEOUTjUM5QhzdDSN5G6ZwRMf4LFEmFZzIwyPJc4ts2v
+    9dGULF4EokiWH3LlKopOcg==
     """
 
   Scenario: Updating an outdated Nextcloud 17.0.0 on the beta channel
