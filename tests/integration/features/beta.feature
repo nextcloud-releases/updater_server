@@ -355,18 +355,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "19.0.0.11" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-19.0.0RC3.zip"
-    And URL to documentation is "https://docs.nextcloud.com/server/18/admin_manual/maintenance/upgrade.html"
+    And Update to version "19.0.0.12" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-19.0.0.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/19/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    W0oXD3aiXCvr7s9aXBuZ/qE1Vgih2IROryHDDbOIbkaBtKRscZb9qiLgjYb+RFeu
-    qwcidAJC2nWW/CjfsnpXG8FzXkS8v4VhxuZV63da7PHotyykyzEDrvb7UzEWsebY
-    PnLRQW5GMz/P33ypQPpL8ZRG1jFA5HFA4tXRxJ7KxfUsqukpb+nRJh2fkeFN6gDR
-    sFoAtrN0CMCuQdr94a7QxJPZV5F5swmUV0wXwNkdAT+el0X+qd9J9akg4o6NCc8g
-    XuEG6E98SSKXFMtMJuhfJRL2GetO/A7Q9dp/T6uu5RZISlUQGThkOJL8bInXnRHF
-    mOHzt+t5sadTJDAmzYphLA==
+    FLa6aTw3yP+cUPwhl5Nuo2zDM3QvZHBrzWqSmKJEpHcBHnABK9p6WB1ruiEkPG/s
+    v6TFLgF+bHLExemuJy3Tfv4J8yfwP7WD6rotlTeNjeLmBI37Jtxpz8y0ztzJazZb
+    Nec+uOCuhRnMfTVS25O75vEmeCXALlNGxZJr0YBS/R6Y/rOOKrObEWNLcHUma3mz
+    Zt7LOI2PlMsqalDaxvMzvVcaIoEtnkBoCcuCrwZOOzH0ldpvVcjvvkqSyW8vMy3G
+    QBfgKPicwjQMTP+gjSKgAknY8atMe7A2P0rsm/B+i88sfcQnvRl0qm+u9uSz6Koq
+    6VhkYUo54YwOJz8SzvQANA==
     """
 
   Scenario: Updating an outdated Nextcloud 19.0.0 on the beta channel
@@ -376,16 +376,16 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "19.0.0.11" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-19.0.0RC3.zip"
-    And URL to documentation is "https://docs.nextcloud.com/server/18/admin_manual/maintenance/upgrade.html"
+    And Update to version "19.0.0.12" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-19.0.0.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/19/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    W0oXD3aiXCvr7s9aXBuZ/qE1Vgih2IROryHDDbOIbkaBtKRscZb9qiLgjYb+RFeu
-    qwcidAJC2nWW/CjfsnpXG8FzXkS8v4VhxuZV63da7PHotyykyzEDrvb7UzEWsebY
-    PnLRQW5GMz/P33ypQPpL8ZRG1jFA5HFA4tXRxJ7KxfUsqukpb+nRJh2fkeFN6gDR
-    sFoAtrN0CMCuQdr94a7QxJPZV5F5swmUV0wXwNkdAT+el0X+qd9J9akg4o6NCc8g
-    XuEG6E98SSKXFMtMJuhfJRL2GetO/A7Q9dp/T6uu5RZISlUQGThkOJL8bInXnRHF
-    mOHzt+t5sadTJDAmzYphLA==
+    FLa6aTw3yP+cUPwhl5Nuo2zDM3QvZHBrzWqSmKJEpHcBHnABK9p6WB1ruiEkPG/s
+    v6TFLgF+bHLExemuJy3Tfv4J8yfwP7WD6rotlTeNjeLmBI37Jtxpz8y0ztzJazZb
+    Nec+uOCuhRnMfTVS25O75vEmeCXALlNGxZJr0YBS/R6Y/rOOKrObEWNLcHUma3mz
+    Zt7LOI2PlMsqalDaxvMzvVcaIoEtnkBoCcuCrwZOOzH0ldpvVcjvvkqSyW8vMy3G
+    QBfgKPicwjQMTP+gjSKgAknY8atMe7A2P0rsm/B+i88sfcQnvRl0qm+u9uSz6Koq
+    6VhkYUo54YwOJz8SzvQANA==
     """
