@@ -107,9 +107,9 @@ return [
 	'production' => [
 		'18' => [
 			'100' => [
-				'latest' => '18.0.5',
-				'internalVersion' => '18.0.5.1',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-18.0.5.zip',
+				'latest' => '18.0.4',
+				'internalVersion' => '18.0.4.2',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-18.0.4.zip',
 				'web' => 'https://docs.nextcloud.com/server/18/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '7.2',
@@ -370,9 +370,9 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 	'stable' => [
 		'18' => [
 			'100' => [
-				'latest' => '18.0.5',
-				'internalVersion' => '18.0.5.1',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-18.0.5.zip',
+				'latest' => '18.0.4',
+				'internalVersion' => '18.0.4.2',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-18.0.4.zip',
 				'web' => 'https://docs.nextcloud.com/server/18/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '7.2',
@@ -386,9 +386,9 @@ k4TP/m2/0C2ezzBQVP8Atg==',
 		],
 		'17.0.7' => [
 			'100' => [
-				'latest' => '18.0.5',
-				'internalVersion' => '18.0.5.1',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-18.0.5.zip',
+				'latest' => '18.0.4',
+				'internalVersion' => '18.0.4.2',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-18.0.4.zip',
 				'web' => 'https://docs.nextcloud.com/server/18/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '7.2',
@@ -677,9 +677,9 @@ QBfgKPicwjQMTP+gjSKgAknY8atMe7A2P0rsm/B+i88sfcQnvRl0qm+u9uSz6Koq
 		],
 		'17' => [
 			'100' => [
-				'latest' => '18.0.5',
-				'internalVersion' => '18.0.5.1',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-18.0.5.zip',
+				'latest' => '18.0.4',
+				'internalVersion' => '18.0.4.2',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-18.0.4.zip',
 				'web' => 'https://docs.nextcloud.com/server/18/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '7.2',
