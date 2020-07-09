@@ -355,18 +355,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "19.0.0.12" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-19.0.0.zip"
+    And Update to version "19.0.1.0" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-19.0.1RC1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/19/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    FLa6aTw3yP+cUPwhl5Nuo2zDM3QvZHBrzWqSmKJEpHcBHnABK9p6WB1ruiEkPG/s
-    v6TFLgF+bHLExemuJy3Tfv4J8yfwP7WD6rotlTeNjeLmBI37Jtxpz8y0ztzJazZb
-    Nec+uOCuhRnMfTVS25O75vEmeCXALlNGxZJr0YBS/R6Y/rOOKrObEWNLcHUma3mz
-    Zt7LOI2PlMsqalDaxvMzvVcaIoEtnkBoCcuCrwZOOzH0ldpvVcjvvkqSyW8vMy3G
-    QBfgKPicwjQMTP+gjSKgAknY8atMe7A2P0rsm/B+i88sfcQnvRl0qm+u9uSz6Koq
-    6VhkYUo54YwOJz8SzvQANA==
+    wsNO20aoh3OV7TtUBLG576RGMrSfJ4qPDhT7QeunufjkOdiZOTTp3QnEdlaERZBP
+    Mk1YlRC2V312oaNt3DqhZcUVo2lF5cRY5Oy9yr73JGRi3iV97Pfq2ubPyI7uY17Q
+    yycnHRLA7HYWQ6gtORfyJjssB7b8gK4OWGyTHbenxsiEcQDeaJPSWhQouUzOu/tW
+    ziY3IR+H6kenxmp2hKFaXaRWtX2DSWHBipgZ3Zqu3FQ9KuvDAj8aRW3489cma8fS
+    mE8xY96q/J74ROK9XPOWvZ/udS/DzOK6XbXY7WKtZLIgn2zEwkkOPdGppNJMi1nO
+    WpRI6C0Tm4O9oXSCM95E6A==
     """
 
   Scenario: Updating an outdated Nextcloud 19.0.0 on the beta channel
@@ -376,16 +376,16 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "19.0.0.12" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-19.0.0.zip"
+    And Update to version "19.0.1.0" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-19.0.1RC1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/19/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    FLa6aTw3yP+cUPwhl5Nuo2zDM3QvZHBrzWqSmKJEpHcBHnABK9p6WB1ruiEkPG/s
-    v6TFLgF+bHLExemuJy3Tfv4J8yfwP7WD6rotlTeNjeLmBI37Jtxpz8y0ztzJazZb
-    Nec+uOCuhRnMfTVS25O75vEmeCXALlNGxZJr0YBS/R6Y/rOOKrObEWNLcHUma3mz
-    Zt7LOI2PlMsqalDaxvMzvVcaIoEtnkBoCcuCrwZOOzH0ldpvVcjvvkqSyW8vMy3G
-    QBfgKPicwjQMTP+gjSKgAknY8atMe7A2P0rsm/B+i88sfcQnvRl0qm+u9uSz6Koq
-    6VhkYUo54YwOJz8SzvQANA==
+    wsNO20aoh3OV7TtUBLG576RGMrSfJ4qPDhT7QeunufjkOdiZOTTp3QnEdlaERZBP
+    Mk1YlRC2V312oaNt3DqhZcUVo2lF5cRY5Oy9yr73JGRi3iV97Pfq2ubPyI7uY17Q
+    yycnHRLA7HYWQ6gtORfyJjssB7b8gK4OWGyTHbenxsiEcQDeaJPSWhQouUzOu/tW
+    ziY3IR+H6kenxmp2hKFaXaRWtX2DSWHBipgZ3Zqu3FQ9KuvDAj8aRW3489cma8fS
+    mE8xY96q/J74ROK9XPOWvZ/udS/DzOK6XbXY7WKtZLIgn2zEwkkOPdGppNJMi1nO
+    WpRI6C0Tm4O9oXSCM95E6A==
     """
