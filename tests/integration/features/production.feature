@@ -455,3 +455,24 @@ Feature: Testing the update scenario of production releases
     4UdS8yCpLhSrTTnEcAVsCw7B+dUl3tMMEsZ6tIj0rBiM2w64UrrDKa+6nT1blC4D
     2MV0GGQs+KG1zib7TRfNlg==
     """
+
+  Scenario: Updating an outdated Nextcloud 19.0.0 on the beta channel
+    Given There is a release with channel "production"
+    And The received version is "19.0.0.2"
+    And The received PHP version is "7.2.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "19.0.1.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-19.0.1.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/19/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    uTYzr6YDYDK68A8fZ42IOzQEmilMNmsX4L1bypJkkAN/UOBP5ZK8tc/hgSrmXd4t
+    g0f7/c39nYo9CfMs8swPYCqTt7mbgx+z/LxlVJXNJeQkYEtLIA+kczQKNprY/c4E
+    wNk/dR5uVMqmlkAhQVXwJ8M4D30t1wJ8235XRLYtOfxowE+OQLLkYaDNEyU0pJK5
+    jCKI42xQJyO1bn0FAvGR5zqyWeHSXJKr5fleDw/L8ozPCZIgppGbigvwhOWE+Exs
+    bsf53THWtncb19OL626j8RbgQ3EuN4uSU7cp1pGqkg/kzQdBxR7TXcOqNMw8tiPC
+    CsKuFqRI37eQhbI/i2nrjg==
+    """
