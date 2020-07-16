@@ -313,18 +313,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "17.0.8.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-17.0.8RC1.zip"
+    And Update to version "17.0.8.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-17.0.8.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/17/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    vQ3No1ej/TKvmYaUQE3DnNNOmckT1y5Dp59VkKjWLTmw6wvCCLtBRYyOBZq8+fdl
-    HE9YvPQGShCb/UGfpkiuZ2HPZJkepsV0fFX2GgYgmrnf/hhAal/B2ObRO9ZHuFNg
-    KF2Ecvu50Z5CiM6R4CK0dv46+XMdhgz/i8qIMPllJHBwNNjFppBzaJyImKogfkuf
-    GMPj+0WV6xa9nODOiR7iIOsb23T6+l+027g9Lzh16egVu4Mgw58+M+Ujbzq5taP1
-    PwbPhtIiG3i6jW6+Y3DBY+bdoHH0/8RT7YszK7o00t9/kgslgIx9MsO1aGAIYDTJ
-    kxjZEcvitD6VyCXDn7jPHg==
+    ynlZm/WvlQUYPVU6tf1lyoC2gAgnHdJyHsKcQhD4qajIJb6BNJySeZbTcMhOO9wh
+    ZfUPD3vOJlW1rWsRNrcczxCSUm1dgPsADAlBuwtm1jh0DvspO1Rtmb+ScNMYHjn8
+    BK707KwUEGH3Y+gnDUaWdllEsukr6pDabLUuD/qQqDPpZbAa/OXaUgnYzCJ4Y8Rp
+    /1FeSi3E5vkgr/iX+L5j+VGDkGk8X79LdfpALK47bqsFdvJomeExJHjeiXu9N+K8
+    u/QjhomecMn8mLiWmB7glk6wJvW5J+Km8I/hduJNRPI/W3+IsGPGyzng1c+gUaE9
+    75SmeD3+owpH8pum4LZBKQ==
     """
 
   Scenario: Updating an outdated Nextcloud 17.0.0 on the beta channel
@@ -334,18 +334,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "18.0.7.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-18.0.7RC1.zip"
+    And Update to version "18.0.7.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-18.0.7.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/18/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    jUzH4E3su+1vXLhdtqz0kgNSe01RZe9QtpsEqTERoyyQIIEwMDxEQIq82nJjfduS
-    1gQLef+ELXc7PYttS+cBSh0R8CtQOtqsxYDgZGxuE5Knmdt6tC6ECfvreeCF3I5y
-    tIjkHiA6cwG0aqcV1xAozSWbf+An4Q6bHOcXLoKEb/am9NLzgPy/B3ZSPhm5ccIM
-    0sXjjI32Rw38SZC7B1uHsPQloGVhTAivlXXsEexKHfEAIzR1PFS7iOX/Wa6aIrwV
-    pgFFMXKxLYPDowATqXTwfIKpDC75XecsVJGCAx9OMNX1H1msX2RDntC/ThAX2fEE
-    LKw2wRkcE/xe8r27coVI+A==
+    jqE+H1D6TdPdnU+FTpI+oiRw2yktKp0J4Kjpy1x0BSC0yVjQ/wzaM3cVdYtQfK/n
+    3THCUr2tr7ya5z5KN3QxPRnzwQ7y8VPT/OX67Ex6ocad6js0A5n+rGdxsQwfErGL
+    AAIcVJZvHkZY/u37doqReli7uiGXefYBl+TMxA7xHcCjMiK/Q3N4TwXuIdqqs4jm
+    LDj/nxXiwNcVjEeBgSI86kAsa5LjfC/x/lRK4RYcxrDJ1/zrGrxZIDoM1AeCaTiH
+    4UdS8yCpLhSrTTnEcAVsCw7B+dUl3tMMEsZ6tIj0rBiM2w64UrrDKa+6nT1blC4D
+    2MV0GGQs+KG1zib7TRfNlg==
     """
 
   Scenario: Updating an outdated Nextcloud 18.0.0 on the beta channel
@@ -355,18 +355,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "19.0.1.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-19.0.1RC1.zip"
+    And Update to version "19.0.1.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-19.0.1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/19/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    wsNO20aoh3OV7TtUBLG576RGMrSfJ4qPDhT7QeunufjkOdiZOTTp3QnEdlaERZBP
-    Mk1YlRC2V312oaNt3DqhZcUVo2lF5cRY5Oy9yr73JGRi3iV97Pfq2ubPyI7uY17Q
-    yycnHRLA7HYWQ6gtORfyJjssB7b8gK4OWGyTHbenxsiEcQDeaJPSWhQouUzOu/tW
-    ziY3IR+H6kenxmp2hKFaXaRWtX2DSWHBipgZ3Zqu3FQ9KuvDAj8aRW3489cma8fS
-    mE8xY96q/J74ROK9XPOWvZ/udS/DzOK6XbXY7WKtZLIgn2zEwkkOPdGppNJMi1nO
-    WpRI6C0Tm4O9oXSCM95E6A==
+    uTYzr6YDYDK68A8fZ42IOzQEmilMNmsX4L1bypJkkAN/UOBP5ZK8tc/hgSrmXd4t
+    g0f7/c39nYo9CfMs8swPYCqTt7mbgx+z/LxlVJXNJeQkYEtLIA+kczQKNprY/c4E
+    wNk/dR5uVMqmlkAhQVXwJ8M4D30t1wJ8235XRLYtOfxowE+OQLLkYaDNEyU0pJK5
+    jCKI42xQJyO1bn0FAvGR5zqyWeHSXJKr5fleDw/L8ozPCZIgppGbigvwhOWE+Exs
+    bsf53THWtncb19OL626j8RbgQ3EuN4uSU7cp1pGqkg/kzQdBxR7TXcOqNMw8tiPC
+    CsKuFqRI37eQhbI/i2nrjg==
     """
 
   Scenario: Updating an outdated Nextcloud 19.0.0 on the beta channel
@@ -376,16 +376,16 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "19.0.1.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-19.0.1RC1.zip"
+    And Update to version "19.0.1.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-19.0.1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/19/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    wsNO20aoh3OV7TtUBLG576RGMrSfJ4qPDhT7QeunufjkOdiZOTTp3QnEdlaERZBP
-    Mk1YlRC2V312oaNt3DqhZcUVo2lF5cRY5Oy9yr73JGRi3iV97Pfq2ubPyI7uY17Q
-    yycnHRLA7HYWQ6gtORfyJjssB7b8gK4OWGyTHbenxsiEcQDeaJPSWhQouUzOu/tW
-    ziY3IR+H6kenxmp2hKFaXaRWtX2DSWHBipgZ3Zqu3FQ9KuvDAj8aRW3489cma8fS
-    mE8xY96q/J74ROK9XPOWvZ/udS/DzOK6XbXY7WKtZLIgn2zEwkkOPdGppNJMi1nO
-    WpRI6C0Tm4O9oXSCM95E6A==
+    uTYzr6YDYDK68A8fZ42IOzQEmilMNmsX4L1bypJkkAN/UOBP5ZK8tc/hgSrmXd4t
+    g0f7/c39nYo9CfMs8swPYCqTt7mbgx+z/LxlVJXNJeQkYEtLIA+kczQKNprY/c4E
+    wNk/dR5uVMqmlkAhQVXwJ8M4D30t1wJ8235XRLYtOfxowE+OQLLkYaDNEyU0pJK5
+    jCKI42xQJyO1bn0FAvGR5zqyWeHSXJKr5fleDw/L8ozPCZIgppGbigvwhOWE+Exs
+    bsf53THWtncb19OL626j8RbgQ3EuN4uSU7cp1pGqkg/kzQdBxR7TXcOqNMw8tiPC
+    CsKuFqRI37eQhbI/i2nrjg==
     """
