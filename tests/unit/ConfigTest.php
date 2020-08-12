@@ -11,7 +11,7 @@ class ConfigTest extends \PHPUnit_Framework_TestCase {
 	public function testGet() {
 		$config = new Config(__DIR__ . '/../data/config.php');
 
-		$productionResponse = [
+		$stableResponse = [
 			'8.2' => [
 				'latest' => '8.2.3',
 				'web' => 'https://doc.owncloud.org/server/8.2/admin_manual/maintenance/upgrade.html',
@@ -33,6 +33,6 @@ class ConfigTest extends \PHPUnit_Framework_TestCase {
 				'minPHPVersion' => '5.4',
 			],
 		];
-		$this->assertSame($productionResponse, $config->get('production'));
+		$this->assertSame($stableResponse, $config->get('stable'));
 	}
 }

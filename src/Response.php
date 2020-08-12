@@ -187,13 +187,6 @@ class Response {
 					$phpVersion,
 					$this->request->getInstallationMtime()
 				);
-			case 'production':
-				return $this->getStableResponse(
-					$this->config->get('production'),
-					$completeCurrentVersion,
-					$phpVersion,
-					$this->request->getInstallationMtime()
-				);
 			case 'stable':
 				return $this->getStableResponse(
 					$this->config->get('stable'),
