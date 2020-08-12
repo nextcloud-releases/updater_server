@@ -274,7 +274,7 @@ Feature: Testing the update scenario of beta releases
     And Update to version "15.0.14.1" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-15.0.14.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/15/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL is set to "1"
     And The signature is
     """
     A5WWizBmhSC+dfJNrA3eNjx4w3w9i+9GKs0TWCEOAi74E1gfQymaSa3UNdm/fjmP
@@ -295,7 +295,7 @@ Feature: Testing the update scenario of beta releases
     And Update to version "16.0.11.1" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-16.0.11.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/16/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL is set to "1"
     And The signature is
     """
     b7SOD6KATY0bpbAcL/+1gdeLeuWAvsIn+tuUzF6HStrjxLrARw8cOrM7bCq5zcq7
@@ -316,7 +316,7 @@ Feature: Testing the update scenario of beta releases
     And Update to version "17.0.8.1" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-17.0.8.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/17/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL is set to "1"
     And The signature is
     """
     ynlZm/WvlQUYPVU6tf1lyoC2gAgnHdJyHsKcQhD4qajIJb6BNJySeZbTcMhOO9wh
