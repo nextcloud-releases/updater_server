@@ -167,6 +167,11 @@ class Request {
 				$this->channel = 'stable';
 			}
 
+			// starting with nextcloud 17 there is no production channel anymore
+			if ($this->channel === 'production') {
+				$this->channel = 'stable';
+			}
+
 			if(count($version) === 12) {
 				if($version['9'] !== '') {
 					$this->phpMajorVersion = (int)$version['9'];
