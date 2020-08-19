@@ -21,7 +21,7 @@
  * 		// 95% of instances on 9.1 will get this response
  * 		'95' => [
  * 			'latest' => '10.0.0',
- * 			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/upgrade.html',
+ * 			'web' => 'https://docs.nextcloud.com/server/10/admin_manual/maintenance/upgrade.html',
  * 			// downloadUrl is an optional entry, if not specified the URL is generated using https://download.nextcloud.com/server/releases/nextcloud-'.$newVersion['latest'].'.zip
  * 			'downloadUrl' => 'https://download.nextcloud.com/foo.zip',
  * 			// internalVersion
@@ -38,7 +38,7 @@
  * 		// 5% of instances on 9.1 will get this response
  * 		'5' => [
  * 			'latest' => '11.0.0',
- * 			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/upgrade.html',
+ * 			'web' => 'https://docs.nextcloud.com/server/10/admin_manual/maintenance/upgrade.html',
  *			// downloadUrl is an optional entry, if not specified the URL is generated using https://download.nextcloud.com/server/releases/nextcloud-'.$newVersion['latest'].'.zip
  * 			'downloadUrl' => 'https://download.nextcloud.com/foo.zip',
  *			// internalVersion
@@ -71,23 +71,23 @@
  * 	'8.2.0' => [
  * 		'100' => [
  * 			'latest' => '8.2.1',
- * 			'web' => 'https://docs.nextcloud.org/server/8.2/admin_manual/maintenance/upgrade.html',
+ * 			'web' => 'https://docs.nextcloud.com/server/8.2/admin_manual/maintenance/upgrade.html',
  * 		],
  * 	],
  * 	'8.2' => [
  * 		'100' => [
  * 			'latest' => '8.2.4',
- * 			'web' => 'https://docs.nextcloud.org/server/8.2/admin_manual/maintenance/upgrade.html',
+ * 			'web' => 'https://docs.nextcloud.com/server/8.2/admin_manual/maintenance/upgrade.html',
  * 		],
  * 	],
  * 	'8.2.4' => [
  * 		'5' => [
  * 			'latest' => '9.0.0',
- * 			'web' => 'https://docs.nextcloud.org/server/8.2/admin_manual/maintenance/upgrade.html',
+ * 			'web' => 'https://docs.nextcloud.com/server/8.2/admin_manual/maintenance/upgrade.html',
  * 		],
  * 		'95' => [
  * 			'latest' => '8.2.5',
- * 			'web' => 'https://docs.nextcloud.org/server/8.2/admin_manual/maintenance/upgrade.html',
+ * 			'web' => 'https://docs.nextcloud.com/server/8.2/admin_manual/maintenance/upgrade.html',
  * 		],
  * 	],
  * ]
