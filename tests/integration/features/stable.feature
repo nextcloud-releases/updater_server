@@ -594,7 +594,7 @@ Feature: Testing the update scenario of stable releases
     2MV0GGQs+KG1zib7TRfNlg==
     """
 
-  Scenario: Updating an outdated Nextcloud 18.0.0 on the stable channel
+  Scenario: Updating an outdated Nextcloud 18.0.0 on the stable channel (to 19)
     Given There is a release with channel "stable"
     And The received version is "18.0.0.3"
     And The received PHP version is "7.2.0"
@@ -615,11 +615,11 @@ Feature: Testing the update scenario of stable releases
     CsKuFqRI37eQhbI/i2nrjg==
     """
 
-  Scenario: Updating an outdated Nextcloud 18.0.0 on the stable channel
+  Scenario: Updating an outdated Nextcloud 18.0.0 on the stable channel (to 18)
     Given There is a release with channel "stable"
     And The received version is "18.0.0.3"
     And The received PHP version is "7.2.0"
-    And the installation mtime is "21"
+    And the installation mtime is "50"
     When The request is sent
     Then The response is non-empty
     And Update to version "18.0.7.1" is available
