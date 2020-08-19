@@ -21,7 +21,7 @@
  * 		// 95% of instances on 9.1 will get this response
  * 		'95' => [
  * 			'latest' => '10.0.0',
- * 			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/upgrade.html',
+ * 			'web' => 'https://docs.nextcloud.com/server/10/admin_manual/maintenance/upgrade.html',
  * 			// downloadUrl is an optional entry, if not specified the URL is generated using https://download.nextcloud.com/server/releases/nextcloud-'.$newVersion['latest'].'.zip
  * 			'downloadUrl' => 'https://download.nextcloud.com/foo.zip',
  * 			// internalVersion
@@ -38,7 +38,7 @@
  * 		// 5% of instances on 9.1 will get this response
  * 		'5' => [
  * 			'latest' => '11.0.0',
- * 			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/upgrade.html',
+ * 			'web' => 'https://docs.nextcloud.com/server/10/admin_manual/maintenance/upgrade.html',
  *			// downloadUrl is an optional entry, if not specified the URL is generated using https://download.nextcloud.com/server/releases/nextcloud-'.$newVersion['latest'].'.zip
  * 			'downloadUrl' => 'https://download.nextcloud.com/foo.zip',
  *			// internalVersion
@@ -71,23 +71,23 @@
  * 	'8.2.0' => [
  * 		'100' => [
  * 			'latest' => '8.2.1',
- * 			'web' => 'https://docs.nextcloud.org/server/8.2/admin_manual/maintenance/upgrade.html',
+ * 			'web' => 'https://docs.nextcloud.com/server/8.2/admin_manual/maintenance/upgrade.html',
  * 		],
  * 	],
  * 	'8.2' => [
  * 		'100' => [
  * 			'latest' => '8.2.4',
- * 			'web' => 'https://docs.nextcloud.org/server/8.2/admin_manual/maintenance/upgrade.html',
+ * 			'web' => 'https://docs.nextcloud.com/server/8.2/admin_manual/maintenance/upgrade.html',
  * 		],
  * 	],
  * 	'8.2.4' => [
  * 		'5' => [
  * 			'latest' => '9.0.0',
- * 			'web' => 'https://docs.nextcloud.org/server/8.2/admin_manual/maintenance/upgrade.html',
+ * 			'web' => 'https://docs.nextcloud.com/server/8.2/admin_manual/maintenance/upgrade.html',
  * 		],
  * 		'95' => [
  * 			'latest' => '8.2.5',
- * 			'web' => 'https://docs.nextcloud.org/server/8.2/admin_manual/maintenance/upgrade.html',
+ * 			'web' => 'https://docs.nextcloud.com/server/8.2/admin_manual/maintenance/upgrade.html',
  * 		],
  * 	],
  * ]
@@ -698,7 +698,7 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 		],
 		'19' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable19.zip',
-			'web' => 'https://docs.nextcloud.com/server/latest/admin_manual/maintenance/upgrade.html',
+			'web' => 'https://docs.nextcloud.com/server/19/admin_manual/maintenance/upgrade.html',
 			'eol' => false,
 			'minPHPVersion' => '7.2',
 		],
@@ -707,66 +707,6 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 			'web' => 'https://docs.nextcloud.com/server/18/admin_manual/maintenance/upgrade.html',
 			'eol' => false,
 			'minPHPVersion' => '7.2',
-		],
-		'17' => [
-			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable17.zip',
-			'web' => 'https://docs.nextcloud.com/server/17/admin_manual/maintenance/upgrade.html',
-			'eol' => false,
-			'minPHPVersion' => '7.1',
-		],
-		'16' => [
-			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable16.zip',
-			'web' => 'https://docs.nextcloud.com/server/16/admin_manual/maintenance/upgrade.html',
-			'eol' => false,
-			'minPHPVersion' => '7.1',
-		],
-		'15' => [
-			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable15.zip',
-			'web' => 'https://docs.nextcloud.com/server/15/admin_manual/maintenance/upgrade.html',
-			'eol' => true,
-			'minPHPVersion' => '7.0',
-		],
-		'14' => [
-			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable14.zip',
-			'web' => 'https://docs.nextcloud.com/server/14/admin_manual/maintenance/upgrade.html',
-			'eol' => true,
-			'minPHPVersion' => '7.0',
-		],
-		'13' => [
-			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable13.zip',
-			'web' => 'https://docs.nextcloud.com/server/13/admin_manual/maintenance/upgrade.html',
-			'eol' => true,
-			'minPHPVersion' => '5.6',
-		],
-		'12' => [
-			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable12.zip',
-			'web' => 'https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html',
-			'eol' => true,
-			'minPHPVersion' => '5.6',
-		],
-		'11' => [
-			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable11.zip',
-			'web' => 'https://docs.nextcloud.com/server/11/admin_manual/maintenance/upgrade.html',
-			'eol' => true,
-			'minPHPVersion' => '5.6',
-		],
-		'9.1' => [
-			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable10.zip',
-			'web' => 'https://docs.nextcloud.org/server/10/admin_manual/maintenance/manual_upgrade.html',
-			'eol' => true,
-			'minPHPVersion' => '5.4',
-		],
-		'9.0' => [
-			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable9.zip',
-			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
-			'eol' => true,
-			'minPHPVersion' => '5.4',
-		],
-		'8.2' => [
-			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable9.zip',
-			'web' => 'https://docs.nextcloud.org/server/9/admin_manual/maintenance/manual_upgrade.html',
-			'eol' => true,
-			'minPHPVersion' => '5.4',
 		],
 	],
 	'_settings' => [
