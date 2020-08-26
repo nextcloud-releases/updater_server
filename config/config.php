@@ -211,7 +211,7 @@ upd/GQsE4qTkllmhTTjOf1HgpOnV2r4YqUftonQmwgszBOY4F4WQHVfAYe9db0tt
 jkXs6eyckCsfFrd7f3MRbQ==',
 			],
 		],
-		'16.0.11' => [
+		'16' => [
 			'100' => [
 				'latest' => '17.0.9',
 				'internalVersion' => '17.0.9.2',
@@ -225,22 +225,6 @@ BxLBCJ7KK4uhhQoJmOU7qiiRkxBp9jpCx0giaNFHNMXqOF+I+SmAmuejVVK5zC99
 nukGjbYybXEEImxJAM0AIGrKyHTo81FsEiHqCo7tA7ak5QMA5BN4mael9EsMv25V
 upd/GQsE4qTkllmhTTjOf1HgpOnV2r4YqUftonQmwgszBOY4F4WQHVfAYe9db0tt
 jkXs6eyckCsfFrd7f3MRbQ==',
-			],
-		],
-		'16' => [
-			'100' => [
-				'latest' => '16.0.11',
-				'internalVersion' => '16.0.11.1',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-16.0.11.zip',
-				'web' => 'https://docs.nextcloud.com/server/16/admin_manual/maintenance/upgrade.html',
-				'eol' => true,
-				'minPHPVersion' => '7.1',
-				'signature' => 'b7SOD6KATY0bpbAcL/+1gdeLeuWAvsIn+tuUzF6HStrjxLrARw8cOrM7bCq5zcq7
-tJCWrI2Ww9CrKH8kNalEZNMDZy346QhYkUZNOiU2IP8wdb1601vRXfIkPyTVSpdk
-RDMQWtIushwa/WIZTKnJWo1fd0juxBnbmIl30rxDgUpBOkjx0zGvA2Ff+mssezX3
-qGhaB0Btr45xpgbHbeEQwsH1w2PXJFy9GsF2psbBEIykCPAxgRWR32bTGH8ws9Uy
-zpAxCj7W4wEnJFhsQ2zb0Wh5ZjSA9G1SARJhMp/8Efwm3uWJr5xK4MYKG2bQ29mt
-HWPTEBalqX2V9enOLAgVWQ==',
 			],
 		],
 		'15' => [
