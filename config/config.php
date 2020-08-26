@@ -124,8 +124,8 @@ zY8iDQ+AZ2ttFoQ4MjfyTzM1VM0WDL5f70phVg4F+jG/JPxo9Qpyhq1Hy30ANPa0
 dNqXHF6Re45NNc0vwNHjEA==',
 			],
 		],
-		'18' => [
-			'49' => [
+		'18.0.8' => [
+			'100' => [
 				'latest' => '19.0.2',
 				'internalVersion' => '19.0.2.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-19.0.2.zip',
@@ -139,7 +139,9 @@ qelJt17cUknifzJ+LKXwE26xua5SYA6KKGL1WIcaDKIJm8UMJhE3w7cMcxi79FVn
 zY8iDQ+AZ2ttFoQ4MjfyTzM1VM0WDL5f70phVg4F+jG/JPxo9Qpyhq1Hy30ANPa0
 dNqXHF6Re45NNc0vwNHjEA==',
 			],
-			'51' => [
+		],
+		'18' => [
+			'100' => [
 				'latest' => '18.0.8',
 				'internalVersion' => '18.0.8.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-18.0.8.zip',
