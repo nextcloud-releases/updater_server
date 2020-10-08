@@ -355,21 +355,21 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "18.0.10.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-18.0.10RC2.zip"
+    And Update to version "18.0.10.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-18.0.10.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/18/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    m5XrRkB+fixSUKOxNW3lqJtzUCgzgj022DkrhCvLBvtPJibzmliKYn8kC6VJ0OUc
-    bugAMlqif9eBLDj9bTRRpngvCp6fh8/faOP4RDOXhZOMWJa6FJM/GMJLtILGN+6b
-    gfX4KSYa97G+gED6bPrzKKrrJWuD2D1p8R0ESladAj+IHmMAncDL7cUm2Hc7QOFw
-    r9fFXUd4vJT3KyUNoEyFIAE+liUqvW5uLZsepK78LG7RInVZWm4J9G5ye8ZzzRGU
-    +PooLilyFuZdR6GzCgx4oEYQkljiwesqr/VnLTsp+MuxcGLi+sgYJjmjRSjsia5H
-    uaUfhpJBQnOH99AtwVq2UQ==
+    Dc6krB/RhAXYt7KFvvT53Xf5jCRh09Kb8ahIYvFfjXM8ZBLiaStK8FaQ/aPeAlKU
+    uzeEn+WbL+cr1KGNncx2vBBrt++ZwFz40pmqRjGUojPH5WbvXjLZ4sC+0Gu9Yc2D
+    pxsoZO6Uw1nsesH84qOCrWVsTyTS8p69IaRXuZ06ViC1MhzTGP+PQJhHbBNMp5xq
+    7XnVh0+8cGkSyi3Dl+wP4HtaSjjXSNmLtyE0h4kdxestn4fPWrucDvDOzufzJc85
+    /HRjmMzBjm7ToBSUGhthhP1SJVgspSf3y8IneRHbN35xnwTQnXYKUZzmvKSxqyiI
+    3mcGSB+pYkdU0lyPCX1IYA==
     """
 
-  Scenario: Updating an outdated Nextcloud 18.0.9.1 on the beta channel
+  Scenario: Updating an outdated Nextcloud 18.0.10.1 on the beta channel
     Given There is a release with channel "beta"
     And The received version is "18.0.10.1"
     And The received PHP version is "7.2.0"
