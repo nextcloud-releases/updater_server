@@ -426,7 +426,7 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 	'beta' => [
 		'20' => [
 			'100' => [
-				'latest' => '20.0.2',
+				'latest' => '20.0.2 RC2',
 				'internalVersion' => '20.0.2.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-20.0.2RC2.zip',
 				'web' => 'https://docs.nextcloud.com/server/20/admin_manual/maintenance/upgrade.html',
@@ -442,7 +442,7 @@ k5fll4xRWJpzi9W3YKEc1w==',
 		],
 		'19.0.5.1' => [
 			'100' => [
-				'latest' => '20.0.2',
+				'latest' => '20.0.2 RC2',
 				'internalVersion' => '20.0.2.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-20.0.2RC2.zip',
 				'web' => 'https://docs.nextcloud.com/server/20/admin_manual/maintenance/upgrade.html',
@@ -458,7 +458,7 @@ k5fll4xRWJpzi9W3YKEc1w==',
 		],
 		'19' => [
 			'100' => [
-				'latest' => '19.0.5',
+				'latest' => '19.0.5 RC2',
 				'internalVersion' => '19.0.5.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-19.0.5RC2.zip',
 				'web' => 'https://docs.nextcloud.com/server/19/admin_manual/maintenance/upgrade.html',
@@ -474,7 +474,7 @@ u2nTBS/+CWSPL62Edozn8A==',
 		],
 		'18.0.11.1' => [
 			'100' => [
-				'latest' => '19.0.5',
+				'latest' => '19.0.5 RC2',
 				'internalVersion' => '19.0.5.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-19.0.5RC2.zip',
 				'web' => 'https://docs.nextcloud.com/server/19/admin_manual/maintenance/upgrade.html',
@@ -490,7 +490,7 @@ u2nTBS/+CWSPL62Edozn8A==',
 		],
 		'18' => [
 			'100' => [
-				'latest' => '18.0.11',
+				'latest' => '18.0.11 RC2',
 				'internalVersion' => '18.0.11.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-18.0.11RC2.zip',
 				'web' => 'https://docs.nextcloud.com/server/18/admin_manual/maintenance/upgrade.html',
@@ -506,7 +506,7 @@ MPtklTQmXGVxAisX0Vjt7g==',
 		],
 		'17.0.10' => [
 			'100' => [
-				'latest' => '18.0.11',
+				'latest' => '18.0.11 RC2',
 				'internalVersion' => '18.0.11.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-18.0.11RC2.zip',
 				'web' => 'https://docs.nextcloud.com/server/18/admin_manual/maintenance/upgrade.html',
