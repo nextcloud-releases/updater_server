@@ -635,11 +635,11 @@ Feature: Testing the update scenario of stable releases
     PPVW7DIzyIZFe6xt3swR6Q==
     """
 
-  Scenario: Updating an outdated Nextcloud 19.0.0 on the beta channel
+  Scenario: Updating an outdated Nextcloud 19.0.0 on the stable channel to 19
     Given There is a release with channel "stable"
     And The received version is "19.0.0.2"
     And The received PHP version is "7.2.0"
-    And the installation mtime is "11"
+    And the installation mtime is "33"
     When The request is sent
     Then The response is non-empty
     And Update to version "19.0.5.2" is available
@@ -654,6 +654,27 @@ Feature: Testing the update scenario of stable releases
     9qVa0KcSm0E7SxYhD8Iy/hjOumJ+EI/xjOLncBalc+LpF0JMHslQFlmC/BJv39eW
     SfUS/QbnIfzrRG1zrWbiR8GewwMHT4vDdLOjQWo14Pb0U0f91yTBW9kKjK6ijf+t
     5bPO9/Jlu/YHcadYGqeQuw==
+    """
+
+  Scenario: Updating an outdated Nextcloud 19.0.0 on the stable channel to 20
+    Given There is a release with channel "stable"
+    And The received version is "19.0.0.2"
+    And The received PHP version is "7.2.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "20.0.2.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-20.0.2.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/20/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    xgmYqDDmUkSdkP3+01rdn7FKMZ6/3fYD+lx9Ldrbv/Lg+CmM1SPpzO8xl+XvZi0z
+    C4JMB8BgPYMaJZZ2jZCJGuio9BZTqxtVBi738D3ZD2Iqk5M1RqNF8EYnmCiptTj6
+    Y/b8Y7IOElPURLLjelBjT+wWyaMdBEifGmWZznhbaiOq7vNB8u31yFlTKBEn3qB+
+    zd2ymDMn9r0aSrFmuJWvqbp8VMRFg166UBuHoeQ1fJlA2oA3HWDtsNxGQCPISD+M
+    Kpuqj2XLRa72vi12QgnMMYRoFNQhZ8Zmv/EdpTlb5ubdMQtNxAiYGN0nCR37+F3T
+    aiywvIt69DttL/rlTZPTFw==
     """
 
   Scenario: Updating the Nextcloud 20.0.0 on the stable channel
