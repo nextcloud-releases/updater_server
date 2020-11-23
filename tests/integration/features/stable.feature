@@ -635,7 +635,7 @@ Feature: Testing the update scenario of stable releases
     PPVW7DIzyIZFe6xt3swR6Q==
     """
 
-  Scenario: Updating an outdated Nextcloud 19.0.0 on the beta channel to 19
+  Scenario: Updating an outdated Nextcloud 19.0.0 on the stable channel to 19
     Given There is a release with channel "stable"
     And The received version is "19.0.0.2"
     And The received PHP version is "7.2.0"
@@ -656,7 +656,7 @@ Feature: Testing the update scenario of stable releases
     5bPO9/Jlu/YHcadYGqeQuw==
     """
 
-  Scenario: Updating an outdated Nextcloud 19.0.0 on the beta channel to 20
+  Scenario: Updating an outdated Nextcloud 19.0.0 on the stable channel to 20
     Given There is a release with channel "stable"
     And The received version is "19.0.0.2"
     And The received PHP version is "7.2.0"
