@@ -656,9 +656,30 @@ Feature: Testing the update scenario of stable releases
     5bPO9/Jlu/YHcadYGqeQuw==
     """
 
-  Scenario: Updating an outdated Nextcloud 19.0.0 on the stable channel to 20
+  Scenario: Updating an outdated Nextcloud 19.0.5 on the stable channel to 19
     Given There is a release with channel "stable"
-    And The received version is "19.0.0.2"
+    And The received version is "19.0.5.1"
+    And The received PHP version is "7.2.0"
+    And the installation mtime is "33"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "19.0.5.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-19.0.5.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/19/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    uu97Z65qDobeEylTbxR9zjKY8QOHncCmeoLSGDd/XeyRE/maMIVvbmxQ/rUtaI+R
+    nXfM9wajTXA6g3h5jbDTjvUh4hrP2UWprQVH/yeCxidVDpOC4VQQTpC+I4SwytWW
+    FGyjZjablZSZ1XQuAOGQmT4uDiful1CGVexcB0j3LwP9aVL7sQe0CTuVPm7fi1OT
+    9qVa0KcSm0E7SxYhD8Iy/hjOumJ+EI/xjOLncBalc+LpF0JMHslQFlmC/BJv39eW
+    SfUS/QbnIfzrRG1zrWbiR8GewwMHT4vDdLOjQWo14Pb0U0f91yTBW9kKjK6ijf+t
+    5bPO9/Jlu/YHcadYGqeQuw==
+    """
+
+  Scenario: Updating an outdated Nextcloud 19.0.5 on the stable channel to 20
+    Given There is a release with channel "stable"
+    And The received version is "19.0.5.2"
     And The received PHP version is "7.2.0"
     And the installation mtime is "11"
     When The request is sent
