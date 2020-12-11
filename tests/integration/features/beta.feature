@@ -452,3 +452,45 @@ Feature: Testing the update scenario of beta releases
     QGw8hS7mTwneKg3zubzu1qgv2YXZ3pf7NsQYnpnaTQ4sNYLsD3fNgA1ssCkxJrnJ
     tjWNrEmm/ixF6S9pY37X2A==
     """
+
+  Scenario: Updating the Nextcloud 20.0.3 on the beta channel
+    Given There is a release with channel "beta"
+    And The received version is "20.0.3.3"
+    And The received PHP version is "7.3.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "21.0.0.8" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-21.0.0beta1.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/20/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    WcwdCyy0bRjH9ubFtRGrhX54QDOdfsczaON4xXXni/uXqUbQ8l/R6eyY01joYo9R
+    yNHNuaDiF0vTLmDD9RbXaejU1VVNIik/2E4YYV9ITgjr1Ot0BagH33S5lOqMWzw3
+    UZbuLU01OSVAj6wm5h/BFytmFd+v6S/tccOx46hKEF6Vr/4llzIJc7zNfdOPjgF5
+    bYyhN5bBjXrdt0AdfzdM9LQ3vgd4mGfu748hjqzJV2aJLpnqMJgiCtlf5R9Ffj6x
+    cxgHRkm7u0uaapmJR+vey6RHlIxClHbSt8Wdnh+ImEK3FlssuSzVA6cRRVq8nR0k
+    xfRho4rqUGsFZrStF8qscw==
+    """
+
+  Scenario: Updating the Nextcloud 21.0.0 on the beta channel
+    Given There is a release with channel "beta"
+    And The received version is "21.0.0.7"
+    And The received PHP version is "7.3.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "21.0.0.8" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-21.0.0beta1.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/20/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    WcwdCyy0bRjH9ubFtRGrhX54QDOdfsczaON4xXXni/uXqUbQ8l/R6eyY01joYo9R
+    yNHNuaDiF0vTLmDD9RbXaejU1VVNIik/2E4YYV9ITgjr1Ot0BagH33S5lOqMWzw3
+    UZbuLU01OSVAj6wm5h/BFytmFd+v6S/tccOx46hKEF6Vr/4llzIJc7zNfdOPjgF5
+    bYyhN5bBjXrdt0AdfzdM9LQ3vgd4mGfu748hjqzJV2aJLpnqMJgiCtlf5R9Ffj6x
+    cxgHRkm7u0uaapmJR+vey6RHlIxClHbSt8Wdnh+ImEK3FlssuSzVA6cRRVq8nR0k
+    xfRho4rqUGsFZrStF8qscw==
+    """
