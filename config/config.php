@@ -2,6 +2,21 @@
 
 return [
 	'stable' => [
+		'10.5' => [
+			'100' => [
+				'latest' => '20.0.4',
+				'internalVersion' => '20.0.4.0',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-20.0.4.zip',
+				'web' => 'https://docs.nextcloud.com/server/20/admin_manual/maintenance/manual_upgrade.html',
+				'minPHPVersion' => '7.2',
+				'signature' => 'NGnbpWWpZWcju26Av57gJd1cHusErTGHnt+r1cwPibd/MH6df9eb8xJhXcHeLSMt
+QI88IcZyX7Gavl5i5pB/zOANhOrgDTCaRokrfICFaL8ZhFHF1yK7oOTKhB3U3jQu
+sSdjxAg3azNcPXtAIJtEED38YnQFwHOIWeAaWAHvBzIxgG6fJh/iRsYM0+JsabBH
+LF55NkWIfsVvWS7ZpmAbIPWbh3t9DTdnQBdhXtIyyp+WxNtRuZP6bsIwoOs4HDgc
+oKV5Q9OpZ+a5p95jJUuEkOyqgzE7pyqQj/LZ990pBzKlgq3eKoIIFgZK3I/hOZXC
+zAQ3mXtrijNy/j9sloE03w==',
+			],
+		],
 		'10.0' => [
 			'100' => [
 				'latest' => '12.0.12',
