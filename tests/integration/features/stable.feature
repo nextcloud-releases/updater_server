@@ -690,12 +690,12 @@ Feature: Testing the update scenario of stable releases
     And EOL is set to "0"
     And The signature is
     """
-    NGnbpWWpZWcju26Av57gJd1cHusErTGHnt+r1cwPibd/MH6df9eb8xJhXcHeLSMt
-    QI88IcZyX7Gavl5i5pB/zOANhOrgDTCaRokrfICFaL8ZhFHF1yK7oOTKhB3U3jQu
-    sSdjxAg3azNcPXtAIJtEED38YnQFwHOIWeAaWAHvBzIxgG6fJh/iRsYM0+JsabBH
-    LF55NkWIfsVvWS7ZpmAbIPWbh3t9DTdnQBdhXtIyyp+WxNtRuZP6bsIwoOs4HDgc
-    oKV5Q9OpZ+a5p95jJUuEkOyqgzE7pyqQj/LZ990pBzKlgq3eKoIIFgZK3I/hOZXC
-    zAQ3mXtrijNy/j9sloE03w==
+    ClTarIGaxeGs3sU1mwUkFrd3Y4x6j+FA7gNaZHljfgW78sFmEFHUlPm3EtCCSNFF
+    AbCkOoFrj52PZI9Mj4C3lyuDtS4lRHaz6u9UKr74K7uqvEy0Wsuh8lisFwZY84FP
+    OP/ML5q/gAyHFcX642cmCRvX5CwATTbMZWJu8i4StwpVlcvLf8K9ZYChd+r82yDf
+    zZTRXjT32LcGK+XzWteU0thlw3B5XVFBM6feWYp6QMB1sf/hgxZt/R6bt+A3DKMg
+    6bubvECfuzmG/hiGR+KoonDNUdNaQEML6XQ7o9Rr0o9uj66Sfx53sj6fXODlSxJL
+    EpPL6uqEg/2XoXjnLo975Q==
     """
 
   Scenario: Updating the Nextcloud 20.0.0 on the stable channel
@@ -711,10 +711,10 @@ Feature: Testing the update scenario of stable releases
     And EOL is set to "0"
     And The signature is
     """
-    NGnbpWWpZWcju26Av57gJd1cHusErTGHnt+r1cwPibd/MH6df9eb8xJhXcHeLSMt
-    QI88IcZyX7Gavl5i5pB/zOANhOrgDTCaRokrfICFaL8ZhFHF1yK7oOTKhB3U3jQu
-    sSdjxAg3azNcPXtAIJtEED38YnQFwHOIWeAaWAHvBzIxgG6fJh/iRsYM0+JsabBH
-    LF55NkWIfsVvWS7ZpmAbIPWbh3t9DTdnQBdhXtIyyp+WxNtRuZP6bsIwoOs4HDgc
-    oKV5Q9OpZ+a5p95jJUuEkOyqgzE7pyqQj/LZ990pBzKlgq3eKoIIFgZK3I/hOZXC
-    zAQ3mXtrijNy/j9sloE03w==
-    """00
+    ClTarIGaxeGs3sU1mwUkFrd3Y4x6j+FA7gNaZHljfgW78sFmEFHUlPm3EtCCSNFF
+    AbCkOoFrj52PZI9Mj4C3lyuDtS4lRHaz6u9UKr74K7uqvEy0Wsuh8lisFwZY84FP
+    OP/ML5q/gAyHFcX642cmCRvX5CwATTbMZWJu8i4StwpVlcvLf8K9ZYChd+r82yDf
+    zZTRXjT32LcGK+XzWteU0thlw3B5XVFBM6feWYp6QMB1sf/hgxZt/R6bt+A3DKMg
+    6bubvECfuzmG/hiGR+KoonDNUdNaQEML6XQ7o9Rr0o9uj66Sfx53sj6fXODlSxJL
+    EpPL6uqEg/2XoXjnLo975Q==
+    """
