@@ -1,0 +1,33 @@
+name: Integration tests
+
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+      - production
+
+jobs:
+  php:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        php-versions: ['7.3', '7.4', '8.0']
+  
+    name: php${{ matrix.php-versions }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up php ${{ matrix.php-versions }}
+        uses: shivammathur/setup-php@v1
+        with:
+          php-version: ${{ matrix.php-versions }}
+          coverage: none
+
+      - name: Install composer
+        run: composer install
+      - name: Start webserver
+        run: php -S localhost:8888 index.php &
+      - name: Run behat
+        run: cd tests/integration && ../../vendor/bin/behat .
