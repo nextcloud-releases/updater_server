@@ -442,35 +442,35 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 	'beta' => [
 		'21' => [
 			'100' => [
-				'latest' => '21.0.0 beta 6',
-				'internalVersion' => '21.0.0.13',
-				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-21.0.0beta6.zip',
+				'latest' => '21.0.0 beta 7',
+				'internalVersion' => '21.0.0.14',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-21.0.0beta7.zip',
 				'web' => 'https://docs.nextcloud.com/server/20/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '7.3',
-				'signature' => 'sbkdyiltUQsfS+RfsbGxrAkq8KA19qT9r15GW9Kr1yJG/JDNMgGI568NwCX0Lvwt
-AuOZViopvkpj9qOojxle5pfKbm5s9kjgFrsAI1W9e/355Xi4TVppCjwlO1fuJxk3
-vyzm44fiHz97J+2XgfwVDC1JHl1kEG+uQzbwkmam3tG1w49UURWCO0SyoheEHvGe
-WtKGZVgssHg3MPgaqRdcxpdb+817eSVDAOY9V6gdGoSNFrWiLH+hDWajr95E6UEo
-wY5AY1ru9kB8LZ4cTZA6XxdlglOy98qiJlpWRwWGGMQ3DLVQDQ5oaK4APcJZQftG
-N5YeYC8UmQMMnfMK8Z4xIg==',
+				'signature' => 'Pmx/eipcS+p59DkOUx46iGop2VhtjR8FHfiQvAAvE20IxPybTA5vWyMD1LfQMwdq
+0i/QtpKqSB6qVSozKUM8cXOz2CoxCU2BljG5d9DB84GUwfEmeiHu5NVigzoSX8NI
+guBoU6qNIQU+nO068jQ4G22nnAxQUxUSSxEjYRNkC5cqRujud+aHnGB253dFiVai
+90UE4iQstZccquk9lealhFekMAiPCJM7pqk6DeaisajF5qQXva7LpnfHbU0H+/Q6
+ypgqHUKHzX5Vlu13kpcwgRRz/MwtFYbmVIS9K47rjfnxJ7Z5gv5dYHNrVYkN1Zyg
+5vLl4w4tMRX1O6EuwU3kfQ==',
 			],
 		],
 		'20.0.6.0' => [
-			'100' => [
-				'latest' => '21.0.0 beta 6',
-				'internalVersion' => '21.0.0.13',
-				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-21.0.0beta6.zip',
-				'web' => 'https://docs.nextcloud.com/server/20/admin_manual/maintenance/upgrade.html',
-				'eol' => false,
-				'minPHPVersion' => '7.3',
-				'signature' => 'sbkdyiltUQsfS+RfsbGxrAkq8KA19qT9r15GW9Kr1yJG/JDNMgGI568NwCX0Lvwt
-AuOZViopvkpj9qOojxle5pfKbm5s9kjgFrsAI1W9e/355Xi4TVppCjwlO1fuJxk3
-vyzm44fiHz97J+2XgfwVDC1JHl1kEG+uQzbwkmam3tG1w49UURWCO0SyoheEHvGe
-WtKGZVgssHg3MPgaqRdcxpdb+817eSVDAOY9V6gdGoSNFrWiLH+hDWajr95E6UEo
-wY5AY1ru9kB8LZ4cTZA6XxdlglOy98qiJlpWRwWGGMQ3DLVQDQ5oaK4APcJZQftG
-N5YeYC8UmQMMnfMK8Z4xIg==',
-			],
+            '100' => [
+                'latest' => '21.0.0 beta 7',
+                'internalVersion' => '21.0.0.14',
+                'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-21.0.0beta7.zip',
+                'web' => 'https://docs.nextcloud.com/server/20/admin_manual/maintenance/upgrade.html',
+                'eol' => false,
+                'minPHPVersion' => '7.3',
+                'signature' => 'Pmx/eipcS+p59DkOUx46iGop2VhtjR8FHfiQvAAvE20IxPybTA5vWyMD1LfQMwdq
+0i/QtpKqSB6qVSozKUM8cXOz2CoxCU2BljG5d9DB84GUwfEmeiHu5NVigzoSX8NI
+guBoU6qNIQU+nO068jQ4G22nnAxQUxUSSxEjYRNkC5cqRujud+aHnGB253dFiVai
+90UE4iQstZccquk9lealhFekMAiPCJM7pqk6DeaisajF5qQXva7LpnfHbU0H+/Q6
+ypgqHUKHzX5Vlu13kpcwgRRz/MwtFYbmVIS9K47rjfnxJ7Z5gv5dYHNrVYkN1Zyg
+5vLl4w4tMRX1O6EuwU3kfQ==',
+            ],
 		],
 		'20' => [
 			'100' => [
