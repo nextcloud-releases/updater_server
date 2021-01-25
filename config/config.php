@@ -124,7 +124,7 @@ XEwieCXOgc5hfMQDfq3Wr2SUAh98+CGgWeAkQRgMNB6eYFo+m1xzIO08AL0QJWRm
 +Hy3LiZGWSIEYhjEt7+UUw==',
 			],
 		],
-		'19.0.7' => [
+		'19.0.8' => [
 			'100' => [
 				'latest' => '20.0.5',
 				'internalVersion' => '20.0.5.2',
@@ -141,35 +141,35 @@ XEwieCXOgc5hfMQDfq3Wr2SUAh98+CGgWeAkQRgMNB6eYFo+m1xzIO08AL0QJWRm
 			],
 		],
 		'19' => [
-			'100' => [
-				'latest' => '19.0.7',
-				'internalVersion' => '19.0.7.1',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-19.0.7.zip',
-				'web' => 'https://docs.nextcloud.com/server/19/admin_manual/maintenance/upgrade.html',
-				'eol' => false,
-				'minPHPVersion' => '7.2',
-				'signature' => 'WdzFyLaskAevN00ddLpGq4T2fdy0ZA4ORhbyhvi8+ffeQKVUM4IMcjKPWRG1D/qC
-yQ1vg2y9Pj9tE44RP+a7NsiwjVTSCKfF82YOhX3t9QLVNI/0T+NykBtOhjzOq4vX
-yZ4f+UUoJP7ClMWADBVikBKt5RRG+VDa8wwLCWk7VJmuZyeNJVHmvGLYALJ+Ii/P
-fPWyUeQHR+GCOyzGwOCjC88wnCIggYHdqz2UlZ+0AMSHkJMVUhpoN8caShgKmBx5
-o0cmHOdyz4r6l/PrxRYBZC/EBlG2ffWc4/DF6AUH4u1ItLoETqaNf0t5HVNo1b1l
-NCG81lx4T14ignMP4o0uEw==',
-			],
+            '100' => [
+                'latest' => '19.0.8',
+                'internalVersion' => '19.0.8.1',
+                'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-19.0.8.zip',
+                'web' => 'https://docs.nextcloud.com/server/19/admin_manual/maintenance/upgrade.html',
+                'eol' => false,
+                'minPHPVersion' => '7.2',
+                'signature' => 'f3K0VoNPXh3yRt4Wku6cE0kQJTDvxQElK3meqWYC5PWaUDb3EHjqxEiin7s5Ul9t
+wyvPRp4cpMsNHANZvuoZhehSZk28SCVDS2K4UYuLnvCror0Wz8Hs3pfkA6vKB+Zw
+SnGPhbpgGZw9Fk5s8eq1HJqKNKlHBL8H07e2hLO+H/GdeKrcX1TjuuOqS3qz+l+1
+XBKqAWAZlz60Xhsn2+iMwuNOlrrY3YJgvNrmWfRmp2d0nq9jcurzVHWCMSdg3J1W
+sqjrV4Kf4EKEeNCkVTAmPD2HeuIUf6LXdGj4VaZ21HwrcY+xZJI/NJbhK1I4H+B7
+2IAbvUBqulIEIwXi7Y5REg==',
+            ],
 		],
 		'18.0.14' => [
 			'100' => [
-				'latest' => '19.0.7',
-				'internalVersion' => '19.0.7.1',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-19.0.7.zip',
+				'latest' => '19.0.8',
+				'internalVersion' => '19.0.8.1',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-19.0.8.zip',
 				'web' => 'https://docs.nextcloud.com/server/19/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '7.2',
-				'signature' => 'WdzFyLaskAevN00ddLpGq4T2fdy0ZA4ORhbyhvi8+ffeQKVUM4IMcjKPWRG1D/qC
-yQ1vg2y9Pj9tE44RP+a7NsiwjVTSCKfF82YOhX3t9QLVNI/0T+NykBtOhjzOq4vX
-yZ4f+UUoJP7ClMWADBVikBKt5RRG+VDa8wwLCWk7VJmuZyeNJVHmvGLYALJ+Ii/P
-fPWyUeQHR+GCOyzGwOCjC88wnCIggYHdqz2UlZ+0AMSHkJMVUhpoN8caShgKmBx5
-o0cmHOdyz4r6l/PrxRYBZC/EBlG2ffWc4/DF6AUH4u1ItLoETqaNf0t5HVNo1b1l
-NCG81lx4T14ignMP4o0uEw==',
+				'signature' => 'f3K0VoNPXh3yRt4Wku6cE0kQJTDvxQElK3meqWYC5PWaUDb3EHjqxEiin7s5Ul9t
+wyvPRp4cpMsNHANZvuoZhehSZk28SCVDS2K4UYuLnvCror0Wz8Hs3pfkA6vKB+Zw
+SnGPhbpgGZw9Fk5s8eq1HJqKNKlHBL8H07e2hLO+H/GdeKrcX1TjuuOqS3qz+l+1
+XBKqAWAZlz60Xhsn2+iMwuNOlrrY3YJgvNrmWfRmp2d0nq9jcurzVHWCMSdg3J1W
+sqjrV4Kf4EKEeNCkVTAmPD2HeuIUf6LXdGj4VaZ21HwrcY+xZJI/NJbhK1I4H+B7
+2IAbvUBqulIEIwXi7Y5REg==',
 			],
 		],
 		'18' => [
@@ -488,7 +488,7 @@ WndTqk3Qzi9g2ppbBnlpCQoMzzw2jpPoy697tKUQjC2gL0gqs+AibSSgrP82IvIc
 HmY13Wyk9b8JpDfDsgdjhA==',
 			],
 		],
-		'19.0.7' => [
+		'19.0.8.1' => [
             '100' => [
                 'latest' => '20.0.6 RC1',
                 'internalVersion' => '20.0.6.0',
@@ -505,35 +505,35 @@ HmY13Wyk9b8JpDfDsgdjhA==',
             ],
 		],
 		'19' => [
-			'100' => [
-				'latest' => '19.0.8 RC1',
-				'internalVersion' => '19.0.8.0',
-				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-19.0.8RC1.zip',
-				'web' => 'https://docs.nextcloud.com/server/19/admin_manual/maintenance/upgrade.html',
-				'eol' => false,
-				'minPHPVersion' => '7.2',
-				'signature' => 'QMlA86VJJhbuLA5mDCGGCfThbpy05XhUpsOAUQx3sdIbLerhRBgQkjRrQvDeAEOh
-f2Zkt3lAv7vTdUNYtcuemZ/exM255ppZyKTEO+5s/FEzFi6+vLpeAGW6slNg0rQQ
-J2JckwPm2Uf57AOuSdKq/9yTNtXYGCdFGTokB5Hz6couYUGYFcRQS7d+6UzpVQZF
-YAvIk33MWIY+F6BMsuGJOhrXM3ZMIBUlvNo/plCCf/KouPbdTcf+gyWus/WgPFPM
-U1FHlJw/T4yxtos10+A60167A/OfonvAZejiP/yVeY5G9JMEm/+DsP2G0QpIJ5d8
-gjfXFODgrvEKse0ffCzVjA==',
-			],
-		],
-		'18.0.14' => [
             '100' => [
-                'latest' => '19.0.8 RC1',
-                'internalVersion' => '19.0.8.0',
-                'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-19.0.8RC1.zip',
+                'latest' => '19.0.8',
+                'internalVersion' => '19.0.8.1',
+                'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-19.0.8.zip',
                 'web' => 'https://docs.nextcloud.com/server/19/admin_manual/maintenance/upgrade.html',
                 'eol' => false,
                 'minPHPVersion' => '7.2',
-                'signature' => 'QMlA86VJJhbuLA5mDCGGCfThbpy05XhUpsOAUQx3sdIbLerhRBgQkjRrQvDeAEOh
-f2Zkt3lAv7vTdUNYtcuemZ/exM255ppZyKTEO+5s/FEzFi6+vLpeAGW6slNg0rQQ
-J2JckwPm2Uf57AOuSdKq/9yTNtXYGCdFGTokB5Hz6couYUGYFcRQS7d+6UzpVQZF
-YAvIk33MWIY+F6BMsuGJOhrXM3ZMIBUlvNo/plCCf/KouPbdTcf+gyWus/WgPFPM
-U1FHlJw/T4yxtos10+A60167A/OfonvAZejiP/yVeY5G9JMEm/+DsP2G0QpIJ5d8
-gjfXFODgrvEKse0ffCzVjA==',
+                'signature' => 'f3K0VoNPXh3yRt4Wku6cE0kQJTDvxQElK3meqWYC5PWaUDb3EHjqxEiin7s5Ul9t
+wyvPRp4cpMsNHANZvuoZhehSZk28SCVDS2K4UYuLnvCror0Wz8Hs3pfkA6vKB+Zw
+SnGPhbpgGZw9Fk5s8eq1HJqKNKlHBL8H07e2hLO+H/GdeKrcX1TjuuOqS3qz+l+1
+XBKqAWAZlz60Xhsn2+iMwuNOlrrY3YJgvNrmWfRmp2d0nq9jcurzVHWCMSdg3J1W
+sqjrV4Kf4EKEeNCkVTAmPD2HeuIUf6LXdGj4VaZ21HwrcY+xZJI/NJbhK1I4H+B7
+2IAbvUBqulIEIwXi7Y5REg==',
+            ],
+		],
+		'18.0.14' => [
+            '100' => [
+                'latest' => '19.0.8',
+                'internalVersion' => '19.0.8.1',
+                'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-19.0.8.zip',
+                'web' => 'https://docs.nextcloud.com/server/19/admin_manual/maintenance/upgrade.html',
+                'eol' => false,
+                'minPHPVersion' => '7.2',
+                'signature' => 'f3K0VoNPXh3yRt4Wku6cE0kQJTDvxQElK3meqWYC5PWaUDb3EHjqxEiin7s5Ul9t
+wyvPRp4cpMsNHANZvuoZhehSZk28SCVDS2K4UYuLnvCror0Wz8Hs3pfkA6vKB+Zw
+SnGPhbpgGZw9Fk5s8eq1HJqKNKlHBL8H07e2hLO+H/GdeKrcX1TjuuOqS3qz+l+1
+XBKqAWAZlz60Xhsn2+iMwuNOlrrY3YJgvNrmWfRmp2d0nq9jcurzVHWCMSdg3J1W
+sqjrV4Kf4EKEeNCkVTAmPD2HeuIUf6LXdGj4VaZ21HwrcY+xZJI/NJbhK1I4H+B7
+2IAbvUBqulIEIwXi7Y5REg==',
             ],
 		],
         '18' => [
