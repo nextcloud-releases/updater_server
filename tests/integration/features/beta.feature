@@ -460,18 +460,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "21.0.0.15" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-21.0.0beta8.zip"
-    And URL to documentation is "https://docs.nextcloud.com/server/20/admin_manual/maintenance/upgrade.html"
+    And Update to version "21.0.0.16" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-21.0.0RC1.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/21/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    yuVNpUGL9HQRDtMsCuyTX0aXX7eVXS9evO5vGUbRAvyLBra0/EpbWIbX7MmxL8Kj
-    QqVoEpp05VRRf72g+xMGl938R0mA553aN3Bw7yR/bOsQzSXDEQmqNWSllLDoCJoP
-    N+xNE9EIoDV+vy0bvH2Zylh04jrtxV34tArxw0zfl0qhwlK4q2EfI8b4cXbRos33
-    lgM2mykS7Ox/xO1t8VzKfPA3c7FVLaS+7zI93o6DvHX/WS2hX9f82ab7a2aa9Tnb
-    eNJHft7DYKSnxWfACAEbRkvTQMj3+//JD3c7oTawiHZI4cqu6AHGeBAvZvOO3Sqv
-    kyQ8UBYLQsrc+CyFhDQEPQ==
+    O3ureR9JfoNd29NF6S/fk4Mhqg3S99ZZACayl5DJdzrGv5VkmUOkohbKqu0xF758
+    c4t4GsMJ+npJRcPVcHoRTKyL9QwgsleNeEXQR69xI3yNCp6yADOPNvkfbiq7LVqd
+    AokTr1syT4vMt2foInj+asfRD/98leY9k9QG60ITuSvLVl/RnUHuBg+2D7OthdIg
+    5BK0BwkBiiYX9JftJRVfCq+B6FYKso1Y7uBQfF57OiEfgpJq5228hrpnHPDuh9yK
+    EUiAXmJv/GNJ3vutwj7vf0F2PyxgSe262zboXE02kIAjM7hbqmmlhVLE1ZXwOAfB
+    3TQc9oeLKc15aadE+RfW1Q==
     """
 
   Scenario: Updating the Nextcloud 21.0.0 on the beta channel
@@ -481,16 +481,16 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "21.0.0.15" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-21.0.0beta8.zip"
-    And URL to documentation is "https://docs.nextcloud.com/server/20/admin_manual/maintenance/upgrade.html"
+    And Update to version "21.0.0.16" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-21.0.0RC1.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/21/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    yuVNpUGL9HQRDtMsCuyTX0aXX7eVXS9evO5vGUbRAvyLBra0/EpbWIbX7MmxL8Kj
-    QqVoEpp05VRRf72g+xMGl938R0mA553aN3Bw7yR/bOsQzSXDEQmqNWSllLDoCJoP
-    N+xNE9EIoDV+vy0bvH2Zylh04jrtxV34tArxw0zfl0qhwlK4q2EfI8b4cXbRos33
-    lgM2mykS7Ox/xO1t8VzKfPA3c7FVLaS+7zI93o6DvHX/WS2hX9f82ab7a2aa9Tnb
-    eNJHft7DYKSnxWfACAEbRkvTQMj3+//JD3c7oTawiHZI4cqu6AHGeBAvZvOO3Sqv
-    kyQ8UBYLQsrc+CyFhDQEPQ==
+    O3ureR9JfoNd29NF6S/fk4Mhqg3S99ZZACayl5DJdzrGv5VkmUOkohbKqu0xF758
+    c4t4GsMJ+npJRcPVcHoRTKyL9QwgsleNeEXQR69xI3yNCp6yADOPNvkfbiq7LVqd
+    AokTr1syT4vMt2foInj+asfRD/98leY9k9QG60ITuSvLVl/RnUHuBg+2D7OthdIg
+    5BK0BwkBiiYX9JftJRVfCq+B6FYKso1Y7uBQfF57OiEfgpJq5228hrpnHPDuh9yK
+    EUiAXmJv/GNJ3vutwj7vf0F2PyxgSe262zboXE02kIAjM7hbqmmlhVLE1ZXwOAfB
+    3TQc9oeLKc15aadE+RfW1Q==
     """
