@@ -456,7 +456,7 @@ tpkduDefVMocg503j8ogQ7gFqA7EUkzTa1lRwQf784+h7yidm+SVJChyC9vEsa7d
 HmEUO9qZf7n2Pfsmipfqbg==',
 			],
 		],
-		'20.0.7.1' => [
+		'20.0.8.0' => [
             '100' => [
                 'latest' => '21.0.0 RC2',
                 'internalVersion' => '21.0.0.17',
@@ -474,34 +474,34 @@ HmEUO9qZf7n2Pfsmipfqbg==',
 		],
 		'20' => [
             '100' => [
-                'latest' => '20.0.7',
-                'internalVersion' => '20.0.7.1',
-                'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-20.0.7.zip',
+                'latest' => '20.0.8 RC1',
+                'internalVersion' => '20.0.8.0',
+                'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-20.0.8RC1.zip',
                 'web' => 'https://docs.nextcloud.com/server/20/admin_manual/maintenance/upgrade.html',
                 'eol' => false,
                 'minPHPVersion' => '7.2',
-                'signature' => 'nc85F61OOmL3+Owiv7imtuQF1VxLCdZQtmIEwdKfMqXjBgrUkcfyJVJZd4BmNYKE
-QiygnEEavOkDEGS7qoSNzl/HKcE6DknE0/5dGak6He1kK4ycOzSrNciysG2BXU6c
-n/8S/PprAvCVdsHDiMgk/3ICvqBlxzRl5MxUGfXYID5UI0V1N5JNMXcCk5yDIZZJ
-vb5gmUaRREraXFWSPaUXi8SSFVydELeJcx/wT2MNUsByOQnph2lP9tJUZxJMqeyU
-M6oTzy4JLDpM1yA4BvarmcJLj9D5sRcIcM97VELTV5xc24Z9q8wZ2lVc1GemWyYa
-sooIXtVt1YFaMbC9UegDoA==',
+                'signature' => 'uXjbIQPRma2bxW0Q02vjTT9AbILuM5AsIUnB1Why8IEIc4RzX8OmbyZ/L+cOjyqk
+UFrzTNk3Jj/u+Y/3p1Zz+pls1N/kQnhdxC97qG/mS+2khva+7qLKIw9rH6z/Q7Qj
+kA/YwIwaBTdkRBap/pwHanysqNkPqvYABHKiDa8n4Ny0iyS8ww9VEn4GIvijSpGI
+doG2jNEB8+oD0zvj5j9iwt3PCLfUekh3eWTqatO/ReMfXI0QrByA86R0HI+R50Gr
+fzlOF59tFLjCEe4T2n5u/yNPbIDtPFwy13ynwp4EfOTsNGtBDqgMLOoATX9Iqof0
+37fElAWHQJEIKID2NDvd8w==',
             ],
 		],
 		'19.0.8.1' => [
             '100' => [
-                'latest' => '20.0.7',
-                'internalVersion' => '20.0.7.1',
-                'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-20.0.7.zip',
+                'latest' => '20.0.8 RC1',
+                'internalVersion' => '20.0.8.0',
+                'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-20.0.8RC1.zip',
                 'web' => 'https://docs.nextcloud.com/server/20/admin_manual/maintenance/upgrade.html',
                 'eol' => false,
                 'minPHPVersion' => '7.2',
-                'signature' => 'nc85F61OOmL3+Owiv7imtuQF1VxLCdZQtmIEwdKfMqXjBgrUkcfyJVJZd4BmNYKE
-QiygnEEavOkDEGS7qoSNzl/HKcE6DknE0/5dGak6He1kK4ycOzSrNciysG2BXU6c
-n/8S/PprAvCVdsHDiMgk/3ICvqBlxzRl5MxUGfXYID5UI0V1N5JNMXcCk5yDIZZJ
-vb5gmUaRREraXFWSPaUXi8SSFVydELeJcx/wT2MNUsByOQnph2lP9tJUZxJMqeyU
-M6oTzy4JLDpM1yA4BvarmcJLj9D5sRcIcM97VELTV5xc24Z9q8wZ2lVc1GemWyYa
-sooIXtVt1YFaMbC9UegDoA==',
+                'signature' => 'uXjbIQPRma2bxW0Q02vjTT9AbILuM5AsIUnB1Why8IEIc4RzX8OmbyZ/L+cOjyqk
+UFrzTNk3Jj/u+Y/3p1Zz+pls1N/kQnhdxC97qG/mS+2khva+7qLKIw9rH6z/Q7Qj
+kA/YwIwaBTdkRBap/pwHanysqNkPqvYABHKiDa8n4Ny0iyS8ww9VEn4GIvijSpGI
+doG2jNEB8+oD0zvj5j9iwt3PCLfUekh3eWTqatO/ReMfXI0QrByA86R0HI+R50Gr
+fzlOF59tFLjCEe4T2n5u/yNPbIDtPFwy13ynwp4EfOTsNGtBDqgMLOoATX9Iqof0
+37fElAWHQJEIKID2NDvd8w==',
             ],
 		],
 		'19' => [
