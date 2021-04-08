@@ -697,3 +697,24 @@ Feature: Testing the update scenario of stable releases
     R0EQjUguzbCoOXc1B33BKYOb1Bq10PHZbdrnQ1S54dvB0LftKyWgtwaAAC/BdOpg
     IctRU71WQPSDqMqrwGAAMA==
     """
+
+  Scenario: Updating the Nextcloud 21.0.0 on the stable channel
+    Given There is a release with channel "stable"
+    And The received version is "21.0.0.7"
+    And The received PHP version is "7.3.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "21.0.1.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-21.0.1.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/21/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    YJQMb8iq13NhbvfEddaSjNeqlMe/dB0nJ27EwmiAuqSMMRpvVg4BjijfNjoG8lY9
+    rs0k+YN4EkGSr1lhZvdWZ9LpmP1wug/l1wj8lWzjxp/588yp5jHs24XBsi14GrDY
+    tgcx/V6E2ELFfgXJY6R4y2bIaaDPPjDfi+a2nq5ut0RTalGaUh6jr1dzaKQ0rJXm
+    lqcZSGdY+smeb7ciFf0hykivKZATXHLczvYO3FUu/HVqlgRUxi+Q+wNjFmfFL3Vr
+    RGlZGz7bpa48/2sprNJ2CYGVLMjxtktUrUIH6NB0diVMK8kAd7+OIqtjCmUG307S
+    qRc0DHdtzXMmzq4t4PfZhg==
+    """
