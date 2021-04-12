@@ -8,6 +8,8 @@ use Behat\Behat\Context\SnippetAcceptingContext;
 
 class FeatureContext implements Context, SnippetAcceptingContext {
 	/** @var string */
+	private $requestKind = 'version';
+	/** @var string */
 	private $releaseChannel = '';
 	/** @var string */
 	private $majorVersion = '';
@@ -35,6 +37,27 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 	private $result = '';
 	/** @var array */
 	private $resultArray = [];
+
+	/**
+	 * @Given The request is version based
+	 */
+	public function theRequestIsVersionBased() {
+		$this->requestKind = 'version';
+	}
+
+	/**
+	 * @Given The request is channel based
+	 */
+	public function theRequestIsChannelBased() {
+		$this->requestKind = 'channel';
+	}
+
+	/**
+	 * @Given The requested channel is :arg1
+	 */
+	public function theRequestedChannelIs($arg1) {
+		$this->releaseChannel = $arg1;
+	}
 
 	/**
 	 * @Given There is a release with channel :arg1
@@ -114,9 +137,18 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 	 * @When The request is sent
 	 */
 	public function theRequestIsSent() {
+		$url = 'http://localhost:8888/?';
+		switch ($this->requestKind) {
+			case 'version':
+				$url .= 'version='.$this->buildVersionToSend();
+				break;
+			case 'channel':
+				$url .= 'channel='.$this->releaseChannel;
+				break;
+		}
 		$ch = curl_init();
 		$optArray = array(
-			CURLOPT_URL => 'http://localhost:8888/?version='.$this->buildVersionToSend(),
+			CURLOPT_URL => $url,
 			CURLOPT_RETURNTRANSFER => true
 		);
 		curl_setopt_array($ch, $optArray);

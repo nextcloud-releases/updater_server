@@ -3,11 +3,11 @@
  * @license MIT <http://opensource.org/licenses/MIT>
  */
 
-namespace UpdateServer;
+namespace UpdateServer\Requests;
 
 use UpdateServer\Exceptions\UnsupportedReleaseException;
 
-class Request {
+class VersionRequest {
 	/** @var int|null */
 	private $majorVersion = null;
 	/** @var int|null */
@@ -41,8 +41,7 @@ class Request {
 	 * @param array $server
 	 * @throws UnsupportedReleaseException If the release is not supported by this update script.
 	 */
-	public function __construct($versionString,
-								array $server) {
+	public function __construct(string $versionString, array $server) {
 		$this->readVersion($versionString, $server);
 	}
 

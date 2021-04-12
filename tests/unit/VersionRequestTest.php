@@ -5,11 +5,11 @@
 
 namespace Tests;
 
-use UpdateServer\Request;
+use UpdateServer\Requests\VersionRequest;
 
-class RequestTest extends \PHPUnit_Framework_TestCase {
+class VersionRequestTest extends \PHPUnit_Framework_TestCase {
 	public function testRequest() {
-		$request = new Request('8x2x0x12x1448709225.0768x1448709281xtestingxx2015-10-19T18:44:30+00:00%208ee2009de36e01a9866404f07722892f84c16e3e', []);
+		$request = new VersionRequest('8x2x0x12x1448709225.0768x1448709281xtestingxx2015-10-19T18:44:30+00:00%208ee2009de36e01a9866404f07722892f84c16e3e', []);
 		$this->assertSame(8, $request->getMajorVersion());
 		$this->assertSame(2, $request->getMinorVersion());
 		$this->assertSame(0, $request->getMaintenanceVersion());
@@ -23,7 +23,7 @@ class RequestTest extends \PHPUnit_Framework_TestCase {
 	}
 
 	public function testRequestPHP() {
-		$request = new Request('8x2x0x12x1448709225.0768x1448709281xtestingxx2015-10-19T18:44:30+00:00%208ee2009de36e01a9866404f07722892f84c16e3ex5x6x36', []);
+		$request = new VersionRequest('8x2x0x12x1448709225.0768x1448709281xtestingxx2015-10-19T18:44:30+00:00%208ee2009de36e01a9866404f07722892f84c16e3ex5x6x36', []);
 		$this->assertSame(8, $request->getMajorVersion());
 		$this->assertSame(2, $request->getMinorVersion());
 		$this->assertSame(0, $request->getMaintenanceVersion());
@@ -43,6 +43,6 @@ class RequestTest extends \PHPUnit_Framework_TestCase {
 	 * @expectedException \UpdateServer\Exceptions\UnsupportedReleaseException
 	 */
 	public function testRequestInvalidEntry() {
-		new Request('x8x2x0x12x1448709225.0768x1448709281xtestingxx2015-10-19T18:44:30+00:00%208ee2009de36e01a9866404f07722892f84c16e3e', []);
+		new VersionRequest('x8x2x0x12x1448709225.0768x1448709281xtestingxx2015-10-19T18:44:30+00:00%208ee2009de36e01a9866404f07722892f84c16e3e', []);
 	}
 }

@@ -63,24 +63,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' &&
 	exit();
 }
 
-// Return empty response if no version is supplied
-if(!isset($_GET['version']) || !is_string($_GET['version'])) {
-	exit();
-}
-
-// Parse the request
-try {
-	$request = new \UpdateServer\Request($_GET['version'], $_SERVER);
-} catch (\UpdateServer\Exceptions\UnsupportedReleaseException $e) {
-	exit();
-}
-
+// Read config
 try {
 	$config = new \UpdateServer\Config(__DIR__ . '/config/config.php');
 } catch (\RuntimeException $e) {
 	exit();
 }
 
-// Return a response
-$response = new \UpdateServer\Response($request, $config);
+// Check the request parameters
+if(isset($_GET['version']) && is_string($_GET['version'])) {
+	try {
+		$request = new \UpdateServer\Requests\VersionRequest($_GET['version'], $_SERVER);
+	} catch (\UpdateServer\Exceptions\UnsupportedReleaseException $e) {
+		exit();
+	}
+	$response = new \UpdateServer\Responses\VersionResponse($request, $config);
+} else if (isset($_GET['channel']) && is_string($_GET['channel'])) {
+	$request = new \UpdateServer\Requests\ChannelRequest($_GET['channel']);
+	$response = new \UpdateServer\Responses\ChannelResponse($request, $config);
+} else {
+	// Return empty response if no version or channel is supplied
+	exit();
+}
+
+// Return the response
 echo $response->buildResponse();
