@@ -21,13 +21,25 @@ Example call: updater_server/?version=9x0x0x12x1448709225.0768x1448709281xstable
 </nextcloud>
 ```
 
+Deployed URL: https://updates.nextcloud.com/updater_server/
+Example call: updater_server/?channel=stable
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<nextcloud>
+ <version>9.0.51</version>
+ <versionstring>Nextcloud 9.0.51</versionstring>
+ <url>https://download.nextcloud.com/server/releases/nextcloud-9.0.51.zip</url>
+ <web>https://docs.nextcloud.com/server/9/admin_manual/maintenance/upgrade.html</web>
+</nextcloud>
+```
+
 ## Webhook deployment
 
-If you wish to receive webhooks and then automatically deploy the lastest version of the updater server there is one special API endpoint available.
+If you wish to receive webhooks and then automatically deploy the latest version of the updater server there is one special API endpoint available.
 
-For this the [Github Webhook](https://developer.github.com/webhooks/) needs to be configured to send `push` events to the endpoint `/hook` of the updater server. There only the ending part is crucial. That means that any URL ending in `/hook` which is served by the `index.php` of the updater server will trigger this behaviour.
+For this the [GitHub Webhook](https://developer.github.com/webhooks/) needs to be configured to send `push` events to the endpoint `/hook` of the updater server. There only the ending part is crucial. That means that any URL ending in `/hook` which is served by the `index.php` of the updater server will trigger this behaviour.
 
-Configure a webhook on Github in the repository of choice with `application/json` as content type, a random secret and the `push` event to be sent.
+Configure a webhook on GitHub in the repository of choice with `application/json` as content type, a random secret and the `push` event to be sent.
 
 ![](docs/webhook.png)
 

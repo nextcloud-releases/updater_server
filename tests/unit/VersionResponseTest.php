@@ -6,25 +6,25 @@
 namespace Tests;
 
 use UpdateServer\Config;
-use UpdateServer\Request;
-use UpdateServer\Response;
+use UpdateServer\Requests\VersionRequest;
+use UpdateServer\Responses\VersionResponse;
 
-class ResponseTest extends \PHPUnit_Framework_TestCase {
-	/** @var Request */
+class VersionResponseTest extends \PHPUnit_Framework_TestCase {
+	/** @var VersionRequest */
 	private $request;
 	/** @var Config|\PHPUnit_Framework_MockObject_MockObject */
 	private $config;
-	/** @var Response */
+	/** @var VersionResponse */
 	private $response;
 
 	public function setUp() {
 		date_default_timezone_set('Europe/Berlin');
 
-		$this->request = $this->getMockBuilder(Request::class)
+		$this->request = $this->getMockBuilder(VersionRequest::class)
 			->disableOriginalConstructor()->getMock();
 		$this->config = $this->getMockBuilder(Config::class)
 			->disableOriginalConstructor()->getMock();
-		$this->response = new Response($this->request, $this->config);
+		$this->response = new VersionResponse($this->request, $this->config);
 	}
 
 	public function dailyVersionProvider() {
@@ -958,11 +958,11 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 	 * @dataProvider responseProviderWithDisabledUpdates
 	 */
 	public function testBuildResponseWithDisabledUpdaterChannel($channel,
-												$majorVersion,
-												$minorVersion,
-												$maintenanceVersion,
-												$revisionVersion,
-												$expected) {
+																$majorVersion,
+																$minorVersion,
+																$maintenanceVersion,
+																$revisionVersion,
+																$expected) {
 		$config = [
 			'8.2' => [
 				'100' => [
