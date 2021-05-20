@@ -600,18 +600,18 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "19.0.11.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-19.0.11.zip"
+    And Update to version "19.0.10.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-19.0.10.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/19/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
     """
-    X0hW1cYYrmhzK/RBtimc9C/aCA74OchO7JE7kdyvQlz2p700SvhAPStnUw1HsPI0
-    waON33cHcQkKoHhEEGGJaiZcZeMFNrgVb1yri1/+9iHA/vGIHzczngNtAthICDNp
-    2xe4iBRgKUaDmRbmRiDhHUIaDzWLlS41f/ofp9lZYEFYt0UfowUOOtMPtcE8wBvw
-    7ku8OyXLly+Rj8IGNgMRHR9v4+685rhbXrvT07vPLiK+YLyBK5NiEDlUYiFB8LC6
-    OJ4aLcpqMSLLIWl4zOWs8gP88rBHIeYmUGgrdvPe4RQQevnI3m6RXCMh6vQc40lv
-    GpYJ3ZFjFjQqrWVu0ifG9Q==
+    kj5WNx+vW7sYWDP+TSd3v9SEHhJVlEEGM7ZgaD9WdO4GfBeGJ7Qpd+UKEoRaUBaz
+    Aq4qahj077rzQtvWsxJHrRDs3+qrYFH0KW4CB/hsjpj5ZPwWL/u22Ir5xtij+Nat
+    g5tj4mBTOZh5DKFnr+aHIWNqSfFjTluObCqRmDt9REtTaq49QZ5auArlGEcY9ehW
+    CJ4sdGNNPUwvzWlGVeUoHuOK6f9N4L+YhPbrusp6HLxmXpUFMFuGwtbqVdxanVL2
+    XNZCqqw2fyFEPpeQ1hvIv61BKl8Gfvy0js/abMc6p3AouvTRW29SPBIvkjXrl/me
+    ZDi9ESHPzU9OhXFc8DNBqQ==
     """
 
   Scenario: Updating an outdated Nextcloud 18.0.0 on the stable channel (to 18)
@@ -627,12 +627,12 @@ Feature: Testing the update scenario of stable releases
     And EOL is set to "1"
     And The signature is
     """
-    nzM1fD0IYCr86Pb7fJLGQA0usVUOKE+JyFVVhJArh4BpdDI0C2yC7l2zeJgCEd+g
-    RiXGB1N5a7GTfNSqdLO6ho+5dEg55OQYiTE75ji+dTKz9IDz99crk4BiYIsKc+bt
-    Ztuq8p/kxJK7wkRlsxDTULQWlVe0f1shX2sTCg9CNYzY5/kwmQtz8OQ/umwya1sF
-    FedS379Vnpa2NgAEq9W45r9hP6iZmKDBlwrY+r/pBWaJteI9xW9Ag8hhv4pSku0q
-    BX4Qwl1YI2f8b0KHy3yIqmY58qsWTjGb319Nq3tPFsY8N2hUmFu4yve0nW6Zb/+1
-    OcrbOha2Z819kkukqEE34Q==
+    kj5WNx+vW7sYWDP+TSd3v9SEHhJVlEEGM7ZgaD9WdO4GfBeGJ7Qpd+UKEoRaUBaz
+    Aq4qahj077rzQtvWsxJHrRDs3+qrYFH0KW4CB/hsjpj5ZPwWL/u22Ir5xtij+Nat
+    g5tj4mBTOZh5DKFnr+aHIWNqSfFjTluObCqRmDt9REtTaq49QZ5auArlGEcY9ehW
+    CJ4sdGNNPUwvzWlGVeUoHuOK6f9N4L+YhPbrusp6HLxmXpUFMFuGwtbqVdxanVL2
+    XNZCqqw2fyFEPpeQ1hvIv61BKl8Gfvy0js/abMc6p3AouvTRW29SPBIvkjXrl/me
+    ZDi9ESHPzU9OhXFc8DNBqQ==
     """
 
   Scenario: Updating an outdated Nextcloud 19.0.0 on the stable channel to 19
@@ -642,23 +642,23 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "33"
     When The request is sent
     Then The response is non-empty
-    And Update to version "19.0.11.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-19.0.11.zip"
+    And Update to version "19.0.10.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-19.0.10.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/19/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    X0hW1cYYrmhzK/RBtimc9C/aCA74OchO7JE7kdyvQlz2p700SvhAPStnUw1HsPI0
-    waON33cHcQkKoHhEEGGJaiZcZeMFNrgVb1yri1/+9iHA/vGIHzczngNtAthICDNp
-    2xe4iBRgKUaDmRbmRiDhHUIaDzWLlS41f/ofp9lZYEFYt0UfowUOOtMPtcE8wBvw
-    7ku8OyXLly+Rj8IGNgMRHR9v4+685rhbXrvT07vPLiK+YLyBK5NiEDlUYiFB8LC6
-    OJ4aLcpqMSLLIWl4zOWs8gP88rBHIeYmUGgrdvPe4RQQevnI3m6RXCMh6vQc40lv
-    GpYJ3ZFjFjQqrWVu0ifG9Q==
+    kj5WNx+vW7sYWDP+TSd3v9SEHhJVlEEGM7ZgaD9WdO4GfBeGJ7Qpd+UKEoRaUBaz
+    Aq4qahj077rzQtvWsxJHrRDs3+qrYFH0KW4CB/hsjpj5ZPwWL/u22Ir5xtij+Nat
+    g5tj4mBTOZh5DKFnr+aHIWNqSfFjTluObCqRmDt9REtTaq49QZ5auArlGEcY9ehW
+    CJ4sdGNNPUwvzWlGVeUoHuOK6f9N4L+YhPbrusp6HLxmXpUFMFuGwtbqVdxanVL2
+    XNZCqqw2fyFEPpeQ1hvIv61BKl8Gfvy0js/abMc6p3AouvTRW29SPBIvkjXrl/me
+    ZDi9ESHPzU9OhXFc8DNBqQ==
     """
 
   Scenario: Updating an outdated Nextcloud 19.0.11 on the stable channel to 20
     Given There is a release with channel "stable"
-    And The received version is "19.0.11.1"
+    And The received version is "19.0.10.1"
     And The received PHP version is "7.2.0"
     And the installation mtime is "77"
     When The request is sent
