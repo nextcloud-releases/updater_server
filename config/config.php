@@ -170,7 +170,7 @@ KRpLyOJGFmX0PRJe5iIcXGfcyVIJw1xTS1a/NDlyl+mJMm+JlyALB9EWZdTKU/1Z
 8uTq9Ow1u5peR1M+/S8aiw==',
 			],
 		],
-		'19.0.11' => [
+		'19.0.12' => [
 			'100' => [
 				'latest' => '20.0.10',
 				'internalVersion' => '20.0.10.1',

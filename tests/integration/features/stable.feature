@@ -658,7 +658,7 @@ Feature: Testing the update scenario of stable releases
 
   Scenario: Updating an outdated Nextcloud 19.0.11 on the stable channel to 20
     Given There is a release with channel "stable"
-    And The received version is "19.0.11.1"
+    And The received version is "19.0.12.0"
     And The received PHP version is "7.2.0"
     And the installation mtime is "77"
     When The request is sent
