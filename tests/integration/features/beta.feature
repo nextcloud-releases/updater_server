@@ -481,16 +481,16 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "22.0.0.5" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-22.0.0beta2.zip"
-    And URL to documentation is "https://docs.nextcloud.com/server/22/admin_manual/maintenance/upgrade.html"
+    And Update to version "21.0.2.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-21.0.2.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/21/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    pHd8MFfYnTqpgqgl2yh77nFFaYPPGAyMwKNuRthIpvCYmTiKd/RnFtl0hjT0Ocsz
-    Qfci3Ta1o2dpeFYJwUWS7T98d7jp5VqSRZK7A36WjUhFRiYC/jO4lVqSKW8uYgMF
-    bhRI2LPkBOxo5O1V+Ddeo7lNmFmlFdBBRTuzdEIzlYq1xewqSqL6DaAENyCWyXPD
-    fho8t0jqWofV4jOJgztxSUqF16jpf0697h9jNlGip4xN8ebXovI0tyrfrm8Pikq5
-    Tg2bSStx9ZCZCgyVhs1JJLgWvhEYzbri3VZQ2Zrr+f0oPFVVMG0froQWrvDD+rDc
-    eq8EUENFPRtYe6ygBeeOUA==
+    GNcoGdZ/5tNdSCLkuXa1sWCaoZlShXwjM61BvW8evf/M0j+B6gGfMhYwRYw3XAvx
+    n2b+7F+LT64TSSlNqbHluTWlg+Tw+hm8nIj4c0Ro5Kvezagu9xzxi9SJAVgiBfq8
+    d4oJRp303C3QQOesJOM1SgnV5+MxbvELZWGqrIpAQKBmye3k23TgeeUlcjcKgHKh
+    9OeB4sf4oRqOVg6fOK8X5Rw7C6LdTd8Y279JnosxFjHG9fHjuT95/LX53Jc+N2WZ
+    /YSeFe6mDPNVD7xbNPGwEXDT2wxS/DYZnaYvLiwZAUcAJho0eRyyP84IavcwlkyR
+    YOhBKMt+kiyEnUbSW9lLRw==
     """
