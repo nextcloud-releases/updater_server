@@ -476,21 +476,21 @@ Feature: Testing the update scenario of beta releases
 
   Scenario: Updating the Nextcloud 21.0.0 on the beta channel
     Given There is a release with channel "beta"
-    And The received version is "21.0.0.7"
+    And The received version is "21.0.0.8"
     And The received PHP version is "7.3.0"
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "22.0.0.7" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-22.0.0beta4.zip"
+    And Update to version "22.0.0.8" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-22.0.0beta5.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/22/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    FvOX6HHxwkpTTSYY7E24xVVfJvbzEsFQ3xYg9MNTaSCFwG+jiowb852bBZvT8nz5
-    AfzAfqb7QbBEvN3TM6J4uV8MDvOWby92WWavoVK7ESo2EEHr6tenKcUPLfkGoyiH
-    LZnzT5oj0kwPTB3aiOqGI8B5lryyOn28ga4nwC31mYJgBRvcTDaIFeDkS46Z7LuQ
-    vkBlyXAJ8oPB1ncvMpdQZLB7dUFTNL7UbM9PFdaXLLP2FbTMqIWqGgdSDuwTOTBQ
-    RxkFuLOQT88kK+mxyyxPplpAAV0vsto7KZPcrXYJgC2hKdggQlM2qyMC7DRbNVSH
-    M/QbuV1wLusq7AsFfv6YFA==
+    XaMI41NQP61oA1bquk0V6vwgdyMVEQc8vdhqo2vhro872VZlfUszrVJeAMeyhnyH
+    BoOHPIAR38h5cNqGsI4xSMYmi4rwbel0VuXQ5rZQ9OmMZTyajKnHyzPCJfaLxan+
+    BNqObzKXs7bsG9RDSP5G1HLAtOJqgOtX1L8AkPtAthF++KF8a9/9Y2lQGfEhpoL2
+    rJFoOIHa7pR7svZY2mWi9WqWPDvgbB1sm3lCGbKlE3uU20+xEmiwDVFx7+UY4u2/
+    VSOGR0iJ6oin0t2XyzKc0QV0SsFeVHufu9Iho3WkcKSsJNS7qs1Cgt63AyUz9IMD
+    dcV8f/X4sqcSBFGXxAlioQ==
     """
