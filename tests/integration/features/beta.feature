@@ -487,10 +487,10 @@ Feature: Testing the update scenario of beta releases
     And EOL is set to "0"
     And The signature is
     """
-    qpH8QSvGt9He+Ig6KASwTxStuF2aq61bVgjpmXM+WF+ZXe5je6CIr/dkBrIaoTev
-    hCFfZ8Yv24VNRiFjgxatqFFzmfgdNJpkg3I4V/E6euyH40tmB1MlytfYTW/NEm3n
-    Q8zeFncueiOJSJO81dI8/g/lxHzGC8Sfy4HzzYqj6WAY3k00a84FyYjabKCMA6qs
-    6wqJCduQsBTuwxM+24P1aEWbmtbQGA0lsY0MXITecbuQjXXsKSkPHNU1v7w9jEHV
-    ZtZ1as190f0FSZEA7B1monPLNXV/NcHInedLl/v3R/SBh73kMQXpcheyyCad2RTY
-    TjSME8xlk44TszP3X7rdpQ==
+    D80kvcT6xYRiy3QjgkzezYlkTFN+VCrCavWp4SxeKSW8GDzl6FNkk6k0EyCeI1va
+    7zlDqHWGsBm60NXkRJPWjECwBNL5r2kCMaWNrMvcF5nfGBlq1AezonP+eic1RzH7
+    UnYttp0MUrbSn8PwdlWs7DK4eRUU1RlJfHTJQYpEvk6ES7nhQnC2gRqdKKgwCV9Y
+    OrFwfRy71iA5veJs5TByWXG270i7H2Xu+FyoBK2VS/SZqZOGjR+NATOrFmUTx5lU
+    px77wUyv+AYd3V7skJrAnvKj4PjjQu+v6NJz9dg3zrZiiEt1vLQ/g186KlSfbzn0
+    ZCmzX8wIYAb5+Drpn2cm4Q==
     """
