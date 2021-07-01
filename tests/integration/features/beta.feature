@@ -379,7 +379,7 @@ Feature: Testing the update scenario of beta releases
     And Update to version "19.0.13.1" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-19.0.13.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/19/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL is set to "1"
     And The signature is
     """
    qWFamMWZegXESQawjDX9Zn5XHVNUElbOfmVKyCG/MWqTfX0cUIt/xDOccSK24hce
@@ -400,7 +400,7 @@ Feature: Testing the update scenario of beta releases
     And Update to version "19.0.13.1" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-19.0.13.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/19/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL is set to "1"
     And The signature is
     """
     qWFamMWZegXESQawjDX9Zn5XHVNUElbOfmVKyCG/MWqTfX0cUIt/xDOccSK24hce
