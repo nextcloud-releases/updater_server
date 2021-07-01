@@ -1,4 +1,4 @@
-vendor/behat
 composer.lock
 .idea
 config/secrets.php
+vendor
