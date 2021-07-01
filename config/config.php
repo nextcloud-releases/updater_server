@@ -162,7 +162,7 @@ Agj27C2fzphoisqAhholcQ==',
 				'internalVersion' => '20.0.11.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-20.0.11.zip',
 				'web' => 'https://docs.nextcloud.com/server/20/admin_manual/maintenance/upgrade.html',
-				'eol' => true,
+				'eol' => false,
 				'minPHPVersion' => '7.2',
 				'signature' => 'lvzMiOP6yvwSmpdgpRms+/4cTz8VsknRxDyUAfP85D4e2frvr02o3yYvyLxR8C2u
 65BUwj4vrB8y9IpVaXCv9uc2NyxyPgvEQD7qaDEPOwnaQkOedxOQZkLPyF+hFeHo
