@@ -461,7 +461,7 @@ Feature: Testing the update scenario of beta releases
     When The request is sent
     Then The response is non-empty
     And Update to version "21.0.3.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-21.0.3.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-21.0.3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/21/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
@@ -482,7 +482,7 @@ Feature: Testing the update scenario of beta releases
     When The request is sent
     Then The response is non-empty
     And Update to version "21.0.3.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-21.0.3.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-21.0.3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/21/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
