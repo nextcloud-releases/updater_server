@@ -1,4 +1,3 @@
-composer.lock
 .idea
 config/secrets.php
-vendor
+vendor/behat
