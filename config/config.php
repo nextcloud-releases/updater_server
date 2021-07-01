@@ -557,7 +557,7 @@ Agj27C2fzphoisqAhholcQ==',
 			],
 		],
 
-		'19.0.11' => [
+		'19.0.13' => [
 			'100' => [
 				'latest' => '20.0.11',
 				'internalVersion' => '20.0.11.1',
