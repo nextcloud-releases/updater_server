@@ -418,18 +418,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "20.0.11.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-20.0.11rc1.zip"
+    And Update to version "20.0.11.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-20.0.11.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/20/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    oFsiSdrha+exBcUQi591piORi4dl1h9Yh7ZKWOWtVxHo3dWBnJPKWTnx2j0SJK+w
-    e22E63MMvBbDvSYgmtwP9GnxD5cZuLRWxdCEAY6PIx8CV60aWB87FofYyTNYIx/q
-    dVi3TXegmbcgYNMSXI/CPs6jnkIRlvfXrpyGAUVzGMcf2mxIhTzKz4EDpezL4UAL
-    YWZ7O4ugPI3RN2z1GzsHEO3ras9w35Oaw7eEe8ggXMsW7p0NmS4TbJ4tTghNe6dq
-    /WvOoDGs7jIdDhbjZ5/Vy1Gpbj4gALxJeCHUOgeDy2wcCR2wO6PCHnn9MziYTwTQ
-    O/WMlLKPYTJdK+bqXjh58g==
+    lvzMiOP6yvwSmpdgpRms+/4cTz8VsknRxDyUAfP85D4e2frvr02o3yYvyLxR8C2u
+    65BUwj4vrB8y9IpVaXCv9uc2NyxyPgvEQD7qaDEPOwnaQkOedxOQZkLPyF+hFeHo
+    ukNpRhIq9wlqVwGj/OCvR1WczaQgLYjUTCa0/mjUPX1P3s6ei1rKgQaIPJoyV0WM
+    QKE4AfxFEOPLESmnO6zULQAsZSY0pD1Ux2MQ5xTlYqFFxKVy8pKbGe1KNKwvWftn
+    RZQfB3RiALrDwqayT2OZ29Zi9NGEXHy2f2js4kzjSIApdMMzs1LzjxiRWn3a3mq9
+    Agj27C2fzphoisqAhholcQ==
     """
 
   Scenario: Updating the Nextcloud 20.0.0 on the beta channel
@@ -439,18 +439,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "20.0.11.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-20.0.11rc1.zip"
+    And Update to version "20.0.11.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-20.0.11.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/20/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    oFsiSdrha+exBcUQi591piORi4dl1h9Yh7ZKWOWtVxHo3dWBnJPKWTnx2j0SJK+w
-    e22E63MMvBbDvSYgmtwP9GnxD5cZuLRWxdCEAY6PIx8CV60aWB87FofYyTNYIx/q
-    dVi3TXegmbcgYNMSXI/CPs6jnkIRlvfXrpyGAUVzGMcf2mxIhTzKz4EDpezL4UAL
-    YWZ7O4ugPI3RN2z1GzsHEO3ras9w35Oaw7eEe8ggXMsW7p0NmS4TbJ4tTghNe6dq
-    /WvOoDGs7jIdDhbjZ5/Vy1Gpbj4gALxJeCHUOgeDy2wcCR2wO6PCHnn9MziYTwTQ
-    O/WMlLKPYTJdK+bqXjh58g==
+    lvzMiOP6yvwSmpdgpRms+/4cTz8VsknRxDyUAfP85D4e2frvr02o3yYvyLxR8C2u
+    65BUwj4vrB8y9IpVaXCv9uc2NyxyPgvEQD7qaDEPOwnaQkOedxOQZkLPyF+hFeHo
+    ukNpRhIq9wlqVwGj/OCvR1WczaQgLYjUTCa0/mjUPX1P3s6ei1rKgQaIPJoyV0WM
+    QKE4AfxFEOPLESmnO6zULQAsZSY0pD1Ux2MQ5xTlYqFFxKVy8pKbGe1KNKwvWftn
+    RZQfB3RiALrDwqayT2OZ29Zi9NGEXHy2f2js4kzjSIApdMMzs1LzjxiRWn3a3mq9
+    Agj27C2fzphoisqAhholcQ==
     """
 
   Scenario: Updating the Nextcloud 20.0.11 on the beta channel
