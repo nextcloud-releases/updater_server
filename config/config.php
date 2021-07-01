@@ -124,7 +124,7 @@ sS7mkjDOEbsr9YBt6rNW+ghg2W73gacXfoy5beK1qZ9QGNk9o43OxaKPgkzGuluu
 26LLA+PstWmM6+kBWUBzqQ==',
 			],
 		],
-		'20.0.10' => [
+		'20.0.11' => [
 			'70' => [
 				'latest' => '21.0.3',
 				'internalVersion' => '21.0.3.1',
