@@ -112,7 +112,7 @@ return [
 			'100' => [
 				'latest' => '22.0.0',
 				'internalVersion' => '22.0.0.11',
-				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-22.0.0.zip',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-22.0.0.zip',
 				'web' => 'https://docs.nextcloud.com/server/22/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '7.3',
@@ -493,7 +493,7 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 			'100' => [
 				'latest' => '22.0.0',
 				'internalVersion' => '22.0.0.11',
-				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-22.0.0.zip',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-22.0.0.zip',
 				'web' => 'https://docs.nextcloud.com/server/22/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '7.3',
@@ -510,7 +510,7 @@ G1TQdK8A4Qe1X29O9QiuBsw5RCSIlM9NPEvBWS3RDTcyDpX0gxi49fMRxjFovUW1
 			'100' => [
 				'latest' => '22.0.0',
 				'internalVersion' => '22.0.0.11',
-				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-22.0.0.zip',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-22.0.0.zip',
 				'web' => 'https://docs.nextcloud.com/server/22/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '7.3',
