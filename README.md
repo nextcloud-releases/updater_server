@@ -5,7 +5,11 @@ This is the server that is called from Nextcloud to check if a new version of th
 1. Adjust config/config.php for the update
 2. Adjust tests/integration/features/update.feature for the integration tests
 
-If the tests are not passing the TravisCI test execution will fail.
+If the tests are not passing the test execution will fail.
+
+## Push to production
+Open a PR from master to the `production` branch:
+https://github.com/nextcloud/updater_server/compare/production...master
 
 ## Example calls
 
