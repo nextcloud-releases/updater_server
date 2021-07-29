@@ -1,0 +1,15 @@
+name: Extract supported versions
+description: Extract supported versions from current config for github workflow.
+
+inputs:
+  configs:
+    required: true
+    description: The config JSON
+
+outputs:
+  configs:
+    description: Array of supported configs
+
+runs:
+  using: node12
+  main: index.js
