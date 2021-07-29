@@ -1,0 +1,8 @@
+{
+	"version": "0.0.1",
+	"author": "John Molakvoæ <skjnldsv@protonmail.com>",
+	"license": "AGPL-3.0-or-later",
+	"dependencies": {
+		"@actions/core": "^1.4.0"
+	}
+}
