@@ -508,12 +508,12 @@ Feature: Testing the update scenario of beta releases
     And EOL is set to "0"
     And The signature is
     """
-    Yd1D3EzsHchFbFsDrUG+7BZaBcfDGnADpVqRHi8zLCKWiYazKHYIJRY6hTLXdeWD
-    4bMLYDA5XtnqAyqvazoClM1jeL/OHUOeoCSNg4MWAnG71nc0IyMhcvsMY6fHpRCA
-    tWXzmFgXCQA2SBmQB7M1YmqoLK0m5vTryVCAaVQKk5sU9yHbem7JcWw5Hvf7uQSw
-    AoRffdCG7txPLrhnK+TgdxZWXPtxWtNtg5EjXA6MGoA0w2HcNKfJg3C2/WLwXgYz
-    6tvV4GAbKJFQ00J0DzZv+38P5n/SOQbEslYLmvZbwc1egr77KwdFXKHgi/75jWIn
-    IaT3meQM8+X9XbHM2LdrkA==
+    UcPW6ZgBQHbh3pQ6YPAdIVV/gsQO3ZVTI8Tpi0veBYM9pX7i3unEZTEP8NfmHONY
+    MwepWHYliFU+yRKX2bwvnc8kMUCODBh4GotQqnvhAtZRmk6BC1MAFiKTEhuINV/b
+    lhCJCAkuUk8v+3sCglxVVsrxbs0qipVafQR1X4t1jlAnxwUtqjHS6BlfJTsQtuE/
+    wZV1Eo0PiVqJWXf05+78Tz7zFFrgV96SyJVIn9rX5N2ZRJf0pIflxXX8liJhQvGs
+    PVG0xHB31z7GmJkGqle87l8gIesnBBbRCPFdPmOxsSTkXu4FFPK2SjxJduNFUgQB
+    J4x6y9TZS4/PWhGBSE6qSw==
     """
 
   Scenario: Updating the Nextcloud 22.0.0 RC2 on the beta channel
@@ -529,10 +529,10 @@ Feature: Testing the update scenario of beta releases
     And EOL is set to "0"
     And The signature is
     """
-    Yd1D3EzsHchFbFsDrUG+7BZaBcfDGnADpVqRHi8zLCKWiYazKHYIJRY6hTLXdeWD
-    4bMLYDA5XtnqAyqvazoClM1jeL/OHUOeoCSNg4MWAnG71nc0IyMhcvsMY6fHpRCA
-    tWXzmFgXCQA2SBmQB7M1YmqoLK0m5vTryVCAaVQKk5sU9yHbem7JcWw5Hvf7uQSw
-    AoRffdCG7txPLrhnK+TgdxZWXPtxWtNtg5EjXA6MGoA0w2HcNKfJg3C2/WLwXgYz
-    6tvV4GAbKJFQ00J0DzZv+38P5n/SOQbEslYLmvZbwc1egr77KwdFXKHgi/75jWIn
-    IaT3meQM8+X9XbHM2LdrkA==
+    UcPW6ZgBQHbh3pQ6YPAdIVV/gsQO3ZVTI8Tpi0veBYM9pX7i3unEZTEP8NfmHONY
+    MwepWHYliFU+yRKX2bwvnc8kMUCODBh4GotQqnvhAtZRmk6BC1MAFiKTEhuINV/b
+    lhCJCAkuUk8v+3sCglxVVsrxbs0qipVafQR1X4t1jlAnxwUtqjHS6BlfJTsQtuE/
+    wZV1Eo0PiVqJWXf05+78Tz7zFFrgV96SyJVIn9rX5N2ZRJf0pIflxXX8liJhQvGs
+    PVG0xHB31z7GmJkGqle87l8gIesnBBbRCPFdPmOxsSTkXu4FFPK2SjxJduNFUgQB
+    J4x6y9TZS4/PWhGBSE6qSw==
     """
