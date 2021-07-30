@@ -1,0 +1,101 @@
+name: Upgrades
+
+on:
+  pull_request:
+    paths:
+      - 'config/config.php'
+  push:
+    branches:
+      - master
+      - production
+    paths:
+      - 'config/config.php'
+
+jobs:
+  configs:
+    runs-on: ubuntu-latest
+
+    outputs:
+      configs: ${{ steps.build-config.outputs.configs }}
+
+    name: Initializing ${{matrix.channel}} configs
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Getting config
+        id: get-config
+        run: |
+          # Retrieving non-EOL configs from the matrix channel
+          CONFIGS=$(php -r "echo(json_encode(include 'config/config.php'));" | jq -c)
+          echo "::set-output name=configs::$CONFIGS"
+
+      - name: Parse configs
+        uses: nextcloud/updater_server@action
+        id: build-config
+        with:
+          # Edit the following line to install packages required to run your script.
+          configs: ${{ steps.get-config.outputs.configs }}
+
+  upgrades:
+    runs-on: ubuntu-latest
+    needs: configs
+
+    strategy:
+      fail-fast: false
+      matrix:
+        config: ${{ fromJSON(needs.configs.outputs.configs) }}
+
+    name: Upgrade from ${{ matrix.config.base }} to ${{ matrix.config.latest }}
+    steps:
+      - name: Set up php ${{ matrix.config.minPHPVersion }}
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.config.minPHPVersion }}
+          extensions: ctype,curl,dom,fileinfo,gd,iconv,intl,json,mbstring,openssl,pdo_sqlite,posix,sqlite,xml,zip
+          coverage: none
+
+      - name: Fetch release
+        run: |
+          # Check if we have a full version like xx.x.x
+          if ${{ contains(matrix.config.base, '.') }};
+           then wget --quiet https://download.nextcloud.com/server/releases/nextcloud-${{ matrix.config.base }}.zip -O nextcloud-base.zip;
+           else wget --quiet https://download.nextcloud.com/server/releases/latest-${{ matrix.config.base }}.zip -O nextcloud-base.zip;
+           fi
+          unzip -q nextcloud-base.zip
+
+      - name: Setup nextcloud
+        run: |
+          cd nextcloud
+          mkdir data
+          php occ maintenance:install --verbose --admin-user admin --admin-pass admin
+      
+      - name: Fetch upgrade
+        run: |
+          mv nextcloud nextcloud.old
+          wget --quiet ${{ matrix.config.downloadUrl }} -O nextcloud-update.zip
+          unzip -q nextcloud-update.zip
+      
+      - name: Copy necessary files
+        run: |
+          mv nextcloud.old/config/config.php nextcloud/config/config.php
+          mv nextcloud.old/data nextcloud/data
+      
+      - name: Perform upgrade
+        run: |
+          cd nextcloud
+          php occ upgrade
+
+      - name: Integrity check
+        run: |
+          cd nextcloud
+          php occ integrity:check-core
+
+  summary:
+    runs-on: ubuntu-latest
+    needs: upgrades
+
+    if: always()
+
+    steps:
+      - name: Summary status
+        run: if ${{ needs.upgrades.result != 'success' }}; then exit 1; fi
