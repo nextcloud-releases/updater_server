@@ -125,7 +125,21 @@ G1TQdK8A4Qe1X29O9QiuBsw5RCSIlM9NPEvBWS3RDTcyDpX0gxi49fMRxjFovUW1
 			],
 		],
 		'21' => [
-			'100' => [
+			'30' => [
+				'latest' => '22.0.0',
+				'internalVersion' => '22.0.0.11',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-22.0.0.zip',
+				'web' => 'https://docs.nextcloud.com/server/22/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '7.3',
+				'signature' => 'FDTZ1u2nIx54cAzVIggQ84h7EzvkjF+L6VsppjG1cT0JgsOJfoe4w6WsV1tsohix
+29oMy56aGCymj5befnZpIIXRifqPNxuNaDZRurxNIb67QGiSFK2gVaM1u/crXc5D
+wnBpNk+vWpAdLSyILPprAeagjFMBk4TIUOfJxcWNXvL+ygz9UCe8tz5a0ojMQC9K
+GGGuwtLA+qNQkp2BN68eqMortvrFJDe8eBxygXCA9+lhTCDBHZ0Bs2YM1I1zu84w
+G1TQdK8A4Qe1X29O9QiuBsw5RCSIlM9NPEvBWS3RDTcyDpX0gxi49fMRxjFovUW1
+93bHrSMlwcEgEVSE5nWIfg==',
+			],
+			'70' => [
 				'latest' => '21.0.3',
 				'internalVersion' => '21.0.3.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-21.0.3.zip',
