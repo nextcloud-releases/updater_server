@@ -154,7 +154,7 @@ M+LjFGQ3UrLdLEUspKcF0awiacjCuvMGF6ns835tSzzZA9EhlsTIcfpO0rLWZo2B
 h1nzVu4H9N0bSFDgo65oIQ==',
 			],
 		],
-		'20.0.11' => [
+		'20.0.12' => [
 			'100' => [
 				'latest' => '21.0.4',
 				'internalVersion' => '21.0.4.1',
