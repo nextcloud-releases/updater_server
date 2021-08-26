@@ -124,7 +124,7 @@ kXfWGPhJuilHGsmSUolvLB3dB+l7pKIB7vuDIhcqTxrU/WC14nTAUg/llWm4ppzl
 J4kY3VMkMai9djRWLI7hrA==',
 			],
 		],
-		'21' => [
+		'21.0.4' => [
 			'30' => [
 				'latest' => '22.1.1',
 				'internalVersion' => '22.1.1.2',
@@ -139,7 +139,9 @@ InPdgd99KrRMpTHTBHgPz0UOpHn8rXk+GN1inJhGdaW3b38g8hjJPrwwjfX8+eta
 kXfWGPhJuilHGsmSUolvLB3dB+l7pKIB7vuDIhcqTxrU/WC14nTAUg/llWm4ppzl
 J4kY3VMkMai9djRWLI7hrA==',
 			],
-			'70' => [
+		],
+		'21' => [
+			'100' => [
 				'latest' => '21.0.4',
 				'internalVersion' => '21.0.4.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-21.0.4.zip',
