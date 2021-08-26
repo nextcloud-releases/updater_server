@@ -745,7 +745,7 @@ Feature: Testing the update scenario of stable releases
     Given There is a release with channel "stable"
     And The received version is "21.0.0.7"
     And The received PHP version is "7.3.0"
-    And the installation mtime is "11"
+    And the installation mtime is "20"
     When The request is sent
     Then The response is non-empty
     And Update to version "21.0.4.1" is available
@@ -764,7 +764,7 @@ Feature: Testing the update scenario of stable releases
 
   Scenario: Updating the Nextcloud 21.0.0 to 22.1.1 on the stable channel
     Given There is a release with channel "stable"
-    And The received version is "21.0.0.7"
+    And The received version is "21.0.4.1"
     And The received PHP version is "7.3.0"
     And the installation mtime is "11"
     When The request is sent
