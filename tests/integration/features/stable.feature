@@ -762,6 +762,43 @@ Feature: Testing the update scenario of stable releases
     h1nzVu4H9N0bSFDgo65oIQ==
     """
 
+  Scenario: Updating the Nextcloud 21.0.4 on the stable channel
+    Given There is a release with channel "stable"
+    And The received version is "21.0.4.1"
+    And The received PHP version is "7.3.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "22.1.1.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-22.1.1.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/22/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    YfHk1LPEfYKblt8oZWuk0eP7HXmf8+ZuvENoazUYXYcZVWkwE82miY/FI3ED8wA0
+    HGpmfvEfy4PKm/fOiehX7nx4M7d1nefnX0m2UwLy7/zKlPhXWbKO1ZWn8/EClBwX
+    O79lyW4/Hegh93jWfHXXhnrq2okidKUi5zWF91UYcacmb2YlvuWRzrWlIaLWj7pF
+    InPdgd99KrRMpTHTBHgPz0UOpHn8rXk+GN1inJhGdaW3b38g8hjJPrwwjfX8+eta
+    kXfWGPhJuilHGsmSUolvLB3dB+l7pKIB7vuDIhcqTxrU/WC14nTAUg/llWm4ppzl
+    J4kY3VMkMai9djRWLI7hrA==
+    """
+
+  Scenario: Staying with Nextcloud 21.0.4 on the stable channel (staged rollout)
+    Given There is a release with channel "stable"
+    And The received version is "21.0.4.1"
+    And The received PHP version is "7.3.0"
+    And the installation mtime is "33"
+    When The request is sent
+    Then The response is empty
+    """
+    YfHk1LPEfYKblt8oZWuk0eP7HXmf8+ZuvENoazUYXYcZVWkwE82miY/FI3ED8wA0
+    HGpmfvEfy4PKm/fOiehX7nx4M7d1nefnX0m2UwLy7/zKlPhXWbKO1ZWn8/EClBwX
+    O79lyW4/Hegh93jWfHXXhnrq2okidKUi5zWF91UYcacmb2YlvuWRzrWlIaLWj7pF
+    InPdgd99KrRMpTHTBHgPz0UOpHn8rXk+GN1inJhGdaW3b38g8hjJPrwwjfX8+eta
+    kXfWGPhJuilHGsmSUolvLB3dB+l7pKIB7vuDIhcqTxrU/WC14nTAUg/llWm4ppzl
+    J4kY3VMkMai9djRWLI7hrA==
+    """
+
   Scenario: Updating the Nextcloud 22.1.1 on the stable channel
     Given There is a release with channel "stable"
     And The received version is "22.0.0.0"

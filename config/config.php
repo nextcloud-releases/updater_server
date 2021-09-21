@@ -124,6 +124,22 @@ kXfWGPhJuilHGsmSUolvLB3dB+l7pKIB7vuDIhcqTxrU/WC14nTAUg/llWm4ppzl
 J4kY3VMkMai9djRWLI7hrA==',
 			],
 		],
+		'21.0.4' => [
+			'30' => [
+				'latest' => '22.1.1',
+				'internalVersion' => '22.1.1.2',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-22.1.1.zip',
+				'web' => 'https://docs.nextcloud.com/server/22/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '7.3',
+				'signature' => 'YfHk1LPEfYKblt8oZWuk0eP7HXmf8+ZuvENoazUYXYcZVWkwE82miY/FI3ED8wA0
+HGpmfvEfy4PKm/fOiehX7nx4M7d1nefnX0m2UwLy7/zKlPhXWbKO1ZWn8/EClBwX
+O79lyW4/Hegh93jWfHXXhnrq2okidKUi5zWF91UYcacmb2YlvuWRzrWlIaLWj7pF
+InPdgd99KrRMpTHTBHgPz0UOpHn8rXk+GN1inJhGdaW3b38g8hjJPrwwjfX8+eta
+kXfWGPhJuilHGsmSUolvLB3dB+l7pKIB7vuDIhcqTxrU/WC14nTAUg/llWm4ppzl
+J4kY3VMkMai9djRWLI7hrA==',
+			],
+		],
 		'21' => [
 			'100' => [
 				'latest' => '21.0.4',
