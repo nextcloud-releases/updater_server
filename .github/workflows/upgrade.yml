@@ -58,7 +58,8 @@ jobs:
         run: |
           # Check if we have a full version like xx.x.x
           if ${{ contains(matrix.config.base, '.') }};
-           then wget --quiet https://download.nextcloud.com/server/releases/nextcloud-${{ matrix.config.base }}.zip -O nextcloud-base.zip;
+           then wget --quiet https://download.nextcloud.com/server/releases/nextcloud-${{ matrix.config.base }}.zip -O nextcloud-base.zip \
+                || wget --quiet https://download.nextcloud.com/server/prereleases/nextcloud-${{ matrix.config.base }}.zip -O nextcloud-base.zip;
            else wget --quiet https://download.nextcloud.com/server/releases/latest-${{ matrix.config.base }}.zip -O nextcloud-base.zip;
            fi
           unzip -q nextcloud-base.zip
