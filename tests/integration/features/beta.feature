@@ -502,18 +502,18 @@ HOuNYu0cKN+xlyq6T55wp/ATVGd8ms8SHCYiVL63HuM8ovvg2ibGh2skRhlhACUc
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "22.1.1.2" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-22.1.1.zip"
+    And Update to version "22.2.0.1" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-22.2.0rc2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/22/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    YfHk1LPEfYKblt8oZWuk0eP7HXmf8+ZuvENoazUYXYcZVWkwE82miY/FI3ED8wA0
-    HGpmfvEfy4PKm/fOiehX7nx4M7d1nefnX0m2UwLy7/zKlPhXWbKO1ZWn8/EClBwX
-    O79lyW4/Hegh93jWfHXXhnrq2okidKUi5zWF91UYcacmb2YlvuWRzrWlIaLWj7pF
-    InPdgd99KrRMpTHTBHgPz0UOpHn8rXk+GN1inJhGdaW3b38g8hjJPrwwjfX8+eta
-    kXfWGPhJuilHGsmSUolvLB3dB+l7pKIB7vuDIhcqTxrU/WC14nTAUg/llWm4ppzl
-    J4kY3VMkMai9djRWLI7hrA==
+    BR/WlwC+MPcSBmAPd82E5zIY1Y/G7dTghih3kb7RvRo5td45I1NgLq2Oc9cPmfqg
+    jbrqgaTMIB+ROfzn+pvLyI5datG1mV8tEuhoeVZ/xx+cw7kt7dvJu+b09eP+x1x1
+    x1nbFFBQRa8g3aCiF/e8EzRnUxf8rCXIw1YiWWwyKzBdvVFhqYtAaNuqKyZEjRrd
+    jPBY9k4P15GV2+PimaOUBKYX/wzmeyC2aOrPquqHZRlTI0EZs7o6m6c+zEl+NmSV
+    LHVj1+MKTG5yFAiAfyxo162CPHI8oPi3goLyJIYq4XoMaa9YidKfKgquwZjrEE8f
+    dM3TVzOUkBlHdE6dvL3gVg==
     """
 
   Scenario: Updating the Nextcloud 22.0.0 on the beta channel
@@ -523,16 +523,16 @@ HOuNYu0cKN+xlyq6T55wp/ATVGd8ms8SHCYiVL63HuM8ovvg2ibGh2skRhlhACUc
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "22.1.1.2" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-22.1.1.zip"
+    And Update to version "22.2.0.1" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-22.2.0rc2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/22/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    YfHk1LPEfYKblt8oZWuk0eP7HXmf8+ZuvENoazUYXYcZVWkwE82miY/FI3ED8wA0
-    HGpmfvEfy4PKm/fOiehX7nx4M7d1nefnX0m2UwLy7/zKlPhXWbKO1ZWn8/EClBwX
-    O79lyW4/Hegh93jWfHXXhnrq2okidKUi5zWF91UYcacmb2YlvuWRzrWlIaLWj7pF
-    InPdgd99KrRMpTHTBHgPz0UOpHn8rXk+GN1inJhGdaW3b38g8hjJPrwwjfX8+eta
-    kXfWGPhJuilHGsmSUolvLB3dB+l7pKIB7vuDIhcqTxrU/WC14nTAUg/llWm4ppzl
-    J4kY3VMkMai9djRWLI7hrA==
+    BR/WlwC+MPcSBmAPd82E5zIY1Y/G7dTghih3kb7RvRo5td45I1NgLq2Oc9cPmfqg
+    jbrqgaTMIB+ROfzn+pvLyI5datG1mV8tEuhoeVZ/xx+cw7kt7dvJu+b09eP+x1x1
+    x1nbFFBQRa8g3aCiF/e8EzRnUxf8rCXIw1YiWWwyKzBdvVFhqYtAaNuqKyZEjRrd
+    jPBY9k4P15GV2+PimaOUBKYX/wzmeyC2aOrPquqHZRlTI0EZs7o6m6c+zEl+NmSV
+    LHVj1+MKTG5yFAiAfyxo162CPHI8oPi3goLyJIYq4XoMaa9YidKfKgquwZjrEE8f
+    dM3TVzOUkBlHdE6dvL3gVg==
     """
