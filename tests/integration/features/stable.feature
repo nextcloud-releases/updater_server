@@ -787,7 +787,7 @@ Feature: Testing the update scenario of stable releases
     Given There is a release with channel "stable"
     And The received version is "21.0.5.1"
     And The received PHP version is "7.3.0"
-    And the installation mtime is "33"
+    And the installation mtime is "73"
     When The request is sent
     Then The response is empty
     """
