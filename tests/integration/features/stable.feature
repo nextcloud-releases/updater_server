@@ -783,22 +783,6 @@ Feature: Testing the update scenario of stable releases
     igCw9M1FBIhT4+LRdFBupQ==
     """
 
-  Scenario: Staying with Nextcloud 21.0.5 on the stable channel (staged rollout)
-    Given There is a release with channel "stable"
-    And The received version is "21.0.5.1"
-    And The received PHP version is "7.3.0"
-    And the installation mtime is "73"
-    When The request is sent
-    Then The response is empty
-    """
-    IF7GWr7KVXkakHrQixMoXXQziCFMmUNI42fuCbgQLsv1+s8f6Ezaux7VlsO8FRAm
-    dPkyZq2MNLdZYeWtTTI38xoiqpsaJA8eR8HXEA+KJ83egH0C5K1SacPFsRyJipyc
-    cynghWwswoHsLht1ms2E6LWPelc4SaIL6Ngitv+1Vxjw7+T6mHzV4/5y7Rc4AFPG
-    XFdlY91U6sxuhgN9Uti7JJWNeu1V6wSjnzGUqR5egkSeyL+B76TNezhGfbqvVZbb
-    AUTy0ZHZXAt9LIGI9YmqBv90CgmW5xmBrt/qqw0f/M4A4C1BCDwh4DI2Ylh5OS+R
-    igCw9M1FBIhT4+LRdFBupQ==
-    """
-
   Scenario: Updating the Nextcloud 22.1.1 on the stable channel
     Given There is a release with channel "stable"
     And The received version is "22.0.0.0"
