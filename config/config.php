@@ -125,7 +125,7 @@ igCw9M1FBIhT4+LRdFBupQ==',
 			],
 		],
 		'21.0.5' => [
-			'70' => [
+			'100' => [
 				'latest' => '22.2.0',
 				'internalVersion' => '22.2.0.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-22.2.0.zip',
