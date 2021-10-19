@@ -505,6 +505,23 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 	],
 
 	'beta' => [
+		'23' => [
+			'100' => [
+				'latest' => '23.0.0 beta 1',
+				'internalVersion' => '23.0.0.4',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-23.0.0beta1.zip',
+				'web' => 'https://docs.nextcloud.com/server/23/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '7.3',
+				'signature' => 'wtQOE5x06jHV7lq7dqk/5/f/1QYavf34XpCG0INPwHv3cWKEiMlZ9+t/IZSzZ/bl
+I5Kr4JSDH95ReMyBL8gyec0WRfeIK8Vc8NCH/5TOPitb0Ljlri0hQ8euZSH7ySoP
+oc4XfIkkP/DcWgLmSyD5YlxSLXYnK1iRu+jlqyeDDMabTzBuXoS4pgnUh9zJWUCO
+rjolP8egixusw88weShEIJ/2TDIz0qs3DDWIkGUZI2eDDEr5C9uj9M7b79qQXI+5
+yYun0MSFo6dZ1jpjLdHapvKjUShNzpVZrGKK5unI1f9+iTnBXnc03O7C1ZezMBWt
+mMW8t1Z673Z3UENCvq8A/Q==',
+			],
+		],
+
 		'22' => [
 			'100' => [
 				'latest' => '22.2.0',
