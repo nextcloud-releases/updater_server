@@ -537,6 +537,27 @@ Feature: Testing the update scenario of beta releases
     igCw9M1FBIhT4+LRdFBupQ==
     """
 
+  Scenario: Updating the Nextcloud 22.2.0 on the beta channel
+    Given There is a release with channel "beta"
+    And The received version is "22.2.0.0"
+    And The received PHP version is "7.3.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "23.0.0.6" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-23.0.0beta3.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/23/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    a5V0gwEdnalEkxHH1UCBOXqeUC8GpXJu2lioLQ4tZLziPYrXSdumFc6Wqcl0qRnJ
+    9mXUmb56IPF9wpM+OVFFP3edXSrxPn7sjyIWmGDUcj4VbfJAyQYTIqK3KUSF2UNP
+    wQHNOPr06P1zVK1Lbj82QaxwYE2gsLp5N/jUELit6WyiAvGSf0e+p2yGuOE7H4V5
+    dQj/sCFAGkcdfZG444M7aAuXnmjJrhmH6WA1d1SkGJxYnnPP5Tmer2NdAy5m7tpl
+    DzzuOS7hHkZtR3wIA+SwPh2BWI2YpzdcZNTs3iNTMRsx6bRH2e6XAw9eu87uh89c
+    8IN/c1zctNQteUZwdtsSBQ==
+    """
+
   Scenario: Updating the Nextcloud 23.0.0 on the beta channel
     Given There is a release with channel "beta"
     And The received version is "23.0.0.0"
