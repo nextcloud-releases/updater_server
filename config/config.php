@@ -539,35 +539,35 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 	'beta' => [
 		'23' => [
 			'100' => [
-				'latest' => '23.0.0',
-				'internalVersion' => '23.0.0.10',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-23.0.0.zip',
+				'latest' => '23.0.1 RC1',
+				'internalVersion' => '23.0.1.0',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-23.0.1rc1.zip',
 				'web' => 'https://docs.nextcloud.com/server/23/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '7.3',
-				'signature' => 'eC4ILfi7vAflgo5wx2Tx05DhvEAaaZTtSIitsl4rfs63fvSNoaqvq1WKMr1VyOP+
-JGos953RwVId1SdA2BT+SzxQDioFafzsmEH8zKCNINO2D5iU06yCVefHAliF76dt
-2qSKDsTFigg5Rt8aPokfxMKcdt1IZPxJGkYf0Wi8B+eJCtcER8+WBYMl64qHydbM
-u0iZY1v/g4kyZTnFX0pKvS9qy3v+7AiQI6Y8cedL7vOdC+W3UPWzmQzkFlqbghaN
-Kt9CydQTwpV9V7GQyaFmXmVN91HFoPbVqlQ5yyq8Hq8KiUjCaVt5OGSCW1vXRPt0
-0Gcs34+yOpWJ3yRGf7/E9Q==',
+				'signature' => 'HpNNE5HikcAZ/6O+zg8oRZdrm7OJrghiWrVhdLdHWwXvK7TzjxgH9oLOUoQION12
+zUNepuz0smxCbH+wRS+OI6gPOtm1sgajaX/hn05ATksf3l/KIav80RQchk5vPl3Y
+Xw91z4YP5CmhsfwzaoiRRGzLRDDRugsOQhgTehYADBw1EMKqKsSUv/ZaJ0bS7ATb
+abKEgJamOy+TOCm4GbH8d6qOxTZPozP7NwcYNyL0rKW2F1TozRTZTwwGK/g0phSM
+kSP2lKEmIafNZhmCuWtde7JLVSxdeJfH8pz/dR7QiPZpG+sxpEgXneYzDmkTbmGx
+EdJ5ph6eOqkJytWuboLGAg==',
 			],
 		],
 
 		'22.2.3' => [
 			'100' => [
-				'latest' => '23.0.0',
-				'internalVersion' => '23.0.0.10',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-23.0.0.zip',
+				'latest' => '23.0.1 RC1',
+				'internalVersion' => '23.0.1.0',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-23.0.1rc1.zip',
 				'web' => 'https://docs.nextcloud.com/server/23/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '7.3',
-				'signature' => 'eC4ILfi7vAflgo5wx2Tx05DhvEAaaZTtSIitsl4rfs63fvSNoaqvq1WKMr1VyOP+
-JGos953RwVId1SdA2BT+SzxQDioFafzsmEH8zKCNINO2D5iU06yCVefHAliF76dt
-2qSKDsTFigg5Rt8aPokfxMKcdt1IZPxJGkYf0Wi8B+eJCtcER8+WBYMl64qHydbM
-u0iZY1v/g4kyZTnFX0pKvS9qy3v+7AiQI6Y8cedL7vOdC+W3UPWzmQzkFlqbghaN
-Kt9CydQTwpV9V7GQyaFmXmVN91HFoPbVqlQ5yyq8Hq8KiUjCaVt5OGSCW1vXRPt0
-0Gcs34+yOpWJ3yRGf7/E9Q==',
+				'signature' => 'HpNNE5HikcAZ/6O+zg8oRZdrm7OJrghiWrVhdLdHWwXvK7TzjxgH9oLOUoQION12
+zUNepuz0smxCbH+wRS+OI6gPOtm1sgajaX/hn05ATksf3l/KIav80RQchk5vPl3Y
+Xw91z4YP5CmhsfwzaoiRRGzLRDDRugsOQhgTehYADBw1EMKqKsSUv/ZaJ0bS7ATb
+abKEgJamOy+TOCm4GbH8d6qOxTZPozP7NwcYNyL0rKW2F1TozRTZTwwGK/g0phSM
+kSP2lKEmIafNZhmCuWtde7JLVSxdeJfH8pz/dR7QiPZpG+sxpEgXneYzDmkTbmGx
+EdJ5ph6eOqkJytWuboLGAg==',
 			],
 		],
 
