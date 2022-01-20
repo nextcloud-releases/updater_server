@@ -461,17 +461,17 @@ Feature: Testing the update scenario of beta releases
     When The request is sent
     Then The response is non-empty
     And Update to version "21.0.8.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-21.0.8rc2.zip"
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-21.0.8rc3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/21/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    e4bjy2g4RL5BjQCbHK9uV68nelgNgQZzyDGZ3SBSaVjpd9zKRuFde/OBiTskF8ke
-    pzsZy/cSy83FVXOE3ZQa5iofWQ/rp4BcpJFbBixfnHYoZpmrQsckwI0OxXNGHEf0
-    04SrF1SaNt4fhz0pycAUEdpIDu9I1jXVuimFvbom6c73hKfBNKJbwy2P8OQd+L3M
-    PINkz0oEjFPcbjt2vQ1MaJ4DdmfijBWBa0Q5EdzZLtnVQCNtqIUahLQJcLh/IVYT
-    WWyW4B2J0+5KcWfS+9m4g3FQxt3qoz63K96sE0M+/giwTWQQHe6Mw+X+IOkJFtxm
-    tT1qSks6Ix8dsbNGcugwCA==
+    eG4iWgMHpp5PD2jGdDeTMuLKTrpgvqikt4T40xeafepe/gK+V3Y7A8MbvGMBMnSh
+    KEYF03P2Qwybo1odTfCwAdSDezYBewq5VBk0HhQf2YybWEnHuGZDh39dt+xcH18z
+    06Tc05qnUVCYnVmm+KgVcLJr+J82kxZ+PnFnEHCIo9vRXzfWWMd9kKw3VQjKnDSR
+    KRcjEYOsG0GNsR5MD111zvr/KYE/mlJjUJ5UtprokS90OnGpEAdGcmKA27PaKhWO
+    9psB9VX3BARdSiCT6qZbPmBZHpY9q+7YurYjJef0DBAmHWZ40RKRT0b44uEEytk7
+    96rmSG0T48tzZaonZBXmgA==
     """
 
   Scenario: Updating the Nextcloud 21.0.0 on the beta channel
@@ -482,17 +482,17 @@ Feature: Testing the update scenario of beta releases
     When The request is sent
     Then The response is non-empty
     And Update to version "21.0.8.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-21.0.8rc2.zip"
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-21.0.8rc3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/21/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    e4bjy2g4RL5BjQCbHK9uV68nelgNgQZzyDGZ3SBSaVjpd9zKRuFde/OBiTskF8ke
-    pzsZy/cSy83FVXOE3ZQa5iofWQ/rp4BcpJFbBixfnHYoZpmrQsckwI0OxXNGHEf0
-    04SrF1SaNt4fhz0pycAUEdpIDu9I1jXVuimFvbom6c73hKfBNKJbwy2P8OQd+L3M
-    PINkz0oEjFPcbjt2vQ1MaJ4DdmfijBWBa0Q5EdzZLtnVQCNtqIUahLQJcLh/IVYT
-    WWyW4B2J0+5KcWfS+9m4g3FQxt3qoz63K96sE0M+/giwTWQQHe6Mw+X+IOkJFtxm
-    tT1qSks6Ix8dsbNGcugwCA==
+    eG4iWgMHpp5PD2jGdDeTMuLKTrpgvqikt4T40xeafepe/gK+V3Y7A8MbvGMBMnSh
+    KEYF03P2Qwybo1odTfCwAdSDezYBewq5VBk0HhQf2YybWEnHuGZDh39dt+xcH18z
+    06Tc05qnUVCYnVmm+KgVcLJr+J82kxZ+PnFnEHCIo9vRXzfWWMd9kKw3VQjKnDSR
+    KRcjEYOsG0GNsR5MD111zvr/KYE/mlJjUJ5UtprokS90OnGpEAdGcmKA27PaKhWO
+    9psB9VX3BARdSiCT6qZbPmBZHpY9q+7YurYjJef0DBAmHWZ40RKRT0b44uEEytk7
+    96rmSG0T48tzZaonZBXmgA==
     """
 
   Scenario: Updating the Nextcloud 21.0.7 on the beta channel
