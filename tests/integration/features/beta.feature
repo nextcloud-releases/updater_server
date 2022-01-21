@@ -502,18 +502,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "22.2.4.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-22.2.4rc2.zip"
+    And Update to version "22.2.4.2" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-22.2.4rc3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/22/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    FXCaKtTs1RdSndCPVkbw4PG9562KFNCveYy+IVm4LaGF9U30CwlHGn2/9gIW8phK
-    TF8Kg/jzsQi2WrHw0R+4vQb+S7AsFhu7wOInGDeT5UC14iLtKFOzoZyaFuO3LcmM
-    9Om8wuTJhwWGlum0sn2zuQWVfsOjCLiJjip4Ogl4O473yNfscicAS4HVFvTIoxmh
-    ypgeb2JCoOhbFTm04MS4ftqePlc9RqlfyeNmJ+gyq80mAwIEANBnvUBfOfM95a7c
-    q/2qlUKWj3Gb0GZLtnUnGuByOAZhgV7gONiBj6rcKnAuBEzlEMNcKO5efHXTr6tl
-    IZCTzrIZfwjmWGgPjZDLiQ==
+    vxmfiPafdBj9t0HPqOlfmptv1VcKGFJL3S7Oksj88c84fCMSXdvPqM+mkjsIuad5
+    Amz51YNM0rGOJQKykfJRoM1ao2s7E12nCX3pH3b8G23aPCe69Gw5fffmnc1v5+m4
+    1wg5L+qVIrB/TDjIBrDVs+wtPC8R3Pxhw74nPvt3CVGsEA+rRFz1PHMOqAdMj/zI
+    M+291UdIaiMHzZXvPht1Z/ptMeeyMnAxnbuiafh8eR389p1m5K9RfpRbJmglXx6M
+    J7ly448K8111qc92KDyGxTMvCBnQA8XKLd8TkYSGU2vbQYnGvmZKK6urUDVP6gJ4
+    whlUk4Etx1/kqDqeKF/2Uw==
     """
 
   Scenario: Updating the Nextcloud 22.0.0 on the beta channel
@@ -523,18 +523,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "22.2.4.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-22.2.4rc2.zip"
+    And Update to version "22.2.4.2" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-22.2.4rc3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/22/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    FXCaKtTs1RdSndCPVkbw4PG9562KFNCveYy+IVm4LaGF9U30CwlHGn2/9gIW8phK
-    TF8Kg/jzsQi2WrHw0R+4vQb+S7AsFhu7wOInGDeT5UC14iLtKFOzoZyaFuO3LcmM
-    9Om8wuTJhwWGlum0sn2zuQWVfsOjCLiJjip4Ogl4O473yNfscicAS4HVFvTIoxmh
-    ypgeb2JCoOhbFTm04MS4ftqePlc9RqlfyeNmJ+gyq80mAwIEANBnvUBfOfM95a7c
-    q/2qlUKWj3Gb0GZLtnUnGuByOAZhgV7gONiBj6rcKnAuBEzlEMNcKO5efHXTr6tl
-    IZCTzrIZfwjmWGgPjZDLiQ==
+    vxmfiPafdBj9t0HPqOlfmptv1VcKGFJL3S7Oksj88c84fCMSXdvPqM+mkjsIuad5
+    Amz51YNM0rGOJQKykfJRoM1ao2s7E12nCX3pH3b8G23aPCe69Gw5fffmnc1v5+m4
+    1wg5L+qVIrB/TDjIBrDVs+wtPC8R3Pxhw74nPvt3CVGsEA+rRFz1PHMOqAdMj/zI
+    M+291UdIaiMHzZXvPht1Z/ptMeeyMnAxnbuiafh8eR389p1m5K9RfpRbJmglXx6M
+    J7ly448K8111qc92KDyGxTMvCBnQA8XKLd8TkYSGU2vbQYnGvmZKK6urUDVP6gJ4
+    whlUk4Etx1/kqDqeKF/2Uw==
     """
 
   Scenario: Updating the Nextcloud 22.2.4 on the beta channel
