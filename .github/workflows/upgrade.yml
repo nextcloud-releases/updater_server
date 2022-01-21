@@ -15,6 +15,8 @@ jobs:
       config: ${{ steps.changes.outputs.config }}
 
     steps:
+      - uses: actions/checkout@v2
+
       # If the config has not changed, we skip
       # It allows us to still have a summary result
       - uses: dorny/paths-filter@v2
@@ -115,4 +117,4 @@ jobs:
 
     steps:
       - name: Summary status
-        run: if ${{ needs.upgrades.result != 'success' && needs.upgrades.result != 'skipped' }}; then exit 1; fi
+        run: if ${{ needs.changes.result == 'success' && needs.upgrades.result != 'success' && needs.upgrades.result != 'skipped' }}; then exit 1; fi
