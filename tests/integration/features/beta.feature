@@ -461,17 +461,17 @@ Feature: Testing the update scenario of beta releases
     When The request is sent
     Then The response is non-empty
     And Update to version "21.0.8.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-21.0.8rc2.zip"
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-21.0.8rc3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/21/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    e4bjy2g4RL5BjQCbHK9uV68nelgNgQZzyDGZ3SBSaVjpd9zKRuFde/OBiTskF8ke
-    pzsZy/cSy83FVXOE3ZQa5iofWQ/rp4BcpJFbBixfnHYoZpmrQsckwI0OxXNGHEf0
-    04SrF1SaNt4fhz0pycAUEdpIDu9I1jXVuimFvbom6c73hKfBNKJbwy2P8OQd+L3M
-    PINkz0oEjFPcbjt2vQ1MaJ4DdmfijBWBa0Q5EdzZLtnVQCNtqIUahLQJcLh/IVYT
-    WWyW4B2J0+5KcWfS+9m4g3FQxt3qoz63K96sE0M+/giwTWQQHe6Mw+X+IOkJFtxm
-    tT1qSks6Ix8dsbNGcugwCA==
+    eG4iWgMHpp5PD2jGdDeTMuLKTrpgvqikt4T40xeafepe/gK+V3Y7A8MbvGMBMnSh
+    KEYF03P2Qwybo1odTfCwAdSDezYBewq5VBk0HhQf2YybWEnHuGZDh39dt+xcH18z
+    06Tc05qnUVCYnVmm+KgVcLJr+J82kxZ+PnFnEHCIo9vRXzfWWMd9kKw3VQjKnDSR
+    KRcjEYOsG0GNsR5MD111zvr/KYE/mlJjUJ5UtprokS90OnGpEAdGcmKA27PaKhWO
+    9psB9VX3BARdSiCT6qZbPmBZHpY9q+7YurYjJef0DBAmHWZ40RKRT0b44uEEytk7
+    96rmSG0T48tzZaonZBXmgA==
     """
 
   Scenario: Updating the Nextcloud 21.0.0 on the beta channel
@@ -482,17 +482,17 @@ Feature: Testing the update scenario of beta releases
     When The request is sent
     Then The response is non-empty
     And Update to version "21.0.8.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-21.0.8rc2.zip"
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-21.0.8rc3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/21/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    e4bjy2g4RL5BjQCbHK9uV68nelgNgQZzyDGZ3SBSaVjpd9zKRuFde/OBiTskF8ke
-    pzsZy/cSy83FVXOE3ZQa5iofWQ/rp4BcpJFbBixfnHYoZpmrQsckwI0OxXNGHEf0
-    04SrF1SaNt4fhz0pycAUEdpIDu9I1jXVuimFvbom6c73hKfBNKJbwy2P8OQd+L3M
-    PINkz0oEjFPcbjt2vQ1MaJ4DdmfijBWBa0Q5EdzZLtnVQCNtqIUahLQJcLh/IVYT
-    WWyW4B2J0+5KcWfS+9m4g3FQxt3qoz63K96sE0M+/giwTWQQHe6Mw+X+IOkJFtxm
-    tT1qSks6Ix8dsbNGcugwCA==
+    eG4iWgMHpp5PD2jGdDeTMuLKTrpgvqikt4T40xeafepe/gK+V3Y7A8MbvGMBMnSh
+    KEYF03P2Qwybo1odTfCwAdSDezYBewq5VBk0HhQf2YybWEnHuGZDh39dt+xcH18z
+    06Tc05qnUVCYnVmm+KgVcLJr+J82kxZ+PnFnEHCIo9vRXzfWWMd9kKw3VQjKnDSR
+    KRcjEYOsG0GNsR5MD111zvr/KYE/mlJjUJ5UtprokS90OnGpEAdGcmKA27PaKhWO
+    9psB9VX3BARdSiCT6qZbPmBZHpY9q+7YurYjJef0DBAmHWZ40RKRT0b44uEEytk7
+    96rmSG0T48tzZaonZBXmgA==
     """
 
   Scenario: Updating the Nextcloud 21.0.7 on the beta channel
@@ -502,18 +502,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "22.2.4.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-22.2.4rc2.zip"
+    And Update to version "22.2.4.2" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-22.2.4rc3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/22/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    FXCaKtTs1RdSndCPVkbw4PG9562KFNCveYy+IVm4LaGF9U30CwlHGn2/9gIW8phK
-    TF8Kg/jzsQi2WrHw0R+4vQb+S7AsFhu7wOInGDeT5UC14iLtKFOzoZyaFuO3LcmM
-    9Om8wuTJhwWGlum0sn2zuQWVfsOjCLiJjip4Ogl4O473yNfscicAS4HVFvTIoxmh
-    ypgeb2JCoOhbFTm04MS4ftqePlc9RqlfyeNmJ+gyq80mAwIEANBnvUBfOfM95a7c
-    q/2qlUKWj3Gb0GZLtnUnGuByOAZhgV7gONiBj6rcKnAuBEzlEMNcKO5efHXTr6tl
-    IZCTzrIZfwjmWGgPjZDLiQ==
+    vxmfiPafdBj9t0HPqOlfmptv1VcKGFJL3S7Oksj88c84fCMSXdvPqM+mkjsIuad5
+    Amz51YNM0rGOJQKykfJRoM1ao2s7E12nCX3pH3b8G23aPCe69Gw5fffmnc1v5+m4
+    1wg5L+qVIrB/TDjIBrDVs+wtPC8R3Pxhw74nPvt3CVGsEA+rRFz1PHMOqAdMj/zI
+    M+291UdIaiMHzZXvPht1Z/ptMeeyMnAxnbuiafh8eR389p1m5K9RfpRbJmglXx6M
+    J7ly448K8111qc92KDyGxTMvCBnQA8XKLd8TkYSGU2vbQYnGvmZKK6urUDVP6gJ4
+    whlUk4Etx1/kqDqeKF/2Uw==
     """
 
   Scenario: Updating the Nextcloud 22.0.0 on the beta channel
@@ -523,18 +523,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "22.2.4.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-22.2.4rc2.zip"
+    And Update to version "22.2.4.2" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-22.2.4rc3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/22/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    FXCaKtTs1RdSndCPVkbw4PG9562KFNCveYy+IVm4LaGF9U30CwlHGn2/9gIW8phK
-    TF8Kg/jzsQi2WrHw0R+4vQb+S7AsFhu7wOInGDeT5UC14iLtKFOzoZyaFuO3LcmM
-    9Om8wuTJhwWGlum0sn2zuQWVfsOjCLiJjip4Ogl4O473yNfscicAS4HVFvTIoxmh
-    ypgeb2JCoOhbFTm04MS4ftqePlc9RqlfyeNmJ+gyq80mAwIEANBnvUBfOfM95a7c
-    q/2qlUKWj3Gb0GZLtnUnGuByOAZhgV7gONiBj6rcKnAuBEzlEMNcKO5efHXTr6tl
-    IZCTzrIZfwjmWGgPjZDLiQ==
+    vxmfiPafdBj9t0HPqOlfmptv1VcKGFJL3S7Oksj88c84fCMSXdvPqM+mkjsIuad5
+    Amz51YNM0rGOJQKykfJRoM1ao2s7E12nCX3pH3b8G23aPCe69Gw5fffmnc1v5+m4
+    1wg5L+qVIrB/TDjIBrDVs+wtPC8R3Pxhw74nPvt3CVGsEA+rRFz1PHMOqAdMj/zI
+    M+291UdIaiMHzZXvPht1Z/ptMeeyMnAxnbuiafh8eR389p1m5K9RfpRbJmglXx6M
+    J7ly448K8111qc92KDyGxTMvCBnQA8XKLd8TkYSGU2vbQYnGvmZKK6urUDVP6gJ4
+    whlUk4Etx1/kqDqeKF/2Uw==
     """
 
   Scenario: Updating the Nextcloud 22.2.4 on the beta channel
@@ -545,17 +545,17 @@ Feature: Testing the update scenario of beta releases
     When The request is sent
     Then The response is non-empty
     And Update to version "23.0.1.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-23.0.1rc2.zip"
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-23.0.1rc3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/23/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    ioYxGNboRsX3qHxSEs7RCs/m4hMq5z4JS71LNnjE5Fom/srIPk8n0zhmcojGE49Z
-    JkspW6PjYVrcnQ5XEOrjqK9Cpd1ruvkAaXvgPOXsg/T90XZs7ceQ0npHu87Su02O
-    VIiNmBnXjLTL2wVHRbD9goue1VsDojWGaw6HLhPR5ME00AV5IaxiJsfWOW76FkMd
-    33ZCwqMXpE1DprhWOOqmBTJCk0m+vM9pCcDT7RvCt+j4JQSLBg/13tD/eb+bbSfK
-    CP323msivnH7URz4TXVj6gsBzPwtUtE7YCSt33PT33yUnsOegxd9Bx/lq/P08ky1
-    QW8IhHh5CaNyEvjGSJDDXA==
+    vPR5WV2lo7us5ZUc/nW5/SXgbj/pl4nZ7cs3OgKNyKXwzsSj2P74gORJOY6YN7T3
+    D2GZhIe39Q4BE24RKGeUecry5V1W3+du5MTe7TJBKQkx4Pnae7teyLF5qHZngHvr
+    2KPgqVxdreun3sYyErv96GiStYx5X/A6CJJaZ1CB6KoIbemYHbbY6D2tEsp1eXYz
+    NL6ix/pAYNpBywmW5kFmG4ZUz/5LRrUQOes/hb3GRzfZhn7uht58qZMO4zOyx/R7
+    1nDVNqxSgeKu4yv/5KAcItbIXIXubAxqIuYUjbardwVZOk82YQ82Kq7LXmUKHcVI
+    TsiMsUAJBtInOEoYSZM0pQ==
     """
 
   Scenario: Updating the Nextcloud 23.0.0 on the beta channel
@@ -566,15 +566,15 @@ Feature: Testing the update scenario of beta releases
     When The request is sent
     Then The response is non-empty
     And Update to version "23.0.1.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-23.0.1rc2.zip"
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-23.0.1rc3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/23/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    ioYxGNboRsX3qHxSEs7RCs/m4hMq5z4JS71LNnjE5Fom/srIPk8n0zhmcojGE49Z
-    JkspW6PjYVrcnQ5XEOrjqK9Cpd1ruvkAaXvgPOXsg/T90XZs7ceQ0npHu87Su02O
-    VIiNmBnXjLTL2wVHRbD9goue1VsDojWGaw6HLhPR5ME00AV5IaxiJsfWOW76FkMd
-    33ZCwqMXpE1DprhWOOqmBTJCk0m+vM9pCcDT7RvCt+j4JQSLBg/13tD/eb+bbSfK
-    CP323msivnH7URz4TXVj6gsBzPwtUtE7YCSt33PT33yUnsOegxd9Bx/lq/P08ky1
-    QW8IhHh5CaNyEvjGSJDDXA==
+    vPR5WV2lo7us5ZUc/nW5/SXgbj/pl4nZ7cs3OgKNyKXwzsSj2P74gORJOY6YN7T3
+    D2GZhIe39Q4BE24RKGeUecry5V1W3+du5MTe7TJBKQkx4Pnae7teyLF5qHZngHvr
+    2KPgqVxdreun3sYyErv96GiStYx5X/A6CJJaZ1CB6KoIbemYHbbY6D2tEsp1eXYz
+    NL6ix/pAYNpBywmW5kFmG4ZUz/5LRrUQOes/hb3GRzfZhn7uht58qZMO4zOyx/R7
+    1nDVNqxSgeKu4yv/5KAcItbIXIXubAxqIuYUjbardwVZOk82YQ82Kq7LXmUKHcVI
+    TsiMsUAJBtInOEoYSZM0pQ==
     """
