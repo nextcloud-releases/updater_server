@@ -105,11 +105,13 @@ jobs:
           cd nextcloud
           php occ integrity:check-core
 
-  upgrades-summary:
+  summary:
     runs-on: ubuntu-latest
     needs: [changes, upgrades]
 
     if: always()
+
+    name: upgrades-summary
 
     steps:
       - name: Summary status
