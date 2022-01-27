@@ -804,25 +804,46 @@ Feature: Testing the update scenario of stable releases
     SsHZmGokOzkBu0F+NV5CSQ==
     """
 
-  Scenario:  Updating the Nextcloud latest 22 to 23.0.0 on the stable channel
+  Scenario:  Updating the Nextcloud latest 22 to 23.0.1 on the stable channel
     Given There is a release with channel "stable"
     And The received version is "22.2.3.0"
     And The received PHP version is "7.3.0"
     And the installation mtime is "28"
     When The request is sent
     Then The response is non-empty
-    And Update to version "23.0.0.10" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-23.0.0.zip"
+    And Update to version "23.0.1.2" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-23.0.1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/23/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    eC4ILfi7vAflgo5wx2Tx05DhvEAaaZTtSIitsl4rfs63fvSNoaqvq1WKMr1VyOP+
-    JGos953RwVId1SdA2BT+SzxQDioFafzsmEH8zKCNINO2D5iU06yCVefHAliF76dt
-    2qSKDsTFigg5Rt8aPokfxMKcdt1IZPxJGkYf0Wi8B+eJCtcER8+WBYMl64qHydbM
-    u0iZY1v/g4kyZTnFX0pKvS9qy3v+7AiQI6Y8cedL7vOdC+W3UPWzmQzkFlqbghaN
-    Kt9CydQTwpV9V7GQyaFmXmVN91HFoPbVqlQ5yyq8Hq8KiUjCaVt5OGSCW1vXRPt0
-    0Gcs34+yOpWJ3yRGf7/E9Q==
+    t9pQfXsUE4/hldtbW8448smkE6oadkPtkQyfXKiqvdW0ZYT4b4eLcdnK+NpTYTtw
+    LYRghsdiLa1aChs1T2M6nwuhq+kGBphCHaD0Tug/XOUtnAYhpngwcugYaFhetDNu
+    OfTgLc3uc7P01W1kMJz7PnNYfPPP3aCuvB6FrrbHLX9rtD+4wviSdZ5/+WLMjAU4
+    3GGchtZD5/b7FdHll8m6pBovcLG2K3ZqFQ+ntE0g//QSkWGjjgqrLITMMqmkaQRM
+    c80gflqBrfb2wm1e1MxIqUtRy/9ehFSgUacbrw3lOfm+iV9m+LlNMhpNnUpF0OCW
+    UBajXCXebNIGpf3aUC4UZw==
+    """
+  
+  Scenario:  Updating the Nextcloud 23 to latest 23.0.1 on the stable channel
+    Given There is a release with channel "stable"
+    And The received version is "23.0.0.10"
+    And The received PHP version is "7.3.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "23.0.1.2" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-23.0.1.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/23/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    t9pQfXsUE4/hldtbW8448smkE6oadkPtkQyfXKiqvdW0ZYT4b4eLcdnK+NpTYTtw
+    LYRghsdiLa1aChs1T2M6nwuhq+kGBphCHaD0Tug/XOUtnAYhpngwcugYaFhetDNu
+    OfTgLc3uc7P01W1kMJz7PnNYfPPP3aCuvB6FrrbHLX9rtD+4wviSdZ5/+WLMjAU4
+    3GGchtZD5/b7FdHll8m6pBovcLG2K3ZqFQ+ntE0g//QSkWGjjgqrLITMMqmkaQRM
+    c80gflqBrfb2wm1e1MxIqUtRy/9ehFSgUacbrw3lOfm+iV9m+LlNMhpNnUpF0OCW
+    UBajXCXebNIGpf3aUC4UZw==
     """
 
   Scenario: Stay on the latest Nextcloud 22 on the stable channel (staged rollout)
