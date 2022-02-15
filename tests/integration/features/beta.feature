@@ -544,18 +544,18 @@ BqD7HKmBrgYrGdAC9Ib70A==
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "23.0.2.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-23.0.2rc1.zip"
+    And Update to version "23.0.2.1" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-23.0.2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/23/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    HEl6lylKLtWVel9wUWq+16SkIE/LpSroxSuOcaBZq0FwY3W2TSbBvuMrKjHEtU8U
-    yPVwxEjCMd1oGGBsLcjPnmz1nR+BwUtGx+2HRIT227fueXCYyJAXpAuUrSQ4/wan
-    H2eCVyYZ+MSv1eeKGNthPxCYhra+sUNA/p65OMtYr3xSuY0IU6Kc2eqb9huAGE+G
-    xXNhB04lDFewkuX5XY0Tp/IE6yrkwfF8FNEYuMpYU/SEO4K0KQFZalJ1DPpbZh+X
-    dulJxJDJOIatldhm+50Lk6TeQ1NZr364aUksnoMGLeGFkMI/ZShim2UlFFELkULH
-    Yn0jInUysCKfJo/vNjDx+A==
+    seF0niy9QtUhbXNZrye4qfxT6G97gQ9LsZRQf43s2Z2J/iBKDaCiMzdov8/avtgw
+    tyH5B5dn6rtd83qunIGK0GtgtUgSUle7TpTx8W5UjHFdrcHxO1VwasCMbh+E/xVo
+    9np+KL0NwpF6j4awlpmTm1vVEBpnBO68gKhu04+HSw/40ayp91Oj2h+P22ch1WlK
+    zGN1gOw0mjVvbayFc4Yxub+px4Ce4EQ9Lt0QWq/yIOO0xc3Eu4YLGIlWzFtYyNX7
+    0+02satHYAx6xBEzI30zZOIl/N1f/zcqFexsHBxO328fb+Mybk4LvxCyyBPEIA2m
+    scjgscxQNW0T9ileX2Dylw==
     """
 
   Scenario: Updating the Nextcloud 23.0.0 on the beta channel
@@ -565,16 +565,16 @@ BqD7HKmBrgYrGdAC9Ib70A==
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "23.0.2.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-23.0.2rc1.zip"
+    And Update to version "23.0.2.1" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-23.0.2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/23/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    HEl6lylKLtWVel9wUWq+16SkIE/LpSroxSuOcaBZq0FwY3W2TSbBvuMrKjHEtU8U
-    yPVwxEjCMd1oGGBsLcjPnmz1nR+BwUtGx+2HRIT227fueXCYyJAXpAuUrSQ4/wan
-    H2eCVyYZ+MSv1eeKGNthPxCYhra+sUNA/p65OMtYr3xSuY0IU6Kc2eqb9huAGE+G
-    xXNhB04lDFewkuX5XY0Tp/IE6yrkwfF8FNEYuMpYU/SEO4K0KQFZalJ1DPpbZh+X
-    dulJxJDJOIatldhm+50Lk6TeQ1NZr364aUksnoMGLeGFkMI/ZShim2UlFFELkULH
-    Yn0jInUysCKfJo/vNjDx+A==
+    seF0niy9QtUhbXNZrye4qfxT6G97gQ9LsZRQf43s2Z2J/iBKDaCiMzdov8/avtgw
+    tyH5B5dn6rtd83qunIGK0GtgtUgSUle7TpTx8W5UjHFdrcHxO1VwasCMbh+E/xVo
+    9np+KL0NwpF6j4awlpmTm1vVEBpnBO68gKhu04+HSw/40ayp91Oj2h+P22ch1WlK
+    zGN1gOw0mjVvbayFc4Yxub+px4Ce4EQ9Lt0QWq/yIOO0xc3Eu4YLGIlWzFtYyNX7
+    0+02satHYAx6xBEzI30zZOIl/N1f/zcqFexsHBxO328fb+Mybk4LvxCyyBPEIA2m
+    scjgscxQNW0T9ileX2Dylw==
     """
