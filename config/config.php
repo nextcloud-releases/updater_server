@@ -539,35 +539,35 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 	'beta' => [
 		'23' => [
 			'100' => [
-				'latest' => '23.0.2',
-				'internalVersion' => '23.0.2.1',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-23.0.2.zip',
+				'latest' => '23.0.3 RC1',
+				'internalVersion' => '23.0.3.0',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-23.0.3rc1.zip',
 				'web' => 'https://docs.nextcloud.com/server/23/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '7.3',
-				'signature' => 'seF0niy9QtUhbXNZrye4qfxT6G97gQ9LsZRQf43s2Z2J/iBKDaCiMzdov8/avtgw
-tyH5B5dn6rtd83qunIGK0GtgtUgSUle7TpTx8W5UjHFdrcHxO1VwasCMbh+E/xVo
-9np+KL0NwpF6j4awlpmTm1vVEBpnBO68gKhu04+HSw/40ayp91Oj2h+P22ch1WlK
-zGN1gOw0mjVvbayFc4Yxub+px4Ce4EQ9Lt0QWq/yIOO0xc3Eu4YLGIlWzFtYyNX7
-0+02satHYAx6xBEzI30zZOIl/N1f/zcqFexsHBxO328fb+Mybk4LvxCyyBPEIA2m
-scjgscxQNW0T9ileX2Dylw==',
+				'signature' => 'uQYugKno1sgI+6y678rZRhkpJrfIYivOCDFTN2RQK247zcwFxqPpOFG5uQq+5juJ
+NCSFI2I+MyMCgCZyyctrcklmtJbY69vuw2Mdq2wae6C17NfP0EuswVunK3w2FMTn
+27gLUsTGZgwvDrRxn2/irDq7G/FBNawIsjbVEBU3sj9MIHTlTK8eFpfiPIJOc9yR
+2kC8JBBHyjJ5UkoxuHHhNT9hYMoDC3+DmQpAC0S+FndFcrfOFlCpZ5ph7muzAILD
+0KJbLIO3eOeI42QkiBkdeJb67QzrVnmMRePrBD9QE/pm9n7nptnzEY8Rhlg047ji
+E3ATXNgXS1J7eofUKklMSw==',
 			],
 		],
 
 		'22.2.5' => [
 			'100' => [
-				'latest' => '23.0.2',
-				'internalVersion' => '23.0.2.1',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-23.0.2.zip',
+				'latest' => '23.0.3 RC1',
+				'internalVersion' => '23.0.3.0',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-23.0.3rc1.zip',
 				'web' => 'https://docs.nextcloud.com/server/23/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '7.3',
-				'signature' => 'seF0niy9QtUhbXNZrye4qfxT6G97gQ9LsZRQf43s2Z2J/iBKDaCiMzdov8/avtgw
-tyH5B5dn6rtd83qunIGK0GtgtUgSUle7TpTx8W5UjHFdrcHxO1VwasCMbh+E/xVo
-9np+KL0NwpF6j4awlpmTm1vVEBpnBO68gKhu04+HSw/40ayp91Oj2h+P22ch1WlK
-zGN1gOw0mjVvbayFc4Yxub+px4Ce4EQ9Lt0QWq/yIOO0xc3Eu4YLGIlWzFtYyNX7
-0+02satHYAx6xBEzI30zZOIl/N1f/zcqFexsHBxO328fb+Mybk4LvxCyyBPEIA2m
-scjgscxQNW0T9ileX2Dylw==',
+				'signature' => 'uQYugKno1sgI+6y678rZRhkpJrfIYivOCDFTN2RQK247zcwFxqPpOFG5uQq+5juJ
+NCSFI2I+MyMCgCZyyctrcklmtJbY69vuw2Mdq2wae6C17NfP0EuswVunK3w2FMTn
+27gLUsTGZgwvDrRxn2/irDq7G/FBNawIsjbVEBU3sj9MIHTlTK8eFpfiPIJOc9yR
+2kC8JBBHyjJ5UkoxuHHhNT9hYMoDC3+DmQpAC0S+FndFcrfOFlCpZ5ph7muzAILD
+0KJbLIO3eOeI42QkiBkdeJb67QzrVnmMRePrBD9QE/pm9n7nptnzEY8Rhlg047ji
+E3ATXNgXS1J7eofUKklMSw==',
 			],
 		],
 
