@@ -502,18 +502,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "22.2.6.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-22.2.6rc2.zip"
+    And Update to version "22.2.6.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-22.2.6.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/22/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    BXL+XYdSukHHLH4EtDAA2I0rXGG5jn3qv+gXDLwz97aoU3BxzRXzaZzkNI0U84xl
-    0U5+iVV+4Cc4FduDZzjd1yfV1x0peOT7ds9z3LHrDI/Q4171M8FnVsjn9fhEpDOz
-    QR6XZH/JLfb6/Q+aICg2qIa5FQgdMx1ezz7Y+sUh2EXICkYETgieiICFEImW22k4
-    01eaHTdqutZWe+IK6XNp8gGPdhUOLelyBQdECJAp5FDF9NYmKFI9uqkdJMG0B9iE
-    53W3dInTdWDcfmdWuFLMbe4gzH2joESH4JyJtVr6xRqSe68eqO11EZMIYln6E/y7
-    x+pEp1YqP2bOPV20bmCdqQ==
+    ui8KWtMgg+lPUTqCpqYZk0/RPPGhUexcOUJ42tGXDUZEbm9w7Qt/hm0RNfbuwoA7
+    6yVJDHbkKSrWE3Lwgdc8V5l/ccHvIHcEFS/8LfD+ZDIu/YyqpMunvDGeAlbS8puA
+    vHIQ3mU0eZ1W0M17er8iSJ4UvNZad/d+ESIp1pI2B7Od091P6SVokVC6Jecj+Q1F
+    UWGL/wZxyvHVI9f7tcQDzMLRTRywiwtIs8iVJ7ArInL3UHVNDHX75BMZzDXAfE+M
+    5mQI0vs+XTJnhpPuhjk8fZq5nE3IDXn28ZzEMN8rJVqu9kJ+1zXj99n0fNYjgg8P
+    fkhnjZckL7EqvElwEOmPzA==
     """
 
   Scenario: Updating the Nextcloud 22.0.0 on the beta channel
@@ -523,39 +523,39 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "22.2.6.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-22.2.6rc2.zip"
+    And Update to version "22.2.6.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-22.2.6.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/22/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    BXL+XYdSukHHLH4EtDAA2I0rXGG5jn3qv+gXDLwz97aoU3BxzRXzaZzkNI0U84xl
-    0U5+iVV+4Cc4FduDZzjd1yfV1x0peOT7ds9z3LHrDI/Q4171M8FnVsjn9fhEpDOz
-    QR6XZH/JLfb6/Q+aICg2qIa5FQgdMx1ezz7Y+sUh2EXICkYETgieiICFEImW22k4
-    01eaHTdqutZWe+IK6XNp8gGPdhUOLelyBQdECJAp5FDF9NYmKFI9uqkdJMG0B9iE
-    53W3dInTdWDcfmdWuFLMbe4gzH2joESH4JyJtVr6xRqSe68eqO11EZMIYln6E/y7
-    x+pEp1YqP2bOPV20bmCdqQ==
+    ui8KWtMgg+lPUTqCpqYZk0/RPPGhUexcOUJ42tGXDUZEbm9w7Qt/hm0RNfbuwoA7
+    6yVJDHbkKSrWE3Lwgdc8V5l/ccHvIHcEFS/8LfD+ZDIu/YyqpMunvDGeAlbS8puA
+    vHIQ3mU0eZ1W0M17er8iSJ4UvNZad/d+ESIp1pI2B7Od091P6SVokVC6Jecj+Q1F
+    UWGL/wZxyvHVI9f7tcQDzMLRTRywiwtIs8iVJ7ArInL3UHVNDHX75BMZzDXAfE+M
+    5mQI0vs+XTJnhpPuhjk8fZq5nE3IDXn28ZzEMN8rJVqu9kJ+1zXj99n0fNYjgg8P
+    fkhnjZckL7EqvElwEOmPzA==
     """
 
   Scenario: Updating the latest Nextcloud 22 on the beta channel
     Given There is a release with channel "beta"
-    And The received version is "22.2.6.1"
+    And The received version is "22.2.6.2"
     And The received PHP version is "7.3.0"
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "23.0.3.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-23.0.3rc2.zip"
+    And Update to version "23.0.3.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-23.0.3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/23/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    MnXgRt6iXcGFQECRy6Ft4CGH1H1sDqC8ZM07/dJPTKiLZjblxXz9kTeW3OjL+mQY
-    dWHApKbXPH34utWWGA4+VxFolkUEBDOIShsEQsmiBOuRJUnaAbX8l1C1nJ0XPwY2
-    lWX16FXq/ofWqeimbmhvWN2XZXY1v1dJwhfpBn3rEsQrrhd9rz/w4iCX745RIMWS
-    +fybwbxihmNK9UjtfS2dlU/VMwlJIAGduHkUyFcd1+1uMNDciLQjIz96SKooAOGh
-    +4F5zCgLAIb5mTvLROkgPDhsYR0s1XdLstqMHPChn/Tw1Ke1o6BNP5uafU6PKgBX
-    FCFocdzpUvCEykUOAgnK0A==
+    F+pNP6JiJNBCNsp/YzxYQGyJBO4Tza41vj75ThOKsc8vVbL6uj/vVp5yn3l5NF4A
+    nfPPQXyxZsoeXbKujMkMPfKoGVslRv2zuoZFKhajeo/7wz3TyNdD84JLnACdvmDZ
+    TDM8Mumn8PgNBVg8Uit+oIj4bz+5fPWH1ZRZXd86fmM/nZPGxmQb5+dYWi8zUT84
+    zfH4O9L5mXBsVr8CVGgCJrLW5ReULUVXgVJy/K9LI8gaLHhhCJayp359ZmYsezbm
+    DwSK0UeNMkZz/N9Pg/2RSx2Jm6GACoO0DEkFdhEeCw5u7ZvcIWTQng0L0T3+OCu7
+    GVV0y4592N4BfRZIsq/Wzw==
     """
 
   Scenario: Updating the Nextcloud 23.0.0 on the beta channel
@@ -565,16 +565,16 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "23.0.3.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-23.0.3rc2.zip"
+    And Update to version "23.0.3.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-23.0.3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/23/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    MnXgRt6iXcGFQECRy6Ft4CGH1H1sDqC8ZM07/dJPTKiLZjblxXz9kTeW3OjL+mQY
-    dWHApKbXPH34utWWGA4+VxFolkUEBDOIShsEQsmiBOuRJUnaAbX8l1C1nJ0XPwY2
-    lWX16FXq/ofWqeimbmhvWN2XZXY1v1dJwhfpBn3rEsQrrhd9rz/w4iCX745RIMWS
-    +fybwbxihmNK9UjtfS2dlU/VMwlJIAGduHkUyFcd1+1uMNDciLQjIz96SKooAOGh
-    +4F5zCgLAIb5mTvLROkgPDhsYR0s1XdLstqMHPChn/Tw1Ke1o6BNP5uafU6PKgBX
-    FCFocdzpUvCEykUOAgnK0A==
+    F+pNP6JiJNBCNsp/YzxYQGyJBO4Tza41vj75ThOKsc8vVbL6uj/vVp5yn3l5NF4A
+    nfPPQXyxZsoeXbKujMkMPfKoGVslRv2zuoZFKhajeo/7wz3TyNdD84JLnACdvmDZ
+    TDM8Mumn8PgNBVg8Uit+oIj4bz+5fPWH1ZRZXd86fmM/nZPGxmQb5+dYWi8zUT84
+    zfH4O9L5mXBsVr8CVGgCJrLW5ReULUVXgVJy/K9LI8gaLHhhCJayp359ZmYsezbm
+    DwSK0UeNMkZz/N9Pg/2RSx2Jm6GACoO0DEkFdhEeCw5u7ZvcIWTQng0L0T3+OCu7
+    GVV0y4592N4BfRZIsq/Wzw==
     """
