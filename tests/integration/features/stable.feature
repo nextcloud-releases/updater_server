@@ -850,6 +850,6 @@ Feature: Testing the update scenario of stable releases
     Given There is a release with channel "stable"
     And The received version is "22.2.6.2"
     And The received PHP version is "7.3.0"
-    And the installation mtime is "32"
+    And the installation mtime is "72"
     When The request is sent
     Then The response is empty
