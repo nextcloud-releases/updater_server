@@ -586,16 +586,37 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "24.0.0.6" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-24.0.0beta1.zip"
+    And Update to version "24.0.0.7" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-24.0.0beta2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/24/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    shheL7PpwzBV5b8D2Ppq6ThCp9gD7EK0wnSM9k4FxrxFINAsLjBiGlo+tFjd2M+W
-    mxSFRA0JkojRhR1prKsnduvWk9T9/TUp4BW9OwRMjG5YvI6gI5iz2aZ8Az6q1jQR
-    VCtpL0J2ay6GJwzJyOrbLMWxxXqSy4dnpBUZLC2fsQO0WQHDDplubeLxdgaofGOF
-    12+u/DYZiB+23s61anyuRhdEXXfcnKOkRCl/cRc0lCFYL2u90wKbObfhq+hEq6sY
-    y29yWFEBCH6QLREvvKrhsFnBozzOk2WOQ0m3g/rEBBsYbi6pq93jrQYtBm+T7Kks
-    gd9ID/GkjaAWUj1cNZmjxQ==
+    iYu0F/NgvNKeuH9XvBjLJJa6yRkoRsKbEbmlZkluPRShWXfxravcq6wyuBg7fBht
+    1yOBM1lawx7OpzJbS8hQTjl+5vNSX+yIgIrdyZ5zHh/QubM5kxGOW8XkqJugLdE4
+    +oPjZIBRsdih4jBl2blKzjKU2jfxJFNJw01kzusRAcEhYc3ORBjB4eNLTimX4PXK
+    HA7jNM68M2IDRGHOQy3TJ6acYZXcbc3OxGx0dJjTs8ebcUTlgjIuypCh33adaLro
+    LsQeYINBN8ezIo8WqMm406B/DmRUqNTQOMaLhxqE/IaqytsXMeN3QGzH87TaYfPi
+    7toAf+FCUbUkrHTP2u6JKQ==
+    """
+
+  Scenario: Updating Nextcloud 24.0.0 on the beta channel
+    Given There is a release with channel "beta"
+    And The received version is "24.0.0.6"
+    And The received PHP version is "7.4.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "24.0.0.7" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-24.0.0beta2.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/24/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    iYu0F/NgvNKeuH9XvBjLJJa6yRkoRsKbEbmlZkluPRShWXfxravcq6wyuBg7fBht
+    1yOBM1lawx7OpzJbS8hQTjl+5vNSX+yIgIrdyZ5zHh/QubM5kxGOW8XkqJugLdE4
+    +oPjZIBRsdih4jBl2blKzjKU2jfxJFNJw01kzusRAcEhYc3ORBjB4eNLTimX4PXK
+    HA7jNM68M2IDRGHOQy3TJ6acYZXcbc3OxGx0dJjTs8ebcUTlgjIuypCh33adaLro
+    LsQeYINBN8ezIo8WqMm406B/DmRUqNTQOMaLhxqE/IaqytsXMeN3QGzH87TaYfPi
+    7toAf+FCUbUkrHTP2u6JKQ==
     """
