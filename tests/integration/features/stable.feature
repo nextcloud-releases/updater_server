@@ -845,11 +845,3 @@ Feature: Testing the update scenario of stable releases
     DwSK0UeNMkZz/N9Pg/2RSx2Jm6GACoO0DEkFdhEeCw5u7ZvcIWTQng0L0T3+OCu7
     GVV0y4592N4BfRZIsq/Wzw==
     """
-
-  Scenario: Stay on the latest Nextcloud 22 on the stable channel (staged rollout)
-    Given There is a release with channel "stable"
-    And The received version is "22.2.6.2"
-    And The received PHP version is "7.3.0"
-    And the installation mtime is "72"
-    When The request is sent
-    Then The response is empty
