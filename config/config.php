@@ -545,12 +545,12 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 				'web' => 'https://docs.nextcloud.com/server/24/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '7.4',
-				'signature' => 'OBfQKLRNUMJrOPWyYWpUXm+/zbuYFQD0nDb6Xy4xrcsXsLHiCv0vjDFw/fTLWlfK
-cXzfXhfUUAs0BdIoK1RtSTkmsTCDWZbsJ4gxKl1Npz/mm5Apn7W1Z4BUi993vMPf
-amJPO8SfNuLQJ5Gyq7RepBAxi03XZoE5sk7i163CeHpzfJqZm6ApuflYFDgFStq1
-RyfMecaZyBVNA6Jiam+cEB3MmYydA9vwDp5RzTtObCnWgT4/gstFMPBW/9ZjY4vC
-chrlhI9XBuuQKLAAsDOBfL+SHzByvVPBrX5QfBFINhAkctdU3S/4fvBn7rm7YoNj
-uU4FSNoA9NjdHHZZYPecNw==',
+				'signature' => 'ux7sDV+nxX+wfiXaDHzKsRGrTWStP+rlt3iNx96ZRFuU7cnAhoZ6TeM3l2Y7sbf/
+zqMo5C3ZVf3kOyPAkx6rGj5grKl2YpkgnT9a9bRnRwwezINAVkRJnXuDA0EJF2+O
+XlzRBQY2QGX20XxNws25YfWTzqARYqjvg+Tc4xbUew6gYeoAbBzTKyOtfCRmPAyt
+3RlnJnWLW9gFnZhZ6GGTB25Rav8MT+AFxszB6ACTwVSNAi//Nev2Pzuxg7TB5h1Q
++mFveQ+p+Mspqwgpg70HzZPa2ok7jlSfEzCalybipoxs05a2fA6p67RW0Qic+paK
++VN7mtgqKuXrmIjOFjYOoA==',
 			],
 		],
 		'23.0.3' => [
@@ -561,12 +561,12 @@ uU4FSNoA9NjdHHZZYPecNw==',
 				'web' => 'https://docs.nextcloud.com/server/24/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '7.4',
-				'signature' => 'OBfQKLRNUMJrOPWyYWpUXm+/zbuYFQD0nDb6Xy4xrcsXsLHiCv0vjDFw/fTLWlfK
-cXzfXhfUUAs0BdIoK1RtSTkmsTCDWZbsJ4gxKl1Npz/mm5Apn7W1Z4BUi993vMPf
-amJPO8SfNuLQJ5Gyq7RepBAxi03XZoE5sk7i163CeHpzfJqZm6ApuflYFDgFStq1
-RyfMecaZyBVNA6Jiam+cEB3MmYydA9vwDp5RzTtObCnWgT4/gstFMPBW/9ZjY4vC
-chrlhI9XBuuQKLAAsDOBfL+SHzByvVPBrX5QfBFINhAkctdU3S/4fvBn7rm7YoNj
-uU4FSNoA9NjdHHZZYPecNw==',
+				'signature' => 'ux7sDV+nxX+wfiXaDHzKsRGrTWStP+rlt3iNx96ZRFuU7cnAhoZ6TeM3l2Y7sbf/
+zqMo5C3ZVf3kOyPAkx6rGj5grKl2YpkgnT9a9bRnRwwezINAVkRJnXuDA0EJF2+O
+XlzRBQY2QGX20XxNws25YfWTzqARYqjvg+Tc4xbUew6gYeoAbBzTKyOtfCRmPAyt
+3RlnJnWLW9gFnZhZ6GGTB25Rav8MT+AFxszB6ACTwVSNAi//Nev2Pzuxg7TB5h1Q
++mFveQ+p+Mspqwgpg70HzZPa2ok7jlSfEzCalybipoxs05a2fA6p67RW0Qic+paK
++VN7mtgqKuXrmIjOFjYOoA==',
 			]
 		],
 		'23' => [
