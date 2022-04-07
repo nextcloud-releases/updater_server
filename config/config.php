@@ -125,7 +125,7 @@ GVV0y4592N4BfRZIsq/Wzw==',
 			],
 		],
 		'22.2.6' => [
-			'70' => [
+			'100' => [
 				'latest' => '23.0.3',
 				'internalVersion' => '23.0.3.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-23.0.3.zip',
