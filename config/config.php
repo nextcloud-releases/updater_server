@@ -108,6 +108,38 @@
 
 return [
 	'stable' => [
+		'24' => [
+			'100' => [
+				'latest' => '24.0.0',
+				'internalVersion' => '24.0.0.12',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-24.0.0.zip',
+				'web' => 'https://docs.nextcloud.com/server/24/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '7.4',
+				'signature' => 'jLR9ICy0rDPxziCNGzGBe9yZYQljJJZ6mfSdXz1yfc/iyHxsJ7CgsnzDQumAp/n7
+pUvyZJ0UHFIaNBIYPzIrJO8976Ph0uJU3jGGtO89RrXAh+NBT0jbW+vl9qPssO9/
+UUEHXT+5MXJq5kjtVf5asV4WQGxsfAQt3uun9o1nGCtnM2VO+5FIh9YU6RdnrFPT
+O20PGlgUdtnlZ8ExeekPaG2teoK3FKyMCa86K8k2omd62JnG/u7Pj28dTEoUvIbP
+dOpAtA8su4/KUmkejsrKYuMz3YlFBzca1E/tEsvHKyazcKxwyXX3JJXQ20fxk11i
+unPxen98ByKtyNFblIzs9Q==',
+			],
+		],
+		'23.0.4' => [
+			'30' => [
+				'latest' => '24.0.0',
+				'internalVersion' => '24.0.0.12',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-24.0.0.zip',
+				'web' => 'https://docs.nextcloud.com/server/24/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '7.4',
+				'signature' => 'jLR9ICy0rDPxziCNGzGBe9yZYQljJJZ6mfSdXz1yfc/iyHxsJ7CgsnzDQumAp/n7
+pUvyZJ0UHFIaNBIYPzIrJO8976Ph0uJU3jGGtO89RrXAh+NBT0jbW+vl9qPssO9/
+UUEHXT+5MXJq5kjtVf5asV4WQGxsfAQt3uun9o1nGCtnM2VO+5FIh9YU6RdnrFPT
+O20PGlgUdtnlZ8ExeekPaG2teoK3FKyMCa86K8k2omd62JnG/u7Pj28dTEoUvIbP
+dOpAtA8su4/KUmkejsrKYuMz3YlFBzca1E/tEsvHKyazcKxwyXX3JJXQ20fxk11i
+unPxen98ByKtyNFblIzs9Q==',
+			],
+		],
 		'23' => [
 			'100' => [
 				'latest' => '23.0.4',
@@ -539,34 +571,34 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 	'beta' => [
 		'24' => [
 			'100' => [
-				'latest' => '24.0.0 RC3',
-				'internalVersion' => '24.0.0.11',
-				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-24.0.0rc3.zip',
+				'latest' => '24.0.0',
+				'internalVersion' => '24.0.0.12',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-24.0.0.zip',
 				'web' => 'https://docs.nextcloud.com/server/24/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '7.4',
-				'signature' => 'TTM0+9cXgIwa3cOrWskayntxUdgkC6K8pomv9nHIOjPyGQ9P73Qyodk/TfoaWcUV
-6w77bVTkyjCTraDK8p+R6pNl9Z2CmmPBxlOiIqgmMI/8SNM4BpvYhNquU+hVUrVR
-BVC4WjRqsZ9iSMPHkihugp8d4NRfvd9BwLuPz7VZSEKe7p1fXwLQ8j5I60GrjHjE
-t/Rh9LbIujSQBJULNQ93K2sSGyTv8FXJnO3pPsq5o3iXPx6eSOTV8bEZkE/fUp05
-slTKXmnfV7mScqpksqbg2G1iaMJfBIqox0kuku+31VV0r7BCdVrCTGdaITNP9i8s
-U1Xb7RTghRBmzEafdQKOug==',
+				'signature' => 'jLR9ICy0rDPxziCNGzGBe9yZYQljJJZ6mfSdXz1yfc/iyHxsJ7CgsnzDQumAp/n7
+pUvyZJ0UHFIaNBIYPzIrJO8976Ph0uJU3jGGtO89RrXAh+NBT0jbW+vl9qPssO9/
+UUEHXT+5MXJq5kjtVf5asV4WQGxsfAQt3uun9o1nGCtnM2VO+5FIh9YU6RdnrFPT
+O20PGlgUdtnlZ8ExeekPaG2teoK3FKyMCa86K8k2omd62JnG/u7Pj28dTEoUvIbP
+dOpAtA8su4/KUmkejsrKYuMz3YlFBzca1E/tEsvHKyazcKxwyXX3JJXQ20fxk11i
+unPxen98ByKtyNFblIzs9Q==',
 			],
 		],
 		'23.0.4' => [
 			'100' => [
-				'latest' => '24.0.0 RC3',
-				'internalVersion' => '24.0.0.11',
-				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-24.0.0rc3.zip',
+				'latest' => '24.0.0',
+				'internalVersion' => '24.0.0.12',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-24.0.0.zip',
 				'web' => 'https://docs.nextcloud.com/server/24/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '7.4',
-				'signature' => 'TTM0+9cXgIwa3cOrWskayntxUdgkC6K8pomv9nHIOjPyGQ9P73Qyodk/TfoaWcUV
-6w77bVTkyjCTraDK8p+R6pNl9Z2CmmPBxlOiIqgmMI/8SNM4BpvYhNquU+hVUrVR
-BVC4WjRqsZ9iSMPHkihugp8d4NRfvd9BwLuPz7VZSEKe7p1fXwLQ8j5I60GrjHjE
-t/Rh9LbIujSQBJULNQ93K2sSGyTv8FXJnO3pPsq5o3iXPx6eSOTV8bEZkE/fUp05
-slTKXmnfV7mScqpksqbg2G1iaMJfBIqox0kuku+31VV0r7BCdVrCTGdaITNP9i8s
-U1Xb7RTghRBmzEafdQKOug==',
+				'signature' => 'jLR9ICy0rDPxziCNGzGBe9yZYQljJJZ6mfSdXz1yfc/iyHxsJ7CgsnzDQumAp/n7
+pUvyZJ0UHFIaNBIYPzIrJO8976Ph0uJU3jGGtO89RrXAh+NBT0jbW+vl9qPssO9/
+UUEHXT+5MXJq5kjtVf5asV4WQGxsfAQt3uun9o1nGCtnM2VO+5FIh9YU6RdnrFPT
+O20PGlgUdtnlZ8ExeekPaG2teoK3FKyMCa86K8k2omd62JnG/u7Pj28dTEoUvIbP
+dOpAtA8su4/KUmkejsrKYuMz3YlFBzca1E/tEsvHKyazcKxwyXX3JJXQ20fxk11i
+unPxen98ByKtyNFblIzs9Q==',
 			]
 		],
 		'23' => [
