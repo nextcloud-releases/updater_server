@@ -853,18 +853,39 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "24.0.0.12" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-24.0.0.zip"
+    And Update to version "24.0.1.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-24.0.1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/24/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    jLR9ICy0rDPxziCNGzGBe9yZYQljJJZ6mfSdXz1yfc/iyHxsJ7CgsnzDQumAp/n7
-    pUvyZJ0UHFIaNBIYPzIrJO8976Ph0uJU3jGGtO89RrXAh+NBT0jbW+vl9qPssO9/
-    UUEHXT+5MXJq5kjtVf5asV4WQGxsfAQt3uun9o1nGCtnM2VO+5FIh9YU6RdnrFPT
-    O20PGlgUdtnlZ8ExeekPaG2teoK3FKyMCa86K8k2omd62JnG/u7Pj28dTEoUvIbP
-    dOpAtA8su4/KUmkejsrKYuMz3YlFBzca1E/tEsvHKyazcKxwyXX3JJXQ20fxk11i
-    unPxen98ByKtyNFblIzs9Q==
+    AGjMXl1X1hRSZv++TOhoS5GzQ5LovzG6uCESqEVgSR+Xd+l82lCUNvJ6saGYp8xk
+    wL3OnDOnNVcT11xV9Xybt9JLU9tmXf3hf4/HNeyufWKr6AgUENrG7p4dx+tzLk5v
+    fYtOdoqnhyNNLkrshWcEd7COiaK73O4IlivdOyEZkp/L16RlK5wcs4wAy+M/ot6G
+    vodwhgcFEbTxA4rRgPQgAk1jw/IKOBb5mMqR0DwZXZGDrnt32+++fTVhMBIVe1hA
+    XvRlbXYM64mwjbLN0jsrj4yXvaq081NRcHgDUnx7crmgZPVcPs94FFx/sJ9m0y0W
+    S43iWfUbYsoYueTboeC29A==
+    """
+
+  Scenario:  Updating Nextcloud 24 to latest 24 on the stable channel
+    Given There is a release with channel "stable"
+    And The received version is "24.0.0.12"
+    And The received PHP version is "8.0.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "24.0.1.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-24.0.1.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/24/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    AGjMXl1X1hRSZv++TOhoS5GzQ5LovzG6uCESqEVgSR+Xd+l82lCUNvJ6saGYp8xk
+    wL3OnDOnNVcT11xV9Xybt9JLU9tmXf3hf4/HNeyufWKr6AgUENrG7p4dx+tzLk5v
+    fYtOdoqnhyNNLkrshWcEd7COiaK73O4IlivdOyEZkp/L16RlK5wcs4wAy+M/ot6G
+    vodwhgcFEbTxA4rRgPQgAk1jw/IKOBb5mMqR0DwZXZGDrnt32+++fTVhMBIVe1hA
+    XvRlbXYM64mwjbLN0jsrj4yXvaq081NRcHgDUnx7crmgZPVcPs94FFx/sJ9m0y0W
+    S43iWfUbYsoYueTboeC29A==
     """
 
   Scenario: Not updating the latest Nextcloud 23 to latest 24 on the stable channel (staged rollout)
