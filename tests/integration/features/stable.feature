@@ -804,51 +804,51 @@ Feature: Testing the update scenario of stable releases
     NxiEXZUEfh4nWYsoiZYgZA==
     """
 
-  Scenario:  Updating the Nextcloud latest 22 to 23.0.5 on the stable channel
+  Scenario:  Updating the Nextcloud latest 22 to 23.0.6 on the stable channel
     Given There is a release with channel "stable"
     And The received version is "22.2.9.1"
     And The received PHP version is "7.3.0"
     And the installation mtime is "28"
     When The request is sent
     Then The response is non-empty
-    And Update to version "23.0.5.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-23.0.5.zip"
+    And Update to version "23.0.6.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-23.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/23/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    yQu5YFT0hxFKeSH2dJm+U5aTiGRGe10OFjR7bwjRB8y9bKwU0AJUCNisutDAT8IU
-    SQyF8s/RueuqttuPoX8pnI92hDkASmmDSnhVQbq9hzcH2+sGMVhpgdBCpUfbsWHd
-    fu6800+K6jg1ybv89E2Xj76AD9mqay5M/sO2100aCy25LxvF4KKKLuaj7M7oY+CK
-    fmLDJYNCyIS2aq03HCA6DnADDLWYJIIIpam+07E9oMt/74s5XPlDMEluqP4vRYmS
-    YKTNC7zzTgelUXCa0caOuJEYqLxC++i9YjcFXiwKM/qtcjDW91fTVmOOOogg49KZ
-    AcBLHwFr2QvDXmEz9hpEiw==
+    il0om5ivBkPlQphkN9axlvckUhNdSvyHa/1Al6Rtvie+jO9rP8GdukwyxlFB3JAl
+    g9K3nwgTMR5EB1DeaD7+jJ/9u4CAqcWqdo5iEzhk6YaLFbEN58KPBC4eKhBkThOz
+    4L9OklhMaqF8DPZ3FCauYgUTL3jjPc9GSXbIwT/n1xLuGS6ym8DeVz32SnKa187S
+    kNUzdgMxF85x32DsRMRL9FrZU5LnFJiRRhnv8Mga72oCgpC38EhgJ5qMbVQulaSR
+    oE7X//+Ze83JTaaHy4UzOjHv1o9QTYuFJ7t2WHEPKvGeNi9Sj6bb43LNGqEojc/1
+    a5NtaFIziDa0nThYgWjWJA==
     """
 
-  Scenario:  Updating the Nextcloud 23 to latest 23.0.5 on the stable channel
+  Scenario:  Updating the Nextcloud 23 to latest 23.0.6 on the stable channel
     Given There is a release with channel "stable"
     And The received version is "23.0.0.10"
     And The received PHP version is "7.3.0"
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "23.0.5.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-23.0.5.zip"
+    And Update to version "23.0.6.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-23.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/23/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    yQu5YFT0hxFKeSH2dJm+U5aTiGRGe10OFjR7bwjRB8y9bKwU0AJUCNisutDAT8IU
-    SQyF8s/RueuqttuPoX8pnI92hDkASmmDSnhVQbq9hzcH2+sGMVhpgdBCpUfbsWHd
-    fu6800+K6jg1ybv89E2Xj76AD9mqay5M/sO2100aCy25LxvF4KKKLuaj7M7oY+CK
-    fmLDJYNCyIS2aq03HCA6DnADDLWYJIIIpam+07E9oMt/74s5XPlDMEluqP4vRYmS
-    YKTNC7zzTgelUXCa0caOuJEYqLxC++i9YjcFXiwKM/qtcjDW91fTVmOOOogg49KZ
-    AcBLHwFr2QvDXmEz9hpEiw==
+    il0om5ivBkPlQphkN9axlvckUhNdSvyHa/1Al6Rtvie+jO9rP8GdukwyxlFB3JAl
+    g9K3nwgTMR5EB1DeaD7+jJ/9u4CAqcWqdo5iEzhk6YaLFbEN58KPBC4eKhBkThOz
+    4L9OklhMaqF8DPZ3FCauYgUTL3jjPc9GSXbIwT/n1xLuGS6ym8DeVz32SnKa187S
+    kNUzdgMxF85x32DsRMRL9FrZU5LnFJiRRhnv8Mga72oCgpC38EhgJ5qMbVQulaSR
+    oE7X//+Ze83JTaaHy4UzOjHv1o9QTYuFJ7t2WHEPKvGeNi9Sj6bb43LNGqEojc/1
+    a5NtaFIziDa0nThYgWjWJA==
     """
 
   Scenario:  Updating the latest Nextcloud 23 to latest 24 on the stable channel
     Given There is a release with channel "stable"
-    And The received version is "23.0.5.1"
+    And The received version is "23.0.6.1"
     And The received PHP version is "8.0.0"
     And the installation mtime is "11"
     When The request is sent
@@ -887,11 +887,3 @@ Feature: Testing the update scenario of stable releases
     XvRlbXYM64mwjbLN0jsrj4yXvaq081NRcHgDUnx7crmgZPVcPs94FFx/sJ9m0y0W
     S43iWfUbYsoYueTboeC29A==
     """
-
-  Scenario: Not updating the latest Nextcloud 23 to latest 24 on the stable channel (staged rollout)
-    Given There is a release with channel "stable"
-    And The received version is "23.0.5.1"
-    And The received PHP version is "8.0.0"
-    And the installation mtime is "71"
-    When The request is sent
-    Then The response is empty
