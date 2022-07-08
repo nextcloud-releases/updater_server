@@ -539,7 +539,7 @@ Feature: Testing the update scenario of beta releases
 
   Scenario: Updating the latest Nextcloud 22 on the beta channel
     Given There is a release with channel "beta"
-    And The received version is "22.2.10.0"
+    And The received version is "22.2.9.0"
     And The received PHP version is "7.3.0"
     And the installation mtime is "11"
     When The request is sent
@@ -581,7 +581,7 @@ Feature: Testing the update scenario of beta releases
 
   Scenario: Updating the latest Nextcloud 23 on the beta channel
     Given There is a release with channel "beta"
-    And The received version is "23.0.7.0"
+    And The received version is "23.0.6.0"
     And The received PHP version is "7.4.0"
     And the installation mtime is "11"
     When The request is sent

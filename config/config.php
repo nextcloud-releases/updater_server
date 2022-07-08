@@ -585,7 +585,7 @@ pDBRksGxfZ2U4cclg6DV06RbeTybE0mWewbszQhECeGe+gzSSVXcV4ej6kufMPux
 2MG/PdiaJuWEMVQkzHYWzg==',
 			],
 		],
-		'23.0.7' => [
+		'23.0.6' => [
 			'100' => [
 				'latest' => '24.0.3 RC2',
 				'internalVersion' => '24.0.3.1',
@@ -618,7 +618,7 @@ Sr/XyEmQ8xwW3lZEUoe7SQ==',
 			],
 		],
 
-		'22.2.10' => [
+		'22.2.9' => [
 			'100' => [
 				'latest' => '23.0.7 RC2',
 				'internalVersion' => '23.0.7.1',
