@@ -804,51 +804,51 @@ Feature: Testing the update scenario of stable releases
     NxiEXZUEfh4nWYsoiZYgZA==
     """
 
-  Scenario:  Updating the Nextcloud latest 22 to 23.0.6 on the stable channel
+  Scenario:  Updating the Nextcloud latest 22 to 23.0.7 on the stable channel
     Given There is a release with channel "stable"
     And The received version is "22.2.9.1"
     And The received PHP version is "7.3.0"
     And the installation mtime is "28"
     When The request is sent
     Then The response is non-empty
-    And Update to version "23.0.6.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-23.0.6.zip"
+    And Update to version "23.0.7.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-23.0.7.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/23/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    il0om5ivBkPlQphkN9axlvckUhNdSvyHa/1Al6Rtvie+jO9rP8GdukwyxlFB3JAl
-    g9K3nwgTMR5EB1DeaD7+jJ/9u4CAqcWqdo5iEzhk6YaLFbEN58KPBC4eKhBkThOz
-    4L9OklhMaqF8DPZ3FCauYgUTL3jjPc9GSXbIwT/n1xLuGS6ym8DeVz32SnKa187S
-    kNUzdgMxF85x32DsRMRL9FrZU5LnFJiRRhnv8Mga72oCgpC38EhgJ5qMbVQulaSR
-    oE7X//+Ze83JTaaHy4UzOjHv1o9QTYuFJ7t2WHEPKvGeNi9Sj6bb43LNGqEojc/1
-    a5NtaFIziDa0nThYgWjWJA==
+    v/15iLdx8BdzImPOGThzgixnpdexfvJSYDZn1XUmomWolougBb0XutNkscfNGRyJ
+    Rk3jv0KtZlOuvHfQA2H/GsojemYTThD9UQLENp05AGaDUSxJGS9HOtxiXT+zCROw
+    dRNMxfFy6V9lw7VWqnLgEjmy5+Xu/G95qd3rI5QZd+eA+GLV/JCSrBab/sFUx+av
+    VDI2ISmSdzNj9JM/W2JzPxu0xI7URwfops+3odxvkYOXNk59mDMUmWyICad70VXs
+    ecmc9giw6c9uK1OJgJBZXtNIAiCAEusnIfILjjVACbyvab8YZbt+z4GBg+klgfzm
+    66tmaZpCezldcA/Z9UTlCA==
     """
 
-  Scenario:  Updating the Nextcloud 23 to latest 23.0.6 on the stable channel
+  Scenario:  Updating the Nextcloud 23 to latest 23.0.7 on the stable channel
     Given There is a release with channel "stable"
     And The received version is "23.0.0.10"
     And The received PHP version is "7.3.0"
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "23.0.6.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-23.0.6.zip"
+    And Update to version "23.0.7.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-23.0.7.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/23/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    il0om5ivBkPlQphkN9axlvckUhNdSvyHa/1Al6Rtvie+jO9rP8GdukwyxlFB3JAl
-    g9K3nwgTMR5EB1DeaD7+jJ/9u4CAqcWqdo5iEzhk6YaLFbEN58KPBC4eKhBkThOz
-    4L9OklhMaqF8DPZ3FCauYgUTL3jjPc9GSXbIwT/n1xLuGS6ym8DeVz32SnKa187S
-    kNUzdgMxF85x32DsRMRL9FrZU5LnFJiRRhnv8Mga72oCgpC38EhgJ5qMbVQulaSR
-    oE7X//+Ze83JTaaHy4UzOjHv1o9QTYuFJ7t2WHEPKvGeNi9Sj6bb43LNGqEojc/1
-    a5NtaFIziDa0nThYgWjWJA==
+    v/15iLdx8BdzImPOGThzgixnpdexfvJSYDZn1XUmomWolougBb0XutNkscfNGRyJ
+    Rk3jv0KtZlOuvHfQA2H/GsojemYTThD9UQLENp05AGaDUSxJGS9HOtxiXT+zCROw
+    dRNMxfFy6V9lw7VWqnLgEjmy5+Xu/G95qd3rI5QZd+eA+GLV/JCSrBab/sFUx+av
+    VDI2ISmSdzNj9JM/W2JzPxu0xI7URwfops+3odxvkYOXNk59mDMUmWyICad70VXs
+    ecmc9giw6c9uK1OJgJBZXtNIAiCAEusnIfILjjVACbyvab8YZbt+z4GBg+klgfzm
+    66tmaZpCezldcA/Z9UTlCA==
     """
 
   Scenario:  Updating the latest Nextcloud 23 to latest 24 on the stable channel
     Given There is a release with channel "stable"
-    And The received version is "23.0.6.1"
+    And The received version is "23.0.7.2"
     And The received PHP version is "8.0.0"
     And the installation mtime is "11"
     When The request is sent
