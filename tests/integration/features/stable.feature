@@ -804,7 +804,7 @@ Feature: Testing the update scenario of stable releases
     GorEOAeOrtcV0ba4AVoETQ==
     """
 
-  Scenario:  Updating the Nextcloud latest 22 to 23.0.7 on the stable channel
+  Scenario:  Updating the Nextcloud latest 22 to 23.0.8 on the stable channel
     Given There is a release with channel "stable"
     And The received version is "22.2.10.2"
     And The received PHP version is "7.3.0"
@@ -825,7 +825,7 @@ Feature: Testing the update scenario of stable releases
     sTSh4a+V6Nj/vTdFpGBdZQ==
     """
 
-  Scenario:  Updating the Nextcloud 23 to latest 23.0.7 on the stable channel
+  Scenario:  Updating the Nextcloud 23 to latest 23.0.8 on the stable channel
     Given There is a release with channel "stable"
     And The received version is "23.0.0.10"
     And The received PHP version is "7.3.0"
@@ -848,7 +848,7 @@ Feature: Testing the update scenario of stable releases
 
   Scenario:  Updating the latest Nextcloud 23 to latest 24 on the stable channel
     Given There is a release with channel "stable"
-    And The received version is "23.0.7.2"
+    And The received version is "23.0.8.1"
     And The received PHP version is "8.0.0"
     And the installation mtime is "11"
     When The request is sent

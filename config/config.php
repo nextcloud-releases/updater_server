@@ -124,7 +124,7 @@ kwq2MYtQObsR5S1p19IQNbCDUTD+nZo/ePibURc7vXZv+5RVG9FxWeI3vtU9jdEn
 75b1kw9sirSo1svalGz1Gg==',
 			],
 		],
-		'23.0.7' => [
+		'23.0.8' => [
 			'100' => [
 				'latest' => '24.0.4',
 				'internalVersion' => '24.0.4.1',
