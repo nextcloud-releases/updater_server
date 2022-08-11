@@ -811,18 +811,18 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "28"
     When The request is sent
     Then The response is non-empty
-    And Update to version "23.0.7.2" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-23.0.7.zip"
+    And Update to version "23.0.8.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-23.0.8.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/23/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    v/15iLdx8BdzImPOGThzgixnpdexfvJSYDZn1XUmomWolougBb0XutNkscfNGRyJ
-    Rk3jv0KtZlOuvHfQA2H/GsojemYTThD9UQLENp05AGaDUSxJGS9HOtxiXT+zCROw
-    dRNMxfFy6V9lw7VWqnLgEjmy5+Xu/G95qd3rI5QZd+eA+GLV/JCSrBab/sFUx+av
-    VDI2ISmSdzNj9JM/W2JzPxu0xI7URwfops+3odxvkYOXNk59mDMUmWyICad70VXs
-    ecmc9giw6c9uK1OJgJBZXtNIAiCAEusnIfILjjVACbyvab8YZbt+z4GBg+klgfzm
-    66tmaZpCezldcA/Z9UTlCA==
+    uW+L/ntKG9gTGOlHLdhok5DZx+w3KTqU+PFRAfkUACS//qU57VQ8XSm1Gki6qqg8
+    41qaA97kTSXPFq1LMKKntjze2UuACBbrgiV23xI7TfabcQxU1lPCipBVNPVbdSxd
+    1CABpFTDLttn+KZedKwyySQHOqZch53ORB7rwIr3EzMXWpI7V8kIt2eA4KzRbKri
+    axYDHtkEovM09lNfUfagWggfDZVKf96YsfucosUAZZbM1X0cm0KULCXnc+NhmlE7
+    m5pinjlqfdTljA9XrF9D4Q6keo1+8MIW9ZcM1jR71MrNClckkx7JTZ2zH0/P2ipP
+    sTSh4a+V6Nj/vTdFpGBdZQ==
     """
 
   Scenario:  Updating the Nextcloud 23 to latest 23.0.7 on the stable channel
@@ -832,18 +832,18 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "23.0.7.2" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-23.0.7.zip"
+    And Update to version "23.0.8.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-23.0.8.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/23/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    v/15iLdx8BdzImPOGThzgixnpdexfvJSYDZn1XUmomWolougBb0XutNkscfNGRyJ
-    Rk3jv0KtZlOuvHfQA2H/GsojemYTThD9UQLENp05AGaDUSxJGS9HOtxiXT+zCROw
-    dRNMxfFy6V9lw7VWqnLgEjmy5+Xu/G95qd3rI5QZd+eA+GLV/JCSrBab/sFUx+av
-    VDI2ISmSdzNj9JM/W2JzPxu0xI7URwfops+3odxvkYOXNk59mDMUmWyICad70VXs
-    ecmc9giw6c9uK1OJgJBZXtNIAiCAEusnIfILjjVACbyvab8YZbt+z4GBg+klgfzm
-    66tmaZpCezldcA/Z9UTlCA==
+    uW+L/ntKG9gTGOlHLdhok5DZx+w3KTqU+PFRAfkUACS//qU57VQ8XSm1Gki6qqg8
+    41qaA97kTSXPFq1LMKKntjze2UuACBbrgiV23xI7TfabcQxU1lPCipBVNPVbdSxd
+    1CABpFTDLttn+KZedKwyySQHOqZch53ORB7rwIr3EzMXWpI7V8kIt2eA4KzRbKri
+    axYDHtkEovM09lNfUfagWggfDZVKf96YsfucosUAZZbM1X0cm0KULCXnc+NhmlE7
+    m5pinjlqfdTljA9XrF9D4Q6keo1+8MIW9ZcM1jR71MrNClckkx7JTZ2zH0/P2ipP
+    sTSh4a+V6Nj/vTdFpGBdZQ==
     """
 
   Scenario:  Updating the latest Nextcloud 23 to latest 24 on the stable channel
