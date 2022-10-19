@@ -887,3 +887,32 @@ Feature: Testing the update scenario of stable releases
     cNT3Pvs4Bg09TBsX50miQqAdhfwyCoH6NKHCDoqf/lbn9S7npzSKQsnFluBU6FwW
     v/s+zlHJacrDQJDM4aLuIQ==
     """
+
+  Scenario:  Updating latest Nextcloud 24 to 25 on the stable channel
+    Given There is a release with channel "stable"
+    And The received version is "24.0.6.1"
+    And The received PHP version is "8.0.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "25.0.0.18" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-25.0.0.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/25/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    Bcs9lgaMcvg8tRVikUE6/BMyrXWKdeG7dyKZ36ctznJ9jYaijAKcAlGwQnmgAyX3
+    UM/6EwponQgBJokt1zHOZjAWsvT56DTLlYpQxGTPcBZSoJacLwgoEMTIhJ7CWM+o
+    OHuT8cN4uDfv/t0+qA+ciUC7ju0dw53T0LUjUwGja8GZSkJGl9bR+/tuPHWpv0rD
+    C054a4ucH7pHBhZvuGKPZL4V+1StuXsP1QwcGMC48CEJOyAx1IfGLhh8J9GM4DgF
+    5Mp9w1w/nnxIACgkVidZh3/abym57rHuKgFzxGl7Yd3G4EBm8B3bYwuk3128UAB8
+    11/RHVStB7WEj855c6j9wA==
+    """
+
+  Scenario: Staying on latest Nextcloud 24 (staged rollout)
+    Given There is a release with channel "stable"
+    And The received version is "24.0.6.1"
+    And The received PHP version is "8.0.0"
+    And the installation mtime is "33"
+    When The request is sent
+    Then The response is empty
