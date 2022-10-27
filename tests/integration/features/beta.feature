@@ -628,16 +628,37 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "25.0.0.18" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-25.0.0.zip"
+    And Update to version "25.0.1.0" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-25.0.1rc1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/25/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    Bcs9lgaMcvg8tRVikUE6/BMyrXWKdeG7dyKZ36ctznJ9jYaijAKcAlGwQnmgAyX3
-    UM/6EwponQgBJokt1zHOZjAWsvT56DTLlYpQxGTPcBZSoJacLwgoEMTIhJ7CWM+o
-    OHuT8cN4uDfv/t0+qA+ciUC7ju0dw53T0LUjUwGja8GZSkJGl9bR+/tuPHWpv0rD
-    C054a4ucH7pHBhZvuGKPZL4V+1StuXsP1QwcGMC48CEJOyAx1IfGLhh8J9GM4DgF
-    5Mp9w1w/nnxIACgkVidZh3/abym57rHuKgFzxGl7Yd3G4EBm8B3bYwuk3128UAB8
-    11/RHVStB7WEj855c6j9wA==
+    qNG7fmYbaPEHKo4BGKc97E4HUvFF/3HtVG0Ejle90BM99+AWU+qkrL+mxlEF72sA
+    Su3hj2byQw24IwKIQXuYJVimOnFzy5Mddx+Od0T5LwNK1ukHnTxcIalKN0MCqNyQ
+    L1PLfD09KNr17uxs++vfp3yHpPmdwr9zh8JlEAZt+8YAXBKSoehMKkrjGdpYTIjN
+    w9PaVHx/DnWAfK0xfASSWC6bkfu5+QJdZ9fxpjJMG+J+0Kt9RZ9NDmLICTqLMRLR
+    gas/6n25OQ7EvCF52qMyrRRf6wTNxDkY+Xux6dZisl/BvbBiIquiTNUK+H5jf/jH
+    s2/vTPWOpEsIzhkS3zbQog==
+    """
+
+  Scenario: Updating Nextcloud 25.0.0 on the beta channel
+    Given There is a release with channel "beta"
+    And The received version is "25.0.0.0"
+    And The received PHP version is "7.4.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "25.0.1.0" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-25.0.1rc1.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/25/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    qNG7fmYbaPEHKo4BGKc97E4HUvFF/3HtVG0Ejle90BM99+AWU+qkrL+mxlEF72sA
+    Su3hj2byQw24IwKIQXuYJVimOnFzy5Mddx+Od0T5LwNK1ukHnTxcIalKN0MCqNyQ
+    L1PLfD09KNr17uxs++vfp3yHpPmdwr9zh8JlEAZt+8YAXBKSoehMKkrjGdpYTIjN
+    w9PaVHx/DnWAfK0xfASSWC6bkfu5+QJdZ9fxpjJMG+J+0Kt9RZ9NDmLICTqLMRLR
+    gas/6n25OQ7EvCF52qMyrRRf6wTNxDkY+Xux6dZisl/BvbBiIquiTNUK+H5jf/jH
+    s2/vTPWOpEsIzhkS3zbQog==
     """
