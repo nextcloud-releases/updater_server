@@ -895,18 +895,18 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "25.0.0.18" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-25.0.0.zip"
+    And Update to version "25.0.1.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-25.0.1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/25/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    Bcs9lgaMcvg8tRVikUE6/BMyrXWKdeG7dyKZ36ctznJ9jYaijAKcAlGwQnmgAyX3
-    UM/6EwponQgBJokt1zHOZjAWsvT56DTLlYpQxGTPcBZSoJacLwgoEMTIhJ7CWM+o
-    OHuT8cN4uDfv/t0+qA+ciUC7ju0dw53T0LUjUwGja8GZSkJGl9bR+/tuPHWpv0rD
-    C054a4ucH7pHBhZvuGKPZL4V+1StuXsP1QwcGMC48CEJOyAx1IfGLhh8J9GM4DgF
-    5Mp9w1w/nnxIACgkVidZh3/abym57rHuKgFzxGl7Yd3G4EBm8B3bYwuk3128UAB8
-    11/RHVStB7WEj855c6j9wA==
+    gPMcRBmMW875VGEEtP/qfpjbS8kYwVsW0DwK1DdDBrW+DduIUiwiOM4PVi99pVq2
+    zJ01A6pWPwx9adIiqnm7tBTgBYtrmS6S4KY4DWp+kx7ndflvO/xIH1B8PyvLuFXM
+    2FKj5i45YhUv8rTJ3jgmNj6UrfFB0CJTo+slHAPwTWooF4IsZUjTw97MjpnYkLIQ
+    vyuADZWp4CFxQq5FTmgaFmdRuSbZuHgt9bbUvXE+CzPKS/OxfdxbHbwrBLuyFsbE
+    wdEGUgjkWJRHIyK8UX/5XccUETH2C82l0cwTVILWMvieBPGtRH8matFpxeJW0jzX
+    4wgr7yW+fOGMm4OFpbQR5A==
     """
 
   Scenario: Staying on latest Nextcloud 24 (staged rollout)
