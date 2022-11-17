@@ -892,7 +892,7 @@ Feature: Testing the update scenario of stable releases
     Given There is a release with channel "stable"
     And The received version is "24.0.7.1"
     And The received PHP version is "8.0.0"
-    And the installation mtime is "11"
+    And the installation mtime is "91"
     When The request is sent
     Then The response is non-empty
     And Update to version "25.0.1.1" is available
@@ -908,11 +908,3 @@ Feature: Testing the update scenario of stable releases
     wdEGUgjkWJRHIyK8UX/5XccUETH2C82l0cwTVILWMvieBPGtRH8matFpxeJW0jzX
     4wgr7yW+fOGMm4OFpbQR5A==
     """
-
-  Scenario: Staying on latest Nextcloud 24 (staged rollout)
-    Given There is a release with channel "stable"
-    And The received version is "24.0.7.1"
-    And The received PHP version is "8.0.0"
-    And the installation mtime is "33"
-    When The request is sent
-    Then The response is empty
