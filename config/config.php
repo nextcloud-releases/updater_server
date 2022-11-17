@@ -125,7 +125,7 @@ wdEGUgjkWJRHIyK8UX/5XccUETH2C82l0cwTVILWMvieBPGtRH8matFpxeJW0jzX
 			],
 		],
 		'24.0.7' => [
-			'30' => [
+			'100' => [
 				'latest' => '25.0.1',
 				'internalVersion' => '25.0.1.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-25.0.1.zip',
