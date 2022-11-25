@@ -603,35 +603,35 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 	'beta' => [
 		'25' => [
 			'100' => [
-				'latest' => '25.0.1',
-				'internalVersion' => '25.0.1.1',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-25.0.1.zip',
+				'latest' => '25.0.2 RC1',
+				'internalVersion' => '25.0.2.0',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-25.0.2rc1.zip',
 				'web' => 'https://docs.nextcloud.com/server/25/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '7.4',
-				'signature' => 'gPMcRBmMW875VGEEtP/qfpjbS8kYwVsW0DwK1DdDBrW+DduIUiwiOM4PVi99pVq2
-zJ01A6pWPwx9adIiqnm7tBTgBYtrmS6S4KY4DWp+kx7ndflvO/xIH1B8PyvLuFXM
-2FKj5i45YhUv8rTJ3jgmNj6UrfFB0CJTo+slHAPwTWooF4IsZUjTw97MjpnYkLIQ
-vyuADZWp4CFxQq5FTmgaFmdRuSbZuHgt9bbUvXE+CzPKS/OxfdxbHbwrBLuyFsbE
-wdEGUgjkWJRHIyK8UX/5XccUETH2C82l0cwTVILWMvieBPGtRH8matFpxeJW0jzX
-4wgr7yW+fOGMm4OFpbQR5A==',
+				'signature' => 'cZcqQDjC57/CpEwjES0CCQwXnevLlCDAl6PGJEu8ZrrF/+hV1DNnfNFHjvNoKXdo
+VezdU7z61Wuo3Z6XTw/hpm6oN0hXdDf+PyY4s7ryHzSqpGcyYdVnpOV4lQlbU/dn
+B1y7VANSfuW0sLy/FaNmW7DIJCA1tQraZRnJZThwyOMjrwig+/Gj6TdUkghkMlQR
+ypJ2jNteT3cnIk5rN4mRSOjqWCh7MnUJm2gVLXn4zQEE7LSUXt3EC1BF8E17161q
+9uKxgJNpDB7dVcuGfI41BK0rpGhppVdRkuZTaoaB2rsa/mziohDAJ3K4i6BXWRY2
+sXgeQWbByEwGLJm+qz/wPw==',
 			],
 		],
 
 		'24.0.7' => [
 			'100' => [
-				'latest' => '25.0.1',
-				'internalVersion' => '25.0.1.1',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-25.0.1.zip',
+				'latest' => '25.0.2 RC1',
+				'internalVersion' => '25.0.2.0',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-25.0.2rc1.zip',
 				'web' => 'https://docs.nextcloud.com/server/25/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '7.4',
-				'signature' => 'gPMcRBmMW875VGEEtP/qfpjbS8kYwVsW0DwK1DdDBrW+DduIUiwiOM4PVi99pVq2
-zJ01A6pWPwx9adIiqnm7tBTgBYtrmS6S4KY4DWp+kx7ndflvO/xIH1B8PyvLuFXM
-2FKj5i45YhUv8rTJ3jgmNj6UrfFB0CJTo+slHAPwTWooF4IsZUjTw97MjpnYkLIQ
-vyuADZWp4CFxQq5FTmgaFmdRuSbZuHgt9bbUvXE+CzPKS/OxfdxbHbwrBLuyFsbE
-wdEGUgjkWJRHIyK8UX/5XccUETH2C82l0cwTVILWMvieBPGtRH8matFpxeJW0jzX
-4wgr7yW+fOGMm4OFpbQR5A==',
+				'signature' => 'cZcqQDjC57/CpEwjES0CCQwXnevLlCDAl6PGJEu8ZrrF/+hV1DNnfNFHjvNoKXdo
+VezdU7z61Wuo3Z6XTw/hpm6oN0hXdDf+PyY4s7ryHzSqpGcyYdVnpOV4lQlbU/dn
+B1y7VANSfuW0sLy/FaNmW7DIJCA1tQraZRnJZThwyOMjrwig+/Gj6TdUkghkMlQR
+ypJ2jNteT3cnIk5rN4mRSOjqWCh7MnUJm2gVLXn4zQEE7LSUXt3EC1BF8E17161q
+9uKxgJNpDB7dVcuGfI41BK0rpGhppVdRkuZTaoaB2rsa/mziohDAJ3K4i6BXWRY2
+sXgeQWbByEwGLJm+qz/wPw==',
 			],
 		],
 
