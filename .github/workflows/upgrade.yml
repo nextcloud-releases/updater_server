@@ -74,7 +74,8 @@ jobs:
           # Check if we have a full version like xx.x.x
           if ${{ contains(matrix.config.base, '.') }};
            then wget --quiet https://download.nextcloud.com/server/releases/nextcloud-${{ matrix.config.base }}.zip -O nextcloud-base.zip \
-                || wget --quiet https://download.nextcloud.com/server/prereleases/nextcloud-${{ matrix.config.base }}.zip -O nextcloud-base.zip;
+                || wget --quiet https://download.nextcloud.com/server/prereleases/nextcloud-${{ matrix.config.base }}.zip -O nextcloud-base.zip \
+                || wget --quiet https://download.nextcloud.com/server/prereleases/nextcloud-${{ matrix.config.base }}rc1.zip -O nextcloud-base.zip;
            else wget --quiet https://download.nextcloud.com/server/releases/latest-${{ matrix.config.base }}.zip -O nextcloud-base.zip;
            fi
           unzip -q nextcloud-base.zip
@@ -84,18 +85,18 @@ jobs:
           cd nextcloud
           mkdir data
           php occ maintenance:install --verbose --admin-user admin --admin-pass admin
-      
+
       - name: Fetch upgrade
         run: |
           mv nextcloud nextcloud.old
           wget --quiet ${{ matrix.config.downloadUrl }} -O nextcloud-update.zip
           unzip -q nextcloud-update.zip
-      
+
       - name: Copy necessary files
         run: |
           mv nextcloud.old/config/config.php nextcloud/config/config.php
           mv nextcloud.old/data nextcloud/data
-      
+
       - name: Perform upgrade
         run: |
           cd nextcloud
