@@ -111,7 +111,7 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 	}
 
 	/**
-	 * @When The request is sent
+	 * @When /^The request is sent$/
 	 */
 	public function theRequestIsSent() {
 		$ch = curl_init();
