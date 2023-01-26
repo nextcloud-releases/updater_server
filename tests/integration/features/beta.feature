@@ -662,3 +662,24 @@ Feature: Testing the update scenario of beta releases
     JEWp8jY7hTXfHg/hLH9KhrHiXI6cLFcV8VnbSbLH++oNgbqm3rddr1ZSxOSZ1Ytz
     cpJAz6JCNAlWFBCs73+VTQ==
     """
+
+  Scenario: Updating latest Nextcloud 25 on the beta channel
+    Given There is a release with channel "beta"
+    And The received version is "25.0.3.2"
+    And The received PHP version is "8.1.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "26.0.0.3" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-26.0.0beta1.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/26/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    meK4syRV2kJ0j3cCmRmskHP0a/CTL+Nnc1x5xT0n3c0sM7aih7SAGJmreQ4hirGy
+    DYwAaphPRSylCPfOlNr9rf9Bqo0hQKNWKed4OLVRNnBdXh33EUi994/peykCMPSK
+    lH1vlApBRTdN80XPlhEdfxkVwBXHnwNiyNPzA/jKWtpcR/1R/hWWKa1D8R6Zjd1H
+    E3AiYg6RGGL2Ykw3NMvyvs7pugfFGNGul/roZA9Z8hq1rGAQdGPm40i1pkenkfq9
+    lUIWhG/3KHI+ZAqigNsdQrBfg/8nuKOvwhK2Gs+B4SftW7VuJ4Za5tLFoFcl8kei
+    6gtLW5AxzFufRILOil/ngw==
+    """
