@@ -670,16 +670,16 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "26.0.0.5" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-26.0.0beta3.zip"
+    And Update to version "26.0.0.6" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-26.0.0beta4.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/26/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    f6UaCVI5+8I9NrL1PA55qFbtEf2KYALfWky/cHRfryKhOFCZSa5heUq4z0rYFiRs
-    SKMYHiUMz7YmL77Zi05NzGk0EHCwsbSJ7oP9vRsiay5gTfY2iY68TkVOVhzsMnkI
-    oDxpKPIaP4sUTHFBSJukSh5+IsyfJNtRmqrEn7uOjXaiFoPiRwrHZpC0i64REQDj
-    Ot7tsYh+yoVyo6Q4y9GDDNF5vy0Pb/0yout/EQraSP0hzynnkqaCl1PS99C9OdwB
-    Ma7aAmLqrDDUMGyXDwhjNHsj1kYwDb227rBlB9L0bCuxLcTYOBFnERRgNxHN3iC2
-    aF4o1aR/XLA/j05tAysYyg==
+    lJVljfemugXaSV2Xt8MF9OGaj7VVa24S4GUFM0BABUzWAf0yRRGWcQAyk0Mg6ZBU
+    GvoprwbVhV3+UUGxdj9pQAFYcMqpfcQPdcPWLxk3lx3xuGj79ItyJXRwdahh+4wa
+    JnUAl/70n6Gp6c7F86aJxacUl7KeRbCgg4h5KGGw3aRZJb2R/Mm3TbFwsE1OIDMg
+    R0xZcevYS2lSJzjqY1M1QjfCZO4qq2XMDSEN1G58HMd2+QDWqa63QG7/wCF1ufLw
+    V9tAyTb/fjsj/oUM0wa2bePC3wk/ai8RjWXbZNX2g5YQAxgkCQjfdvb5RNVvmuCL
+    AJBwc9EthsEKMVkKj9R41g==
     """
