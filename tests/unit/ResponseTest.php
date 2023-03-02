@@ -5,11 +5,12 @@
 
 namespace Tests;
 
+use PHPUnit\Framework\TestCase;
 use UpdateServer\Config;
 use UpdateServer\Request;
 use UpdateServer\Response;
 
-class ResponseTest extends \PHPUnit_Framework_TestCase {
+class ResponseTest extends TestCase {
 	/** @var Request */
 	private $request;
 	/** @var Config|\PHPUnit_Framework_MockObject_MockObject */
@@ -17,7 +18,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase {
 	/** @var Response */
 	private $response;
 
-	public function setUp() {
+	public function setUp(): void {
 		date_default_timezone_set('Europe/Berlin');
 
 		$this->request = $this->getMockBuilder(Request::class)

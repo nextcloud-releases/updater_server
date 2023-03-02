@@ -2,22 +2,25 @@
   "config": {
     "vendor-dir": "./vendor/",
     "optimize-autoloader": true,
-    "classmap-authoritative": true,
-    "platform": {
-      "php": "7.2"
-    }
+    "classmap-authoritative": true
   },
   "autoload": {
     "psr-4": {
-      "UpdateServer\\": "src/",
+      "UpdateServer\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
       "Tests\\": "tests/unit"
     }
   },
   "require": {
-    "ext-json": "*"
+    "ext-json": "*",
+    "ext-xml": "*"
   },
   "require-dev": {
-    "behat/behat": "~3.12.0"
+    "behat/behat": "~3.12.0",
+    "phpunit/phpunit": "^9.6"
   },
   "scripts": {
     "lint": "find . -name \\*.php -not -path './vendor/*' -print0 | xargs -0 -n1 php -l"

@@ -6,8 +6,9 @@
 namespace Tests;
 
 use UpdateServer\Config;
+use PHPUnit\Framework\TestCase;
 
-class ConfigTest extends \PHPUnit_Framework_TestCase {
+class ConfigTest extends TestCase {
 	public function testGet() {
 		$config = new Config(__DIR__ . '/../data/config.php');
 
