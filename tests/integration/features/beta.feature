@@ -628,18 +628,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "25.0.5.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-25.0.5rc1.zip"
+    And Update to version "25.0.5.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-25.0.5.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/25/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    WRq9rXdMSN6nJOIZ17w0ueo+6ch4ctcaXFdHYa9DAgE1dS9Wii9qejsi0DBaA1lf
-    JjFDNo9iEQH5Ffg1d2SKRXKwOjiUDSHO3UwKwLh+rPKBlPuR4Z69Tdn9qiltFDuK
-    JuS01aA9gkIU3SMbihnfZMIqyy+oO9WINDfS3siA2W3KzHz4jgGPfO5yD7A2YV5y
-    Fl2c3sFFoxpC/L9GmuGEVofk4Wzs96kh5L8bfIRJQJNNIN1OB57g1uXDvY4afO75
-    xsEcH0nsyTNeYuHivI1kVMj3CLH7aQYqS1y8UCK3lOJzLpU/OoeJt/irLNjuSz1k
-    KT+Z5tNV1urpqHI7ZGDq+g==
+    A6eoNBsaHqsox0veXSiJONnMtuH0EEqWQeN1ob540oDtFsYYyc+rJADjUHCl0pB4
+    Xiw9/y6I3PbaDkavU8x8Q+BUL4XqUfczoZIpOYe0rJ0WKpEmQAC3CAu8METlgX0I
+    F//x5h0F1Z5QxZvLRZZKeMl2ca1XDW1xtSn3JQWhFjaaQe8qBZHCK1+UFQkPpHHC
+    l85x+XCpljUHrFAKOJNGhD5ULjnXJUpsbKp5rGt8ABRJf+cz7c6OD4B5UzMbl0xx
+    X6gWj/GC21qu8iQxteTZefqNtcTHJUlfgDTOXEIkih8nP58Ph5w00cJBA56YxkcE
+    fOEG411tlYA4Ez3Atd4WBg==
     """
 
   Scenario: Updating Nextcloud 25.0.0 on the beta channel
@@ -649,18 +649,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "25.0.5.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-25.0.5rc1.zip"
+    And Update to version "25.0.5.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-25.0.5.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/25/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    WRq9rXdMSN6nJOIZ17w0ueo+6ch4ctcaXFdHYa9DAgE1dS9Wii9qejsi0DBaA1lf
-    JjFDNo9iEQH5Ffg1d2SKRXKwOjiUDSHO3UwKwLh+rPKBlPuR4Z69Tdn9qiltFDuK
-    JuS01aA9gkIU3SMbihnfZMIqyy+oO9WINDfS3siA2W3KzHz4jgGPfO5yD7A2YV5y
-    Fl2c3sFFoxpC/L9GmuGEVofk4Wzs96kh5L8bfIRJQJNNIN1OB57g1uXDvY4afO75
-    xsEcH0nsyTNeYuHivI1kVMj3CLH7aQYqS1y8UCK3lOJzLpU/OoeJt/irLNjuSz1k
-    KT+Z5tNV1urpqHI7ZGDq+g==
+    A6eoNBsaHqsox0veXSiJONnMtuH0EEqWQeN1ob540oDtFsYYyc+rJADjUHCl0pB4
+    Xiw9/y6I3PbaDkavU8x8Q+BUL4XqUfczoZIpOYe0rJ0WKpEmQAC3CAu8METlgX0I
+    F//x5h0F1Z5QxZvLRZZKeMl2ca1XDW1xtSn3JQWhFjaaQe8qBZHCK1+UFQkPpHHC
+    l85x+XCpljUHrFAKOJNGhD5ULjnXJUpsbKp5rGt8ABRJf+cz7c6OD4B5UzMbl0xx
+    X6gWj/GC21qu8iQxteTZefqNtcTHJUlfgDTOXEIkih8nP58Ph5w00cJBA56YxkcE
+    fOEG411tlYA4Ez3Atd4WBg==
     """
 
   Scenario: Updating latest Nextcloud 25 on the beta channel
