@@ -125,7 +125,7 @@ t87PcaZyrupEfAIfD9uQRA==',
 			],
 		],
 		'25.0.5' => [
-			'30' => [
+			'70' => [
 				'latest' => '26.0.0',
 				'internalVersion' => '26.0.0.11',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-26.0.0.zip',
