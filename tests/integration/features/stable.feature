@@ -895,18 +895,18 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "91"
     When The request is sent
     Then The response is non-empty
-    And Update to version "25.0.5.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-25.0.5.zip"
+    And Update to version "25.0.6.1" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-25.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/25/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    A6eoNBsaHqsox0veXSiJONnMtuH0EEqWQeN1ob540oDtFsYYyc+rJADjUHCl0pB4
-    Xiw9/y6I3PbaDkavU8x8Q+BUL4XqUfczoZIpOYe0rJ0WKpEmQAC3CAu8METlgX0I
-    F//x5h0F1Z5QxZvLRZZKeMl2ca1XDW1xtSn3JQWhFjaaQe8qBZHCK1+UFQkPpHHC
-    l85x+XCpljUHrFAKOJNGhD5ULjnXJUpsbKp5rGt8ABRJf+cz7c6OD4B5UzMbl0xx
-    X6gWj/GC21qu8iQxteTZefqNtcTHJUlfgDTOXEIkih8nP58Ph5w00cJBA56YxkcE
-    fOEG411tlYA4Ez3Atd4WBg==
+    sxfNq+YPPX1+8V5i9Y0K9fibThnfsy4c/RNmi8tBQ4i3tdgZvc7Kk3SCErSUfXe9
+    zoNSmjnnkD+wCYkcCDSzXl7NHf3jxYGwqsMg20OblJvpqoc6zFjCxQxkjQuTwPuZ
+    ltqw972/0HlOujHToZOumAg6xlgDqFsJZYZwLNOwo/i+19bzjVKNATAWeWVxA90t
+    Jatlf1fgxZbz7zJM99fqPuihiQhenyQpV3mTbyLBI2nfncjCJspBL28MOtNZlApk
+    heWkhBs9x3j1VxZ6vgA81pIS/ef0RuYK8ucyIXGZoX10Cu/V1vhFEEPyqoWTkJxH
+    NUvbVhPtdD+5oFkvX/gt3w==
     """
 
   Scenario:  Updating Nextcloud 25 to latest 25 on the stable channel
@@ -916,23 +916,23 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "25.0.5.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-25.0.5.zip"
+    And Update to version "25.0.6.1" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-25.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/25/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    A6eoNBsaHqsox0veXSiJONnMtuH0EEqWQeN1ob540oDtFsYYyc+rJADjUHCl0pB4
-    Xiw9/y6I3PbaDkavU8x8Q+BUL4XqUfczoZIpOYe0rJ0WKpEmQAC3CAu8METlgX0I
-    F//x5h0F1Z5QxZvLRZZKeMl2ca1XDW1xtSn3JQWhFjaaQe8qBZHCK1+UFQkPpHHC
-    l85x+XCpljUHrFAKOJNGhD5ULjnXJUpsbKp5rGt8ABRJf+cz7c6OD4B5UzMbl0xx
-    X6gWj/GC21qu8iQxteTZefqNtcTHJUlfgDTOXEIkih8nP58Ph5w00cJBA56YxkcE
-    fOEG411tlYA4Ez3Atd4WBg==
+    sxfNq+YPPX1+8V5i9Y0K9fibThnfsy4c/RNmi8tBQ4i3tdgZvc7Kk3SCErSUfXe9
+    zoNSmjnnkD+wCYkcCDSzXl7NHf3jxYGwqsMg20OblJvpqoc6zFjCxQxkjQuTwPuZ
+    ltqw972/0HlOujHToZOumAg6xlgDqFsJZYZwLNOwo/i+19bzjVKNATAWeWVxA90t
+    Jatlf1fgxZbz7zJM99fqPuihiQhenyQpV3mTbyLBI2nfncjCJspBL28MOtNZlApk
+    heWkhBs9x3j1VxZ6vgA81pIS/ef0RuYK8ucyIXGZoX10Cu/V1vhFEEPyqoWTkJxH
+    NUvbVhPtdD+5oFkvX/gt3w==
     """
 
   Scenario: Updating latest Nextcloud 25 to 26 on the stable channel
     Given There is a release with channel "stable"
-    And The received version is "25.0.5.1"
+    And The received version is "25.0.6.1"
     And The received PHP version is "8.1.0"
     And the installation mtime is "11"
     When The request is sent
@@ -953,7 +953,7 @@ Feature: Testing the update scenario of stable releases
 
   Scenario: Not updating latest Nextcloud 25 to 26 on the stable channel (staged rollout)
     Given There is a release with channel "stable"
-    And The received version is "25.0.5.1"
+    And The received version is "25.0.6.1"
     And The received PHP version is "8.1.0"
     And the installation mtime is "71"
     When The request is sent
