@@ -854,7 +854,7 @@ Feature: Testing the update scenario of stable releases
     When The request is sent
     Then The response is non-empty
     And Update to version "24.0.12.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-24.0.12.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-24.0.12.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/24/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
@@ -875,7 +875,7 @@ Feature: Testing the update scenario of stable releases
     When The request is sent
     Then The response is non-empty
     And Update to version "24.0.12.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-24.0.12.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-24.0.12.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/24/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
@@ -896,7 +896,7 @@ Feature: Testing the update scenario of stable releases
     When The request is sent
     Then The response is non-empty
     And Update to version "25.0.6.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-25.0.6.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-25.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/25/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
@@ -917,7 +917,7 @@ Feature: Testing the update scenario of stable releases
     When The request is sent
     Then The response is non-empty
     And Update to version "25.0.6.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-25.0.6.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-25.0.6.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/25/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
@@ -938,7 +938,7 @@ Feature: Testing the update scenario of stable releases
     When The request is sent
     Then The response is non-empty
     And Update to version "26.0.1.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-26.0.1.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-26.0.1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/26/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
@@ -951,14 +951,6 @@ Feature: Testing the update scenario of stable releases
     YChgDMK2mgiJ2mjb3Dvv4Q==
     """
 
-  Scenario: Not updating latest Nextcloud 25 to 26 on the stable channel (staged rollout)
-    Given There is a release with channel "stable"
-    And The received version is "25.0.6.1"
-    And The received PHP version is "8.1.0"
-    And the installation mtime is "71"
-    When The request is sent
-    Then The response is empty
-
   Scenario: Updating Nextcloud 26 to latest 26 on the stable channel
     Given There is a release with channel "stable"
     And The received version is "26.0.0.10"
@@ -967,7 +959,7 @@ Feature: Testing the update scenario of stable releases
     When The request is sent
     Then The response is non-empty
     And Update to version "26.0.1.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-26.0.1.zip"
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-26.0.1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/26/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
