@@ -32,7 +32,7 @@ jobs:
         run: php -S localhost:8888 index.php &
 
       - name: Run behat
-        run: cd tests/integration && ../../vendor/bin/behat .
+        run: cd tests/integration && ../../vendor/bin/behat --colors .
 
   summary:
     runs-on: ubuntu-latest
