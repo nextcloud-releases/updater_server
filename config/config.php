@@ -178,7 +178,7 @@ NUvbVhPtdD+5oFkvX/gt3w==',
 				'internalVersion' => '24.0.12.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-24.0.12.zip',
 				'web' => 'https://docs.nextcloud.com/server/24/admin_manual/maintenance/upgrade.html',
-				'eol' => false,
+				'eol' => true,
 				'minPHPVersion' => '7.4',
 				'signature' => 'aCQnJpJjf83glgpOxTs1tenmKYhdBK34JyhBtwhikoE4bg1GpfNPe+5OVEDkKPLi
 o3tAWWdx8SAR1+PuLYwjkyy6hhr80ojDrhnmjVprB9PZ5Dqqz9Uk5sLjyse2e0FC
@@ -194,7 +194,7 @@ ACWMWE93WNcq+HBa025zsw==',
 				'internalVersion' => '24.0.12.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-24.0.12.zip',
 				'web' => 'https://docs.nextcloud.com/server/24/admin_manual/maintenance/upgrade.html',
-				'eol' => false,
+				'eol' => true,
 				'minPHPVersion' => '7.4',
 				'signature' => 'aCQnJpJjf83glgpOxTs1tenmKYhdBK34JyhBtwhikoE4bg1GpfNPe+5OVEDkKPLi
 o3tAWWdx8SAR1+PuLYwjkyy6hhr80ojDrhnmjVprB9PZ5Dqqz9Uk5sLjyse2e0FC
@@ -705,7 +705,7 @@ NUvbVhPtdD+5oFkvX/gt3w==',
 				'internalVersion' => '24.0.12.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-24.0.12.zip',
 				'web' => 'https://docs.nextcloud.com/server/24/admin_manual/maintenance/upgrade.html',
-				'eol' => false,
+				'eol' => true,
 				'minPHPVersion' => '7.4',
 				'signature' => 'aCQnJpJjf83glgpOxTs1tenmKYhdBK34JyhBtwhikoE4bg1GpfNPe+5OVEDkKPLi
 o3tAWWdx8SAR1+PuLYwjkyy6hhr80ojDrhnmjVprB9PZ5Dqqz9Uk5sLjyse2e0FC
@@ -722,7 +722,7 @@ ACWMWE93WNcq+HBa025zsw==',
 				'internalVersion' => '24.0.12.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-24.0.12.zip',
 				'web' => 'https://docs.nextcloud.com/server/24/admin_manual/maintenance/upgrade.html',
-				'eol' => false,
+				'eol' => true,
 				'minPHPVersion' => '7.4',
 				'signature' => 'aCQnJpJjf83glgpOxTs1tenmKYhdBK34JyhBtwhikoE4bg1GpfNPe+5OVEDkKPLi
 o3tAWWdx8SAR1+PuLYwjkyy6hhr80ojDrhnmjVprB9PZ5Dqqz9Uk5sLjyse2e0FC
@@ -1160,7 +1160,7 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 		'24' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable24.zip',
 			'web' => 'https://docs.nextcloud.com/server/24/admin_manual/maintenance/upgrade.html',
-			'eol' => false,
+			'eol' => true,
 			'minPHPVersion' => '7.4',
 		],
 		'23' => [

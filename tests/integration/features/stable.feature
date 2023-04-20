@@ -856,7 +856,7 @@ Feature: Testing the update scenario of stable releases
     And Update to version "24.0.12.1" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-24.0.12.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/24/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL is set to "1"
     And The signature is
     """
     aCQnJpJjf83glgpOxTs1tenmKYhdBK34JyhBtwhikoE4bg1GpfNPe+5OVEDkKPLi
@@ -877,7 +877,7 @@ Feature: Testing the update scenario of stable releases
     And Update to version "24.0.12.1" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-24.0.12.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/24/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL is set to "1"
     And The signature is
     """
     aCQnJpJjf83glgpOxTs1tenmKYhdBK34JyhBtwhikoE4bg1GpfNPe+5OVEDkKPLi
