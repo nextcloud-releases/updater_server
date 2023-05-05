@@ -705,9 +705,9 @@ Feature: Testing the update scenario of beta releases
     YChgDMK2mgiJ2mjb3Dvv4Q==
     """
 
-  Scenario: Updating Nextcloud 27 on the beta channel
+  Scenario: Updating latest Nextcloud 26 on the beta channel
     Given There is a release with channel "beta"
-    And The received version is "27.0.0.0"
+    And The received version is "26.0.1.1"
     And The received PHP version is "8.1.0"
     And the installation mtime is "11"
     When The request is sent
