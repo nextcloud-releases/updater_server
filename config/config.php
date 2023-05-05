@@ -714,7 +714,6 @@ heWkhBs9x3j1VxZ6vgA81pIS/ef0RuYK8ucyIXGZoX10Cu/V1vhFEEPyqoWTkJxH
 NUvbVhPtdD+5oFkvX/gt3w==',
 			],
 		],
-
 		'24' => [
 			'100' => [
 				'latest' => '24.0.12',
@@ -748,7 +747,6 @@ PC8WFtnBG8EIA1ncyQ/IDKUZjg79E8cM8zyIY8PYmA/Jf4MpTMwfoGJQ0GtD6nCF
 ACWMWE93WNcq+HBa025zsw==',
 			]
 		],
-
 		'23' => [
 			'100' => [
 				'latest' => '23.0.12',
@@ -765,7 +763,6 @@ rfrM7C5GWPNSzv9qcUteJ4jv9ORJ/FiZVewSfP+5hKxTIeUw+D/9LbCjRVzKwvIx
 PlWRhIoX0XzP82+TC5b1dg==',
 			],
 		],
-
 		'22.2.10' => [
 			'100' => [
 				'latest' => '23.0.12',
@@ -782,7 +779,6 @@ rfrM7C5GWPNSzv9qcUteJ4jv9ORJ/FiZVewSfP+5hKxTIeUw+D/9LbCjRVzKwvIx
 PlWRhIoX0XzP82+TC5b1dg==',
 			],
 		],
-
 		'22' => [
 			'100' => [
 				'latest' => '22.2.10',
@@ -799,7 +795,6 @@ fhlPbaifQKypXBpBdN/RBRt6Ox5z2lSG5IY/g8nc4x7rYQSpiTrtWi1vlcxF0aIT
 GorEOAeOrtcV0ba4AVoETQ==',
 			],
 		],
-
 		'21.0.9' => [
 			'100' => [
 				'latest' => '22.2.10',
