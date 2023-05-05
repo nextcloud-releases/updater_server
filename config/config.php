@@ -633,6 +633,38 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 	],
 
 	'beta' => [
+		'27' => [
+			'100' => [
+					'latest' => '27.0.0 beta 1',
+					'internalVersion' => '27.0.0.2',
+					'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-27.0.0beta1.zip',
+					'web' => 'https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html',
+					'eol' => false,
+					'minPHPVersion' => '8.0',
+					'signature' => 'm0rSlfBYghfQiIsDYGrVwKEuvfi4sT42CYRJDAIgINdd80jBmXusD816LjFBrLlo
+VZID6CJIHr2LRD4M89dFgtzMEWPODCxnYPUw/gKZp6fV9Lx2TWzm2F5rIH+ge9DH
+VBkw4ehpgzflX5yQPQ1TX9VgVQVgBWqjTxsHPMcGfL5p7YY8bg6WG4FJE4psfkUg
+KGLYGnQnr7/1luYfR1iGlzv6T3AQ4Tq1LxMaCwGcE10pAVeYWO7NoI2dDOVHK1oy
+ubVGqUmtR02xvzd47CH4Skfwkp8Ii3dM42XKPrwPZDBxFt0kE5jQFDWvpDSetJKr
+Dvex8LXeUzVu1tvsmLofRA==',
+			],
+		],
+		'26.0.1' => [
+			'100' => [
+					'latest' => '27.0.0 beta 1',
+					'internalVersion' => '27.0.0.2',
+					'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-27.0.0beta1.zip',
+					'web' => 'https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html',
+					'eol' => false,
+					'minPHPVersion' => '8.0',
+					'signature' => 'm0rSlfBYghfQiIsDYGrVwKEuvfi4sT42CYRJDAIgINdd80jBmXusD816LjFBrLlo
+VZID6CJIHr2LRD4M89dFgtzMEWPODCxnYPUw/gKZp6fV9Lx2TWzm2F5rIH+ge9DH
+VBkw4ehpgzflX5yQPQ1TX9VgVQVgBWqjTxsHPMcGfL5p7YY8bg6WG4FJE4psfkUg
+KGLYGnQnr7/1luYfR1iGlzv6T3AQ4Tq1LxMaCwGcE10pAVeYWO7NoI2dDOVHK1oy
+ubVGqUmtR02xvzd47CH4Skfwkp8Ii3dM42XKPrwPZDBxFt0kE5jQFDWvpDSetJKr
+Dvex8LXeUzVu1tvsmLofRA==',
+			],
+		],
 		'26' => [
 			'100' => [
 				'latest' => '26.0.1',
