@@ -82,6 +82,13 @@ jobs:
                  wget --quiet "https://download.nextcloud.com/server/prereleases/nextcloud-${{ matrix.config.base }}rc$i.zip" -O nextcloud-base.zip && break
                  i=$(( i - 1 ));
                done
+             ) || (
+               y=8;
+               while [ $y -gt -0 ]; do
+                 # try to find beta8 to beta1
+                 wget --quiet "https://download.nextcloud.com/server/prereleases/nextcloud-${{ matrix.config.base }}beta$y.zip" -O nextcloud-base.zip && break
+                y=$(( y - 1 ));
+               done
              );
            else wget --quiet https://download.nextcloud.com/server/releases/latest-${{ matrix.config.base }}.zip -O nextcloud-base.zip;
            fi
