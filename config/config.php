@@ -637,7 +637,7 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 			'100' => [
 				'latest' => '27.0.0 RC3',
 				'internalVersion' => '27.0.0.6',
-				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-27.0.rc3.zip',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-27.0.0rc3.zip',
 				'web' => 'https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '8.0',
