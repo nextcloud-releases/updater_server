@@ -712,16 +712,16 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "27.0.0.7" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-27.0.0rc4.zip"
+    And Update to version "27.0.0.8" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-27.0.0.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    iAyQy2F1qqbVESE0TveWYN9qpNxPOoiPV9smNrdAdx/1aDcqNSd4xIq1f/L9vlVn
-    zmdCh9YA4QWd+xaH8fAO/dJFUBWKgulbnBfHV+z1b5gj7q96SRnyULThaoiGCTDY
-    Ux5ECzfP+FM3kpeRr1QFDfiAd9jebRkXDbBfsT8eNTPI56n+3Nn6TgPjoB0MXmDw
-    fzcYHOhsY/OMb1aRx2lVeu43W2SJ4QZtGOfOoBt2DoQqwk+wIVIjHVF6H5QCOdtI
-    IcgmlOVjlNNQBBZkn1+lCKc5YvIHf2eYwfz8y1J/zyhXbB+CipyTwZFU3oAwpcx8
-    Pm+sQ75pCFl16q0+5pgEgA==
+    wUz0K6QLON0SXaz5wBzJ2XW7GeYTdqGP0iJmGaGvIGT3D2+ftmHY17nCTYKcr3I5
+    hh/4FKfsUaoP2Ak37GR1KMLyli5hARZRApR5powznf504atImcY51LuMvXE9CgIN
+    yM1oJPehacjYsrJzjMizK4aTHepz+zVeWo8SlBiKXwB9Ntqhrt63mHnzMJb7B6vY
+    6N7YkvKlPMCSk3ttIgIH04J+CMYZWzW0UVRn2NV2ID8e22+tiskWNVK6uvTszIX5
+    AU45erykEtmF8RqZR5wTPBOc4kjrryTnKhuNsEPKtEjQlxpI5/PdV5fE+eegTGeh
+    EGDLJyXxKje9pcfLoid0xQ==
     """
