@@ -971,3 +971,53 @@ Feature: Testing the update scenario of stable releases
     QtDGbJiOEFUyFZzEGhoNns/vxCoXuyPvDYKmD45gIFSeEGOqUQLmwShkX4SldIBI
     PvrjdK+TNKdfDQxCIGZ8dQ==
     """
+
+  Scenario: Updating latest Nextcloud 26 to 27 on the stable channel
+    Given There is a release with channel "stable"
+    And The received version is "26.0.2.1"
+    And The received PHP version is "8.1.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "27.0.0.8" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-27.0.0.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    wUz0K6QLON0SXaz5wBzJ2XW7GeYTdqGP0iJmGaGvIGT3D2+ftmHY17nCTYKcr3I5
+    hh/4FKfsUaoP2Ak37GR1KMLyli5hARZRApR5powznf504atImcY51LuMvXE9CgIN
+    yM1oJPehacjYsrJzjMizK4aTHepz+zVeWo8SlBiKXwB9Ntqhrt63mHnzMJb7B6vY
+    6N7YkvKlPMCSk3ttIgIH04J+CMYZWzW0UVRn2NV2ID8e22+tiskWNVK6uvTszIX5
+    AU45erykEtmF8RqZR5wTPBOc4kjrryTnKhuNsEPKtEjQlxpI5/PdV5fE+eegTGeh
+    EGDLJyXxKje9pcfLoid0xQ==
+    """
+
+  Scenario: Not updating latest Nextcloud 26 to 27 on the stable channel (staged rollout)
+    Given There is a release with channel "stable"
+    And The received version is "26.0.2.1"
+    And The received PHP version is "8.1.0"
+    And the installation mtime is "31"
+    When The request is sent
+    Then The response is empty
+
+  Scenario: Updating Nextcloud 27 to latest 27 on the stable channel
+    Given There is a release with channel "stable"
+    And The received version is "27.0.0.7"
+    And The received PHP version is "8.1.0"
+    And the installation mtime is "71"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "27.0.0.8" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-27.0.0.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    wUz0K6QLON0SXaz5wBzJ2XW7GeYTdqGP0iJmGaGvIGT3D2+ftmHY17nCTYKcr3I5
+    hh/4FKfsUaoP2Ak37GR1KMLyli5hARZRApR5powznf504atImcY51LuMvXE9CgIN
+    yM1oJPehacjYsrJzjMizK4aTHepz+zVeWo8SlBiKXwB9Ntqhrt63mHnzMJb7B6vY
+    6N7YkvKlPMCSk3ttIgIH04J+CMYZWzW0UVRn2NV2ID8e22+tiskWNVK6uvTszIX5
+    AU45erykEtmF8RqZR5wTPBOc4kjrryTnKhuNsEPKtEjQlxpI5/PdV5fE+eegTGeh
+    EGDLJyXxKje9pcfLoid0xQ==
+    """
