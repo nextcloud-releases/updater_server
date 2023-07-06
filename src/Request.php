@@ -157,16 +157,6 @@ class Request {
 			$this->build = explode(' ', substr(urldecode($version['8']), 0, strrpos(urldecode($version['8']), ' ')))[0];
 			$this->remoteAddress = (isset($server['REMOTE_ADDR']) ? $server['REMOTE_ADDR'] : '');
 
-			# TODO remove this once there are no Nextcloud 11.0 betas out there
-			if ($this->majorVersion === 11 &&
-				$this->minorVersion === 0 &&
-				$this->maintenanceVersion === 0 &&
-				in_array($this->revisionVersion, array(2, 4, 5)) &&
-				$this->channel === ''
-			) {
-				$this->channel = 'stable';
-			}
-
 			// starting with nextcloud 17 there is no production channel anymore
 			if ($this->channel === 'production') {
 				$this->channel = 'stable';
@@ -186,10 +176,10 @@ class Request {
 
 			// Nextcloud 11 at least runs on PHP 5.6 (so if there is PHP 5.4 and Nextcloud 11 detected we set it to PHP 5.6)
 			if ($this->majorVersion === 11 &&
-				$this->phpMajorVersion === '5' &&
-				$this->phpMinorVersion === '4') {
+					$this->phpMajorVersion === '5' &&
+					$this->phpMinorVersion === '4') {
 
-				$this->phpMinorVersion = '6';
+					$this->phpMinorVersion = '6';
 			}
 		} else {
 			throw new UnsupportedReleaseException;
