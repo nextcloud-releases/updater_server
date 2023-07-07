@@ -1203,15 +1203,21 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 		],
 	],
 	'daily' => [
-		'27' => [
+		'28' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-master.zip',
 			'web' => 'https://docs.nextcloud.com/server/latest/admin_manual/maintenance/upgrade.html',
 			'eol' => false,
 			'minPHPVersion' => '8.0',
 		],
+	    '27' => [
+			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable27.zip',
+			'web' => 'https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html',
+			'eol' => false,
+			'minPHPVersion' => '8.0',
+		],
 		'26' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable26.zip',
-			'web' => 'https://docs.nextcloud.com/server/latest/admin_manual/maintenance/upgrade.html',
+			'web' => 'https://docs.nextcloud.com/server/26/admin_manual/maintenance/upgrade.html',
 			'eol' => false,
 			'minPHPVersion' => '8.0',
 		],
