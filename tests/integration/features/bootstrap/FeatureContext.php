@@ -31,6 +31,10 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 	private $phpMinorVersion = '';
 	/** @var string */
 	private $phpReleaseVersion = '';
+	/** @var int */
+	private $categoryId = '';
+	/** @var bool */
+	private $subscriptionRegistered = false;
 	/** @var string */
 	private $result = '';
 	/** @var array */
@@ -83,6 +87,30 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 		$this->installationMtime = $time;
 	}
 
+   /**
+     * @Given the instance category is :categoryId
+     */
+    public function theInstanceCategoryIs($categoryId)
+    {
+        $this->categoryId = $categoryId;
+    }
+
+    /**
+     * @Given the instance has a subscription
+     */
+    public function theInstanceHasASubscription()
+    {
+        $this->subscriptionRegistered = true;
+    }
+
+    /**
+     * @Given the instance has no subscription
+     */
+    public function theInstanceHasNoSubscription()
+    {
+        $this->subscriptionRegistered = false;
+    }
+
 	/**
 	 * Builds the version to sent
 	 *
@@ -101,10 +129,15 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 			$this->build,
 		];
 
-		if($this->phpMajorVersion !== '') {
+		if ($this->phpMajorVersion !== '') {
 			$parameters[] = $this->phpMajorVersion;
 			$parameters[] = $this->phpMinorVersion;
 			$parameters[] = $this->phpReleaseVersion;
+		}
+
+		if ($this->categoryId) {
+			$parameters[] = $this->categoryId;
+			$parameters[] = (int) $this->subscriptionRegistered;
 		}
 
 		return implode('x', $parameters);
