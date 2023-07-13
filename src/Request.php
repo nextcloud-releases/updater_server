@@ -35,6 +35,10 @@ class Request {
 	private $phpMinorVersion = '4';
 	/** @var int|null */
 	private $phpReleaseVersion = '0';
+	/** @var int|null */
+	private $category = null;
+	/** @var int|null */
+	private $isSubscriber = null;
 
 	/**
 	 * @param string $versionString
@@ -138,6 +142,20 @@ class Request {
 	}
 
 	/**
+	 * @return int|null
+	 */
+	public function getCategory() {
+		return $this->category;
+	}
+
+	/**
+	 * @return int|null
+	 */
+	public function isSubscriber() {
+		return $this->isSubscriber;
+	}
+
+	/**
 	 * @param string $versionString
 	 * @param array $server
 	 * @throws UnsupportedReleaseException If the release is not supported by this update script.
@@ -145,34 +163,13 @@ class Request {
 	private function readVersion($versionString, array $server) {
 		$version = explode('x', $versionString);
 
-		if (count($version) === 9 || count($version) === 12) {
-			$this->majorVersion = (int)$version['0'];
-			$this->minorVersion = (int)$version['1'];
-			$this->maintenanceVersion = (int)$version['2'];
-			$this->revisionVersion = (int)$version['3'];
-			$this->installationMtime = (float)$version['4'];
-			$this->lastCheck = (int)$version['5'];
-			$this->channel = $version['6'];
-			$this->edition = $version['7'];
-			$this->build = explode(' ', substr(urldecode($version['8']), 0, strrpos(urldecode($version['8']), ' ')))[0];
-			$this->remoteAddress = (isset($server['REMOTE_ADDR']) ? $server['REMOTE_ADDR'] : '');
-
-			# TODO remove this once there are no Nextcloud 11.0 betas out there
-			if ($this->majorVersion === 11 &&
-				$this->minorVersion === 0 &&
-				$this->maintenanceVersion === 0 &&
-				in_array($this->revisionVersion, array(2, 4, 5)) &&
-				$this->channel === ''
-			) {
-				$this->channel = 'stable';
-			}
-
-			// starting with nextcloud 17 there is no production channel anymore
-			if ($this->channel === 'production') {
-				$this->channel = 'stable';
-			}
-
-			if(count($version) === 12) {
+		$this->remoteAddress = (isset($server['REMOTE_ADDR']) ? $server['REMOTE_ADDR'] : '');
+		switch (count($version)) {
+			case 14:
+				$this->isSubscriber = (int) $version[13];
+				$this->category = (int) $version[12];
+				// no break
+			case 12:
 				if($version['9'] !== '') {
 					$this->phpMajorVersion = (int)$version['9'];
 				}
@@ -182,17 +179,32 @@ class Request {
 				if($version['11'] !== '') {
 					$this->phpReleaseVersion = (int)$version['11'];
 				}
-			}
+				// no break
+			case 9:
+				$this->majorVersion = (int)$version['0'];
+				$this->minorVersion = (int)$version['1'];
+				$this->maintenanceVersion = (int)$version['2'];
+				$this->revisionVersion = (int)$version['3'];
+				$this->installationMtime = (float)$version['4'];
+				$this->lastCheck = (int)$version['5'];
+				$this->channel = $version['6'];
+				$this->edition = $version['7'];
+				$this->build = explode(' ', substr(urldecode($version['8']), 0, strrpos(urldecode($version['8']), ' ')))[0];
+				// starting with nextcloud 17 there is no production channel anymore
+				if ($this->channel === 'production') {
+					$this->channel = 'stable';
+				}
+				break;
+			default:
+				throw new UnsupportedReleaseException;
+		}
 
-			// Nextcloud 11 at least runs on PHP 5.6 (so if there is PHP 5.4 and Nextcloud 11 detected we set it to PHP 5.6)
-			if ($this->majorVersion === 11 &&
-				$this->phpMajorVersion === '5' &&
-				$this->phpMinorVersion === '4') {
-
-				$this->phpMinorVersion = '6';
-			}
-		} else {
-			throw new UnsupportedReleaseException;
+		// Nextcloud 11 at least runs on PHP 5.6 (so if there is PHP 5.4 and Nextcloud 11 detected we set it to PHP 5.6)
+		if ($this->majorVersion === 11 &&
+			$this->phpMajorVersion === '5' &&
+			$this->phpMinorVersion === '4'
+		) {
+			$this->phpMinorVersion = '6';
 		}
 	}
 }

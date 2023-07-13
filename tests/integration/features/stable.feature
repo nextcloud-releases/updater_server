@@ -120,27 +120,6 @@ Feature: Testing the update scenario of stable releases
     vbaIJ8CiZnKdMBDAdXAVMA==
     """
 
-  Scenario: Updating a non-staged outdated Nextcloud 11.0.0 beta on the empty channel - will use the stable channel then
-    Given There is a release with channel ""
-    And The received version is "11.0.0.2"
-    And the installation mtime is "20"
-    And The received PHP version is "5.6.0"
-    When The request is sent
-    Then The response is non-empty
-    And Update to version "12.0.13.2" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-12.0.13.zip"
-    And URL to documentation is "https://docs.nextcloud.com/server/12/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "1"
-    And The signature is
-    """
-    jZbAdJ9cHzBcw7BatJoX7/0Nv9NdecbsR4wEnRBbWI/EmAQ09HoMmmC1xiY88ME5
-    lvHlcEgF0sVTx6tdg4LvqAH2ze34LhzxgIu7mS1tAHIZ81elGhv66VuRv17QYVs1
-    7QQySikKMprI+mzdTjIf3rloc97lpm9ynQ+6vizwdxhZ0w5r4Gl85ni52MpeN1Zd
-    Sx/Z9LJ0bCIO9C+E6kyQvjI7Q7A+WpMF1SiQL2RJsLJERtV4BP8izVuZQ/hI9NDj
-    rdZAAiMKh8jB0atDNbxu24dWI2Ie7MvnzadL6Ax9+qIWUzlZIqX9yXgFVE2RsGVS
-    vbaIJ8CiZnKdMBDAdXAVMA==
-    """
-
   Scenario: Updating an outdated Nextcloud 13.0.0 on the stable channel
     Given There is a release with channel "stable"
     And The received version is "13.0.0.8"
@@ -1006,6 +985,28 @@ Feature: Testing the update scenario of stable releases
     And The received version is "27.0.0.7"
     And The received PHP version is "8.1.0"
     And the installation mtime is "71"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "27.0.0.8" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-27.0.0.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    wUz0K6QLON0SXaz5wBzJ2XW7GeYTdqGP0iJmGaGvIGT3D2+ftmHY17nCTYKcr3I5
+    hh/4FKfsUaoP2Ak37GR1KMLyli5hARZRApR5powznf504atImcY51LuMvXE9CgIN
+    yM1oJPehacjYsrJzjMizK4aTHepz+zVeWo8SlBiKXwB9Ntqhrt63mHnzMJb7B6vY
+    6N7YkvKlPMCSk3ttIgIH04J+CMYZWzW0UVRn2NV2ID8e22+tiskWNVK6uvTszIX5
+    AU45erykEtmF8RqZR5wTPBOc4kjrryTnKhuNsEPKtEjQlxpI5/PdV5fE+eegTGeh
+    EGDLJyXxKje9pcfLoid0xQ==
+    """
+  Scenario: Updating Nextcloud 27 to latest 27 on the stable channel with categoryId
+    Given There is a release with channel "stable"
+    And The received version is "27.0.0.7"
+    And The received PHP version is "8.1.0"
+    And the installation mtime is "71"
+    And the instance category is 5
+    And the instance has a subscription
     When The request is sent
     Then The response is non-empty
     And Update to version "27.0.0.8" is available
