@@ -628,18 +628,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "25.0.8.2" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-25.0.8.zip"
+    And Update to version "25.0.9.0" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-25.0.9rc1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/25/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    VCikL+8VW1raLgoxy/tvq98xVyKowiLX5U9yBBTuamZVX+qd5RUBM1mwm++XfV2+
-    gDIJcW/MJMjcEi8xqG1lTxNa9HuJHk77PbmTVzfcDY/2Gxwo3YfFrC3l9JpcAse+
-    oF0atFNzKN9/MlrUXHm4nt2AVlxiAz5q9NE1eYLTPlsK8euDTH/3IM6fOu8t4wmJ
-    l2rpPO7v6u48mMJMf3DhX0kCd4kMA6gQ1b0jQLmPQ/oLZ0oDr25Wn6gyU40SlOMR
-    0b9RtOpxGTjBqyIyeQqPGxkFI2jZvLjko1mKXfpRgOw5Y7y+sOEffQvOD96DZZBR
-    2TkcOrDafHke0gTrZNzGFw==
+    Qp2uJXab8cRPsn2W+BhQOY/9VjPHPwcMcbkV/RCp7nyeCiUPhhoYWyHDXkgrL7Zi
+    CquxM2fqvX7Xe3M23u4wG393MU6VV82Hylo6WvRdeHC3ck/JDenI5KESP3zaov9l
+    idrEF8vqQlkxR0nVyH8BaNOlxKqsh2i225wg0soSLFjuygv73xujI1vuwGsXa+/J
+    oc27XafyBqrgVSqrjHfGhXlXJ7RCX3P6kMQSX3p8C9n+XNaCwbk8UQjQjkSRcNqM
+    kykRC8g+S7U7juVF29c76slshW9ixEV0gBAq11/rw1aBzfroFcpGJGtamgeXg97j
+    qPOnrjQTZhcr7fXCAuVPWA==
     """
 
   Scenario: Updating Nextcloud 25.0.0 on the beta channel
@@ -649,23 +649,23 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "25.0.8.2" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-25.0.8.zip"
+    And Update to version "25.0.9.0" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-25.0.9rc1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/25/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    VCikL+8VW1raLgoxy/tvq98xVyKowiLX5U9yBBTuamZVX+qd5RUBM1mwm++XfV2+
-    gDIJcW/MJMjcEi8xqG1lTxNa9HuJHk77PbmTVzfcDY/2Gxwo3YfFrC3l9JpcAse+
-    oF0atFNzKN9/MlrUXHm4nt2AVlxiAz5q9NE1eYLTPlsK8euDTH/3IM6fOu8t4wmJ
-    l2rpPO7v6u48mMJMf3DhX0kCd4kMA6gQ1b0jQLmPQ/oLZ0oDr25Wn6gyU40SlOMR
-    0b9RtOpxGTjBqyIyeQqPGxkFI2jZvLjko1mKXfpRgOw5Y7y+sOEffQvOD96DZZBR
-    2TkcOrDafHke0gTrZNzGFw==
+    Qp2uJXab8cRPsn2W+BhQOY/9VjPHPwcMcbkV/RCp7nyeCiUPhhoYWyHDXkgrL7Zi
+    CquxM2fqvX7Xe3M23u4wG393MU6VV82Hylo6WvRdeHC3ck/JDenI5KESP3zaov9l
+    idrEF8vqQlkxR0nVyH8BaNOlxKqsh2i225wg0soSLFjuygv73xujI1vuwGsXa+/J
+    oc27XafyBqrgVSqrjHfGhXlXJ7RCX3P6kMQSX3p8C9n+XNaCwbk8UQjQjkSRcNqM
+    kykRC8g+S7U7juVF29c76slshW9ixEV0gBAq11/rw1aBzfroFcpGJGtamgeXg97j
+    qPOnrjQTZhcr7fXCAuVPWA==
     """
 
   Scenario: Updating latest Nextcloud 25 on the beta channel
     Given There is a release with channel "beta"
-    And The received version is "25.0.8.2"
+    And The received version is "25.0.9.0"
     And The received PHP version is "8.1.0"
     And the installation mtime is "11"
     When The request is sent
