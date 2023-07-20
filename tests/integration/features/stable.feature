@@ -958,27 +958,19 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "61"
     When The request is sent
     Then The response is non-empty
-    And Update to version "27.0.0.8" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-27.0.0.zip"
+    And Update to version "27.0.1.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-27.0.1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    wUz0K6QLON0SXaz5wBzJ2XW7GeYTdqGP0iJmGaGvIGT3D2+ftmHY17nCTYKcr3I5
-    hh/4FKfsUaoP2Ak37GR1KMLyli5hARZRApR5powznf504atImcY51LuMvXE9CgIN
-    yM1oJPehacjYsrJzjMizK4aTHepz+zVeWo8SlBiKXwB9Ntqhrt63mHnzMJb7B6vY
-    6N7YkvKlPMCSk3ttIgIH04J+CMYZWzW0UVRn2NV2ID8e22+tiskWNVK6uvTszIX5
-    AU45erykEtmF8RqZR5wTPBOc4kjrryTnKhuNsEPKtEjQlxpI5/PdV5fE+eegTGeh
-    EGDLJyXxKje9pcfLoid0xQ==
+    KDoUgdBXf6Uwpz+xAQHTrNcIF/ETv1oAsb+sXk9IvCIVIFY47QV/bd9H6W8h0Ud4
+    69Ichy/tVZ7gB4nE35h2Pp+p6DV1B4I4JKIczpIWSKi26epsYR3Bg3wFo/mSo0qJ
+    fSRjWSgtzes79E7Tg2KqkcMlc9ImhiILacUiOoyhNDXSLQxll+KJgvoYmYCZlCkM
+    2R3PfKfxJvh1mgdiLYphov87U8jbKAnYkiFgw1HSZV8XpsonZg762dCZGJ3Z3q7s
+    qJStmileJUPLIzba0nsbRHnkNfCUxeBVqD8/rKHq+9p5Q7JN0Zvm01IDLINe2IMf
+    Qvk8dRt/W9lFCDjnIi/skw==
     """
-
-  Scenario: Not updating latest Nextcloud 26 to 27 on the stable channel (staged rollout)
-    Given There is a release with channel "stable"
-    And The received version is "26.0.3.2"
-    And The received PHP version is "8.1.0"
-    And the installation mtime is "71"
-    When The request is sent
-    Then The response is empty
 
   Scenario: Updating Nextcloud 27 to latest 27 on the stable channel
     Given There is a release with channel "stable"
@@ -987,19 +979,20 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "71"
     When The request is sent
     Then The response is non-empty
-    And Update to version "27.0.0.8" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-27.0.0.zip"
+    And Update to version "27.0.1.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-27.0.1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    wUz0K6QLON0SXaz5wBzJ2XW7GeYTdqGP0iJmGaGvIGT3D2+ftmHY17nCTYKcr3I5
-    hh/4FKfsUaoP2Ak37GR1KMLyli5hARZRApR5powznf504atImcY51LuMvXE9CgIN
-    yM1oJPehacjYsrJzjMizK4aTHepz+zVeWo8SlBiKXwB9Ntqhrt63mHnzMJb7B6vY
-    6N7YkvKlPMCSk3ttIgIH04J+CMYZWzW0UVRn2NV2ID8e22+tiskWNVK6uvTszIX5
-    AU45erykEtmF8RqZR5wTPBOc4kjrryTnKhuNsEPKtEjQlxpI5/PdV5fE+eegTGeh
-    EGDLJyXxKje9pcfLoid0xQ==
+    KDoUgdBXf6Uwpz+xAQHTrNcIF/ETv1oAsb+sXk9IvCIVIFY47QV/bd9H6W8h0Ud4
+    69Ichy/tVZ7gB4nE35h2Pp+p6DV1B4I4JKIczpIWSKi26epsYR3Bg3wFo/mSo0qJ
+    fSRjWSgtzes79E7Tg2KqkcMlc9ImhiILacUiOoyhNDXSLQxll+KJgvoYmYCZlCkM
+    2R3PfKfxJvh1mgdiLYphov87U8jbKAnYkiFgw1HSZV8XpsonZg762dCZGJ3Z3q7s
+    qJStmileJUPLIzba0nsbRHnkNfCUxeBVqD8/rKHq+9p5Q7JN0Zvm01IDLINe2IMf
+    Qvk8dRt/W9lFCDjnIi/skw==
     """
+
   Scenario: Updating Nextcloud 27 to latest 27 on the stable channel with categoryId
     Given There is a release with channel "stable"
     And The received version is "27.0.0.7"
@@ -1009,16 +1002,16 @@ Feature: Testing the update scenario of stable releases
     And the instance has a subscription
     When The request is sent
     Then The response is non-empty
-    And Update to version "27.0.0.8" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-27.0.0.zip"
+    And Update to version "27.0.1.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-27.0.1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    wUz0K6QLON0SXaz5wBzJ2XW7GeYTdqGP0iJmGaGvIGT3D2+ftmHY17nCTYKcr3I5
-    hh/4FKfsUaoP2Ak37GR1KMLyli5hARZRApR5powznf504atImcY51LuMvXE9CgIN
-    yM1oJPehacjYsrJzjMizK4aTHepz+zVeWo8SlBiKXwB9Ntqhrt63mHnzMJb7B6vY
-    6N7YkvKlPMCSk3ttIgIH04J+CMYZWzW0UVRn2NV2ID8e22+tiskWNVK6uvTszIX5
-    AU45erykEtmF8RqZR5wTPBOc4kjrryTnKhuNsEPKtEjQlxpI5/PdV5fE+eegTGeh
-    EGDLJyXxKje9pcfLoid0xQ==
+    KDoUgdBXf6Uwpz+xAQHTrNcIF/ETv1oAsb+sXk9IvCIVIFY47QV/bd9H6W8h0Ud4
+    69Ichy/tVZ7gB4nE35h2Pp+p6DV1B4I4JKIczpIWSKi26epsYR3Bg3wFo/mSo0qJ
+    fSRjWSgtzes79E7Tg2KqkcMlc9ImhiILacUiOoyhNDXSLQxll+KJgvoYmYCZlCkM
+    2R3PfKfxJvh1mgdiLYphov87U8jbKAnYkiFgw1HSZV8XpsonZg762dCZGJ3Z3q7s
+    qJStmileJUPLIzba0nsbRHnkNfCUxeBVqD8/rKHq+9p5Q7JN0Zvm01IDLINe2IMf
+    Qvk8dRt/W9lFCDjnIi/skw==
     """
