@@ -958,18 +958,18 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "61"
     When The request is sent
     Then The response is non-empty
-    And Update to version "27.0.1.2" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-27.0.1.zip"
+    And Update to version "27.0.2.1" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-27.0.2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    KDoUgdBXf6Uwpz+xAQHTrNcIF/ETv1oAsb+sXk9IvCIVIFY47QV/bd9H6W8h0Ud4
-    69Ichy/tVZ7gB4nE35h2Pp+p6DV1B4I4JKIczpIWSKi26epsYR3Bg3wFo/mSo0qJ
-    fSRjWSgtzes79E7Tg2KqkcMlc9ImhiILacUiOoyhNDXSLQxll+KJgvoYmYCZlCkM
-    2R3PfKfxJvh1mgdiLYphov87U8jbKAnYkiFgw1HSZV8XpsonZg762dCZGJ3Z3q7s
-    qJStmileJUPLIzba0nsbRHnkNfCUxeBVqD8/rKHq+9p5Q7JN0Zvm01IDLINe2IMf
-    Qvk8dRt/W9lFCDjnIi/skw==
+    pd8gQOxzJqcjCR10kWmt+vKhOXWJimF8FhdGcuzkZc/7Ujg8zY+xL3UQ9BG0x9nN
+    YXC7CtgMDeVr55/UoB2qHpWijze7HD7qsBD9tx4MDTvcTyH4lF5LGsFWydCUrEvH
+    TAF3mBAqRasfq7Exz7QbMtiqsw3U4+sku2QEQyYZOH6dupbT/k3i5I+syRQiTK9O
+    1mhmO0WnSMSlW+uMPUsABipYyfiY4bxRJja/kv4GVA66DLSdxrq7WUvvxK2HNKOf
+    V22tSiRwjvYLZDM6drqpW6DY6hKMoeKFGc14KrFgwN1WFJShmdFCG+Tld3iEcVwE
+    wf5nncfHuTeT/AapME4dLQ==
     """
 
   Scenario: Updating Nextcloud 27 to latest 27 on the stable channel
@@ -979,39 +979,16 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "71"
     When The request is sent
     Then The response is non-empty
-    And Update to version "27.0.1.2" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-27.0.1.zip"
+    And Update to version "27.0.2.1" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-27.0.2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    KDoUgdBXf6Uwpz+xAQHTrNcIF/ETv1oAsb+sXk9IvCIVIFY47QV/bd9H6W8h0Ud4
-    69Ichy/tVZ7gB4nE35h2Pp+p6DV1B4I4JKIczpIWSKi26epsYR3Bg3wFo/mSo0qJ
-    fSRjWSgtzes79E7Tg2KqkcMlc9ImhiILacUiOoyhNDXSLQxll+KJgvoYmYCZlCkM
-    2R3PfKfxJvh1mgdiLYphov87U8jbKAnYkiFgw1HSZV8XpsonZg762dCZGJ3Z3q7s
-    qJStmileJUPLIzba0nsbRHnkNfCUxeBVqD8/rKHq+9p5Q7JN0Zvm01IDLINe2IMf
-    Qvk8dRt/W9lFCDjnIi/skw==
-    """
-
-  Scenario: Updating Nextcloud 27 to latest 27 on the stable channel with categoryId
-    Given There is a release with channel "stable"
-    And The received version is "27.0.0.7"
-    And The received PHP version is "8.1.0"
-    And the installation mtime is "71"
-    And the instance category is 5
-    And the instance has a subscription
-    When The request is sent
-    Then The response is non-empty
-    And Update to version "27.0.1.2" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-27.0.1.zip"
-    And URL to documentation is "https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
-    And The signature is
-    """
-    KDoUgdBXf6Uwpz+xAQHTrNcIF/ETv1oAsb+sXk9IvCIVIFY47QV/bd9H6W8h0Ud4
-    69Ichy/tVZ7gB4nE35h2Pp+p6DV1B4I4JKIczpIWSKi26epsYR3Bg3wFo/mSo0qJ
-    fSRjWSgtzes79E7Tg2KqkcMlc9ImhiILacUiOoyhNDXSLQxll+KJgvoYmYCZlCkM
-    2R3PfKfxJvh1mgdiLYphov87U8jbKAnYkiFgw1HSZV8XpsonZg762dCZGJ3Z3q7s
-    qJStmileJUPLIzba0nsbRHnkNfCUxeBVqD8/rKHq+9p5Q7JN0Zvm01IDLINe2IMf
-    Qvk8dRt/W9lFCDjnIi/skw==
+    pd8gQOxzJqcjCR10kWmt+vKhOXWJimF8FhdGcuzkZc/7Ujg8zY+xL3UQ9BG0x9nN
+    YXC7CtgMDeVr55/UoB2qHpWijze7HD7qsBD9tx4MDTvcTyH4lF5LGsFWydCUrEvH
+    TAF3mBAqRasfq7Exz7QbMtiqsw3U4+sku2QEQyYZOH6dupbT/k3i5I+syRQiTK9O
+    1mhmO0WnSMSlW+uMPUsABipYyfiY4bxRJja/kv4GVA66DLSdxrq7WUvvxK2HNKOf
+    V22tSiRwjvYLZDM6drqpW6DY6hKMoeKFGc14KrFgwN1WFJShmdFCG+Tld3iEcVwE
+    wf5nncfHuTeT/AapME4dLQ==
     """
