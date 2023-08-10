@@ -60,7 +60,7 @@ jobs:
       matrix:
         config: ${{ fromJSON(needs.configs.outputs.configs) }}
 
-    name: Upgrade from ${{ matrix.config.base }} to ${{ matrix.config.latest }}
+    name: Upgrade from ${{ matrix.config.base }} to ${{ matrix.config.latest }} (${{ matrix.config.channel }})
     steps:
       - name: Set up php ${{ matrix.config.minPHPVersion }}
         uses: shivammathur/setup-php@v2
