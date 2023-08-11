@@ -14,11 +14,11 @@ jobs:
       config: ${{ steps.changes.outputs.config }}
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
 
       # If the config has not changed, we skip
       # It allows us to still have a summary result
-      - uses: dorny/paths-filter@v2
+      - uses: dorny/paths-filter@4512585405083f25c027a35db413c2b3b9006d50 # v2.11.1
         id: changes
         with:
           filters: |
@@ -35,7 +35,7 @@ jobs:
 
     name: Initializing ${{matrix.channel}} configs
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
 
       - name: Getting config
         id: get-config
@@ -63,7 +63,7 @@ jobs:
     name: Upgrade from ${{ matrix.config.base }} to ${{ matrix.config.latest }} (${{ matrix.config.channel }})
     steps:
       - name: Set up php ${{ matrix.config.minPHPVersion }}
-        uses: shivammathur/setup-php@v2
+        uses: shivammathur/setup-php@72ae4ccbe57f82bbe08411e84e2130bd4ba1c10f # v2.25.5
         with:
           php-version: ${{ matrix.config.minPHPVersion }}
           extensions: ctype,curl,dom,fileinfo,gd,iconv,intl,json,mbstring,openssl,pdo_sqlite,posix,sqlite,xml,zip
@@ -73,18 +73,16 @@ jobs:
         run: |
           # Check if we have a full version like xx.x.x
           if ${{ contains(matrix.config.base, '.') }};
-           then wget --quiet https://download.nextcloud.com/server/releases/nextcloud-${{ matrix.config.base }}.zip -O nextcloud-base.zip \
-             || wget --quiet https://download.nextcloud.com/server/prereleases/nextcloud-${{ matrix.config.base }}.zip -O nextcloud-base.zip \
-             || (
-               i=5;
-               while [ $i -gt -0 ]; do
-                 # try to find RC5 to RC1
-                 wget --quiet "https://download.nextcloud.com/server/prereleases/nextcloud-${{ matrix.config.base }}rc$i.zip" -O nextcloud-base.zip && break
-                 i=$(( i - 1 ));
-               done
-             );
-           else wget --quiet https://download.nextcloud.com/server/releases/latest-${{ matrix.config.base }}.zip -O nextcloud-base.zip;
-           fi
+            then wget --quiet https://download.nextcloud.com/server/releases/nextcloud-${{ matrix.config.base }}.zip -O nextcloud-base.zip \
+              || wget --quiet https://download.nextcloud.com/server/prereleases/nextcloud-${{ matrix.config.base }}.zip -O nextcloud-base.zip \
+              || wget --quiet "https://download.nextcloud.com/server/prereleases/nextcloud-${{ matrix.config.base }}rc1.zip" -O nextcloud-base.zip \
+              || wget --quiet "https://download.nextcloud.com/server/prereleases/nextcloud-${{ matrix.config.base }}rc2.zip" -O nextcloud-base.zip \
+              || wget --quiet "https://download.nextcloud.com/server/prereleases/nextcloud-${{ matrix.config.base }}rc3.zip" -O nextcloud-base.zip \
+              || wget --quiet "https://download.nextcloud.com/server/prereleases/nextcloud-${{ matrix.config.base }}rc4.zip" -O nextcloud-base.zip \
+              || wget --quiet "https://download.nextcloud.com/server/prereleases/nextcloud-${{ matrix.config.base }}rc5.zip" -O nextcloud-base.zip \
+              || wget --quiet https://download.nextcloud.com/server/releases/latest-${{ matrix.config.major }}.zip -O nextcloud-base.zip;
+            else wget --quiet https://download.nextcloud.com/server/releases/latest-${{ matrix.config.major }}.zip -O nextcloud-base.zip;
+          fi
           unzip -q nextcloud-base.zip
 
       - name: Setup nextcloud

@@ -748,3 +748,45 @@ Feature: Testing the update scenario of beta releases
     V22tSiRwjvYLZDM6drqpW6DY6hKMoeKFGc14KrFgwN1WFJShmdFCG+Tld3iEcVwE
     wf5nncfHuTeT/AapME4dLQ==
     """
+
+  Scenario: Updating Nextcloud 27 on the beta channel
+    Given There is a release with channel "beta"
+    And The received version is "27.0.0.0"
+    And The received PHP version is "8.1.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "27.0.2.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-27.0.2.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    pd8gQOxzJqcjCR10kWmt+vKhOXWJimF8FhdGcuzkZc/7Ujg8zY+xL3UQ9BG0x9nN
+    YXC7CtgMDeVr55/UoB2qHpWijze7HD7qsBD9tx4MDTvcTyH4lF5LGsFWydCUrEvH
+    TAF3mBAqRasfq7Exz7QbMtiqsw3U4+sku2QEQyYZOH6dupbT/k3i5I+syRQiTK9O
+    1mhmO0WnSMSlW+uMPUsABipYyfiY4bxRJja/kv4GVA66DLSdxrq7WUvvxK2HNKOf
+    V22tSiRwjvYLZDM6drqpW6DY6hKMoeKFGc14KrFgwN1WFJShmdFCG+Tld3iEcVwE
+    wf5nncfHuTeT/AapME4dLQ==
+    """
+
+  Scenario: Updating latest Nextcloud 27 on the beta channel
+    Given There is a release with channel "beta"
+    And The received version is "27.0.2.1"
+    And The received PHP version is "8.1.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "27.1.0.0" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-27.1.0beta1.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    UzJnIsx0VsesIMeGZb+IF0l+TwcaUR+0r1oJ3DsRvD/U05HtHdklym8Ij5lYbnqF
+    j3kkjEosPhEhxgRFCWDkX8WAtvpZEcyXDGISCZT0PQSzXtJDFw1VqDghJvG8us4b
+    wgmUdfEeu2PLj+lhRiOqmhldSe/gkL6x/ZHeCcRDV1eUm96LatZPPblszp3MmfPL
+    WVU3x3VucWhRK/j+8HFbe9is7fmAgpKlBsNT94/gHJ0Nzu5EaHDCmOuNN0B+XJwA
+    pzIgBekI3EyjTbk+ETZT8fH77FEZtcpMSwFHoKWmFG+4Ls/abP/sIiPVEhrUD7DZ
+    kbggT4qbzfpPnwLSafx9UQ==
+    """
