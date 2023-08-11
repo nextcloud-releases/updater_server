@@ -14,11 +14,11 @@ jobs:
       config: ${{ steps.changes.outputs.config }}
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
 
       # If the config has not changed, we skip
       # It allows us to still have a summary result
-      - uses: dorny/paths-filter@v2
+      - uses: dorny/paths-filter@4512585405083f25c027a35db413c2b3b9006d50 # v2.11.1
         id: changes
         with:
           filters: |
@@ -35,7 +35,7 @@ jobs:
 
     name: Initializing ${{matrix.channel}} configs
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@c85c95e3d7251135ab7dc9ce3241c5835cc595a9 # v3.5.3
 
       - name: Getting config
         id: get-config
@@ -63,7 +63,7 @@ jobs:
     name: Upgrade from ${{ matrix.config.base }} to ${{ matrix.config.latest }} (${{ matrix.config.channel }})
     steps:
       - name: Set up php ${{ matrix.config.minPHPVersion }}
-        uses: shivammathur/setup-php@v2
+        uses: shivammathur/setup-php@72ae4ccbe57f82bbe08411e84e2130bd4ba1c10f # v2.25.5
         with:
           php-version: ${{ matrix.config.minPHPVersion }}
           extensions: ctype,curl,dom,fileinfo,gd,iconv,intl,json,mbstring,openssl,pdo_sqlite,posix,sqlite,xml,zip
