@@ -11,12 +11,14 @@ const extractConfigs = function(configs = {}, channel = 'stable') {
 			// Install time delivery chance percentage
 			const weightedConfigs = configs[channel][base]
 			const percents = Object.keys(weightedConfigs)
+			const major = parseInt(base.split('.')[0])
 
 			// We add the percentage and channel to the config
 			const data = percents.map(percent => Object.assign({
 				channel,
 				percent,
 				base,
+				major,
 			}, weightedConfigs[percent]))
 
 			// We add the config to the list
