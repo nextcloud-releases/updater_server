@@ -777,16 +777,37 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "27.1.0.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-27.1.0beta1.zip"
+    And Update to version "27.1.0.1" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-27.1.0beta2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    UzJnIsx0VsesIMeGZb+IF0l+TwcaUR+0r1oJ3DsRvD/U05HtHdklym8Ij5lYbnqF
-    j3kkjEosPhEhxgRFCWDkX8WAtvpZEcyXDGISCZT0PQSzXtJDFw1VqDghJvG8us4b
-    wgmUdfEeu2PLj+lhRiOqmhldSe/gkL6x/ZHeCcRDV1eUm96LatZPPblszp3MmfPL
-    WVU3x3VucWhRK/j+8HFbe9is7fmAgpKlBsNT94/gHJ0Nzu5EaHDCmOuNN0B+XJwA
-    pzIgBekI3EyjTbk+ETZT8fH77FEZtcpMSwFHoKWmFG+4Ls/abP/sIiPVEhrUD7DZ
-    kbggT4qbzfpPnwLSafx9UQ==
+    iJeGCFyQrXqPO36vfUW80NJpNXq9VMb+LSntHPfhpobS8kqHyy0avGf/CMGHL8f2
+    mIW/mgCVSGyc1FSBZ0QHmxhf0MiVFTyD0woyru/TjGfS4Wf0xrru+2l46/bveRl1
+    qjAoCZip60xsgEvE5G1kAe7F7pIgkt31C6YFaquW5BksR5lKpwmnd9AUDsIx3cHK
+    +j2qjJsNqtrza7uWBmANjvn7vK+pAtJg+286+Tvd85MDpzfyrhEINEOr2RQLplXS
+    u1njOFqUAxs/4i0P1Ym0wgp75JxHHWW3zAwJce9Il7IjdKZ0NhNiqvzH1fZmxXu1
+    yNptsV3ZcdASQcK/O+RW/Q==
+    """
+
+  Scenario: Updating latest Nextcloud 27.1 on the beta channel
+    Given There is a release with channel "beta"
+    And The received version is "27.1.0.0"
+    And The received PHP version is "8.1.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "27.1.0.1" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-27.1.0beta2.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    iJeGCFyQrXqPO36vfUW80NJpNXq9VMb+LSntHPfhpobS8kqHyy0avGf/CMGHL8f2
+    mIW/mgCVSGyc1FSBZ0QHmxhf0MiVFTyD0woyru/TjGfS4Wf0xrru+2l46/bveRl1
+    qjAoCZip60xsgEvE5G1kAe7F7pIgkt31C6YFaquW5BksR5lKpwmnd9AUDsIx3cHK
+    +j2qjJsNqtrza7uWBmANjvn7vK+pAtJg+286+Tvd85MDpzfyrhEINEOr2RQLplXS
+    u1njOFqUAxs/4i0P1Ym0wgp75JxHHWW3zAwJce9Il7IjdKZ0NhNiqvzH1fZmxXu1
+    yNptsV3ZcdASQcK/O+RW/Q==
     """
