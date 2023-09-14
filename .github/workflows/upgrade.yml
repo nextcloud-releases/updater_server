@@ -80,8 +80,8 @@ jobs:
               || wget --quiet "https://download.nextcloud.com/server/prereleases/nextcloud-${{ matrix.config.base }}rc3.zip" -O nextcloud-base.zip \
               || wget --quiet "https://download.nextcloud.com/server/prereleases/nextcloud-${{ matrix.config.base }}rc4.zip" -O nextcloud-base.zip \
               || wget --quiet "https://download.nextcloud.com/server/prereleases/nextcloud-${{ matrix.config.base }}rc5.zip" -O nextcloud-base.zip \
-              || wget --quiet https://download.nextcloud.com/server/releases/latest-${{ matrix.config.base }}.zip -O nextcloud-base.zip;
-            else wget --quiet https://download.nextcloud.com/server/releases/latest-${{ matrix.config.base }}.zip -O nextcloud-base.zip;
+              || wget --quiet https://download.nextcloud.com/server/releases/latest-${{ matrix.config.major }}.zip -O nextcloud-base.zip;
+            else wget --quiet https://download.nextcloud.com/server/releases/latest-${{ matrix.config.major }}.zip -O nextcloud-base.zip;
           fi
           unzip -q nextcloud-base.zip
 
