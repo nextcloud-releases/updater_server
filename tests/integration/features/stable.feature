@@ -958,18 +958,18 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "61"
     When The request is sent
     Then The response is non-empty
-    And Update to version "27.1.2.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-27.1.2.zip"
+    And Update to version "27.1.3.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-27.1.3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    a8ZbtJSTFgl0HaGVIu+95bvryxyGT8JjZnRmqnXs4Q8l5e+DknF5HIEbamygxUyh
-    w2gM53VN/47lT4gYJliXyHaExtUZC4RSK+t1heN7VmmVI3gVuNPAXJB9yIYiqDuG
-    ZXSOF4iUVzOFxMjcr/IePKAHq7SCqO4z7+DyqiRmxGsQ39O/PXGnTwQISsPcBCgk
-    xmGs12jxE14hdQ9+FC0SiIFMTqnXcQCyaNo7WpiFmguYbYF5g0MMz9gU9NQshdsR
-    8k656enup2mFcYhLtEwU1xqUyGshkqJIeDYZVmMAUjIDl7WDW48Rf4TaUFt0xhhd
-    E0naA2Zl4UCBBKH06CGPtg==
+    Xq8MHdDc/C5cRZiT5JoT9Empo0WAOyBP3ufwRjFXAfxl3aGBk7f8UL1UNcobaf49
+    3O8Jf4g4e4ad4lE+B16p9L96X3J3+W54UPp5exQzSP7TJ7km/cX2MB+DExjOJ6Hx
+    ZmFVok1asIPRSTz3fw2kPem4gNx1/xOsgdB9XuiysdgdZy9CMYCEsdHnkQkMhO08
+    9BqphwWy7dWYHE8YE3B2CSru11kIjTZj3/0S5cMEe1otkKg2ukoPSUHNQe+RKPyS
+    3pzFuf0rb84rPdTS3iX254g+KlXg8fNy8leBgTLuB7CFTliVv/IH0coWpo6Gl0gb
+    nvxG0m2MWJoFS1OI1OB3JQ==
     """
 
   Scenario: Updating Nextcloud 27 to latest 27 on the stable channel
@@ -979,16 +979,16 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "71"
     When The request is sent
     Then The response is non-empty
-    And Update to version "27.1.2.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-27.1.2.zip"
+    And Update to version "27.1.3.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-27.1.3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    a8ZbtJSTFgl0HaGVIu+95bvryxyGT8JjZnRmqnXs4Q8l5e+DknF5HIEbamygxUyh
-    w2gM53VN/47lT4gYJliXyHaExtUZC4RSK+t1heN7VmmVI3gVuNPAXJB9yIYiqDuG
-    ZXSOF4iUVzOFxMjcr/IePKAHq7SCqO4z7+DyqiRmxGsQ39O/PXGnTwQISsPcBCgk
-    xmGs12jxE14hdQ9+FC0SiIFMTqnXcQCyaNo7WpiFmguYbYF5g0MMz9gU9NQshdsR
-    8k656enup2mFcYhLtEwU1xqUyGshkqJIeDYZVmMAUjIDl7WDW48Rf4TaUFt0xhhd
-    E0naA2Zl4UCBBKH06CGPtg==
+    Xq8MHdDc/C5cRZiT5JoT9Empo0WAOyBP3ufwRjFXAfxl3aGBk7f8UL1UNcobaf49
+    3O8Jf4g4e4ad4lE+B16p9L96X3J3+W54UPp5exQzSP7TJ7km/cX2MB+DExjOJ6Hx
+    ZmFVok1asIPRSTz3fw2kPem4gNx1/xOsgdB9XuiysdgdZy9CMYCEsdHnkQkMhO08
+    9BqphwWy7dWYHE8YE3B2CSru11kIjTZj3/0S5cMEe1otkKg2ukoPSUHNQe+RKPyS
+    3pzFuf0rb84rPdTS3iX254g+KlXg8fNy8leBgTLuB7CFTliVv/IH0coWpo6Gl0gb
+    nvxG0m2MWJoFS1OI1OB3JQ==
     """

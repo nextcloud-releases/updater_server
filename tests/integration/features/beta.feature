@@ -712,18 +712,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "27.1.3.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-27.1.3rc2.zip"
+    And Update to version "27.1.3.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-27.1.3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    X0meDNdaru84xMLIuixNhso77wkGpLRzgPKNvC25OzoME41gSmLQTaF5Slg/ZV/b
-    psWaa8RBdqcrz2fdplHwOi5KmNl/6wGxYxCQNqRPC+1KO3qjHCECf3ffzmlfrcs3
-    7hvhBE7bLgG9tQWIn+pzKkQvAoy0PsVc99S7XppQP81dXfltXCny1V+dDmCVtqiE
-    uQN+BqueMVKEvDoygz9sle/0dp8K58Lm+iSKxuhYChAsqpm/zO+EUzvu4YCaSOPc
-    TQE/FPuTgeoNJ0NQN5zm2IwD1DkIV2NbGHFQd8Jd4iKzVI+sDEvp373MPkn9nn7y
-    BTu4LYvtm+m2saWM6wfe2Q==
+    Xq8MHdDc/C5cRZiT5JoT9Empo0WAOyBP3ufwRjFXAfxl3aGBk7f8UL1UNcobaf49
+    3O8Jf4g4e4ad4lE+B16p9L96X3J3+W54UPp5exQzSP7TJ7km/cX2MB+DExjOJ6Hx
+    ZmFVok1asIPRSTz3fw2kPem4gNx1/xOsgdB9XuiysdgdZy9CMYCEsdHnkQkMhO08
+    9BqphwWy7dWYHE8YE3B2CSru11kIjTZj3/0S5cMEe1otkKg2ukoPSUHNQe+RKPyS
+    3pzFuf0rb84rPdTS3iX254g+KlXg8fNy8leBgTLuB7CFTliVv/IH0coWpo6Gl0gb
+    nvxG0m2MWJoFS1OI1OB3JQ==
     """
 
   Scenario: Updating latest Nextcloud 26 on the beta channel with instance category
@@ -735,18 +735,18 @@ Feature: Testing the update scenario of beta releases
     And the instance has no subscription
     When The request is sent
     Then The response is non-empty
-    And Update to version "27.1.3.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-27.1.3rc2.zip"
+    And Update to version "27.1.3.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-27.1.3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    X0meDNdaru84xMLIuixNhso77wkGpLRzgPKNvC25OzoME41gSmLQTaF5Slg/ZV/b
-    psWaa8RBdqcrz2fdplHwOi5KmNl/6wGxYxCQNqRPC+1KO3qjHCECf3ffzmlfrcs3
-    7hvhBE7bLgG9tQWIn+pzKkQvAoy0PsVc99S7XppQP81dXfltXCny1V+dDmCVtqiE
-    uQN+BqueMVKEvDoygz9sle/0dp8K58Lm+iSKxuhYChAsqpm/zO+EUzvu4YCaSOPc
-    TQE/FPuTgeoNJ0NQN5zm2IwD1DkIV2NbGHFQd8Jd4iKzVI+sDEvp373MPkn9nn7y
-    BTu4LYvtm+m2saWM6wfe2Q==
+    Xq8MHdDc/C5cRZiT5JoT9Empo0WAOyBP3ufwRjFXAfxl3aGBk7f8UL1UNcobaf49
+    3O8Jf4g4e4ad4lE+B16p9L96X3J3+W54UPp5exQzSP7TJ7km/cX2MB+DExjOJ6Hx
+    ZmFVok1asIPRSTz3fw2kPem4gNx1/xOsgdB9XuiysdgdZy9CMYCEsdHnkQkMhO08
+    9BqphwWy7dWYHE8YE3B2CSru11kIjTZj3/0S5cMEe1otkKg2ukoPSUHNQe+RKPyS
+    3pzFuf0rb84rPdTS3iX254g+KlXg8fNy8leBgTLuB7CFTliVv/IH0coWpo6Gl0gb
+    nvxG0m2MWJoFS1OI1OB3JQ==
     """
 
   Scenario: Updating Nextcloud 27.0 on the beta channel
@@ -756,18 +756,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "27.1.3.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-27.1.3rc2.zip"
+    And Update to version "27.1.3.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-27.1.3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    X0meDNdaru84xMLIuixNhso77wkGpLRzgPKNvC25OzoME41gSmLQTaF5Slg/ZV/b
-    psWaa8RBdqcrz2fdplHwOi5KmNl/6wGxYxCQNqRPC+1KO3qjHCECf3ffzmlfrcs3
-    7hvhBE7bLgG9tQWIn+pzKkQvAoy0PsVc99S7XppQP81dXfltXCny1V+dDmCVtqiE
-    uQN+BqueMVKEvDoygz9sle/0dp8K58Lm+iSKxuhYChAsqpm/zO+EUzvu4YCaSOPc
-    TQE/FPuTgeoNJ0NQN5zm2IwD1DkIV2NbGHFQd8Jd4iKzVI+sDEvp373MPkn9nn7y
-    BTu4LYvtm+m2saWM6wfe2Q==
+    Xq8MHdDc/C5cRZiT5JoT9Empo0WAOyBP3ufwRjFXAfxl3aGBk7f8UL1UNcobaf49
+    3O8Jf4g4e4ad4lE+B16p9L96X3J3+W54UPp5exQzSP7TJ7km/cX2MB+DExjOJ6Hx
+    ZmFVok1asIPRSTz3fw2kPem4gNx1/xOsgdB9XuiysdgdZy9CMYCEsdHnkQkMhO08
+    9BqphwWy7dWYHE8YE3B2CSru11kIjTZj3/0S5cMEe1otkKg2ukoPSUHNQe+RKPyS
+    3pzFuf0rb84rPdTS3iX254g+KlXg8fNy8leBgTLuB7CFTliVv/IH0coWpo6Gl0gb
+    nvxG0m2MWJoFS1OI1OB3JQ==
     """
 
   Scenario: Updating latest Nextcloud 27.1 on the beta channel
@@ -777,16 +777,16 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "27.1.3.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-27.1.3rc2.zip"
+    And Update to version "27.1.3.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-27.1.3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    X0meDNdaru84xMLIuixNhso77wkGpLRzgPKNvC25OzoME41gSmLQTaF5Slg/ZV/b
-    psWaa8RBdqcrz2fdplHwOi5KmNl/6wGxYxCQNqRPC+1KO3qjHCECf3ffzmlfrcs3
-    7hvhBE7bLgG9tQWIn+pzKkQvAoy0PsVc99S7XppQP81dXfltXCny1V+dDmCVtqiE
-    uQN+BqueMVKEvDoygz9sle/0dp8K58Lm+iSKxuhYChAsqpm/zO+EUzvu4YCaSOPc
-    TQE/FPuTgeoNJ0NQN5zm2IwD1DkIV2NbGHFQd8Jd4iKzVI+sDEvp373MPkn9nn7y
-    BTu4LYvtm+m2saWM6wfe2Q==
+    Xq8MHdDc/C5cRZiT5JoT9Empo0WAOyBP3ufwRjFXAfxl3aGBk7f8UL1UNcobaf49
+    3O8Jf4g4e4ad4lE+B16p9L96X3J3+W54UPp5exQzSP7TJ7km/cX2MB+DExjOJ6Hx
+    ZmFVok1asIPRSTz3fw2kPem4gNx1/xOsgdB9XuiysdgdZy9CMYCEsdHnkQkMhO08
+    9BqphwWy7dWYHE8YE3B2CSru11kIjTZj3/0S5cMEe1otkKg2ukoPSUHNQe+RKPyS
+    3pzFuf0rb84rPdTS3iX254g+KlXg8fNy8leBgTLuB7CFTliVv/IH0coWpo6Gl0gb
+    nvxG0m2MWJoFS1OI1OB3JQ==
     """
