@@ -670,18 +670,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "26.0.9.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-26.0.9.zip"
+    And Update to version "26.0.10.0" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-26.0.10rc1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/26/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    qJmlVoFJTViOZ2hs5sISS2966VO3Di1JBFR/IdTvi3ZjX9p0zjanDj316OmCA7LH
-    vGxmN7sSjCPEI4E0IhL91sXMMiO855hbvjBowylwqgPV5ib4DJE7w7JPUHxbrbkz
-    36nNvsqSLtppgT5QglgnpHYJcZkwMsCQIjMICscv+E8OiBzSUjcLhfZF/Qxzp3Wk
-    wu3L2dI0nBlLDeQ18LcKOUH74nc+YJaxq41SPR/TBWtH/3RKfM4Y+wogKhp5dl+4
-    dcHmnDqGyR1C+wfMeJQGNSM9divKDwPb1uFwwFJ8yMGet1MBKoba1IN6iPpvcLLc
-    BT3CSAmASOirwXKjSkLDSw==
+    pmA6DDw1W3UhZYDV0BOQqvO5eibzCACu/8/fe6HGJWUjXXgClCGPHyibdGbJDfPM
+    CVyssRk5aKZD6BVMbMdpHfIacnJPp0xX/dAHQiQ9Dk/aSBmoCGoevkKlBVY/+gwj
+    Tyq3/w3dL4j/W19FYMmCJh7KX0aAdylbs8V8KnpkWWOfpG45fPY9mR8mADPv/Lcl
+    aMXpF/+BK1mP/n5Zz6ezJsGRneaCkCM+lm79ONdBgU+P12gJz5bJGM7wftyiz8RA
+    u/xmydy6cxJfjPkT8gD2Jm3c4NhloYPjsud5KzogUwFgK9BeML7mRjkPFUKZaj9/
+    ir/QEXDrHsrjlyI3T8rZSA==
     """
 
   Scenario: Updating Nextcloud 26 on the beta channel
@@ -691,23 +691,23 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "26.0.9.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-26.0.9.zip"
+    And Update to version "26.0.10.0" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-26.0.10rc1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/26/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    qJmlVoFJTViOZ2hs5sISS2966VO3Di1JBFR/IdTvi3ZjX9p0zjanDj316OmCA7LH
-    vGxmN7sSjCPEI4E0IhL91sXMMiO855hbvjBowylwqgPV5ib4DJE7w7JPUHxbrbkz
-    36nNvsqSLtppgT5QglgnpHYJcZkwMsCQIjMICscv+E8OiBzSUjcLhfZF/Qxzp3Wk
-    wu3L2dI0nBlLDeQ18LcKOUH74nc+YJaxq41SPR/TBWtH/3RKfM4Y+wogKhp5dl+4
-    dcHmnDqGyR1C+wfMeJQGNSM9divKDwPb1uFwwFJ8yMGet1MBKoba1IN6iPpvcLLc
-    BT3CSAmASOirwXKjSkLDSw==
+    pmA6DDw1W3UhZYDV0BOQqvO5eibzCACu/8/fe6HGJWUjXXgClCGPHyibdGbJDfPM
+    CVyssRk5aKZD6BVMbMdpHfIacnJPp0xX/dAHQiQ9Dk/aSBmoCGoevkKlBVY/+gwj
+    Tyq3/w3dL4j/W19FYMmCJh7KX0aAdylbs8V8KnpkWWOfpG45fPY9mR8mADPv/Lcl
+    aMXpF/+BK1mP/n5Zz6ezJsGRneaCkCM+lm79ONdBgU+P12gJz5bJGM7wftyiz8RA
+    u/xmydy6cxJfjPkT8gD2Jm3c4NhloYPjsud5KzogUwFgK9BeML7mRjkPFUKZaj9/
+    ir/QEXDrHsrjlyI3T8rZSA==
     """
 
   Scenario: Updating latest Nextcloud 26 on the beta channel
     Given There is a release with channel "beta"
-    And The received version is "26.0.9.1"
+    And The received version is "26.0.10.0"
     And The received PHP version is "8.1.0"
     And the installation mtime is "11"
     When The request is sent
@@ -728,7 +728,7 @@ Feature: Testing the update scenario of beta releases
 
   Scenario: Updating latest Nextcloud 26 on the beta channel with instance category
     Given There is a release with channel "beta"
-    And The received version is "26.0.9.1"
+    And The received version is "26.0.10.1"
     And The received PHP version is "8.1.0"
     And the installation mtime is "11"
     And the instance category is 2
