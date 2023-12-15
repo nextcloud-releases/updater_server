@@ -700,35 +700,34 @@ ZH1PxQilL7ihAvnOb2oU1Q==',
 	'beta' => [
 		'28' => [
 			'100' => [
-				'latest' => '28.0.0',
-				'internalVersion' => '28.0.0.11',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-28.0.0.zip',
+				'latest' => '28.0.1 RC1',
+				'internalVersion' => '28.0.1.0',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-28.0.1rc1.zip',
 				'web' => 'https://docs.nextcloud.com/server/28/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '8.0',
-				'signature' => 'Fkf2AdafbBFkxlu1txHSa5MeSFpM0gjVKA6qjjqhkRnx3rlutwVu/78XhZ+Z7SxV
-ZiC6nCZL11IKfvCmi5prc8i/OTrYgyP7u209sX/mfFOjk+6ohqOMX0DpsWnw5a8L
-AQpACTz2uZc0cykzuoujbzbx9j7MP8/sYLhN1U70axKtaPgelbK1yN9+OMoDLPXP
-n6HKvxqShNHQ2sy3d+hlWZPkHPN8qMpphaqkRdCz7Dc0aqS9grY7LTr7EKFsjeCK
-VoMLaz6JgZmQx/BUU5jNlDEXoopUIsNqcyfW7GLNqUb/dHeIo68B1qqy2iABmiej
-jY/l89wrm1xy8lzcf+AGLg==',
-
+				'signature' => 'oE0tv5UhUw21bqLAwmXijUFX9jCbWS9tfuy4ie6s2XIHUV9g9qZfxz3xKrcF5qDp
+8E0RNnTRZ3wpQIMV1V/UohDPAD6EAqGiRGjlUhHAjm/4tgUz0fFGSBSnBO6GaOVK
+gL2CYNHzk4MWR+bhEUOkZ0jXqpuzdkdllYKm6pp7VagbcL8+NKC+A/dFuW6kSe1C
+T18/EyCJV0/b1JCtJBD9G1jnj+o8tf955OOEkrxOsUokP3cZorjMxsC5hl/SvTPM
+yt/ynhLGhhQELfOGlSBAIy3ivO1bbOBUIU3U0051e2RBu+4TThOqwriaGj2fA/S6
+SEnIWu3YadTL+datfB37wA==',
 			],
 		],
 		'27.1.5' => [
 			'100' => [
-				'latest' => '28.0.0',
-				'internalVersion' => '28.0.0.11',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-28.0.0.zip',
+				'latest' => '28.0.1 RC1',
+				'internalVersion' => '28.0.1.0',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-28.0.1rc1.zip',
 				'web' => 'https://docs.nextcloud.com/server/28/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '8.0',
-				'signature' => 'Fkf2AdafbBFkxlu1txHSa5MeSFpM0gjVKA6qjjqhkRnx3rlutwVu/78XhZ+Z7SxV
-ZiC6nCZL11IKfvCmi5prc8i/OTrYgyP7u209sX/mfFOjk+6ohqOMX0DpsWnw5a8L
-AQpACTz2uZc0cykzuoujbzbx9j7MP8/sYLhN1U70axKtaPgelbK1yN9+OMoDLPXP
-n6HKvxqShNHQ2sy3d+hlWZPkHPN8qMpphaqkRdCz7Dc0aqS9grY7LTr7EKFsjeCK
-VoMLaz6JgZmQx/BUU5jNlDEXoopUIsNqcyfW7GLNqUb/dHeIo68B1qqy2iABmiej
-jY/l89wrm1xy8lzcf+AGLg==',
+				'signature' => 'oE0tv5UhUw21bqLAwmXijUFX9jCbWS9tfuy4ie6s2XIHUV9g9qZfxz3xKrcF5qDp
+8E0RNnTRZ3wpQIMV1V/UohDPAD6EAqGiRGjlUhHAjm/4tgUz0fFGSBSnBO6GaOVK
+gL2CYNHzk4MWR+bhEUOkZ0jXqpuzdkdllYKm6pp7VagbcL8+NKC+A/dFuW6kSe1C
+T18/EyCJV0/b1JCtJBD9G1jnj+o8tf955OOEkrxOsUokP3cZorjMxsC5hl/SvTPM
+yt/ynhLGhhQELfOGlSBAIy3ivO1bbOBUIU3U0051e2RBu+4TThOqwriaGj2fA/S6
+SEnIWu3YadTL+datfB37wA==',
 			],
 		],
 		'27' => [
