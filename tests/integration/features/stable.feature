@@ -997,7 +997,7 @@ Feature: Testing the update scenario of stable releases
     Given There is a release with channel "stable"
     And The received version is "27.1.5.1"
     And The received PHP version is "8.1.0"
-    And the installation mtime is "41"
+    And the installation mtime is "81"
     When The request is sent
     Then The response is empty
 
@@ -1005,7 +1005,7 @@ Feature: Testing the update scenario of stable releases
     Given There is a release with channel "stable"
     And The received version is "27.1.5.1"
     And The received PHP version is "8.1.0"
-    And the installation mtime is "11"
+    And the installation mtime is "41"
     When The request is sent
     Then The response is non-empty
     And Update to version "28.0.1.1" is available
