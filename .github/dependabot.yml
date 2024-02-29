@@ -12,3 +12,11 @@ updates:
       day: saturday
       time: "03:00"
       timezone: Europe/Paris
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: weekly
+      day: saturday
+      time: "03:00"
+      timezone: Europe/Paris
