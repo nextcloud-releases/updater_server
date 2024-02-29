@@ -3,6 +3,6 @@
 	"author": "John Molakvoæ <skjnldsv@protonmail.com>",
 	"license": "AGPL-3.0-or-later",
 	"dependencies": {
-		"@actions/core": "^1.4.0"
+		"@actions/core": "^1.10.1"
 	}
 }
