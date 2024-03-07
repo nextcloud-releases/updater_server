@@ -505,3 +505,45 @@ Feature: Testing the update scenario of beta releases
     78rc8LM+fDj/K5kPwIHHfjOYaHfblGxjR1qhLyxak5JonSwT9D38l9uqk/DVUs2O
     8AkppHJdBdSUvZnVM4fzaA==
     """
+
+  Scenario: Updating latest Nextcloud 28 on the beta channel
+    Given There is a release with channel "beta"
+    And The received version is "28.0.3.2"
+    And The received PHP version is "8.1.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "29.0.0.7" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-29.0.0beta1.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/29/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    0nWt86FkbO1kCZDlO+csOne1/4WgSk8rGh5T+/KKyY/LITjlx8iDDqbQX8NhcAh/
+    72D0TO0+kZOFYVRPiYaWXqQuIwPDP7eCPk1j10jpcvCMhVdPo8Hhk8nlryTNmeSa
+    w5NklA/wSCsGgVR+7ADkZbftVMwPszEZPZT919h1w5WEQmDpM9F2x5Mxrka0Xfqu
+    MHQcdQJdf+p5RRxxlbkRn/fM9ApQUJcMMYkYYju4Hl4lTTtImJ7prZPMM6x9QOph
+    qRJBBumRnzZe9tF6yGLbUrlyhlOmeCcJvAc6JX2UgGzpfcvRljWStb2Km4TkA0xX
+    nQcNPKz6i9Suituc8HbZcw==
+    """
+
+  Scenario: Updating Nextcloud 29 on the beta channel
+    Given There is a release with channel "beta"
+    And The received version is "29.0.0.0"
+    And The received PHP version is "8.1.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "29.0.0.7" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-29.0.0beta1.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/29/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    0nWt86FkbO1kCZDlO+csOne1/4WgSk8rGh5T+/KKyY/LITjlx8iDDqbQX8NhcAh/
+    72D0TO0+kZOFYVRPiYaWXqQuIwPDP7eCPk1j10jpcvCMhVdPo8Hhk8nlryTNmeSa
+    w5NklA/wSCsGgVR+7ADkZbftVMwPszEZPZT919h1w5WEQmDpM9F2x5Mxrka0Xfqu
+    MHQcdQJdf+p5RRxxlbkRn/fM9ApQUJcMMYkYYju4Hl4lTTtImJ7prZPMM6x9QOph
+    qRJBBumRnzZe9tF6yGLbUrlyhlOmeCcJvAc6JX2UgGzpfcvRljWStb2Km4TkA0xX
+    nQcNPKz6i9Suituc8HbZcw==
+    """
