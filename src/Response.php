@@ -187,16 +187,20 @@ class Response {
 					$phpVersion,
 					$this->request->getInstallationMtime()
 				);
-			case 'stable':
-				return $this->getStableResponse(
-					$this->config->get('stable'),
+			case 'beta':
+				$betaVersion = $this->getStableResponse(
+					$this->config->get('beta'),
 					$completeCurrentVersion,
 					$phpVersion,
 					$this->request->getInstallationMtime()
 				);
-			case 'beta':
+				if ($betaVersion !== '') {
+					return $betaVersion;
+				}
+				// no break
+			case 'stable':
 				return $this->getStableResponse(
-					$this->config->get('beta'),
+					$this->config->get('stable'),
 					$completeCurrentVersion,
 					$phpVersion,
 					$this->request->getInstallationMtime()
