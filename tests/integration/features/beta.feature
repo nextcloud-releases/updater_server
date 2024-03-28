@@ -367,7 +367,7 @@ Feature: Testing the update scenario of beta releases
     And Update to version "26.0.13.1" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-26.0.13.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/26/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL is set to "1"
     And The signature is
     """
     bvGxFDuB+F5C9DqiARiF9MifdcZEQ2R5+AvgCEs/hnrUugRjTXMvJPRkaDLL01Yf
@@ -388,7 +388,7 @@ Feature: Testing the update scenario of beta releases
     And Update to version "26.0.13.1" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-26.0.13.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/26/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL is set to "1"
     And The signature is
     """
     bvGxFDuB+F5C9DqiARiF9MifdcZEQ2R5+AvgCEs/hnrUugRjTXMvJPRkaDLL01Yf
