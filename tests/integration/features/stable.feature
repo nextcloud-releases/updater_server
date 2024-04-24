@@ -567,3 +567,53 @@ Feature: Testing the update scenario of stable releases
     2T5gXUmAo9ZRKueIVMsAv2k2z7ljr5jU8A5y2Ro4vF640gQDatfCeki3fZHjsJuv
     FL8El4dcXedJGrtzfh62PA==
     """
+
+  Scenario: Not updating latest Nextcloud 28 on the stable channel (staged rollout)
+    Given There is a release with channel "stable"
+    And The received version is "28.0.4.1"
+    And The received PHP version is "8.1.0"
+    And the installation mtime is "81"
+    When The request is sent
+    Then The response is empty
+
+  Scenario: Updating latest Nextcloud 28 on the stable channel
+    Given There is a release with channel "stable"
+    And The received version is "28.0.4.1"
+    And The received PHP version is "8.1.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "29.0.0.19" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-29.0.0.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/29/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    WYiOZ/o8pfhdiTsRgo2Y9deTYAhfe10Z0JrMOlqBBpNbGw8+Lzgkc4clWDM2TQ7D
+    ZMXLZicwkUxueh3o7PZsbR7RHT2weQ8ajMz+wc87rCKVUiNzLm/7VXL9o5HXY7jw
+    hhSbjS22PwyKXhrqoMyC5Zu7L60O+8W/LPUyYwnCV5IdL9BCXCa+Z284Ig95v8uX
+    c/N0UlT+d4cQD/GxhIxDvNDtsV3pLnUjWwgSwjSbnsMu+4jL6AxtNO1ZWVdeg3X7
+    o2+KFQzM84mURv71eGvzsCXziisZM1irTS7UZSYLlV8x3r/6xOoDFcnjDjquHLaQ
+    NxJoXqJoiaG26rWzAT6yDQ==
+    """
+
+  Scenario: Updating Nextcloud 29 on the stable channel
+    Given There is a release with channel "stable"
+    And The received version is "29.0.0.0"
+    And The received PHP version is "8.1.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "29.0.0.19" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-29.0.0.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/29/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    WYiOZ/o8pfhdiTsRgo2Y9deTYAhfe10Z0JrMOlqBBpNbGw8+Lzgkc4clWDM2TQ7D
+    ZMXLZicwkUxueh3o7PZsbR7RHT2weQ8ajMz+wc87rCKVUiNzLm/7VXL9o5HXY7jw
+    hhSbjS22PwyKXhrqoMyC5Zu7L60O+8W/LPUyYwnCV5IdL9BCXCa+Z284Ig95v8uX
+    c/N0UlT+d4cQD/GxhIxDvNDtsV3pLnUjWwgSwjSbnsMu+4jL6AxtNO1ZWVdeg3X7
+    o2+KFQzM84mURv71eGvzsCXziisZM1irTS7UZSYLlV8x3r/6xOoDFcnjDjquHLaQ
+    NxJoXqJoiaG26rWzAT6yDQ==
+    """
