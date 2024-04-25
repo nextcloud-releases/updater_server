@@ -128,7 +128,7 @@ NxJoXqJoiaG26rWzAT6yDQ==',
 			'30' => [
 				'latest' => '29.0.0',
 				'internalVersion' => '29.0.0.19',
-				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-29.0.0.zip',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-29.0.0rc1.zip',
 				'web' => 'https://docs.nextcloud.com/server/29/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '8.0',
