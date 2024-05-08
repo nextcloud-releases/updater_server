@@ -1,0 +1,23 @@
+name: Check directory for packages
+
+on: pull_request
+
+permissions:
+  contents: read
+
+concurrency:
+  group: prerelease-dir-check-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  prerelease-dir-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4.1.4
+
+      - name: Make sure all releases are stable and all prereleases are unstable
+        run: |
+          grep '/releases/' config/config.php | grep "'downloadUrl'" | grep -E '(rc|beta|alpha)' | wc -l | grep '^0$'
+          grep '/prereleases/' config/config.php | grep "'downloadUrl'" | grep -v -E '(rc|beta|alpha)' | wc -l | grep '^0$'
