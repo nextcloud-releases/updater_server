@@ -125,7 +125,7 @@ NxJoXqJoiaG26rWzAT6yDQ==',
 			],
 		],
 		'28.0.5' => [
-			'30' => [
+			'70' => [
 				'latest' => '29.0.0',
 				'internalVersion' => '29.0.0.19',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-29.0.0.zip',
