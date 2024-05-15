@@ -1,14 +1,26 @@
 Feature: Testing the update scenario of daily releases
 
-  Scenario: Updating an outdated Nextcloud 28 daily
+  Scenario: Updating an outdated Nextcloud 30 daily
     Given There is a release with channel "daily"
-    And The received version is "29.1.0"
+    And The received version is "30.1.0"
     And the received build is "2012-10-19T18:44:30+00:00"
     When The request is sent
     Then The response is non-empty
     And Update to version "100.0.0.0" is available
     And URL to download is "https://download.nextcloud.com/server/daily/latest-master.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/latest/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And No signature is set
+
+  Scenario: Updating an outdated Nextcloud 29 daily
+    Given There is a release with channel "daily"
+    And The received version is "29.1.0"
+    And the received build is "2012-10-19T18:44:30+00:00"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "100.0.0.0" is available
+    And URL to download is "https://download.nextcloud.com/server/daily/latest-stable29.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/29/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And No signature is set
 
