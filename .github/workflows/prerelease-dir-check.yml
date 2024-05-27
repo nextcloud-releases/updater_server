@@ -1,4 +1,4 @@
-name: Check directory for packages
+name: Check config.php is up-to-date with JSON configuration files
 
 on: pull_request
 
@@ -6,18 +6,19 @@ permissions:
   contents: read
 
 concurrency:
-  group: prerelease-dir-check-${{ github.head_ref || github.run_id }}
+  group: config-up-to-date-check-${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
 
 jobs:
-  prerelease-dir-check:
+  config-up-to-date-check:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
 
-      - name: Make sure all releases are stable and all prereleases are unstable
+      - name: Make sure config.php is up-to-date with JSON files
         run: |
-          grep '/releases/' config/config.php | grep "'downloadUrl'" | grep -E '(rc|beta|alpha)' | wc -l | grep '^0$'
-          grep '/prereleases/' config/config.php | grep "'downloadUrl'" | grep -v -E '(rc|beta|alpha)' | wc -l | grep '^0$'
+          mv config/config.php config/config_pr.php
+          make config/config.php
+          diff config/config_pr.php config/config.php
