@@ -1,0 +1,79 @@
+<?php
+declare(strict_types=1);
+
+if (file_exists(__DIR__.'/enterprise_utils.php')) {
+	require_once __DIR__.'/enterprise_utils.php';
+}
+
+/**
+ * Load JSON from configuration file
+ */
+function loadJson(string $name): array {
+	$filepath = dirname(__DIR__).'/config/'.$name.'.json';
+	if (!is_file($filepath)) {
+		throw new \Exception('JSON file '.$filepath.' not found');
+	}
+
+	return json_decode(file_get_contents($filepath), true, 30, JSON_THROW_ON_ERROR);
+}
+
+/**
+ * Extract stability from release name
+ *
+ * @return string enterprise, stable or beta
+ */
+function getStabilityFromName(string $releaseName): string {
+	if (preg_match('/alpha|beta|rc/i', $releaseName)) {
+		return 'beta';
+	}
+	if (preg_match('/enterprise$/i', $releaseName)) {
+		return 'enterprise';
+	}
+
+	return 'stable';
+}
+
+/**
+ * Extract version info from release name
+ */
+function parseVersionName(string $releaseName): array {
+	preg_match('/(\d+)\.(\d+).(\d+)(?: (.*))?/', $releaseName, $matches);
+	[, $major, $minor, $patch] = $matches;
+	$stability = getStabilityFromName($releaseName);
+	return [
+		'major' => $major,
+		'minor' => $minor,
+		'patch' => $patch,
+		'modifier' => isset($matches[4]) ? $matches[4] : '',
+		'stability' => $stability,
+	];
+}
+
+function displayAsFile(array $generatedConfig) {
+	echo '<?php',PHP_EOL,'declare(strict_types=1);',PHP_EOL,PHP_EOL,'return ';
+	echo preg_replace(
+		['/array\s*\(/', '/\)/', "/=>\s*\n\s*\[/", '/  /'],
+		['[', ']', '=> [', "\t"],
+		var_export($generatedConfig, true)
+	);
+	echo ';',PHP_EOL;
+}
+
+function buildDownloadUrl(string $releaseName, array $info): string {
+	if (function_exists('buildEnterpriseDownloadUrl')) {
+		$url = buildEnterpriseDownloadUrl($releaseName, $info);
+		if ($url !== null) {
+			return $url;
+		}
+	}
+
+	$release = parseVersionName($releaseName);
+	$downloadUrl = 'https://download.nextcloud.com/server/%s/nextcloud-%d.%d.%d%s.zip';
+	return sprintf($downloadUrl,
+		$release['modifier'] === '' ? 'releases' : 'prereleases',
+		$release['major'],
+		$release['minor'],
+		$release['patch'],
+		$release['modifier'] === '' ? '' : str_replace(' ', '', strtolower($release['modifier'])),
+	);
+}

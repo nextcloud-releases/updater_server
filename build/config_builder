@@ -1,0 +1,97 @@
+#!/usr/bin/env php
+<?php
+declare(strict_types=1);
+
+require_once __DIR__.'/utils.php';
+
+// Configuration
+$docUrl = 'https://docs.nextcloud.com/server/%s/admin_manual/maintenance/upgrade.html';
+$changelogServerUrl = 'https://updates.nextcloud.com/changelog_server/';
+$majorVersions = loadJson('major_versions');
+$releases = loadJson('releases');
+
+try {
+	$enterpriseReleases = loadJson('enterprise');
+	$releases = array_merge($releases, $enterpriseReleases);
+	$latestReleases = $generatedConfig = ['enterprise' => [], 'stable' => [], 'beta' => []];
+} catch (\Exception) {
+	$latestReleases = $generatedConfig = ['stable' => [], 'beta' => []];
+}
+
+// Search latest release for each major/stability
+foreach ($releases as $releaseName => $info) {
+	$major = parseVersionName($releaseName)['major'];
+	$stability = getStabilityFromName($releaseName);
+	if (!isset($latestReleases[$stability][$major])) {
+		$latestReleases[$stability][$major] = $info['internalVersion'];
+		continue;
+	}
+	if (version_compare($latestReleases[$stability][$major], $releaseName, '<')) {
+		$latestReleases[$stability][$major] = $info['internalVersion'];
+	}
+}
+
+// Generate previous configuration
+$now = date('Y-m');
+foreach ($releases as $releaseName => $info) {
+	preg_match('/(\d+)\.(\d+).(\d+)(?: (.+))?/A', $releaseName, $matches);
+	[, $major, $minor, $patch] = $matches;
+	$stability = getStabilityFromName($releaseName);
+	$isEol = isset($majorVersions[$major]['eol']) ? ($majorVersions[$major]['eol'] < $now) : false;
+	$generatedConfig[$stability][$major]['100'] = [
+		'latest' => $releaseName,
+		'internalVersion' => $info['internalVersion'],
+		'downloadUrl' => buildDownloadUrl($releaseName, $info),
+		'web' => sprintf($docUrl, $major),
+		'eol' => $isEol,
+		'minPHPVersion' => $majorVersions[$major]['minPHP'] ?? '',
+		'signature' => isset($info['signature']) ? wordwrap($info['signature'], 64, cut_long_words: true) : '',
+	];
+
+	// Check if we can upgrade from a previous major version
+	$previousMajor = $major - 1;
+	$deployPercent = $info['deploy'] ?? 100;
+	if (isset($latestReleases[$stability][$previousMajor])) {
+		$upgradeFrom = $latestReleases[$stability][$previousMajor];
+		$generatedConfig[$stability][$upgradeFrom][$deployPercent] = $generatedConfig[$stability][$major]['100'];
+	} elseif (isset($latestReleases['stable'][$major -1])) {
+		$upgradeFrom = $latestReleases['stable'][$previousMajor];
+		$generatedConfig[$stability][$upgradeFrom][$deployPercent] = $generatedConfig[$stability][$major]['100'];
+	}
+
+	// For stable versions, check if we can upgrade from a beta version
+	if ($stability === 'stable') {
+		if (isset($latestReleases['beta'][$previousMajor])) {
+			$upgradeFrom = $latestReleases['beta'][$previousMajor];
+			$generatedConfig['beta'][$upgradeFrom][100] = $generatedConfig[$stability][$major]['100'];
+		}
+	}
+}
+
+// Keep order like original config.php
+foreach($generatedConfig as $stability => $ignored) {
+	uksort($generatedConfig[$stability], fn($a, $b) => version_compare((string) $b, (string) $a));
+}
+
+// Daily updates
+$maxMajor = (int) max(array_keys($majorVersions));
+foreach ($majorVersions as $majorVersion => $info) {
+	if ($majorVersion < 20) {
+		break;
+	}
+	$generatedConfig['daily'][$majorVersion] = [
+		'downloadUrl' => sprintf('https://download.nextcloud.com/server/daily/latest-%s.zip', $maxMajor === $majorVersion ? 'master' : 'stable'.$majorVersion),
+		'web' => sprintf($docUrl, $maxMajor === $majorVersion ? 'latest' : $majorVersion),
+		'eol' => isset($info['eol']) ? ($info['eol'] < $now) : false,
+		'minPHPVersion' => $info['minPHP'] ?? '7.2',
+	];
+}
+
+// Display result
+echo '<?php',PHP_EOL,'return ';
+echo preg_replace(
+	['/array\s*\(/', '/\)/', "/=>\s*\n\s*\[/", '/  /'],
+	['[', ']', '=> [', "\t"],
+	var_export($generatedConfig, true)
+);
+echo ';',PHP_EOL;

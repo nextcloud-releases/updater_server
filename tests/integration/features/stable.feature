@@ -21,25 +21,25 @@ Feature: Testing the update scenario of stable releases
     cNaaoBpx0s3QFdfhSnSgQQ==
     """
 
-  Scenario: Updating an outdated Nextcloud 16.0.7 on the stable channel (expect 17)
+  Scenario: Updating an outdated Nextcloud 16.0.7 on the stable channel
     Given There is a release with channel "stable"
     And The received version is "16.0.1.1"
     And The received PHP version is "7.2.0"
     And the installation mtime is "40"
     When The request is sent
     Then The response is non-empty
-    And Update to version "17.0.10.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-17.0.10.zip"
-    And URL to documentation is "https://docs.nextcloud.com/server/17/admin_manual/maintenance/upgrade.html"
+    And Update to version "16.0.11.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-16.0.11.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/16/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
     """
-    UNo0Sh9xK+TlO6rL6s380gB436990558QOjdQiDaeYuFANjCQFz0aO957Fetpkol
-    idhfkICTMtBC5mlSVAJjMW+5BIQ0kAHeJykqz6YD4Vw0aEIHHFgA1qCEphEj0/D5
-    p5OzkP6JSkwp+/e1O8xFdr/8VIHdkCEM5Kd5lchzp83XmfZm1t6YdcV8ziACDZrT
-    GaiG/TGRdHeR4ifgMpdMLZIy0x4Qd6k06dhCFsEz8H10Cf0oVmtrjxJsKEPY7doW
-    4QZIg8gwFj8Uxk4ylijHFSeIxCX96ZSmj+7wolAn8kYqq5Q8iwVYjNqFtJZ/YXIc
-    cNaaoBpx0s3QFdfhSnSgQQ==
+    b7SOD6KATY0bpbAcL/+1gdeLeuWAvsIn+tuUzF6HStrjxLrARw8cOrM7bCq5zcq7
+    tJCWrI2Ww9CrKH8kNalEZNMDZy346QhYkUZNOiU2IP8wdb1601vRXfIkPyTVSpdk
+    RDMQWtIushwa/WIZTKnJWo1fd0juxBnbmIl30rxDgUpBOkjx0zGvA2Ff+mssezX3
+    qGhaB0Btr45xpgbHbeEQwsH1w2PXJFy9GsF2psbBEIykCPAxgRWR32bTGH8ws9Uy
+    zpAxCj7W4wEnJFhsQ2zb0Wh5ZjSA9G1SARJhMp/8Efwm3uWJr5xK4MYKG2bQ29mt
+    HWPTEBalqX2V9enOLAgVWQ==
     """
 
   Scenario: Updating an up-to-date Nextcloud 17.0.2 on the stable channel
