@@ -59,9 +59,9 @@ function displayAsFile(array $generatedConfig) {
 	echo ';',PHP_EOL;
 }
 
-function buildDownloadUrl(string $releaseName, array $info): string {
+function buildDownloadUrl(string $releaseName, array $info, array $majorVersion): string {
 	if (function_exists('buildEnterpriseDownloadUrl')) {
-		$url = buildEnterpriseDownloadUrl($releaseName, $info);
+		$url = buildEnterpriseDownloadUrl($releaseName, $info, $majorVersion);
 		if ($url !== null) {
 			return $url;
 		}
@@ -76,4 +76,19 @@ function buildDownloadUrl(string $releaseName, array $info): string {
 		$release['patch'],
 		$release['modifier'] === '' ? '' : str_replace(' ', '', strtolower($release['modifier'])),
 	);
+}
+
+function isEol(string $releaseName, array $majorVersion): bool {
+	if (function_exists('isEnterpriseEol')) {
+		$isEol = isEnterpriseEol($releaseName, $majorVersion);
+		if ($isEol !== null) {
+			return $isEol;
+		}
+	}
+
+	if (!isset($majorVersion['eol'])) {
+		return false;
+	}
+
+	return $majorVersion['eol'] < date('Y-m');
 }
