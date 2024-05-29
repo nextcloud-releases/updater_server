@@ -11,7 +11,14 @@ $majorVersions = loadJson('major_versions');
 $releases = loadJson('releases');
 
 try {
-	$enterpriseReleases = loadJson('enterprise');
+	$enterpriseMajorVersions = loadJson('enterprise_major_versions');
+	$enterpriseReleases = loadJson('enterprise_releases');
+	foreach($majorVersions as $name => $version) {
+		if (isset($enterpriseMajorVersions[$name])) {
+			$majorVersions[$name] = array_merge($version, $enterpriseMajorVersions[$name]);
+		}
+	}
+	$majorVersions = array_replace_recursive($majorVersions + $enterpriseMajorVersions);
 	$releases = array_merge($releases, $enterpriseReleases);
 	$latestReleases = $generatedConfig = ['enterprise' => [], 'stable' => [], 'beta' => []];
 } catch (\Exception) {
@@ -32,16 +39,15 @@ foreach ($releases as $releaseName => $info) {
 }
 
 // Generate previous configuration
-$now = date('Y-m');
 foreach ($releases as $releaseName => $info) {
 	preg_match('/(\d+)\.(\d+).(\d+)(?: (.+))?/A', $releaseName, $matches);
 	[, $major, $minor, $patch] = $matches;
 	$stability = getStabilityFromName($releaseName);
-	$isEol = isset($majorVersions[$major]['eol']) ? ($majorVersions[$major]['eol'] < $now) : false;
+	$isEol = isEol($releaseName, $majorVersions[$major]);
 	$generatedConfig[$stability][$major]['100'] = [
 		'latest' => $releaseName,
 		'internalVersion' => $info['internalVersion'],
-		'downloadUrl' => buildDownloadUrl($releaseName, $info),
+		'downloadUrl' => buildDownloadUrl($releaseName, $info, $majorVersions[$major]),
 		'web' => sprintf($docUrl, $major),
 		'eol' => $isEol,
 		'minPHPVersion' => $majorVersions[$major]['minPHP'] ?? '',
@@ -75,6 +81,7 @@ foreach($generatedConfig as $stability => $ignored) {
 
 // Daily updates
 $maxMajor = (int) max(array_keys($majorVersions));
+$now = date('Y-m');
 foreach ($majorVersions as $majorVersion => $info) {
 	if ($majorVersion < 20) {
 		break;
