@@ -1,8 +1,8 @@
 <?php
 return [
 	'stable' => [
-		29 => [
-			100 => [
+		'29' => [
+			'100' => [
 				'latest' => '29.0.1',
 				'internalVersion' => '29.0.1.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-29.0.1.zip',
@@ -18,7 +18,7 @@ myRG4PG3IaLxfIF3O3/xhvEpqz0BSrJRAIptAZ9YdQZjt+bkh1DoW0HtkN+4FVp4
 			],
 		],
 		'28.0.6.1' => [
-			100 => [
+			'100' => [
 				'latest' => '29.0.1',
 				'internalVersion' => '29.0.1.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-29.0.1.zip',
@@ -33,8 +33,8 @@ myRG4PG3IaLxfIF3O3/xhvEpqz0BSrJRAIptAZ9YdQZjt+bkh1DoW0HtkN+4FVp4
 0DAbpdTSYEu6OUzAFq8I1g==',
 			],
 		],
-		28 => [
-			100 => [
+		'28' => [
+			'100' => [
 				'latest' => '28.0.6',
 				'internalVersion' => '28.0.6.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-28.0.6.zip',
@@ -50,7 +50,7 @@ QnK0Bov0chs7kRKuaA/Hew==',
 			],
 		],
 		'27.1.10.2' => [
-			100 => [
+			'100' => [
 				'latest' => '28.0.6',
 				'internalVersion' => '28.0.6.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-28.0.6.zip',
@@ -65,8 +65,8 @@ nSZvIxRTQw8tdqnkqgCnGTEHHh5dvqsfhbcLQwHZ6ldkoAhSf9TZ1m0nVlQFsRmi
 QnK0Bov0chs7kRKuaA/Hew==',
 			],
 		],
-		27 => [
-			100 => [
+		'27' => [
+			'100' => [
 				'latest' => '27.1.10',
 				'internalVersion' => '27.1.10.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-27.1.10.zip',
@@ -82,7 +82,7 @@ pFiyELE2Ee7Xpds/CTGunQ==',
 			],
 		],
 		'26.0.13.1' => [
-			100 => [
+			'100' => [
 				'latest' => '27.1.10',
 				'internalVersion' => '27.1.10.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-27.1.10.zip',
@@ -97,8 +97,8 @@ eVRyS+q1FeOYZRNJbEEYWDUDUGSTmI1UNZehY0v5w7c+bj21BeKVMzWn3hsm9MrK
 pFiyELE2Ee7Xpds/CTGunQ==',
 			],
 		],
-		26 => [
-			100 => [
+		'26' => [
+			'100' => [
 				'latest' => '26.0.13',
 				'internalVersion' => '26.0.13.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-26.0.13.zip',
@@ -114,7 +114,7 @@ m04vBdfnV+VUhCBz0tYn9A==',
 			],
 		],
 		'25.0.13.2' => [
-			100 => [
+			'100' => [
 				'latest' => '26.0.13',
 				'internalVersion' => '26.0.13.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-26.0.13.zip',
@@ -129,8 +129,8 @@ qVqpedb3ivvwVR1pZqTUyrUPDYojLnyw3XCSKb588U6kSNhaMj/Kl5/5KT34OG+2
 m04vBdfnV+VUhCBz0tYn9A==',
 			],
 		],
-		25 => [
-			100 => [
+		'25' => [
+			'100' => [
 				'latest' => '25.0.13',
 				'internalVersion' => '25.0.13.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-25.0.13.zip',
@@ -146,7 +146,7 @@ c2rOEZwqzv2p7fWh4Ovl6g==',
 			],
 		],
 		'24.0.12.1' => [
-			100 => [
+			'100' => [
 				'latest' => '25.0.13',
 				'internalVersion' => '25.0.13.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-25.0.13.zip',
@@ -161,8 +161,8 @@ X6IrjOfLlNvurihALJuhJzqWG+Xdi3xurMOI65ad8im2+7tiB/yu5Bb5NdSl8KvL
 c2rOEZwqzv2p7fWh4Ovl6g==',
 			],
 		],
-		24 => [
-			100 => [
+		'24' => [
+			'100' => [
 				'latest' => '24.0.12',
 				'internalVersion' => '24.0.12.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-24.0.12.zip',
@@ -178,7 +178,7 @@ ACWMWE93WNcq+HBa025zsw==',
 			],
 		],
 		'23.0.12.2' => [
-			100 => [
+			'100' => [
 				'latest' => '24.0.12',
 				'internalVersion' => '24.0.12.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-24.0.12.zip',
@@ -193,8 +193,8 @@ PC8WFtnBG8EIA1ncyQ/IDKUZjg79E8cM8zyIY8PYmA/Jf4MpTMwfoGJQ0GtD6nCF
 ACWMWE93WNcq+HBa025zsw==',
 			],
 		],
-		23 => [
-			100 => [
+		'23' => [
+			'100' => [
 				'latest' => '23.0.12',
 				'internalVersion' => '23.0.12.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-23.0.12.zip',
@@ -210,7 +210,7 @@ PlWRhIoX0XzP82+TC5b1dg==',
 			],
 		],
 		'22.2.10.2' => [
-			100 => [
+			'100' => [
 				'latest' => '23.0.12',
 				'internalVersion' => '23.0.12.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-23.0.12.zip',
@@ -225,8 +225,8 @@ rfrM7C5GWPNSzv9qcUteJ4jv9ORJ/FiZVewSfP+5hKxTIeUw+D/9LbCjRVzKwvIx
 PlWRhIoX0XzP82+TC5b1dg==',
 			],
 		],
-		22 => [
-			100 => [
+		'22' => [
+			'100' => [
 				'latest' => '22.2.10',
 				'internalVersion' => '22.2.10.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-22.2.10.zip',
@@ -242,7 +242,7 @@ GorEOAeOrtcV0ba4AVoETQ==',
 			],
 		],
 		'21.0.9.1' => [
-			100 => [
+			'100' => [
 				'latest' => '22.2.10',
 				'internalVersion' => '22.2.10.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-22.2.10.zip',
@@ -257,8 +257,8 @@ fhlPbaifQKypXBpBdN/RBRt6Ox5z2lSG5IY/g8nc4x7rYQSpiTrtWi1vlcxF0aIT
 GorEOAeOrtcV0ba4AVoETQ==',
 			],
 		],
-		21 => [
-			100 => [
+		'21' => [
+			'100' => [
 				'latest' => '21.0.9',
 				'internalVersion' => '21.0.9.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-21.0.9.zip',
@@ -274,7 +274,7 @@ mE2YG/R4IKW+A8xqweVzig==',
 			],
 		],
 		'20.0.14.2' => [
-			100 => [
+			'100' => [
 				'latest' => '21.0.9',
 				'internalVersion' => '21.0.9.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-21.0.9.zip',
@@ -289,8 +289,8 @@ BQwO9DSgH23A3veRLMpZnuiZcZfOJIr/LSRjvgxU+RdHKWFJkmngNQAg7pTPnjMH
 mE2YG/R4IKW+A8xqweVzig==',
 			],
 		],
-		20 => [
-			100 => [
+		'20' => [
+			'100' => [
 				'latest' => '20.0.14',
 				'internalVersion' => '20.0.14.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-20.0.14.zip',
@@ -306,7 +306,7 @@ fZCxpy3szm7gaozWquGfD+oglIY7GLVsbeZBTDFgF44OcDAY/29AL3TKRKN+cnQr
 			],
 		],
 		'19.0.13.1' => [
-			100 => [
+			'100' => [
 				'latest' => '20.0.14',
 				'internalVersion' => '20.0.14.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-20.0.14.zip',
@@ -321,8 +321,8 @@ fZCxpy3szm7gaozWquGfD+oglIY7GLVsbeZBTDFgF44OcDAY/29AL3TKRKN+cnQr
 6feVFe2PlZ2FK5zxWZNYfw==',
 			],
 		],
-		19 => [
-			100 => [
+		'19' => [
+			'100' => [
 				'latest' => '19.0.13',
 				'internalVersion' => '19.0.13.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-19.0.13.zip',
@@ -338,7 +338,7 @@ WN2PwtM3nn6/5y0BMhJueQ==',
 			],
 		],
 		'18.0.14.1' => [
-			100 => [
+			'100' => [
 				'latest' => '19.0.13',
 				'internalVersion' => '19.0.13.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-19.0.13.zip',
@@ -353,8 +353,8 @@ SnaqLa3zSAKlqrda4qsvt4AnGfOB7/MZxQBO9Sy/D6F60DqvI9/IntjJyJm6uUzo
 WN2PwtM3nn6/5y0BMhJueQ==',
 			],
 		],
-		18 => [
-			100 => [
+		'18' => [
+			'100' => [
 				'latest' => '18.0.14',
 				'internalVersion' => '18.0.14.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-18.0.14.zip',
@@ -370,7 +370,7 @@ OcrbOha2Z819kkukqEE34Q==',
 			],
 		],
 		'17.0.10.1' => [
-			100 => [
+			'100' => [
 				'latest' => '18.0.14',
 				'internalVersion' => '18.0.14.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-18.0.14.zip',
@@ -385,8 +385,8 @@ BX4Qwl1YI2f8b0KHy3yIqmY58qsWTjGb319Nq3tPFsY8N2hUmFu4yve0nW6Zb/+1
 OcrbOha2Z819kkukqEE34Q==',
 			],
 		],
-		17 => [
-			100 => [
+		'17' => [
+			'100' => [
 				'latest' => '17.0.10',
 				'internalVersion' => '17.0.10.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-17.0.10.zip',
@@ -402,7 +402,7 @@ cNaaoBpx0s3QFdfhSnSgQQ==',
 			],
 		],
 		'16.0.11.1' => [
-			100 => [
+			'100' => [
 				'latest' => '17.0.10',
 				'internalVersion' => '17.0.10.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-17.0.10.zip',
@@ -417,8 +417,8 @@ GaiG/TGRdHeR4ifgMpdMLZIy0x4Qd6k06dhCFsEz8H10Cf0oVmtrjxJsKEPY7doW
 cNaaoBpx0s3QFdfhSnSgQQ==',
 			],
 		],
-		16 => [
-			100 => [
+		'16' => [
+			'100' => [
 				'latest' => '16.0.11',
 				'internalVersion' => '16.0.11.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-16.0.11.zip',
@@ -434,7 +434,7 @@ HWPTEBalqX2V9enOLAgVWQ==',
 			],
 		],
 		'15.0.14.1' => [
-			100 => [
+			'100' => [
 				'latest' => '16.0.11',
 				'internalVersion' => '16.0.11.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-16.0.11.zip',
@@ -449,8 +449,8 @@ zpAxCj7W4wEnJFhsQ2zb0Wh5ZjSA9G1SARJhMp/8Efwm3uWJr5xK4MYKG2bQ29mt
 HWPTEBalqX2V9enOLAgVWQ==',
 			],
 		],
-		15 => [
-			100 => [
+		'15' => [
+			'100' => [
 				'latest' => '15.0.14',
 				'internalVersion' => '15.0.14.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-15.0.14.zip',
@@ -466,7 +466,7 @@ DvYBQvWAJx0Q7tV9bofZjA==',
 			],
 		],
 		'14.0.14.1' => [
-			100 => [
+			'100' => [
 				'latest' => '15.0.14',
 				'internalVersion' => '15.0.14.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-15.0.14.zip',
@@ -481,8 +481,8 @@ x3G7qC6o4g8pVPfVyXhOZcwf29et9DY3xtKluMQxrmHVTQ6mJ65IRny+/MNMrjwf
 DvYBQvWAJx0Q7tV9bofZjA==',
 			],
 		],
-		14 => [
-			100 => [
+		'14' => [
+			'100' => [
 				'latest' => '14.0.14',
 				'internalVersion' => '14.0.14.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-14.0.14.zip',
@@ -498,7 +498,7 @@ FaqAZYszh1hjGEyQaoibXw==',
 			],
 		],
 		'13.0.12.1' => [
-			100 => [
+			'100' => [
 				'latest' => '14.0.14',
 				'internalVersion' => '14.0.14.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-14.0.14.zip',
@@ -513,8 +513,8 @@ RrZ6EDdSnGyybYX4QGv/wfng9RijMdMdr1SYzJfkRKj+JX37zgscL/87XgnApkQS
 FaqAZYszh1hjGEyQaoibXw==',
 			],
 		],
-		13 => [
-			100 => [
+		'13' => [
+			'100' => [
 				'latest' => '13.0.12',
 				'internalVersion' => '13.0.12.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-13.0.12.zip',
@@ -530,7 +530,7 @@ yiBfUT4yVTwIOt+tnqZzzw==',
 			],
 		],
 		'12.0.13.2' => [
-			100 => [
+			'100' => [
 				'latest' => '13.0.12',
 				'internalVersion' => '13.0.12.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-13.0.12.zip',
@@ -545,8 +545,8 @@ VFRfhy9vBf+VD6khhFkDXSymw0X6xNN3lMqQIJmJPsPONDXtk2diY6h204uEUofP
 yiBfUT4yVTwIOt+tnqZzzw==',
 			],
 		],
-		12 => [
-			100 => [
+		'12' => [
+			'100' => [
 				'latest' => '12.0.13',
 				'internalVersion' => '12.0.13.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-12.0.13.zip',
@@ -562,7 +562,7 @@ vbaIJ8CiZnKdMBDAdXAVMA==',
 			],
 		],
 		'11.0.8.1' => [
-			100 => [
+			'100' => [
 				'latest' => '12.0.13',
 				'internalVersion' => '12.0.13.2',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-12.0.13.zip',
@@ -577,8 +577,8 @@ rdZAAiMKh8jB0atDNbxu24dWI2Ie7MvnzadL6Ax9+qIWUzlZIqX9yXgFVE2RsGVS
 vbaIJ8CiZnKdMBDAdXAVMA==',
 			],
 		],
-		11 => [
-			100 => [
+		'11' => [
+			'100' => [
 				'latest' => '11.0.8',
 				'internalVersion' => '11.0.8.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-11.0.8.zip',
@@ -593,8 +593,8 @@ rdZAAiMKh8jB0atDNbxu24dWI2Ie7MvnzadL6Ax9+qIWUzlZIqX9yXgFVE2RsGVS
 vbaIJ8CiZnKdMBDAdXAVMA==',
 			],
 		],
-		10 => [
-			100 => [
+		'10' => [
+			'100' => [
 				'latest' => '10.0.6',
 				'internalVersion' => '9.1.6.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-10.0.6.zip',
@@ -605,7 +605,7 @@ vbaIJ8CiZnKdMBDAdXAVMA==',
 			],
 		],
 		'9.1.6.1' => [
-			100 => [
+			'100' => [
 				'latest' => '11.0.8',
 				'internalVersion' => '11.0.8.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-11.0.8.zip',
@@ -621,7 +621,7 @@ vbaIJ8CiZnKdMBDAdXAVMA==',
 			],
 		],
 		'9.0.58' => [
-			100 => [
+			'100' => [
 				'latest' => '10.0.6',
 				'internalVersion' => '9.1.6.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-10.0.6.zip',
@@ -631,8 +631,8 @@ vbaIJ8CiZnKdMBDAdXAVMA==',
 				'signature' => '',
 			],
 		],
-		9 => [
-			100 => [
+		'9' => [
+			'100' => [
 				'latest' => '9.0.58',
 				'internalVersion' => '9.0.58',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-9.0.58.zip',
@@ -644,8 +644,8 @@ vbaIJ8CiZnKdMBDAdXAVMA==',
 		],
 	],
 	'beta' => [
-		29 => [
-			100 => [
+		'29' => [
+			'100' => [
 				'latest' => '29.0.2 RC2',
 				'internalVersion' => '29.0.2.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-29.0.2rc2.zip',
@@ -661,7 +661,7 @@ wcsIWI/7wuu4dPICbCPsIg==',
 			],
 		],
 		'28.0.6.1' => [
-			100 => [
+			'100' => [
 				'latest' => '29.0.2 RC2',
 				'internalVersion' => '29.0.2.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-29.0.2rc2.zip',
@@ -678,71 +678,74 @@ wcsIWI/7wuu4dPICbCPsIg==',
 		],
 	],
 	'daily' => [
-		30 => [
+		'30' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-master.zip',
 			'web' => 'https://docs.nextcloud.com/server/latest/admin_manual/maintenance/upgrade.html',
 			'eol' => false,
 			'minPHPVersion' => '8.1',
 		],
-		29 => [
+		'29' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable29.zip',
 			'web' => 'https://docs.nextcloud.com/server/29/admin_manual/maintenance/upgrade.html',
 			'eol' => false,
 			'minPHPVersion' => '8.0',
 		],
-		28 => [
+		'28' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable28.zip',
 			'web' => 'https://docs.nextcloud.com/server/28/admin_manual/maintenance/upgrade.html',
 			'eol' => false,
 			'minPHPVersion' => '8.0',
 		],
-		27 => [
+		'27' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable27.zip',
 			'web' => 'https://docs.nextcloud.com/server/27/admin_manual/maintenance/upgrade.html',
 			'eol' => false,
 			'minPHPVersion' => '8.0',
 		],
-		26 => [
+		'26' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable26.zip',
 			'web' => 'https://docs.nextcloud.com/server/26/admin_manual/maintenance/upgrade.html',
 			'eol' => true,
 			'minPHPVersion' => '8.0',
 		],
-		25 => [
+		'25' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable25.zip',
 			'web' => 'https://docs.nextcloud.com/server/25/admin_manual/maintenance/upgrade.html',
 			'eol' => true,
 			'minPHPVersion' => '7.4',
 		],
-		24 => [
+		'24' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable24.zip',
 			'web' => 'https://docs.nextcloud.com/server/24/admin_manual/maintenance/upgrade.html',
 			'eol' => true,
 			'minPHPVersion' => '7.4',
 		],
-		23 => [
+		'23' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable23.zip',
 			'web' => 'https://docs.nextcloud.com/server/23/admin_manual/maintenance/upgrade.html',
 			'eol' => true,
 			'minPHPVersion' => '7.3',
 		],
-		22 => [
+		'22' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable22.zip',
 			'web' => 'https://docs.nextcloud.com/server/22/admin_manual/maintenance/upgrade.html',
 			'eol' => true,
 			'minPHPVersion' => '7.3',
 		],
-		21 => [
+		'21' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable21.zip',
 			'web' => 'https://docs.nextcloud.com/server/21/admin_manual/maintenance/upgrade.html',
 			'eol' => true,
 			'minPHPVersion' => '7.3',
 		],
-		20 => [
+		'20' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable20.zip',
 			'web' => 'https://docs.nextcloud.com/server/20/admin_manual/maintenance/upgrade.html',
 			'eol' => true,
 			'minPHPVersion' => '7.2',
 		],
+	],
+	'_settings' => [
+		'changelogServer' => 'https://updates.nextcloud.com/changelog_server/',
 	],
 ];
