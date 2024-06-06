@@ -513,18 +513,19 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "29.0.2.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-29.0.2rc2.zip"
+    Then The response is non-empty
+    And Update to version "29.0.2.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-29.0.2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/29/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    p4lyqDXbOlM2IFcr6pxyIgH/h2MNXueG4NTnRoKwQf7Yk4+VekooQxd0Uy83gH11
-    vUYVSSCSzQqN0NTXZrdLJFQzjHTq6ZQG229RG2YNfV7g5GLK16vs4bc+98aRgy51
-    20K/yxvVwXI8M62DJv6/+a35KvzPLaSo3Khymk1D5QoJ487y21fsBXzm/aAHL4hy
-    /tXb8+WOIdIbz1H5fhEaS3lWYCZpIt74zZimnVIvv6IlowE4f3Yr+0QcghGtyUU/
-    DhCcXiUTM2+5mkP6jN2vm2P7/r3KiTbU02WpYF1wyjQkvzv4l+70MdbXbfBXpy4Q
-    wcsIWI/7wuu4dPICbCPsIg==
+    KY25HwDSwxZc4BDnH4D1HLp62oyKGBneV/GZZNkmTgB2TJnhuXK/GCggOQrfhsPL
+    gBT6PcC6vsTZ7ADSXKOVLbkHpO5+SBFyi47ZrCAsovj96GIRVA7Tulw4+1CCNr3O
+    iue87EL7xWl1xbsFGUxC9CGdWp/uRVIeBeZQZtLTh/xuR0xDRcLUTRcoPwA7AvYH
+    oy6p591P0P0BFvSe3Cx4tHd7MnMCU+12AjzwUppa0DwdJoHe0348VUH6wRomKMP0
+    BxqDI0Ae9eDr9cID1eTQ4CUfbbH5T34rTO/gf+EKDg1cBBRYLK7K1vAHXzmXKYS1
+    oNTSD0aFMf+2zYzpI5wy3A==
     """
 
   Scenario: Updating Nextcloud 29 on the beta channel
@@ -534,16 +535,17 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "29.0.2.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-29.0.2rc2.zip"
+    Then The response is non-empty
+    And Update to version "29.0.2.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-29.0.2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/29/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    p4lyqDXbOlM2IFcr6pxyIgH/h2MNXueG4NTnRoKwQf7Yk4+VekooQxd0Uy83gH11
-    vUYVSSCSzQqN0NTXZrdLJFQzjHTq6ZQG229RG2YNfV7g5GLK16vs4bc+98aRgy51
-    20K/yxvVwXI8M62DJv6/+a35KvzPLaSo3Khymk1D5QoJ487y21fsBXzm/aAHL4hy
-    /tXb8+WOIdIbz1H5fhEaS3lWYCZpIt74zZimnVIvv6IlowE4f3Yr+0QcghGtyUU/
-    DhCcXiUTM2+5mkP6jN2vm2P7/r3KiTbU02WpYF1wyjQkvzv4l+70MdbXbfBXpy4Q
-    wcsIWI/7wuu4dPICbCPsIg==
+    KY25HwDSwxZc4BDnH4D1HLp62oyKGBneV/GZZNkmTgB2TJnhuXK/GCggOQrfhsPL
+    gBT6PcC6vsTZ7ADSXKOVLbkHpO5+SBFyi47ZrCAsovj96GIRVA7Tulw4+1CCNr3O
+    iue87EL7xWl1xbsFGUxC9CGdWp/uRVIeBeZQZtLTh/xuR0xDRcLUTRcoPwA7AvYH
+    oy6p591P0P0BFvSe3Cx4tHd7MnMCU+12AjzwUppa0DwdJoHe0348VUH6wRomKMP0
+    BxqDI0Ae9eDr9cID1eTQ4CUfbbH5T34rTO/gf+EKDg1cBBRYLK7K1vAHXzmXKYS1
+    oNTSD0aFMf+2zYzpI5wy3A==
     """
