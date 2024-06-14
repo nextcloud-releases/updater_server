@@ -644,6 +644,38 @@ vbaIJ8CiZnKdMBDAdXAVMA==',
 		],
 	],
 	'beta' => [
+		'29' => [
+			'100' => [
+				'latest' => '29.0.3 RC1',
+				'internalVersion' => '29.0.3.0',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-29.0.3rc1.zip',
+				'web' => 'https://docs.nextcloud.com/server/29/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '8.0',
+				'signature' => 'teVd0ccIILBxO9zyJwBerqdlt8jkkBtdd9MeC5w45lRvsT5jj9qLHEv9WpXV9emh
+te1CZfFpKlgTB3b5xkp9I11pJSe0q+ghtViflZs/bMbvPC6BbEHnCNDTvhj+qNJG
+uEmk+R8hR2M54AfPRwoTWWDm3ufgBA0TwqYAsY/o+wgStxqYwbUaxFz6TUSL8tPU
+Vck0Hk6W5t5J7ZFoT+XUAaEF9xy+JZm3bsfFeSMSXgB3T5KnC+x94SB/FG2jJcm3
+Mq1X/sjGBYVBmMXFEKoD+9qKmd+Pzt0A5S2qv6mQGFRKrG16E4RyyAwOi0r9mcqb
+PVp7tno+/wvatw23HTYDWg==',
+			],
+		],
+		'28.0.6.1' => [
+			'100' => [
+				'latest' => '29.0.3 RC1',
+				'internalVersion' => '29.0.3.0',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-29.0.3rc1.zip',
+				'web' => 'https://docs.nextcloud.com/server/29/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '8.0',
+				'signature' => 'teVd0ccIILBxO9zyJwBerqdlt8jkkBtdd9MeC5w45lRvsT5jj9qLHEv9WpXV9emh
+te1CZfFpKlgTB3b5xkp9I11pJSe0q+ghtViflZs/bMbvPC6BbEHnCNDTvhj+qNJG
+uEmk+R8hR2M54AfPRwoTWWDm3ufgBA0TwqYAsY/o+wgStxqYwbUaxFz6TUSL8tPU
+Vck0Hk6W5t5J7ZFoT+XUAaEF9xy+JZm3bsfFeSMSXgB3T5KnC+x94SB/FG2jJcm3
+Mq1X/sjGBYVBmMXFEKoD+9qKmd+Pzt0A5S2qv6mQGFRKrG16E4RyyAwOi0r9mcqb
+PVp7tno+/wvatw23HTYDWg==',
+			],
+		],
 	],
 	'daily' => [
 		'30' => [
