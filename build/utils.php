@@ -90,5 +90,5 @@ function isEol(string $releaseName, array $majorVersion): bool {
 		return false;
 	}
 
-	return $majorVersion['eol'] < date('Y-m');
+	return $majorVersion['eol'] <= date('Y-m');
 }

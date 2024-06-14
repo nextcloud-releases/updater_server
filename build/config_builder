@@ -89,7 +89,7 @@ foreach ($majorVersions as $majorVersion => $info) {
 	$generatedConfig['daily'][$majorVersion] = [
 		'downloadUrl' => sprintf('https://download.nextcloud.com/server/daily/latest-%s.zip', $maxMajor === $majorVersion ? 'master' : 'stable'.$majorVersion),
 		'web' => sprintf($docUrl, $maxMajor === $majorVersion ? 'latest' : $majorVersion),
-		'eol' => isset($info['eol']) ? ($info['eol'] < $now) : false,
+		'eol' => isset($info['eol']) ? ($info['eol'] <= $now) : false,
 		'minPHPVersion' => $info['minPHP'] ?? '7.2',
 	];
 }
