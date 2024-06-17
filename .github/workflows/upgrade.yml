@@ -18,7 +18,7 @@ jobs:
       config: ${{ steps.changes.outputs.config }}
 
     steps:
-      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
 
       # If the config has not changed, we skip
       # It allows us to still have a summary result
@@ -39,7 +39,7 @@ jobs:
 
     name: Initializing ${{matrix.channel}} configs
     steps:
-      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4.1.6
+      - uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
 
       - name: Getting config
         id: get-config
@@ -67,7 +67,7 @@ jobs:
     name: Upgrade from ${{ matrix.config.base }} to ${{ matrix.config.latest }} (${{ matrix.config.channel }})
     steps:
       - name: Set up php ${{ matrix.config.minPHPVersion }}
-        uses: shivammathur/setup-php@c665c7a15b5295c2488ac8a87af9cb806cd72198 # v2.30.4
+        uses: shivammathur/setup-php@fc14643b0a99ee9db10a3c025a33d76544fa3761 # v2.30.5
         with:
           php-version: ${{ matrix.config.minPHPVersion }}
           extensions: ctype,curl,dom,fileinfo,gd,iconv,intl,json,mbstring,openssl,pdo_sqlite,posix,sqlite,xml,zip
