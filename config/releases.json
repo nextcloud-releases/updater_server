@@ -81,18 +81,18 @@
         "internalVersion": "27.1.10.2",
         "signature": "0DZOZXph4HTIx1/OhzIkyveNg7SMISdIZbmcjCRSCFrGK6Ut2u62y6N6xc8D6v0vbrEvs8RG2hb8HxNBLvPJWBgku2FVJ6DSyXfBxm5cN1d2qQ2fL/DWjFl24++X6YnytgIa+CQjDCkSowB9tHusGm1SKAVTyXM3Vgytjw491rPy+xAair/r/UPszW18Jy1YtuYjJx7pLboAdu9eRSH9f345mVFf8G706q4zMmw5UYk+TEvAQseBXoUZfuHiC/dVeVRyS+q1FeOYZRNJbEEYWDUDUGSTmI1UNZehY0v5w7c+bj21BeKVMzWn3hsm9MrKpFiyELE2Ee7Xpds/CTGunQ=="
     },
-    "27.1.11 RC3": {
-        "internalVersion": "27.1.11.2",
-        "signature": "kmzpi3fhMm3qOzj59VF+kAcPVq1/apNpu959bCvQqT/lUOWp6hph3JBCDyjT1FYwkgHXO5vnO4yiwAhfsiCvS4dn7gvP3yNJH3W/DagKpNj3e4GvgeunM1f15yU/wgdaeqp28mD42D/2EOK2czcnOxvpRczA0dqBPEOwlDYacoH9cu29ezfC9DOa112oqYCa1VzVnPKzldwC/oKXootHGD93kPYBrgC9JK9m2yp+1I43qRNPR5dIBzDE2svNxE5vFmqJCVXstlHcbZx1GCFThFCPqDiKQ3jQZuxI+C70tC4g3Lzs28pcIbP4F8NwSwCi/+GVTZaTOnCur+Q8E5AyBw=="
+    "27.1.11": {
+        "internalVersion": "27.1.11.3",
+        "signature": "brs2KkUu60QmFZD46rSTyg3qBSlYnv584xeFNWLl2ZM4cwItzJ5wXeajfrPvoUQJGWw7Ln4pQPHja4GrYaNfrKewbBzdJ295glFA5Biwk8OaacsAh6lZm4QH87OUjvgS560LH0hW99Jf9aFv/qqj56T0GSGlGS3qv/HNimmeC0sZfLNDdxjaDWBpVJkt+45ZvJJ8XVSDOlNNKjcgvcUMrsDItXioSwBst6vTdR5IKLAFivlb7HYLUN48R9h57QM2v8X/N49mF+Wk3PQa19wBVsUFYkaQuG9FTjUVgvp8bgv3s9rhrOLJa5KUOpdcodgZfaeql723PcZEzPJ3dzisSw=="
     },
     "28.0.6": {
         "internalVersion": "28.0.6.1",
         "signature": "jO4wVLt+cW1R+b1t4kmF5Up+O94LbHoDmX6SzMAWJ3nasoWua2S3svbx5gvoVaciux8TyPtIWmtBjGOD74cOzaBY/lQRQtyjp+hSuf0Dfr7dw5TjLUn9/kHkvNydRfmPPXmPL7+8ByeZqHoAbYrAaTDpxbMAOpPHmhIg5LZmN3kTz6PGHkOVqIS9jf+O9B3ZaSpbFAs7XlHHOR30pYqftcnnOmYHWiKRsH/Qs1J1WHcj+YGLUVLEvk25z1+ruCpFnSZvIxRTQw8tdqnkqgCnGTEHHh5dvqsfhbcLQwHZ6ldkoAhSf9TZ1m0nVlQFsRmiQnK0Bov0chs7kRKuaA/Hew=="
     },
-	"28.0.7 RC4": {
-		"internalVersion": "28.0.7.3",
-		"signature": "xIBFsh5omnZsG9ARpEcYG6FSiafpjv1/3vy2Mt3eioRDFoQWV1Z9ZJYWVn4pSvAyZiXWIe5VmD3wHX1HxvreYqR8HtIQLGe4iayo9BiFCgtxVyBpdxuzCJQInPLtPrzMaymwlXa+fgZtKe7/RHe7iJEVNfEIuLpVS2ycLxxYI7brit14m2eM6/W0/f+t+kFwSoh9lK+1l1XPxLlbdnEsYX66NGT55fAokYyjZ48nb8hXaElFEwpKdGn8GlLSyNEetRYa2pME4sWDjEOvSR7kexct9ddns9z9OEQqn8zPe2Vw/W/2yilQw7vhL5SdBlzmwLFjTWu609XUChGq6W5GaA=="
-	},
+    "28.0.7": {
+        "internalVersion": "28.0.7.4",
+        "signature": "J2TfhTfot5t2cHrlYqeScQggyLz+KIMOEpqowikxadzRkd/ww6/QLRWqATiQdhNn3Rc2v+DQ0t89j+a1lDct+DF+2KN7WG4pueSG3AaTLu5w4z4hEJOh0JFIQOcZVmMP00Scmy1DlgGi9tFVcZJ3k2tgEb6GehIvM0qebjg7AwcVbDMRFkUx2jPoWe+hjWyjRADz0boWWnoNSFWLzf7FSVjs/MqwiSSztVJUjie01Jyu6Gk5ibXPaeehlFwXrXlJbIGWtX0f+vkuDpZ0JpyvLLbGYORPjrxxFese9FKJUCY/SPUTmrLP8d8eW87blsw41YXISH91rtaez0J9KQaOQg=="
+    },
     "29.0.1": {
         "internalVersion": "29.0.1.1",
         "signature": "MV1tA/Qtn5SUMSOPiu9c1N3PEL09AO7PKduaQGYXlWIRA+qJcJfq6YtN4W0QvSDaKo/j4KcpAM0w8b3O+qOJOFApDo3vHVH3mqNLnyL6+SYKTob2Kclnnx9Fke1tozviki29GZmbff8KNPuSSYOt2HTY73bh0Esit73+jIufsOciMNyAtOd47TtkAKfK/fNIDbGT9YJn0gi3ulQ9zfMRFhK+yP4S5WQY43RFPp8qzjA44pgLn2IMu9HmH0Mz36ddmyRG4PG3IaLxfIF3O3/xhvEpqz0BSrJRAIptAZ9YdQZjt+bkh1DoW0HtkN+4FVp40DAbpdTSYEu6OUzAFq8I1g=="
@@ -101,8 +101,8 @@
         "internalVersion": "29.0.2.2",
         "signature": "KY25HwDSwxZc4BDnH4D1HLp62oyKGBneV/GZZNkmTgB2TJnhuXK/GCggOQrfhsPLgBT6PcC6vsTZ7ADSXKOVLbkHpO5+SBFyi47ZrCAsovj96GIRVA7Tulw4+1CCNr3Oiue87EL7xWl1xbsFGUxC9CGdWp/uRVIeBeZQZtLTh/xuR0xDRcLUTRcoPwA7AvYHoy6p591P0P0BFvSe3Cx4tHd7MnMCU+12AjzwUppa0DwdJoHe0348VUH6wRomKMP0BxqDI0Ae9eDr9cID1eTQ4CUfbbH5T34rTO/gf+EKDg1cBBRYLK7K1vAHXzmXKYS1oNTSD0aFMf+2zYzpI5wy3A=="
     },
-    "29.0.3 RC4": {
-        "internalVersion": "29.0.3.3",
-        "signature": "x9uNoiTD37KoAIsBMQVvtDrZHEcUL3DLa2y52f5yWp5Q744S69K3gUFbW/qmcB2Ckh9IKzJ4GKv9Z5eRuXnAZ0j2g2D4hZqTeXz05olEF2SU9Z8Wi6Ky/j3sK81AsHbh62lL+kSPRrX6OAfLdKfV7xIRcOC7bUA7ny8mgzDuYsXV8Rtpx53zhtFefBuUKGtHA09WybtMQ/tLSn0qznnnvyCeYn/ZrJkVDrzQJazHhdsDNRZYElNsB/u7ZjqFdsG1WG+8dL4DE9i08suWLfCrH4TrWr32UL5ot6m1eLM7oJMx8OQg8Ko19UIrWHTGgMWZgbG+J0GhiUkAfflPGNUGdg=="
+    "29.0.3": {
+        "internalVersion": "29.0.3.4",
+        "signature": "mrCZ4AjippvY5BP3aPuZS6oGUa0rIAWnH6Wp6roj+G3kStkjWdS/KiZ1Sb88I+aXWl1ryQmiP6+d8Ibb6jRkh+eTewbsD8HsPS1PH8pSj2SruPckKj9OPnWma+iSIDFKqepFVSplN9pQIHZGcgWpOkydWMFjMR9VJ30+dnRqnMPY/MwkKyqNyehGlEotOlYlAuM81wASoBMtsj1ZnDjF39+9+6KXIcCla7/18IDSCPwu/q8USgdrptms7fnZbsgpD6ehaq8pwV4Nw4+A8jpMPXUjMhkvvEgWY7SAXW6bSO6YSOMo9aGMKG3jLu5Wwc+okk7thi34hb/S0ne4FfX7FA=="
     }
 }
