@@ -43,13 +43,12 @@ foreach ($releases as $releaseName => $info) {
 	preg_match('/(\d+)\.(\d+).(\d+)(?: (.+))?/A', $releaseName, $matches);
 	[, $major, $minor, $patch] = $matches;
 	$stability = getStabilityFromName($releaseName);
-	$isEol = isEol($releaseName, $majorVersions[$major]);
 	$generatedConfig[$stability][$major]['100'] = [
 		'latest' => $releaseName,
 		'internalVersion' => $info['internalVersion'],
 		'downloadUrl' => buildDownloadUrl($releaseName, $info, $majorVersions[$major]),
 		'web' => sprintf($docUrl, $major),
-		'eol' => $isEol,
+		'eol' => $majorVersions[$major]['eol'] ?? '',
 		'minPHPVersion' => $majorVersions[$major]['minPHP'] ?? '',
 		'signature' => isset($info['signature']) ? wordwrap($info['signature'], 64, cut_long_words: true) : '',
 	];
@@ -89,7 +88,7 @@ foreach ($majorVersions as $majorVersion => $info) {
 	$generatedConfig['daily'][$majorVersion] = [
 		'downloadUrl' => sprintf('https://download.nextcloud.com/server/daily/latest-%s.zip', $maxMajor === $majorVersion ? 'master' : 'stable'.$majorVersion),
 		'web' => sprintf($docUrl, $maxMajor === $majorVersion ? 'latest' : $majorVersion),
-		'eol' => isset($info['eol']) ? ($info['eol'] <= $now) : false,
+		'eol' => $info['eol'] ?? '',
 		'minPHPVersion' => $info['minPHP'] ?? '7.2',
 	];
 }

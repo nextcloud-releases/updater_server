@@ -6,7 +6,7 @@ on:
     branches:
       - master
 
-concurrency: 
+concurrency:
   group: upgrades-${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
 
@@ -45,8 +45,8 @@ jobs:
         id: get-config
         run: |
           # Retrieving non-EOL configs from the matrix channel
-          CONFIGS=$(php -r "echo(json_encode(include 'config/config.php'));" | jq -c)
-          echo "::set-output name=configs::$CONFIGS"
+          CONFIGS=$(php -r "echo(json_encode(include 'config/config.php'));")
+          echo "configs=$CONFIGS" >> $GITHUB_OUTPUT
 
       - name: Parse configs
         uses: nextcloud/updater_server@action
