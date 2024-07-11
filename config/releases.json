@@ -93,16 +93,12 @@
         "internalVersion": "28.0.7.4",
         "signature": "J2TfhTfot5t2cHrlYqeScQggyLz+KIMOEpqowikxadzRkd/ww6/QLRWqATiQdhNn3Rc2v+DQ0t89j+a1lDct+DF+2KN7WG4pueSG3AaTLu5w4z4hEJOh0JFIQOcZVmMP00Scmy1DlgGi9tFVcZJ3k2tgEb6GehIvM0qebjg7AwcVbDMRFkUx2jPoWe+hjWyjRADz0boWWnoNSFWLzf7FSVjs/MqwiSSztVJUjie01Jyu6Gk5ibXPaeehlFwXrXlJbIGWtX0f+vkuDpZ0JpyvLLbGYORPjrxxFese9FKJUCY/SPUTmrLP8d8eW87blsw41YXISH91rtaez0J9KQaOQg=="
     },
-    "29.0.1": {
-        "internalVersion": "29.0.1.1",
-        "signature": "MV1tA/Qtn5SUMSOPiu9c1N3PEL09AO7PKduaQGYXlWIRA+qJcJfq6YtN4W0QvSDaKo/j4KcpAM0w8b3O+qOJOFApDo3vHVH3mqNLnyL6+SYKTob2Kclnnx9Fke1tozviki29GZmbff8KNPuSSYOt2HTY73bh0Esit73+jIufsOciMNyAtOd47TtkAKfK/fNIDbGT9YJn0gi3ulQ9zfMRFhK+yP4S5WQY43RFPp8qzjA44pgLn2IMu9HmH0Mz36ddmyRG4PG3IaLxfIF3O3/xhvEpqz0BSrJRAIptAZ9YdQZjt+bkh1DoW0HtkN+4FVp40DAbpdTSYEu6OUzAFq8I1g=="
-    },
-    "29.0.2": {
-        "internalVersion": "29.0.2.2",
-        "signature": "KY25HwDSwxZc4BDnH4D1HLp62oyKGBneV/GZZNkmTgB2TJnhuXK/GCggOQrfhsPLgBT6PcC6vsTZ7ADSXKOVLbkHpO5+SBFyi47ZrCAsovj96GIRVA7Tulw4+1CCNr3Oiue87EL7xWl1xbsFGUxC9CGdWp/uRVIeBeZQZtLTh/xuR0xDRcLUTRcoPwA7AvYHoy6p591P0P0BFvSe3Cx4tHd7MnMCU+12AjzwUppa0DwdJoHe0348VUH6wRomKMP0BxqDI0Ae9eDr9cID1eTQ4CUfbbH5T34rTO/gf+EKDg1cBBRYLK7K1vAHXzmXKYS1oNTSD0aFMf+2zYzpI5wy3A=="
-    },
     "29.0.3": {
         "internalVersion": "29.0.3.4",
         "signature": "mrCZ4AjippvY5BP3aPuZS6oGUa0rIAWnH6Wp6roj+G3kStkjWdS/KiZ1Sb88I+aXWl1ryQmiP6+d8Ibb6jRkh+eTewbsD8HsPS1PH8pSj2SruPckKj9OPnWma+iSIDFKqepFVSplN9pQIHZGcgWpOkydWMFjMR9VJ30+dnRqnMPY/MwkKyqNyehGlEotOlYlAuM81wASoBMtsj1ZnDjF39+9+6KXIcCla7/18IDSCPwu/q8USgdrptms7fnZbsgpD6ehaq8pwV4Nw4+A8jpMPXUjMhkvvEgWY7SAXW6bSO6YSOMo9aGMKG3jLu5Wwc+okk7thi34hb/S0ne4FfX7FA=="
+    },
+    "29.0.4 RC1": {
+        "internalVersion": "29.0.4.0",
+        "signature": "yWhO0SUS9DeoK25jNxu4T54kfCf7LqDCjJk79lmHu6o0bydLtOpU1j5ARURTwFnZyVanjsG0wx2jCxkfT+buin0P1e2S5uuViq2wxxyH6RYQGrpi/CycIIUICSkSwYR3uYFglg6ttOpaV67KGGn2pxjRW3vJ7tu7ILSIPqrUWQztfbzD/qSUM9QCDNoaS95JVASJj8bgJyWyFiaKddfxCPyrdkIqymZ1n+XnByQreY+KvAq9aHQnfF+V7A0ujwq2d4hHqEbbTYJxxfcxWSmd68nxG7SNhkajSnPARJVPtjFn66f+WZn0dza7OPhDdrFMGOfT31DEfwGgAvZ4fwwVgw=="
     }
 }
