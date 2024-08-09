@@ -111,6 +111,7 @@ class Response {
 			$downloadUrl = $newVersion['downloadUrl'];
 		}
 
+		$isEol = $newVersion['eol'] ? $newVersion['eol'] <= date('Y-m-d') : false;
 		$writer = new \XMLWriter();
 		$writer->openMemory();
 		$writer->startDocument('1.0','UTF-8');
@@ -122,7 +123,8 @@ class Response {
 		$writer->writeElement('web', $newVersion['web']);
 		$this->addChangelogURLIfApplicable($writer, $newVersion['latest']);
 		$writer->writeElement('autoupdater', isset($newVersion['autoupdater']) ? (int)$newVersion['autoupdater'] : 1);
-		$writer->writeElement('eol', (int) $newVersion['eol']);
+		$writer->writeElement('eol', (int) $isEol);
+		$writer->writeElement('eolDate', $newVersion['eol']);
 		if(isset($newVersion['signature'])) {
 			$writer->writeElement('signature', $newVersion['signature']);
 		}
@@ -142,6 +144,7 @@ class Response {
 			if(isset($versions[$search])) {
 				if((time() - strtotime($this->request->getBuild())) > 172800) {
 					$newVersion = $versions[$search];
+					$isEol = $newVersion['eol'] ? $newVersion['eol'] <= date('Y-m-d') : false;
 					$writer = new \XMLWriter();
 					$writer->openMemory();
 					$writer->startDocument('1.0','UTF-8');
@@ -152,7 +155,8 @@ class Response {
 					$writer->writeElement('url', $newVersion['downloadUrl']);
 					$writer->writeElement('web', $newVersion['web']);
 					$writer->writeElement('autoupdater', isset($newVersion['autoupdater']) ? (int)$newVersion['autoupdater'] : 1);
-					$writer->writeElement('eol', (int) $newVersion['eol']);
+					$writer->writeElement('eol', (int) $isEol);
+					$writer->writeElement('eolDate', $newVersion['eol']);
 					$writer->endElement();
 					$writer->endDocument();
 					return $writer->flush();
