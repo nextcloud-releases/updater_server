@@ -676,6 +676,54 @@ FH4wK7b4ylXLQNt+68yHQ4NQsU8giYMIClPq/Hl0E0iODytWu+5D/qfGLUtjHxCp
 2whMHEAPVV+7ocVm2OPYRw==',
 			],
 		],
+		'28.0.9.0' => [
+			'100' => [
+				'latest' => '29.0.4',
+				'internalVersion' => '29.0.4.1',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-29.0.4.zip',
+				'web' => 'https://docs.nextcloud.com/server/29/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '8.0',
+				'signature' => 'SFu1znhMOUFezv3UAoXMkcoqRUSFYgmbnM84S6u7l3FQtoh9LMh5cdQVRf5qDfj5
+tjhlStKg72O7UfMl0QUTc5/Gwp4i52eRujrnHtOXzfrAdiwSPPQMaMDJNVtr3SbZ
+3stjKFESIPu/pxwsWDgYtsd/ce8scFRLGx/TbqXZdJqebw7RBfC84MfbXdNZzAud
+IX745YX5YmDIggSq/to9Y26+LhPQKEzzuzeISzqPV45O2tPI8O0G0Fst8+ApN0M1
+ieLTDww5rU2zMNjs27VQj34dxuVrjZX6BX1nnKEjS6e4v5chTiT68kBs03csYXqv
+gbYpRhSPnm+Anslv3FIYlA==',
+			],
+		],
+		'28' => [
+			'100' => [
+				'latest' => '28.0.9 RC1',
+				'internalVersion' => '28.0.9.0',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-28.0.9rc1.zip',
+				'web' => 'https://docs.nextcloud.com/server/28/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '8.0',
+				'signature' => 'yOKyazwFqwDpR+M6QPgJhPKTzDnH78AYCm2NQzAZtw+I5p05WpBujiIrEb3U7UiP
+B1PJ1JmndMj3x66L6RLPY3SbkrxYy2235WpMjNlGjHgT6Lwbz/BnTX/Dv/eFxs1d
+lw8MbJKKyn8XGXDF69kZ/Ecf9yS2xj3ZthkArwiWeoRA2WnjREEuLJQhAPXR315O
+YslqL5WcrIZYZw3Z9Uz0J9LG8YaD2tp2ohtAYzlfdZtIuFfssvCgDPSy5YU7xr2s
+LtGmNIKUhh6DzObvDUz5X9LfzD5ovpDeMqAHMXwx15XFJjLiSgXgxwwLglhN+10T
+JfEuGMVVf0Ge95pFwxrKHg==',
+			],
+		],
+		'27.1.11.3' => [
+			'100' => [
+				'latest' => '28.0.9 RC1',
+				'internalVersion' => '28.0.9.0',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-28.0.9rc1.zip',
+				'web' => 'https://docs.nextcloud.com/server/28/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '8.0',
+				'signature' => 'yOKyazwFqwDpR+M6QPgJhPKTzDnH78AYCm2NQzAZtw+I5p05WpBujiIrEb3U7UiP
+B1PJ1JmndMj3x66L6RLPY3SbkrxYy2235WpMjNlGjHgT6Lwbz/BnTX/Dv/eFxs1d
+lw8MbJKKyn8XGXDF69kZ/Ecf9yS2xj3ZthkArwiWeoRA2WnjREEuLJQhAPXR315O
+YslqL5WcrIZYZw3Z9Uz0J9LG8YaD2tp2ohtAYzlfdZtIuFfssvCgDPSy5YU7xr2s
+LtGmNIKUhh6DzObvDUz5X9LfzD5ovpDeMqAHMXwx15XFJjLiSgXgxwwLglhN+10T
+JfEuGMVVf0Ge95pFwxrKHg==',
+			],
+		],
 	],
 	'daily' => [
 		'30' => [
