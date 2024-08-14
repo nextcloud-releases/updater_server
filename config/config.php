@@ -646,34 +646,34 @@ vbaIJ8CiZnKdMBDAdXAVMA==',
 	'beta' => [
 		'30' => [
 			'100' => [
-				'latest' => '30.0.0 beta 5',
-				'internalVersion' => '30.0.0.7',
-				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-30.0.0beta5.zip',
+				'latest' => '30.0.0 RC1',
+				'internalVersion' => '30.0.0.8',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-30.0.0rc1.zip',
 				'web' => 'https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '8.1',
-				'signature' => 'UTk7tqbmtvny10Fi4yiiVWTxD+TUtvIwe54lmVDcQVbRFDlANBj/qJvUsIdtDf/F
-9l9F+sWAaDMwl79xLP0RqAaIInSchUpcGSGl1KONjVmBg4Nvm3Qf6ElYBlN5Nu9k
-M5vsNv9+v3MObvPWoFy/LoEKJnOTLf2PXRTShR+eDFWnDl0xedVnkRJRl5G+0RaV
-C5IN2fZOIcRjG0qWv190k7BCbbMRRVtj/VCJzkgM3M2eHHRDYSNR1sDTgQSVS2O9
-FH4wK7b4ylXLQNt+68yHQ4NQsU8giYMIClPq/Hl0E0iODytWu+5D/qfGLUtjHxCp
-2whMHEAPVV+7ocVm2OPYRw==',
+				'signature' => 'trB42VHIeGf2kMewvQVxr2ShmWg9elZla2HRcvij6C47OAydM/XXQYaa5mkIps12
+oBC0ifHn8gR+uhNIZ+MB03816uXU6LRKf8zZmCH1S1FT1Ay2PUUSbXhQjBQz3bMf
+Y0485CAjbN3gg/hJdvZ2kjobvYP1Cm6ngJKWZvgnj1453474rnIsuiMDfgDHN51a
+2d/FChxabTzpE5kMFLcAp2QvaQkQ/GTZtDg74A+fe5ZENJmBl8QgHm/uNaX9bbiH
+NdoUzrAt7cYR9cEdRhTcNHccYM1X4DxNgzTX8KlWSdfJhBHPM6qvSwRsf2g4MBpu
+j1Grajde40wyrIZVnKM0nA==',
 			],
 		],
 		'29.0.5.0' => [
 			'100' => [
-				'latest' => '30.0.0 beta 5',
-				'internalVersion' => '30.0.0.7',
-				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-30.0.0beta5.zip',
+				'latest' => '30.0.0 RC1',
+				'internalVersion' => '30.0.0.8',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-30.0.0rc1.zip',
 				'web' => 'https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '8.1',
-				'signature' => 'UTk7tqbmtvny10Fi4yiiVWTxD+TUtvIwe54lmVDcQVbRFDlANBj/qJvUsIdtDf/F
-9l9F+sWAaDMwl79xLP0RqAaIInSchUpcGSGl1KONjVmBg4Nvm3Qf6ElYBlN5Nu9k
-M5vsNv9+v3MObvPWoFy/LoEKJnOTLf2PXRTShR+eDFWnDl0xedVnkRJRl5G+0RaV
-C5IN2fZOIcRjG0qWv190k7BCbbMRRVtj/VCJzkgM3M2eHHRDYSNR1sDTgQSVS2O9
-FH4wK7b4ylXLQNt+68yHQ4NQsU8giYMIClPq/Hl0E0iODytWu+5D/qfGLUtjHxCp
-2whMHEAPVV+7ocVm2OPYRw==',
+				'signature' => 'trB42VHIeGf2kMewvQVxr2ShmWg9elZla2HRcvij6C47OAydM/XXQYaa5mkIps12
+oBC0ifHn8gR+uhNIZ+MB03816uXU6LRKf8zZmCH1S1FT1Ay2PUUSbXhQjBQz3bMf
+Y0485CAjbN3gg/hJdvZ2kjobvYP1Cm6ngJKWZvgnj1453474rnIsuiMDfgDHN51a
+2d/FChxabTzpE5kMFLcAp2QvaQkQ/GTZtDg74A+fe5ZENJmBl8QgHm/uNaX9bbiH
+NdoUzrAt7cYR9cEdRhTcNHccYM1X4DxNgzTX8KlWSdfJhBHPM6qvSwRsf2g4MBpu
+j1Grajde40wyrIZVnKM0nA==',
 			],
 		],
 		'29' => [
