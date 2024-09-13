@@ -60,15 +60,16 @@ foreach ($releases as $releaseName => $info) {
 	if (isset($latestReleases[$stability][$previousMajor])) {
 		$upgradeFrom = $latestReleases[$stability][$previousMajor];
 		$generatedConfig[$stability][$upgradeFrom][$deployPercent] = $generatedConfig[$stability][$major]['100'];
-	} elseif (isset($latestReleases['stable'][$major -1])) {
+	} elseif (isset($latestReleases['stable'][$previousMajor])) {
 		$upgradeFrom = $latestReleases['stable'][$previousMajor];
 		$generatedConfig[$stability][$upgradeFrom][$deployPercent] = $generatedConfig[$stability][$major]['100'];
 	}
 
 	// For stable versions, check if we can upgrade from a beta version
+	// Beta version are always deployed at 100%
 	if ($stability === 'stable') {
-		if (isset($latestReleases['beta'][$previousMajor])) {
-			$upgradeFrom = $latestReleases['beta'][$previousMajor];
+		if (isset($latestReleases['beta'][$previousMajor]) || $deployPercent !== 100) {
+			$upgradeFrom = $latestReleases['beta'][$previousMajor] ?? $latestReleases['stable'][$previousMajor];
 			$generatedConfig['beta'][$upgradeFrom][100] = $generatedConfig[$stability][$major]['100'];
 		}
 	}

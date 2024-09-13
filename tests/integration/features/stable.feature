@@ -609,3 +609,45 @@ Feature: Testing the update scenario of stable releases
     4g/zRSuGF2eC+fmIPDCg/vL53kDNC9eWHzRCJ7EjY/VQ4NACdC3wZtvKAmnw2YqK
     EgIWmVloS4eF/VjQ11MOJw==
     """
+
+  Scenario: Updating Nextcloud 29 to 30 on the stable channel
+    Given There is a release with channel "stable"
+    And The received version is "29.0.7.1"
+    And The received PHP version is "8.1.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "30.0.0.14" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-30.0.0.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    QjU8BAz/b+ZSv1CFaom3VHE5IbT8giQgJ6/N00jPnWlRD8daXIsmIoLRe9UMl1yi
+    hTRRW3r7MQCa6RklmtZIAxsoRYlk7eEdbogKTODLRe9gsXdXF2KFisADl6bcEw1H
+    MLyVf7ncFnFlp9GYwpUEcGvJAzIcckkGTmBHAMTfmpSNQoijzdCP9ytKP2tJSe7h
+    tOXDKB0sOYzsO5A725ERye0RKfgMY7TRG0vq9tIxB7ydSykxVAGglKHDwl/6mn5D
+    NUfRJKep0nzpJXIOz+BiE6tTRxYMeRkUsI2WLPnPC3Ltu2Xl0u3iOoWaDfdD0Ox9
+    XjOoUiZRQ+fUfAGTnEZ+Lg==
+    """
+
+  Scenario: Updating Nextcloud 30 on the stable channel
+    Given There is a release with channel "stable"
+    And The received version is "30.0.0.1"
+    And The received PHP version is "8.1.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "30.0.0.14" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-30.0.0.zip"
+    And URL to documentation is "https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    QjU8BAz/b+ZSv1CFaom3VHE5IbT8giQgJ6/N00jPnWlRD8daXIsmIoLRe9UMl1yi
+    hTRRW3r7MQCa6RklmtZIAxsoRYlk7eEdbogKTODLRe9gsXdXF2KFisADl6bcEw1H
+    MLyVf7ncFnFlp9GYwpUEcGvJAzIcckkGTmBHAMTfmpSNQoijzdCP9ytKP2tJSe7h
+    tOXDKB0sOYzsO5A725ERye0RKfgMY7TRG0vq9tIxB7ydSykxVAGglKHDwl/6mn5D
+    NUfRJKep0nzpJXIOz+BiE6tTRxYMeRkUsI2WLPnPC3Ltu2Xl0u3iOoWaDfdD0Ox9
+    XjOoUiZRQ+fUfAGTnEZ+Lg==
+    """
