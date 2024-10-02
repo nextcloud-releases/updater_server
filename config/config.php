@@ -692,6 +692,54 @@ NUfRJKep0nzpJXIOz+BiE6tTRxYMeRkUsI2WLPnPC3Ltu2Xl0u3iOoWaDfdD0Ox9
 XjOoUiZRQ+fUfAGTnEZ+Lg==',
 			],
 		],
+		'28.0.11.0' => [
+			'100' => [
+				'latest' => '29.0.7',
+				'internalVersion' => '29.0.7.1',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-29.0.7.zip',
+				'web' => 'https://docs.nextcloud.com/server/29/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '8.0',
+				'signature' => 'rOd3OFdhAAULU7gI/fucuzwSe2FcSju8PiS0QgBInoNQZLJBl05QYOt+jC3clW2R
++k7C6hyRHQ3/XU0K1gU9T9PSI2C87fIFjhzk0+J/s0QHxpvByv3i4pJ5yqdnA8m0
+6Y6J7EJAHz+DQq0aAafci2Qlyzto8m5CXE59muv4lSMn9G24bOsp2zd/zkzZ1La7
+b8Uo3rLrIyJPRI9yocnMnddlYHX6YG5bXGc+eWeq6hPFg9gqm1KOu2fI6i9bH8KH
+4g/zRSuGF2eC+fmIPDCg/vL53kDNC9eWHzRCJ7EjY/VQ4NACdC3wZtvKAmnw2YqK
+EgIWmVloS4eF/VjQ11MOJw==',
+			],
+		],
+		'28' => [
+			'100' => [
+				'latest' => '28.0.11 RC1',
+				'internalVersion' => '28.0.11.0',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-28.0.11rc1.zip',
+				'web' => 'https://docs.nextcloud.com/server/28/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '8.0',
+				'signature' => 'PzcbbcYHUy+vngVvCTgaKyy8QVPesae0sUpUlurOkB/Qz+5LDTqDjTRzo1CJBzb/
+jxQFptYfiXTMkKi/WsufsINKDOoSpzyM+OZAbyqpvu9bg0NCb0cG3/JGoi7SigdV
+dV3Hy7wx4z3fPmARf92C9XPIC3bqWH1QVdER4+EY481A4y6wwwuE7p2VpzyhASzF
+QLU7IKPRtxbh0SgETgK0AKWxLddUlt+xvMvUYR9Pu0QFFaGdAYB48g54hiqMPRAD
+Gpj/bk3lNNEXf9iUQrNI95ymGWeMygv9S+7L4a6bm0LeN0uJbi5CKzW6rJWf9q9E
+WwdiGse2Hz590XQ2xCOb2A==',
+			],
+		],
+		'27.1.11.3' => [
+			'100' => [
+				'latest' => '28.0.11 RC1',
+				'internalVersion' => '28.0.11.0',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-28.0.11rc1.zip',
+				'web' => 'https://docs.nextcloud.com/server/28/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '8.0',
+				'signature' => 'PzcbbcYHUy+vngVvCTgaKyy8QVPesae0sUpUlurOkB/Qz+5LDTqDjTRzo1CJBzb/
+jxQFptYfiXTMkKi/WsufsINKDOoSpzyM+OZAbyqpvu9bg0NCb0cG3/JGoi7SigdV
+dV3Hy7wx4z3fPmARf92C9XPIC3bqWH1QVdER4+EY481A4y6wwwuE7p2VpzyhASzF
+QLU7IKPRtxbh0SgETgK0AKWxLddUlt+xvMvUYR9Pu0QFFaGdAYB48g54hiqMPRAD
+Gpj/bk3lNNEXf9iUQrNI95ymGWeMygv9S+7L4a6bm0LeN0uJbi5CKzW6rJWf9q9E
+WwdiGse2Hz590XQ2xCOb2A==',
+			],
+		],
 	],
 	'daily' => [
 		'30' => [
