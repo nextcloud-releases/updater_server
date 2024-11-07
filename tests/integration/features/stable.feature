@@ -533,18 +533,18 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "41"
     When The request is sent
     Then The response is non-empty
-    And Update to version "28.0.11.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-28.0.11.zip"
+    And Update to version "28.0.12.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-28.0.12.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/28/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    yil0qZesdhMRNm926larjgppEC8rJ7HER7bzGEh6wlXmK3qpua713hge772Im3I0
-    aesVSvYwmqtk0bqtLVVc7HgsqylvttiTWacxoK+ZIf9K4AtpRVRbYx/e/LncWBm1
-    ivc579zXCNTXoy08Gk4djx3tMyOEKbUemCe3YPi3qCwZgDJDtve4wle3grWiqVGA
-    YYXzSvkYGLUuIKofqs7x1HEjhLtPcDzDghlJP9keAjHVFJ8k2NdzXHI9Yq1mkDYw
-    9qAv1fpwMZ5zCmjUMhcNodKT+epSXsOjwzg5LXCWwWGZ4sbgETeFbf173hWoGBZI
-    2Lr57fZK3dW36XJg73Vhfw==
+    wy9qrzRm5KLnr2xpHXfSi2S4ZHEiNTSOKpuHFHrfoNJFX+llNzDkyvSBAxDxkDLR
+    uRY5LR2y8NMbGKzBSSeg1mlR8yuFrP058zxv7izT2aFW6qSyAqEvRiw5r5FAuxds
+    ME1BqrIavGzOzObzExtN2qrh7OdBDw6c7bEuouftA0fR1RnP3Rcjm+fKJbEFWZHQ
+    01+IL5xHLGqDqT6kWCHYYQRS1+NUcyG2EEjMLk+U1supQKuCynF8z9D1J4bS1mXX
+    vvXhZo/vg9NIBpAgzOmz+71HTm11nB1DiFOTi6zdkNm50LbWIFyyhE82RHCCtru/
+    AJPeeesagNpLE0n/XjGb3Q==
     """
 
   Scenario: Updating Nextcloud 28 on the stable channel
@@ -554,39 +554,39 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "28.0.11.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-28.0.11.zip"
+    And Update to version "28.0.12.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-28.0.12.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/28/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    yil0qZesdhMRNm926larjgppEC8rJ7HER7bzGEh6wlXmK3qpua713hge772Im3I0
-    aesVSvYwmqtk0bqtLVVc7HgsqylvttiTWacxoK+ZIf9K4AtpRVRbYx/e/LncWBm1
-    ivc579zXCNTXoy08Gk4djx3tMyOEKbUemCe3YPi3qCwZgDJDtve4wle3grWiqVGA
-    YYXzSvkYGLUuIKofqs7x1HEjhLtPcDzDghlJP9keAjHVFJ8k2NdzXHI9Yq1mkDYw
-    9qAv1fpwMZ5zCmjUMhcNodKT+epSXsOjwzg5LXCWwWGZ4sbgETeFbf173hWoGBZI
-    2Lr57fZK3dW36XJg73Vhfw==
+    wy9qrzRm5KLnr2xpHXfSi2S4ZHEiNTSOKpuHFHrfoNJFX+llNzDkyvSBAxDxkDLR
+    uRY5LR2y8NMbGKzBSSeg1mlR8yuFrP058zxv7izT2aFW6qSyAqEvRiw5r5FAuxds
+    ME1BqrIavGzOzObzExtN2qrh7OdBDw6c7bEuouftA0fR1RnP3Rcjm+fKJbEFWZHQ
+    01+IL5xHLGqDqT6kWCHYYQRS1+NUcyG2EEjMLk+U1supQKuCynF8z9D1J4bS1mXX
+    vvXhZo/vg9NIBpAgzOmz+71HTm11nB1DiFOTi6zdkNm50LbWIFyyhE82RHCCtru/
+    AJPeeesagNpLE0n/XjGb3Q==
     """
 
   Scenario: Updating latest Nextcloud 28 on the stable channel
     Given There is a release with channel "stable"
-    And The received version is "28.0.11.1"
+    And The received version is "28.0.12.2"
     And The received PHP version is "8.1.0"
     And the installation mtime is "61"
     When The request is sent
     Then The response is non-empty
-    And Update to version "29.0.8.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-29.0.8.zip"
+    And Update to version "29.0.9.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-29.0.9.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/29/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    NvzsKc5eCg2RfDfJ0FKyUSvfkrsEcsCttimZ51j6dSVz4dSY+fC1Dv0m9vb51hnG
-    O/7gDad0UuH5v96UjE6bL0E/Lc2zsAKFl+a8fCFB5OHt9h1c4Pv3fS0E0ZKHV1Ra
-    ShaTFRrWa2dTPIIfpxKmKGVfKV5VUre0izdK7dd9nLSF7u5iGKGKYr9PbI1OtoMU
-    asEMOUbBvOHpPwSE3uJ97Xf230WQT4fKR4pwy1qJhxB1fvlcrTET5JaDg/Y30v92
-    PNKp1vZHcokIZPrW29TPdmL1vcZe5CdHIZ5STI9CP+0YpMlzDvANaiy0Ua1r6/Z+
-    nuJnyU9/LSVwAkOxoKZTOg==
+    MApafCYqysmbXaz2F6UQm+x5BtrPbjmMc/xUERYbpKn3frhsb+/wtlvFZqgWCO8e
+    J03dptp1UgrKS3hPCvifB7D+FgzTaC1IsCCnCy5OEEFICeTHIjHdkP9fEhIgaxds
+    4UgNNvquf5q/qS01A8DtDQuU+1CiLKM7S4cv1sSPWg2NNjdfRO2/3PDKho78GUfC
+    dZTOuuHYAf9ldhqmWUJhrso5+j7ArQf1VL5fHAnCcoBMTPo/blE1IAPoF4LNoiYC
+    +2NmyNBhuqopDJDF41tYXUf807nw6KtZsTyyX2yJPk1JVSh3AX+1Y37ShDM87dvT
+    XVcu5iBVPV4pmT1q3g3UCA==
     """
 
   Scenario: Updating Nextcloud 29 on the stable channel
@@ -596,39 +596,39 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "29.0.8.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-29.0.8.zip"
+    And Update to version "29.0.9.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-29.0.9.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/29/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    NvzsKc5eCg2RfDfJ0FKyUSvfkrsEcsCttimZ51j6dSVz4dSY+fC1Dv0m9vb51hnG
-    O/7gDad0UuH5v96UjE6bL0E/Lc2zsAKFl+a8fCFB5OHt9h1c4Pv3fS0E0ZKHV1Ra
-    ShaTFRrWa2dTPIIfpxKmKGVfKV5VUre0izdK7dd9nLSF7u5iGKGKYr9PbI1OtoMU
-    asEMOUbBvOHpPwSE3uJ97Xf230WQT4fKR4pwy1qJhxB1fvlcrTET5JaDg/Y30v92
-    PNKp1vZHcokIZPrW29TPdmL1vcZe5CdHIZ5STI9CP+0YpMlzDvANaiy0Ua1r6/Z+
-    nuJnyU9/LSVwAkOxoKZTOg==
+    MApafCYqysmbXaz2F6UQm+x5BtrPbjmMc/xUERYbpKn3frhsb+/wtlvFZqgWCO8e
+    J03dptp1UgrKS3hPCvifB7D+FgzTaC1IsCCnCy5OEEFICeTHIjHdkP9fEhIgaxds
+    4UgNNvquf5q/qS01A8DtDQuU+1CiLKM7S4cv1sSPWg2NNjdfRO2/3PDKho78GUfC
+    dZTOuuHYAf9ldhqmWUJhrso5+j7ArQf1VL5fHAnCcoBMTPo/blE1IAPoF4LNoiYC
+    +2NmyNBhuqopDJDF41tYXUf807nw6KtZsTyyX2yJPk1JVSh3AX+1Y37ShDM87dvT
+    XVcu5iBVPV4pmT1q3g3UCA==
     """
 
   Scenario: Updating Nextcloud 29 to 30 on the stable channel
     Given There is a release with channel "stable"
-    And The received version is "29.0.8.1"
+    And The received version is "29.0.9.2"
     And The received PHP version is "8.1.0"
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "30.0.1.2" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-30.0.1.zip"
+    And Update to version "30.0.2.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-30.0.2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    SzhhoJx5bUQ5nmoLZLbNnr2xeW9jy87trzmVaoVtoSpQG+DzeWFdfcYnkdWmHEXe
-    VdqEWUAEG9Fqp/YznmW0YnoIEy57hc7aT1xG5kvsUBqLd5tz7XujFnOZji1X8u7N
-    gbORQFxPCgGR6pl8KFT7Z8stTjnqygQw+huRwM3NjgSB4TyITAM6j1jDUGpoZDuW
-    h0uLEwzjuk1frD9BXpGD519POsMro7ryhHU/rgRkXsKK5Rtk2GRotVuTXC+1b/ys
-    i2Vmhp33RjW8zpyglBH0Xdp0mB+1eu6m47AIHxM1Cpx48WJqOvsSKBCKWZLMTjyv
-    oLSan+tnDsjhB1QcEGrz/w==
+    uwSmmFxroTIbFhaCPq9EJTiEzMB8/v5sYvTbEEZp0aBjxN+64rkIgWZmqtGt0l/z
+    3wZQOh1nGnZtwE2PxWDrv1qSEB13RVd6yH0RKCHi9AYOqwIDuw0YO2Z+hqLC8jCQ
+    yeDiP9FRcKx2IwmGoEhmcnS7A7N+36Bu+eo5bo5hFfZ6aHXol3e1ybmyiotkOS2X
+    k0ea4TaXu/DhFep6LeOs02D3md8axknwpeKppJcNzXaGt6nT3zbYEPrI+qjxIrbB
+    Mg6LhJwRlQBSQ7oXcI8AU+dVIiMvCuv8qyqzfBfjVu16yBwY5k37Q4HK2dQWxky8
+    h9nvBLY36Nn47IEvKwg+bw==
     """
 
   Scenario: Updating Nextcloud 30 on the stable channel
@@ -638,16 +638,16 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "30.0.1.2" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-30.0.1.zip"
+    And Update to version "30.0.2.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-30.0.2.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    SzhhoJx5bUQ5nmoLZLbNnr2xeW9jy87trzmVaoVtoSpQG+DzeWFdfcYnkdWmHEXe
-    VdqEWUAEG9Fqp/YznmW0YnoIEy57hc7aT1xG5kvsUBqLd5tz7XujFnOZji1X8u7N
-    gbORQFxPCgGR6pl8KFT7Z8stTjnqygQw+huRwM3NjgSB4TyITAM6j1jDUGpoZDuW
-    h0uLEwzjuk1frD9BXpGD519POsMro7ryhHU/rgRkXsKK5Rtk2GRotVuTXC+1b/ys
-    i2Vmhp33RjW8zpyglBH0Xdp0mB+1eu6m47AIHxM1Cpx48WJqOvsSKBCKWZLMTjyv
-    oLSan+tnDsjhB1QcEGrz/w==
+    uwSmmFxroTIbFhaCPq9EJTiEzMB8/v5sYvTbEEZp0aBjxN+64rkIgWZmqtGt0l/z
+    3wZQOh1nGnZtwE2PxWDrv1qSEB13RVd6yH0RKCHi9AYOqwIDuw0YO2Z+hqLC8jCQ
+    yeDiP9FRcKx2IwmGoEhmcnS7A7N+36Bu+eo5bo5hFfZ6aHXol3e1ybmyiotkOS2X
+    k0ea4TaXu/DhFep6LeOs02D3md8axknwpeKppJcNzXaGt6nT3zbYEPrI+qjxIrbB
+    Mg6LhJwRlQBSQ7oXcI8AU+dVIiMvCuv8qyqzfBfjVu16yBwY5k37Q4HK2dQWxky8
+    h9nvBLY36Nn47IEvKwg+bw==
     """
