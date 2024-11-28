@@ -555,18 +555,18 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "30.0.2.2" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-30.0.2.zip"
+    And Update to version "30.0.3.0" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-30.0.3rc1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    uwSmmFxroTIbFhaCPq9EJTiEzMB8/v5sYvTbEEZp0aBjxN+64rkIgWZmqtGt0l/z
-    3wZQOh1nGnZtwE2PxWDrv1qSEB13RVd6yH0RKCHi9AYOqwIDuw0YO2Z+hqLC8jCQ
-    yeDiP9FRcKx2IwmGoEhmcnS7A7N+36Bu+eo5bo5hFfZ6aHXol3e1ybmyiotkOS2X
-    k0ea4TaXu/DhFep6LeOs02D3md8axknwpeKppJcNzXaGt6nT3zbYEPrI+qjxIrbB
-    Mg6LhJwRlQBSQ7oXcI8AU+dVIiMvCuv8qyqzfBfjVu16yBwY5k37Q4HK2dQWxky8
-    h9nvBLY36Nn47IEvKwg+bw==
+    VRjPeAIFlYCSZyWrdQVN5z7kU9uq/nMHE7ym691ru1Anu5QKlEBYDaSDEEt/Je/Q
+    jea7xxnggPno7pAO84tK+F2ZN5dZ9o7ZH9XmleuW1E/QGU+G6guHlh4ZutAtw+eb
+    JiHhzO+m3SucttavXKR4FiIxHhxOj/Ih5gp2sQd4iE+6JwgKgl1R2UiP9J43LGtJ
+    ExTXwL2A0E8zfgBOHWDhNXB4YhjdFdzi+d+Dw+YV1eNswy+hXB3ZQd1t+96891T9
+    RNlo41rfyZUMLPgdfS1Yrlw4JjDgwtdA4P1eSG/jNi3mEmFwwmkH5BWwgNtOjUPq
+    ARAlASKdZcVbvofv7UKS3w==
     """
 
   Scenario: Updating Nextcloud 30 on the beta channel
@@ -576,16 +576,16 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "30.0.2.2" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-30.0.2.zip"
+    And Update to version "30.0.3.0" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-30.0.3rc1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    uwSmmFxroTIbFhaCPq9EJTiEzMB8/v5sYvTbEEZp0aBjxN+64rkIgWZmqtGt0l/z
-    3wZQOh1nGnZtwE2PxWDrv1qSEB13RVd6yH0RKCHi9AYOqwIDuw0YO2Z+hqLC8jCQ
-    yeDiP9FRcKx2IwmGoEhmcnS7A7N+36Bu+eo5bo5hFfZ6aHXol3e1ybmyiotkOS2X
-    k0ea4TaXu/DhFep6LeOs02D3md8axknwpeKppJcNzXaGt6nT3zbYEPrI+qjxIrbB
-    Mg6LhJwRlQBSQ7oXcI8AU+dVIiMvCuv8qyqzfBfjVu16yBwY5k37Q4HK2dQWxky8
-    h9nvBLY36Nn47IEvKwg+bw==
+    VRjPeAIFlYCSZyWrdQVN5z7kU9uq/nMHE7ym691ru1Anu5QKlEBYDaSDEEt/Je/Q
+    jea7xxnggPno7pAO84tK+F2ZN5dZ9o7ZH9XmleuW1E/QGU+G6guHlh4ZutAtw+eb
+    JiHhzO+m3SucttavXKR4FiIxHhxOj/Ih5gp2sQd4iE+6JwgKgl1R2UiP9J43LGtJ
+    ExTXwL2A0E8zfgBOHWDhNXB4YhjdFdzi+d+Dw+YV1eNswy+hXB3ZQd1t+96891T9
+    RNlo41rfyZUMLPgdfS1Yrlw4JjDgwtdA4P1eSG/jNi3mEmFwwmkH5BWwgNtOjUPq
+    ARAlASKdZcVbvofv7UKS3w==
     """
