@@ -85,14 +85,10 @@
         "internalVersion": "28.0.13.0",
         "signature": "F3+gp9NaTJ2RTKYaE6VIMCaN7R76WZJRxmEITlBKosyxVWvf4MHmwvfCAOWh/1JLjhu2wqmE6bLC/IXQlrQAN9ny1UtLWMCzbZP1fNjUme7mMSSizEDs3+srXy11BfEjWU30XsuOToB29hVPON08TyxEcuJ6dyEFVRBVm0za/IcT6f5U1YZHoIxsXlne4Ja762Yv48d+qBosMxUJbxsKazYefwvPDMLFahhHTt4xm6Jzr/QskOTBbOtIt3SRQAbk2h1hGqb2NywMahZx7rhQCxhbB94A8GVkd7hyE+FOePugTbJ4TB3M6G7g/yQH4lseqDhKDAucVLoSatvDk75plw=="
     },
-	"29.0.8": {
-		"internalVersion": "29.0.8.1",
-		"signature": "NvzsKc5eCg2RfDfJ0FKyUSvfkrsEcsCttimZ51j6dSVz4dSY+fC1Dv0m9vb51hnGO/7gDad0UuH5v96UjE6bL0E/Lc2zsAKFl+a8fCFB5OHt9h1c4Pv3fS0E0ZKHV1RaShaTFRrWa2dTPIIfpxKmKGVfKV5VUre0izdK7dd9nLSF7u5iGKGKYr9PbI1OtoMUasEMOUbBvOHpPwSE3uJ97Xf230WQT4fKR4pwy1qJhxB1fvlcrTET5JaDg/Y30v92PNKp1vZHcokIZPrW29TPdmL1vcZe5CdHIZ5STI9CP+0YpMlzDvANaiy0Ua1r6/Z+nuJnyU9/LSVwAkOxoKZTOg=="
-    },
-    "29.0.10 RC1": {
-        "internalVersion": "29.0.10.0",
-        "signature": "bVP6rbJskCZUiV4BofOP1/BuAQr5Q+BH0s8awaRqnOrdk61QlKPp7Q5GeenMIGDnnjCnvL1NPuYX9fHsFfHK6I16yeYAJXMK7p+EHGdFj0uBvYsxBCDqxMrm1q2+dig7JNyw94Y72Cz3K4MMas+q35rFZxWujzh4NLkzjp/VpDQ9nUNfJFS/eaiDHS6ZL0foo7SBdOIRIzOoU3pltEkUjcNGaZE6mw80H+ZhBS4FEeSKOlOqNloTTRIGoihDnyRDzqH5kXUD4l32IfmdUfy5Xasmzue7cunN3zS7JkjM2d4sDt2zfh3Ju5FjgqNsBU+6a2vuyc6XME/o62zvqdIDoA=="
-    },
+	"29.0.10": {
+		"internalVersion": "29.0.10.1",
+		"signature": "y1EjwPsIOi7csy5i7eINb5KWvtOfdQTdBdofwHpk1HlzOGWwoCosM+1dShJbwzaRZsi2AlOL/c7CeHY8aH6smcJaqAGhlQityVGs0zKYlpMR5afglk0b+2+Hb9GR1T/M8eb6qNsjO3KgxUe8ZBE8JZ32INpRqylQb2zvAKFMHzbz06Nj+574arnMY0o3LwR6o+wGx3e25/i5ybO+pLoqsEsoYgkl/DaSpcRor5tEWm7qiPtk8+aT2s/phuMftioQegpWI7BoU2Qke/uqkNhgjyMg0wbYLYLGzKOTGhzWrs9Sy0LhnwFG6jE+m3ZYk8trQexpG3uO4JLIC3zb9EWw0g=="
+	},
 	"30.0.3": {
 		"internalVersion": "30.0.3.2",
 		"signature": "MaAvtb+pYzInTd2s8X2UWUcdF0uONAMlqTbd8xOlqzIb1BU/gfUwfi6XlpWRBPftXwuytKtIhKG2DddmWEazVaFl0wtQKgOI6KuUy7+cYLFiE8qSHJQFclIZnaY7odnHx0NO3Vr4iTkPyprwOQiHeZMCvmO8+qI0s2+Vh/hDDn+WHBDs+YGTER6zR7Svg0mGKQha6D4fpuZw7LjSqMqzTqxiJjTng8PuCbV/e5nNIBaRgBiPsAo0AWmolqiKhvJqlAmL4isnCpdjvNqyool09sqYPWVhz/qmsNdVHZWIM04iyDXcj/KzuBfqgQJhdC0vcHb9IfSj/n95p6H7H/GyXw=="
