@@ -678,18 +678,34 @@ vbaIJ8CiZnKdMBDAdXAVMA==',
 	'beta' => [
 		'30' => [
 			'100' => [
-				'latest' => '30.0.3 RC2',
-				'internalVersion' => '30.0.3.1',
-				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-30.0.3rc2.zip',
+				'latest' => '30.0.4 RC1',
+				'internalVersion' => '30.0.4.0',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-30.0.4rc1.zip',
 				'web' => 'https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '8.1',
-				'signature' => 'u395gCuNyuCNATMa7eiN35A6rjvH4JGfYo3T5xX/zRBLHNa/UF9U5E60k7yFDspc
-DVYaL3a2CRIWlqTxNeR8jM9SLt8+ME2JVv128n/qe3qxLeIPXAl9UwmzXP3lAmFC
-8IMSiVL73qYIKZtuByAFyarQo2B0tYBKpmvJEAm6QQL6iXoiMQUO3J0Vk7BAA79s
-tW0UA6T5nA4Q8hgF3svvXWfZ5C+4hqbqA+A5s4gePB6tVzBK7ORHGul/znzTpmnm
-Z7W05b1cJl/4FzT/g20xM9jwnD6KCJW1GGU3ecLeb+UG5T6SBe50ZmIXSJMUrcFi
-4i9NVOoA5tGI1JuU6QnuGg==',
+				'signature' => 'C2mCIM9juoPX3qhzDqAXngJJRJmTGNOQIC5obyRsQlWH6xbvD4NbxiMiHvAgUtJm
+u5zGE1y6sG1N85GYUsmHoeawsMkCHXRuc2GWcJ/IkqSicjwPZh3uTCkGVr5uvI3E
+31DWyFUniYrtXBlS80UtMRlKW+wcRn1Pi4IPhKCadXBE6ABZoZ/DciduV5kiJVaM
+TbU4LTjFVbzB2Iq9AC6/+fbUVCbxtVNuyj7sZOZ+2VFh+pVU5PlgSmYR5DxleVFk
+6ReCUIzv7/oSpN4E1Jd15bEzG9q3U+sBfcK0GMWahPkOwjz7F28r/BzRgbJusFaA
+CrfaBIp6zQFLh+r/v0IjhQ==',
+			],
+		],
+		'29.0.10.1' => [
+			'100' => [
+				'latest' => '30.0.4 RC1',
+				'internalVersion' => '30.0.4.0',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-30.0.4rc1.zip',
+				'web' => 'https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '8.1',
+				'signature' => 'C2mCIM9juoPX3qhzDqAXngJJRJmTGNOQIC5obyRsQlWH6xbvD4NbxiMiHvAgUtJm
+u5zGE1y6sG1N85GYUsmHoeawsMkCHXRuc2GWcJ/IkqSicjwPZh3uTCkGVr5uvI3E
+31DWyFUniYrtXBlS80UtMRlKW+wcRn1Pi4IPhKCadXBE6ABZoZ/DciduV5kiJVaM
+TbU4LTjFVbzB2Iq9AC6/+fbUVCbxtVNuyj7sZOZ+2VFh+pVU5PlgSmYR5DxleVFk
+6ReCUIzv7/oSpN4E1Jd15bEzG9q3U+sBfcK0GMWahPkOwjz7F28r/BzRgbJusFaA
+CrfaBIp6zQFLh+r/v0IjhQ==',
 			],
 		],
 		'28.0.13.0' => [
