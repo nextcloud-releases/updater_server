@@ -676,11 +676,49 @@ vbaIJ8CiZnKdMBDAdXAVMA==',
 		],
 	],
 	'beta' => [
+		'31' => [
+			'100' => [
+				'latest' => '31.0.0 beta 1',
+				'internalVersion' => '31.0.0.7',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-31.0.0beta1.zip',
+				'web' => 'https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '8.1',
+				'signature' => 'T4gIacUltJTudsE7XphG18ZfgoyjaTv1wY60Ck5vMxsNUfKgsZ2SMgfSCPIFBjCy
+9fMWZIUTb793GW5eqnGbzvN9IzpHCsT1+FrUGTeFSkjr+bTyZfnv081bkZnG7SAT
+ARk2UAou1lFwcA7DtUDDnQI5xie/eMH4czWsLMXrvA6X+EaTxXljMnV1GT9s7Csy
+s4PyroIR9UPBMlRYc2qCJDg83pjxHEY70PBuWNthYejMaWwmeZarfsgkwATWOUOf
+mze2cyxIRuGvoHDyhxm+50fb2lwGCdwKmhR79xkazNRm/OVJhIhqiZ5anVSgVVqR
+sNLM5oTe2P1Skme7vmS+Tg==',
+			],
+		],
+		'30.0.4.1' => [
+			'100' => [
+				'latest' => '31.0.0 beta 1',
+				'internalVersion' => '31.0.0.7',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-31.0.0beta1.zip',
+				'web' => 'https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '8.1',
+				'signature' => 'T4gIacUltJTudsE7XphG18ZfgoyjaTv1wY60Ck5vMxsNUfKgsZ2SMgfSCPIFBjCy
+9fMWZIUTb793GW5eqnGbzvN9IzpHCsT1+FrUGTeFSkjr+bTyZfnv081bkZnG7SAT
+ARk2UAou1lFwcA7DtUDDnQI5xie/eMH4czWsLMXrvA6X+EaTxXljMnV1GT9s7Csy
+s4PyroIR9UPBMlRYc2qCJDg83pjxHEY70PBuWNthYejMaWwmeZarfsgkwATWOUOf
+mze2cyxIRuGvoHDyhxm+50fb2lwGCdwKmhR79xkazNRm/OVJhIhqiZ5anVSgVVqR
+sNLM5oTe2P1Skme7vmS+Tg==',
+			],
+		],
 	],
 	'daily' => [
-		'30' => [
+		'31' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-master.zip',
 			'web' => 'https://docs.nextcloud.com/server/latest/admin_manual/maintenance/upgrade.html',
+			'eol' => false,
+			'minPHPVersion' => '8.1',
+		],
+		'30' => [
+			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable30.zip',
+			'web' => 'https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html',
 			'eol' => false,
 			'minPHPVersion' => '8.1',
 		],
