@@ -599,16 +599,16 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "31.0.0.8" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-31.0.0beta2.zip"
+    And Update to version "31.0.0.9" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-31.0.0beta3.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    cYq0MK7s7/r7W1FALMw5qrZeC2lZAeMT9X+pExY9jcJ07DxPFgR8a+9LOBPqyiy8
-    SayGUvcx7773Zky6atyby4LvBZbcxK0k9ZkiPUdotomdJ7JlRQ3txfpLxuEfeFuT
-    4/QgQxccxQeIn7V6hYw/EDrSgEwtPSbdNMaGA2BNKWsopqvhg22+tuJ/WnWqCWYS
-    FqJWBaemX4KJuzL1iSaKSORwKYNluWpt629h46iNeJCHNeZiRcE4NplX1DCEUQIB
-    NE/WowQc/tashnafyRBjf3caM07lUP/Rjtsxew+N5bgFl4+jzJ0uJ+x2KSqrCg1I
-    kR0T5XfZ3snl8YRXgt91Nw==
+    W0IZsBjy57tsAvepuvXh6OcRHBC3F1pu4PnxHnHmreexO94piLqu+NY/Q6jC8Pwq
+    dIOe0gxYyw949G8rY4tqlwdZGEo/DuwrZZ3Q3ePrNuizqbLMbMTN5416MzBp2qwo
+    J6Y72RPRxWiIqn01ONY8wRazLcxoVnGPy48+Ermmgt3fRlfrlzVfWVaQdOt5Dq1v
+    DbL4NV34Ffy24s+0TlKwAfKj/8LTGZV3rhD0mSG0euYZcrquiDb+UaB99SrgN4S+
+    QLRhHPQAv79IHIuy0zJWpF1jENncHtk9t3mPizitItThKX71OsKgOfUP0gMK1R1H
+    I9K2dMpwogHvL56spn3Igw==
     """
