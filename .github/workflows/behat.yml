@@ -29,7 +29,7 @@ jobs:
         run: composer install
 
       - name: Start webserver
-        run: php -S localhost:8888 index.php &
+        run: php -S localhost:8888 &
 
       - name: Run behat
         run: cd tests/integration && ../../vendor/bin/behat --colors .
