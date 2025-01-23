@@ -1,6 +1,7 @@
-# Rewrite all requests to "index.php"
+# Rewrite all requests to "index.php" except for latest
 
 DirectoryIndex index.php
 RewriteEngine On
 
+RewriteRule ^latest(?|$) latest.php [L]
 RewriteRule ^ index.php [L]
