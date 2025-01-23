@@ -3,5 +3,5 @@
 DirectoryIndex index.php
 RewriteEngine On
 
-RewriteRule ^latest(?|$) latest.php [L]
+RewriteRule ^latest latest.php [L]
 RewriteRule ^ index.php [L]
