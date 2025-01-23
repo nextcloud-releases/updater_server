@@ -39,6 +39,7 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 	private $result = '';
 	/** @var array */
 	private $resultArray = [];
+	private ?string $phpVersion = null;
 
 	/**
 	 * @Given There is a release with channel :arg1
@@ -197,6 +198,16 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 			throw new \Exception('Response contains not between 6 or 8 array elements.');
 		}
 	}
+	/**
+	 * @Then The JSON response is non-empty
+	 */
+	public function theJsonResponseIsNonEmpty() {
+		if(empty($this->result)) {
+			throw new \Exception('Response is empty');
+		}
+
+		$this->resultArray = json_decode($this->result, true);
+	}
 
 	/**
 	 * @Then Update to version :arg1 is available
@@ -260,7 +271,7 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 	}
 
 	/**
-	 * @Then Autoupdater is set to :arg1
+	 * @Then Autoupdater is set to :autoupdaterValue
 	 */
 	public function autoupdaterIsSetTo($autoupdaterValue) {
 		$autoupdater = $this->resultArray['autoupdater'];
@@ -270,7 +281,7 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 	}
 
 	/**
-	 * @Then EOL is set to :arg1
+	 * @Then EOL is set to :eolValue
 	 */
 	public function eolIsSetTo($eolValue) {
 		$eol = $this->resultArray['eol'];
@@ -278,4 +289,70 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 			throw new \Exception("Expected eol $eolValue does not equals $eol");
 		}
 	}
+
+	/**
+	 * @Given I want to know the latest :channel release
+	 */
+    public function iWantToKnowTheLatestRelease(string $channel): void
+    {
+        $this->channel = $channel;
+    }
+
+	/**
+	 * @Given I use PHP ":phpVersion"
+	 */
+    public function iUsePhp($phpVersion): void
+    {
+		$this->phpVersion = $phpVersion;
+    }
+
+	/**
+	 * @When I send a request latest.php
+	 */
+    public function iSendARequestLatestPhp(): void
+    {
+		$ch = curl_init();
+		$params = [
+			'channel' => $this->channel,
+		];
+		if ($this->phpVersion !== null) {
+			$params['php'] = $this->phpVersion;
+		}
+		$optArray = array(
+			CURLOPT_URL => 'http://localhost:8888/latest.php?'.http_build_query($params),
+			CURLOPT_RETURNTRANSFER => true
+		);
+		curl_setopt_array($ch, $optArray);
+		$this->result = curl_exec($ch);
+		curl_close($ch);
+    }
+
+	/**
+	 * @Then Version :expectedVersion is the latest release
+	 */
+    public function versionIsTheLatestRelease($expectedVersion): void
+    {
+		if (($this->resultArray['version'] ?? '') === '') {
+			throw new \Exception("Version number is empty");
+		}
+		$foundVersion = $this->resultArray['version'];
+		if ($foundVersion !== $expectedVersion) {
+			throw new \Exception("Version number $foundVersion is different from expected version $expectedVersion");
+		}
+    }
+
+	/**
+	 * @Then I get error ":expectedError"
+	 */
+    public function iGetError($expectedError): void
+    {
+		if (($this->resultArray['error'] ?? '') === '') {
+			throw new \Exception("Error message is empty");
+		}
+		$foundError = $this->resultArray['error'];
+		if ($foundError !== $expectedError) {
+			throw new \Exception("Error message $foundError is different from expected error $expectedError");
+		}
+
+    }
 }
