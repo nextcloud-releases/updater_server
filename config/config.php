@@ -708,20 +708,36 @@ vbaIJ8CiZnKdMBDAdXAVMA==',
 		],
 	],
 	'beta' => [
-		'30.0.6.2' => [
+		'31' => [
 			'100' => [
-				'latest' => '31.0.0',
-				'internalVersion' => '31.0.0.18',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-31.0.0.zip',
+				'latest' => '31.0.1 RC1',
+				'internalVersion' => '31.0.1.0',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-31.0.1rc1.zip',
 				'web' => 'https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '8.1',
-				'signature' => 'ue6GgTHTVjbwmTar1N9Jzfa4RuXde36jYj33/ShEHIU2jMvzRq+xbbPAfmY51ejM
-+mBqkaWr0SnOgjW+n3pg3kIAArAYAAd0UUVqsTAAjLQNRi+JodiOrkJI4GVnQkKl
-eHInhEY7vVbzBxXO1sGjw+Pt8Gt39gnhEDTGBs/uQcyyRxHXaHqDdIRJk2VOUTYz
-sHJhmfD6KvOZJe3RYvKRtO5J7mWPoDN3gyrUMhkZgQyadGWxSi/dXCejNQFMdfm2
-Kgxm9nCwKCUUuIV593rzez+nNGfOj9tEkTvw0kB0rl2yb+sUpmw9sLicBVGvtiDe
-UgGsHi8fp1WDee4UneIwfw==',
+				'signature' => 'ifqHXh5A3KJiLiavSwnDB7C6GlTwzeXUfr8aoWH/6pUPv7Uqg0VHOuq0WZJC2ete
+KPangL0JXZgau5MnkOeWf0ySwxZZ9Pps737qx0Fn9TH3/zyhiiWQp/O30shV/zys
+j076p3VBkBhGFWpBtOxfa3VWgk8XXeTvxVOI/rPjDj+winRm+zp+/dUyUbZt1Pyo
+RKhoSCdZBEGkcz/h2evuaNkIKUMtDlny+c+/Hz0udiPTmxsOiWj4HR0F+Eh+qlxO
+g4fh/so1uyfgtJZ3BD5K8lOp7AQsQChQ0gnbUvMxnAt9I40rBKL+yc9XO5IxKeHt
+qkSDZ0Xvi6BMCjG8V8mD3w==',
+			],
+		],
+		'30.0.6.2' => [
+			'100' => [
+				'latest' => '31.0.1 RC1',
+				'internalVersion' => '31.0.1.0',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-31.0.1rc1.zip',
+				'web' => 'https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '8.1',
+				'signature' => 'ifqHXh5A3KJiLiavSwnDB7C6GlTwzeXUfr8aoWH/6pUPv7Uqg0VHOuq0WZJC2ete
+KPangL0JXZgau5MnkOeWf0ySwxZZ9Pps737qx0Fn9TH3/zyhiiWQp/O30shV/zys
+j076p3VBkBhGFWpBtOxfa3VWgk8XXeTvxVOI/rPjDj+winRm+zp+/dUyUbZt1Pyo
+RKhoSCdZBEGkcz/h2evuaNkIKUMtDlny+c+/Hz0udiPTmxsOiWj4HR0F+Eh+qlxO
+g4fh/so1uyfgtJZ3BD5K8lOp7AQsQChQ0gnbUvMxnAt9I40rBKL+yc9XO5IxKeHt
+qkSDZ0Xvi6BMCjG8V8mD3w==',
 			],
 		],
 	],
