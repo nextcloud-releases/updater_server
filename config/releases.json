@@ -89,13 +89,9 @@
 		"internalVersion": "29.0.14.0",
 		"signature": "KlKX+bCYdhoKaVcRQ4CmrpetxVCMGOUdLA8NQN4Sgmmzoud14NiBfyYvkpuSe8Ys8rLqVlQyUjIQ/hB6/GTaruRAJqt+AqpJQMdJA2ZD4ktBeMOAd5x/205WsaOT7ld8XMVX7nJiOQl2rOJ8B7/fkIi++akKeTBWtWvtXjIzInvHKwZ4avFwkF8iOKtk2PhpyeqNLnBXK6erniHQ/RJeKh6eNO9W5mschs74qqYFI01Gn/0LR4jMBk0Y8kpGlvqciGtXeCQBOpvSbdzzljiNc41WUylwR6U0mHdu/uN78wsLWV7ynpH0UO5QoAYLUIs+1wQtJpzNn0lDFPjfkbKxVg=="
 	},
-	"30.0.7": {
-		"internalVersion": "30.0.7.2",
-		"signature": "yJA746GOI4OHIE6uLkT9jY2E7d3IEbHBtQMEHPwCUx0eh9jYoXwhW/bhVpVPxtrs60G59JJDxp6pRrQ4CunKE8gRawiQnMf5uSeR3PUg9V20RLlkiBwY1DhWjddmigjED5C1lKotlj3SqJrHJD9KTXnhnLjc1SAL5Ads/2+RLmrR2SsDlsceEEXnXBy0gsMjvt8+QDEwOrymEs/1xGmxJwe98dsY7mfe4SQ+egxUzp18YEsV7vlK7aZWDHhwJctKAkn/Pn+Ra+EVjsPPfmb6MUCYno2wkM6eMbj7NAjWdombQHAb8H0idlHOlzGsOHO6sPXq1277HbvMbURmDcKw6Q=="
-	},
-	"30.0.8 RC1": {
-		"internalVersion": "30.0.8.0",
-		"signature": "Hnfhh80a2an09ysd55Z2a2pGhgAKosin2QoGLPZ4ZIxvXb5vww5KY6IryRlxrH3t5LdGvbZBhR3GkGAVScZ7hsJ66bm1MnjMf/H9bQUpxB8vW/cSVOODd8Gv1waA0Ch4bC5+GA7/gY8z1NapPKVIJt0ILBdi5KJhV8Hd0qXhkqN4bx7+u/Vkc1k780ziG6x6rBasIwOZogHpbyTvQm/MadjIRS+5YrSZbKGiIlMGFWVASdz/mx5iCqXVscwkFHh7AGzJE5LkSSqFsb828ToTxJ9mNCFtCt2KYNZMr+j4n+72TyPTP3PTkBphje567ZgtiGxeo9bmFrTyUgXwFPRsbg=="
+	"30.0.8": {
+		"internalVersion": "30.0.8.1",
+		"signature": "XNIXaswt7h8cQLgyPacXpTAfrTJzAo+xjmKs89EkoupLs0HYNx2/gRm0YglWGc+952Z/GfCDD+aRk3mwGe0SSfaWNQPD6Rh68zmmntQ44pf+tQGfGhl//3Z3cih/aU8ehk7ArlNlyTdQZlawGlxzaTwlvNU6kBscC2F16ubsS/7QPW1rKa8oIdD0UNRD6Xw5j1RaW0rNB/9FpShTq9Lee7ZATjvSe02z/1/bbQFI9oUhnFjxk1yelTetGMYqZhGUzrxTYVbEAtQVTvJnxlKDRLVflNosoMNQvWGteZdn/3OoT4ij3p43Tk4dVHPRzzizrhFPnfl1Rkz8oROQpSsxQQ=="
 	},
 	"31.0.2": {
 		"internalVersion": "31.0.2.1",
