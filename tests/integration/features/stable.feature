@@ -652,14 +652,6 @@ Feature: Testing the update scenario of stable releases
     rhFPnfl1Rkz8oROQpSsxQQ==
     """
 
-  Scenario: Not updating Nextcloud 30 to 31 on the stable channel (staged rollout)
-    Given There is a release with channel "stable"
-    And The received version is "30.0.8.1"
-    And The received PHP version is "8.1.0"
-    And the installation mtime is "71"
-    When The request is sent
-    Then The response is empty
-
   Scenario: Updating Nextcloud 30 to 31 on the stable channel
     Given There is a release with channel "stable"
     And The received version is "30.0.8.1"
