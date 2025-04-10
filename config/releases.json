@@ -81,14 +81,10 @@
 		"internalVersion": "28.0.14.1",
 		"signature": "e3wnEZE0ooyNX8CpsSEgXafLoOU/U+zORUyeqKczWuuf2Srq4edl2SCaQgvdSLsGDZo8h9LLEsh544/NyS8VOY7aJVqR2JOC4bUyztfNTnlppRLVTCIXx053Eht9+neNpYlPy8hBK+KBLoN7q3WYcWL1QOIrUAzgxhjwshMrTxNrHi8Nq7g37iZUzhPU5HWwMUID9gsQnT+aFurooLVvWMM8Ad0RkU72i5Y7I80c+v/2MYE9rxUmNC54noVePvrjR8zf/PC+Yj1vxFZ0hYAtweLgBxfwU5cNBYfH7M1I9FLlb88p/XDWx6XaBz4Ql6LKlbpDxNE9UiM09JG1dU7Ebg=="
 	},
-	"29.0.14": {
-		"internalVersion": "29.0.14.1",
-		"signature": "bXvQH6IozegztCB+ZvPs16j4bWkhXDksLjuRP5YvaB6GmgGcczO65xIt2H1aLtZYGzniv+t8TM4+xZhODh1dTrR1NX0f7c8KTEFSYTmDX8kB7wcXg8Tabg80ULFr1bbUmv0bVpjrKO7iCGe0McEzi/KqWeG4Y9d4AyQdxQ3YNk+73Zg/MrJ+QM/TIcoZ6NpqWzjoyVCsRJKqDXssE+YlSuEjUt07c1QEh388I7dv6TVfh5eG5qaTQDWmXKFEStynECaDcXZI6RZapFgnSv3q+UvZcxJe7dgJJMysJuSMhSctsAnE1UHtFaTfWZ9pT5Gs3j6TC0myov8+7Zh95dVhMA=="
-	},
-	"29.0.15 RC2": {
-		"internalVersion": "29.0.15.1",
-		"signature": "1JHvr9p2Wku+/L6MIaUGgDXR5N2iZ+qfQJ8tsLGKJoUOLMOUVpe/6nzLN8vOs3uPmyBOUmVLfMCAhITji1ankcZCTqeKp1VNrQUQKUN0roVP13JNZk1TC3ygwdgmQE8YO82vq9s9KACwnelrfsC7gbVHKZLwHSyMijM8bT4qRqHqlMPO9GzZnMhrx+wVsQiTL8gXRpfba6nM1S5stwtzQrir/z1Yfgw1akAx+D5BqlxDrryyXJXwXxU3md/lMVHNUyFiWvfoBiAJBmFrkzwM6aJaKcdILN2FI2Edn5svLmaSdmlx30bFO8cxqSQw8eMI5ygaXCBPYlXBpBVdpo3FlQ=="
-	},
+    "29.0.15": {
+        "internalVersion": "29.0.15.2",
+        "signature": "jDbWk7ZLdx1qAwlQWHd1O9sl5k9c/6n407zslZ/YoUc2ppp/wdzUGZUk82gdYVzQKSuPfa9s9Jii+reobRTxskaS5Cb5sf2QXS142Qs8sgYbEhJn3WGHSm5+JkZIcFfITYgjL/Y6IYwHLAJaZZ9JnLIi3V/pteBpU3e/9uKVVzHox21CcOSOBRcz6duVHn374DANzS1D5aFaW6aOtBRHLOOLntVfCJ8ZY+nteB2WUI1Qu7ONPt4p0nSrZU0D91kLP3j66YkAP6Wbpz4SZ8FV1JvHI+qBiZP+xeVatUOFBLdh3sR3tOVXDGrzWtRdsstNhBgUoulymtuiKLOahxi/XQ=="
+    },
 	"30.0.8": {
 		"internalVersion": "30.0.8.1",
 		"signature": "XNIXaswt7h8cQLgyPacXpTAfrTJzAo+xjmKs89EkoupLs0HYNx2/gRm0YglWGc+952Z/GfCDD+aRk3mwGe0SSfaWNQPD6Rh68zmmntQ44pf+tQGfGhl//3Z3cih/aU8ehk7ArlNlyTdQZlawGlxzaTwlvNU6kBscC2F16ubsS/7QPW1rKa8oIdD0UNRD6Xw5j1RaW0rNB/9FpShTq9Lee7ZATjvSe02z/1/bbQFI9oUhnFjxk1yelTetGMYqZhGUzrxTYVbEAtQVTvJnxlKDRLVflNosoMNQvWGteZdn/3OoT4ij3p43Tk4dVHPRzzizrhFPnfl1Rkz8oROQpSsxQQ=="

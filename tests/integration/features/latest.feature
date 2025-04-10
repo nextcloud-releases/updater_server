@@ -19,16 +19,16 @@ Feature: Testing the latest endpoint
     And I use PHP "8.0"
     When I send a request latest.php
     Then The JSON response is non-empty
-    And Version "29.0.14" is the latest release
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-29.0.14.zip"
+    And Version "29.0.15" is the latest release
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-29.0.15.zip"
 
   Scenario: Get latest beta version with PHP 8.0
     Given I want to know the latest beta release
     And I use PHP "8.0"
     When I send a request latest.php
     Then The JSON response is non-empty
-    And Version "29.0.15 RC2" is the latest release
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-29.0.15rc2.zip"
+    And Version "29.0.15" is the latest release
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-29.0.15.zip"
 
   Scenario: Get latest version with invalid PHP version
     Given I want to know the latest beta release
