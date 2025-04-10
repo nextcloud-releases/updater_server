@@ -3,34 +3,34 @@ return [
 	'stable' => [
 		'31' => [
 			'100' => [
-				'latest' => '31.0.2',
-				'internalVersion' => '31.0.2.1',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-31.0.2.zip',
+				'latest' => '31.0.3',
+				'internalVersion' => '31.0.3.2',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-31.0.3.zip',
 				'web' => 'https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '8.1',
-				'signature' => 'LPEeWXcwA7bbjk/wo6Z1MQ8XTZ1afRa7h4fUJe4Dub9RzzfOi/oncJdo0RLhdsT9
-FUyRHFGDehOdKqmw8aWysyLX10lsE1pocDZAhmalNNeSUdBbguGq2EBkJNZzaCYU
-oaq3j7NSD8cVLngiIoaU9TGDNSENQUZgNijgxvcoCP9VNP+0R9MkE24ed+dNF0kH
-ufG0qANr5N6jGWDLkVndQWRfQKEpvAcW8WUDNbzSrD2GE+/OauixVfHObvtgjoxV
-M9t6SgwEWR3u5uszn3Kyclepii/ERFOYkWYR2khNnY2H0YMBL++iH8LERtyn8544
-aTxLRD7c38W2V3VZtlQRyQ==',
+				'signature' => 'GPhPF6nNo6WDhQjSi1AQa+AmtiZ5IWjtUJ+pVjY+CttrhntD8No+Jg3qI+JwHtwI
+BCOHa0QbAYuSRXRr+vxWFB9WqDtUV64TbwFXOL4rQmz59GNn5vg2YzVvW/5C+siJ
+jcBqxFrTLVfBvG/SWIytg+SMfZyCUon0EysoWCdrsUAnhWu6kuD6xOLSsyxmxDn7
+Dva4520Jp8IETAcuqMJQYD5Qw5/02Z3cUj7aDbKYpJBrhpd2H7fQ6OqRCgWdLzr4
+qNP/rLWLOPBhjovEckDi6DJW6icB1JZoQSGRZQiwKQ/idNRIKYUN+sdo/hTVwqn3
+VnlpNk7RSuYdsBckwo1QmQ==',
 			],
 		],
 		'30.0.9.2' => [
 			'100' => [
-				'latest' => '31.0.2',
-				'internalVersion' => '31.0.2.1',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-31.0.2.zip',
+				'latest' => '31.0.3',
+				'internalVersion' => '31.0.3.2',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-31.0.3.zip',
 				'web' => 'https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html',
 				'eol' => false,
 				'minPHPVersion' => '8.1',
-				'signature' => 'LPEeWXcwA7bbjk/wo6Z1MQ8XTZ1afRa7h4fUJe4Dub9RzzfOi/oncJdo0RLhdsT9
-FUyRHFGDehOdKqmw8aWysyLX10lsE1pocDZAhmalNNeSUdBbguGq2EBkJNZzaCYU
-oaq3j7NSD8cVLngiIoaU9TGDNSENQUZgNijgxvcoCP9VNP+0R9MkE24ed+dNF0kH
-ufG0qANr5N6jGWDLkVndQWRfQKEpvAcW8WUDNbzSrD2GE+/OauixVfHObvtgjoxV
-M9t6SgwEWR3u5uszn3Kyclepii/ERFOYkWYR2khNnY2H0YMBL++iH8LERtyn8544
-aTxLRD7c38W2V3VZtlQRyQ==',
+				'signature' => 'GPhPF6nNo6WDhQjSi1AQa+AmtiZ5IWjtUJ+pVjY+CttrhntD8No+Jg3qI+JwHtwI
+BCOHa0QbAYuSRXRr+vxWFB9WqDtUV64TbwFXOL4rQmz59GNn5vg2YzVvW/5C+siJ
+jcBqxFrTLVfBvG/SWIytg+SMfZyCUon0EysoWCdrsUAnhWu6kuD6xOLSsyxmxDn7
+Dva4520Jp8IETAcuqMJQYD5Qw5/02Z3cUj7aDbKYpJBrhpd2H7fQ6OqRCgWdLzr4
+qNP/rLWLOPBhjovEckDi6DJW6icB1JZoQSGRZQiwKQ/idNRIKYUN+sdo/hTVwqn3
+VnlpNk7RSuYdsBckwo1QmQ==',
 			],
 		],
 		'30' => [
@@ -708,38 +708,6 @@ vbaIJ8CiZnKdMBDAdXAVMA==',
 		],
 	],
 	'beta' => [
-		'31' => [
-			'100' => [
-				'latest' => '31.0.3 RC2',
-				'internalVersion' => '31.0.3.1',
-				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-31.0.3rc2.zip',
-				'web' => 'https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html',
-				'eol' => false,
-				'minPHPVersion' => '8.1',
-				'signature' => 'KY6x08lMMbJ2T7xKRvUdsoFtdfLH9Cg/pOUdDItrYLikmJAt7BIediFuOniojrox
-lWENBd+UQdbKhKmIKiEpo/+Qjlzm/Ddhv2229qeQOjz6BSNeqNHNz9vXWD5lX5Ih
-25ma7Xpzk+EZ6Y8FJkkYq8VtGCGKG0Ahmgr9ApF/JkIfwvAQe4GYS8BDjVhfbV3l
-7wFnmrm8ljxTWzpJhxcfhq9uCw175A8Jteq9VpsJGhqai1PcKMlgFDHZymsWemAW
-FcFg+fOpT0cBvKCqKdmBDSi95D2iBmSPmyZlG7yhzab1gklJCzt7j2ygPCCFmyTN
-ZpU++Jpj4ONETEf3RZkatw==',
-			],
-		],
-		'30.0.9.2' => [
-			'100' => [
-				'latest' => '31.0.3 RC2',
-				'internalVersion' => '31.0.3.1',
-				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-31.0.3rc2.zip',
-				'web' => 'https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html',
-				'eol' => false,
-				'minPHPVersion' => '8.1',
-				'signature' => 'KY6x08lMMbJ2T7xKRvUdsoFtdfLH9Cg/pOUdDItrYLikmJAt7BIediFuOniojrox
-lWENBd+UQdbKhKmIKiEpo/+Qjlzm/Ddhv2229qeQOjz6BSNeqNHNz9vXWD5lX5Ih
-25ma7Xpzk+EZ6Y8FJkkYq8VtGCGKG0Ahmgr9ApF/JkIfwvAQe4GYS8BDjVhfbV3l
-7wFnmrm8ljxTWzpJhxcfhq9uCw175A8Jteq9VpsJGhqai1PcKMlgFDHZymsWemAW
-FcFg+fOpT0cBvKCqKdmBDSi95D2iBmSPmyZlG7yhzab1gklJCzt7j2ygPCCFmyTN
-ZpU++Jpj4ONETEf3RZkatw==',
-			],
-		],
 	],
 	'daily' => [
 		'31' => [
