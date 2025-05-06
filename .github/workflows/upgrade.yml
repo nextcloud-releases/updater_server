@@ -67,7 +67,7 @@ jobs:
     name: Upgrade from ${{ matrix.config.base }} to ${{ matrix.config.latest }} (${{ matrix.config.channel }})
     steps:
       - name: Set up php ${{ matrix.config.minPHPVersion }}
-        uses: shivammathur/setup-php@9e72090525849c5e82e596468b86eb55e9cc5401 # v2.32.0
+        uses: shivammathur/setup-php@cf4cade2721270509d5b1c766ab3549210a39a2a # v2.33.0
         with:
           php-version: ${{ matrix.config.minPHPVersion }}
           extensions: ctype,curl,dom,fileinfo,gd,iconv,intl,json,mbstring,openssl,pdo_sqlite,posix,sqlite,xml,zip
