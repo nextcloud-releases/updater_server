@@ -12,6 +12,11 @@ header('Content-Security-Policy: default-src \'none\';');
 
 $channel = $_GET['channel'] ?? 'stable';
 $phpVersion = $_GET['php'] ?? '';
+$filterVersion = $_GET['version'] ?? '';
+// If only major version is provided, force the `.`
+if (filter_var($filterVersion, FILTER_VALIDATE_INT)) {
+	$filterVersion .= '.';
+}
 if (!preg_match('/^\d{1,2}\.\d{1,2}(?:\.\d{1,2}(?: \w{,20})?)?$|^$/', $phpVersion)){
 	http_response_code(400);
 	echo json_encode(['error' => 'Invalid PHP version provided']);
@@ -61,9 +66,10 @@ if ($channel === 'beta') {
 	$allowedChannels[] = 'stable';
 }
 $releases = loadJson($channel === 'enterprise' ? 'enterprise_releases' : 'releases');
-$releases = array_filter($releases, function ($name) use ($allowedChannels, $suitableMajors) {
+$releases = array_filter($releases, function ($name) use ($allowedChannels, $suitableMajors, $filterVersion) {
 	return in_array(getStabilityFromName($name), $allowedChannels)
-		&& preg_match('/^('.implode('|', $suitableMajors).')\./', $name);
+		&& preg_match('/^('.implode('|', $suitableMajors).')\./', $name)
+		&& ($filterVersion === '' | str_starts_with($name, $filterVersion));
 }, ARRAY_FILTER_USE_KEY);
 uksort($releases, static fn($a, $b) => version_compare($a, $b, '<'));
 if (empty($releases)) {
