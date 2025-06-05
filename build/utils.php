@@ -71,8 +71,8 @@ function buildDownloadUrl(string $releaseName, array $info, array $majorVersion)
 
 	// We started using the github releases since 31.0.6, 30.0.12 and 32.0.0
 	if ((int)$release['major'] >= 32
-		|| ((int)$release['major'] === 31 && (int)$release['patch'] >= 6)
-		|| ((int)$release['major'] === 30 && (int)$release['patch'] >= 12)) {
+		|| ((int)$release['major'] === 31 && (int)$release['patch'] >= 7)
+		|| ((int)$release['major'] === 30 && (int)$release['patch'] >= 13)) {
 		return buildGithubDownloadUrl($releaseName, $info, $majorVersion);
 	}
 
