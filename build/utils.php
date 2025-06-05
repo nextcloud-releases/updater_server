@@ -68,9 +68,39 @@ function buildDownloadUrl(string $releaseName, array $info, array $majorVersion)
 	}
 
 	$release = parseVersionName($releaseName);
+
+	// We started using the github releases since 31.0.6, 30.0.12 and 32.0.0
+	if ((int)$release['major'] >= 32
+		|| ((int)$release['major'] === 31 && (int)$release['patch'] >= 6)
+		|| ((int)$release['major'] === 30 && (int)$release['patch'] >= 12)) {
+		return buildGithubDownloadUrl($releaseName, $info, $majorVersion);
+	}
+
 	$downloadUrl = 'https://download.nextcloud.com/server/%s/nextcloud-%d.%d.%d%s.zip';
 	return sprintf($downloadUrl,
 		$release['modifier'] === '' ? 'releases' : 'prereleases',
+		$release['major'],
+		$release['minor'],
+		$release['patch'],
+		$release['modifier'] === '' ? '' : str_replace(' ', '', strtolower($release['modifier'])),
+	);
+}
+
+function buildGithubDownloadUrl(string $releaseName, array $info, array $majorVersion): string {
+	if (function_exists('buildEnterpriseDownloadUrl')) {
+		$url = buildEnterpriseDownloadUrl($releaseName, $info, $majorVersion);
+		if ($url !== null) {
+			return $url;
+		}
+	}
+
+	$release = parseVersionName($releaseName);
+	$downloadUrl = 'https://github.com/nextcloud-releases/server/releases/download/v%d.%d.%d%s/nextcloud-%d.%d.%d%s.zip';
+	return sprintf($downloadUrl,
+		$release['major'],
+		$release['minor'],
+		$release['patch'],
+		$release['modifier'] === '' ? '' : str_replace(' ', '', strtolower($release['modifier'])),
 		$release['major'],
 		$release['minor'],
 		$release['patch'],
