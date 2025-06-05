@@ -556,7 +556,7 @@ Feature: Testing the update scenario of beta releases
     When The request is sent
     Then The response is non-empty
     And Update to version "30.0.12.0" is available
-    And URL to download is "https://github.com/nextcloud-releases/server/releases/download/v30.0.12rc1/nextcloud-30.0.12rc1.zip"
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-30.0.12rc1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
@@ -577,7 +577,7 @@ Feature: Testing the update scenario of beta releases
     When The request is sent
     Then The response is non-empty
     And Update to version "30.0.12.0" is available
-    And URL to download is "https://github.com/nextcloud-releases/server/releases/download/v30.0.12rc1/nextcloud-30.0.12rc1.zip"
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-30.0.12rc1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
@@ -598,7 +598,7 @@ Feature: Testing the update scenario of beta releases
     When The request is sent
     Then The response is non-empty
     And Update to version "31.0.6.0" is available
-    And URL to download is "https://github.com/nextcloud-releases/server/releases/download/v31.0.6rc1/nextcloud-31.0.6rc1.zip"
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-31.0.6rc1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
@@ -619,7 +619,7 @@ Feature: Testing the update scenario of beta releases
     When The request is sent
     Then The response is non-empty
     And Update to version "31.0.6.0" is available
-    And URL to download is "https://github.com/nextcloud-releases/server/releases/download/v31.0.6rc1/nextcloud-31.0.6rc1.zip"
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-31.0.6rc1.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
