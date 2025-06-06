@@ -87,13 +87,6 @@ function buildDownloadUrl(string $releaseName, array $info, array $majorVersion)
 }
 
 function buildGithubDownloadUrl(string $releaseName, array $info, array $majorVersion): string {
-	if (function_exists('buildEnterpriseDownloadUrl')) {
-		$url = buildEnterpriseDownloadUrl($releaseName, $info, $majorVersion);
-		if ($url !== null) {
-			return $url;
-		}
-	}
-
 	$release = parseVersionName($releaseName);
 	$downloadUrl = 'https://github.com/nextcloud-releases/server/releases/download/v%d.%d.%d%s/nextcloud-%d.%d.%d%s.zip';
 	return sprintf($downloadUrl,
