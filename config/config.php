@@ -708,6 +708,38 @@ vbaIJ8CiZnKdMBDAdXAVMA==',
 		],
 	],
 	'beta' => [
+		'31' => [
+			'100' => [
+				'latest' => '31.0.7 RC1',
+				'internalVersion' => '31.0.7.0',
+				'downloadUrl' => 'https://github.com/nextcloud-releases/server/releases/download/v31.0.7rc1/nextcloud-31.0.7rc1.zip',
+				'web' => 'https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '8.1',
+				'signature' => 'rGhhtR9cnFfelkRMicKOsVoSoiQgN073jUmCv4WkUaqIi0JAbobMc3jikrIdXfbz
+ZN+yAVX4Yn5Xg+4+gYQoWMRXihbwGC9vVAYAOJ245+6StykqSZj2VtSxHQIyVt3R
+4IDzMS3dTIE6dpFl7Yb0Lo8micMCV4D23Bf0zN/Ljr+53iYWsqN+Tz6WRA0bi28W
+0Ff9UKiHF6IYihBhJrBgbIAj2wC4SFjvO0ZnNmRYOPj3TvR0oI4p6tIuqN4VIijD
+QJ1MQW7/8kdpFFolJB+rOL+7mHvpcbHSrobrIo0hYOdB2LPpI3Q16j+E4h/2/O2k
++rbO19rz32HLesHnxkx7xg==',
+			],
+		],
+		'30.0.12.2' => [
+			'100' => [
+				'latest' => '31.0.7 RC1',
+				'internalVersion' => '31.0.7.0',
+				'downloadUrl' => 'https://github.com/nextcloud-releases/server/releases/download/v31.0.7rc1/nextcloud-31.0.7rc1.zip',
+				'web' => 'https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '8.1',
+				'signature' => 'rGhhtR9cnFfelkRMicKOsVoSoiQgN073jUmCv4WkUaqIi0JAbobMc3jikrIdXfbz
+ZN+yAVX4Yn5Xg+4+gYQoWMRXihbwGC9vVAYAOJ245+6StykqSZj2VtSxHQIyVt3R
+4IDzMS3dTIE6dpFl7Yb0Lo8micMCV4D23Bf0zN/Ljr+53iYWsqN+Tz6WRA0bi28W
+0Ff9UKiHF6IYihBhJrBgbIAj2wC4SFjvO0ZnNmRYOPj3TvR0oI4p6tIuqN4VIijD
+QJ1MQW7/8kdpFFolJB+rOL+7mHvpcbHSrobrIo0hYOdB2LPpI3Q16j+E4h/2/O2k
++rbO19rz32HLesHnxkx7xg==',
+			],
+		],
 	],
 	'daily' => [
 		'31' => [
