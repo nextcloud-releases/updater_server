@@ -5,6 +5,9 @@ if (file_exists(__DIR__.'/enterprise_utils.php')) {
 	require_once __DIR__.'/enterprise_utils.php';
 }
 
+const HOST_NEXTCLOUD = 'Nextcloud';
+const HOST_GITHUB = 'GitHub';
+
 /**
  * Load JSON from configuration file
  */
@@ -59,43 +62,64 @@ function displayAsFile(array $generatedConfig) {
 	echo ';',PHP_EOL;
 }
 
-function buildDownloadUrl(string $releaseName, array $info, array $majorVersion): string {
+function buildDownloadUrl(string $releaseName, array $info, array $majorVersion, string $host = HOST_NEXTCLOUD, string $format = 'zip'): false|string {
 	if (function_exists('buildEnterpriseDownloadUrl')) {
-		$url = buildEnterpriseDownloadUrl($releaseName, $info, $majorVersion);
+		$url = buildEnterpriseDownloadUrl($releaseName, $info, $majorVersion, $host, $format);
 		if ($url !== null) {
 			return $url;
 		}
 	}
 
-	$release = parseVersionName($releaseName);
+	$formats = [
+		'zip' => 'zip',
+		'bz2' => 'tar.bz2',
+	];
 
-	// We started using the github releases since 32.0.0
-	if ((int)$release['major'] >= 32) {
-		return buildGithubDownloadUrl($releaseName, $info, $majorVersion);
+	switch ($host) {
+		case HOST_NEXTCLOUD:
+			return buildNextcloudDownloadUrl($releaseName, $info, $majorVersion, $formats[$format]);
+		case HOST_GITHUB:
+			return buildGithubDownloadUrl($releaseName, $info, $majorVersion, $formats[$format]);
 	}
 
-	$downloadUrl = 'https://download.nextcloud.com/server/%s/nextcloud-%d.%d.%d%s.zip';
+	return null;
+}
+
+function buildNextcloudDownloadUrl(string $releaseName, array $info, array $majorVersion, string $extension): false|string {
+	$release = parseVersionName($releaseName);
+	$downloadUrl = 'https://download.nextcloud.com/server/%s/nextcloud-%d.%d.%d%s.%s';
+
 	return sprintf($downloadUrl,
 		$release['modifier'] === '' ? 'releases' : 'prereleases',
 		$release['major'],
 		$release['minor'],
 		$release['patch'],
 		$release['modifier'] === '' ? '' : str_replace(' ', '', strtolower($release['modifier'])),
+		$extension,
 	);
+
 }
 
-function buildGithubDownloadUrl(string $releaseName, array $info, array $majorVersion): string {
+function buildGithubDownloadUrl(string $releaseName, array $info, array $majorVersion, string $extension): false|string {
 	$release = parseVersionName($releaseName);
-	$downloadUrl = 'https://github.com/nextcloud-releases/server/releases/download/v%d.%d.%d%s/nextcloud-%d.%d.%d%s.zip';
+
+	// No releases on GitHub before 30.0.12 and 31.0.6
+	if (
+		$release['major'] < 30
+		|| ($release['major'] === 30 && $release['minor'] === 0 && $release['patch'] < 12)
+		|| ($release['major'] === 31 && $release['minor'] === 0 && $release['patch'] < 6)
+	) {
+		return false;
+	}
+
+	$downloadUrl = 'https://github.com/nextcloud-releases/server/releases/download/v%1$d.%2$d.%3$d%4$s/nextcloud-%1$d.%2$d.%3$d%4$s.%5$s';
+
 	return sprintf($downloadUrl,
 		$release['major'],
 		$release['minor'],
 		$release['patch'],
 		$release['modifier'] === '' ? '' : str_replace(' ', '', strtolower($release['modifier'])),
-		$release['major'],
-		$release['minor'],
-		$release['patch'],
-		$release['modifier'] === '' ? '' : str_replace(' ', '', strtolower($release['modifier'])),
+		$extension,
 	);
 }
 

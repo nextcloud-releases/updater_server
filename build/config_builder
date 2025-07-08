@@ -44,14 +44,36 @@ foreach ($releases as $releaseName => $info) {
 	[, $major, $minor, $patch] = $matches;
 	$stability = getStabilityFromName($releaseName);
 	$isEol = isEol($releaseName, $majorVersions[$major]);
+	$downloads = [];
+	foreach (['bz2', 'zip'] as $format) {
+		$downloads[$format] = [];
+		foreach ([HOST_GITHUB, HOST_NEXTCLOUD] as $host) {
+			$downloads[$format][] = buildDownloadUrl($releaseName, $info, $majorVersions[$major], $host, $format);
+		}
+		$downloads[$format] = array_values(array_filter($downloads[$format]));
+	}
+	$signatures = [];
+	if (!empty($info['signatures'])) {
+		$signatures = array_map(fn ($arg) => wordwrap($arg, 64, cut_long_words: true), $info['signatures']);
+		$signature = empty($signatures['zip'])
+			? ''
+			: $signatures['zip'];
+	} else {
+		$signature = empty($info['signature'])
+			? ''
+			: wordwrap($info['signature'], 64, cut_long_words: true);
+		$signatures['zip'] = $signature;
+	}
 	$generatedConfig[$stability][$major]['100'] = [
 		'latest' => $releaseName,
 		'internalVersion' => $info['internalVersion'],
 		'downloadUrl' => buildDownloadUrl($releaseName, $info, $majorVersions[$major]),
+		'downloads' => $downloads,
 		'web' => sprintf($docUrl, $major),
 		'eol' => $isEol,
 		'minPHPVersion' => $majorVersions[$major]['minPHP'] ?? '',
-		'signature' => isset($info['signature']) ? wordwrap($info['signature'], 64, cut_long_words: true) : '',
+		'signature' => $signature,
+		'signatures' => $signatures,
 	];
 
 	// Check if we can upgrade from a previous major version

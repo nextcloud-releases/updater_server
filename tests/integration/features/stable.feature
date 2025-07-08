@@ -619,6 +619,8 @@ Feature: Testing the update scenario of stable releases
     Then The response is non-empty
     And Update to version "30.0.12.2" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-30.0.12.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-30.0.12.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-30.0.12.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
@@ -640,6 +642,8 @@ Feature: Testing the update scenario of stable releases
     Then The response is non-empty
     And Update to version "30.0.12.2" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-30.0.12.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-30.0.12.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-30.0.12.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
@@ -661,6 +665,10 @@ Feature: Testing the update scenario of stable releases
     Then The response is non-empty
     And Update to version "31.0.6.2" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-31.0.6.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-31.0.6.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-31.0.6.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.6/nextcloud-31.0.6.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.6/nextcloud-31.0.6.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
@@ -682,6 +690,10 @@ Feature: Testing the update scenario of stable releases
     Then The response is non-empty
     And Update to version "31.0.6.2" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-31.0.6.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-31.0.6.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-31.0.6.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.6/nextcloud-31.0.6.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.6/nextcloud-31.0.6.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
