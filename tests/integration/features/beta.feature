@@ -557,10 +557,10 @@ Feature: Testing the update scenario of beta releases
     Then The response is non-empty
     And Update to version "30.0.13.0" is available
     And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-30.0.13rc1.zip"
-    And Download URLs contains a link to version 30.0.13rc1 on Nextcloud server compressed with zip format
-    And Download URLs contains a link to version 30.0.13rc1 on Nextcloud server compressed with bz2 format
-    And Download URLs contains a link to version 30.0.13rc1 on GitHub server compressed with zip format
-    And Download URLs contains a link to version 30.0.13rc1 on GitHub server compressed with bz2 format
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-30.0.13rc1.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-30.0.13rc1.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v30.0.13rc1/nextcloud-30.0.13rc1.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v30.0.13rc1/nextcloud-30.0.13rc1.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
@@ -582,10 +582,10 @@ Feature: Testing the update scenario of beta releases
     Then The response is non-empty
     And Update to version "30.0.13.0" is available
     And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-30.0.13rc1.zip"
-    And Download URLs contains a link to version 30.0.13rc1 on Nextcloud server compressed with zip format
-    And Download URLs contains a link to version 30.0.13rc1 on Nextcloud server compressed with bz2 format
-    And Download URLs contains a link to version 30.0.13rc1 on GitHub server compressed with zip format
-    And Download URLs contains a link to version 30.0.13rc1 on GitHub server compressed with bz2 format
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-30.0.13rc1.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-30.0.13rc1.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v30.0.13rc1/nextcloud-30.0.13rc1.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v30.0.13rc1/nextcloud-30.0.13rc1.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
@@ -607,10 +607,10 @@ Feature: Testing the update scenario of beta releases
     Then The response is non-empty
     And Update to version "31.0.7.0" is available
     And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-31.0.7rc1.zip"
-    And Download URLs contains a link to version 31.0.7rc1 on Nextcloud server compressed with zip format
-    And Download URLs contains a link to version 31.0.7rc1 on Nextcloud server compressed with bz2 format
-    And Download URLs contains a link to version 31.0.7rc1 on GitHub server compressed with zip format
-    And Download URLs contains a link to version 31.0.7rc1 on GitHub server compressed with bz2 format
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-31.0.7rc1.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-31.0.7rc1.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.7rc1/nextcloud-31.0.7rc1.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.7rc1/nextcloud-31.0.7rc1.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
@@ -632,10 +632,10 @@ Feature: Testing the update scenario of beta releases
     Then The response is non-empty
     And Update to version "31.0.7.0" is available
     And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-31.0.7rc1.zip"
-    And Download URLs contains a link to version 31.0.7rc1 on Nextcloud server compressed with zip format
-    And Download URLs contains a link to version 31.0.7rc1 on Nextcloud server compressed with bz2 format
-    And Download URLs contains a link to version 31.0.7rc1 on GitHub server compressed with zip format
-    And Download URLs contains a link to version 31.0.7rc1 on GitHub server compressed with bz2 format
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-31.0.7rc1.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-31.0.7rc1.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.7rc1/nextcloud-31.0.7rc1.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.7rc1/nextcloud-31.0.7rc1.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
