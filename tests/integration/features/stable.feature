@@ -535,6 +535,7 @@ Feature: Testing the update scenario of stable releases
     Then The response is non-empty
     And Update to version "28.0.14.1" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-28.0.14.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-28.0.14.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/28/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
@@ -556,6 +557,7 @@ Feature: Testing the update scenario of stable releases
     Then The response is non-empty
     And Update to version "28.0.14.1" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-28.0.14.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-28.0.14.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/28/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
@@ -577,6 +579,7 @@ Feature: Testing the update scenario of stable releases
     Then The response is non-empty
     And Update to version "29.0.16.1" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-29.0.16.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-29.0.16.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/29/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is
@@ -598,6 +601,7 @@ Feature: Testing the update scenario of stable releases
     Then The response is non-empty
     And Update to version "29.0.16.1" is available
     And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-29.0.16.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-29.0.16.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/29/admin_manual/maintenance/upgrade.html"
     And EOL is set to "1"
     And The signature is

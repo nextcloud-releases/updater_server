@@ -248,7 +248,7 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 			throw new \Exception('Download array doesn’t contain '.$ext.' downloads.');
 		}
 
-		if (!in_array($url, $downloads[$ext], true)) {
+		if (!in_array($url, (array) $downloads[$ext], true)) {
 			throw new \Exception('Download array doesn’t contain URL '.$url);
 		}
 	}
