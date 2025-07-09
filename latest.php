@@ -77,11 +77,27 @@ if (empty($releases)) {
 	echo json_encode(['error' => 'No version found for your version of PHP']);
 	exit;
 }
-// Show latest
+
 $release = key($releases);
 $info = current($releases);
+
+// Build URLs
+$major = $majorVersions[explode('.', $release)[0]];
+$downloads = [];
+$formats = ['zip', 'bz2'];
+$sources = [HOST_GITHUB, HOST_NEXTCLOUD];
+foreach ($formats as $format) {
+	$downloads[$format] = [];
+	foreach ($sources as $source) {
+		$downloads[$format][] = buildDownloadUrl($release, $info, $major, $source, $format);
+	}
+	$downloads[$format] = array_values(array_filter($downloads[$format]));
+}
+
+// Show latest
 echo json_encode([
 	'version' => $release,
 	'url' => buildDownloadUrl($release, $info, $majorVersions[explode('.', $release)[0]]),
+	'downloads' => $downloads,
 ], JSON_UNESCAPED_SLASHES);
 
