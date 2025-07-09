@@ -26,6 +26,7 @@ class Response {
 	 * @return array
 	 */
 	private function getFuzzySearches() {
+		$searches = [];
 		// The search scheme is defined as following:
 		// 1. Major.Minor.Maintenance.Revision
 		$searches[] = $this->request->getMajorVersion().'.'.$this->request->getMinorVersion().'.'.$this->request->getMaintenanceVersion().'.'.$this->request->getRevisionVersion();
@@ -68,10 +69,12 @@ class Response {
 	 * @param int $installationMtime
 	 * @return string
 	 */
-	private function getStableResponse(array $versions,
-									   $completeCurrentVersion,
-									   $phpVersion,
-									   $installationMtime) {
+	private function getStableResponse(
+		array $versions,
+		$completeCurrentVersion,
+		$phpVersion,
+		$installationMtime
+	) {
 		$newVersion = '';
 		foreach($this->getFuzzySearches() as $search) {
 			if(isset($versions[$search])) {
@@ -106,11 +109,6 @@ class Response {
 			return '';
 		}
 
-		$downloadUrl = 'https://download.nextcloud.com/server/releases/nextcloud-'.$newVersion['latest'].'.zip';
-		if(isset($newVersion['downloadUrl'])) {
-			$downloadUrl = $newVersion['downloadUrl'];
-		}
-
 		$writer = new \XMLWriter();
 		$writer->openMemory();
 		$writer->startDocument('1.0','UTF-8');
@@ -118,7 +116,14 @@ class Response {
 		$writer->startElement('nextcloud');
 		$writer->writeElement('version', $newVersion['internalVersion']);
 		$writer->writeElement('versionstring', 'Nextcloud '.$newVersion['latest']);
-		$writer->writeElement('url', $downloadUrl);
+		$writer->writeElement('url', $newVersion['downloadUrl']);
+		$writer->startElement('downloads');
+		foreach ($newVersion['downloads'] as $format => $urls) {
+			foreach ($urls as $url) {
+				$writer->writeElement($format, $url);
+			}
+		}
+		$writer->endElement();
 		$writer->writeElement('web', $newVersion['web']);
 		$this->addChangelogURLIfApplicable($writer, $newVersion['latest']);
 		$writer->writeElement('autoupdater', isset($newVersion['autoupdater']) ? (int)$newVersion['autoupdater'] : 1);
@@ -150,6 +155,9 @@ class Response {
 					$writer->writeElement('version', '100.0.0.0');
 					$writer->writeElement('versionstring', 'Nextcloud daily');
 					$writer->writeElement('url', $newVersion['downloadUrl']);
+					$writer->startElement('downloads');
+					$writer->writeElement('zip', $newVersion['downloadUrl']);
+					$writer->endElement();
 					$writer->writeElement('web', $newVersion['web']);
 					$writer->writeElement('autoupdater', isset($newVersion['autoupdater']) ? (int)$newVersion['autoupdater'] : 1);
 					$writer->writeElement('eol', (int) $newVersion['eol']);

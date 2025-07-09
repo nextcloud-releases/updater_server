@@ -194,7 +194,7 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 		$xml = simplexml_load_string($this->result);
 		$json = json_encode($xml);
 		$this->resultArray = json_decode($json, TRUE);
-		if(count($this->resultArray) < 6 || count($this->resultArray) > 8) {
+		if(count($this->resultArray) < 6 || count($this->resultArray) > 9) {
 			throw new \Exception('Response contains not between 6 or 8 array elements.');
 		}
 	}
@@ -232,6 +232,24 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 		}
 		if($url !== $arg1) {
 			throw new \Exception("Expected url $arg1 does not equals $url");
+		}
+	}
+
+	/**
+	 * @Then Download URLs contain :url
+	 */
+	public function downloadUrlsContainsUrl(string $url): void {
+		$downloads = $this->resultArray['downloads'];
+		if(empty($downloads)) {
+			throw new \Exception('Download array is empty');
+		}
+		$ext = pathinfo($url, PATHINFO_EXTENSION);
+		if (empty($downloads[$ext])) {
+			throw new \Exception('Download array doesn’t contain '.$ext.' downloads.');
+		}
+
+		if (!in_array($url, $downloads[$ext], true)) {
+			throw new \Exception('Download array doesn’t contain URL '.$url);
 		}
 	}
 
