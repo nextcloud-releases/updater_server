@@ -609,22 +609,22 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "31.0.7.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-31.0.7rc1.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-31.0.7rc1.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-31.0.7rc1.tar.bz2"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.7rc1/nextcloud-31.0.7rc1.zip"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.7rc1/nextcloud-31.0.7rc1.tar.bz2"
+    And Update to version "31.0.7.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-31.0.7.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-31.0.7.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-31.0.7.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.7/nextcloud-31.0.7.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.7/nextcloud-31.0.7.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    rGhhtR9cnFfelkRMicKOsVoSoiQgN073jUmCv4WkUaqIi0JAbobMc3jikrIdXfbz
-    ZN+yAVX4Yn5Xg+4+gYQoWMRXihbwGC9vVAYAOJ245+6StykqSZj2VtSxHQIyVt3R
-    4IDzMS3dTIE6dpFl7Yb0Lo8micMCV4D23Bf0zN/Ljr+53iYWsqN+Tz6WRA0bi28W
-    0Ff9UKiHF6IYihBhJrBgbIAj2wC4SFjvO0ZnNmRYOPj3TvR0oI4p6tIuqN4VIijD
-    QJ1MQW7/8kdpFFolJB+rOL+7mHvpcbHSrobrIo0hYOdB2LPpI3Q16j+E4h/2/O2k
-    +rbO19rz32HLesHnxkx7xg==
+    G1fL3cfRZNJt9yidE5cw5q/H+QSgyBZlo7KcUC0oZv0KB38P13h81myb9Ynf6r+f
+    dojgY+VJr7ioKzjohjG0BBzZNGl08mdECywI0DrVEwwYOg5x4BYvUIyGpAuQgijW
+    SoNnqZDlStK5tE70PKPR6s5KbA+aKyFmuchQrQCbWnhyAfyiYEZBATt4Rkdk3neP
+    t3sSM5Io+IwcD+aURjrCFd+j2JBvBKZi0dDwsQ81kUAF8CibVtQRRFJPSDeBZi2Q
+    +VMklACmI5DrMYwR+JA9q4l8XztwGanC97OT0glU/esvMccJ6qgSb0sFziDsiK28
+    h4+1uFMEVz5dK0TY59GYLg==
     """
 
   Scenario: Updating Nextcloud 31 on the beta channel
@@ -634,20 +634,20 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "31.0.7.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-31.0.7rc1.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-31.0.7rc1.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-31.0.7rc1.tar.bz2"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.7rc1/nextcloud-31.0.7rc1.zip"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.7rc1/nextcloud-31.0.7rc1.tar.bz2"
+    And Update to version "31.0.7.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-31.0.7.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-31.0.7.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-31.0.7.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.7/nextcloud-31.0.7.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.7/nextcloud-31.0.7.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    rGhhtR9cnFfelkRMicKOsVoSoiQgN073jUmCv4WkUaqIi0JAbobMc3jikrIdXfbz
-    ZN+yAVX4Yn5Xg+4+gYQoWMRXihbwGC9vVAYAOJ245+6StykqSZj2VtSxHQIyVt3R
-    4IDzMS3dTIE6dpFl7Yb0Lo8micMCV4D23Bf0zN/Ljr+53iYWsqN+Tz6WRA0bi28W
-    0Ff9UKiHF6IYihBhJrBgbIAj2wC4SFjvO0ZnNmRYOPj3TvR0oI4p6tIuqN4VIijD
-    QJ1MQW7/8kdpFFolJB+rOL+7mHvpcbHSrobrIo0hYOdB2LPpI3Q16j+E4h/2/O2k
-    +rbO19rz32HLesHnxkx7xg==
+    G1fL3cfRZNJt9yidE5cw5q/H+QSgyBZlo7KcUC0oZv0KB38P13h81myb9Ynf6r+f
+    dojgY+VJr7ioKzjohjG0BBzZNGl08mdECywI0DrVEwwYOg5x4BYvUIyGpAuQgijW
+    SoNnqZDlStK5tE70PKPR6s5KbA+aKyFmuchQrQCbWnhyAfyiYEZBATt4Rkdk3neP
+    t3sSM5Io+IwcD+aURjrCFd+j2JBvBKZi0dDwsQ81kUAF8CibVtQRRFJPSDeBZi2Q
+    +VMklACmI5DrMYwR+JA9q4l8XztwGanC97OT0glU/esvMccJ6qgSb0sFziDsiK28
+    h4+1uFMEVz5dK0TY59GYLg==
     """
