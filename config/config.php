@@ -1445,6 +1445,86 @@ vbaIJ8CiZnKdMBDAdXAVMA==',
 		],
 	],
 	'beta' => [
+		'31' => [
+			'100' => [
+				'latest' => '31.0.8 RC1',
+				'internalVersion' => '31.0.8.0',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-31.0.8rc1.zip',
+				'downloads' => [
+					'bz2' => [
+						'0' => 'https://github.com/nextcloud-releases/server/releases/download/v31.0.8rc1/nextcloud-31.0.8rc1.tar.bz2',
+						'1' => 'https://download.nextcloud.com/server/prereleases/nextcloud-31.0.8rc1.tar.bz2',
+					],
+					'zip' => [
+						'0' => 'https://github.com/nextcloud-releases/server/releases/download/v31.0.8rc1/nextcloud-31.0.8rc1.zip',
+						'1' => 'https://download.nextcloud.com/server/prereleases/nextcloud-31.0.8rc1.zip',
+					],
+				],
+				'web' => 'https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '8.1',
+				'signature' => 'J8kYVy3Bp6KmHLYXNznao7jSDorcqz+qO2LoiN/HL2I25whaEjk6vTRzXY5IQ2Km
+T9Jl1HbLR66XObYpZpQM11TeVQqkcLACOWvucJqkFmlW818KhL6tKby1WWC+OvFK
+kYBXkAjuII6ov1wzT64v+PYQe+Xk9nbi6gw93Afl4Afqf+V+2nZDMZUbbCXWc3LW
+cIS91alVVVrxKdNmypRJigjoUzWadKQugGDJzNGZXLIX1jFboojoGRkyqZK2SS7F
+Pi0wflXsJZbzjibVShhOuq4S2tpqNRej/q6q71AnfzALE71R1G3dMdti64oBeamr
+fyJP+1pxZMy7GYliuAlGUQ==',
+				'signatures' => [
+					'bz2' => 's0aWNYSJL0tf3GyOfcZGgcKs66i+XNYMejnJYCPD26X4YYwwiwP/XFuLgn6q8FU9
+0sadXh3Az7rVyBoMq2vAeSV44khb/dEcYXMHtl+eyajdGhB11fkpw/IgNZq3JqgA
+2npbEoJF0oA05Xlp+hQaZ0Y1+jMgZ+JYSTVm+J9MKTEyvgvKUUtrLKQfcrFsjPes
+hnjtDCNILd7GQvfjQFTRjvvqFr1r1ybfxoGIocPdYFHDS+92pQZ33Z3vfhkDC2Dw
+qYaweoXBXyiBWN8KEekFg17PHJQduGth58q/KVG04GcXBUMFdIZkH6zxIBzHF7ZF
+w1q5CeV9OCjSsHcN+vgAMQ==',
+					'zip' => 'J8kYVy3Bp6KmHLYXNznao7jSDorcqz+qO2LoiN/HL2I25whaEjk6vTRzXY5IQ2Km
+T9Jl1HbLR66XObYpZpQM11TeVQqkcLACOWvucJqkFmlW818KhL6tKby1WWC+OvFK
+kYBXkAjuII6ov1wzT64v+PYQe+Xk9nbi6gw93Afl4Afqf+V+2nZDMZUbbCXWc3LW
+cIS91alVVVrxKdNmypRJigjoUzWadKQugGDJzNGZXLIX1jFboojoGRkyqZK2SS7F
+Pi0wflXsJZbzjibVShhOuq4S2tpqNRej/q6q71AnfzALE71R1G3dMdti64oBeamr
+fyJP+1pxZMy7GYliuAlGUQ==',
+				],
+			],
+		],
+		'30.0.13.1' => [
+			'100' => [
+				'latest' => '31.0.8 RC1',
+				'internalVersion' => '31.0.8.0',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-31.0.8rc1.zip',
+				'downloads' => [
+					'bz2' => [
+						'0' => 'https://github.com/nextcloud-releases/server/releases/download/v31.0.8rc1/nextcloud-31.0.8rc1.tar.bz2',
+						'1' => 'https://download.nextcloud.com/server/prereleases/nextcloud-31.0.8rc1.tar.bz2',
+					],
+					'zip' => [
+						'0' => 'https://github.com/nextcloud-releases/server/releases/download/v31.0.8rc1/nextcloud-31.0.8rc1.zip',
+						'1' => 'https://download.nextcloud.com/server/prereleases/nextcloud-31.0.8rc1.zip',
+					],
+				],
+				'web' => 'https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html',
+				'eol' => false,
+				'minPHPVersion' => '8.1',
+				'signature' => 'J8kYVy3Bp6KmHLYXNznao7jSDorcqz+qO2LoiN/HL2I25whaEjk6vTRzXY5IQ2Km
+T9Jl1HbLR66XObYpZpQM11TeVQqkcLACOWvucJqkFmlW818KhL6tKby1WWC+OvFK
+kYBXkAjuII6ov1wzT64v+PYQe+Xk9nbi6gw93Afl4Afqf+V+2nZDMZUbbCXWc3LW
+cIS91alVVVrxKdNmypRJigjoUzWadKQugGDJzNGZXLIX1jFboojoGRkyqZK2SS7F
+Pi0wflXsJZbzjibVShhOuq4S2tpqNRej/q6q71AnfzALE71R1G3dMdti64oBeamr
+fyJP+1pxZMy7GYliuAlGUQ==',
+				'signatures' => [
+					'bz2' => 's0aWNYSJL0tf3GyOfcZGgcKs66i+XNYMejnJYCPD26X4YYwwiwP/XFuLgn6q8FU9
+0sadXh3Az7rVyBoMq2vAeSV44khb/dEcYXMHtl+eyajdGhB11fkpw/IgNZq3JqgA
+2npbEoJF0oA05Xlp+hQaZ0Y1+jMgZ+JYSTVm+J9MKTEyvgvKUUtrLKQfcrFsjPes
+hnjtDCNILd7GQvfjQFTRjvvqFr1r1ybfxoGIocPdYFHDS+92pQZ33Z3vfhkDC2Dw
+qYaweoXBXyiBWN8KEekFg17PHJQduGth58q/KVG04GcXBUMFdIZkH6zxIBzHF7ZF
+w1q5CeV9OCjSsHcN+vgAMQ==',
+					'zip' => 'J8kYVy3Bp6KmHLYXNznao7jSDorcqz+qO2LoiN/HL2I25whaEjk6vTRzXY5IQ2Km
+T9Jl1HbLR66XObYpZpQM11TeVQqkcLACOWvucJqkFmlW818KhL6tKby1WWC+OvFK
+kYBXkAjuII6ov1wzT64v+PYQe+Xk9nbi6gw93Afl4Afqf+V+2nZDMZUbbCXWc3LW
+cIS91alVVVrxKdNmypRJigjoUzWadKQugGDJzNGZXLIX1jFboojoGRkyqZK2SS7F
+Pi0wflXsJZbzjibVShhOuq4S2tpqNRej/q6q71AnfzALE71R1G3dMdti64oBeamr
+fyJP+1pxZMy7GYliuAlGUQ==',
+				],
+			],
+		],
 	],
 	'daily' => [
 		'31' => [
