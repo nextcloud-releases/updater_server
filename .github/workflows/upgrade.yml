@@ -28,6 +28,7 @@ jobs:
           filters: |
             config:
               - 'config/config.php'
+              - '.github/workflows/upgrade.yml'
 
   configs:
     if: needs.changes.outputs.config == 'true'
@@ -76,18 +77,25 @@ jobs:
 
       - name: Fetch release
         run: |
-          # Check if we have a full version like xx.x.x
-          if ${{ contains(matrix.config.base, '.') }};
-            then wget --quiet https://download.nextcloud.com/server/releases/nextcloud-${{ matrix.config.base }}.zip -O nextcloud-base.zip \
-              || wget --quiet https://download.nextcloud.com/server/prereleases/nextcloud-${{ matrix.config.base }}.zip -O nextcloud-base.zip \
-              || wget --quiet "https://download.nextcloud.com/server/prereleases/nextcloud-${{ matrix.config.base }}rc1.zip" -O nextcloud-base.zip \
-              || wget --quiet "https://download.nextcloud.com/server/prereleases/nextcloud-${{ matrix.config.base }}rc2.zip" -O nextcloud-base.zip \
-              || wget --quiet "https://download.nextcloud.com/server/prereleases/nextcloud-${{ matrix.config.base }}rc3.zip" -O nextcloud-base.zip \
-              || wget --quiet "https://download.nextcloud.com/server/prereleases/nextcloud-${{ matrix.config.base }}rc4.zip" -O nextcloud-base.zip \
-              || wget --quiet "https://download.nextcloud.com/server/prereleases/nextcloud-${{ matrix.config.base }}rc5.zip" -O nextcloud-base.zip \
-              || wget --quiet https://download.nextcloud.com/server/releases/latest-${{ matrix.config.major }}.zip -O nextcloud-base.zip;
-            else wget --quiet https://download.nextcloud.com/server/releases/latest-${{ matrix.config.major }}.zip -O nextcloud-base.zip;
+          BASE="${{ matrix.config.base }}"
+          
+          # Normalize BASE to full MAJOR.MINOR.PATCH format
+          if [[ "$BASE" =~ ^[0-9]+$ ]]; then
+            BASE="${BASE}.0.0"
+          elif [[ "$BASE" =~ ^[0-9]+\.[0-9]+$ ]]; then
+            BASE="${BASE}.0"
           fi
+
+          echo "Normalized base version: $BASE"
+
+          # Try fetching official releases first, then prereleases (rc1–rc5), then fallback to latest-major
+          wget --quiet "https://download.nextcloud.com/server/releases/nextcloud-${BASE}.zip" -O nextcloud-base.zip \
+            || wget --quiet "https://download.nextcloud.com/server/prereleases/nextcloud-${BASE}.zip" -O nextcloud-base.zip \
+            || for rc in {1..5}; do
+                wget --quiet "https://download.nextcloud.com/server/prereleases/nextcloud-${BASE}rc${rc}.zip" -O nextcloud-base.zip && break
+              done \
+            || wget --quiet "https://download.nextcloud.com/server/releases/latest-${BASE%%.*}.zip" -O nextcloud-base.zip
+
           unzip -q nextcloud-base.zip
 
       - name: Setup nextcloud
