@@ -609,22 +609,22 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "31.0.8.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-31.0.8rc1.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-31.0.8rc1.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-31.0.8rc1.tar.bz2"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.8rc1/nextcloud-31.0.8rc1.zip"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.8rc1/nextcloud-31.0.8rc1.tar.bz2"
+    And Update to version "31.0.8.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-31.0.8.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-31.0.8.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-31.0.8.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.8/nextcloud-31.0.8.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.8/nextcloud-31.0.8.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    Jv6jfmA9KoR1AZ1QQd8wxWRtcVYLek5zSyFEMbGBMekNFk5PRaIQMR9wyPNHWR/A
-    rg4HjchJax1KF6nxtSzf8kH/GbVBr7pat3B46lbUU3rQtAAkGf96DmmUMyOs8sx8
-    Jayw83j63zVNhQ7KecCphgUBouiYDFpsZTVHjj3UuwDStlIRank6K2DnhpPAT36r
-    C0kLsHrRuDb1MjE2FiIoKlSasdC+sMDUsbbJ3FpoC3PT/ruWySIvEOQr7sl9XqRW
-    Y+Fcl8tx9tDTz2P16A/m8vFD7vmfQoeVxwWPEjAjqOvsPtPlTtAOluj17qU+CSRg
-    ZixBksvs12iI57CGdbGgAA==
+    c9X3/xMJcmFyPQHhNPoPsw6yUETYyFIhYdvkfZ/Z51wR8VrkWOXqyiK2sLhZOjB/
+    G53cNx2VFsiKOkvuutZoGtkd7JAj/8emEzWzlzVr7hHrmdUSxWzupBGpSFnYFGsn
+    35N52ZEmfyXtRcuerzFVMRlX5R/+AVER1Jc964CHPrH2kBp4JI6LKld2t6fZ9TAS
+    hguf/AHq9rYn935wO9ZIHQgUtWCOYBZgh8YzpoMeEQXC/2A9UVE9xvY5DNEB8XIi
+    wRIWnWUQndnvuSNpNLME49r/5OdflCOcDl2eyklYb7b1rCVFXZOBaFXqkZkTxn7a
+    gANRmv8MOvWDeSvk4Y2TqQ==
     """
 
   Scenario: Updating Nextcloud 31 on the beta channel
@@ -634,20 +634,20 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "31.0.8.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-31.0.8rc1.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-31.0.8rc1.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-31.0.8rc1.tar.bz2"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.8rc1/nextcloud-31.0.8rc1.zip"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.8rc1/nextcloud-31.0.8rc1.tar.bz2"
+    And Update to version "31.0.8.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-31.0.8.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-31.0.8.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-31.0.8.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.8/nextcloud-31.0.8.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.8/nextcloud-31.0.8.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    Jv6jfmA9KoR1AZ1QQd8wxWRtcVYLek5zSyFEMbGBMekNFk5PRaIQMR9wyPNHWR/A
-    rg4HjchJax1KF6nxtSzf8kH/GbVBr7pat3B46lbUU3rQtAAkGf96DmmUMyOs8sx8
-    Jayw83j63zVNhQ7KecCphgUBouiYDFpsZTVHjj3UuwDStlIRank6K2DnhpPAT36r
-    C0kLsHrRuDb1MjE2FiIoKlSasdC+sMDUsbbJ3FpoC3PT/ruWySIvEOQr7sl9XqRW
-    Y+Fcl8tx9tDTz2P16A/m8vFD7vmfQoeVxwWPEjAjqOvsPtPlTtAOluj17qU+CSRg
-    ZixBksvs12iI57CGdbGgAA==
+    c9X3/xMJcmFyPQHhNPoPsw6yUETYyFIhYdvkfZ/Z51wR8VrkWOXqyiK2sLhZOjB/
+    G53cNx2VFsiKOkvuutZoGtkd7JAj/8emEzWzlzVr7hHrmdUSxWzupBGpSFnYFGsn
+    35N52ZEmfyXtRcuerzFVMRlX5R/+AVER1Jc964CHPrH2kBp4JI6LKld2t6fZ9TAS
+    hguf/AHq9rYn935wO9ZIHQgUtWCOYBZgh8YzpoMeEQXC/2A9UVE9xvY5DNEB8XIi
+    wRIWnWUQndnvuSNpNLME49r/5OdflCOcDl2eyklYb7b1rCVFXZOBaFXqkZkTxn7a
+    gANRmv8MOvWDeSvk4Y2TqQ==
     """
