@@ -140,9 +140,13 @@ jobs:
           cd nextcloud
           VERSION=$(php occ --output=json status | jq -r .version)
           echo "Detected version: $VERSION"
-          echo "Expected prefix: ${{ matrix.config.latest }}"
-          if [[ "$VERSION" != ${{ matrix.config.latest }}* ]]; then
-            echo "❌ Version check failed: $VERSION does not start with ${{ matrix.config.latest }}"
+          # Get the prefix from the matrix config and only take the part before the first space
+          # This is for enterprise compatibility
+          PREFIX="${{ matrix.config.latest }}"
+          PREFIX="${PREFIX%% *}"  # remove everything after the first space
+          echo "Expected prefix: $PREFIX"
+          if [[ "$VERSION" != "$PREFIX"* ]]; then
+            echo "❌ Version check failed: $VERSION does not start with $PREFIX"
             exit 1
           fi
           echo "✅ Version check passed"
