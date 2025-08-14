@@ -138,7 +138,7 @@ jobs:
       - name: Verify final Nextcloud version
         run: |
           cd nextcloud
-          VERSION=$(php occ --output=json status | jq .version)
+          VERSION=$(php occ --output=json status | jq -r .version)
           echo "Detected version: $VERSION"
           echo "Expected prefix: ${{ matrix.config.latest }}"
           if [[ "$VERSION" != ${{ matrix.config.latest }}* ]]; then
