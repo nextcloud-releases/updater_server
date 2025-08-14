@@ -135,6 +135,18 @@ jobs:
           cd nextcloud
           php occ integrity:check-core
 
+      - name: Verify final Nextcloud version
+        run: |
+          cd nextcloud
+          $VERSION=$(php occ --output=json status | jq .version)
+          echo "Detected version: $VERSION"
+          echo "Expected prefix: ${{ matrix.config.latest }}"
+          if [[ "$VERSION" != ${{ matrix.config.latest }}* ]]; then
+            echo "❌ Version check failed: $VERSION does not start with ${{ matrix.config.latest }}"
+            exit 1
+          fi
+          echo "✅ Version check passed"
+
       - name: Cat logs on failure
         if: failure()
         run: |
