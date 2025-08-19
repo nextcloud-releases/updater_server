@@ -651,3 +651,28 @@ Feature: Testing the update scenario of beta releases
     wRIWnWUQndnvuSNpNLME49r/5OdflCOcDl2eyklYb7b1rCVFXZOBaFXqkZkTxn7a
     gANRmv8MOvWDeSvk4Y2TqQ==
     """
+
+  Scenario: Updating Nextcloud latest 31 to 32 on the beta channel
+    Given There is a release with channel "beta"
+    And The received version is "31.0.8.1"
+    And The received PHP version is "8.1.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "32.0.0.4" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.0beta1.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.0beta1.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.0beta1.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.0beta1/nextcloud-32.0.0beta1.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.0beta1/nextcloud-32.0.0beta1.tar.bz2"
+    And URL to documentation is "https://docs.nextcloud.com/server/32/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    g6S5eaPRwNPBVUPFS1fONZV8PL8aGB5fEBhtLq7aWgRnV4DlLssj+KofAzA3SM2K
+    z41H1WoOGBgu/q1lgoC6kQK/QojKk36jr2l1zGDVN6TF2QD3bBdLzZpmW+HcH/TC
+    oZgigkoxga+xc/TgIzxKhFVoK6LOjFMOiNGRly02v3TiLxMdLioZzRbIute/jiUc
+    /YrNN8p/SV6cZxu98DqYgwBHnhi1PfeYuhpWIqeQEo7U3yymEVlbt991QYFlG40H
+    9G4jmDkjd//9OmN7Q8yG5vAwhjNfpukIWQgDC18XvUizMmX/+RSB+sj6DiarR9G/
+    OUvqS5VBwknbiR8AbsZF+Q==
+    """
