@@ -127,7 +127,17 @@ jobs:
         if: matrix.mode == 'updater'
         run: |
           cd nextcloud
-          curl --silent --show-error --location https://raw.githubusercontent.com/nextcloud/updater/master/updater.phar > updater/updater.phar
+          BASE="${{ matrix.config.base }}"
+          MAJOR="${BASE%%.*}"
+
+          URL="https://raw.githubusercontent.com/nextcloud/updater/stable$MAJOR/updater.phar"
+          FALLBACK="https://raw.githubusercontent.com/nextcloud/updater/master/updater.phar"
+
+          echo "Downloading updater from $URL ..."
+          if ! curl --fail --silent --show-error --location "$URL" -o updater/updater.phar; then
+            echo "Stable$MAJOR not found, falling back to master ..."
+            curl --fail --silent --show-error --location "$FALLBACK" -o updater/updater.phar
+          fi
           php updater/updater.phar --url ${{ matrix.config.downloadUrl }} --no-backup --no-interaction -vvv
 
       - name: Integrity check
