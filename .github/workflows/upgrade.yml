@@ -18,7 +18,7 @@ jobs:
       config: ${{ steps.changes.outputs.config }}
 
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
 
       # If the config has not changed, we skip
       # It allows us to still have a summary result
@@ -40,7 +40,7 @@ jobs:
 
     name: Initializing ${{matrix.channel}} configs
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
 
       - name: Getting config
         id: get-config
@@ -69,7 +69,7 @@ jobs:
     name: Upgrade from ${{ matrix.config.base }} to ${{ matrix.config.latest }} (${{ matrix.config.channel }} - ${{ matrix.mode }})
     steps:
       - name: Set up php ${{ matrix.config.minPHPVersion }}
-        uses: shivammathur/setup-php@ccf2c627fe61b1b4d924adfcbd19d661a18133a0 # v2.35.2
+        uses: shivammathur/setup-php@20529878ed81ef8e78ddf08b480401e6101a850f # v2.35.3
         with:
           php-version: ${{ matrix.config.minPHPVersion }}
           extensions: ctype,curl,dom,fileinfo,gd,iconv,intl,json,mbstring,openssl,pdo_sqlite,posix,sqlite,xml,zip
@@ -127,7 +127,17 @@ jobs:
         if: matrix.mode == 'updater'
         run: |
           cd nextcloud
-          curl --silent --show-error --location https://raw.githubusercontent.com/nextcloud/updater/master/updater.phar > updater/updater.phar
+          BASE="${{ matrix.config.base }}"
+          MAJOR="${BASE%%.*}"
+
+          URL="https://raw.githubusercontent.com/nextcloud/updater/stable$MAJOR/updater.phar"
+          FALLBACK="https://raw.githubusercontent.com/nextcloud/updater/master/updater.phar"
+
+          echo "Downloading updater from $URL ..."
+          if ! curl --fail --silent --show-error --location "$URL" -o updater/updater.phar; then
+            echo "Stable$MAJOR not found, falling back to master ..."
+            curl --fail --silent --show-error --location "$FALLBACK" -o updater/updater.phar
+          fi
           php updater/updater.phar --url ${{ matrix.config.downloadUrl }} --no-backup --no-interaction -vvv
 
       - name: Integrity check
