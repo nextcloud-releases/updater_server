@@ -11,8 +11,8 @@ Feature: Testing the latest endpoint
     Given I want to know the latest beta release
     When I send a request latest.php
     Then The JSON response is non-empty
-    And Version "32.0.0 beta 2" is the latest release
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.0beta2.zip"
+    And Version "32.0.0 beta 3" is the latest release
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.0beta3.zip"
 
   Scenario: Get latest stable version with PHP 8.0
     Given I want to know the latest stable release
