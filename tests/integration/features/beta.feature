@@ -659,20 +659,20 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "32.0.0.5" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.0beta2.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.0beta2.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.0beta2.tar.bz2"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.0beta2/nextcloud-32.0.0beta2.zip"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.0beta2/nextcloud-32.0.0beta2.tar.bz2"
+    And Update to version "32.0.0.6" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.0beta3.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.0beta3.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.0beta3.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.0beta3/nextcloud-32.0.0beta3.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.0beta3/nextcloud-32.0.0beta3.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/32/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    zY+9b60lzKuHr6iwog2wiWmd0mQWYSSlHcZD1OPSKk+suNhLszQax9iM+YGjzsbp
-    qNFYm91PHeSOjuuWKOd5wljCHKZn8lYDlSH3rMOFOmBA66JJC+pHyjc4VRznEih5
-    CGXilLIGtf5pmerDz3sjr9aNURDThVxffpwgjHKfH1wSvaRCN+MdATTGbWXEpWyd
-    p8kxAmmWuUtNtXi7JO7OxACLAFisHrJyYzYb15HM92C59+4v2xr4/sYc8qxMP+k2
-    6zSdLK5iBwwY4zKueLNa8eV9JCe3wEFw4qeQHttTrrUY8lbDBzxZwVxdfbjvH/Xy
-    l8n4K7tZbOI9VhnfA0DDAA==
+    CgAshgyKH7XzRmWefgfInlARAYCjYjQqLvwjBUz0q6XwoRBLcaGo+5cJfuU5xZyZ
+    pYYYNxX8TYsbZLLtzP7Yj9tbcyaMC8FnpWByJbfbXcNpYEnjll/g1GABVGuGKtfj
+    N9daeY0SVp7TfTuCbRGI3fsSL3L9KAhkRG789Haq4SiBt9xA7qoPFqCIZF/JfUWD
+    ru+4+wVOes7beu+fRyKL3KEVuyX2cqY7sUl44wieh5e6bHlgzSUZkOz5ETeFIoAG
+    leGh6HzAQhZnbvSmw6sofOvB4mttjy3/S2AfFSHtrdwGsW+6k5A3VX0zqIxAcMHW
+    HBwPu4O2p4hFi2ES7iMoWQ==
     """

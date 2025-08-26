@@ -94,7 +94,10 @@ jobs:
             || for rc in {1..5}; do
                 wget --quiet "https://download.nextcloud.com/server/prereleases/nextcloud-${BASE}rc${rc}.zip" -O nextcloud-base.zip && break
               done \
-            || wget --quiet "https://download.nextcloud.com/server/releases/latest-${BASE%%.*}.zip" -O nextcloud-base.zip
+            || wget --quiet "https://download.nextcloud.com/server/releases/latest-${BASE%%.*}.zip" -O nextcloud-base.zip \
+            || for beta in {1..6}; do
+                wget --quiet "https://download.nextcloud.com/server/prereleases/nextcloud-${BASE}beta${beta}.zip" -O nextcloud-base.zip && break
+              done
 
           unzip -q nextcloud-base.zip
 
