@@ -100,8 +100,13 @@ jobs:
               done
 
           unzip -q nextcloud-base.zip
+          VERSION=$(php nextcloud/occ --output=json status | jq -r .version)
+          VERSION_STRING=$(php nextcloud/occ --output=json status | jq -r .versionstring)
+          echo "Fetched version: $VERSION"
+          echo "BASE_VERSION=$VERSION" >> $GITHUB_ENV
+          echo "BASE_VERSION_STRING=$VERSION_STRING" >> $GITHUB_ENV
 
-      - name: Setup nextcloud
+      - name: Setup nextcloud ${{ env.BASE_VERSION_STRING }} (${{ env.BASE_VERSION }})
         run: |
           cd nextcloud
           mkdir data
@@ -113,6 +118,11 @@ jobs:
           mv nextcloud nextcloud.old
           wget --quiet ${{ matrix.config.downloadUrl }} -O nextcloud-update.zip
           unzip -q nextcloud-update.zip
+          VERSION=$(php nextcloud/occ --output=json status | jq -r .version)
+          VERSION_STRING=$(php nextcloud/occ --output=json status | jq -r .versionstring)
+          echo "Fetched version: $VERSION"
+          echo "TARGET_VERSION=$VERSION" >> $GITHUB_ENV
+          echo "TARGET_VERSION_STRING=$VERSION_STRING" >> $GITHUB_ENV
 
       - name: Copy necessary files
         if: matrix.mode == 'manual'
@@ -120,7 +130,7 @@ jobs:
           mv nextcloud.old/config/config.php nextcloud/config/config.php
           mv nextcloud.old/data nextcloud/data
 
-      - name: Perform upgrade
+      - name: Perform upgrade to ${{ env.TARGET_VERSION_STRING }} (${{ env.TARGET_VERSION }})
         if: matrix.mode == 'manual'
         run: |
           cd nextcloud
@@ -152,6 +162,7 @@ jobs:
         run: |
           cd nextcloud
           VERSION=$(php occ --output=json status | jq -r .version)
+          VERSION_STRING=$(php occ --output=json status | jq -r .versionstring)
           echo "Detected version: $VERSION"
           # Get the prefix from the matrix config and only take the part before the first space
           # This is for enterprise compatibility
@@ -163,6 +174,14 @@ jobs:
             exit 1
           fi
           echo "✅ Version check passed"
+
+          echo "Fetched version: $VERSION"
+          echo "TARGET_VERSION=$VERSION" >> $GITHUB_ENV
+          echo "TARGET_VERSION_STRING=$VERSION_STRING" >> $GITHUB_ENV
+
+      - name: Successfully upgraded from ${{ env.BASE_VERSION_STRING }} to ${{ env.TARGET_VERSION_STRING }}
+        if: success()
+        run: echo "🎉 Upgrade successful!"
 
       - name: Cat logs on failure
         if: failure()
