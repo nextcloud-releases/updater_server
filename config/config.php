@@ -97,7 +97,7 @@ gANRmv8MOvWDeSvk4Y2TqQ==',
 					],
 				],
 				'web' => 'https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html',
-				'eol' => true,
+				'eol' => false,
 				'minPHPVersion' => '8.1',
 				'signature' => 'OaQf8oWiMvr1bHJcS0uBCWhT4Nbkh6JJAiAbKV/IQvv0t9qe+w5xUoU7COFhkN+/
 /7jbarlyo67WF74CcUGu8eesXb7+S0KEsocO82pYZqP+dDCzZpBk2pHge731m6QG
@@ -137,7 +137,7 @@ CIAbxy/ImqQ74TOKU2tZqg==',
 					],
 				],
 				'web' => 'https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html',
-				'eol' => true,
+				'eol' => false,
 				'minPHPVersion' => '8.1',
 				'signature' => 'OaQf8oWiMvr1bHJcS0uBCWhT4Nbkh6JJAiAbKV/IQvv0t9qe+w5xUoU7COFhkN+/
 /7jbarlyo67WF74CcUGu8eesXb7+S0KEsocO82pYZqP+dDCzZpBk2pHge731m6QG
@@ -1542,7 +1542,7 @@ WVxwkAUlKxpBnyP7nX3dwg==',
 		'30' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable30.zip',
 			'web' => 'https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html',
-			'eol' => true,
+			'eol' => false,
 			'minPHPVersion' => '8.1',
 		],
 		'29' => [
