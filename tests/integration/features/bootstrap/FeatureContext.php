@@ -194,8 +194,9 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 		$xml = simplexml_load_string($this->result);
 		$json = json_encode($xml);
 		$this->resultArray = json_decode($json, TRUE);
-		if(count($this->resultArray) < 6 || count($this->resultArray) > 9) {
-			throw new \Exception('Response contains not between 6 or 8 array elements.');
+		$nbResults = count($this->resultArray);
+		if($nbResults < 8 || $nbResults > 10) {
+			throw new \Exception('Response doesn’t contain between 8 and 10 elements ('.$nbResults.' found).');
 		}
 	}
 	/**
