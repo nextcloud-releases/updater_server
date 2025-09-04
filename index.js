@@ -2,9 +2,8 @@ const core = require('@actions/core');
 
 const configs = JSON.parse(core.getInput('configs'))
 
-
 // Extract, process and filter configs
-const extractConfigs = function(configs = {}, channel = 'stable') {
+const extractConfigs = function (configs = {}, channel = 'stable') {
 	return Object.keys(configs[channel])
 		// flatten arrays
 		.reduce((prev, base) => {
@@ -20,6 +19,13 @@ const extractConfigs = function(configs = {}, channel = 'stable') {
 				base,
 				major,
 			}, weightedConfigs[percent]))
+
+			// Compute EOL state from date
+			data.forEach(function (data) {
+				core.info(data.eol);
+				data.eol = new Date().toISOString().slice(0, 10) > (data.eol ? data.eol : '9999-99-99');
+				core.info(data.eol);
+			});
 
 			// We add the config to the list
 			prev.push(...data)
