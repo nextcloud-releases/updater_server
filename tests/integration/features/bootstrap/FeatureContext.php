@@ -44,14 +44,14 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 	/**
 	 * @Given There is a release with channel :arg1
 	 */
-	public function thereIsAReleaseWithChannel($arg1) {
+	public function thereIsAReleaseWithChannel($arg1): void {
 		$this->releaseChannel = $arg1;
 	}
 
 	/**
 	 * @Given The received version is :version
 	 */
-	public function theReceivedVersionIs($version) {
+	public function theReceivedVersionIs($version): void {
 		$version = explode('.', $version);
 
 		$this->majorVersion = $version[0];
@@ -66,7 +66,7 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 	/**
 	 * @Given The received PHP version is :version
 	 */
-	public function theReceivedPHPVersionIs($version) {
+	public function theReceivedPHPVersionIs($version): void {
 		$version = explode('.', $version);
 
 		$this->phpMajorVersion = $version[0];
@@ -77,47 +77,42 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 	/**
 	 * @Given The received build is :arg1
 	 */
-	public function theReceivedBuildIs($arg1) {
+	public function theReceivedBuildIs($arg1): void {
 		$this->build = $arg1;
 	}
 
 	/**
 	 * @Given the installation mtime is :time
 	 */
-	public function theInstallationMtimeIs($time) {
+	public function theInstallationMtimeIs($time): void {
 		$this->installationMtime = $time;
 	}
 
    /**
      * @Given the instance category is :categoryId
      */
-    public function theInstanceCategoryIs($categoryId)
-    {
+    public function theInstanceCategoryIs($categoryId): void {
         $this->categoryId = $categoryId;
     }
 
     /**
      * @Given the instance has a subscription
      */
-    public function theInstanceHasASubscription()
-    {
+    public function theInstanceHasASubscription(): void {
         $this->subscriptionRegistered = true;
     }
 
     /**
      * @Given the instance has no subscription
      */
-    public function theInstanceHasNoSubscription()
-    {
+    public function theInstanceHasNoSubscription(): void {
         $this->subscriptionRegistered = false;
     }
 
 	/**
 	 * Builds the version to sent
-	 *
-	 * @return string
 	 */
-	private function buildVersionToSend() {
+	private function buildVersionToSend(): string {
 		$parameters = [
 			$this->majorVersion,
 			$this->minorVersion,
@@ -147,7 +142,7 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 	/**
 	 * @When /^The request is sent$/
 	 */
-	public function theRequestIsSent() {
+	public function theRequestIsSent(): void {
 		$ch = curl_init();
 		$optArray = array(
 			CURLOPT_URL => 'http://localhost:8888/?version='.$this->buildVersionToSend(),
@@ -164,7 +159,7 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 	 * @param \Behat\Gherkin\Node\PyStringNode $string
 	 * @throws Exception
 	 */
-	public function theSignatureIs(\Behat\Gherkin\Node\PyStringNode $string) {
+	public function theSignatureIs(\Behat\Gherkin\Node\PyStringNode $string): void {
 		if(isset($this->resultArray['signature'])) {
 			if($this->resultArray['signature'] === $string->getRaw()) {
 				return;
@@ -177,7 +172,7 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 	/**
 	 * @Then No signature is set
 	 */
-	public function noSignatureIsSet()  {
+	public function noSignatureIsSet(): void {
 		if(isset($this->resultArray['signature'])) {
 			throw new \Exception('Signature is set');
 		}
@@ -186,7 +181,7 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 	/**
 	 * @Then The response is non-empty
 	 */
-	public function theResponseIsNonEmpty() {
+	public function theResponseIsNonEmpty(): void {
 		if(empty($this->result)) {
 			throw new \Exception('Response is empty');
 		}
@@ -194,14 +189,15 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 		$xml = simplexml_load_string($this->result);
 		$json = json_encode($xml);
 		$this->resultArray = json_decode($json, TRUE);
-		if(count($this->resultArray) < 6 || count($this->resultArray) > 9) {
-			throw new \Exception('Response contains not between 6 or 8 array elements.');
+		$nbResults = count($this->resultArray);
+		if($nbResults < 8 || $nbResults > 10) {
+			throw new \Exception('Response doesn’t contain between 8 and 10 elements ('.$nbResults.' found).');
 		}
 	}
 	/**
 	 * @Then The JSON response is non-empty
 	 */
-	public function theJsonResponseIsNonEmpty() {
+	public function theJsonResponseIsNonEmpty(): void {
 		if(empty($this->result)) {
 			throw new \Exception('Response is empty');
 		}
@@ -212,7 +208,7 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 	/**
 	 * @Then Update to version :arg1 is available
 	 */
-	public function updateToVersionIsAvailable($arg1) {
+	public function updateToVersionIsAvailable($arg1): void {
 		$version = $this->resultArray['version'];
 		if(empty($version)) {
 			throw new \Exception('Version is empty in result array');
@@ -225,7 +221,7 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 	/**
 	 * @Then URL to download is :arg1
 	 */
-	public function urlToDownloadIs($arg1) {
+	public function urlToDownloadIs($arg1): void {
 		$url = $this->resultArray['url'];
 		if(empty($url)) {
 			throw new \Exception('URL is empty in result array');
@@ -256,7 +252,7 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 	/**
 	 * @Then URL to documentation is :arg1
 	 */
-	public function urlToDocumentationIs($arg1) {
+	public function urlToDocumentationIs($arg1): void {
 		$web = $this->resultArray['web'];
 		if(empty($web)) {
 			throw new \Exception('web is empty in result array');
@@ -269,7 +265,7 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 	/**
 	 * @Then URL to changelog is :arg1
 	 */
-	public function urlToChangelogIs($arg1) {
+	public function urlToChangelogIs($arg1): void {
 		$changesUrl = $this->resultArray['changes'];
 		if(empty($changesUrl)) {
 			throw new \Exception('changes is empty in result array');
@@ -282,7 +278,7 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 	/**
 	 * @Then The response is empty
 	 */
-	public function theResponseIsEmpty() {
+	public function theResponseIsEmpty(): void {
 		if($this->result !== '') {
 			throw new \Exception('Response is not empty:' . PHP_EOL . PHP_EOL . $this->result);
 		}
@@ -291,7 +287,7 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 	/**
 	 * @Then Autoupdater is set to :autoupdaterValue
 	 */
-	public function autoupdaterIsSetTo($autoupdaterValue) {
+	public function autoupdaterIsSetTo($autoupdaterValue): void {
 		$autoupdater = $this->resultArray['autoupdater'];
 		if($autoupdater !== $autoupdaterValue) {
 			throw new \Exception("Expected autoupdate $autoupdaterValue does not equals $autoupdater");
@@ -301,10 +297,36 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 	/**
 	 * @Then EOL is set to :eolValue
 	 */
-	public function eolIsSetTo($eolValue) {
+	public function eolIsSetTo($eolValue): void {
 		$eol = $this->resultArray['eol'];
 		if($eol !== $eolValue) {
 			throw new \Exception("Expected eol $eolValue does not equals $eol");
+		}
+	}
+
+	/**
+	 * @Then EOL date is set to :expectedEolDate
+	 */
+	public function eolDateIsSetTo(string $expectedEolDate): void {
+		$eolDate = $this->resultArray['eolDate'];
+		if ($eolDate === []) {
+			$eolDate = '';
+		}
+		if($eolDate !== $expectedEolDate) {
+			throw new \Exception("Expected EOL date $expectedEolDate doesn’t equals $eolDate");
+		}
+
+		// Empty EOL date means version never expire
+		if ($eolDate === '') {
+			$eolDate = '9999-99-99';
+		}
+		$isEol = $this->resultArray['eol'];
+		$expectedIsEol = date('Y-m-d') > $eolDate ? '1' : '0';
+		if($isEol !== $expectedIsEol) {
+			throw new \Exception($expectedIsEol
+				? 'Version have reached EOL on '.$expectedEolDate
+				: 'Version didn’t reached EOL (expected on '.$expectedEolDate.')'
+			);
 		}
 	}
 

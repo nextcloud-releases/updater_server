@@ -9,7 +9,7 @@ Feature: Testing the update scenario of daily releases
     And Update to version "100.0.0.0" is available
     And URL to download is "https://download.nextcloud.com/server/daily/latest-master.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/latest/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL date is set to ""
     And No signature is set
 
   Scenario: Updating an outdated Nextcloud 31 daily
@@ -21,7 +21,7 @@ Feature: Testing the update scenario of daily releases
     And Update to version "100.0.0.0" is available
     And URL to download is "https://download.nextcloud.com/server/daily/latest-stable31.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL date is set to "2026-02-25"
     And No signature is set
 
   Scenario: Updating an outdated Nextcloud 30 daily
@@ -33,7 +33,7 @@ Feature: Testing the update scenario of daily releases
     And Update to version "100.0.0.0" is available
     And URL to download is "https://download.nextcloud.com/server/daily/latest-stable30.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "1"
+    And EOL date is set to "2025-09-14"
     And No signature is set
 
   Scenario: Updating an outdated Nextcloud 29 daily

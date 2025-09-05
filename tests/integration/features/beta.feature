@@ -566,7 +566,7 @@ Feature: Testing the update scenario of beta releases
     And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v30.0.15rc1/nextcloud-30.0.15rc1.zip"
     And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v30.0.15rc1/nextcloud-30.0.15rc1.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "1"
+    And EOL date is set to "2025-09-14"
     And The signature is
     """
     bAHzPdYM2DQBA3BIVYrgx0J5arq2Hs8p4TtR13XTt+6N+j0hiB2odSzivYPnYrO+
@@ -591,7 +591,7 @@ Feature: Testing the update scenario of beta releases
     And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v30.0.15rc1/nextcloud-30.0.15rc1.zip"
     And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v30.0.15rc1/nextcloud-30.0.15rc1.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "1"
+    And EOL date is set to "2025-09-14"
     And The signature is
     """
     bAHzPdYM2DQBA3BIVYrgx0J5arq2Hs8p4TtR13XTt+6N+j0hiB2odSzivYPnYrO+
@@ -616,7 +616,7 @@ Feature: Testing the update scenario of beta releases
     And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.9rc1/nextcloud-31.0.9rc1.zip"
     And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.9rc1/nextcloud-31.0.9rc1.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL date is set to "2026-02-25"
     And The signature is
     """
     tWTGNIlQ/yutHdqC6AmhGCnKcRODkApQUgMZC71aOp9tnR/MMHSXlpyA/aydRXuA
@@ -641,7 +641,7 @@ Feature: Testing the update scenario of beta releases
     And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.9rc1/nextcloud-31.0.9rc1.zip"
     And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v31.0.9rc1/nextcloud-31.0.9rc1.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL date is set to "2026-02-25"
     And The signature is
     """
     tWTGNIlQ/yutHdqC6AmhGCnKcRODkApQUgMZC71aOp9tnR/MMHSXlpyA/aydRXuA
@@ -666,7 +666,7 @@ Feature: Testing the update scenario of beta releases
     And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.0rc1/nextcloud-32.0.0rc1.zip"
     And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.0rc1/nextcloud-32.0.0rc1.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/32/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL date is set to ""
     And The signature is
     """
     x3BHiJTpQLFve58Z05AZUvAvr1PvhPN27TSpOoEzBM/5KH+xJlUZs266u3kl3hhH
