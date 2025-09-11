@@ -69,7 +69,9 @@ foreach ($releases as $releaseName => $info) {
 		'downloadUrl' => buildDownloadUrl($releaseName, $info, $majorVersions[$major]),
 		'downloads' => $downloads,
 		'web' => sprintf($docUrl, $major),
-		'eol' => $majorVersions[$major]['eol'] ?? '',
+		'eol' => str_contains($releaseName, 'Enterprise')
+			? ($majorVersions[$major]['eeol'] ?? '')
+			: ($majorVersions[$major]['eol'] ?? ''),
 		'minPHPVersion' => $majorVersions[$major]['minPHP'] ?? '',
 		'signature' => $signature,
 		'signatures' => $signatures,
