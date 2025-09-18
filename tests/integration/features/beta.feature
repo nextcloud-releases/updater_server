@@ -659,22 +659,22 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "32.0.0.10" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.0rc2.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.0rc2.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.0rc2.tar.bz2"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.0rc2/nextcloud-32.0.0rc2.zip"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.0rc2/nextcloud-32.0.0rc2.tar.bz2"
+    And Update to version "32.0.0.11" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.0rc3.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.0rc3.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.0rc3.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.0rc3/nextcloud-32.0.0rc3.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.0rc3/nextcloud-32.0.0rc3.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/32/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL is "0"
     And The signature is
     """
-    yjE3x0PYCRPIFqY6tU3+OTKiRju8gXdCgilmd2idjuBhuECHjuYwTil9jvHNt0u2
-    zimotoyLfgCi7OXfyEE9LsYxb/Tr3kP7fFddAaBVcAHRijuiiz3LcF7K7328ekD+
-    l7fTxsyrtKEpf7bdjQwIK1fTLhtuyvr7GDwrOGwZKXjNinXd9rdx8eHv6Oo5Fsqi
-    vMnsg32XuurNpKB5eSqJpH9/Nlv1X0S1nQq6PWmo2829EDfDg340rEpjfwj4XRY1
-    yvYDm4YDkjGFjjxftcxDqTETVbhuuFZ/Xm6Huu8NP5w7RgnXC5oryYo/301nsF+4
-    RUXEnPgMrmxq5GNnA61ttg==
+    NLumE75f4NgJyGwZJlCPiw6s+YH9/waKhI++BMAzavkZ/KYGLcqsnA/8WLi8DKoe
+    MKi6oirbsOC88uZdbNScp0gY3GJ4L25rLzHu85X/uBfD4OkLwZVrTllImzwYhKur
+    FhFcgXMq1kzBPIP6JZh1ApImRpXpY56NgQPkTKdrn4t8dVNtdRfELyoIR8RY+I1z
+    1Jyo32maMcE27FJFBkFrht3DUH6Tpl5LSGEejg5yUiKxJp9gPu6C7DZTd3IEUyYb
+    rm+We2gTBPY0Jt0/D/FdmxJ52/g+Cb0W8c+051WZPrdk+PQSMeHTFj5yCKMlY8Uf
+    6jkU6X0kaZDpHUF8fJ7yew==
     """
 
   Scenario: Updating Nextcloud 32 on the beta channel
@@ -684,20 +684,20 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "32.0.0.10" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.0rc2.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.0rc2.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.0rc2.tar.bz2"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.0rc2/nextcloud-32.0.0rc2.zip"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.0rc2/nextcloud-32.0.0rc2.tar.bz2"
+    And Update to version "32.0.0.11" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.0rc3.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.0rc3.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.0rc3.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.0rc3/nextcloud-32.0.0rc3.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.0rc3/nextcloud-32.0.0rc3.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/32/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL is "0"
     And The signature is
     """
-    yjE3x0PYCRPIFqY6tU3+OTKiRju8gXdCgilmd2idjuBhuECHjuYwTil9jvHNt0u2
-    zimotoyLfgCi7OXfyEE9LsYxb/Tr3kP7fFddAaBVcAHRijuiiz3LcF7K7328ekD+
-    l7fTxsyrtKEpf7bdjQwIK1fTLhtuyvr7GDwrOGwZKXjNinXd9rdx8eHv6Oo5Fsqi
-    vMnsg32XuurNpKB5eSqJpH9/Nlv1X0S1nQq6PWmo2829EDfDg340rEpjfwj4XRY1
-    yvYDm4YDkjGFjjxftcxDqTETVbhuuFZ/Xm6Huu8NP5w7RgnXC5oryYo/301nsF+4
-    RUXEnPgMrmxq5GNnA61ttg==
+    NLumE75f4NgJyGwZJlCPiw6s+YH9/waKhI++BMAzavkZ/KYGLcqsnA/8WLi8DKoe
+    MKi6oirbsOC88uZdbNScp0gY3GJ4L25rLzHu85X/uBfD4OkLwZVrTllImzwYhKur
+    FhFcgXMq1kzBPIP6JZh1ApImRpXpY56NgQPkTKdrn4t8dVNtdRfELyoIR8RY+I1z
+    1Jyo32maMcE27FJFBkFrht3DUH6Tpl5LSGEejg5yUiKxJp9gPu6C7DZTd3IEUyYb
+    rm+We2gTBPY0Jt0/D/FdmxJ52/g+Cb0W8c+051WZPrdk+PQSMeHTFj5yCKMlY8Uf
+    6jkU6X0kaZDpHUF8fJ7yew==
     """
