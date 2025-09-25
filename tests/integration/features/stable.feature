@@ -621,22 +621,22 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "30.0.15.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-30.0.15.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-30.0.15.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-30.0.15.tar.bz2"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v30.0.15/nextcloud-30.0.15.zip"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v30.0.15/nextcloud-30.0.15.tar.bz2"
+    And Update to version "30.0.16.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-30.0.16.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-30.0.16.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-30.0.16.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v30.0.16/nextcloud-30.0.16.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v30.0.16/nextcloud-30.0.16.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html"
-    And EOL date is set to "2025-09-14"
+    And EOL date is "2025-09-14"
     And The signature is
     """
-    k7ioexlE3vFkwYkS+TjP2zS9elo4XLgXAWyTog7JwMhPuOvKXKn0G9sf1Fvpulq6
-    LCusxwgSq84LYuHmc1hI2FVGTwYLerUt0rUvuirJUjjMPYyujnPKcIJgCKtbs26s
-    07cp7Y5prCMazSFDcCM09YFzBQddcg8kFK7V+3WXHql8/1CT7d9lWkRu9An7TQ70
-    8Hu7Fswck+vuinI7CuNQPEN4sAqFqUOAT5hzoRfywJ3mRaG13Zuo34TN9WgrObrU
-    hngrrmfRdxTY4BJOE/Pbvoe4BA15MxUp/+POLsgqWY8fsGHKiAbcIr/lRJmzMdEH
-    NXf9y3rgk+a6Pv6cCgLYnQ==
+    sebR3DgQXmwXFwrtDw90NW0FIzbDKMKpRxFTDwtVcVVJ5a4FsbRiN+3GW2BDTJJs
+    l0Tt+eThQ5tyzn0VDr3wq7Wx2Ht8rpiG5bqKvZKketbWtCPY12XOGCYcmIznVHdc
+    xRNkTd59VmiFg5U1m6nKg5HVayXYbEIn0MYaIXE/EnK2qoiEnYkgsW3TVTVzSDri
+    aAzgCNrRouKCVlhnnmW0EBmIAfBFJUfnNzizdcMy+dBT1wM04aeQWCYbi9LHEzX5
+    CCKwfvTsB1VXDtCoXkLLMlYM6aXe/YXQppN13euPtGQtOWjqB9LbU+ZBm/FFtrTt
+    0cn70CFiIWwgdDmDpKAelw==
     """
 
   Scenario: Updating Nextcloud 30 on the stable channel
@@ -646,27 +646,27 @@ Feature: Testing the update scenario of stable releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "30.0.15.1" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-30.0.15.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-30.0.15.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-30.0.15.tar.bz2"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v30.0.15/nextcloud-30.0.15.zip"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v30.0.15/nextcloud-30.0.15.tar.bz2"
+    And Update to version "30.0.16.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-30.0.16.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-30.0.16.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-30.0.16.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v30.0.16/nextcloud-30.0.16.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v30.0.16/nextcloud-30.0.16.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/30/admin_manual/maintenance/upgrade.html"
-    And EOL date is set to "2025-09-14"
+    And EOL date is "2025-09-14"
     And The signature is
     """
-    k7ioexlE3vFkwYkS+TjP2zS9elo4XLgXAWyTog7JwMhPuOvKXKn0G9sf1Fvpulq6
-    LCusxwgSq84LYuHmc1hI2FVGTwYLerUt0rUvuirJUjjMPYyujnPKcIJgCKtbs26s
-    07cp7Y5prCMazSFDcCM09YFzBQddcg8kFK7V+3WXHql8/1CT7d9lWkRu9An7TQ70
-    8Hu7Fswck+vuinI7CuNQPEN4sAqFqUOAT5hzoRfywJ3mRaG13Zuo34TN9WgrObrU
-    hngrrmfRdxTY4BJOE/Pbvoe4BA15MxUp/+POLsgqWY8fsGHKiAbcIr/lRJmzMdEH
-    NXf9y3rgk+a6Pv6cCgLYnQ==
+    sebR3DgQXmwXFwrtDw90NW0FIzbDKMKpRxFTDwtVcVVJ5a4FsbRiN+3GW2BDTJJs
+    l0Tt+eThQ5tyzn0VDr3wq7Wx2Ht8rpiG5bqKvZKketbWtCPY12XOGCYcmIznVHdc
+    xRNkTd59VmiFg5U1m6nKg5HVayXYbEIn0MYaIXE/EnK2qoiEnYkgsW3TVTVzSDri
+    aAzgCNrRouKCVlhnnmW0EBmIAfBFJUfnNzizdcMy+dBT1wM04aeQWCYbi9LHEzX5
+    CCKwfvTsB1VXDtCoXkLLMlYM6aXe/YXQppN13euPtGQtOWjqB9LbU+ZBm/FFtrTt
+    0cn70CFiIWwgdDmDpKAelw==
     """
 
   Scenario: Updating Nextcloud 30 to 31 on the stable channel
     Given There is a release with channel "stable"
-    And The received version is "30.0.15.1"
+    And The received version is "30.0.16.1"
     And The received PHP version is "8.1.0"
     And the installation mtime is "21"
     When The request is sent
