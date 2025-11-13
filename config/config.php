@@ -1525,6 +1525,126 @@ vbaIJ8CiZnKdMBDAdXAVMA==',
 		],
 	],
 	'beta' => [
+		'31.0.11.0' => [
+			'100' => [
+				'latest' => '32.0.1',
+				'internalVersion' => '32.0.1.2',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-32.0.1.zip',
+				'downloads' => [
+					'bz2' => [
+						'0' => 'https://github.com/nextcloud-releases/server/releases/download/v32.0.1/nextcloud-32.0.1.tar.bz2',
+						'1' => 'https://download.nextcloud.com/server/releases/nextcloud-32.0.1.tar.bz2',
+					],
+					'zip' => [
+						'0' => 'https://github.com/nextcloud-releases/server/releases/download/v32.0.1/nextcloud-32.0.1.zip',
+						'1' => 'https://download.nextcloud.com/server/releases/nextcloud-32.0.1.zip',
+					],
+				],
+				'web' => 'https://docs.nextcloud.com/server/32/admin_manual/maintenance/upgrade.html',
+				'eol' => '',
+				'minPHPVersion' => '8.1',
+				'signature' => 'fi4/62kSt7SpYqyWhLvNmftZa0Kr6/UCuuDfcukxzRhlWMmEw++INZYKL9O29tG0
+1M8zRbMCjQOCZP7T3ejWVbrFZ1yfgo3Hy/Bhf3O5ll7Cf5LLEFk44g6paYhCXfgu
+EB1wO9L3gAd0PMnMJBqJuhWzcbyZsJ58HWRO079WkYydc8mUIczt7+OTZ9UX9ZR4
+vypSEjzGgkk69Sbbiu6GvmmwN/3QkwFhy8iTAbdyTOffVqmKfXk6dDEZAZqPLDAv
+T947syGjgshWr6lqai9SsltLAYlUOtuFCvl7BBb3yLGeBuZaCPJtK6pudLCAnbrv
+mF7lndql2YdjAGxWCai3KQ==',
+				'signatures' => [
+					'bz2' => 'jo2rWGXAJDCeSfhQXViuSqpNIdMV6l62mzntiNQd16fnFxIMu/J/zPmyQPfrg8Rk
+Nvw4qgkbmU1vlnz5z1+PsGqvxhGShVAwWU5TNE5LU/C9xJiFS0hpYUKh518ZJMhs
+shz8pLiPqjy4EJtXSoG0d6KNpKpyMvQVL4ACIEqqz/1MD9GIik3dgyig1I+ZVaUc
+XzIGACB69CYwK0Wkkx1sxwW3tpxYr+1/GxjoNkHEI/7RtOpUB/HbLDp8WI/P2MWP
+UNHeO9lSf7W321DACBQomiCYw1NWpL0H4GGFdC1+GzCoaORQBx89N42f/uxn4Pn8
+CWD9P7OEN4MbE/Rix8qnIQ==',
+					'zip' => 'fi4/62kSt7SpYqyWhLvNmftZa0Kr6/UCuuDfcukxzRhlWMmEw++INZYKL9O29tG0
+1M8zRbMCjQOCZP7T3ejWVbrFZ1yfgo3Hy/Bhf3O5ll7Cf5LLEFk44g6paYhCXfgu
+EB1wO9L3gAd0PMnMJBqJuhWzcbyZsJ58HWRO079WkYydc8mUIczt7+OTZ9UX9ZR4
+vypSEjzGgkk69Sbbiu6GvmmwN/3QkwFhy8iTAbdyTOffVqmKfXk6dDEZAZqPLDAv
+T947syGjgshWr6lqai9SsltLAYlUOtuFCvl7BBb3yLGeBuZaCPJtK6pudLCAnbrv
+mF7lndql2YdjAGxWCai3KQ==',
+				],
+			],
+		],
+		'31' => [
+			'100' => [
+				'latest' => '31.0.11 RC1',
+				'internalVersion' => '31.0.11.0',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-31.0.11rc1.zip',
+				'downloads' => [
+					'bz2' => [
+						'0' => 'https://github.com/nextcloud-releases/server/releases/download/v31.0.11rc1/nextcloud-31.0.11rc1.tar.bz2',
+						'1' => 'https://download.nextcloud.com/server/prereleases/nextcloud-31.0.11rc1.tar.bz2',
+					],
+					'zip' => [
+						'0' => 'https://github.com/nextcloud-releases/server/releases/download/v31.0.11rc1/nextcloud-31.0.11rc1.zip',
+						'1' => 'https://download.nextcloud.com/server/prereleases/nextcloud-31.0.11rc1.zip',
+					],
+				],
+				'web' => 'https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html',
+				'eol' => '2026-02-25',
+				'minPHPVersion' => '8.1',
+				'signature' => 'ZglSHSB0gPWYEL1WrmwP0FJjDx2T47eE9X+H+6Ntx3cuBYU7vImYBBeM6kyFrA+i
+f2obmDFz1c3QXxdgsXfGu+X2N69EYn7PYbCe75DnESOgak5GPXDSLedrAII39Fqx
+lCr6PnP8bHX+nXk8iTEU9nFhNhAu3XWOvU45TaYbMx1egjTjUJgVrBSdh3iurDXk
+3RQ6etr19YSs6PUKgRU2SS7/Yyu415QIf6FNUabfYfyqNpeiGAXZ7ZeWRJnNRJ76
+MISKiFrQ+sk4FYpPULkGxRsOfbrLV07CP0W3Gm5kZkzd1RG+eVF1IxJPbKem2kwv
+7+mbWzZwgfVquy9LDwdeYw==',
+				'signatures' => [
+					'bz2' => 'R0uBQLf4JzdNYUQ8wqWtE9gmJBnDPQs+1flWu2k4PPePbiMrqON7OnOyPEWHbxre
+HEHlkm8QV/5NVcff1Hd8r6dpFceHXNlnaqQ6xnWuL7K9jqNp5UjDRIzbHs4hGCNp
+0Z5mM9nFLrK9YZOleWhJS/qHJC/+r8OuciXTYNoaUDZRm/L7EwUylVqSwHyfpu5I
+Tt61Z0NwDLTddSmV2EX8NJcSMgGgYkQl+hSwxZzRLaCPdGretd4KGKkF39oYFOzn
+bI2+6V60lqLG0LLAdNNdRnGSEpUo0UY4+UTixldtioOghdi7YUppwj7PaRsOjZC+
+quM9307AYu38GuSsHmMpUA==',
+					'zip' => 'ZglSHSB0gPWYEL1WrmwP0FJjDx2T47eE9X+H+6Ntx3cuBYU7vImYBBeM6kyFrA+i
+f2obmDFz1c3QXxdgsXfGu+X2N69EYn7PYbCe75DnESOgak5GPXDSLedrAII39Fqx
+lCr6PnP8bHX+nXk8iTEU9nFhNhAu3XWOvU45TaYbMx1egjTjUJgVrBSdh3iurDXk
+3RQ6etr19YSs6PUKgRU2SS7/Yyu415QIf6FNUabfYfyqNpeiGAXZ7ZeWRJnNRJ76
+MISKiFrQ+sk4FYpPULkGxRsOfbrLV07CP0W3Gm5kZkzd1RG+eVF1IxJPbKem2kwv
+7+mbWzZwgfVquy9LDwdeYw==',
+				],
+			],
+		],
+		'30.0.17.2' => [
+			'100' => [
+				'latest' => '31.0.11 RC1',
+				'internalVersion' => '31.0.11.0',
+				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-31.0.11rc1.zip',
+				'downloads' => [
+					'bz2' => [
+						'0' => 'https://github.com/nextcloud-releases/server/releases/download/v31.0.11rc1/nextcloud-31.0.11rc1.tar.bz2',
+						'1' => 'https://download.nextcloud.com/server/prereleases/nextcloud-31.0.11rc1.tar.bz2',
+					],
+					'zip' => [
+						'0' => 'https://github.com/nextcloud-releases/server/releases/download/v31.0.11rc1/nextcloud-31.0.11rc1.zip',
+						'1' => 'https://download.nextcloud.com/server/prereleases/nextcloud-31.0.11rc1.zip',
+					],
+				],
+				'web' => 'https://docs.nextcloud.com/server/31/admin_manual/maintenance/upgrade.html',
+				'eol' => '2026-02-25',
+				'minPHPVersion' => '8.1',
+				'signature' => 'ZglSHSB0gPWYEL1WrmwP0FJjDx2T47eE9X+H+6Ntx3cuBYU7vImYBBeM6kyFrA+i
+f2obmDFz1c3QXxdgsXfGu+X2N69EYn7PYbCe75DnESOgak5GPXDSLedrAII39Fqx
+lCr6PnP8bHX+nXk8iTEU9nFhNhAu3XWOvU45TaYbMx1egjTjUJgVrBSdh3iurDXk
+3RQ6etr19YSs6PUKgRU2SS7/Yyu415QIf6FNUabfYfyqNpeiGAXZ7ZeWRJnNRJ76
+MISKiFrQ+sk4FYpPULkGxRsOfbrLV07CP0W3Gm5kZkzd1RG+eVF1IxJPbKem2kwv
+7+mbWzZwgfVquy9LDwdeYw==',
+				'signatures' => [
+					'bz2' => 'R0uBQLf4JzdNYUQ8wqWtE9gmJBnDPQs+1flWu2k4PPePbiMrqON7OnOyPEWHbxre
+HEHlkm8QV/5NVcff1Hd8r6dpFceHXNlnaqQ6xnWuL7K9jqNp5UjDRIzbHs4hGCNp
+0Z5mM9nFLrK9YZOleWhJS/qHJC/+r8OuciXTYNoaUDZRm/L7EwUylVqSwHyfpu5I
+Tt61Z0NwDLTddSmV2EX8NJcSMgGgYkQl+hSwxZzRLaCPdGretd4KGKkF39oYFOzn
+bI2+6V60lqLG0LLAdNNdRnGSEpUo0UY4+UTixldtioOghdi7YUppwj7PaRsOjZC+
+quM9307AYu38GuSsHmMpUA==',
+					'zip' => 'ZglSHSB0gPWYEL1WrmwP0FJjDx2T47eE9X+H+6Ntx3cuBYU7vImYBBeM6kyFrA+i
+f2obmDFz1c3QXxdgsXfGu+X2N69EYn7PYbCe75DnESOgak5GPXDSLedrAII39Fqx
+lCr6PnP8bHX+nXk8iTEU9nFhNhAu3XWOvU45TaYbMx1egjTjUJgVrBSdh3iurDXk
+3RQ6etr19YSs6PUKgRU2SS7/Yyu415QIf6FNUabfYfyqNpeiGAXZ7ZeWRJnNRJ76
+MISKiFrQ+sk4FYpPULkGxRsOfbrLV07CP0W3Gm5kZkzd1RG+eVF1IxJPbKem2kwv
+7+mbWzZwgfVquy9LDwdeYw==',
+				],
+			],
+		],
 	],
 	'daily' => [
 		'32' => [
