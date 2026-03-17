@@ -768,7 +768,7 @@ Feature: Testing the update scenario of stable releases
     Given There is a release with channel "stable"
     And The received version is "32.0.6.1"
     And The received PHP version is "8.2.0"
-    And the installation mtime is "41"
+    And the installation mtime is "81"
     When The request is sent
     Then The response is empty
 
@@ -786,7 +786,7 @@ Feature: Testing the update scenario of stable releases
     And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v33.0.0/nextcloud-33.0.0.zip"
     And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v33.0.0/nextcloud-33.0.0.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/33/admin_manual/maintenance/upgrade.html"
-    And EOL is "0"
+    And EOL is "2027-02-18"
     And The signature is
     """
     vK6aWOFBzARLgyTTw9sEDBA5XnJCTiTn1JPrS6MfBskMMba1aAjzJ0T/dWjVrgJV
@@ -811,7 +811,7 @@ Feature: Testing the update scenario of stable releases
     And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v33.0.0/nextcloud-33.0.0.zip"
     And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v33.0.0/nextcloud-33.0.0.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/33/admin_manual/maintenance/upgrade.html"
-    And EOL is "0"
+    And EOL is "2027-02-18"
     And The signature is
     """
     vK6aWOFBzARLgyTTw9sEDBA5XnJCTiTn1JPrS6MfBskMMba1aAjzJ0T/dWjVrgJV

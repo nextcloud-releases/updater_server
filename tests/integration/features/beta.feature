@@ -716,7 +716,7 @@ Feature: Testing the update scenario of beta releases
     And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v33.0.0/nextcloud-33.0.0.zip"
     And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v33.0.0/nextcloud-33.0.0.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/33/admin_manual/maintenance/upgrade.html"
-    And EOL is "0"
+    And EOL is "2027-02-18"
     And The signature is
     """
     vK6aWOFBzARLgyTTw9sEDBA5XnJCTiTn1JPrS6MfBskMMba1aAjzJ0T/dWjVrgJV
@@ -741,7 +741,7 @@ Feature: Testing the update scenario of beta releases
     And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v33.0.0/nextcloud-33.0.0.zip"
     And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v33.0.0/nextcloud-33.0.0.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/33/admin_manual/maintenance/upgrade.html"
-    And EOL is "0"
+    And EOL is "2027-02-18"
     And The signature is
     """
     vK6aWOFBzARLgyTTw9sEDBA5XnJCTiTn1JPrS6MfBskMMba1aAjzJ0T/dWjVrgJV
