@@ -9,7 +9,7 @@ Feature: Testing the update scenario of daily releases
     And Update to version "100.0.0.0" is available
     And URL to download is "https://download.nextcloud.com/server/daily/latest-master.zip"
     And URL to documentation is "https://docs.nextcloud.com/server/latest/admin_manual/maintenance/upgrade.html"
-    And EOL date is set to ""
+    And EOL date is set to "2027-02-18"
     And No signature is set
 
   Scenario: Updating an outdated Nextcloud 32 daily
