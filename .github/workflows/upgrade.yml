@@ -46,7 +46,7 @@ jobs:
         id: get-config
         run: |
           # Retrieving non-EOL configs from the matrix channel
-          CONFIGS=$(php -r "echo(json_encode(include 'config/config.php'));" | jq -c)
+          CONFIGS=$(php -r "echo(json_encode(include 'config/config.php'));" | jq -c 'walk(if type == "object" then del(.downloads, .web, .signatures, .signature) else . end)')
           echo "::set-output name=configs::$CONFIGS"
 
       - name: Parse configs
