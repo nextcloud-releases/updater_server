@@ -17,15 +17,15 @@ class ComposerStaticInitfe8a8e6ca03db3da1f8be8016d546d8d
     );
 
     public static $prefixLengthsPsr4 = array (
-        'U' => 
+        'U' =>
         array (
             'UpdateServer\\' => 13,
         ),
-        'T' => 
+        'T' =>
         array (
             'Tests\\' => 6,
         ),
-        'S' => 
+        'S' =>
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Intl\\Normalizer\\' => 33,
@@ -44,19 +44,19 @@ class ComposerStaticInitfe8a8e6ca03db3da1f8be8016d546d8d
             'Symfony\\Component\\Console\\' => 26,
             'Symfony\\Component\\Config\\' => 25,
         ),
-        'P' => 
+        'P' =>
         array (
             'Psr\\Log\\' => 8,
             'Psr\\EventDispatcher\\' => 20,
             'Psr\\Container\\' => 14,
             'PhpParser\\' => 10,
         ),
-        'C' => 
+        'C' =>
         array (
             'Composer\\XdebugHandler\\' => 23,
             'Composer\\Pcre\\' => 14,
         ),
-        'B' => 
+        'B' =>
         array (
             'Behat\\Transformation\\' => 21,
             'Behat\\Testwork\\' => 15,
@@ -69,127 +69,127 @@ class ComposerStaticInitfe8a8e6ca03db3da1f8be8016d546d8d
     );
 
     public static $prefixDirsPsr4 = array (
-        'UpdateServer\\' => 
+        'UpdateServer\\' =>
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
-        'Tests\\' => 
+        'Tests\\' =>
         array (
             0 => __DIR__ . '/../..' . '/tests/unit',
         ),
-        'Symfony\\Polyfill\\Mbstring\\' => 
+        'Symfony\\Polyfill\\Mbstring\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
-        'Symfony\\Polyfill\\Intl\\Normalizer\\' => 
+        'Symfony\\Polyfill\\Intl\\Normalizer\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer',
         ),
-        'Symfony\\Polyfill\\Intl\\Grapheme\\' => 
+        'Symfony\\Polyfill\\Intl\\Grapheme\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme',
         ),
-        'Symfony\\Polyfill\\Ctype\\' => 
+        'Symfony\\Polyfill\\Ctype\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
-        'Symfony\\Contracts\\Translation\\' => 
+        'Symfony\\Contracts\\Translation\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/translation-contracts',
         ),
-        'Symfony\\Contracts\\Service\\' => 
+        'Symfony\\Contracts\\Service\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/service-contracts',
         ),
-        'Symfony\\Contracts\\EventDispatcher\\' => 
+        'Symfony\\Contracts\\EventDispatcher\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/event-dispatcher-contracts',
         ),
-        'Symfony\\Component\\Yaml\\' => 
+        'Symfony\\Component\\Yaml\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
         ),
-        'Symfony\\Component\\VarExporter\\' => 
+        'Symfony\\Component\\VarExporter\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/var-exporter',
         ),
-        'Symfony\\Component\\Translation\\' => 
+        'Symfony\\Component\\Translation\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
         ),
-        'Symfony\\Component\\String\\' => 
+        'Symfony\\Component\\String\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/string',
         ),
-        'Symfony\\Component\\Filesystem\\' => 
+        'Symfony\\Component\\Filesystem\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/filesystem',
         ),
-        'Symfony\\Component\\EventDispatcher\\' => 
+        'Symfony\\Component\\EventDispatcher\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
         ),
-        'Symfony\\Component\\DependencyInjection\\' => 
+        'Symfony\\Component\\DependencyInjection\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/dependency-injection',
         ),
-        'Symfony\\Component\\Console\\' => 
+        'Symfony\\Component\\Console\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
-        'Symfony\\Component\\Config\\' => 
+        'Symfony\\Component\\Config\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/config',
         ),
-        'Psr\\Log\\' => 
+        'Psr\\Log\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/log/src',
         ),
-        'Psr\\EventDispatcher\\' => 
+        'Psr\\EventDispatcher\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/event-dispatcher/src',
         ),
-        'Psr\\Container\\' => 
+        'Psr\\Container\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
-        'PhpParser\\' => 
+        'PhpParser\\' =>
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
-        'Composer\\XdebugHandler\\' => 
+        'Composer\\XdebugHandler\\' =>
         array (
             0 => __DIR__ . '/..' . '/composer/xdebug-handler/src',
         ),
-        'Composer\\Pcre\\' => 
+        'Composer\\Pcre\\' =>
         array (
             0 => __DIR__ . '/..' . '/composer/pcre/src',
         ),
-        'Behat\\Transformation\\' => 
+        'Behat\\Transformation\\' =>
         array (
             0 => __DIR__ . '/..' . '/behat/behat/src/Behat/Transformation',
         ),
-        'Behat\\Testwork\\' => 
+        'Behat\\Testwork\\' =>
         array (
             0 => __DIR__ . '/..' . '/behat/behat/src/Behat/Testwork',
         ),
-        'Behat\\Step\\' => 
+        'Behat\\Step\\' =>
         array (
             0 => __DIR__ . '/..' . '/behat/behat/src/Behat/Step',
         ),
-        'Behat\\Hook\\' => 
+        'Behat\\Hook\\' =>
         array (
             0 => __DIR__ . '/..' . '/behat/behat/src/Behat/Hook',
         ),
-        'Behat\\Gherkin\\' => 
+        'Behat\\Gherkin\\' =>
         array (
             0 => __DIR__ . '/..' . '/behat/gherkin/src',
         ),
-        'Behat\\Config\\' => 
+        'Behat\\Config\\' =>
         array (
             0 => __DIR__ . '/..' . '/behat/behat/src/Behat/Config',
         ),
-        'Behat\\Behat\\' => 
+        'Behat\\Behat\\' =>
         array (
             0 => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat',
         ),
@@ -238,6 +238,7 @@ class ComposerStaticInitfe8a8e6ca03db3da1f8be8016d546d8d
         'Behat\\Behat\\Context\\Snippet\\Generator\\AggregateContextIdentifier' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Context/Snippet/Generator/AggregateContextIdentifier.php',
         'Behat\\Behat\\Context\\Snippet\\Generator\\AggregatePatternIdentifier' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Context/Snippet/Generator/AggregatePatternIdentifier.php',
         'Behat\\Behat\\Context\\Snippet\\Generator\\CachedContextIdentifier' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Context/Snippet/Generator/CachedContextIdentifier.php',
+        'Behat\\Behat\\Context\\Snippet\\Generator\\CannotGenerateStepPatternException' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Context/Snippet/Generator/CannotGenerateStepPatternException.php',
         'Behat\\Behat\\Context\\Snippet\\Generator\\ContextInterfaceBasedContextIdentifier' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Context/Snippet/Generator/ContextInterfaceBasedContextIdentifier.php',
         'Behat\\Behat\\Context\\Snippet\\Generator\\ContextInterfaceBasedPatternIdentifier' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Context/Snippet/Generator/ContextInterfaceBasedPatternIdentifier.php',
         'Behat\\Behat\\Context\\Snippet\\Generator\\ContextSnippetGenerator' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Context/Snippet/Generator/ContextSnippetGenerator.php',
@@ -378,9 +379,12 @@ class ComposerStaticInitfe8a8e6ca03db3da1f8be8016d546d8d
         'Behat\\Behat\\Output\\Node\\EventListener\\Flow\\FireOnlySiblingsListener' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/EventListener/Flow/FireOnlySiblingsListener.php',
         'Behat\\Behat\\Output\\Node\\EventListener\\Flow\\FirstBackgroundFiresFirstListener' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/EventListener/Flow/FirstBackgroundFiresFirstListener.php',
         'Behat\\Behat\\Output\\Node\\EventListener\\Flow\\OnlyFirstBackgroundFiresListener' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/EventListener/Flow/OnlyFirstBackgroundFiresListener.php',
+        'Behat\\Behat\\Output\\Node\\EventListener\\JSON\\JSONDurationListener' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/EventListener/JSON/JSONDurationListener.php',
+        'Behat\\Behat\\Output\\Node\\EventListener\\JSON\\JSONElementListener' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/EventListener/JSON/JSONElementListener.php',
         'Behat\\Behat\\Output\\Node\\EventListener\\JUnit\\JUnitDurationListener' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/EventListener/JUnit/JUnitDurationListener.php',
         'Behat\\Behat\\Output\\Node\\EventListener\\JUnit\\JUnitFeatureElementListener' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/EventListener/JUnit/JUnitFeatureElementListener.php',
         'Behat\\Behat\\Output\\Node\\EventListener\\JUnit\\JUnitOutlineStoreListener' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/EventListener/JUnit/JUnitOutlineStoreListener.php',
+        'Behat\\Behat\\Output\\Node\\EventListener\\Statistics\\DurationListener' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/EventListener/Statistics/DurationListener.php',
         'Behat\\Behat\\Output\\Node\\EventListener\\Statistics\\HookStatsListener' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/EventListener/Statistics/HookStatsListener.php',
         'Behat\\Behat\\Output\\Node\\EventListener\\Statistics\\ScenarioStatsListener' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/EventListener/Statistics/ScenarioStatsListener.php',
         'Behat\\Behat\\Output\\Node\\EventListener\\Statistics\\StatisticsListener' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/EventListener/Statistics/StatisticsListener.php',
@@ -388,10 +392,17 @@ class ComposerStaticInitfe8a8e6ca03db3da1f8be8016d546d8d
         'Behat\\Behat\\Output\\Node\\Printer\\CounterPrinter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/Printer/CounterPrinter.php',
         'Behat\\Behat\\Output\\Node\\Printer\\ExamplePrinter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/Printer/ExamplePrinter.php',
         'Behat\\Behat\\Output\\Node\\Printer\\ExampleRowPrinter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/Printer/ExampleRowPrinter.php',
+        'Behat\\Behat\\Output\\Node\\Printer\\ExercisePrinter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/Printer/ExercisePrinter.php',
         'Behat\\Behat\\Output\\Node\\Printer\\FeaturePrinter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/Printer/FeaturePrinter.php',
         'Behat\\Behat\\Output\\Node\\Printer\\Helper\\ResultToStringConverter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/Printer/Helper/ResultToStringConverter.php',
         'Behat\\Behat\\Output\\Node\\Printer\\Helper\\StepTextPainter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/Printer/Helper/StepTextPainter.php',
         'Behat\\Behat\\Output\\Node\\Printer\\Helper\\WidthCalculator' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/Printer/Helper/WidthCalculator.php',
+        'Behat\\Behat\\Output\\Node\\Printer\\JSON\\JSONExercisePrinter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/Printer/JSON/JSONExercisePrinter.php',
+        'Behat\\Behat\\Output\\Node\\Printer\\JSON\\JSONFeaturePrinter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/Printer/JSON/JSONFeaturePrinter.php',
+        'Behat\\Behat\\Output\\Node\\Printer\\JSON\\JSONScenarioPrinter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/Printer/JSON/JSONScenarioPrinter.php',
+        'Behat\\Behat\\Output\\Node\\Printer\\JSON\\JSONSetupPrinter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/Printer/JSON/JSONSetupPrinter.php',
+        'Behat\\Behat\\Output\\Node\\Printer\\JSON\\JSONStepPrinter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/Printer/JSON/JSONStepPrinter.php',
+        'Behat\\Behat\\Output\\Node\\Printer\\JSON\\JSONSuitePrinter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/Printer/JSON/JSONSuitePrinter.php',
         'Behat\\Behat\\Output\\Node\\Printer\\JUnit\\JUnitFeaturePrinter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/Printer/JUnit/JUnitFeaturePrinter.php',
         'Behat\\Behat\\Output\\Node\\Printer\\JUnit\\JUnitScenarioPrinter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/Printer/JUnit/JUnitScenarioPrinter.php',
         'Behat\\Behat\\Output\\Node\\Printer\\JUnit\\JUnitSetupPrinter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/Printer/JUnit/JUnitSetupPrinter.php',
@@ -420,6 +431,7 @@ class ComposerStaticInitfe8a8e6ca03db3da1f8be8016d546d8d
         'Behat\\Behat\\Output\\Node\\Printer\\SuitePrinter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Node/Printer/SuitePrinter.php',
         'Behat\\Behat\\Output\\Printer\\ConsoleOutputFactory' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Printer/ConsoleOutputFactory.php',
         'Behat\\Behat\\Output\\Printer\\Formatter\\ConsoleFormatter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/Printer/Formatter/ConsoleFormatter.php',
+        'Behat\\Behat\\Output\\ServiceContainer\\Formatter\\JSONFormatterFactory' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/ServiceContainer/Formatter/JSONFormatterFactory.php',
         'Behat\\Behat\\Output\\ServiceContainer\\Formatter\\JUnitFormatterFactory' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/ServiceContainer/Formatter/JUnitFormatterFactory.php',
         'Behat\\Behat\\Output\\ServiceContainer\\Formatter\\PrettyFormatterFactory' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/ServiceContainer/Formatter/PrettyFormatterFactory.php',
         'Behat\\Behat\\Output\\ServiceContainer\\Formatter\\ProgressFormatterFactory' => __DIR__ . '/..' . '/behat/behat/src/Behat/Behat/Output/ServiceContainer/Formatter/ProgressFormatterFactory.php',
@@ -507,6 +519,7 @@ class ComposerStaticInitfe8a8e6ca03db3da1f8be8016d546d8d
         'Behat\\Config\\Filter\\TagFilter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Config/Filter/TagFilter.php',
         'Behat\\Config\\Formatter\\Formatter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Config/Formatter/Formatter.php',
         'Behat\\Config\\Formatter\\FormatterConfigInterface' => __DIR__ . '/..' . '/behat/behat/src/Behat/Config/Formatter/FormatterConfigInterface.php',
+        'Behat\\Config\\Formatter\\JSONFormatter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Config/Formatter/JSONFormatter.php',
         'Behat\\Config\\Formatter\\JUnitFormatter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Config/Formatter/JUnitFormatter.php',
         'Behat\\Config\\Formatter\\PrettyFormatter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Config/Formatter/PrettyFormatter.php',
         'Behat\\Config\\Formatter\\ProgressFormatter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Config/Formatter/ProgressFormatter.php',
@@ -517,13 +530,21 @@ class ComposerStaticInitfe8a8e6ca03db3da1f8be8016d546d8d
         'Behat\\Gherkin\\Cache\\CacheInterface' => __DIR__ . '/..' . '/behat/gherkin/src/Cache/CacheInterface.php',
         'Behat\\Gherkin\\Cache\\FileCache' => __DIR__ . '/..' . '/behat/gherkin/src/Cache/FileCache.php',
         'Behat\\Gherkin\\Cache\\MemoryCache' => __DIR__ . '/..' . '/behat/gherkin/src/Cache/MemoryCache.php',
+        'Behat\\Gherkin\\Dialect\\CucumberDialectProvider' => __DIR__ . '/..' . '/behat/gherkin/src/Dialect/CucumberDialectProvider.php',
+        'Behat\\Gherkin\\Dialect\\DialectProviderInterface' => __DIR__ . '/..' . '/behat/gherkin/src/Dialect/DialectProviderInterface.php',
+        'Behat\\Gherkin\\Dialect\\GherkinDialect' => __DIR__ . '/..' . '/behat/gherkin/src/Dialect/GherkinDialect.php',
+        'Behat\\Gherkin\\Dialect\\KeywordsDialectProvider' => __DIR__ . '/..' . '/behat/gherkin/src/Dialect/KeywordsDialectProvider.php',
         'Behat\\Gherkin\\Exception\\CacheException' => __DIR__ . '/..' . '/behat/gherkin/src/Exception/CacheException.php',
         'Behat\\Gherkin\\Exception\\Exception' => __DIR__ . '/..' . '/behat/gherkin/src/Exception/Exception.php',
+        'Behat\\Gherkin\\Exception\\FilesystemException' => __DIR__ . '/..' . '/behat/gherkin/src/Exception/FilesystemException.php',
+        'Behat\\Gherkin\\Exception\\InvalidTagContentException' => __DIR__ . '/..' . '/behat/gherkin/src/Exception/InvalidTagContentException.php',
         'Behat\\Gherkin\\Exception\\LexerException' => __DIR__ . '/..' . '/behat/gherkin/src/Exception/LexerException.php',
+        'Behat\\Gherkin\\Exception\\NoSuchLanguageException' => __DIR__ . '/..' . '/behat/gherkin/src/Exception/NoSuchLanguageException.php',
         'Behat\\Gherkin\\Exception\\NodeException' => __DIR__ . '/..' . '/behat/gherkin/src/Exception/NodeException.php',
         'Behat\\Gherkin\\Exception\\ParserException' => __DIR__ . '/..' . '/behat/gherkin/src/Exception/ParserException.php',
         'Behat\\Gherkin\\Exception\\UnexpectedParserNodeException' => __DIR__ . '/..' . '/behat/gherkin/src/Exception/UnexpectedParserNodeException.php',
         'Behat\\Gherkin\\Exception\\UnexpectedTaggedNodeException' => __DIR__ . '/..' . '/behat/gherkin/src/Exception/UnexpectedTaggedNodeException.php',
+        'Behat\\Gherkin\\Filesystem' => __DIR__ . '/..' . '/behat/gherkin/src/Filesystem.php',
         'Behat\\Gherkin\\Filter\\ComplexFilter' => __DIR__ . '/..' . '/behat/gherkin/src/Filter/ComplexFilter.php',
         'Behat\\Gherkin\\Filter\\ComplexFilterInterface' => __DIR__ . '/..' . '/behat/gherkin/src/Filter/ComplexFilterInterface.php',
         'Behat\\Gherkin\\Filter\\FeatureFilterInterface' => __DIR__ . '/..' . '/behat/gherkin/src/Filter/FeatureFilterInterface.php',
@@ -537,13 +558,16 @@ class ComposerStaticInitfe8a8e6ca03db3da1f8be8016d546d8d
         'Behat\\Gherkin\\Filter\\SimpleFilter' => __DIR__ . '/..' . '/behat/gherkin/src/Filter/SimpleFilter.php',
         'Behat\\Gherkin\\Filter\\TagFilter' => __DIR__ . '/..' . '/behat/gherkin/src/Filter/TagFilter.php',
         'Behat\\Gherkin\\Gherkin' => __DIR__ . '/..' . '/behat/gherkin/src/Gherkin.php',
+        'Behat\\Gherkin\\GherkinCompatibilityMode' => __DIR__ . '/..' . '/behat/gherkin/src/GherkinCompatibilityMode.php',
         'Behat\\Gherkin\\Keywords\\ArrayKeywords' => __DIR__ . '/..' . '/behat/gherkin/src/Keywords/ArrayKeywords.php',
         'Behat\\Gherkin\\Keywords\\CachedArrayKeywords' => __DIR__ . '/..' . '/behat/gherkin/src/Keywords/CachedArrayKeywords.php',
         'Behat\\Gherkin\\Keywords\\CucumberKeywords' => __DIR__ . '/..' . '/behat/gherkin/src/Keywords/CucumberKeywords.php',
+        'Behat\\Gherkin\\Keywords\\DialectKeywords' => __DIR__ . '/..' . '/behat/gherkin/src/Keywords/DialectKeywords.php',
         'Behat\\Gherkin\\Keywords\\KeywordsDumper' => __DIR__ . '/..' . '/behat/gherkin/src/Keywords/KeywordsDumper.php',
         'Behat\\Gherkin\\Keywords\\KeywordsInterface' => __DIR__ . '/..' . '/behat/gherkin/src/Keywords/KeywordsInterface.php',
         'Behat\\Gherkin\\Lexer' => __DIR__ . '/..' . '/behat/gherkin/src/Lexer.php',
         'Behat\\Gherkin\\Loader\\AbstractFileLoader' => __DIR__ . '/..' . '/behat/gherkin/src/Loader/AbstractFileLoader.php',
+        'Behat\\Gherkin\\Loader\\AbstractLoader' => __DIR__ . '/..' . '/behat/gherkin/src/Loader/AbstractLoader.php',
         'Behat\\Gherkin\\Loader\\ArrayLoader' => __DIR__ . '/..' . '/behat/gherkin/src/Loader/ArrayLoader.php',
         'Behat\\Gherkin\\Loader\\CucumberNDJsonAstLoader' => __DIR__ . '/..' . '/behat/gherkin/src/Loader/CucumberNDJsonAstLoader.php',
         'Behat\\Gherkin\\Loader\\DirectoryLoader' => __DIR__ . '/..' . '/behat/gherkin/src/Loader/DirectoryLoader.php',
@@ -553,6 +577,7 @@ class ComposerStaticInitfe8a8e6ca03db3da1f8be8016d546d8d
         'Behat\\Gherkin\\Loader\\YamlFileLoader' => __DIR__ . '/..' . '/behat/gherkin/src/Loader/YamlFileLoader.php',
         'Behat\\Gherkin\\Node\\ArgumentInterface' => __DIR__ . '/..' . '/behat/gherkin/src/Node/ArgumentInterface.php',
         'Behat\\Gherkin\\Node\\BackgroundNode' => __DIR__ . '/..' . '/behat/gherkin/src/Node/BackgroundNode.php',
+        'Behat\\Gherkin\\Node\\DescribableNodeInterface' => __DIR__ . '/..' . '/behat/gherkin/src/Node/DescribableNodeInterface.php',
         'Behat\\Gherkin\\Node\\ExampleNode' => __DIR__ . '/..' . '/behat/gherkin/src/Node/ExampleNode.php',
         'Behat\\Gherkin\\Node\\ExampleTableNode' => __DIR__ . '/..' . '/behat/gherkin/src/Node/ExampleTableNode.php',
         'Behat\\Gherkin\\Node\\FeatureNode' => __DIR__ . '/..' . '/behat/gherkin/src/Node/FeatureNode.php',
@@ -570,6 +595,7 @@ class ComposerStaticInitfe8a8e6ca03db3da1f8be8016d546d8d
         'Behat\\Gherkin\\Node\\TaggedNodeInterface' => __DIR__ . '/..' . '/behat/gherkin/src/Node/TaggedNodeInterface.php',
         'Behat\\Gherkin\\Node\\TaggedNodeTrait' => __DIR__ . '/..' . '/behat/gherkin/src/Node/TaggedNodeTrait.php',
         'Behat\\Gherkin\\Parser' => __DIR__ . '/..' . '/behat/gherkin/src/Parser.php',
+        'Behat\\Gherkin\\ParserInterface' => __DIR__ . '/..' . '/behat/gherkin/src/ParserInterface.php',
         'Behat\\Hook\\AfterFeature' => __DIR__ . '/..' . '/behat/behat/src/Behat/Hook/AfterFeature.php',
         'Behat\\Hook\\AfterScenario' => __DIR__ . '/..' . '/behat/behat/src/Behat/Hook/AfterScenario.php',
         'Behat\\Hook\\AfterStep' => __DIR__ . '/..' . '/behat/behat/src/Behat/Hook/AfterStep.php',
@@ -587,6 +613,7 @@ class ComposerStaticInitfe8a8e6ca03db3da1f8be8016d546d8d
         'Behat\\Testwork\\Argument\\ArgumentOrganiser' => __DIR__ . '/..' . '/behat/behat/src/Behat/Testwork/Argument/ArgumentOrganiser.php',
         'Behat\\Testwork\\Argument\\ConstructorArgumentOrganiser' => __DIR__ . '/..' . '/behat/behat/src/Behat/Testwork/Argument/ConstructorArgumentOrganiser.php',
         'Behat\\Testwork\\Argument\\Exception\\ArgumentException' => __DIR__ . '/..' . '/behat/behat/src/Behat/Testwork/Argument/Exception/ArgumentException.php',
+        'Behat\\Testwork\\Argument\\Exception\\UnexpectedMultilineArgumentException' => __DIR__ . '/..' . '/behat/behat/src/Behat/Testwork/Argument/Exception/UnexpectedMultilineArgumentException.php',
         'Behat\\Testwork\\Argument\\Exception\\UnknownParameterValueException' => __DIR__ . '/..' . '/behat/behat/src/Behat/Testwork/Argument/Exception/UnknownParameterValueException.php',
         'Behat\\Testwork\\Argument\\Exception\\UnsupportedFunctionException' => __DIR__ . '/..' . '/behat/behat/src/Behat/Testwork/Argument/Exception/UnsupportedFunctionException.php',
         'Behat\\Testwork\\Argument\\MixedArgumentOrganiser' => __DIR__ . '/..' . '/behat/behat/src/Behat/Testwork/Argument/MixedArgumentOrganiser.php',
@@ -710,8 +737,10 @@ class ComposerStaticInitfe8a8e6ca03db3da1f8be8016d546d8d
         'Behat\\Testwork\\Output\\Node\\EventListener\\Flow\\FireOnlyIfFormatterParameterListener' => __DIR__ . '/..' . '/behat/behat/src/Behat/Testwork/Output/Node/EventListener/Flow/FireOnlyIfFormatterParameterListener.php',
         'Behat\\Testwork\\Output\\OutputManager' => __DIR__ . '/..' . '/behat/behat/src/Behat/Testwork/Output/OutputManager.php',
         'Behat\\Testwork\\Output\\Printer\\Factory\\ConsoleOutputFactory' => __DIR__ . '/..' . '/behat/behat/src/Behat/Testwork/Output/Printer/Factory/ConsoleOutputFactory.php',
+        'Behat\\Testwork\\Output\\Printer\\Factory\\FileOutputFactory' => __DIR__ . '/..' . '/behat/behat/src/Behat/Testwork/Output/Printer/Factory/FileOutputFactory.php',
         'Behat\\Testwork\\Output\\Printer\\Factory\\FilesystemOutputFactory' => __DIR__ . '/..' . '/behat/behat/src/Behat/Testwork/Output/Printer/Factory/FilesystemOutputFactory.php',
         'Behat\\Testwork\\Output\\Printer\\Factory\\OutputFactory' => __DIR__ . '/..' . '/behat/behat/src/Behat/Testwork/Output/Printer/Factory/OutputFactory.php',
+        'Behat\\Testwork\\Output\\Printer\\JSONOutputPrinter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Testwork/Output/Printer/JSONOutputPrinter.php',
         'Behat\\Testwork\\Output\\Printer\\JUnitOutputPrinter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Testwork/Output/Printer/JUnitOutputPrinter.php',
         'Behat\\Testwork\\Output\\Printer\\OutputPrinter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Testwork/Output/Printer/OutputPrinter.php',
         'Behat\\Testwork\\Output\\Printer\\StreamOutputPrinter' => __DIR__ . '/..' . '/behat/behat/src/Behat/Testwork/Output/Printer/StreamOutputPrinter.php',
@@ -849,11 +878,13 @@ class ComposerStaticInitfe8a8e6ca03db3da1f8be8016d546d8d
         'PhpParser\\Lexer\\TokenEmulator\\KeywordEmulator' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/KeywordEmulator.php',
         'PhpParser\\Lexer\\TokenEmulator\\MatchTokenEmulator' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/MatchTokenEmulator.php',
         'PhpParser\\Lexer\\TokenEmulator\\NullsafeTokenEmulator' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/NullsafeTokenEmulator.php',
+        'PhpParser\\Lexer\\TokenEmulator\\PipeOperatorEmulator' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/PipeOperatorEmulator.php',
         'PhpParser\\Lexer\\TokenEmulator\\PropertyTokenEmulator' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/PropertyTokenEmulator.php',
         'PhpParser\\Lexer\\TokenEmulator\\ReadonlyFunctionTokenEmulator' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReadonlyFunctionTokenEmulator.php',
         'PhpParser\\Lexer\\TokenEmulator\\ReadonlyTokenEmulator' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReadonlyTokenEmulator.php',
         'PhpParser\\Lexer\\TokenEmulator\\ReverseEmulator' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/ReverseEmulator.php',
         'PhpParser\\Lexer\\TokenEmulator\\TokenEmulator' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/TokenEmulator.php',
+        'PhpParser\\Lexer\\TokenEmulator\\VoidCastEmulator' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/VoidCastEmulator.php',
         'PhpParser\\Modifiers' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Modifiers.php',
         'PhpParser\\NameContext' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/NameContext.php',
         'PhpParser\\Node' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node.php',
@@ -921,6 +952,7 @@ class ComposerStaticInitfe8a8e6ca03db3da1f8be8016d546d8d
         'PhpParser\\Node\\Expr\\BinaryOp\\Mul' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Mul.php',
         'PhpParser\\Node\\Expr\\BinaryOp\\NotEqual' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/NotEqual.php',
         'PhpParser\\Node\\Expr\\BinaryOp\\NotIdentical' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/NotIdentical.php',
+        'PhpParser\\Node\\Expr\\BinaryOp\\Pipe' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Pipe.php',
         'PhpParser\\Node\\Expr\\BinaryOp\\Plus' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Plus.php',
         'PhpParser\\Node\\Expr\\BinaryOp\\Pow' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/Pow.php',
         'PhpParser\\Node\\Expr\\BinaryOp\\ShiftLeft' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/BinaryOp/ShiftLeft.php',
@@ -939,6 +971,7 @@ class ComposerStaticInitfe8a8e6ca03db3da1f8be8016d546d8d
         'PhpParser\\Node\\Expr\\Cast\\Object_' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/Cast/Object_.php',
         'PhpParser\\Node\\Expr\\Cast\\String_' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/Cast/String_.php',
         'PhpParser\\Node\\Expr\\Cast\\Unset_' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/Cast/Unset_.php',
+        'PhpParser\\Node\\Expr\\Cast\\Void_' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/Cast/Void_.php',
         'PhpParser\\Node\\Expr\\ClassConstFetch' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/ClassConstFetch.php',
         'PhpParser\\Node\\Expr\\Clone_' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/Clone_.php',
         'PhpParser\\Node\\Expr\\Closure' => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser/Node/Expr/Closure.php',
@@ -1249,6 +1282,7 @@ class ComposerStaticInitfe8a8e6ca03db3da1f8be8016d546d8d
         'Symfony\\Component\\Console\\Helper\\TableRows' => __DIR__ . '/..' . '/symfony/console/Helper/TableRows.php',
         'Symfony\\Component\\Console\\Helper\\TableSeparator' => __DIR__ . '/..' . '/symfony/console/Helper/TableSeparator.php',
         'Symfony\\Component\\Console\\Helper\\TableStyle' => __DIR__ . '/..' . '/symfony/console/Helper/TableStyle.php',
+        'Symfony\\Component\\Console\\Helper\\TerminalInputHelper' => __DIR__ . '/..' . '/symfony/console/Helper/TerminalInputHelper.php',
         'Symfony\\Component\\Console\\Input\\ArgvInput' => __DIR__ . '/..' . '/symfony/console/Input/ArgvInput.php',
         'Symfony\\Component\\Console\\Input\\ArrayInput' => __DIR__ . '/..' . '/symfony/console/Input/ArrayInput.php',
         'Symfony\\Component\\Console\\Input\\Input' => __DIR__ . '/..' . '/symfony/console/Input/Input.php',
