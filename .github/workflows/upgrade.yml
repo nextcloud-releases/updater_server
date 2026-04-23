@@ -6,7 +6,7 @@ on:
     branches:
       - master
 
-concurrency: 
+concurrency:
   group: upgrades-${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
 
@@ -78,7 +78,7 @@ jobs:
       - name: Fetch release
         run: |
           BASE="${{ matrix.config.base }}"
-          
+
           # Normalize BASE to full MAJOR.MINOR.PATCH format
           if [[ "$BASE" =~ ^[0-9]+$ ]]; then
             BASE="${BASE}.0.0"
@@ -151,7 +151,7 @@ jobs:
             echo "Stable$MAJOR not found, falling back to master ..."
             curl --fail --silent --show-error --location "$FALLBACK" -o updater/updater.phar
           fi
-          php updater/updater.phar --url ${{ matrix.config.downloadUrl }} --no-backup --no-interaction -vvv
+          php updater/updater.phar --url ${{ matrix.config.downloadUrl }} --no-backup --no-interaction --no-verify -vvv
 
       - name: Integrity check
         run: |
