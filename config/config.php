@@ -3,81 +3,81 @@ return [
 	'stable' => [
 		'33' => [
 			'100' => [
-				'latest' => '33.0.2',
-				'internalVersion' => '33.0.2.2',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-33.0.2.zip',
+				'latest' => '33.0.3',
+				'internalVersion' => '33.0.3.2',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-33.0.3.zip',
 				'downloads' => [
 					'bz2' => [
-						'0' => 'https://github.com/nextcloud-releases/server/releases/download/v33.0.2/nextcloud-33.0.2.tar.bz2',
-						'1' => 'https://download.nextcloud.com/server/releases/nextcloud-33.0.2.tar.bz2',
+						'0' => 'https://github.com/nextcloud-releases/server/releases/download/v33.0.3/nextcloud-33.0.3.tar.bz2',
+						'1' => 'https://download.nextcloud.com/server/releases/nextcloud-33.0.3.tar.bz2',
 					],
 					'zip' => [
-						'0' => 'https://github.com/nextcloud-releases/server/releases/download/v33.0.2/nextcloud-33.0.2.zip',
-						'1' => 'https://download.nextcloud.com/server/releases/nextcloud-33.0.2.zip',
+						'0' => 'https://github.com/nextcloud-releases/server/releases/download/v33.0.3/nextcloud-33.0.3.zip',
+						'1' => 'https://download.nextcloud.com/server/releases/nextcloud-33.0.3.zip',
 					],
 				],
 				'web' => 'https://docs.nextcloud.com/server/33/admin_manual/maintenance/upgrade.html',
 				'eol' => '2027-02-18',
 				'minPHPVersion' => '8.2',
-				'signature' => 'lDbMd8hu7XGsCibbfO0JSp8Nha/qChwS9lmrBNd9iMOPi9zIN+7Xxf6GxHORDEGy
-1ytyggfF5O6cxg9MMlZupJEMwXEPPS4ngtTXnc5gYCDOC48VKqWpl26J/RRO4zmU
-THMJi5qOYlFoVUlnt0qt9Pov8AMJrKfWUpL55/42HDNJLPxhoETl7hbCm7NpqH++
-VxwFNVy72nBqCUIxDkVez5tkwWnK0W5v6UZmCuMTQlcHlK+cqqe9y4+PHjRxhwP9
-Jrg8qW71ohB9mI7RGTVodoYiNeigKonnGUy5wIxU4MCj8Op0zzFLbV3s7jYxBx3H
-OEeYbpHTH3dTo1G/ClqNvQ==',
+				'signature' => 'YNr+fGlujg7eNf1mIcsPPpDAUd4lplaJnoYjT1WeaNkX+Mn1asaGi6FUwS8nDw0y
+lS5f+y+bZkESVFZ3ixtr8MNhhNoKNElP3us8Z8BRuWxPjNiBTH21x7Sg3I3MY2Ts
+/s1Kp/c2EsPrYpAdF6NPt5HH6AmPiImu4pApWDFNCQhPuMJMawdBAb/NQKWJYS+D
+L09V3/kennYvX7x9M7SX3dd3cpS6J82VujRjej5GXAJxbMhFNS7p3Sl+P1LqvWUw
+Y2Q46BJTtn49GrmIG9w7pvuVUo8moZbJOZQr2gNoY6frxo7IRTNI8z54tPIapixQ
+N0fYibgP6l9HoAMXScipZw==',
 				'signatures' => [
-					'bz2' => 'uc7jlJHZqJ8R97qNXMN9HkbfhEplg+obSDDG59pnRVovLIN2ifpJCuAABfbKI4jZ
-saDRtowlAGCj3Vs22xxOdcsaTy/wDHMaG+Hkhxwh/rP7leIQIRjd5/tp+NBrAZQt
-0eIEm8guNVXLNqEAXKe0YTpwTWJAijZgB6xF3m8+rotr5te0XoHJ67ILDnV5sGji
-DnN0eHntJoMeT0L+rR5cN6gdCdjAAR0qPkwdKpkxv7u8G+gpSuWtJ09MhFo8cslQ
-zfP1uNsU1OlAGrpoGz+CZjVCTAttlqBh3OxkRxyAhbDVoNIxHr6H8Duc/mgOPICU
-3NaF+WBvOFiXNtzow9cg6g==',
-					'zip' => 'lDbMd8hu7XGsCibbfO0JSp8Nha/qChwS9lmrBNd9iMOPi9zIN+7Xxf6GxHORDEGy
-1ytyggfF5O6cxg9MMlZupJEMwXEPPS4ngtTXnc5gYCDOC48VKqWpl26J/RRO4zmU
-THMJi5qOYlFoVUlnt0qt9Pov8AMJrKfWUpL55/42HDNJLPxhoETl7hbCm7NpqH++
-VxwFNVy72nBqCUIxDkVez5tkwWnK0W5v6UZmCuMTQlcHlK+cqqe9y4+PHjRxhwP9
-Jrg8qW71ohB9mI7RGTVodoYiNeigKonnGUy5wIxU4MCj8Op0zzFLbV3s7jYxBx3H
-OEeYbpHTH3dTo1G/ClqNvQ==',
+					'bz2' => 'n2ZBiFK43JvI97JCNmhH0w0yYURgbyx9oEo98igcVYdBTGuuzYozEoawpypKe5vC
+pc2RmIbl3ngq2ucd0goU1Ou/Atw3sJ6yDMjrrFFheHLFC0REgKp8CnhMCuT0xHZK
+kgkPYIKYS3cSqRoY3v17+532fZkUG5j9BRVd1tsOM5lfdfhBtT87nWALN7ueSN80
+Uj74/cvXyaAkoKQCrqW6akFK7FhuLWYbouR+Ud1ORtksNr3liOKNAyZbKF0ePSpv
+LpYIteEo9gNTJF68j0pwIuiAIYnIdOF02j6z9daiPJZvLSPBH8vMdWSLYEJxLiSL
+coEU1cJbbd8JzDpeKrm8zQ==',
+					'zip' => 'YNr+fGlujg7eNf1mIcsPPpDAUd4lplaJnoYjT1WeaNkX+Mn1asaGi6FUwS8nDw0y
+lS5f+y+bZkESVFZ3ixtr8MNhhNoKNElP3us8Z8BRuWxPjNiBTH21x7Sg3I3MY2Ts
+/s1Kp/c2EsPrYpAdF6NPt5HH6AmPiImu4pApWDFNCQhPuMJMawdBAb/NQKWJYS+D
+L09V3/kennYvX7x9M7SX3dd3cpS6J82VujRjej5GXAJxbMhFNS7p3Sl+P1LqvWUw
+Y2Q46BJTtn49GrmIG9w7pvuVUo8moZbJOZQr2gNoY6frxo7IRTNI8z54tPIapixQ
+N0fYibgP6l9HoAMXScipZw==',
 				],
 			],
 		],
 		'32.0.9.2' => [
 			'100' => [
-				'latest' => '33.0.2',
-				'internalVersion' => '33.0.2.2',
-				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-33.0.2.zip',
+				'latest' => '33.0.3',
+				'internalVersion' => '33.0.3.2',
+				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-33.0.3.zip',
 				'downloads' => [
 					'bz2' => [
-						'0' => 'https://github.com/nextcloud-releases/server/releases/download/v33.0.2/nextcloud-33.0.2.tar.bz2',
-						'1' => 'https://download.nextcloud.com/server/releases/nextcloud-33.0.2.tar.bz2',
+						'0' => 'https://github.com/nextcloud-releases/server/releases/download/v33.0.3/nextcloud-33.0.3.tar.bz2',
+						'1' => 'https://download.nextcloud.com/server/releases/nextcloud-33.0.3.tar.bz2',
 					],
 					'zip' => [
-						'0' => 'https://github.com/nextcloud-releases/server/releases/download/v33.0.2/nextcloud-33.0.2.zip',
-						'1' => 'https://download.nextcloud.com/server/releases/nextcloud-33.0.2.zip',
+						'0' => 'https://github.com/nextcloud-releases/server/releases/download/v33.0.3/nextcloud-33.0.3.zip',
+						'1' => 'https://download.nextcloud.com/server/releases/nextcloud-33.0.3.zip',
 					],
 				],
 				'web' => 'https://docs.nextcloud.com/server/33/admin_manual/maintenance/upgrade.html',
 				'eol' => '2027-02-18',
 				'minPHPVersion' => '8.2',
-				'signature' => 'lDbMd8hu7XGsCibbfO0JSp8Nha/qChwS9lmrBNd9iMOPi9zIN+7Xxf6GxHORDEGy
-1ytyggfF5O6cxg9MMlZupJEMwXEPPS4ngtTXnc5gYCDOC48VKqWpl26J/RRO4zmU
-THMJi5qOYlFoVUlnt0qt9Pov8AMJrKfWUpL55/42HDNJLPxhoETl7hbCm7NpqH++
-VxwFNVy72nBqCUIxDkVez5tkwWnK0W5v6UZmCuMTQlcHlK+cqqe9y4+PHjRxhwP9
-Jrg8qW71ohB9mI7RGTVodoYiNeigKonnGUy5wIxU4MCj8Op0zzFLbV3s7jYxBx3H
-OEeYbpHTH3dTo1G/ClqNvQ==',
+				'signature' => 'YNr+fGlujg7eNf1mIcsPPpDAUd4lplaJnoYjT1WeaNkX+Mn1asaGi6FUwS8nDw0y
+lS5f+y+bZkESVFZ3ixtr8MNhhNoKNElP3us8Z8BRuWxPjNiBTH21x7Sg3I3MY2Ts
+/s1Kp/c2EsPrYpAdF6NPt5HH6AmPiImu4pApWDFNCQhPuMJMawdBAb/NQKWJYS+D
+L09V3/kennYvX7x9M7SX3dd3cpS6J82VujRjej5GXAJxbMhFNS7p3Sl+P1LqvWUw
+Y2Q46BJTtn49GrmIG9w7pvuVUo8moZbJOZQr2gNoY6frxo7IRTNI8z54tPIapixQ
+N0fYibgP6l9HoAMXScipZw==',
 				'signatures' => [
-					'bz2' => 'uc7jlJHZqJ8R97qNXMN9HkbfhEplg+obSDDG59pnRVovLIN2ifpJCuAABfbKI4jZ
-saDRtowlAGCj3Vs22xxOdcsaTy/wDHMaG+Hkhxwh/rP7leIQIRjd5/tp+NBrAZQt
-0eIEm8guNVXLNqEAXKe0YTpwTWJAijZgB6xF3m8+rotr5te0XoHJ67ILDnV5sGji
-DnN0eHntJoMeT0L+rR5cN6gdCdjAAR0qPkwdKpkxv7u8G+gpSuWtJ09MhFo8cslQ
-zfP1uNsU1OlAGrpoGz+CZjVCTAttlqBh3OxkRxyAhbDVoNIxHr6H8Duc/mgOPICU
-3NaF+WBvOFiXNtzow9cg6g==',
-					'zip' => 'lDbMd8hu7XGsCibbfO0JSp8Nha/qChwS9lmrBNd9iMOPi9zIN+7Xxf6GxHORDEGy
-1ytyggfF5O6cxg9MMlZupJEMwXEPPS4ngtTXnc5gYCDOC48VKqWpl26J/RRO4zmU
-THMJi5qOYlFoVUlnt0qt9Pov8AMJrKfWUpL55/42HDNJLPxhoETl7hbCm7NpqH++
-VxwFNVy72nBqCUIxDkVez5tkwWnK0W5v6UZmCuMTQlcHlK+cqqe9y4+PHjRxhwP9
-Jrg8qW71ohB9mI7RGTVodoYiNeigKonnGUy5wIxU4MCj8Op0zzFLbV3s7jYxBx3H
-OEeYbpHTH3dTo1G/ClqNvQ==',
+					'bz2' => 'n2ZBiFK43JvI97JCNmhH0w0yYURgbyx9oEo98igcVYdBTGuuzYozEoawpypKe5vC
+pc2RmIbl3ngq2ucd0goU1Ou/Atw3sJ6yDMjrrFFheHLFC0REgKp8CnhMCuT0xHZK
+kgkPYIKYS3cSqRoY3v17+532fZkUG5j9BRVd1tsOM5lfdfhBtT87nWALN7ueSN80
+Uj74/cvXyaAkoKQCrqW6akFK7FhuLWYbouR+Ud1ORtksNr3liOKNAyZbKF0ePSpv
+LpYIteEo9gNTJF68j0pwIuiAIYnIdOF02j6z9daiPJZvLSPBH8vMdWSLYEJxLiSL
+coEU1cJbbd8JzDpeKrm8zQ==',
+					'zip' => 'YNr+fGlujg7eNf1mIcsPPpDAUd4lplaJnoYjT1WeaNkX+Mn1asaGi6FUwS8nDw0y
+lS5f+y+bZkESVFZ3ixtr8MNhhNoKNElP3us8Z8BRuWxPjNiBTH21x7Sg3I3MY2Ts
+/s1Kp/c2EsPrYpAdF6NPt5HH6AmPiImu4pApWDFNCQhPuMJMawdBAb/NQKWJYS+D
+L09V3/kennYvX7x9M7SX3dd3cpS6J82VujRjej5GXAJxbMhFNS7p3Sl+P1LqvWUw
+Y2Q46BJTtn49GrmIG9w7pvuVUo8moZbJOZQr2gNoY6frxo7IRTNI8z54tPIapixQ
+N0fYibgP6l9HoAMXScipZw==',
 				],
 			],
 		],
@@ -1645,7 +1645,7 @@ DZI7uxzc7BGbYbEqLJkEOw==',
 				],
 			],
 		],
-		'33.0.3.1' => [
+		'33.0.3.2' => [
 			'100' => [
 				'latest' => '34.0.0 beta 1',
 				'internalVersion' => '34.0.0.2',
@@ -1682,86 +1682,6 @@ DYZEAuByYOCU4kI5lAeGH26xoACw9EEWoGGyCJ+SQU9wlGeOxHi0aqt1ztlBw+z9
 ezfOT1H1dDBd3EvDm5r6ktG5ns7lhIB1TeAW0rjWeGcy3kcwyN9WG65Ls2Ir/Efa
 UjSOoiVYB3fWD6UfD4JpLNLDR9vH1+yT3UzsOdAY/yuQm8k1zCQnGLn6MqbWXACh
 DZI7uxzc7BGbYbEqLJkEOw==',
-				],
-			],
-		],
-		'33' => [
-			'100' => [
-				'latest' => '33.0.3 RC2',
-				'internalVersion' => '33.0.3.1',
-				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-33.0.3rc2.zip',
-				'downloads' => [
-					'bz2' => [
-						'0' => 'https://github.com/nextcloud-releases/server/releases/download/v33.0.3rc2/nextcloud-33.0.3rc2.tar.bz2',
-						'1' => 'https://download.nextcloud.com/server/prereleases/nextcloud-33.0.3rc2.tar.bz2',
-					],
-					'zip' => [
-						'0' => 'https://github.com/nextcloud-releases/server/releases/download/v33.0.3rc2/nextcloud-33.0.3rc2.zip',
-						'1' => 'https://download.nextcloud.com/server/prereleases/nextcloud-33.0.3rc2.zip',
-					],
-				],
-				'web' => 'https://docs.nextcloud.com/server/33/admin_manual/maintenance/upgrade.html',
-				'eol' => '2027-02-18',
-				'minPHPVersion' => '8.2',
-				'signature' => 'y3i5PAvcbmWy6nYIqxfjv1epxjSBUKguQYRcI+vezP0LVb+4Wu7men+OVE0TRV/b
-Tl1DQI4kCKXYQsPHOZ0qTuOLSTtnOZf8D11//qCpUvaBV+aTZ/jofQEozXt4LiXR
-8FZtU/WLtOjpq8JBFD6/H36aWO2neFnujL6sD3Xs+JE3fQJv+RbOqmrLUNX6qxnq
-vRTkIh2jMm4nkNAdQxVbdjRH5C4J9jHAYTyN4BN46pLeUCZYzvOoBuGYFS4cEw6X
-RYrJzqsWlTa/gSQSrR+HFZ6BepmgdW0SJ03AUI/dYHfVz3l51df2D36FV7i46fE3
-JrpgspovBSVJVlLlwGcibQ==',
-				'signatures' => [
-					'bz2' => 'Cfd/QV4NnSPf/kLmhpp16r+leYg+vzC7kfgHXC0tuBHGfwOeI7F7iUSKicBw6qHT
-X9zR1lXme/E5V1eGrgE4kato3E3poJswzXxdJ7hsb6MqkwRlYHM33eS9apNXCcDm
-t1bodC+F1+y8oF8UmuItydyySZpSPJpq4vGQLLzalqkxnmNILRT4k2QtoOYQMQI7
-skI7GbjOZVJgopT/AJueDg7/GQXqafiovaT3CLTxhQ+cT2vTwD0FeEmBTEwEAiTO
-1/uRMC2hVEV3/hexwwg33yz/4OjJ6ypTvkKulTgQre+mnzUOa9VB5GV20ZWuUWWM
-UZirYiPIGVsxSgnW81oXWA==',
-					'zip' => 'y3i5PAvcbmWy6nYIqxfjv1epxjSBUKguQYRcI+vezP0LVb+4Wu7men+OVE0TRV/b
-Tl1DQI4kCKXYQsPHOZ0qTuOLSTtnOZf8D11//qCpUvaBV+aTZ/jofQEozXt4LiXR
-8FZtU/WLtOjpq8JBFD6/H36aWO2neFnujL6sD3Xs+JE3fQJv+RbOqmrLUNX6qxnq
-vRTkIh2jMm4nkNAdQxVbdjRH5C4J9jHAYTyN4BN46pLeUCZYzvOoBuGYFS4cEw6X
-RYrJzqsWlTa/gSQSrR+HFZ6BepmgdW0SJ03AUI/dYHfVz3l51df2D36FV7i46fE3
-JrpgspovBSVJVlLlwGcibQ==',
-				],
-			],
-		],
-		'32.0.9.2' => [
-			'100' => [
-				'latest' => '33.0.3 RC2',
-				'internalVersion' => '33.0.3.1',
-				'downloadUrl' => 'https://download.nextcloud.com/server/prereleases/nextcloud-33.0.3rc2.zip',
-				'downloads' => [
-					'bz2' => [
-						'0' => 'https://github.com/nextcloud-releases/server/releases/download/v33.0.3rc2/nextcloud-33.0.3rc2.tar.bz2',
-						'1' => 'https://download.nextcloud.com/server/prereleases/nextcloud-33.0.3rc2.tar.bz2',
-					],
-					'zip' => [
-						'0' => 'https://github.com/nextcloud-releases/server/releases/download/v33.0.3rc2/nextcloud-33.0.3rc2.zip',
-						'1' => 'https://download.nextcloud.com/server/prereleases/nextcloud-33.0.3rc2.zip',
-					],
-				],
-				'web' => 'https://docs.nextcloud.com/server/33/admin_manual/maintenance/upgrade.html',
-				'eol' => '2027-02-18',
-				'minPHPVersion' => '8.2',
-				'signature' => 'y3i5PAvcbmWy6nYIqxfjv1epxjSBUKguQYRcI+vezP0LVb+4Wu7men+OVE0TRV/b
-Tl1DQI4kCKXYQsPHOZ0qTuOLSTtnOZf8D11//qCpUvaBV+aTZ/jofQEozXt4LiXR
-8FZtU/WLtOjpq8JBFD6/H36aWO2neFnujL6sD3Xs+JE3fQJv+RbOqmrLUNX6qxnq
-vRTkIh2jMm4nkNAdQxVbdjRH5C4J9jHAYTyN4BN46pLeUCZYzvOoBuGYFS4cEw6X
-RYrJzqsWlTa/gSQSrR+HFZ6BepmgdW0SJ03AUI/dYHfVz3l51df2D36FV7i46fE3
-JrpgspovBSVJVlLlwGcibQ==',
-				'signatures' => [
-					'bz2' => 'Cfd/QV4NnSPf/kLmhpp16r+leYg+vzC7kfgHXC0tuBHGfwOeI7F7iUSKicBw6qHT
-X9zR1lXme/E5V1eGrgE4kato3E3poJswzXxdJ7hsb6MqkwRlYHM33eS9apNXCcDm
-t1bodC+F1+y8oF8UmuItydyySZpSPJpq4vGQLLzalqkxnmNILRT4k2QtoOYQMQI7
-skI7GbjOZVJgopT/AJueDg7/GQXqafiovaT3CLTxhQ+cT2vTwD0FeEmBTEwEAiTO
-1/uRMC2hVEV3/hexwwg33yz/4OjJ6ypTvkKulTgQre+mnzUOa9VB5GV20ZWuUWWM
-UZirYiPIGVsxSgnW81oXWA==',
-					'zip' => 'y3i5PAvcbmWy6nYIqxfjv1epxjSBUKguQYRcI+vezP0LVb+4Wu7men+OVE0TRV/b
-Tl1DQI4kCKXYQsPHOZ0qTuOLSTtnOZf8D11//qCpUvaBV+aTZ/jofQEozXt4LiXR
-8FZtU/WLtOjpq8JBFD6/H36aWO2neFnujL6sD3Xs+JE3fQJv+RbOqmrLUNX6qxnq
-vRTkIh2jMm4nkNAdQxVbdjRH5C4J9jHAYTyN4BN46pLeUCZYzvOoBuGYFS4cEw6X
-RYrJzqsWlTa/gSQSrR+HFZ6BepmgdW0SJ03AUI/dYHfVz3l51df2D36FV7i46fE3
-JrpgspovBSVJVlLlwGcibQ==',
 				],
 			],
 		],
