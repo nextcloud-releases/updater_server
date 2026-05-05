@@ -760,22 +760,22 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "34.0.0.3" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-34.0.0beta2.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-34.0.0beta2.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-34.0.0beta2.tar.bz2"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v34.0.0beta2/nextcloud-34.0.0beta2.zip"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v34.0.0beta2/nextcloud-34.0.0beta2.tar.bz2"
+    And Update to version "34.0.0.4" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-34.0.0beta3.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-34.0.0beta3.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-34.0.0beta3.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v34.0.0beta3/nextcloud-34.0.0beta3.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v34.0.0beta3/nextcloud-34.0.0beta3.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/34/admin_manual/maintenance/upgrade.html"
     And EOL is "0"
     And The signature is
     """
-    wYGLg32OmsVJInMYNJtGRTwzl3NAQXKlhda4jDqEFusZzRFDc0KPwdtMBuBtoGva
-    EMpOiZP4wl4BNcyO7HhVQo7dviPfHiKmpKj6rtzJtgg7UIPYOW1rK9X0VAWjR0FV
-    fpt1nIAYQOMFBqJC8O/0PERMbCdApJ8fY0ImW+wt5GnrP2/hTfChctWiw1s0JVMb
-    JKI23DPZTsjPd3P68dM9nCDRepTzRvmENiUT4d6Dybhb39ZaPNAqk2FfDOzQoQCc
-    QVe8uqM3l6ZSK4lJwEsImnLI+LlurKMX9If2e+brhP0SNqoWgU2BaFbQwMN/4LSc
-    w8p7IkdDyGT1cuQ09PFUFQ==
+    az2Pdxxq6QjMyuTplodJOYQFADUAhaX2gzjLGMnfq5W2lrK0tBqoCIKubkVXRBO0
+    6W4yv9QncfvAjgo7meok7BiV4oBx3yATAdyghANHemjHdCa7O8k1VcBUL6J1TlXB
+    xZQRfJQJSyBVJMid3akj/TwOAAmAhpN3yaWnCOfD2GMhjeT67zZizGkSxWDD8Qxt
+    4gYassMGQvlcrAHIt+FJ7hfWxNXTyUtWNnm3nRUXBd7V0bLaZ6S6S6TWH4QjowRR
+    DiQFl8iQZRRIM1YoXQrhFBodOBl6GMopV3qDhC5QuI3AyPtwe/uQtqdyjTeamdkl
+    2LY/3Ltiv3zdaee7iVPgAw==
     """
 
   Scenario: Updating Nextcloud 34 on the beta channel
@@ -785,20 +785,20 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "34.0.0.3" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-34.0.0beta2.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-34.0.0beta2.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-34.0.0beta2.tar.bz2"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v34.0.0beta2/nextcloud-34.0.0beta2.zip"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v34.0.0beta2/nextcloud-34.0.0beta2.tar.bz2"
+    And Update to version "34.0.0.4" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-34.0.0beta3.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-34.0.0beta3.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-34.0.0beta3.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v34.0.0beta3/nextcloud-34.0.0beta3.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v34.0.0beta3/nextcloud-34.0.0beta3.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/34/admin_manual/maintenance/upgrade.html"
     And EOL is "0"
     And The signature is
     """
-    wYGLg32OmsVJInMYNJtGRTwzl3NAQXKlhda4jDqEFusZzRFDc0KPwdtMBuBtoGva
-    EMpOiZP4wl4BNcyO7HhVQo7dviPfHiKmpKj6rtzJtgg7UIPYOW1rK9X0VAWjR0FV
-    fpt1nIAYQOMFBqJC8O/0PERMbCdApJ8fY0ImW+wt5GnrP2/hTfChctWiw1s0JVMb
-    JKI23DPZTsjPd3P68dM9nCDRepTzRvmENiUT4d6Dybhb39ZaPNAqk2FfDOzQoQCc
-    QVe8uqM3l6ZSK4lJwEsImnLI+LlurKMX9If2e+brhP0SNqoWgU2BaFbQwMN/4LSc
-    w8p7IkdDyGT1cuQ09PFUFQ==
+    az2Pdxxq6QjMyuTplodJOYQFADUAhaX2gzjLGMnfq5W2lrK0tBqoCIKubkVXRBO0
+    6W4yv9QncfvAjgo7meok7BiV4oBx3yATAdyghANHemjHdCa7O8k1VcBUL6J1TlXB
+    xZQRfJQJSyBVJMid3akj/TwOAAmAhpN3yaWnCOfD2GMhjeT67zZizGkSxWDD8Qxt
+    4gYassMGQvlcrAHIt+FJ7hfWxNXTyUtWNnm3nRUXBd7V0bLaZ6S6S6TWH4QjowRR
+    DiQFl8iQZRRIM1YoXQrhFBodOBl6GMopV3qDhC5QuI3AyPtwe/uQtqdyjTeamdkl
+    2LY/3Ltiv3zdaee7iVPgAw==
     """
