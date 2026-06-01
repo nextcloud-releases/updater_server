@@ -659,22 +659,22 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "32.0.10.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.10rc1.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.10rc1.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.10rc1.tar.bz2"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.10rc1/nextcloud-32.0.10rc1.zip"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.10rc1/nextcloud-32.0.10rc1.tar.bz2"
+    And Update to version "32.0.11.0" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.11rc1.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.11rc1.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.11rc1.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.11rc1/nextcloud-32.0.11rc1.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.11rc1/nextcloud-32.0.11rc1.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/32/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL date is "2026-09-27"
     And The signature is
     """
-    Uwwr9tkB3+eLxVcR0nu7Hq63D0AD+u8XrWaSpVbrMGAyyXcX68NNKvyC0LtDw5DW
-    95EMKAceng/q8bYbrKtgoXQE648miWWqSnGqxGQFm8r9ct9zw/HbRALOo3RjNfhP
-    jv6q1Ce+lwacGuRDG/gccfZfZIwZHPG2Fnnbi9mo31nCAoorP3BhjSdBb6osxdux
-    srpymeCQFpBKNj19JJ49UAMmuxODkbcopmo3vjS7Y57M+Vo4M1be28lmWuZYbPu+
-    Rth//rM/Lc/OxkaFsR1FuW0CZIQqmcq0OxZ7wjPkZ1kNiO6AiYqDuEW3CIQWTjKN
-    c+dkBQS4XcCPe9eAOtd2zQ==
+    qXZyj73wNfcmBbweag0k9ApuBChWQyFUArFnEoHH7YPWJQEmRiKICV+NTUTlPr5G
+    jL1pQwQEpNtraRH2Ms97BntBeZW64tAMcG3dTpYvEgOGF59yPbNMlWP77rE9zA/4
+    aXeAVo+uCKlaVw2BraTuEvL6Cz1DdB/Psfaot9QlUr9hnMLx/dj/hcJf4xYvC9gB
+    YJbDqN/MK+URE4qoskU3rsa9YG7Mpt1JdWRBeRxVQiHgADrBMGd7oty1ekToBFoz
+    eL4RSxNPpES8ZQWvBoZHUPbymuscdX+wYwcU1jpZ0/J6EnZzkHnkiG/umP6tWo3l
+    1noEekjvXAPWZVNlPZxvaw==
     """
 
   Scenario: Updating Nextcloud 32 on the beta channel
@@ -684,47 +684,47 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "32.0.10.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.10rc1.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.10rc1.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.10rc1.tar.bz2"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.10rc1/nextcloud-32.0.10rc1.zip"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.10rc1/nextcloud-32.0.10rc1.tar.bz2"
+    And Update to version "32.0.11.0" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.11rc1.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.11rc1.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-32.0.11rc1.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.11rc1/nextcloud-32.0.11rc1.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.11rc1/nextcloud-32.0.11rc1.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/32/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL date is "2026-09-27"
     And The signature is
     """
-    Uwwr9tkB3+eLxVcR0nu7Hq63D0AD+u8XrWaSpVbrMGAyyXcX68NNKvyC0LtDw5DW
-    95EMKAceng/q8bYbrKtgoXQE648miWWqSnGqxGQFm8r9ct9zw/HbRALOo3RjNfhP
-    jv6q1Ce+lwacGuRDG/gccfZfZIwZHPG2Fnnbi9mo31nCAoorP3BhjSdBb6osxdux
-    srpymeCQFpBKNj19JJ49UAMmuxODkbcopmo3vjS7Y57M+Vo4M1be28lmWuZYbPu+
-    Rth//rM/Lc/OxkaFsR1FuW0CZIQqmcq0OxZ7wjPkZ1kNiO6AiYqDuEW3CIQWTjKN
-    c+dkBQS4XcCPe9eAOtd2zQ==
+    qXZyj73wNfcmBbweag0k9ApuBChWQyFUArFnEoHH7YPWJQEmRiKICV+NTUTlPr5G
+    jL1pQwQEpNtraRH2Ms97BntBeZW64tAMcG3dTpYvEgOGF59yPbNMlWP77rE9zA/4
+    aXeAVo+uCKlaVw2BraTuEvL6Cz1DdB/Psfaot9QlUr9hnMLx/dj/hcJf4xYvC9gB
+    YJbDqN/MK+URE4qoskU3rsa9YG7Mpt1JdWRBeRxVQiHgADrBMGd7oty1ekToBFoz
+    eL4RSxNPpES8ZQWvBoZHUPbymuscdX+wYwcU1jpZ0/J6EnZzkHnkiG/umP6tWo3l
+    1noEekjvXAPWZVNlPZxvaw==
     """
 
   Scenario: Updating Nextcloud latest 32 to 33 on the beta channel
     Given There is a release with channel "beta"
-    And The received version is "32.0.10.0"
+    And The received version is "32.0.11.0"
     And The received PHP version is "8.2.0"
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "33.0.4.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-33.0.4rc1.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-33.0.4rc1.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-33.0.4rc1.tar.bz2"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v33.0.4rc1/nextcloud-33.0.4rc1.zip"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v33.0.4rc1/nextcloud-33.0.4rc1.tar.bz2"
+    And Update to version "33.0.5.0" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-33.0.5rc1.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-33.0.5rc1.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-33.0.5rc1.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v33.0.5rc1/nextcloud-33.0.5rc1.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v33.0.5rc1/nextcloud-33.0.5rc1.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/33/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL date is "2027-02-18"
     And The signature is
     """
-    C64ftnNHJnhxaKUQYJSaOZ4Sa4knRfHY11VFstWGe7ih25vGpsLfE5PguTf3EVg8
-    aEECRlnJwpvJmXEbN0Fxq3CyC+w4qvAWL+N5Y6RzkdvxQF3dV9Vp56UjKU+vUest
-    dSAK9fI7FnTVTLTaxx5RZK7y1fGdGfM8y18+gFLgoqR8hZWxZlS0FSd21JaLPqtk
-    h+nft26IrmwzHWBgo99I0F8M9aMLboI6EVAroXBVditRBOKW/3ykMA/t/2ZfAn85
-    aIJPSJj8/yXIyE3+F5PfkU5lmkCaqKqUErXuGDO5pbmyXRIq2dsOvUVPCI/2RVpN
-    JDuJzkA1vDKInYESUioE6A==
+    nGQIFnvN2EPUsry3qF23lRVTHpcw1ZYPem9x7XrWMiY41obLrOJlW/zcS4l5W9K8
+    N5U/UcQ8ztoX29jA2bmkBtK7vaHBZI6BR9YVWIL8VraOf1MQFm+zso7MotpJFTH5
+    eiqz2JoqzOicmq0eRULJSzPVytonsxrH82pA3+f6whEPpxmGJYgZXXHFXP7d8Icv
+    UPlBkNjsLe4CAlhHRlPLaPp6NV3D/7njz6MpaqEPiSOZ8t3Gx/yqA/ntJgRJaEuY
+    XLprlly4TTc8Zx+dge953xUqTiKCQJL+yv/ogCeYiWL8jn4PJwvFF+Xa5/3chKFL
+    vXRoupQq0LzvmPQmL2vHbw==
     """
 
   Scenario: Updating Nextcloud 33 on the beta channel
@@ -734,27 +734,27 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "33.0.4.0" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-33.0.4rc1.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-33.0.4rc1.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-33.0.4rc1.tar.bz2"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v33.0.4rc1/nextcloud-33.0.4rc1.zip"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v33.0.4rc1/nextcloud-33.0.4rc1.tar.bz2"
+    And Update to version "33.0.5.0" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-33.0.5rc1.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-33.0.5rc1.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-33.0.5rc1.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v33.0.5rc1/nextcloud-33.0.5rc1.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v33.0.5rc1/nextcloud-33.0.5rc1.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/33/admin_manual/maintenance/upgrade.html"
-    And EOL is set to "0"
+    And EOL date is "2027-02-18"
     And The signature is
     """
-    C64ftnNHJnhxaKUQYJSaOZ4Sa4knRfHY11VFstWGe7ih25vGpsLfE5PguTf3EVg8
-    aEECRlnJwpvJmXEbN0Fxq3CyC+w4qvAWL+N5Y6RzkdvxQF3dV9Vp56UjKU+vUest
-    dSAK9fI7FnTVTLTaxx5RZK7y1fGdGfM8y18+gFLgoqR8hZWxZlS0FSd21JaLPqtk
-    h+nft26IrmwzHWBgo99I0F8M9aMLboI6EVAroXBVditRBOKW/3ykMA/t/2ZfAn85
-    aIJPSJj8/yXIyE3+F5PfkU5lmkCaqKqUErXuGDO5pbmyXRIq2dsOvUVPCI/2RVpN
-    JDuJzkA1vDKInYESUioE6A==
+    nGQIFnvN2EPUsry3qF23lRVTHpcw1ZYPem9x7XrWMiY41obLrOJlW/zcS4l5W9K8
+    N5U/UcQ8ztoX29jA2bmkBtK7vaHBZI6BR9YVWIL8VraOf1MQFm+zso7MotpJFTH5
+    eiqz2JoqzOicmq0eRULJSzPVytonsxrH82pA3+f6whEPpxmGJYgZXXHFXP7d8Icv
+    UPlBkNjsLe4CAlhHRlPLaPp6NV3D/7njz6MpaqEPiSOZ8t3Gx/yqA/ntJgRJaEuY
+    XLprlly4TTc8Zx+dge953xUqTiKCQJL+yv/ogCeYiWL8jn4PJwvFF+Xa5/3chKFL
+    vXRoupQq0LzvmPQmL2vHbw==
     """
 
   Scenario: Updating Nextcloud latest 33 to 34 on the beta channel
     Given There is a release with channel "beta"
-    And The received version is "33.0.4.0"
+    And The received version is "33.0.5.0"
     And The received PHP version is "8.2.0"
     And the installation mtime is "11"
     When The request is sent
