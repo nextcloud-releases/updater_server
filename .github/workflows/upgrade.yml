@@ -18,11 +18,11 @@ jobs:
       config: ${{ steps.changes.outputs.config }}
 
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
 
       # If the config has not changed, we skip
       # It allows us to still have a summary result
-      - uses: dorny/paths-filter@de90cc6fb38fc0963ad72b210f1f284cd68cea36 # v3.0.2
+      - uses: dorny/paths-filter@fbd0ab8f3e69293af611ebaee6363fc25e6d187d # v4.0.1
         id: changes
         with:
           filters: |
@@ -40,7 +40,7 @@ jobs:
 
     name: Initializing ${{matrix.channel}} configs
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
 
       - name: Getting config
         id: get-config
@@ -106,6 +106,16 @@ jobs:
           echo "BASE_VERSION=$VERSION" >> $GITHUB_ENV
           echo "BASE_VERSION_STRING=$VERSION_STRING" >> $GITHUB_ENV
 
+          # When a new major's first stable release lands, the bare-major entry
+          # (e.g. base "34") normalizes to X.0.0, which equals the target latest.
+          # That is a no-op self-upgrade the updater rightfully refuses, so skip it.
+          PREFIX="${{ matrix.config.latest }}"
+          PREFIX="${PREFIX%% *}"  # remove everything after the first space (enterprise)
+          if [ "$VERSION_STRING" = "$PREFIX" ]; then
+            echo "::notice::Base $VERSION_STRING equals target $PREFIX — skipping no-op self-upgrade"
+            echo "SKIP_UPGRADE=true" >> $GITHUB_ENV
+          fi
+
       - name: Setup nextcloud ${{ env.BASE_VERSION_STRING }} (${{ env.BASE_VERSION }})
         run: |
           cd nextcloud
@@ -113,7 +123,7 @@ jobs:
           php occ maintenance:install --verbose --admin-user admin --admin-pass admin
 
       - name: Fetch upgrade
-        if: matrix.mode == 'manual'
+        if: matrix.mode == 'manual' && env.SKIP_UPGRADE != 'true'
         run: |
           mv nextcloud nextcloud.old
           wget --quiet ${{ matrix.config.downloadUrl }} -O nextcloud-update.zip
@@ -125,19 +135,19 @@ jobs:
           echo "TARGET_VERSION_STRING=$VERSION_STRING" >> $GITHUB_ENV
 
       - name: Copy necessary files
-        if: matrix.mode == 'manual'
+        if: matrix.mode == 'manual' && env.SKIP_UPGRADE != 'true'
         run: |
           mv nextcloud.old/config/config.php nextcloud/config/config.php
           mv nextcloud.old/data nextcloud/data
 
       - name: Perform upgrade to ${{ env.TARGET_VERSION_STRING }} (${{ env.TARGET_VERSION }})
-        if: matrix.mode == 'manual'
+        if: matrix.mode == 'manual' && env.SKIP_UPGRADE != 'true'
         run: |
           cd nextcloud
           php occ upgrade -v
 
       - name: Use updater
-        if: matrix.mode == 'updater'
+        if: matrix.mode == 'updater' && env.SKIP_UPGRADE != 'true'
         run: |
           cd nextcloud
           BASE="${{ matrix.config.base }}"
@@ -154,11 +164,13 @@ jobs:
           php updater/updater.phar --url ${{ matrix.config.downloadUrl }} --no-backup --no-interaction --no-verify -vvv
 
       - name: Integrity check
+        if: env.SKIP_UPGRADE != 'true'
         run: |
           cd nextcloud
           php occ integrity:check-core
 
       - name: Verify final Nextcloud version
+        if: env.SKIP_UPGRADE != 'true'
         run: |
           cd nextcloud
           VERSION=$(php occ --output=json status | jq -r .version)
