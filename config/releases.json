@@ -135,5 +135,12 @@
 			"zip": "wWen1mebrZlE/v3OT7QPuy0gG8pXZi6LpiGykQmU/d50jD1T1xhC5XjzBuavFw1Rn+f3hMDTLX6ZRpXCT8ETP4ahczcedWvJ8M0DDs5b7zJH4KCCNbQ+f087v6GbSY5lqR/aHiW4ILSroY/4bTgSBSIlEZNfbMGOYdU28RcnwfYXK6GlYm7myunpgLQl0TO8ncnZxYyOp1hlYEKCicBv9daqZLBzNlHPyMZRlQaFVy56julzKYuYrEOIYJ97MqHvcnAiQW/rPKpjO9aEscca9al8N8HkRZ0xatUXzNibwoAI6kgFltgSGdxfaTYFN/yZtROcuuq4A6jcCjhT178clw=="
 		},
 		"deploy": 30
+	},
+	"34.0.1 RC1": {
+		"internalVersion": "34.0.1.0",
+		"signatures": {
+			"bz2": "BgPD0PgApYEVl7q9V1OAsCIGTsUSMqplF2DEirq36g+Jusj/O4fUVjIP6IqoQD2tfkb0mGIws/G4IbemJTcmgycYAoVIs/HfkEJ7sOaMy862VkKDM4HSJaWzQzZzuvfcT/2Q0NmVt+XZ2pNKHZnygvcitx0vPYade4p3CGOpHtqM/Kfvn7kKup1rjkG1BCkeeJgeCUpse2r6OSTy8pc3kDm3gifveUK9GbMnWz7Pnv6DtWr6fvuqhyrEuJt6i1u364XlzwjsWBur+FcnwceLfWLyN1reYqCBFecUJTcxacAz9HiBE0nYGs8uMd3h1c6M74jiycc6iQ3rqLI9Gawz6w==",
+			"zip": "bMPxcWFe2G/k30CurvzjaPvVljRn7TNLDvRMeoW0iz+17i5Hm69b1ibZ3jctHKGAy+xGrVSu7ZKFS+j5HqhU6rNoPmplKRXZy28J4vnrN98fWa64Iq2cRXJD6E8tNAOzKsmPT7wfZXbqtw4tOcOaQsr/WQ4ScV+K9utpOAoGDQc77SxDrU9Ye1mkd8hpprn1m2KJ1h5ZsFYh3Lb5AUXy4y4YcFFoI/wLZbIDtP0dgUVVyA50t4fY7eou4W+xact1mxkEOp5vtd7DyPQ4i0NEW+uD7bffIQw1x/Xyul544iT3v40oAysNAR6U06HrmW7HedHx0lp2XDxt4uukkzbIEg=="
+		}
 	}
 }
