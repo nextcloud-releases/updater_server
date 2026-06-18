@@ -120,5 +120,12 @@
 			"zip": "wWen1mebrZlE/v3OT7QPuy0gG8pXZi6LpiGykQmU/d50jD1T1xhC5XjzBuavFw1Rn+f3hMDTLX6ZRpXCT8ETP4ahczcedWvJ8M0DDs5b7zJH4KCCNbQ+f087v6GbSY5lqR/aHiW4ILSroY/4bTgSBSIlEZNfbMGOYdU28RcnwfYXK6GlYm7myunpgLQl0TO8ncnZxYyOp1hlYEKCicBv9daqZLBzNlHPyMZRlQaFVy56julzKYuYrEOIYJ97MqHvcnAiQW/rPKpjO9aEscca9al8N8HkRZ0xatUXzNibwoAI6kgFltgSGdxfaTYFN/yZtROcuuq4A6jcCjhT178clw=="
 		},
 		"deploy": 30
+	},
+	"32.0.12 RC1": {
+		"internalVersion": "32.0.12.0",
+		"signatures": {
+			"bz2": "YupcRSxduLHDf6CgUmHd6meOrIlGJrHPkfmmLcF/ewlQC9IJn2LzEtwRdORdHyBm6TtnSBoF6vEJ/wnN99QefIh+QsPodwn74b2nWGGJUZFcLOTHWm8MuhTWaAP2tQ86krLz4YgHBNS5AZO7kiKVQLqYWbY8Lk6Fb5v3OT5Z7hFv1Pz08258fz6zzYkVzOBkgdQkatjjOchvxR/1omPVQAy5czFE3668xNgrVi++Z5GA+fnQAvpIRmFztz5ovUoErVffjDC+R2jd9d+/9WTnwIWyqUKAa9vPpSWFf2xIloAAoXB2wb8XhdAM8yNvrFcVEulzw1Lc4UGxWoQwUfu50g==",
+			"zip": "NZWxb/p27XHf68fOXH+WZTOLfSizm2kVvSmoPXsnD9hn3ARsqtuPaR0pOyd+VPkddBWMD3gISuWI0O7f0S7Txat3WmQorVhEcNhIXmVvyaWb8FIat4feVdFaJbIeOiHnYRoyhYNSWbwGy3gTTx5dbbVGli0SPVOGL9j+IdA0/B18Asn7zjzXIth/Zli+pxuZi48z49LFtS5KRLSedqgShxQmRaJDTIz4zEpekrM8HvZH2odGvUTRdMgSibe+yCeQzCXPM3CdzdZM16uehFUKKVtHHGGMpdk6Wk66I2NEfkYI6BiYKsWOVPdeqsohqzAGQbnWKcE9TEvIU5SNByr9dQ=="
+		}
 	}
 }
