@@ -106,6 +106,13 @@
 			"zip": "fjrCxIdnySTTWKZifdp5+2SUF31Vv7d2JR0i8LL6O7NZ76xmKk8mQY44ecwNErUsUbbEFO/s0WUbFGgU4ZUvDaxjYlQYYXkUAD6PSl/UnN/RBIQJhi0haM5oOsa+90oeb65FFNyX4uGHjAWMNhv9ChZc5rmZgv35lmMLMJ2O4W+1xhLabppucMWEvwd2+EV2V/Iy9Qo5gZx82vCbZigpn6OQo011DiRY1Q4i2hlirZsp8Jk18CjAznZQ0s+1RxRfEWl89AtaAYE7NPBhMYb5hTsDzRVizVUU3YYTCWqEpd4DV8q4RywFN03K9oiJAAdZyvE6RPkGve7ePndOyln6mw=="
 		}
 	},
+	"32.0.12 RC1": {
+		"internalVersion": "32.0.12.0",
+		"signatures": {
+			"bz2": "YupcRSxduLHDf6CgUmHd6meOrIlGJrHPkfmmLcF/ewlQC9IJn2LzEtwRdORdHyBm6TtnSBoF6vEJ/wnN99QefIh+QsPodwn74b2nWGGJUZFcLOTHWm8MuhTWaAP2tQ86krLz4YgHBNS5AZO7kiKVQLqYWbY8Lk6Fb5v3OT5Z7hFv1Pz08258fz6zzYkVzOBkgdQkatjjOchvxR/1omPVQAy5czFE3668xNgrVi++Z5GA+fnQAvpIRmFztz5ovUoErVffjDC+R2jd9d+/9WTnwIWyqUKAa9vPpSWFf2xIloAAoXB2wb8XhdAM8yNvrFcVEulzw1Lc4UGxWoQwUfu50g==",
+			"zip": "NZWxb/p27XHf68fOXH+WZTOLfSizm2kVvSmoPXsnD9hn3ARsqtuPaR0pOyd+VPkddBWMD3gISuWI0O7f0S7Txat3WmQorVhEcNhIXmVvyaWb8FIat4feVdFaJbIeOiHnYRoyhYNSWbwGy3gTTx5dbbVGli0SPVOGL9j+IdA0/B18Asn7zjzXIth/Zli+pxuZi48z49LFtS5KRLSedqgShxQmRaJDTIz4zEpekrM8HvZH2odGvUTRdMgSibe+yCeQzCXPM3CdzdZM16uehFUKKVtHHGGMpdk6Wk66I2NEfkYI6BiYKsWOVPdeqsohqzAGQbnWKcE9TEvIU5SNByr9dQ=="
+		}
+	},
 	"33.0.5": {
 		"internalVersion": "33.0.5.1",
 		"signatures": {
