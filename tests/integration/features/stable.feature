@@ -814,19 +814,11 @@ Scenario: Updating Nextcloud 32 on the stable channel
     /ajw0k7JOxYb59WGYPhFKg==
     """
 
-  Scenario: Not updating Nextcloud latest 33 to 34 on the stable channel (staged rollout)
-    Given There is a release with channel "stable"
-    And The received version is "33.0.6.2"
-    And The received PHP version is "8.2.0"
-    And the installation mtime is "71"
-    When The request is sent
-    Then The response is empty
-
   Scenario: Updating Nextcloud latest 33 to 34 on the stable channel
     Given There is a release with channel "stable"
     And The received version is "33.0.6.2"
     And The received PHP version is "8.2.0"
-    And the installation mtime is "11"
+    And the installation mtime is "91"
     When The request is sent
     Then The response is non-empty
     And Update to version "34.0.1.2" is available
