@@ -382,7 +382,7 @@ class FeatureContext implements Context, SnippetAcceptingContext {
     }
 
 	/**
-	 * @Then I get error ":expectedError"
+	 * @Then I get error :expectedError
 	 */
     public function iGetError($expectedError): void
     {
