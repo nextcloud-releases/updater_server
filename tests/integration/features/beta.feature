@@ -801,3 +801,53 @@ Feature: Testing the update scenario of beta releases
     U1D63qd9DHwE0r3B5Cv0Fb6ExF1l9hFt/YxyuEy1vQMhSZ1VURU7krgSUXP/huHA
     Z3CR/bmyUI7WKM8WtrpHFg==
     """
+
+  Scenario: Updating Nextcloud latest 34 to 35 on the beta channel
+    Given There is a release with channel "beta"
+    And The received version is "34.0.3.1"
+    And The received PHP version is "8.3.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "35.0.0.2" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-35.0.0beta1.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-35.0.0beta1.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-35.0.0beta1.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.0beta1/nextcloud-35.0.0beta1.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.0beta1/nextcloud-35.0.0beta1.tar.bz2"
+    And URL to documentation is "https://docs.nextcloud.com/server/35/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    M9CXOfce2URmvLltvcOOA+ncQ+0R31TqYwmoa5t+/e9gVU8GGuFlebgHoGAD7wml
+    jgSXPgro30B0I7P1XFVAQJCP7hnnRnShGDWJFg1sWsDq3ldbTwrqu4fO9YHNXbxA
+    aYeg9EKQMROSJLQ2U17q+wz5+mZg1pz+iJaAg2R7l12XRc0kWz0OveXOFVtoPR9K
+    tSbFPzvRNHKLKJYQ1v5InP8sVH2P+D+NiBzGvrMA+9Ifcsg70W5oKkXc/7p/E222
+    Iu1d2qptToLcH6s00+FC2plLSY3VEXht9E+GICNPrQha9jsqjBtuh/DgHl7wBqfL
+    WDrVEsfRc+jNPW3trTRAcQ==
+    """
+
+  Scenario: Updating Nextcloud 34 on the beta channel
+    Given There is a release with channel "beta"
+    And The received version is "35.0.0.0"
+    And The received PHP version is "8.3.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "35.0.0.2" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-35.0.0beta1.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-35.0.0beta1.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-35.0.0beta1.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.0beta1/nextcloud-35.0.0beta1.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.0beta1/nextcloud-35.0.0beta1.tar.bz2"
+    And URL to documentation is "https://docs.nextcloud.com/server/35/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    M9CXOfce2URmvLltvcOOA+ncQ+0R31TqYwmoa5t+/e9gVU8GGuFlebgHoGAD7wml
+    jgSXPgro30B0I7P1XFVAQJCP7hnnRnShGDWJFg1sWsDq3ldbTwrqu4fO9YHNXbxA
+    aYeg9EKQMROSJLQ2U17q+wz5+mZg1pz+iJaAg2R7l12XRc0kWz0OveXOFVtoPR9K
+    tSbFPzvRNHKLKJYQ1v5InP8sVH2P+D+NiBzGvrMA+9Ifcsg70W5oKkXc/7p/E222
+    Iu1d2qptToLcH6s00+FC2plLSY3VEXht9E+GICNPrQha9jsqjBtuh/DgHl7wBqfL
+    WDrVEsfRc+jNPW3trTRAcQ==
+    """
