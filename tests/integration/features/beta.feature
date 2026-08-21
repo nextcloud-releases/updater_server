@@ -809,22 +809,22 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "35.0.0.4" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-35.0.0beta3.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-35.0.0beta3.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-35.0.0beta3.tar.bz2"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.0beta3/nextcloud-35.0.0beta3.zip"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.0beta3/nextcloud-35.0.0beta3.tar.bz2"
+    And Update to version "35.0.0.5" is available
+    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-35.0.0beta4.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-35.0.0beta4.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-35.0.0beta4.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.0beta4/nextcloud-35.0.0beta4.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.0beta4/nextcloud-35.0.0beta4.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/35/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    bPwymoRH+Zy0FonmG9hIgQz5S/IcvoCb9qsIkavh4LuTo8rjtcoSXTUZrfYk68Ru
-    pVye+3rxexPHKxlrUIsZTJCdhD5TfVgncl4AF1YtCLI66UUSYnU9FnEu/TlNUX4O
-    D1N1K59gV4bMTIP7naLuqlu1EN2QA6b/cx+Q316DjhE0TCAtcsrTXcOgIutVmm1j
-    gNifciq0eO41pVDn83qv4GKtzNnvS5MdQwrq6+aJBU+/qn07QXCRcBCzktnbvGnZ
-    Vw3MNseiCkMcDICV9aUSW0M6SkOpKEF9vdWNDLMcpzAP/90y4tCiJ8j9wQrobJtv
-    qJ2WFLV4y8E456n2LR0wFg==
+    NRDrI5nzl9G9VZRRvrF/+v8bk+s/V3otc6aSvPxMZrjvbdCyI+2JHMfFJX+QIrW4
+    GR1V0Si9FqLK5O+CYT4ODx4vmC4R2LBTgtLgK+KwuVSFbKEOTgv5ZX8PtBve50u0
+    QRaQeOcXZtoK8+3CPMS6UmfGbVO916vcijxFMsmj39WS2hLbhE/MlWAKc3i2KixJ
+    8fWjfiSXruJNGyPYKdGvof5GlxVpz88Fz5lUvn1cEcZehcx548y/LxproxRvl9CP
+    SU8tvYwxjsGvZ366Im1NZ5qlBU9hnnLGgvkBS2f4MDqb/DpJaFroMKIpu6mgRwTF
+    BUvoQ0E7r0qECqsEVm8UhQ==
     """
 
   Scenario: Updating Nextcloud 34 on the beta channel
