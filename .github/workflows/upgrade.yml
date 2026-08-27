@@ -78,6 +78,7 @@ jobs:
       - name: Fetch release
         run: |
           BASE="${{ matrix.config.base }}"
+          TARGET_URL="${{ matrix.config.downloadUrl }}"
 
           # Normalize BASE to full MAJOR.MINOR.PATCH format
           if [[ "$BASE" =~ ^[0-9]+$ ]]; then
@@ -88,16 +89,39 @@ jobs:
 
           echo "Normalized base version: $BASE"
 
-          # Try fetching official releases first, then prereleases (rc1–rc5), then fallback to latest-major
-          wget --quiet "https://download.nextcloud.com/server/releases/nextcloud-${BASE}.zip" -O nextcloud-base.zip \
-            || wget --quiet "https://download.nextcloud.com/server/prereleases/nextcloud-${BASE}.zip" -O nextcloud-base.zip \
-            || for rc in {1..5}; do
-                wget --quiet "https://download.nextcloud.com/server/prereleases/nextcloud-${BASE}rc${rc}.zip" -O nextcloud-base.zip && break
-              done \
-            || wget --quiet "https://download.nextcloud.com/server/releases/latest-${BASE%%.*}.zip" -O nextcloud-base.zip \
-            || for beta in {1..6}; do
-                wget --quiet "https://download.nextcloud.com/server/prereleases/nextcloud-${BASE}beta${beta}.zip" -O nextcloud-base.zip && break
-              done
+          # Candidate "install from" URLs in priority order: official release,
+          # matching prerelease, rc1–rc5, latest-major, beta1–beta6.
+          CANDIDATES=(
+            "https://download.nextcloud.com/server/releases/nextcloud-${BASE}.zip"
+            "https://download.nextcloud.com/server/prereleases/nextcloud-${BASE}.zip"
+          )
+          for rc in {1..5}; do
+            CANDIDATES+=("https://download.nextcloud.com/server/prereleases/nextcloud-${BASE}rc${rc}.zip")
+          done
+          CANDIDATES+=("https://download.nextcloud.com/server/releases/latest-${BASE%%.*}.zip")
+          for beta in {1..6}; do
+            CANDIDATES+=("https://download.nextcloud.com/server/prereleases/nextcloud-${BASE}beta${beta}.zip")
+          done
+
+          FETCHED_URL=""
+          for url in "${CANDIDATES[@]}"; do
+            if wget --quiet "$url" -O nextcloud-base.zip; then
+              FETCHED_URL="$url"
+              break
+            fi
+          done
+
+          # For the first prerelease of a new major (e.g. base "35" while 35 has
+          # no stable release yet), the only fetchable "base" is the target
+          # itself — or nothing at all. There is nothing to upgrade *from*, so
+          # skip instead of failing on a no-op self-upgrade.
+          if [ -z "$FETCHED_URL" ] || [ "$FETCHED_URL" = "$TARGET_URL" ]; then
+            REASON="No earlier release to upgrade from for base ${{ matrix.config.base }} (first ${{ matrix.config.channel }} streak — no stable${{ matrix.config.base }} yet)"
+            echo "::notice::${REASON}; skipping"
+            echo "⏭️ Skipped: ${REASON}." >> "$GITHUB_STEP_SUMMARY"
+            echo "SKIP_UPGRADE=true" >> $GITHUB_ENV
+            exit 0
+          fi
 
           unzip -q nextcloud-base.zip
           VERSION=$(php nextcloud/occ --output=json status | jq -r .version)
@@ -117,6 +141,7 @@ jobs:
           fi
 
       - name: Setup nextcloud ${{ env.BASE_VERSION_STRING }} (${{ env.BASE_VERSION }})
+        if: env.SKIP_UPGRADE != 'true'
         run: |
           cd nextcloud
           mkdir data
