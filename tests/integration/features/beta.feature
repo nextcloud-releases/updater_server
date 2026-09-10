@@ -819,12 +819,12 @@ Feature: Testing the update scenario of beta releases
     And EOL is set to "0"
     And The signature is
     """
-    o8qgU6z7wVKRxzVrHYeBFh+M6J0qWsOHl/b9o/Lv+6aaperNmf8CCA0YDrYbFSxl
-    NRmCo98J4yPbrZtwqzDrb++uZxh8hDQzDHEkIt/JzwzrrqZIHxrk/53wC4JvKZER
-    zjSKjjzWjVIltyIO/aOvJYz3EMxW4d9Wo+/ZaUWFOWuqzW1Av8jZk9ZMizzzOsc2
-    UcmsoXoECGJV7MrTsy5bixzjWfbt3nNLwLM+SZyGE4dRMX5C378ucnxZ6tvqmqWJ
-    Ws8IR4PqPM6Aa0RREWrnZjT1uIchhOwlsr3lGVwc13XYQZ6+Xu77CYc4KPWvtVel
-    +kW2G5u3J6PTIfFwAmK2mw==
+    fuUifrgRFMkCInPqc10qWiqzTeiRwaHz9QcpYpJ8HU+fpwFamsBQ9rP4Iwjz21Lk
+    jtSj16GUzislC7sD3Kt4OxzbBAKD2UJPmQF6IyM7fcg3SgxVScu6vXb7cVi1UNnn
+    uskZ0Me+xsO+h3g1+oPRsBjExkbY5yrgp9yp3bt+tAUEKIaF0mGonXHIWKdQ4q/2
+    QOXnzJkmJsyXAyXyFhAOV93rDynFywq3kEG/ad3kAIOJkDFf+p6sUrPNk7Ef8kGt
+    hyuxXeNu1e65cg51ypWMy9ViDUn5A9GAFoIHQj5/z1GDBmTKiQM4mGghxUtGSGL4
+    DiQoGhCd7Em0iVVGoiJd+g==
     """
 
   Scenario: Updating Nextcloud 34 on the beta channel
@@ -844,10 +844,10 @@ Feature: Testing the update scenario of beta releases
     And EOL is set to "0"
     And The signature is
     """
-    o8qgU6z7wVKRxzVrHYeBFh+M6J0qWsOHl/b9o/Lv+6aaperNmf8CCA0YDrYbFSxl
-    NRmCo98J4yPbrZtwqzDrb++uZxh8hDQzDHEkIt/JzwzrrqZIHxrk/53wC4JvKZER
-    zjSKjjzWjVIltyIO/aOvJYz3EMxW4d9Wo+/ZaUWFOWuqzW1Av8jZk9ZMizzzOsc2
-    UcmsoXoECGJV7MrTsy5bixzjWfbt3nNLwLM+SZyGE4dRMX5C378ucnxZ6tvqmqWJ
-    Ws8IR4PqPM6Aa0RREWrnZjT1uIchhOwlsr3lGVwc13XYQZ6+Xu77CYc4KPWvtVel
-    +kW2G5u3J6PTIfFwAmK2mw==
+    fuUifrgRFMkCInPqc10qWiqzTeiRwaHz9QcpYpJ8HU+fpwFamsBQ9rP4Iwjz21Lk
+    jtSj16GUzislC7sD3Kt4OxzbBAKD2UJPmQF6IyM7fcg3SgxVScu6vXb7cVi1UNnn
+    uskZ0Me+xsO+h3g1+oPRsBjExkbY5yrgp9yp3bt+tAUEKIaF0mGonXHIWKdQ4q/2
+    QOXnzJkmJsyXAyXyFhAOV93rDynFywq3kEG/ad3kAIOJkDFf+p6sUrPNk7Ef8kGt
+    hyuxXeNu1e65cg51ypWMy9ViDUn5A9GAFoIHQj5/z1GDBmTKiQM4mGghxUtGSGL4
+    DiQoGhCd7Em0iVVGoiJd+g==
     """
