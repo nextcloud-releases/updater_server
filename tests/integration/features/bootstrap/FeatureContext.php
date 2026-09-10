@@ -321,7 +321,7 @@ class FeatureContext implements Context, SnippetAcceptingContext {
 			$eolDate = '9999-99-99';
 		}
 		$isEol = $this->resultArray['eol'];
-		$expectedIsEol = date('Y-m-d') > $eolDate ? '1' : '0';
+		$expectedIsEol = date('Y-m-d') >= $eolDate ? '1' : '0';
 		if($isEol !== $expectedIsEol) {
 			throw new \Exception($expectedIsEol
 				? 'Version have reached EOL on '.$expectedEolDate
