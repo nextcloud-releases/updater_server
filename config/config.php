@@ -177,7 +177,7 @@ IGTNwncRtYpRt2BLmndsRA==',
 					],
 				],
 				'web' => 'https://docs.nextcloud.com/server/32/admin_manual/maintenance/upgrade.html',
-				'eol' => '2026-09-27',
+				'eol' => '2026-09-10',
 				'minPHPVersion' => '8.1',
 				'signature' => 'eVBaiPngFy+DzBX3uM9DdlpGeSp1xPGpqeqZi8Qdh7LqeFNH6CgB8XM65gZDHUA2
 3ScQ2TuopT6Bv8RNUQCgUrHFDcWQ5xkw/1VJQ0XSpC61mNuEBs7Xg2GrqqnGyVsJ
@@ -217,7 +217,7 @@ cwZCcoIfpRUCu671HF+GSg==',
 					],
 				],
 				'web' => 'https://docs.nextcloud.com/server/32/admin_manual/maintenance/upgrade.html',
-				'eol' => '2026-09-27',
+				'eol' => '2026-09-10',
 				'minPHPVersion' => '8.1',
 				'signature' => 'eVBaiPngFy+DzBX3uM9DdlpGeSp1xPGpqeqZi8Qdh7LqeFNH6CgB8XM65gZDHUA2
 3ScQ2TuopT6Bv8RNUQCgUrHFDcWQ5xkw/1VJQ0XSpC61mNuEBs7Xg2GrqqnGyVsJ
@@ -1788,7 +1788,7 @@ DiQoGhCd7Em0iVVGoiJd+g==',
 		'32' => [
 			'downloadUrl' => 'https://download.nextcloud.com/server/daily/latest-stable32.zip',
 			'web' => 'https://docs.nextcloud.com/server/32/admin_manual/maintenance/upgrade.html',
-			'eol' => '2026-09-27',
+			'eol' => '2026-09-10',
 			'minPHPVersion' => '8.1',
 		],
 		'31' => [
