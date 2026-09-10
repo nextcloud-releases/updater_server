@@ -728,7 +728,7 @@ Feature: Testing the update scenario of stable releases
     And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.15/nextcloud-32.0.15.zip"
     And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.15/nextcloud-32.0.15.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/32/admin_manual/maintenance/upgrade.html"
-    And EOL date is set to "2026-09-27"
+    And EOL date is set to "2026-09-10"
     And The signature is
     """
     eVBaiPngFy+DzBX3uM9DdlpGeSp1xPGpqeqZi8Qdh7LqeFNH6CgB8XM65gZDHUA2
@@ -753,7 +753,7 @@ Scenario: Updating Nextcloud 32 on the stable channel
     And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.15/nextcloud-32.0.15.zip"
     And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v32.0.15/nextcloud-32.0.15.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/32/admin_manual/maintenance/upgrade.html"
-    And EOL date is set to "2026-09-27"
+    And EOL date is set to "2026-09-10"
     And The signature is
     """
     eVBaiPngFy+DzBX3uM9DdlpGeSp1xPGpqeqZi8Qdh7LqeFNH6CgB8XM65gZDHUA2
