@@ -809,22 +809,22 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "35.0.0.9" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-35.0.0rc4.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-35.0.0rc4.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-35.0.0rc4.tar.bz2"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.0rc4/nextcloud-35.0.0rc4.zip"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.0rc4/nextcloud-35.0.0rc4.tar.bz2"
+    And Update to version "35.0.0.10" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-35.0.0.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.0.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.0.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.0/nextcloud-35.0.0.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.0/nextcloud-35.0.0.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/35/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    fuUifrgRFMkCInPqc10qWiqzTeiRwaHz9QcpYpJ8HU+fpwFamsBQ9rP4Iwjz21Lk
-    jtSj16GUzislC7sD3Kt4OxzbBAKD2UJPmQF6IyM7fcg3SgxVScu6vXb7cVi1UNnn
-    uskZ0Me+xsO+h3g1+oPRsBjExkbY5yrgp9yp3bt+tAUEKIaF0mGonXHIWKdQ4q/2
-    QOXnzJkmJsyXAyXyFhAOV93rDynFywq3kEG/ad3kAIOJkDFf+p6sUrPNk7Ef8kGt
-    hyuxXeNu1e65cg51ypWMy9ViDUn5A9GAFoIHQj5/z1GDBmTKiQM4mGghxUtGSGL4
-    DiQoGhCd7Em0iVVGoiJd+g==
+    wFkaARUf+iDEu6grdNcQtA6MBVL3ieiDyUxeRs+vBBKQNHAXwHItPSv1mRlCkbrW
+    +Rqlo4tB/7AxCh4xWeoSi20fBfq7IKSqvm+1rlJUbC77x6OWGXmRxBY4ZCfkEQRS
+    8hkVzpquiSt1KVNHnwy95ZFiZDI4tMknAB92Xqm/VjuEhhiVUfTB3sJShRVCGrvl
+    6PwdKja91ElaOcrH13QGTqQ4wxYS+vJ7Z1mR73iYelSymO1DRwZMZZ4RUt4yJgZo
+    4HKLfcPphBnF3vVsjj0J08DmvZkmD2py4Q6yg/u9TgJARk6+Yw2SKfOBI4nPsFhV
+    kdd01bJswxq9CAnpqmqC1w==
     """
 
   Scenario: Updating Nextcloud 34 on the beta channel
@@ -834,20 +834,20 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "35.0.0.9" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-35.0.0rc4.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-35.0.0rc4.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-35.0.0rc4.tar.bz2"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.0rc4/nextcloud-35.0.0rc4.zip"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.0rc4/nextcloud-35.0.0rc4.tar.bz2"
+    And Update to version "35.0.0.10" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-35.0.0.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.0.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.0.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.0/nextcloud-35.0.0.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.0/nextcloud-35.0.0.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/35/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    fuUifrgRFMkCInPqc10qWiqzTeiRwaHz9QcpYpJ8HU+fpwFamsBQ9rP4Iwjz21Lk
-    jtSj16GUzislC7sD3Kt4OxzbBAKD2UJPmQF6IyM7fcg3SgxVScu6vXb7cVi1UNnn
-    uskZ0Me+xsO+h3g1+oPRsBjExkbY5yrgp9yp3bt+tAUEKIaF0mGonXHIWKdQ4q/2
-    QOXnzJkmJsyXAyXyFhAOV93rDynFywq3kEG/ad3kAIOJkDFf+p6sUrPNk7Ef8kGt
-    hyuxXeNu1e65cg51ypWMy9ViDUn5A9GAFoIHQj5/z1GDBmTKiQM4mGghxUtGSGL4
-    DiQoGhCd7Em0iVVGoiJd+g==
+    wFkaARUf+iDEu6grdNcQtA6MBVL3ieiDyUxeRs+vBBKQNHAXwHItPSv1mRlCkbrW
+    +Rqlo4tB/7AxCh4xWeoSi20fBfq7IKSqvm+1rlJUbC77x6OWGXmRxBY4ZCfkEQRS
+    8hkVzpquiSt1KVNHnwy95ZFiZDI4tMknAB92Xqm/VjuEhhiVUfTB3sJShRVCGrvl
+    6PwdKja91ElaOcrH13QGTqQ4wxYS+vJ7Z1mR73iYelSymO1DRwZMZZ4RUt4yJgZo
+    4HKLfcPphBnF3vVsjj0J08DmvZkmD2py4Q6yg/u9TgJARk6+Yw2SKfOBI4nPsFhV
+    kdd01bJswxq9CAnpqmqC1w==
     """

@@ -863,3 +863,61 @@ Scenario: Updating Nextcloud 32 on the stable channel
     H6eA0Q8QpOGU+fXfm8E/Q+WBYGq/vpw+3snAtJDR4LouylvqtlEd5+aq9hS/m4gZ
     uJ6wi8Ww2z/gOl9rdwXFRg==
     """
+
+  Scenario: Updating Nextcloud latest 34 to 35 on the stable channel
+    Given There is a release with channel "stable"
+    And The received version is "34.0.4.1"
+    And The received PHP version is "8.3.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "35.0.0.10" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-35.0.0.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.0.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.0.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.0/nextcloud-35.0.0.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.0/nextcloud-35.0.0.tar.bz2"
+    And URL to documentation is "https://docs.nextcloud.com/server/35/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    wFkaARUf+iDEu6grdNcQtA6MBVL3ieiDyUxeRs+vBBKQNHAXwHItPSv1mRlCkbrW
+    +Rqlo4tB/7AxCh4xWeoSi20fBfq7IKSqvm+1rlJUbC77x6OWGXmRxBY4ZCfkEQRS
+    8hkVzpquiSt1KVNHnwy95ZFiZDI4tMknAB92Xqm/VjuEhhiVUfTB3sJShRVCGrvl
+    6PwdKja91ElaOcrH13QGTqQ4wxYS+vJ7Z1mR73iYelSymO1DRwZMZZ4RUt4yJgZo
+    4HKLfcPphBnF3vVsjj0J08DmvZkmD2py4Q6yg/u9TgJARk6+Yw2SKfOBI4nPsFhV
+    kdd01bJswxq9CAnpqmqC1w==
+    """
+
+  Scenario: Not updating Nextcloud latest 34 to 35 on the stable channel (staged rollout)
+    Given There is a release with channel "stable"
+    And The received version is "34.0.4.1"
+    And The received PHP version is "8.3.0"
+    And the installation mtime is "41"
+    When The request is sent
+    Then The response is empty
+
+  Scenario: Updating Nextcloud 35 on the stable channel
+    Given There is a release with channel "stable"
+    And The received version is "35.0.0.0"
+    And The received PHP version is "8.3.0"
+    And the installation mtime is "11"
+    When The request is sent
+    Then The response is non-empty
+    And Update to version "35.0.0.10" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-35.0.0.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.0.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.0.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.0/nextcloud-35.0.0.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.0/nextcloud-35.0.0.tar.bz2"
+    And URL to documentation is "https://docs.nextcloud.com/server/35/admin_manual/maintenance/upgrade.html"
+    And EOL is set to "0"
+    And The signature is
+    """
+    wFkaARUf+iDEu6grdNcQtA6MBVL3ieiDyUxeRs+vBBKQNHAXwHItPSv1mRlCkbrW
+    +Rqlo4tB/7AxCh4xWeoSi20fBfq7IKSqvm+1rlJUbC77x6OWGXmRxBY4ZCfkEQRS
+    8hkVzpquiSt1KVNHnwy95ZFiZDI4tMknAB92Xqm/VjuEhhiVUfTB3sJShRVCGrvl
+    6PwdKja91ElaOcrH13QGTqQ4wxYS+vJ7Z1mR73iYelSymO1DRwZMZZ4RUt4yJgZo
+    4HKLfcPphBnF3vVsjj0J08DmvZkmD2py4Q6yg/u9TgJARk6+Yw2SKfOBI4nPsFhV
+    kdd01bJswxq9CAnpqmqC1w==
+    """
