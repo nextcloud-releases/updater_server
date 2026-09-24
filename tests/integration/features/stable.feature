@@ -871,29 +871,29 @@ Scenario: Updating Nextcloud 32 on the stable channel
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "35.0.0.10" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-35.0.0.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.0.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.0.tar.bz2"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.0/nextcloud-35.0.0.zip"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.0/nextcloud-35.0.0.tar.bz2"
+    And Update to version "35.0.1.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-35.0.1.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.1.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.1.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.1/nextcloud-35.0.1.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.1/nextcloud-35.0.1.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/35/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    wFkaARUf+iDEu6grdNcQtA6MBVL3ieiDyUxeRs+vBBKQNHAXwHItPSv1mRlCkbrW
-    +Rqlo4tB/7AxCh4xWeoSi20fBfq7IKSqvm+1rlJUbC77x6OWGXmRxBY4ZCfkEQRS
-    8hkVzpquiSt1KVNHnwy95ZFiZDI4tMknAB92Xqm/VjuEhhiVUfTB3sJShRVCGrvl
-    6PwdKja91ElaOcrH13QGTqQ4wxYS+vJ7Z1mR73iYelSymO1DRwZMZZ4RUt4yJgZo
-    4HKLfcPphBnF3vVsjj0J08DmvZkmD2py4Q6yg/u9TgJARk6+Yw2SKfOBI4nPsFhV
-    kdd01bJswxq9CAnpqmqC1w==
+    oMgpIJGqxrdzfEPBOY+jxMVPybcdEsHIOxxvWhH+HZUITktOshZrqy8HABWDnavf
+    PLU57k8Y+oAASGwGgUvnYgLv0E7tDYijk07l4ZClUHPer0w0dIodr8F1TiHDPFnm
+    B0ZpLry8jfe8hVOqD4ECyjj213Lai9UtZY5uD9i4Agd+Tc4bY6DGlrdDUyK7wL0j
+    Y/HJa/VrxS1v3ERbUQq2VnnS+NzPz8ezLu24eIFpURaBd49ran48IJK8Cz9IGOhd
+    1MNooUuzcTShSlXoVZ3sN2Z+qZ1e9AUhE2sUZeqycpVvs/4sSEIFyDFZS7hE7t6j
+    AQKTcryio+NRZD9L4jSXXA==
     """
 
   Scenario: Not updating Nextcloud latest 34 to 35 on the stable channel (staged rollout)
     Given There is a release with channel "stable"
     And The received version is "34.0.4.1"
     And The received PHP version is "8.3.0"
-    And the installation mtime is "41"
+    And the installation mtime is "71"
     When The request is sent
     Then The response is empty
 
@@ -904,20 +904,20 @@ Scenario: Updating Nextcloud 32 on the stable channel
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "35.0.0.10" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-35.0.0.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.0.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.0.tar.bz2"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.0/nextcloud-35.0.0.zip"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.0/nextcloud-35.0.0.tar.bz2"
+    And Update to version "35.0.1.1" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-35.0.1.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.1.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.1.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.1/nextcloud-35.0.1.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.1/nextcloud-35.0.1.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/35/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    wFkaARUf+iDEu6grdNcQtA6MBVL3ieiDyUxeRs+vBBKQNHAXwHItPSv1mRlCkbrW
-    +Rqlo4tB/7AxCh4xWeoSi20fBfq7IKSqvm+1rlJUbC77x6OWGXmRxBY4ZCfkEQRS
-    8hkVzpquiSt1KVNHnwy95ZFiZDI4tMknAB92Xqm/VjuEhhiVUfTB3sJShRVCGrvl
-    6PwdKja91ElaOcrH13QGTqQ4wxYS+vJ7Z1mR73iYelSymO1DRwZMZZ4RUt4yJgZo
-    4HKLfcPphBnF3vVsjj0J08DmvZkmD2py4Q6yg/u9TgJARk6+Yw2SKfOBI4nPsFhV
-    kdd01bJswxq9CAnpqmqC1w==
+    oMgpIJGqxrdzfEPBOY+jxMVPybcdEsHIOxxvWhH+HZUITktOshZrqy8HABWDnavf
+    PLU57k8Y+oAASGwGgUvnYgLv0E7tDYijk07l4ZClUHPer0w0dIodr8F1TiHDPFnm
+    B0ZpLry8jfe8hVOqD4ECyjj213Lai9UtZY5uD9i4Agd+Tc4bY6DGlrdDUyK7wL0j
+    Y/HJa/VrxS1v3ERbUQq2VnnS+NzPz8ezLu24eIFpURaBd49ran48IJK8Cz9IGOhd
+    1MNooUuzcTShSlXoVZ3sN2Z+qZ1e9AUhE2sUZeqycpVvs/4sSEIFyDFZS7hE7t6j
+    AQKTcryio+NRZD9L4jSXXA==
     """
