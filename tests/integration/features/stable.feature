@@ -893,7 +893,7 @@ Scenario: Updating Nextcloud 32 on the stable channel
     Given There is a release with channel "stable"
     And The received version is "34.0.4.1"
     And The received PHP version is "8.3.0"
-    And the installation mtime is "71"
+    And the installation mtime is "41"
     When The request is sent
     Then The response is empty
 

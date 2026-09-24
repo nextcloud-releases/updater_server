@@ -42,7 +42,7 @@ AQKTcryio+NRZD9L4jSXXA==',
 			],
 		],
 		'34.0.4.1' => [
-			'70' => [
+			'30' => [
 				'latest' => '35.0.1',
 				'internalVersion' => '35.0.1.1',
 				'downloadUrl' => 'https://download.nextcloud.com/server/releases/nextcloud-35.0.1.zip',
