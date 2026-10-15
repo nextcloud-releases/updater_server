@@ -809,45 +809,45 @@ Feature: Testing the update scenario of beta releases
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "35.0.2.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-35.0.2rc2.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-35.0.2rc2.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-35.0.2rc2.tar.bz2"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.2rc2/nextcloud-35.0.2rc2.zip"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.2rc2/nextcloud-35.0.2rc2.tar.bz2"
+    And Update to version "35.0.2.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-35.0.2.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.2.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.2.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.2/nextcloud-35.0.2.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.2/nextcloud-35.0.2.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/35/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    b9kZv0gg6pmajSDWKm2NK0VhlALtYC9jYvBrE5aUDQiqSe7LmKnlIn5qcW+xnxuE
-    b4tu+WColWZ8E1Yg3BHrZZJqjJiLJJWTAIPuLVC3tOyWMBAGNjO9odO6TVKgorrI
-    iHn2O8iNnZ5cKc7qVPUSYz+UFWN/Qus6Zhy0ZsW+siaZjRNC8eNnD2bu82KEuy+b
-    D/jVROMQjly9f+LQHgAhzxskDTV9pWsLKaWqFYgHEWl1eXmdpdY+q9Pf0ENFR+La
-    rbqNNRjUH6Syd63YM3FXkduQd3kZ9GR6zW/JIVU9i+0kjnehm3tHphURDZrQlXw1
-    bAtS51SHRNQAxnoWdSq4Jg==
+    qxz/s0Plz6RgzQhdXcGlSE4GGvMM8nwIIbwdmSY0SU44OZ5mC6Ze8ER70i2TvZZ2
+    KcT9j/bUK978HQPqMIMpqTaQ+WGSJg/TBqq8jZ+j0uRXuZSTjvK0fT/thvihA2M/
+    ld2WxQicywT4nq2Ngniv0o65BHOyctfwusG/3vta1hMeQCATgnteF8ah49twJFCl
+    k9CKr9syLv4082nF3Y0SjYew7niHqoILpJhB2LIN3kFrhHQ/CoG9/7nI4YoYVr+9
+    2R66xNK0CJHjEsj6V32ZghJgbzkWKbEugB2SyxKlaOtnXNYPJxNvnZ0EcM5pXwnW
+    u2GAP6gaHBhFFjM2AeBopA==
     """
 
-  Scenario: Updating Nextcloud 34 on the beta channel
+  Scenario: Updating Nextcloud 35 on the beta channel
     Given There is a release with channel "beta"
     And The received version is "35.0.0.0"
     And The received PHP version is "8.3.0"
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "35.0.2.1" is available
-    And URL to download is "https://download.nextcloud.com/server/prereleases/nextcloud-35.0.2rc2.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-35.0.2rc2.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/prereleases/nextcloud-35.0.2rc2.tar.bz2"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.2rc2/nextcloud-35.0.2rc2.zip"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.2rc2/nextcloud-35.0.2rc2.tar.bz2"
+    And Update to version "35.0.2.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-35.0.2.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.2.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.2.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.2/nextcloud-35.0.2.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.2/nextcloud-35.0.2.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/35/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    b9kZv0gg6pmajSDWKm2NK0VhlALtYC9jYvBrE5aUDQiqSe7LmKnlIn5qcW+xnxuE
-    b4tu+WColWZ8E1Yg3BHrZZJqjJiLJJWTAIPuLVC3tOyWMBAGNjO9odO6TVKgorrI
-    iHn2O8iNnZ5cKc7qVPUSYz+UFWN/Qus6Zhy0ZsW+siaZjRNC8eNnD2bu82KEuy+b
-    D/jVROMQjly9f+LQHgAhzxskDTV9pWsLKaWqFYgHEWl1eXmdpdY+q9Pf0ENFR+La
-    rbqNNRjUH6Syd63YM3FXkduQd3kZ9GR6zW/JIVU9i+0kjnehm3tHphURDZrQlXw1
-    bAtS51SHRNQAxnoWdSq4Jg==
+    qxz/s0Plz6RgzQhdXcGlSE4GGvMM8nwIIbwdmSY0SU44OZ5mC6Ze8ER70i2TvZZ2
+    KcT9j/bUK978HQPqMIMpqTaQ+WGSJg/TBqq8jZ+j0uRXuZSTjvK0fT/thvihA2M/
+    ld2WxQicywT4nq2Ngniv0o65BHOyctfwusG/3vta1hMeQCATgnteF8ah49twJFCl
+    k9CKr9syLv4082nF3Y0SjYew7niHqoILpJhB2LIN3kFrhHQ/CoG9/7nI4YoYVr+9
+    2R66xNK0CJHjEsj6V32ZghJgbzkWKbEugB2SyxKlaOtnXNYPJxNvnZ0EcM5pXwnW
+    u2GAP6gaHBhFFjM2AeBopA==
     """
