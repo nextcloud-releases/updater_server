@@ -871,22 +871,22 @@ Scenario: Updating Nextcloud 32 on the stable channel
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "35.0.2.2" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-35.0.2.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.2.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.2.tar.bz2"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.2/nextcloud-35.0.2.zip"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.2/nextcloud-35.0.2.tar.bz2"
+    And Update to version "35.0.3.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-35.0.3.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.3.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.3.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.3/nextcloud-35.0.3.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.3/nextcloud-35.0.3.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/35/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    qxz/s0Plz6RgzQhdXcGlSE4GGvMM8nwIIbwdmSY0SU44OZ5mC6Ze8ER70i2TvZZ2
-    KcT9j/bUK978HQPqMIMpqTaQ+WGSJg/TBqq8jZ+j0uRXuZSTjvK0fT/thvihA2M/
-    ld2WxQicywT4nq2Ngniv0o65BHOyctfwusG/3vta1hMeQCATgnteF8ah49twJFCl
-    k9CKr9syLv4082nF3Y0SjYew7niHqoILpJhB2LIN3kFrhHQ/CoG9/7nI4YoYVr+9
-    2R66xNK0CJHjEsj6V32ZghJgbzkWKbEugB2SyxKlaOtnXNYPJxNvnZ0EcM5pXwnW
-    u2GAP6gaHBhFFjM2AeBopA==
+    Q4jOGVUFIVT39bHWlKb36zaU+r5ZRB/HoyHG41nAkgtAoYDhNeTyz4a9rpFimJEu
+    s1ORyZoKU90wP0k18WKr3CsNfqYJovtWJCPyX1Ba4S34BG9XKyEukN7IxiCrFHuv
+    X6oZecBIz8d6ZFAtNf1iS4rRZV6kF0TaySHL06nWnUHUVgvtFCfHAu+F1yzZnQA+
+    xD8SogiIVu1qzimBsqpbKuTyzUPn+crgHRFVFdc8/BL2qqGtjiUo+BSeS0Gavt8o
+    JGz174HwIkTOLDZUIKRtOTtKSmIvN5V5B68MFbbFjawAhuqKaXCp9goUAcRpsx5Y
+    TdsG0ayiaOMkqKe55rjv7A==
     """
 
   Scenario: Updating Nextcloud 35 on the stable channel
@@ -896,20 +896,20 @@ Scenario: Updating Nextcloud 32 on the stable channel
     And the installation mtime is "11"
     When The request is sent
     Then The response is non-empty
-    And Update to version "35.0.2.2" is available
-    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-35.0.2.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.2.zip"
-    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.2.tar.bz2"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.2/nextcloud-35.0.2.zip"
-    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.2/nextcloud-35.0.2.tar.bz2"
+    And Update to version "35.0.3.2" is available
+    And URL to download is "https://download.nextcloud.com/server/releases/nextcloud-35.0.3.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.3.zip"
+    And Download URLS contain "https://download.nextcloud.com/server/releases/nextcloud-35.0.3.tar.bz2"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.3/nextcloud-35.0.3.zip"
+    And Download URLS contain "https://github.com/nextcloud-releases/server/releases/download/v35.0.3/nextcloud-35.0.3.tar.bz2"
     And URL to documentation is "https://docs.nextcloud.com/server/35/admin_manual/maintenance/upgrade.html"
     And EOL is set to "0"
     And The signature is
     """
-    qxz/s0Plz6RgzQhdXcGlSE4GGvMM8nwIIbwdmSY0SU44OZ5mC6Ze8ER70i2TvZZ2
-    KcT9j/bUK978HQPqMIMpqTaQ+WGSJg/TBqq8jZ+j0uRXuZSTjvK0fT/thvihA2M/
-    ld2WxQicywT4nq2Ngniv0o65BHOyctfwusG/3vta1hMeQCATgnteF8ah49twJFCl
-    k9CKr9syLv4082nF3Y0SjYew7niHqoILpJhB2LIN3kFrhHQ/CoG9/7nI4YoYVr+9
-    2R66xNK0CJHjEsj6V32ZghJgbzkWKbEugB2SyxKlaOtnXNYPJxNvnZ0EcM5pXwnW
-    u2GAP6gaHBhFFjM2AeBopA==
+    Q4jOGVUFIVT39bHWlKb36zaU+r5ZRB/HoyHG41nAkgtAoYDhNeTyz4a9rpFimJEu
+    s1ORyZoKU90wP0k18WKr3CsNfqYJovtWJCPyX1Ba4S34BG9XKyEukN7IxiCrFHuv
+    X6oZecBIz8d6ZFAtNf1iS4rRZV6kF0TaySHL06nWnUHUVgvtFCfHAu+F1yzZnQA+
+    xD8SogiIVu1qzimBsqpbKuTyzUPn+crgHRFVFdc8/BL2qqGtjiUo+BSeS0Gavt8o
+    JGz174HwIkTOLDZUIKRtOTtKSmIvN5V5B68MFbbFjawAhuqKaXCp9goUAcRpsx5Y
+    TdsG0ayiaOMkqKe55rjv7A==
     """
