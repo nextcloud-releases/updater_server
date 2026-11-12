@@ -864,6 +864,14 @@ Scenario: Updating Nextcloud 32 on the stable channel
     JnVs1LHrrPCZ9cuGHmfj+w==
     """
 
+  Scenario: Not updating Nextcloud latest 34 to 35 on the stable channel (staged rollout)
+    Given There is a release with channel "stable"
+    And The received version is "34.0.6.2"
+    And The received PHP version is "8.3.0"
+    And the installation mtime is "71"
+    When The request is sent
+    Then The response is empty
+
   Scenario: Updating Nextcloud latest 34 to 35 on the stable channel
     Given There is a release with channel "stable"
     And The received version is "34.0.6.2"
